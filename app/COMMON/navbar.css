@@ -104,6 +104,57 @@
 
 }
 
+
+
+
+/*contact dropdown start */
+.dropdown {
+    position: relative;
+}
+
+.dropdown span {
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 180px;
+    border: 1px solid #eee;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dropdown-menu li:hover {
+    background: #f9f9f9;
+    color: #E57661;
+}
+
+/* dropdown end  */
+
+
+
+
 .menu {
     list-style: none;
     display: flex;

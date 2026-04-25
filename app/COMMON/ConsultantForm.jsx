@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-export default function ConsultationForm({ onClose }) {
+export default function ConsultantForm({ onClose }) {
 
 
     const [dropdownOpen, setDropdownOpen] = useState(false);

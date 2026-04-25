@@ -267,8 +267,23 @@ export default function Navbar() {
                                 <Link href="/about">About us</Link>
                             </li>
 
-                            <li className={pathname === '/contact' ? 'active' : ''}>
+                            {/* <li className={pathname === '/contact' ? 'active' : ''}>
                                 <Link href="/contact">Contact</Link>
+                            </li> */}
+
+                            <li className="dropdown">
+                                <span className={pathname.includes('/contact') ? 'active' : ''}>
+                                    Contact
+                                </span>
+
+                                <ul className="dropdown-menu">
+                                    <li>
+                                        <Link href="/contact">Template 1</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/contact2">Template 2</Link>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
