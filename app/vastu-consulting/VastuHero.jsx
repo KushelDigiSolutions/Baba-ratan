@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function VastuHero() {
     return (
-        <section className="bg-[#F7F7F7] py-10 md:pt-10 md:pb-4 px-4 md:px-10 xl:px-20">
-            <div className="max-w-7xl mx-auto grid xl:grid-cols-[40%_50%] gap-20 xl:gap-40 items-center">
+        <section className="bg-[#F7F7F7] pt-10 md:pt-10 md:pb-4 px-4 md:px-10 xl:px-20">
+            <div className="max-w-7xl mx-auto grid xl:grid-cols-[40%_50%]  gap-3 md:gap-20 xl:gap-40 items-center">
 
                 <div className=" lg:text-left xl:mb-7 ">
                     <p className="text-[#E57661] text-xs md:text-[16px] font-[500] mb-3">
@@ -12,8 +12,8 @@ export default function VastuHero() {
                     </p>
 
                     <h1 className="text-3xl md:text-6xl font-[500] tracking-tight md:leading-17  text-[#333]">
-                        Transform Your 
-                        <span className="text-[#E57661]"> Space,</span> Transcend 
+                        Transform Your
+                        <span className="text-[#E57661]"> Space,</span> Transcend
                         Your Life.
                     </h1>
 
@@ -35,18 +35,16 @@ export default function VastuHero() {
 
                 {/* RIGHT IMAGE */}
                 <div className="relative">
-                 <div className="relative w-full  rounded-[24px]
-    h-[250px] 
-    sm:h-[300px] 
-    md:h-[400px] 
+                    <div className="relative w-full  rounded-[24px]
+    h-[400px] 
     lg:h-[700px] 
     xl:h-[600px]">
                         <Image
-    src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776759154/TransformYourSpace_TranscendYourLife._s6ytmh.png"
-    alt="Interior"
-    fill
-    className="object-contain "
-/>
+                            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776759154/TransformYourSpace_TranscendYourLife._s6ytmh.png"
+                            alt="Interior"
+                            fill
+                            className="object-contain "
+                        />
                     </div>
 
                     {/* TOP ICON */}

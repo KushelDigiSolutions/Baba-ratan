@@ -75,8 +75,8 @@ export default function VastuFourth() {
 
         {/* MOBILE VIEW (STACK) */}
         <div className="flex flex-col items-center gap-6 lg:hidden">
-          <div className={`w-32 h-32 rounded-full bg-[#e6ddd8] flex items-center justify-center transition-all duration-700 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"}`}>
-            <div className="w-20 h-20 rounded-full bg-[#d9cfc9] flex items-center justify-center">
+          <div className={`w-32 h-32 rounded-full bg-white flex items-center justify-center transition-all duration-700 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"}`}>
+            <div className="w-20 h-20 rounded-full border-[#E57661]/30 bg-[#E576611A] flex items-center justify-center">
               <Image
                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776771665/Alchemical_vqmdl0.png"
                 alt="center"

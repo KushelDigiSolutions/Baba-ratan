@@ -11,7 +11,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 export default function Footer() {
     return (
         <footer className="bg-[#F7F8F9] text-[#2d2d2d]">
-            <div className="max-w-[1350px] mx-auto px-6 md:px-10 py-12">
+            <div className="max-w-[1390px] mx-auto px-6 md:px-10 py-12">
 
                 {/* TOP GRID */}
                 <div className="grid grid-cols-1  xl:grid-cols-[29%_69%] gap-15">

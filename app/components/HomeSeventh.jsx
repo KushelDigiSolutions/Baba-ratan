@@ -16,16 +16,16 @@ export default function HomeSeventh() {
             // PRECISE TIMING ADJUSTMENT:
             // Adjusting start/end to make the reveal feel more natural.
             // Reveal starts when section enters (start) and finishes when it's mostly scrolled (end).
-            const start = viewportHeight * 0.85; 
+            const start = viewportHeight * 0.85;
             const end = viewportHeight * 0.15;
-            
+
             // Calculate progress based on how much of the section has passed through the target window
             let progress = (start - rect.top) / (rect.height + (start - end));
-            
+
             // Apply a slight ease-in-out for a smoother feel
             progress = Math.max(0, Math.min(1, progress));
-            const easedProgress = progress < 0.5 
-                ? 2 * progress * progress 
+            const easedProgress = progress < 0.5
+                ? 2 * progress * progress
                 : 1 - Math.pow(-2 * progress + 2, 2) / 2;
 
             setScrollProgress(progress); // Keeping raw progress for linear image reveal
@@ -64,7 +64,7 @@ export default function HomeSeventh() {
     ];
 
     return (
-        <section 
+        <section
             ref={sectionRef}
             className="max-w-[1720px] mx-auto py-16 px-4 md:px-10 bg-[#FAF4E8] overflow-hidden"
         >
@@ -73,12 +73,12 @@ export default function HomeSeventh() {
                     HOW IT WORKS
                 </p>
 
-                <h2 className="text-3xl md:text-4xl font-[500] text-gray-800 leading-tight">
+                <h5 className="text-3xl md:text-4xl font-[500] text-gray-800 leading-tight">
                     A Simple 3-Step Process to
                     <span className="block text-[#E57661] mt-2">
                         Transform Your Space
                     </span>
-                </h2>
+                </h5>
 
                 <p className="mt-6 text-[#303030] gray-600 text-base md:text-[24px]">
                     Our approach is designed to be clear, practical, and result-oriented
@@ -98,11 +98,11 @@ export default function HomeSeventh() {
                             height={900}
                             className="object-contain opacity-10"
                         />
-                        
+
                         {/* 2. Revealed Curve (Grows on scroll) */}
-                        <div 
+                        <div
                             className="absolute inset-0 transition-all duration-300 ease-out"
-                            style={{ 
+                            style={{
                                 clipPath: `inset(0 0 ${100 - (scrollProgress * 100)}% 0)`,
                                 opacity: scrollProgress > 0 ? 1 : 0
                             }}
@@ -136,8 +136,8 @@ export default function HomeSeventh() {
 
                                 <div
                                     className={`bg-white rounded-[20px] p-6 md:p-8 shadow-sm ${step.align === "right"
-                                            ? "md:text-right"
-                                            : "md:mr-auto md:ml-0 text-left"
+                                        ? "md:text-right"
+                                        : "md:mr-auto md:ml-0 text-left"
                                         }`}
                                 >
                                     <div className={`flex gap-6 items-center ${step.align === "right" ? "flex-row-reverse flex-end" : ""} `}>
@@ -153,19 +153,19 @@ export default function HomeSeventh() {
                                             />
                                         </div>
 
-                                        <h3 className={`text-xl md:text-2xl font-[500] ${index == 1 ? "xl:max-w-[200px] xl:ml-24" : ""} text-gray-800 mb-3`}>
+                                        <h5 className={`text-xl md:text-2xl font-[500] ${index == 1 ? "xl:max-w-[200px] xl:ml-24" : ""} text-gray-800 mb-3`}>
                                             {step.title}
-                                        </h3>
+                                        </h5>
                                     </div>
 
                                     <p className={`text-[#303030]
-  ${index===1 
-    ? "xl:text-right xl:max-w-[350px] xl:ml-10" 
-    : index===2 
-      ? "max-w-[350px]" 
-      : "max-w-[360px]"
-  }
-  text-sm md:text-[18px] leading-relaxed`}>
+                              ${index === 1
+                                            ? "xl:text-right xl:max-w-[350px] xl:ml-10"
+                                            : index === 2
+                                                ? "max-w-[350px]"
+                                                : "max-w-[360px]"
+                                        }
+                                       text-sm md:text-[18px] leading-relaxed`}>
                                         {step.desc}
                                     </p>
 

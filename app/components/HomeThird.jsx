@@ -5,9 +5,9 @@ export default function HomeThird() {
       
       <div className=" flex flex-col items-center text-center ">
    
-        <h1 className="text-3xl md:text-[40px] font-medium text-gray-800 leading-tight">
+        <h3 className="text-3xl md:text-[40px] font-medium text-gray-800 leading-tight">
           Modern Solutions Rooted in Ancient Wisdom
-        </h1>
+        </h3>
 
         <p className="mt-6 text-[#303030] text-base md:text-[20px] max-w-[680px] leading-relaxed font-[400]">
           We combine the principles of Vastu Shastra and Astrology with a practical,

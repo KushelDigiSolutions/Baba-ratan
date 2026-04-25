@@ -248,7 +248,7 @@
 }
 
 /* ===== MOBILE ===== */
-@media (max-width: 1024px) {
+@media (max-width: 1224px) {
 
     .desktop-only {
         display: none !important;
@@ -271,7 +271,7 @@
         background: #fff;
         padding: 20px;
         border-bottom: 1px solid #eee;
-        height: 600px;
+        height: 750px;
     }
 
     .mobile-menu input {
@@ -307,7 +307,7 @@
     }
 
     .mobile-astro {
-        margin-top: 15px;
+        margin-top: 30px;
         background: #FFF5E9;
         padding: 12px;
         text-align: center;

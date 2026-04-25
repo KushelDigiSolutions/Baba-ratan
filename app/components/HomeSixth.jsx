@@ -6,10 +6,10 @@ export default function HomeSixth(){
       <div className="max-w-5xl mx-auto text-center">
         
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-[38px] font-[500] text[#303030] leading-snug">
+        <h5 className="text-2xl sm:text-3xl md:text-[38px] font-[500] text[#303030] leading-snug">
           These issues may be a result of Vastu <br className="hidden sm:block" />
           imbalance in your space.
-        </h2>
+        </h5>
 
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">

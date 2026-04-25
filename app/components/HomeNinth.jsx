@@ -7,9 +7,9 @@ export default function HomeNinth() {
       <div className=" bg-[#5A3E43] xl:px-60 md:py-24   text-white rounded-3xl px-6 md:px-12 py-10 md:py-14 text-center shadow-lg">
         
         {/* Heading */}
-        <h2 className="text-2xl md:text-6xl font-[500]  mb-6">
+        <h6 className="text-2xl md:text-6xl font-[500]  mb-6">
           Ready to Align Your Universe?
-        </h2>
+        </h6>
 
         {/* Description */}
         <p className="text-sm md:text-2xl text-white max-w-[800px] mx-auto mb-9 leading-relaxed">

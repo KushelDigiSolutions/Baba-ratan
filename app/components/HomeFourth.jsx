@@ -11,10 +11,10 @@ export default function HomeFourth() {
                     ARCHITECTURAL WISDOM
                 </p>
 
-                <h2 className="text-2xl md:text-4xl font-[500] mt-3">
+                <h3 className="text-2xl md:text-4xl font-[500] mt-3">
                     Why Vastu is Important for <br className="hidden md:block" />
                     Your Success
-                </h2>
+                </h3>
 
                 <p className="text-[#303030] max-w-[740px] mt-4 text-[14px] md:text-[19px] font-[400]">
                     Aligning your physical space with the energetic flow of the universe is the catalyst for
@@ -32,7 +32,7 @@ export default function HomeFourth() {
                             <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418837/Business_Growth-icon_kxwmjp.png" alt="" width={22} height={22} />
                         </div>
 
-                        <h3 className="font-[500] text-[#191C1D] text-2xl">Business Growth</h3>
+                        <h4 className="font-[500] text-[#191C1D] text-2xl">Business Growth</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 max-w-[290px]  leading-7 font-[400]">
                             Strategic placement of executive suites
                             to harness the energy of leadership and
@@ -58,7 +58,7 @@ export default function HomeFourth() {
                             <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418837/Positive_Energy-icon_vraljq.png" alt="" width={22} height={22} />
                         </div>
 
-                        <h3 className="font-[500] text-[#191C1D] text-2xl">Positive Energy</h3>
+                        <h4 className="font-[500] text-[#191C1D] text-2xl">Positive Energy</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 max-w-[290px] leading-7 font-[400]">
                             Designing entryways that invite 'Prana',
                             ensuring your environment breathes
@@ -83,7 +83,7 @@ export default function HomeFourth() {
                         <div className="w-13 h-13 flex items-center justify-center bg-[#E57661] rounded-xl mb-8">
                             <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418836/Removing_Obstacles-icon_dykunx.png" alt="" width={22} height={22} />
                         </div>
-                        <h3 className="font-[500] text-[#191C1D] text-2xl">Removing Obstacles</h3>
+                        <h4 className="font-[500] text-[#191C1D] text-2xl">Removing Obstacles</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 max-w-[300px] leading-7 font-[400]">
                             Neutralizing directional defects to clear
                             the path for decision-making and
@@ -113,7 +113,7 @@ export default function HomeFourth() {
                         <div className="w-13 h-13 flex items-center justify-center bg-[#E57661] rounded-xl mb-4">
                             <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418835/financial-icon_eeepqa.png" alt="" width={22} height={22} />
                         </div>
-                        <h3 className="font-[500] text-[#191C1D] text-2xl md:text-3xl md:max-w-[100px]">Financial Stability</h3>
+                        <h4 className="font-[500] text-[#191C1D] text-2xl md:text-3xl md:max-w-[100px]">Financial Stability</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 md:max-w-[200px] leading-7 font-[400]">
                             South-West orientation
                             mastery to anchor your
@@ -152,7 +152,7 @@ export default function HomeFourth() {
                             <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418834/Peaceful-icon_mmamrq.png" alt="" width={22} height={22} />
                         </div>
 
-                        <h3 className="font-[500] text-[#191C1D] text-2xl md:text-3xl md:max-w-[100px]">Peaceful Environment</h3>
+                        <h4 className="font-[500] text-[#191C1D] text-2xl md:text-3xl md:max-w-[100px]">Peaceful Environment</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 md:max-w-[200px] leading-7 font-[400]">
                             Infusing air, water, and
                             earth elements into your

@@ -29,10 +29,10 @@ export default function HomeFifth() {
 
                 {/* Heading */}
                 <div className="text-center mb-12">
-                    <h2 className="text-2xl md:text-[35px] font-[500] text-black">
+                    <h5 className="text-2xl md:text-[35px] font-[500] text-black">
                         Facing These Challenges in Your <br className="hidden md:block" />
                         Life or Business?
-                    </h2>
+                    </h5>
 
                     <p className="mt-4 text-[#303030] text-[16px] md:text-[23px] font-[400] max-w-[700px] mx-auto">
                         Sometimes, the problems we face are not just external they may be

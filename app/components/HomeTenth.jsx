@@ -47,9 +47,9 @@ export default function HomeTenth() {
               </div>
 
 
-              <h3 className=" text-[22px] md:text-[32px] font-medium text-[#303030]">
+              <h6 className=" text-[22px] md:text-[32px] font-medium text-[#303030]">
                 {card.title}
-              </h3>
+              </h6>
 
               <p className="text-[#5A5A5A] text-[17px] md:text-[20px] leading-relaxed">
                 {card.desc}

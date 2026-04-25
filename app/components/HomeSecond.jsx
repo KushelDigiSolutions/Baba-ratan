@@ -108,9 +108,9 @@ const HomeSecond = () => {
                             </p>
                         </div>
 
-                        <h2 className="text-[18px] md:text-[33px] font-[500] mb-6">
+                        <h3 className="text-[18px] md:text-[33px] font-[500] mb-6">
                             Gemstone & Spiritual Shop
-                        </h2>
+                        </h3>
 
                         <p className="text-[#44474D] max-w-[450px] md:text-[19px] mb-6">
                             Curated alchemical tools, from high-frequency

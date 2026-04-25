@@ -49,9 +49,9 @@ export default function HomeEigth() {
                     THE POWER OF VASTU
                 </p>
 
-                <h2 className="text-2xl md:text-4xl font-semibold mt-3 text-gray-800">
+                <h5 className="text-2xl md:text-4xl font-semibold mt-3 text-gray-800">
                     See the Difference the Right Direction Can Make
-                </h2>
+                </h5>
 
                 <p className="text-gray-500 mt-4 text-sm md:text-base">
                     Real spaces. Real problems. Real results. Witness the alchemical shift
@@ -100,9 +100,9 @@ export default function HomeEigth() {
                                     THE TRANSFORMATION
                                 </p>
 
-                                <h3 className={`text-2xl xl:text-[40px]  max-w-[350px] ${card.id==1?"font-[500]":"font-[700]"} leading-11 text-[#000000]` }>
+                                <h5 className={`text-2xl xl:text-[40px]  max-w-[350px] ${card.id==1?"font-[500]":"font-[700]"} leading-11 text-[#000000]` }>
                                     {card.Percent&&<span className="font-bold">{card.Percent}</span>} {card.result}
-                                </h3>
+                                </h5>
 
                                 <p className="text-[#44474D] max-w-[400px] text-[16px] xl:text-[17px] mt-5">
                                    {card.desc}

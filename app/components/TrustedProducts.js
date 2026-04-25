@@ -55,7 +55,7 @@ export default function TrustedProducts() {
       {/* HEADER */}
       <div className="trusted-header">
         <p className="small-title">Buy Gemstones Online</p>
-        <h2>Products of Trusted Excellence</h2>
+        <h6>Products of Trusted Excellence</h6>
       </div>
 
       {/* TABS */}
@@ -85,7 +85,7 @@ export default function TrustedProducts() {
               alt={item.title}
             />
 
-            <h4>{item.title}</h4>
+            <h6>{item.title}</h6>
             <p>Origin: {item.origin}</p>
             <strong>{item.price}</strong>
           </div>

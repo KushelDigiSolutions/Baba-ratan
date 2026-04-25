@@ -23,11 +23,11 @@ export default function HomeEleventh() {
 
                 {/* LEFT TEXT */}
                 <div className="text-white space-y-6 xl:px-0 px-10">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl max-w-[600px]  font-[500] leading-tight">
+                    <h6 className="text-3xl sm:text-4xl md:text-5xl max-w-[600px]  font-[500] leading-tight">
                         Get a Glimpse into Your
                         Future with Our Accurate
                         Astrology Predictions
-                    </h1>
+                    </h6>
 
                     <p className="text-sm sm:text-base md:text-2xl text-white leading-relaxed max-w-[600px]">
                         Ruled by Mercury, there are a little commons between Gemini and Cancer.
