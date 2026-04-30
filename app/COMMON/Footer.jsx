@@ -20,10 +20,10 @@ export default function Footer() {
                     <div>
                         <div className="flex items-center gap-3 mb-5">
                             <Image
-                                src="/favicon.ico"
+                                src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png"
                                 alt="Logo"
-                                width={60}
-                                height={60}
+                                width={130}
+                                height={130}
                             />
                         </div>
 
