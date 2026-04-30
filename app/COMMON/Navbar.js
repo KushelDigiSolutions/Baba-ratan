@@ -240,7 +240,7 @@ export default function Navbar() {
             {/* ================= MAIN NAV ================= */}
             <nav className="main-nav">
                 <div className="logo" onClick={() => router.push('/')}>
-                    <img src="/favicon.ico" alt="Logo" />
+                    <img src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png" alt="Logo" />
                 </div>
 
 
