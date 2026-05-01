@@ -39,14 +39,11 @@ export default function ConsultationForm() {
       newErrors.email = "Invalid email format";
     }
 
-    // Contact Number: digits only, max 10
-    if (formData.contactNumber) {
-      const contactRegex = /^\d{1,10}$/;
-      if (!contactRegex.test(formData.contactNumber)) {
-        newErrors.contactNumber = "Contact number must be up to 10 digits and contain only numbers";
-      } else if (formData.contactNumber.length < 10) {
-        newErrors.contactNumber = "Contact number should be 10 digits";
-      }
+    // Contact Number: digits only, exactly 10
+    if (!formData.contactNumber) {
+      newErrors.contactNumber = "Contact Number is required";
+    } else if (formData.contactNumber.length !== 10) {
+      newErrors.contactNumber = "Contact number must be exactly 10 digits";
     }
 
     if (!serviceType) {
@@ -87,6 +84,10 @@ export default function ConsultationForm() {
     // For contact number, prevent typing more than 10 digits and non-digits
     if (name === "contactNumber") {
       const sanitizedValue = value.replace(/\D/g, '').slice(0, 10);
+      setFormData({ ...formData, [name]: sanitizedValue });
+    } else if (name === "fullName") {
+      // Prevent anything other than alphabets and spaces
+      const sanitizedValue = value.replace(/[^A-Za-z\s]/g, '');
       setFormData({ ...formData, [name]: sanitizedValue });
     } else {
       setFormData({ ...formData, [name]: value });
@@ -135,18 +136,6 @@ export default function ConsultationForm() {
                   placeholder="Enter your full name"
                   value={formData.fullName}
                   onChange={handleInputChange}
-                  onKeyDown={(e) => {
-                    // Allow only alphabets and space
-                    if (
-                      !/[A-Za-z\s]/.test(e.key) &&
-                      e.key !== "Backspace" &&
-                      e.key !== "ArrowLeft" &&
-                      e.key !== "ArrowRight" &&
-                      e.key !== "Tab"
-                    ) {
-                      e.preventDefault();
-                    }
-                  }}
                 />
                 {errors.fullName && <p className={styles.errorText}>{errors.fullName}</p>}
               </div>
@@ -168,11 +157,13 @@ export default function ConsultationForm() {
 
             <div className={styles.row}>
               <div className={styles.formGroup}>
-                <label>Contact Number</label>
+                <label>
+                  Contact Number <span>*</span>
+                </label>
                 <input
                   type="tel"
                   name="contactNumber"
-                  placeholder="Optional contact number"
+                  placeholder="Enter 10-digit number"
                   value={formData.contactNumber}
                   onChange={handleInputChange}
                 />

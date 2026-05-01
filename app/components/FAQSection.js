@@ -35,7 +35,7 @@ export default function FAQSection() {
         <p className="text-sm font-semibold text-[#E57661] uppercase tracking-wide">
           FAQ
         </p>
-        <h2 className="mt-2 text-3xl font-semibold text-[#0A2540]">
+        <h2 className="mt-2 text-3xl font-semibold text-[#E57661]">
           Most asked questions
         </h2>
 
@@ -56,13 +56,13 @@ export default function FAQSection() {
                   }
                   className="w-full flex justify-between items-center text-left"
                 >
-                  <span className="text-[16px] font-medium text-[#0A2540]">
+                  <span className="text-[16px] font-medium text-[#E57661]">
                     {faq.question}
                   </span>
                   {isOpen ? (
-                    <ChevronUp className="w-5 h-5 text-[#0A2540]" />
+                    <ChevronUp className="w-5 h-5 text-[#E57661]" />
                   ) : (
-                    <ChevronDown className="w-5 h-5 text-[#0A2540]" />
+                    <ChevronDown className="w-5 h-5 text-[#E57661]" />
                   )}
                 </button>
 

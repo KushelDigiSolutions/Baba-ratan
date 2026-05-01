@@ -16,13 +16,17 @@ export const metadata = {
   description: "A website for gemstones",
 };
 
+import { CartProvider } from "./context/CartContext";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );

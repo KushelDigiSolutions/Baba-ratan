@@ -20,7 +20,7 @@ export default function Testimonials() {
         >
             {/* Heading */}
             <div className="text-center mb-14">
-                <h2 className="text-4xl font-semibold text-[#0B2545]">
+                <h2 className="text-4xl font-semibold text-[#E57661]">
                     What Our Happy Customers Say
                 </h2>
                 <p className="mt-2 text-lg text-gray-600">
@@ -96,10 +96,10 @@ function TestimonialCard({ data }) {
                 />
                 <div>
                     <div className="flex items-center gap-1">
-                        <p className="text-sm font-semibold text-[#0B2545]">
+                        <p className="text-sm font-semibold text-[#E57661]">
                             {data.name}
                         </p>
-                        <span className="text-blue-500 text-xs"><img src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073615/Vertical_container_1_giyzdn.png" alt="verified" width={15} height={15} /></span>
+                        <span className="text-[#E57661] text-xs"><img src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073615/Vertical_container_1_giyzdn.png" alt="verified" width={15} height={15} /></span>
                     </div>
                     <p className="text-xs text-gray-500">{data.username}</p>
                 </div>

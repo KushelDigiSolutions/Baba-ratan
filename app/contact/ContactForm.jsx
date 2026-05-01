@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"
 import { motion } from "framer-motion";
@@ -41,6 +41,11 @@ export default function ContactForm() {
 
     const [errors, setErrors] = useState({});
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     // ✅ Validation
     const validate = () => {
@@ -95,7 +100,7 @@ export default function ContactForm() {
 
             style={{
                 background: `
-        radial-gradient(113.61% 98.59% at 20% 70%, #D6E3FF 0%, rgba(214,227,255,0) 40%),
+        radial-gradient(113.61% 98.59% at 20% 70%, #FDE0DC 0%, rgba(253,224,220,0) 40%),
         radial-gradient(106.8% 92.68% at 70% 30%, #FFDEA5 0%, rgba(255,222,165,0) 40%)
       `,
             }}>
@@ -205,6 +210,7 @@ export default function ContactForm() {
                                 type="text"
                                 placeholder="Full Name"
                                 value={form.name}
+                                suppressHydrationWarning
                                 onChange={(e) => {
                                     const value = e.target.value;
                                     // Prevent numbers typing
@@ -223,6 +229,7 @@ export default function ContactForm() {
                                 type="email"
                                 placeholder="Email"
                                 value={form.email}
+                                suppressHydrationWarning
                                 onChange={(e) =>
                                     setForm({ ...form, email: e.target.value })
                                 }
@@ -238,6 +245,7 @@ export default function ContactForm() {
                                 placeholder="Phone"
                                 value={form.phone}
                                 maxLength={10}
+                                suppressHydrationWarning
                                 onChange={(e) => {
                                     const value = e.target.value;
                                     // Only numbers allowed
@@ -292,6 +300,7 @@ export default function ContactForm() {
                             <textarea
                                 placeholder="Message"
                                 value={form.message}
+                                suppressHydrationWarning
                                 onChange={(e) =>
                                     setForm({ ...form, message: e.target.value })
                                 }
@@ -303,6 +312,7 @@ export default function ContactForm() {
                         {/* Button */}
                         <button
                             type="submit"
+                            suppressHydrationWarning
                             className="w-full bg-[#E57661] text-white py-3 rounded-lg hover:bg-[#d96552] transition cursor-pointer"
                         >
                             Submit

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaXTwitter, FaLinkedin, FaThreads } from "react-icons/fa6";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import { FiInstagram, FiTwitter } from "react-icons/fi";
 import { FaFacebook } from "react-icons/fa6";
@@ -34,15 +34,20 @@ export default function Footer() {
 
                         {/* SOCIAL */}
                         <div className="flex gap-4">
-                            <a href="#" className="flex items-center justify-center   transition">
-                                <FiInstagram className="text-[#0A243F]" size={36} />
+                            <a href="#" className="flex items-center justify-center transition hover:scale-110">
+                                <FaInstagram className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
                             </a>
-                            <a href="#" className="flex items-center justify-center transition">
-
-                                <FaSquareXTwitter className="text-[#0A243F]" size={36} />
+                            <a href="#" className="flex items-center justify-center transition hover:scale-110">
+                                <FaSquareXTwitter className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
                             </a>
-                            <a href="#" className=" flex items-center justify-center  transition">
-                                <FaFacebook className="text-[#0A243F]" size={36} />
+                            <a href="#" className="flex items-center justify-center transition hover:scale-110">
+                                <FaFacebook className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
+                            </a>
+                            <a href="#" className="flex items-center justify-center transition hover:scale-110">
+                                <FaLinkedin className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
+                            </a>
+                            <a href="#" className="flex items-center justify-center transition hover:scale-110">
+                                <FaThreads className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
                             </a>
                         </div>
                     </div>

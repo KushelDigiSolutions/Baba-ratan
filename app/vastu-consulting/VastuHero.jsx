@@ -22,12 +22,12 @@ export default function VastuHero() {
                     </p>
 
                     {/* BUTTONS */}
-                    <div className="flex flex-col sm:flex-row gap-4 mt-6  lg:justify-start">
-                        <button className="bg-[#E57661] cursor-pointer w-fit text-white px-6 py-5 rounded-full font-medium shadow-md hover:bg-white border border-[#E57661] hover:border-[#E57661] hover:text-[#333] transition">
+                    <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 mt-8 lg:justify-start">
+                        <button className="bg-[#E57661] cursor-pointer w-fit text-white px-6 py-4 rounded-full font-medium shadow-md hover:bg-white border border-[#E57661] hover:border-[#E57661] hover:text-[#333] transition">
                             Start Your Alignment
                         </button>
 
-                        <button className="border cursor-pointer border-[#E57661] w-fit bg-white text-[#333] px-15 py-5 rounded-full font-medium hover:bg-[#E57661] hover:text-white transition">
+                        <button className="border cursor-pointer border-[#E57661] w-fit bg-white text-[#333] px-12 py-4 rounded-full font-medium hover:bg-[#E57661] hover:text-white transition">
                             Whatsapp
                         </button>
                     </div>

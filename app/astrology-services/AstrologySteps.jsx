@@ -42,116 +42,119 @@ export default function AstrologySteps() {
   }, []);
 
   return (
-    <section className="relative py-20 bg-[radial-gradient(140.3%_104.29%_at_10%_20%,rgba(254,212,136,0.15)_0%,#F8F9FA_90%)] overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-6 space-y-12">
-        <h5 className="text-2xl md:text-4xl md:mb-12 mb-9 text-[#303030] font-[500]">
-          Three Steps to Alignment
-        </h5>
-
-        <div className="absolute inset-0 flex justify-center pointer-events-none">
-          <div className="relative w-[75%] h-full">
+    <section className="relative py-16 md:py-24 bg-[#FCF8F4] overflow-hidden">
+      {/* Background Decorative Path (Zigzag line) */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-full">
             <Image
               src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922599/Three_Steps_to_Alignment_wnxvae.png"
               alt="path"
               fill
-              className="object-contain opacity-30"
+              className="object-contain opacity-20"
             />
-          </div>
-        </div>
+         </div>
+      </div>
 
-        {/* STEP 1 */}
-        <div 
-          ref={step1Ref}
-          className="grid md:grid-cols-[42%_60%] items-center gap-10 text-center md:text-left overflow-hidden py-4"
-        >
-          {/* TEXT (From Left) */}
-          <div className={`bg-white border-2 relative border-[#DCC0BB1A] p-6 md:p-10 rounded-3xl mx-auto md:mx-0 transition-all duration-1000 ease-out ${visibleSteps.step1 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>
-            <p className="text-5xl md:text-6xl text-[#E5766133] font-bold mb-4">01</p>
-            <h3 className="text-xl md:text-2xl text-[#303030] font-[500] mb-3">
-              Input Birth Data
-            </h3>
-            <p className="text-[#303030] leading-7 max-w-[400px] mx-auto md:mx-0">
-              Precise GPS coordinates and exact birth time ensure your chart is
-              mathematically perfect down to the last degree.
-            </p>
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <h2 className="text-3xl md:text-[40px] font-bold text-[#303030] mb-16 md:mb-24">
+          Three Steps to Alignment
+        </h2>
+
+        <div className="space-y-24 md:space-y-40">
+          {/* STEP 1 */}
+          <div 
+            ref={step1Ref}
+            className="flex flex-col md:flex-row items-center gap-12 md:gap-20"
+          >
+            {/* TEXT BOX */}
+            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out ${visibleSteps.step1 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+              <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">01</div>
+              <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
+                Input Birth Data
+              </h3>
+              <p className="text-[#303030]/80 text-lg leading-relaxed">
+                Precise GPS coordinates and exact birth time ensure your chart is
+                mathematically perfect down to the last degree.
+              </p>
+            </div>
+
+            {/* IMAGE BOX */}
+            <div className={`w-full md:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step1 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
+              <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
+                <Image
+                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922603/Input_Birth_Data_ryrj5t.png"
+                  alt="Step 1"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
 
-          {/* IMAGE (From Right) */}
-          <div className={`flex justify-center transition-all duration-1000 ease-out ${visibleSteps.step1 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}>
-            <div className="w-[260px] h-[260px] md:w-[400px] md:h-[390px] relative">
-              <Image
-                src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922603/Input_Birth_Data_ryrj5t.png"
-                alt="step1"
-                fill
-                className="object-contain"
-              />
+          {/* STEP 2 */}
+          <div 
+            ref={step2Ref}
+            className="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-20"
+          >
+            {/* TEXT BOX */}
+            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out ${visibleSteps.step2 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
+              <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">02</div>
+              <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
+                Planetary Analysis
+              </h3>
+              <p className="text-[#303030]/80 text-lg leading-relaxed">
+                Our proprietary engine calculates real-time transits against your
+                static natal chart to identify critical life themes.
+              </p>
+            </div>
+
+            {/* IMAGE BOX */}
+            <div className={`w-full md:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step2 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
+              <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
+                <Image
+                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922605/Planetary_Analysis_nkqjf9.png"
+                  alt="Step 2"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* STEP 3 */}
+          <div 
+            ref={step3Ref}
+            className="flex flex-col md:flex-row items-center gap-12 md:gap-20"
+          >
+            {/* TEXT BOX */}
+            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out ${visibleSteps.step3 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+              <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">03</div>
+              <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
+                Personalized Remedies
+              </h3>
+              <p className="text-[#303030]/80 text-lg leading-relaxed">
+                Receive actionable steps—from meditation to career moves—tailored
+                to your unique cosmic fingerprint.
+              </p>
+            </div>
+
+            {/* IMAGE BOX */}
+            <div className={`w-full md:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step3 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
+              <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
+                <Image
+                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922604/Personalized_Remedies_rkyik6.png"
+                  alt="Step 3"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
 
-        {/* STEP 2 */}
-        <div 
-          ref={step2Ref}
-          className="grid md:grid-cols-[50%_43%] items-center gap-12 overflow-hidden py-4"
-        >
-          {/* IMAGE (From Left) */}
-          <div className={`flex justify-center md:order-1 order-2 transition-all duration-1000 ease-out ${visibleSteps.step2 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>
-            <div className="relative w-[320px] h-[320px] md:w-[380px] md:h-[360px]">
-              <Image
-                src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922605/Planetary_Analysis_nkqjf9.png"
-                alt="step2"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-
-          {/* TEXT (From Right) */}
-          <div className={`bg-white border-2 border-[#DCC0BB1A] backdrop-blur-lg p-10 md:p-13 rounded-3xl md:order-2 order-1 transition-all duration-1000 ease-out ${visibleSteps.step2 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}>
-            <p className="text-6xl text-[#E5766133] font-bold mb-4">02</p>
-            <h3 className="text-2xl font-[500] mb-3 text-[#303030]">
-              Planetary Analysis
-            </h3>
-            <p className="text-[#303030] leading-7 max-w-[400px]">
-              Our proprietary engine calculates real-time transits against your
-              static natal chart to identify critical life themes.
-            </p>
-          </div>
-        </div>
-
-        {/* STEP 3 */}
-        <div 
-          ref={step3Ref}
-          className="grid md:grid-cols-[42%_60%] items-center gap-10 text-center md:text-left overflow-hidden py-4"
-        >
-          {/* TEXT (From Left) */}
-          <div className={`bg-white relative border-2 border-[#DCC0BB1A] p-6 md:p-10 rounded-3xl mx-auto md:mx-0 transition-all duration-1000 ease-out ${visibleSteps.step3 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>
-            <p className="text-5xl md:text-6xl text-[#E5766133] font-bold mb-4">03</p>
-            <h3 className="text-xl md:text-2xl text-[#303030] font-[500] mb-3">
-              Personalized Remedies
-            </h3>
-            <p className="text-[#303030] leading-7 max-w-[350px] mx-auto md:mx-0">
-              Receive actionable steps—from meditation to career moves—tailored
-              to your unique cosmic fingerprint.
-            </p>
-          </div>
-
-          {/* IMAGE (From Right) */}
-          <div className={`flex justify-center transition-all duration-1000 ease-out ${visibleSteps.step3 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}>
-            <div className="relative w-[320px] h-[320px] md:w-[380px] md:h-[360px]">
-              <Image
-                src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922604/Personalized_Remedies_rkyik6.png"
-                alt="step3"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className={`flex justify-center pt-10 transition-all duration-1000 ${visibleSteps.step3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <button className="bg-[#E57661] hover:bg-white hover:text-[#E57661] border border-[#E57661] hover:border-[#E57661] cursor-pointer text-white px-10 py-4 rounded-full text-lg shadow-md transition">
+        {/* CTA BUTTON */}
+        <div className={`flex justify-center mt-20 md:mt-32 transition-all duration-1000 delay-500 ${visibleSteps.step3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          <button className="bg-[#E57661] text-white px-12 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-[#d96552] hover:scale-105 transition-all duration-300">
             Start Your Chart
           </button>
         </div>

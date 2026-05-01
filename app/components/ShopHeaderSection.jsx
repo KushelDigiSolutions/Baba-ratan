@@ -2,11 +2,42 @@
 import React, { useState } from 'react';
 import { FiChevronDown, FiSearch, FiSliders } from 'react-icons/fi';
 
-const ShopHeaderSection = () => {
+const ShopHeaderSection = ({ selectedFilters, setSelectedFilters }) => {
     const [selectedCategory, setSelectedCategory] = useState('All Gems');
     const [certifiedOnly, setCertifiedOnly] = useState(false);
+    const [activeDropdown, setActiveDropdown] = useState(null);
 
-    const categories = ['All Gems', 'Purpose', 'Planet', 'Gemstone'];
+    const dropdownOptions = {
+        Purpose: ['Health', 'Career', 'Wealth and Fortune', 'Education', 'Relationships'],
+        Planet: ['Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', 'Venus', 'Saturn', 'Rahu', 'Ketu'],
+        Gemstone: [
+            'Blue Sapphire (Neelam)',
+            'Cats Eye',
+            'Emerald (Panna)',
+            'Hessonite (Gomed)',
+            'Pearl (Moti)',
+            'Ruby (Manik)',
+            'Ruby Coral (Moonga)',
+            'White Sapphire'
+        ]
+    };
+
+    // Close dropdown on click outside
+    React.useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (!event.target.closest('.dropdown-container')) {
+                setActiveDropdown(null);
+            }
+        };
+        document.addEventListener('click', handleClickOutside);
+        return () => document.removeEventListener('click', handleClickOutside);
+    }, []);
+
+    const handleSelectOption = (filter, option) => {
+        setSelectedFilters(prev => ({ ...prev, [filter]: option }));
+        setSelectedCategory(filter);
+        setActiveDropdown(null);
+    };
 
     return (
         <section className="relative w-full pt-16 pb-20 overflow-hidden">
@@ -21,63 +52,84 @@ const ShopHeaderSection = () => {
                     Find the Right Gemstone <br />
                     for Your <span className="text-[#E57661] tracking-[-0.02em] font-[400]">Energy</span>
                 </h1>
-                
+
                 <p className="max-w-2xl mx-auto text-[#303030] text-sm sm:text-base md:text-lg leading-relaxed mb-10 md:mb-20 opacity-90">
-                    Ethically sourced, Vastu-certified gemstones meticulously curated to align with 
+                    Ethically sourced, Vastu-certified gemstones meticulously curated to align with
                     your planetary positions and spiritual intentions.
                 </p>
 
                 {/* Filter Bar */}
-                
-                <div className="max-w-5xl mx-auto bg-white rounded-lg border border-gray-200 p-1 flex flex-wrap lg:flex-nowrap items-center justify-between gap-3">
-  
-                    {/* LEFT SIDE - Scrollable on Mobile */}
-                    <div className="flex items-center gap-2 overflow-x-auto no-scrollbar w-full lg:w-auto pb-1 lg:pb-0">
+
+                <div className="max-w-5xl mx-auto bg-white rounded-lg border border-gray-200 p-3 lg:p-1 flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-3">
+
+                    {/* LEFT SIDE - Wrapped on Mobile */}
+                    <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 w-full lg:w-auto">
                         {/* All Gems Button */}
                         <div className="flex-shrink-0 flex bg-[#F5F5F5] p-0.5 rounded-2xl">
-                        <button
-                            onClick={() => setSelectedCategory('All Gems')}
-                            className={`px-4 md:px-6 py-1.5 rounded-xl text-sm md:text-base font-[400] flex items-center gap-2 ${
-                            selectedCategory === 'All Gems'
-                                ? 'bg-[#E57661] text-white'
-                                : 'text-[#666666]'
-                            }`}
-                        >
-                            <img
-                            src="https://res.cloudinary.com/daup99ghe/image/upload/v1776752611/AI_ijjadb.png"
-                            alt="AI"
-                            className="w-4 h-3 md:w-5 md:h-3 object-contain"
-                            />
-                            <span className="whitespace-nowrap">All Gems</span>
-                        </button>
+                            <button
+                                onClick={() => {
+                                    setSelectedCategory('All Gems');
+                                    setSelectedFilters({ Purpose: '', Planet: '', Gemstone: '' });
+                                }}
+                                className={`px-4 md:px-6 py-1.5 rounded-xl text-sm md:text-base font-[400] flex items-center gap-2 ${selectedCategory === 'All Gems'
+                                        ? 'bg-[#E57661] text-white'
+                                        : 'text-[#666666]'
+                                    }`}
+                            >
+                                <img
+                                    src="https://res.cloudinary.com/daup99ghe/image/upload/v1776752611/AI_ijjadb.png"
+                                    alt="AI"
+                                    className="w-4 h-3 md:w-5 md:h-3 object-contain"
+                                />
+                                <span className="whitespace-nowrap">All Gems</span>
+                            </button>
                         </div>
 
                         {/* Filters */}
-                        {['Purpose', 'Planet', 'Gemstone'].map((filter) => (
-                        <button
-                            key={filter}
-                            className="flex-shrink-0 flex items-center gap-2 px-4 md:px-5 py-1.5 md:py-1 rounded-lg border border-gray-200 bg-white text-[#444444] text-sm md:text-base font-[400]"
-                        >
-                            <span className="whitespace-nowrap">{filter}</span>
-                            <FiChevronDown className="text-gray-400" />
-                        </button>
+                        {Object.keys(dropdownOptions).map((filter) => (
+                            <div key={filter} className="relative dropdown-container">
+                                <button
+                                    onClick={() => setActiveDropdown(activeDropdown === filter ? null : filter)}
+                                    className={`flex-shrink-0 flex items-center gap-2 px-4 md:px-5 py-1.5 md:py-1 rounded-lg border border-gray-200 bg-white text-sm md:text-base font-[400] transition-all hover:border-[#E57661] ${activeDropdown === filter || selectedFilters[filter] ? 'border-[#E57661] text-[#E57661] bg-orange-50/30' : 'text-[#444444]'}`}
+                                >
+                                    <span className="whitespace-nowrap">
+                                        {selectedFilters[filter] || filter}
+                                    </span>
+                                    <FiChevronDown className={`text-gray-400 transition-transform duration-300 ${activeDropdown === filter ? 'rotate-180' : ''}`} />
+                                </button>
+
+                                {/* Dropdown List */}
+                                {activeDropdown === filter && (
+                                    <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-100 rounded-xl shadow-xl z-[999] py-2 transition-all">
+                                        {dropdownOptions[filter].map((option) => (
+                                            <button
+                                                key={option}
+                                                className={`w-full text-left px-4 py-2 text-sm transition-colors ${selectedFilters[filter] === option ? 'bg-orange-50 text-[#E57661] font-medium' : 'text-[#444444] hover:bg-gray-50'}`}
+                                                onClick={() => handleSelectOption(filter, option)}
+                                            >
+                                                {option}
+                                            </button>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
                         ))}
                     </div>
 
                     {/* RIGHT SIDE */}
-                    <div className="flex items-center justify-between lg:justify-end gap-4 md:gap-6 w-full lg:w-auto pr-2 py-1 lg:py-0 border-t lg:border-t-0 border-gray-100 lg:border-none mt-1 lg:mt-0 pt-3 lg:pt-0">
+                    <div className="flex flex-wrap items-center justify-center lg:justify-end gap-4 md:gap-6 w-full lg:w-auto pt-3 lg:pt-0 border-t lg:border-t-0 border-gray-100">
 
                         {/* Checkbox */}
                         <label className="flex items-center gap-2 cursor-pointer">
-                        <input
-                            type="checkbox"
-                            checked={certifiedOnly}
-                            onChange={() => setCertifiedOnly(!certifiedOnly)}
-                            className="w-4 h-4 accent-[#E57661] border border-gray-300 rounded-sm"
-                        />
-                        <span className="text-sm md:text-base font-[400] text-[#444444]">
-                            Certified Only
-                        </span>
+                            <input
+                                type="checkbox"
+                                checked={certifiedOnly}
+                                onChange={() => setCertifiedOnly(!certifiedOnly)}
+                                className="w-4 h-4 accent-[#E57661] border border-gray-300 rounded-sm"
+                            />
+                            <span className="text-sm md:text-base font-[400] text-[#444444] whitespace-nowrap">
+                                Certified Only
+                            </span>
                         </label>
 
                         {/* Divider */}
@@ -85,20 +137,18 @@ const ShopHeaderSection = () => {
 
                         {/* Sort */}
                         <button className="flex items-center gap-2 text-[#E57661] font-[400] text-sm md:text-base">
-                        <span className="whitespace-nowrap">Best Selling</span>
-                        <img
-                            src="https://res.cloudinary.com/daup99ghe/image/upload/v1776752611/best_selling_cne3ao.png"
-                            alt="Best Selling"
-                            className="w-4 h-3 md:w-5 md:h-3 object-contain"
-                        />
+                            <span className="whitespace-nowrap">Best Selling</span>
+                            <img
+                                src="https://res.cloudinary.com/daup99ghe/image/upload/v1776752611/best_selling_cne3ao.png"
+                                alt="Best Selling"
+                                className="w-4 h-3 md:w-5 md:h-3 object-contain"
+                            />
                         </button>
 
                     </div>
                 </div>
             </div>
         </section>
-
-
     );
 };
 

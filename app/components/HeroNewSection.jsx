@@ -31,7 +31,7 @@ export default function HeroNewSection() {
 
 
                     <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <button className="flex text-[21px] cursor-pointer items-center justify-center gap-2 bg-[#e07a5f] hover:bg-[#d96c50] px-6 py-2 rounded-lg font-[400]">
+                        <button className="flex text-[21px] cursor-pointer items-center justify-center gap-2 bg-[#e07a5f] border border-[#e07a5f] hover:bg-white hover:text-black transition px-6 py-2 rounded-lg font-[400]">
                             <FaPhoneAlt />
                             Call Us
                         </button>

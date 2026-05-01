@@ -15,10 +15,10 @@ export default function FaQ({ data }) {
       
       {/* Heading */}
       <div className="mb-10">
-        <p className="text-2xl text-[#7A1F3D] font-semibold tracking-wide uppercase">
+        <p className="text-2xl text-[#E57661] font-semibold tracking-wide uppercase">
           FAQ
         </p>
-        <h2 className="text-3xl md:text-5xl font-[500] text-[#0A243F] mt-4">
+        <h2 className="text-3xl md:text-5xl font-[500] text-[#2D2D2D] mt-4">
           Most asked questions
         </h2>
       </div>
@@ -35,13 +35,13 @@ export default function FaQ({ data }) {
             
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between text-left"
+                className="w-full flex items-center justify-between text-left group"
               >
-                <h3 className="text-lg md:text-[22px] cursor-pointer font-medium text-[#0A243F]">
+                <h3 className="text-lg md:text-[22px] cursor-pointer font-medium text-[#2D2D2D] group-hover:text-[#E57661] transition-colors">
                   {item.question}
                 </h3>
 
-                <span className="text-xl text-[#1c2b39] cursor-pointer">
+                <span className="text-xl text-[#E57661] cursor-pointer">
                    {isOpen ? <FiArrowUp /> : <FiArrowDown />}
                 </span>
               </button>

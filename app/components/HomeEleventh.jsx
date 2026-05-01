@@ -5,7 +5,7 @@ export default function HomeEleventh() {
     return (
         <section className="relative max-w-[1720px] mx-auto py-10 md:px-0 px-4 flex items-center overflow-hidden">
 
-            {/* Background Image */}
+            {/* Background Image - Reverted to mystical scene to remove baba from background */}
             <div className="absolute inset-0 -z-10">
                 <Image
                     src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776405311/mystical-numerology-scene_2_m39keo.png"
@@ -14,8 +14,8 @@ export default function HomeEleventh() {
                     className="object-cover"
                     priority
                 />
-                {/* Overlay for color tint */}
-                <div className="absolute inset-0 bg-[#B8645F]/60"></div>
+                {/* Reddish overlay to match the theme color */}
+                <div className="absolute inset-0 bg-[#B8645F]/80"></div>
             </div>
 
             {/* Content */}

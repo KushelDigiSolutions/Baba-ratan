@@ -9,6 +9,9 @@ const BASE_GEMSTONES = [
   {
     id: 1,
     name: "Ruby / Manik",
+    gemstone: "Ruby (Manik)",
+    planet: "Sun",
+    purpose: "Success",
     isCertified: true,
     tags: ["Wealth", "Success"],
     image: "https://res.cloudinary.com/daup99ghe/image/upload/v1776751680/Ruby_Manik_xhvk84.png",
@@ -19,6 +22,9 @@ const BASE_GEMSTONES = [
   {
     id: 2,
     name: "Blue Sapphire / Neelam",
+    gemstone: "Blue Sapphire (Neelam)",
+    planet: "Saturn",
+    purpose: "Wealth and Fortune",
     isCertified: false,
     tags: ["Discipline"],
     image: "https://res.cloudinary.com/daup99ghe/image/upload/v1776751679/Blue_Sapphire_Neelam_ovbhn5.png",
@@ -29,6 +35,9 @@ const BASE_GEMSTONES = [
   {
     id: 3,
     name: "Emerald / Panna",
+    gemstone: "Emerald (Panna)",
+    planet: "Mercury",
+    purpose: "Career",
     isCertified: true,
     tags: ["Wisdom"],
     image: "https://res.cloudinary.com/daup99ghe/image/upload/v1776753945/Emerald_Panna_oqa6uw.png",
@@ -39,6 +48,9 @@ const BASE_GEMSTONES = [
   {
     id: 4,
     name: "Yellow Sapphire / Pukhraj",
+    gemstone: "Yellow Sapphire",
+    planet: "Jupiter",
+    purpose: "Wealth and Fortune",
     isCertified: true,
     tags: ["Prosperity"],
     image: "https://res.cloudinary.com/daup99ghe/image/upload/v1776753944/Yellow_Sapphire_Pukhraj_ddkt9o.png",
@@ -49,6 +61,9 @@ const BASE_GEMSTONES = [
   {
     id: 5,
     name: "Pearl / Moti",
+    gemstone: "Pearl (Moti)",
+    planet: "Moon",
+    purpose: "Health",
     isCertified: false,
     tags: ["Peace"],
     image: "https://res.cloudinary.com/daup99ghe/image/upload/v1776753943/Pearl_Moti_zeplzm.png",
@@ -71,7 +86,7 @@ const ALL_GEMSTONES = Array.from({ length: 36 }).map((_, index) => {
 
 const ITEMS_PER_PAGE = 6;
 
-const ShopMainSection = () => {
+const ShopMainSection = ({ selectedFilters = { Purpose: '', Planet: '', Gemstone: '' } }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -82,15 +97,27 @@ const ShopMainSection = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const totalPages = Math.ceil(ALL_GEMSTONES.length / ITEMS_PER_PAGE);
+  // Filter logic
+  const filteredProducts = ALL_GEMSTONES.filter(product => {
+    const matchesPurpose = !selectedFilters.Purpose || product.purpose === selectedFilters.Purpose;
+    const matchesPlanet = !selectedFilters.Planet || product.planet === selectedFilters.Planet;
+    const matchesGemstone = !selectedFilters.Gemstone || product.gemstone === selectedFilters.Gemstone;
+    return matchesPurpose && matchesPlanet && matchesGemstone;
+  });
+
+  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+
+  // Reset to page 1 when filters change
+  React.useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedFilters]);
 
   // Get current page items
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const currentItems = ALL_GEMSTONES.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  const currentItems = filteredProducts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
-    // Removed scrollTo to prevent the "jump" to top
   };
 
   return (
@@ -141,9 +168,14 @@ const ShopMainSection = () => {
 
         {/* 🛍️ Bottom Catalog Grid */}
         <div className="max-w-[1400px] mx-auto  pb-20">
-          {isMobile ? (
+          {filteredProducts.length === 0 ? (
+            <div className="text-center py-20 bg-white/50 rounded-[30px] border border-dashed border-gray-300">
+              <h3 className="text-2xl font-[500] text-gray-400">No products found matching these filters.</h3>
+              <p className="text-gray-400 mt-2">Try selecting a different category or gemstone.</p>
+            </div>
+          ) : isMobile ? (
             <div className="md:hidden">
-              <MobileSlider items={ALL_GEMSTONES} />
+              <MobileSlider items={filteredProducts} />
             </div>
           ) : (
             <>
@@ -161,11 +193,13 @@ const ShopMainSection = () => {
                 })}
               </div>
 
-              <ShopPagination
-                currentPage={currentPage}
-                totalPages={totalPages}
-                onPageChange={handlePageChange}
-              />
+              {totalPages > 1 && (
+                <ShopPagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={handlePageChange}
+                />
+              )}
             </>
           )}
         </div>
