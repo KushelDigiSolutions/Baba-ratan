@@ -40,11 +40,13 @@ const ShopHeaderSection = ({ selectedFilters, setSelectedFilters }) => {
     };
 
     return (
-        <section className="relative w-full pt-16 pb-20 overflow-hidden">
+        <section className="relative w-full pt-16 pb-20">
             {/* Background Decorative Elements */}
-            <div className="absolute top-0 left-0 w-full h-full opacity-40 pointer-events-none">
-                <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-orange-100 blur-[120px]"></div>
-                <div className="absolute bottom-[10%] right-[-5%] w-[40%] h-[40%] rounded-full bg-yellow-50 blur-[100px]"></div>
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute top-0 left-0 w-full h-full opacity-40">
+                    <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-orange-100 blur-[120px]"></div>
+                    <div className="absolute bottom-[10%] right-[-5%] w-[40%] h-[40%] rounded-full bg-yellow-50 blur-[100px]"></div>
+                </div>
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">

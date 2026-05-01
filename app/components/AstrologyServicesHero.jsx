@@ -23,9 +23,14 @@ const AstrologyServicesHero = () => {
                         <button className="w-full sm:w-[240px] flex items-center justify-center bg-[#E57661] text-white py-3.5 rounded-full text-lg font-[300] cursor-pointer transition-all duration-300 hover:bg-white hover:text-[#E57661] hover:-translate-y-0.5 shadow-[0_4px_15px_rgba(229,118,97,0.2)] hover:shadow-[0_6px_20px_rgba(229,118,97,0.3)]">
                             Start Your Reading
                         </button>
-                        <button className="w-full sm:w-[240px] flex items-center justify-center bg-transparent text-[#2D2D2D] border border-[#E57661] py-3.5 rounded-full text-lg font-[500] cursor-pointer transition-all duration-300 hover:bg-[#E57661] hover:border-[#E57661] hover:text-white hover:-translate-y-0.5">
+                        <a 
+                            href="https://wa.me/918595046368"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full sm:w-[240px] flex items-center justify-center bg-transparent text-[#2D2D2D] border border-[#E57661] py-3.5 rounded-full text-lg font-[500] cursor-pointer transition-all duration-300 hover:bg-[#E57661] hover:border-[#E57661] hover:text-white hover:-translate-y-0.5"
+                        >
                             Whatsapp
-                        </button>
+                        </a>
                     </div>
                 </div>
 

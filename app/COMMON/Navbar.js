@@ -230,7 +230,7 @@ export default function Navbar() {
                     <div className="top-links desktop-only">
                         <span><BiSolidUser size={20} /> Account</span>
                         <span><FaHeart size={20} /> Wishlist</span>
-                        <Link href="/cart" className="flex items-center gap-1 hover:text-[#E57661] transition-colors">
+                        <Link href="/cart" className="flex items-center gap-1">
                             <div className="relative">
                                 <HiShoppingCart size={20} />
                                 {cartCount > 0 && (
