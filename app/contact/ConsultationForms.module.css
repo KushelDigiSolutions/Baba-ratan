@@ -165,3 +165,44 @@
     gap: 24px;
   }
 }
+
+.contactInfo {
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 20px;
+  background-color: #F9FAFB;
+  border-radius: 16px;
+  border: 1.5px solid #E5E7EB;
+}
+
+.contactInfo h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #78716C;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contactInfo p {
+  font-size: 16px;
+  color: #1F2937;
+  font-weight: 500;
+}
+
+.contactInfo p span {
+  font-style: italic;
+  color: #6B7280;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.sectionHeading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #E57661;
+  display: inline-block;
+  padding-bottom: 4px;
+}

@@ -7,19 +7,19 @@ const cards = [
     {
         title: "Vastu Consulting",
         subtitle: "Home, Office, Commercial",
-        desc: "Designing entryways that invite 'Prana', ensuring your environment breathes with vitality and creative spark.",
+        desc: "Correct your home, office, or factory energy with expert Vastu consulting by Pandit Vishal Johari, a trusted Vastu consultant in Delhi NCR for 15+ years.",
         img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502026/Vastu_Consulting_mqvg6c.png",
     },
     {
         title: "Astrology Services",
         subtitle: "Kundli, Career, Marriage",
-        desc: "Designing entryways that invite 'Prana', ensuring your environment breathes with vitality and creative spark.",
+        desc: "Get accurate Janam Kundli analysis, Kundli matching, and Vedic astrology consultation from the best astrologer in India, available both online and offline.",
         img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502027/Astrology_Services_gjnnhj.png",
     },
     {
         title: "Personalized Remedies",
         subtitle: "",
-        desc: "Designing entryways that invite 'Prana', ensuring your environment breathes with vitality and creative spark.",
+        desc: "Gemstones, mantras, and practical solutions recommended personally by Pandit Vishal Johari based on your Janam Kundli and planetary positions for real, lasting results. ",
         img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502027/Personalized_Remedies_zwahiu.png",
     },
 ];
@@ -38,7 +38,7 @@ export default function AboutFifth() {
         const scroll = () => {
             if (!isPaused) {
                 scrollContainer.scrollLeft += scrollSpeed;
-                
+
                 // Infinite loop: reset to start when reaching halfway
                 if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
                     scrollContainer.scrollLeft = 0;
@@ -60,13 +60,13 @@ export default function AboutFifth() {
                     What We Do
                 </h3>
                 <p className="text-[#303030] mt-5 max-w-[650px] text-[21px] mx-auto">
-                    We focus on identifying problems and providing practical solutions
-                    without unnecessary changes.
+                    We focus on accurate Vedic astrology consultation and Janam Kundli analysis, giving honest, practical solutions without unnecessary remedies.
+
                 </p>
             </div>
 
             {/* Slider Container */}
-            <div 
+            <div
                 ref={scrollRef}
                 className="relative group overflow-x-auto no-scrollbar"
                 onMouseEnter={() => setIsPaused(true)}
@@ -80,13 +80,13 @@ export default function AboutFifth() {
                             className="w-[280px] md:w-[360px] bg-white rounded-[40px]  p-6 mx-4 flex-shrink-0"
                         >
 
-                                <Image
-                                    src={card.img}
-                                    alt={card.title}
+                            <Image
+                                src={card.img}
+                                alt={card.title}
                                 width={300}
                                 height={300}
                                 className="object-contain w-full"
-                                />
+                            />
 
 
                             <h4 className="text-[24px] font-[500] mt-4 text-[#191C1D]">
@@ -95,8 +95,8 @@ export default function AboutFifth() {
 
                             {card.subtitle && (
                                 <p className="text-[15px] text-[#303030] mt-1">
-                                {card.subtitle}
-                            </p>
+                                    {card.subtitle}
+                                </p>
                             )}
 
                             <p className="text-[19px] text-[#303030] mt-4 leading-relaxed">

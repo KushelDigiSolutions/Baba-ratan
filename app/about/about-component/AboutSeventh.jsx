@@ -4,22 +4,22 @@ export default function AboutSeventh() {
     const cards = [
         {
             title: "Understanding",
-            desc: "Defining the core obstacles and spiritual misalignments within your current life path.",
+            desc: "Listening to your problems and identifying the root cause, whether it is a Janam Kundli blockage, Vastu dosh, or unfavourable planetary dasha.",
             icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776753211/Understanding_loeggv.png",
         },
         {
             title: "Detailed Analysis",
-            desc: "Decoding celestial patterns and Vastu energies using precise mathematical coordinates.",
+            desc: "Deep study of your birth chart, planetary positions, and dasha cycles using authentic Vedic astrology consultation methods.",
             icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776753211/Detailed_Analysis_t1u1xs.png",
         },
         {
             title: "Practical Solutions",
-            desc: "Delivering actionable blueprints and remedies tailored to your unique cosmic fingerprint.",
+            desc: "Clear, actionable remedies, gemstones, mantras, or Vastu corrections tailored specifically to your Kundli and life situation.",
             icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776753211/Practical_Solutions_m9cakf.png",
         },
         {
             title: "Continuous Guidance",
-            desc: "Ongoing support to ensure long-term harmony as celestial energies continue to evolve.",
+            desc: "Ongoing WhatsApp support from Pandit Vishal Johari the best astrologer in India to ensure lasting positive results in your life.",
             icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776753210/Continuous_Guidance_a5okxm.png",
         },
     ];
@@ -30,7 +30,7 @@ export default function AboutSeventh() {
             <div className="flex flex-col justify-center items-center text-center pt-5  pb-10 px-4">
 
                 <p className="text-[#E57661] text-sm md:text-base tracking-[0.2em] font-semibold mb-4 uppercase">
-                    THE COSMIC ARCHITECT
+                    PANDIT VISHAL JOHARI
                 </p>
 
                 <h5 className="text-3xl md:text-5xl font-[500] text-[#E57661] mb-5">
@@ -39,8 +39,7 @@ export default function AboutSeventh() {
 
                 <div className="text-[#303030] text-center w-full text-sm md:text-lg leading-relaxed">
                     <p className="max-w-[570px] mx-auto">
-                        A structured journey through ancient wisdom and mathematical precision
-                        to align your life's frequency.
+                        A simple, honest, and result-focused journey through Vedic astrology and Vastu Shastra to align your life with clarity and purpose.
                     </p>
                 </div>
 
@@ -81,16 +80,16 @@ export default function AboutSeventh() {
 
                     <div className=" absolute inset-0  p-6 flex flex-col justify-end">
                         <h5 className="text-white text-2xl md:text-3xl font-[400] mb-2">
-                            Scientific Spirituality
+                            Authentic Vedic Science
                         </h5>
                         <p className="text-[#FFFFFF] text-[16px] max-w-[400px]">
-                            Our methodology bridges the gap between ancient metaphysical laws and contemporary analytical frameworks.
+                            Our methodology bridges the gap between ancient Vedic laws and practical modern-day remedies.
                         </p>
                     </div>
                 </div>
 
                 <div className="bg-white rounded-2xl p-6 flex flex-col justify-center shadow-sm">
-                    <h5 className="text-[26px] font-[500] pl-10 mb-4">Aligned Results</h5>
+                    <h5 className="text-[26px] font-[500] pl-10 mb-4">Proven Impact</h5>
 
                     <ul className="space-y-3 text-[20px] pl-10">
                         <li className="flex items-center gap-2 text-[#303030]/90">
@@ -102,7 +101,7 @@ export default function AboutSeventh() {
                                 className="object-contain"
                             />
                             <span>
-                                <strong className="text-[22px]">98%</strong> Alignment Success
+                                <strong className="text-[22px]">99%</strong> Consultation Accuracy
                             </span>
                         </li>
 

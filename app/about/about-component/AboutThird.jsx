@@ -6,19 +6,21 @@ export default function AboutThird() {
   const data = [
     {
       title: "Mission",
-      desc: "To engineer high-integrity data environments that enable organizations to scale without friction and innovate without limits.",
+      desc: "To provide honest, accurate, and practical Vedic astrology consultation, Janam Kundli analysis, and Vastu consulting, helping every individual and family across India live a life of clarity, peace, and prosperity.",
       icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776500045/Mission_nldevz.png",
       bg: "bg-[#FFFFFF]",
       text: "text-[#303030]",
       linkColor: "text-[#E57661]",
+      btnText: "Call Now",
     },
     {
       title: "Vision",
-      desc: "Becoming the definitive foundation for the autonomous enterprise, where data flows as an invisible, intelligent utility.",
+      desc: "To become India's most trusted name in online astrology services and Vastu Shastra, where every person, from any corner of the world, can access the best astrologer in India, Pandit Vishal Johari, with ease.",
       icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776500045/Vision_bqc7zo.png",
       bg: "bg-[#E57661]",
       text: "text-white",
       linkColor: "text-white",
+      btnText: "Explore More",
     },
   ];
 
@@ -55,14 +57,15 @@ export default function AboutThird() {
 
             {/* Bottom Link */}
             <div className="mt-10">
-              <button
+              <a
+                href={item.btnText === "Call Now" ? "tel:+918595046368" : "#"}
                 className={`flex items-center cursor-pointer gap-2 text-sm md:text-base font-medium ${item.linkColor} group`}
               >
-                View Strategic Roadmap
+                {item.btnText}
                 <span className="transition-transform duration-300 group-hover:translate-x-2">
                   →
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         ))}

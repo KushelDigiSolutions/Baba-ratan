@@ -13,24 +13,24 @@ import DigitalBirthChart from '../components/DigitalBirthChart'
 const ServicesComponent = () => {
         const faqData = [
   {
-    question: "Who is the best business consultant in India?",
+    question: "Who is the best astrologer in India for Janam Kundli analysis?",
     answer:
-      "Shubham Gupta Business Consultant is known as one of the best business consultants in India, helping startups and companies grow with simple and effective strategies.",
+      "Pandit Vishal Johari of Bajrang Astro is one of the best astrologers in India, known for accurate Janam Kundli analysis, honest Vedic astrology consultation, and practical remedies that create real change in people's lives.",
   },
   {
-    question: "How can a business consultant help my business?",
+    question: "How can Vedic astrology consultation help my career and marriage?",
     answer:
-      "A business consultant like Shubham Gupta Business Consultant helps you improve your planning, fix problems, and grow your business step by step.",
+      "A detailed Janam Kundli analysis by Pandit Vishal Johari reveals the exact planetary reasons behind career blockages and delayed marriage, and gives you the right timing and remedies to overcome them through expert online astrology services.",
   },
   {
-    question: "Do you provide services in Noida and Delhi NCR?",
+    question: "Do you provide astrology services in Noida, Delhi NCR and Gurgaon?",
     answer:
-      "Yes, Shubham Gupta Business Consultant in Noida provides services across Delhi NCR and helps businesses grow with local market understanding.",
+      "Yes, Bajrang Astro provides Vedic astrology consultation across Delhi NCR, Noida, Gurgaon, Ghaziabad, and Meerut, both in-person and online via WhatsApp and video call. Palm reading in Delhi and Kundli analysis in Noida are available on same-day appointments.",
   },
   {
-    question: "Can I get a free consultation for my business?",
+    question: "Can I get a free astrology consultation with the best astrologer in India?",
     answer:
-      "Yes, you can contact Shubham Gupta Business Consultant to get a free consultation and understand how to improve your business.",
+      "Yes, you can connect with Pandit Vishal Johari at Bajrang Astro for a free initial chat on WhatsApp or call discuss your problem and get guidance on accurate Janam Kundli online or hast rekha reading right away.",
   },
 ];
     return (

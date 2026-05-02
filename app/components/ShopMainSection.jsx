@@ -147,22 +147,21 @@ const ShopMainSection = ({ selectedFilters = { Purpose: '', Planet: '', Gemstone
           </div>
           <div className="absolute inset-0 bg-[#B05B48]/90 z-0" />
 
-          <div className="relative z-10 max-w-2xl">
+          <div className="relative z-10 max-w-3xl">
             <h2 className="text-2xl md:text-3xl font-[600] text-white mb-5 leading-tight">
-              Not sure which gemstone is right for you?
+              Not sure which gemstone is right for your Kundli?
             </h2>
             <p className="text-white/80 text-md md:text-lg mb-8 leading-relaxed">
-              Consult with our Vedic experts to analyze your birth chart and find
-              the perfect stone to balance your energy.
+              Get a personalised gemstone recommendation from <span className="font-bold text-white">Pandit Vishal Johari</span>, based on your Janam Kundli analysis and planetary positions, for career, health, marriage, and financial growth.
             </p>
-            <button className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#B05B48] rounded-xl font-semibold text-sm md:text-base ">
-              Get Expert Recommendation
+            <a href="https://wa.me/918595046368" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#B05B48] rounded-xl font-semibold text-sm md:text-base ">
+              Free Chat Now
               <span> <img src="https://res.cloudinary.com/daup99ghe/image/upload/v1776765056/Get_Expert_Recommendation_dbbu4y.png" alt="arrow" className="w-4 h-4 object-contain" />
 
 
 
               </span>
-            </button>
+            </a>
           </div>
         </div>
 

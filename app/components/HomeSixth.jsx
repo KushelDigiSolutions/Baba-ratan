@@ -7,8 +7,8 @@ export default function HomeSixth(){
         
         {/* Heading */}
         <h5 className="text-2xl sm:text-3xl md:text-[38px] font-[500] text[#303030] leading-snug">
-          These issues may be a result of Vastu <br className="hidden sm:block" />
-          imbalance in your space.
+         These issues may be a result of Vastu <br className="hidden sm:block" />
+           imbalance in your space .
         </h5>
 
         {/* Buttons */}
@@ -16,11 +16,11 @@ export default function HomeSixth(){
           
 
           <button className="px-8 py-4 cursor-pointer rounded-lg bg-[#E57661] text-white font-[400] text-lg transition-all duration-300 hover:bg-white hover:text-[#E57661] border border-[#E57661]">
-            Discover the Root Cause
+           Find the Root Cause
           </button>
 
           <button className="px-8 py-4 cursor-pointer rounded-lg border bg-white border-[#E57661] text-[#E57661] font-[400] text-lg transition-all duration-300 hover:bg-[#E57661] hover:text-white">
-            Get Your Space Analyzed
+             Book Space Analysis
           </button>
 
         </div>

@@ -52,12 +52,11 @@ const ShopHeaderSection = ({ selectedFilters, setSelectedFilters }) => {
             <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-[500] text-[#2D2D2D] mb-4 tracking-[-0.03em] leading-[1.1]">
                     Find the Right Gemstone <br />
-                    for Your <span className="text-[#E57661] tracking-[-0.02em] font-[400]">Energy</span>
+                    for Your <span className="text-[#E57661] tracking-[-0.02em] font-[400]">Kundli</span>
                 </h1>
 
-                <p className="max-w-2xl mx-auto text-[#303030] text-sm sm:text-base md:text-lg leading-relaxed mb-10 md:mb-20 opacity-90">
-                    Ethically sourced, Vastu-certified gemstones meticulously curated to align with
-                    your planetary positions and spiritual intentions.
+                <p className="max-w-3xl mx-auto text-[#303030] text-sm sm:text-base md:text-lg leading-relaxed mb-10 md:mb-20 opacity-90">
+                    100% certified, naturally sourced gemstones, personally recommended by <span className="font-semibold text-black">Pandit Vishal Johari</span> at <span className="font-semibold text-black">Bajrang Astro</span> based on your <span className="font-semibold text-black">Janam Kundli</span> and planetary positions for maximum positive impact.
                 </p>
 
                 {/* Filter Bar */}

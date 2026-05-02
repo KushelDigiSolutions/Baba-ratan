@@ -15,15 +15,15 @@ export default function GemBanner() {
                 </p>
 
                 <div className="cta-buttons">
-                    <button className="btn primary">
+                    <a href="tel:+918595046368" className="btn primary">
                         <IoCall className="btn-icon" />
                         Call Us
-                    </button>
+                    </a>
 
-                    <button className="btn outline">
+                    <a href="https://wa.me/918595046368" target="_blank" rel="noopener noreferrer" className="btn outline">
                         <FaWhatsapp className="btn-icon" />
                         Chat Now
-                    </button>
+                    </a>
                 </div>
 
                 <div className="reviews">

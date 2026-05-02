@@ -13,8 +13,8 @@ export default function HomeFifth() {
                 </>
             ), icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Constantnegativeenergy_m6t30w.png"
         },
-        { text: "Repeated failures", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
-        { text: "Repeated failures", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
+        { text: "Repeated failures in career", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
+        { text: "Conflicts in relationships", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
     ];
 
     return (
@@ -32,13 +32,12 @@ export default function HomeFifth() {
                 {/* Heading */}
                 <div className="text-center mb-12">
                     <h5 className="text-2xl md:text-[35px] font-[500] text-black">
-                        Facing These Challenges in Your <br className="hidden md:block" />
-                        Life or Business?
+                       Struggling in Your Life or Business? 
+
                     </h5>
 
-                    <p className="mt-4 text-[#303030] text-[16px] md:text-[23px] font-[400] max-w-[700px] mx-auto">
-                        Sometimes, the problems we face are not just external they may be
-                        rooted in the energy of our space.
+                    <p className="mt-4 text-[#303030] text-[16px] md:text-[23px] font-[400] max-w-[850px] mx-auto">
+                        Most problems we face are not just bad luck they may be silently caused by <span className="font-bold">Vastu imbalances</span> or unfavourable planetary positions in your <span className="font-bold">Janam Kundli.</span>
                     </p>
                 </div>
 

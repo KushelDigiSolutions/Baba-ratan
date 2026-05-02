@@ -8,28 +8,22 @@ export default function VastuSeveth() {
 
                 {/* LEFT CONTENT */}
                 <div>
-                    <h5 className="text-4xl md:text-[26px] max-w-[400px] lg:text-5xl font-[500] text-[#222] ">
-                        Ancient Rigor.
-
-                        Modern <span className="text-[#E57661]">Soul.</span>
+                    <h5 className="text-4xl md:text-[26px] max-w-[500px] lg:text-5xl font-[500] text-[#222] ">
+                        Centuries of Wisdom. Practical <span className="text-[#E57661]">Results.</span>
                     </h5>
 
                     <p className="mt-6 text-[#303030] text-lg md:text-[20px] leading-relaxed max-w-[500px]">
-                        We don't just move furniture; we recalibrate destiny.
-                        Our methodology blends traditional Vedic texts with
-                        modern architectural principles.
+                        Pandit Vishal Johari at Bajrang Astro doesn't just rearrange your space he identifies the root energy blocks and corrects them using authentic Vastu Shastra principles combined with today's practical approach.
                     </p>
 
                     {/* POINTS */}
                     <div className="mt-8 space-y-4">
                         <div className="flex items-center gap-4">
                             <div className="w-10 h-10 rounded-full bg-[#e07a5f] flex items-center justify-center">
-
                                 <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842224/15_Years_of_Proven_Spatial_Alchemy_kh84hf.png" width={30} height={30} alt="" />
-
                             </div>
-                            <p className="text-[#303030] font-[400]">
-                                15+ Years of Proven Spatial Alchemy
+                            <p className="text-[#303030] font-[400] text-lg">
+                                15+ Years of Trusted Vastu Expertise
                             </p>
                         </div>
 
@@ -37,31 +31,29 @@ export default function VastuSeveth() {
                             <div className="w-10 h-10 rounded-full bg-[#e07a5f] flex items-center justify-center">
                                 <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842224/15_Years_of_Proven_Spatial_Alchemy_kh84hf.png" width={30} height={30} alt="" />
                             </div>
-                            <p className="text-[#303030] font-[400]">
-                                2,500+ Spaces Harmonized Globally
+                            <p className="text-[#303030] font-[400] text-lg">
+                                1000+ Homes & Businesses Transformed Across India
                             </p>
                         </div>
                     </div>
                 </div>
 
                 {/* RIGHT CARDS */}
-                {/* RIGHT CARDS */}
                 <div className="relative flex justify-center flex-col md:pb-25 items-center gap-10 md:transform md:-translate-y-10 md:translate-x-9 lg:justify-end ">
 
                     {/* TOP CARD */}
                     <div className="relative z-10 md:h-[380px] bg-white rounded-3xl p-6 md:p-10 w-[280px] sm:w-[320px] md:w-[480px] shadow-[0_20px_60px_rgba(0,0,0,0.15)]">
 
-                           <div className="mb-4 text-[#e07a5f] text-2xl">
+                        <div className="mb-4 text-[#e07a5f] text-2xl">
                             <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842225/Scientific_Precision_taxxwp.png" width={20} height={20} alt="Scientific_Precision_" />
                         </div>
 
                         <h5 className="text-xl md:text-2xl font-[500] text-[#222]">
-                            Scientific Precision
+                            Accurate & Systematic Analysis
                         </h5>
 
-                        <p className="mt-3 text-[#303030] leading-relaxed">
-                            Using digital compass mapping and energy flow
-                            modeling software to ensure zero-margin error.
+                        <p className="mt-3 text-[#303030] text-lg leading-relaxed">
+                            Using precise directional mapping to ensure zero-margin error in every Vastu correction.
                         </p>
                     </div>
 
@@ -78,13 +70,11 @@ export default function VastuSeveth() {
                         </div>
 
                         <h5 className="text-xl md:text-2xl font-[500]">
-                            Deep Spiritual Rooting
+                            Rooted in Original Vastu Shastra
                         </h5>
 
-                        <p className="mt-3 text-[#FFFFFF]/90 max-w-[360px] leading-relaxed">
-                            Every recommendation is cross-referenced with
-                            the original Vastu Shastra scriptures for
-                            absolute authenticity.
+                        <p className="mt-3 text-[#FFFFFF]/90 text-lg max-w-[360px] leading-relaxed">
+                            Every recommendation is cross-referenced with authentic Vedic Vastu scriptures for absolute accuracy.
                         </p>
                     </div>
 

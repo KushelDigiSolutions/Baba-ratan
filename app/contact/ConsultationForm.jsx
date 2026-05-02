@@ -50,7 +50,10 @@ export default function ConsultationForm() {
       newErrors.serviceType = "Please select a service";
     }
 
-    if (serviceType === "astrology") {
+    const isAstrology = ["Janam Kundli Analysis", "Palm Reading", "Kundli Matching"].includes(serviceType);
+    const isVastu = ["Vastu Consulting — Home", "Vastu Consulting — Office", "Vastu Consulting — Factory"].includes(serviceType);
+
+    if (isAstrology) {
       if (!formData.dob) newErrors.dob = "Date of Birth is required";
       if (!formData.tob) newErrors.tob = "Time of Birth is required";
       if (!formData.pob) newErrors.pob = "Place of Birth is required";
@@ -58,7 +61,7 @@ export default function ConsultationForm() {
       if (!formData.message) newErrors.message = "Message is required";
     }
 
-    if (serviceType === "vastu") {
+    if (isVastu) {
       if (!formData.layoutPlan) newErrors.layoutPlan = "Layout Plan is required";
       if (!formData.googleLocation) newErrors.googleLocation = "Google Location is required";
       if (!formData.propertyEntrance) newErrors.propertyEntrance = "Property Entrance is required";
@@ -119,11 +122,17 @@ export default function ConsultationForm() {
           <h1 className={styles.title}>Consultation <span>Request</span></h1>
 
           <p className={styles.subtitle}>
-            Align your journey with celestial wisdom. Choose your service to begin.
+            Start your journey with Pandit Vishal Johari. Choose your service and take the first step today.
           </p>
+
+          <div className={styles.contactInfo}>
+            <h2>Contact Information</h2>
+            <p>Pandit Vishal Johari <span>(Vedic Astrologer & Vastu Consultant)</span></p>
+          </div>
 
           <form className={styles.form} onSubmit={handleSubmit} noValidate>
             {/* COMMON FIELDS */}
+            <h3 className={styles.sectionHeading}>Talk to Experts Astrologer</h3>
 
             <div className={styles.row}>
               <div className={styles.formGroup}>
@@ -179,15 +188,19 @@ export default function ConsultationForm() {
                   onChange={handleServiceChange}
                 >
                   <option value="">Choose a service</option>
-                  <option value="astrology">Astrology</option>
-                  <option value="vastu">Vastu</option>
+                  <option value="Janam Kundli Analysis">Janam Kundli Analysis</option>
+                  <option value="Palm Reading">Palm Reading</option>
+                  <option value="Vastu Consulting — Home">Vastu Consulting — Home</option>
+                  <option value="Vastu Consulting — Office">Vastu Consulting — Office</option>
+                  <option value="Vastu Consulting — Factory">Vastu Consulting — Factory</option>
+                  <option value="Kundli Matching">Kundli Matching</option>
                 </select>
                 {errors.serviceType && <p className={styles.errorText}>{errors.serviceType}</p>}
               </div>
             </div>
 
             {/* ASTROLOGY */}
-            {serviceType === "astrology" && (
+            {["Janam Kundli Analysis", "Palm Reading", "Kundli Matching"].includes(serviceType) && (
               <>
                 <div className={styles.row}>
                   <div className={styles.formGroup}>
@@ -257,7 +270,7 @@ export default function ConsultationForm() {
                   <textarea
                     name="message"
                     rows="3"
-                    placeholder="Write your questions..."
+                    placeholder="Write your questions or concerns..."
                     value={formData.message}
                     onChange={handleInputChange}
                   ></textarea>
@@ -267,7 +280,7 @@ export default function ConsultationForm() {
             )}
 
             {/* VASTU */}
-            {serviceType === "vastu" && (
+            {["Vastu Consulting — Home", "Vastu Consulting — Office", "Vastu Consulting — Factory"].includes(serviceType) && (
               <>
                 <div className={styles.row}>
                   <div className={styles.formGroup}>
@@ -325,10 +338,9 @@ export default function ConsultationForm() {
                     Message <span>*</span>
                   </label>
                   <textarea
-                    
                     name="message"
                     rows="3"
-                    placeholder="Describe your vastu concerns..."
+                    placeholder="Describe your vastu concerns or specific problems..."
                     value={formData.message}
                     onChange={handleInputChange}
                   ></textarea>
@@ -339,7 +351,7 @@ export default function ConsultationForm() {
 
             {serviceType && (
               <button type="submit" className={styles.submitBtn}>
-                Submit Request
+                Book Free Consultation
               </button>
             )}
           </form>

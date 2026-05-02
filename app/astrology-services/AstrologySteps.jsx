@@ -45,24 +45,24 @@ export default function AstrologySteps() {
     <section className="relative py-16 md:py-24 bg-[#FCF8F4] overflow-hidden">
       {/* Background Decorative Path (Zigzag line) */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-full">
-            <Image
-              src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922599/Three_Steps_to_Alignment_wnxvae.png"
-              alt="path"
-              fill
-              className="object-contain opacity-20"
-            />
-         </div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-full">
+          <Image
+            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922599/Three_Steps_to_Alignment_wnxvae.png"
+            alt="path"
+            fill
+            className="object-contain opacity-20"
+          />
+        </div>
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-[40px] font-bold text-[#303030] mb-16 md:mb-24">
-          Three Steps to Alignment
+          Three Steps to Your Reading
         </h2>
 
         <div className="space-y-24 md:space-y-40">
           {/* STEP 1 */}
-          <div 
+          <div
             ref={step1Ref}
             className="flex flex-col md:flex-row items-center gap-12 md:gap-20"
           >
@@ -70,11 +70,10 @@ export default function AstrologySteps() {
             <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out ${visibleSteps.step1 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
               <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">01</div>
               <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
-                Input Birth Data
+                Share Your Birth Details
               </h3>
               <p className="text-[#303030]/80 text-lg leading-relaxed">
-                Precise GPS coordinates and exact birth time ensure your chart is
-                mathematically perfect down to the last degree.
+                Simply provide your date, time, and place of birth, and Pandit Vishal Johari will prepare your accurate Janam Kundli for a complete Vedic astrology consultation.
               </p>
             </div>
 
@@ -92,7 +91,7 @@ export default function AstrologySteps() {
           </div>
 
           {/* STEP 2 */}
-          <div 
+          <div
             ref={step2Ref}
             className="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-20"
           >
@@ -100,11 +99,10 @@ export default function AstrologySteps() {
             <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out ${visibleSteps.step2 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
               <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">02</div>
               <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
-                Planetary Analysis
+                Deep Kundli Analysis
               </h3>
               <p className="text-[#303030]/80 text-lg leading-relaxed">
-                Our proprietary engine calculates real-time transits against your
-                static natal chart to identify critical life themes.
+                Every planet, house, and dasha in your birth chart is studied in detail identifying the root cause of challenges in your career, marriage, health, and finances.
               </p>
             </div>
 
@@ -122,7 +120,7 @@ export default function AstrologySteps() {
           </div>
 
           {/* STEP 3 */}
-          <div 
+          <div
             ref={step3Ref}
             className="flex flex-col md:flex-row items-center gap-12 md:gap-20"
           >
@@ -130,11 +128,10 @@ export default function AstrologySteps() {
             <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out ${visibleSteps.step3 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
               <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">03</div>
               <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
-                Personalized Remedies
+                Personalised Remedies
               </h3>
               <p className="text-[#303030]/80 text-lg leading-relaxed">
-                Receive actionable steps—from meditation to career moves—tailored
-                to your unique cosmic fingerprint.
+                You receive clear, practical remedies, gemstones, mantras, or timing guidance tailored specifically to your Kundli by the best astrologer in India.
               </p>
             </div>
 
@@ -154,8 +151,8 @@ export default function AstrologySteps() {
 
         {/* CTA BUTTON */}
         <div className={`flex justify-center mt-20 md:mt-32 transition-all duration-1000 delay-500 ${visibleSteps.step3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <button className="bg-[#E57661] text-white px-12 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-[#d96552] hover:scale-105 transition-all duration-300">
-            Start Your Chart
+          <button className="bg-[#E57661] text-white px-12 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-[#d96552] hover:scale-105 transition-all duration-300 cursor-pointer">
+            Book Your Reading
           </button>
         </div>
       </div>

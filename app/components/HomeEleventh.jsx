@@ -24,16 +24,12 @@ export default function HomeEleventh() {
                 {/* LEFT TEXT */}
                 <div className="text-white space-y-6 xl:px-0 px-10">
                     <h6 className="text-3xl sm:text-4xl md:text-5xl max-w-[600px]  font-[500] leading-tight">
-                        Get a Glimpse into Your
-                        Future with Our Accurate
-                        Astrology Predictions
+                        Discover What the Stars & Your Hands Reveal About Your Future
+
                     </h6>
 
                     <p className="text-sm sm:text-base md:text-2xl text-white leading-relaxed max-w-[600px]">
-                        Ruled by Mercury, there are a little commons between Gemini and Cancer.
-                        It’s all about being heard and read. There, the similarities end,
-                        however. The body, mind and spirit can’t be separated and it’s physical
-                        being which dictates spiritual contentment.
+                        At <span className="font-semibold text-white">Bajrang Astro</span>, every <span className="font-semibold text-white">Janam Kundli</span> and <span className="font-semibold text-white">palm reading</span> session is deeply personal. We don't give generic predictions, we study your unique planetary positions and hand lines to give you honest, accurate guidance that actually helps you make better life decisions.
                     </p>
                 </div>
 

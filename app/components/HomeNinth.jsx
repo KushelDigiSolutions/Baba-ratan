@@ -8,12 +8,12 @@ export default function HomeNinth() {
         
         {/* Heading */}
         <h6 className="text-2xl md:text-6xl font-[500]  mb-6">
-          Ready to Align Your Universe?
+          Ready to Change Your Life?
         </h6>
 
         {/* Description */}
         <p className="text-sm md:text-2xl text-white max-w-[800px] mx-auto mb-9 leading-relaxed">
-          Join <span className="font-semibold text-white">500+</span> professionals and families who have unlocked their space's true potential through Celestial Vastu.
+          Join <span className="font-semibold text-white">1000+</span> families and businesses across India who found clarity, peace, and growth through <span className="font-semibold text-white">Bajrang Astro</span> expert <span className="font-semibold text-white">Vastu, Kundli & Palm Reading</span> guidance.
         </p>
 
         {/* Button */}

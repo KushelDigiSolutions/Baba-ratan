@@ -27,11 +27,13 @@ const HomeSecond = () => {
                             </h2>
 
                             <p className="text-[#44474D] mb-6 leading-relaxed">
-                                Align your built environment with the five fundamental elements to optimize energy flow and catalyze success.
+                               Balance your home, office, or factory with the five fundamental elements of nature and watch how blocked energy transforms into growth, peace, and lasting success. 
+
                             </p>
 
                             <button className="text-[#E57661] text-[19px] flex items-center justify-center gap-2 hover:gap-3 transition-all">
-                                Discover Harmony →
+                            Explore Vastu Services 
+
                             </button>
                         </div>
 
@@ -77,12 +79,12 @@ const HomeSecond = () => {
                             </h2>
 
                             <p className="text-white mb-6 max-w-[400px] leading-relaxed">
-                                Decoding your celestial blueprint to navigate life's
-                                cycles with precision and foresight.
+                               Unlock the secrets written in your birth chart and the lines of your hands with accurate, honest readings that guide your biggest life decisions. 
+
                             </p>
 
                             <button className="flex items-center gap-2 hover:gap-3 transition-all text-[18px]">
-                                View Readings ↗
+                               Explore Astrology Services ↗
                             </button>
                         </div>
                     </div>
@@ -112,10 +114,12 @@ const HomeSecond = () => {
                             Gemstone & Spiritual Shop
                         </h3>
 
-                        <p className="text-[#44474D] max-w-[450px] md:text-[19px] mb-6">
-                            Curated alchemical tools, from high-frequency
-                            gemstones to precision-crafted brass pyramids,
-                            designed to amplify your energy alignment.
+                        <p className="text-[#44474D] max-w-[500px] md:text-[19px] mb-6 leading-relaxed">
+                            From certified natural gemstones to energised brass pyramids, every product is carefully selected to strengthen your aura and support your Vastu and astrology remedies.
+                        </p>
+
+                        <p className="text-[#44474D] max-w-[500px] md:text-[19px] mb-6 leading-relaxed">
+                            All products are 100% authentic, lab-tested, and energised before delivery.
                         </p>
 
                         <div className="flex gap-4 flex-wrap">

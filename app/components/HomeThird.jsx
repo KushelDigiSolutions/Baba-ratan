@@ -6,18 +6,17 @@ export default function HomeThird() {
       <div className=" flex flex-col items-center text-center ">
    
         <h3 className="text-3xl md:text-[40px] font-medium text-gray-800 leading-tight">
-          Modern Solutions Rooted in Ancient Wisdom
+         Real Guidance Backed by Centuries of Wisdom
         </h3>
 
-        <p className="mt-6 text-[#303030] text-base md:text-[20px] max-w-[680px] leading-relaxed font-[400]">
-          We combine the principles of Vastu Shastra and Astrology with a practical,
-          modern approach to help individuals and businesses achieve balance,
-          growth, and success.
+        <p className="mt-6 text-[#303030] text-base md:text-[20px] max-w-[850px] leading-relaxed font-[400]">
+          At <span className="font-semibold text-black">Bajrang Astro</span>, we blend the time-tested knowledge of <span className="font-semibold text-black">Janam Kundli</span>, <span className="font-semibold text-black">Palm Reading</span>, and <span className="font-semibold text-black">Vastu Shastra</span> with today's practical needs, helping families and businesses across <span className="font-semibold text-black">India</span> find clarity, remove obstacles, and build a life of peace and prosperity.
         </p>
 
         <div className="mt-8">
           <button className="bg-[#E57661] cursor-pointer text-white px-6 py-3 rounded-lg text-base md:text-[16px] font-medium transition-all duration-300 hover:bg-white hover:text-[#E57661] border border-[#E57661]">
-            Learn More About Us
+           Talk to Astrologer 
+
           </button>
         </div>
 

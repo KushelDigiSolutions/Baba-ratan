@@ -15,24 +15,24 @@ import AboutThird from "./about-component/AboutThird"
 const AboutComponent = () => {
      const faqData = [
   {
-    question: "Who is the best business consultant in India?",
+    question: "Who is Pandit Vishal Johari and why is he the best astrologer in India?",
     answer:
-      "Shubham Gupta Business Consultant is known as one of the best business consultants in India, helping startups and companies grow with simple and effective strategies.",
+      "Pandit Vishal Johari is the founder of Bajrang Astro, one of the best astrologers in India with 15+ years of experience in Janam Kundli analysis, Vedic astrology consultation, and palm reading, trusted by 1000+ clients across India.",
   },
   {
-    question: "How can a business consultant help my business?",
+    question: "What makes Bajrang Astro different from other astrology services?",
     answer:
-      "A business consultant like Shubham Gupta Business Consultant helps you improve your planning, fix problems, and grow your business step by step.",
+      "At Bajrang Astro, every Vedic astrology consultation is 100% honest, personalised, and practical, with no fear tactics, no unnecessary remedies. Pandit Vishal Johari gives you real answers based on your exact Janam Kundli and life situation.",
   },
   {
-    question: "Do you provide services in Noida and Delhi NCR?",
+    question: "Do you provide online astrology services across India?",
     answer:
-      "Yes, Shubham Gupta Business Consultant in Noida provides services across Delhi NCR and helps businesses grow with local market understanding.",
+      "Yes, Bajrang Astro provides online astrology services pan-India including accurate Janam Kundli online, hast rekha reading, and Kundli matching via WhatsApp and video call from anywhere in India or abroad.",
   },
   {
-    question: "Can I get a free consultation for my business?",
+    question: "Can I get a free consultation with Pandit Vishal Johari?",
     answer:
-      "Yes, you can contact Shubham Gupta Business Consultant to get a free consultation and understand how to improve your business.",
+      "Yes, you can connect with Pandit Vishal Johari for a free initial chat discuss your problem and get guidance on the right Vedic astrology or Vastu consulting service for your specific situation.",
   },
 ];
   return (

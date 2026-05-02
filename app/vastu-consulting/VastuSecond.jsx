@@ -2,27 +2,33 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-const data = [
-    {
-        title: "Financial Stagnation",
-        desc: "Blocked North-East sectors lead to missed opportunities and wealth leakage.",
-        icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776765195/Financial_Stagnation_y4rxrm.png",
-    },
-    {
-        title: "Mental Fog",
-        desc: "Improper spatial orientation causes restless sleep and lack of focus",
-        icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776765195/Mental_Fog_fcoph6.png",
-    },
-    {
-        title: "Fading Health",
-        desc: "Poor kitchen placement disrupts the fire element, affecting vitality.",
-        icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776765172/Fading_Health_sfqqoy.png",
-    },
-];
+
 
 export default function VastuSecond() {
     const sectionRef = useRef(null);
     const [scrollPercentage, setScrollPercentage] = useState(0);
+
+    const data = [
+        {
+            title: "Financial Stagnation",
+            desc: "Wrong North zone placement in your home blocks wealth flow, causing money to come in but never stay. A trusted Vastu consultant in Delhi can fix this.",
+            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776765195/Financial_Stagnation_y4rxrm.png",
+        },
+        {
+            title: "Mental Fog & Stress",
+            desc: "Incorrect bedroom direction disturbs your sleep, reduces focus, and creates constant anxiety, all signs of a Vastu imbalance in your living space.",
+            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776765195/Mental_Fog_fcoph6.png",
+        },
+        {
+            title: "Declining Health",
+            desc: (
+                <>
+                    A poorly placed kitchen or bathroom in the wrong zone disrupts the fire element — directly affecting the health and energy of everyone in the house.
+                </>
+            ),
+            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776765172/Fading_Health_sfqqoy.png",
+        },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -57,12 +63,12 @@ export default function VastuSecond() {
             {/* HEADER */}
             <div className={`text-center mb-16 transition-all duration-1000 ${scrollPercentage > 0 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                 <h2 className="text-3xl md:text-[36px] font-[500] text-[#2D2D2D]">
-                    Is your home working{" "}
+                    Is your space working{" "}
                     <span className="text-[#E57661]">against</span> you?
                 </h2>
 
                 <p className="mt-4 text-[16px] md:text-[22px] text-[#303030] max-w-2xl mx-auto">
-                    Unseen blockages in your space manifest as tangible obstacles in your life.
+                    Hidden Vastu doshas in your home or office silently create real problems in your daily life without you even realising it.
                 </p>
             </div>
 
