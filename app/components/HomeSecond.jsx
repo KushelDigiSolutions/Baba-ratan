@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const HomeSecond = () => {
     return (
@@ -31,10 +32,9 @@ const HomeSecond = () => {
 
                             </p>
 
-                            <button className="text-[#E57661] text-[19px] flex items-center justify-center gap-2 hover:gap-3 transition-all">
-                            Explore Vastu Services 
-
-                            </button>
+                            <Link href="/vastu-consulting" className="text-[#E57661] text-[19px] flex items-center justify-center gap-2 hover:gap-3 transition-all">
+                            Explore Vastu Services ↗
+                            </Link>
                         </div>
 
                         {/* Right Bottom Image */}
@@ -83,9 +83,9 @@ const HomeSecond = () => {
 
                             </p>
 
-                            <button className="flex items-center gap-2 hover:gap-3 transition-all text-[18px]">
+                            <Link href="/astrology-services" className="flex items-center gap-2 hover:gap-3 transition-all text-[18px]">
                                Explore Astrology Services ↗
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -123,13 +123,13 @@ const HomeSecond = () => {
                         </p>
 
                         <div className="flex gap-4 flex-wrap">
-                            <button className="bg-[#E57661]  cursor-pointer rounded-[6px] text-white px-10 py-5 hover:bg-white hover:text-[#E57661] border border-[#E57661]  ">
+                            <Link href="/shop" className="bg-[#E57661] cursor-pointer rounded-[6px] text-white px-10 py-5 hover:bg-white hover:text-[#E57661] border border-[#E57661]">
                                 Shop Collection
-                            </button>
+                            </Link>
 
-                            <button className="border border-[#E57661] cursor-pointer rounded-[6px] text-[#E57661] px-10 py-5 hover:bg-[#E57661] hover:text-white  ">
+                            <Link href="/shop" className="border border-[#E57661] cursor-pointer rounded-[6px] text-[#E57661] px-10 py-5 hover:bg-[#E57661] hover:text-white">
                                 Authenticity Guide
-                            </button>
+                            </Link>
                         </div>
                     </div>
 

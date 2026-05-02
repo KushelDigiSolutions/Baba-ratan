@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link'
 export default function HomeThird() {
   return (
     <section className="max-w-[1720px] mx-auto bg-white py-16 px-4 flex items-center justify-center">
@@ -14,10 +15,14 @@ export default function HomeThird() {
         </p>
 
         <div className="mt-8">
-          <button className="bg-[#E57661] cursor-pointer text-white px-6 py-3 rounded-lg text-base md:text-[16px] font-medium transition-all duration-300 hover:bg-white hover:text-[#E57661] border border-[#E57661]">
-           Talk to Astrologer 
-
-          </button>
+          <a
+            href="https://wa.me/918595046368"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#E57661] cursor-pointer text-white px-6 py-3 rounded-lg text-base md:text-[16px] font-medium transition-all duration-300 hover:bg-white hover:text-[#E57661] border border-[#E57661]"
+          >
+           Talk to Astrologer
+          </a>
         </div>
 
       </div>

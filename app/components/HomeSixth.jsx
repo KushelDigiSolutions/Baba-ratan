@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 export default function HomeSixth(){
   return (
@@ -15,13 +16,13 @@ export default function HomeSixth(){
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           
 
-          <button className="px-8 py-4 cursor-pointer rounded-lg bg-[#E57661] text-white font-[400] text-lg transition-all duration-300 hover:bg-white hover:text-[#E57661] border border-[#E57661]">
+          <Link href="/vastu-consulting" className="px-8 py-4 cursor-pointer rounded-lg bg-[#E57661] text-white font-[400] text-lg transition-all duration-300 hover:bg-white hover:text-[#E57661] border border-[#E57661]">
            Find the Root Cause
-          </button>
+          </Link>
 
-          <button className="px-8 py-4 cursor-pointer rounded-lg border bg-white border-[#E57661] text-[#E57661] font-[400] text-lg transition-all duration-300 hover:bg-[#E57661] hover:text-white">
+          <Link href="/contact" className="px-8 py-4 cursor-pointer rounded-lg border bg-white border-[#E57661] text-[#E57661] font-[400] text-lg transition-all duration-300 hover:bg-[#E57661] hover:text-white">
              Book Space Analysis
-          </button>
+          </Link>
 
         </div>
       </div>

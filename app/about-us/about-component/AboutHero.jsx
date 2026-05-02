@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 export default function AboutHero() {
   return (
@@ -40,9 +41,9 @@ export default function AboutHero() {
         </p>
 
         <div className="flex justify-center">
-          <button className="bg-white text-[#b45c54] px-10 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-[#FCF8F4] hover:scale-105 transition-all duration-300 cursor-pointer">
+          <Link href="/contact" className="inline-block bg-white text-[#b45c54] px-10 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-[#FCF8F4] hover:scale-105 transition-all duration-300 cursor-pointer">
             Book Your Consultation
-          </button>
+          </Link>
         </div>
       </div>
     </section>

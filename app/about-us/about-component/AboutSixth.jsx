@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 export default function AboutSixth() {
@@ -57,7 +56,7 @@ export default function AboutSixth() {
             <div className="flex gap-4 items-start">
               <div className="bg-[#E57661] px-4 py-3 rounded-[10px] shrink-0">
                 <Image
-                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776508590/LIVE_INSIGHT_4_a1pn9u.png"
+                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776508590/LIVE_INSIGH_4T_a1pn9u.png"
                   alt="LIVE_INSIGH_4T"
                   width={20}
                   height={20}
@@ -108,6 +107,3 @@ export default function AboutSixth() {
     </section>
   );
 }
-
-
-

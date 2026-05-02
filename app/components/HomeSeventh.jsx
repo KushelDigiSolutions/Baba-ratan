@@ -172,9 +172,9 @@ export default function HomeSeventh() {
                                     </p>
 
                                     <a
-                                        href={index === 0 ? "tel:+918595046368" : "https://wa.me/918595046368"}
-                                        target={index === 0 ? "_self" : "_blank"}
-                                        rel={index === 0 ? "" : "noopener noreferrer"}
+                                        href={index === 0 ? "tel:+918595046368" : index === 1 ? "https://wa.me/918595046368" : "/contact"}
+                                        target={index === 1 ? "_blank" : "_self"}
+                                        rel={index === 1 ? "noopener noreferrer" : ""}
                                         className={`mt-4 text-[#E57661] text-[17px] ${index == 0 ? "font-[500]" : "font-semibold"} flex items-center gap-2 ${step.align === "right" ? "justify-end" : ""}`}
                                     >
                                         {step.align !== "right" && (

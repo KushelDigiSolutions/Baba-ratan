@@ -1,5 +1,5 @@
-
 "use client";
+import Link from 'next/link';
 
 export default function HomeNinth() {
   return (
@@ -17,9 +17,9 @@ export default function HomeNinth() {
         </p>
 
         {/* Button */}
-        <button className="bg-[#E57661] hover:bg-[#d86551] text-[16px] md:text-[18px] text-white px-6 md:px-10 md:py-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-white hover:text-[#d86551] cursor-pointer  active:scale-95">
+        <Link href="/contact" className="inline-block bg-[#E57661] hover:bg-[#d86551] text-[16px] md:text-[18px] text-white px-6 md:px-10 md:py-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-white hover:text-[#d86551] cursor-pointer active:scale-95">
           Start Your Transformation
-        </button>
+        </Link>
       </div>
     </section>
   );

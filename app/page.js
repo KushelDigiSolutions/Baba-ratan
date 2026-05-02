@@ -25,7 +25,35 @@ import HomeEleventh from "./components/HomeEleventh";
 import FaQ from "./components/FaQ";
 import Footer from "./COMMON/Footer";
 
+export const metadata = {
+  title: "Bajrang Astro | Best Astrologer in India – Vishal Johari",
+  description:
+    "Get accurate Janam Kundli analysis, palm reading & Vastu consulting from Pandit Vishal Johari. Best astrologer in India. Call now for free consultation.",
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
+  const softwareSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Bajrang Astro | Best Astrologer in India – Vishal Johari",
+    description:
+      "Get accurate Janam Kundli analysis, palm reading & Vastu consulting from Pandit Vishal Johari. Best astrologer in India. Call now for free consultation.",
+    url: "https://bajrangastro.com",
+    image:
+      "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",
+    telephone: "+918595046368",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Noida",
+      addressRegion: "Uttar Pradesh",
+      addressCountry: "IN",
+    },
+    priceRange: "Free Consultation",
+    sameAs: [],
+  };
    const faqData = [
   {
     question: "Who is the best astrologer in India?",
@@ -55,6 +83,12 @@ export default function Home() {
 ];
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(softwareSchema),
+        }}
+      />
       {/* <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"

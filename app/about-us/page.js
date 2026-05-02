@@ -1,23 +1,23 @@
 import React from 'react'
-import ContactComponent from './ContactComponent'
+import AboutComponent from './AboutComponent'
 
 export const metadata = {
-    title: "Contact Bajrang Astro | Book Free Consultation Now",
+    title: "About Bajrang Astro | Trusted Astrologer in India",
     description:
-        "Connect with Pandit Vishal Johari at Bajrang Astro for Janam Kundli, palm reading & Vastu consulting. Free initial chat available. Call or WhatsApp us today.",
+        "Bajrang Astro, India's trusted name in Vedic astrology, Janam Kundli analysis & Vastu consulting. 1000+ happy clients across India. Know our story today.",
     alternates: {
-        canonical: "/contact",
+        canonical: "/about-us",
     },
 };
 
 const page = () => {
   const softwareSchema = {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    name: "Contact Bajrang Astro | Book Free Consultation Now",
+    "@type": "AboutPage",
+    name: "About Bajrang Astro | Trusted Astrologer in India",
     description:
-      "Connect with Pandit Vishal Johari at Bajrang Astro for Janam Kundli, palm reading & Vastu consulting. Free initial chat available. Call or WhatsApp us today.",
-    url: "https://bajrangastro.com/contact",
+      "Bajrang Astro, India's trusted name in Vedic astrology, Janam Kundli analysis & Vastu consulting. 1000+ happy clients across India. Know our story today.",
+    url: "https://bajrangastro.com/about-us",
     image:
       "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",
     publisher: {
@@ -37,7 +37,7 @@ const page = () => {
                 __html: JSON.stringify(softwareSchema),
               }}
             />
-            <ContactComponent />
+            <AboutComponent />
         </>
     )
 }

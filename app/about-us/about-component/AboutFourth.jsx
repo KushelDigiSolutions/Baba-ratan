@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutFourth() {
   return (
@@ -62,10 +63,9 @@ export default function AboutFourth() {
             .
           </p>
 
-          <button className="bg-[#E57661] text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-white hover:border hover:border-[#E57661] border hover:text-[#E57661] cursor-pointer border-[#E57661]  transition">
+          <Link href="/contact" className="inline-block bg-[#E57661] text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-white hover:border hover:border-[#E57661] border hover:text-[#E57661] cursor-pointer border-[#E57661]  transition">
             Book Now
-
-          </button>
+          </Link>
         </div>
 
       </div>

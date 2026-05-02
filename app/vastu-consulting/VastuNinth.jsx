@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 export default function VastuNinth() {
   return (
@@ -14,9 +15,9 @@ export default function VastuNinth() {
 
         {/* Button */}
         <div className="mt-10 md:mt-12">
-          <button className="bg-black hover:bg-white hover:text-black border hover:border cursor-pointer text-white/90 px-12 py-4 rounded-full text-sm sm:text-base md:text-[22px] font-medium shadow-lg ">
+          <Link href="/contact" className="inline-block bg-black hover:bg-white hover:text-black border hover:border cursor-pointer text-white/90 px-12 py-4 rounded-full text-sm sm:text-base md:text-[22px] font-medium shadow-lg ">
             Book Your Vastu Consultation
-          </button>
+          </Link>
         </div>
 
       </div>

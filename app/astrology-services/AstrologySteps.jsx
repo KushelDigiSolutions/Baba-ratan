@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AstrologySteps() {
   const [visibleSteps, setVisibleSteps] = useState({
@@ -151,9 +152,9 @@ export default function AstrologySteps() {
 
         {/* CTA BUTTON */}
         <div className={`flex justify-center mt-20 md:mt-32 transition-all duration-1000 delay-500 ${visibleSteps.step3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <button className="bg-[#E57661] text-white px-12 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-[#d96552] hover:scale-105 transition-all duration-300 cursor-pointer">
+          <Link href="/contact" className="bg-[#E57661] text-white px-12 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-[#d96552] hover:scale-105 transition-all duration-300 cursor-pointer inline-block">
             Book Your Reading
-          </button>
+          </Link>
         </div>
       </div>
     </section>

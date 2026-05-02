@@ -276,8 +276,8 @@ export default function Navbar() {
                                 <Link href="/shop">Shop</Link>
                             </li>
 
-                            <li className={pathname === '/about' ? 'active' : ''}>
-                                <Link href="/about">About us</Link>
+                            <li className={pathname === '/about-us' ? 'active' : ''}>
+                                <Link href="/about-us">About us</Link>
                             </li>
 
                             {/* <li className={pathname === '/contact' ? 'active' : ''}>
@@ -338,7 +338,7 @@ export default function Navbar() {
                             <li><Link href="/vastu-consulting">Vastu Consulting</Link></li>
                             <li><Link href="/astrology-services">Astrology Services</Link></li>
                             <li><Link href="/shop">Shop</Link></li>
-                            <li><Link href="/about">About us</Link></li>
+                            <li><Link href="/about-us">About us</Link></li>
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
                     </ul>

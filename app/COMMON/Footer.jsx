@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { FaInstagram, FaFacebookF, FaXTwitter, FaLinkedin, FaThreads } from "react-icons/fa6";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import { FiInstagram, FiTwitter } from "react-icons/fi";
@@ -28,8 +29,7 @@ export default function Footer() {
                         </div>
 
                         <p className="text-lg leading-relaxed max-w-[450px] xl:max-w-[350px] text-[#303030] mb-6">
-                            Shop God dresses online specifically the ethnic ones with Indian
-                            traditional mix, simply glorifies the god statues.
+                            India's trusted destination for authentic Vedic astrology consultation, accurate Janam Kundli analysis, Vastu guidance, and certified gemstones by Pandit Vishal Johari.
                         </p>
 
                         {/* SOCIAL */}
@@ -57,10 +57,11 @@ export default function Footer() {
                         <div>
                             <h3 className="font-[500] text-lg mb-4">Useful Links</h3>
                             <ul className="space-y-3 text-[#3F3F50] text-[16px]">
-                                <li><a href="#" className="hover:text-black">Our Story</a></li>
-                                <li><a href="#" className="hover:text-black">Explore Dresses</a></li>
-                                <li><a href="#" className="hover:text-black">Gallery</a></li>
-                                <li><a href="#" className="hover:text-black">Contact us</a></li>
+                                <li><Link href="/vastu-consulting" className="hover:text-black">Vastu Consulting</Link></li>
+                                <li><Link href="/astrology-services" className="hover:text-black">Astrology Services</Link></li>
+                                <li><Link href="/shop" className="hover:text-black">Shop</Link></li>
+                                <li><Link href="/about-us" className="hover:text-black">About us</Link></li>
+                                <li><Link href="/contact" className="hover:text-black">Contact</Link></li>
                             </ul>
                         </div>
 
@@ -68,9 +69,10 @@ export default function Footer() {
                         <div>
                             <h3 className="font-[500] text-lg mb-4">Categories</h3>
                             <ul className="space-y-3 text-[#3F3F50] text-[16px]">
-                                <li><a href="#" className="hover:text-black">Radha Krishna</a></li>
-                                <li><a href="#" className="hover:text-black">Mata Rani</a></li>
-                                <li><a href="#" className="hover:text-black">Laddo Gopal</a></li>
+                                <li><Link href="/shop/1" className="hover:text-black">Ruby (Manik)</Link></li>
+                                <li><Link href="/shop/2" className="hover:text-black">Blue Sapphire (Neelam)</Link></li>
+                                <li><Link href="/shop/3" className="hover:text-black">Emerald (Panna)</Link></li>
+                                <li><Link href="/shop/4" className="hover:text-black">Yellow Sapphire (Pukhraj)</Link></li>
                             </ul>
                         </div>
 
@@ -85,16 +87,16 @@ export default function Footer() {
 
                                 {/* EMAIL */}
                                 <a
-                                    href="mailto:info@SriDivyam.com"
+                                    href="mailto:Bajrangastro@gmail.com"
                                     className="flex items-center gap-3 hover:text-black"
                                 >
                                     <FiMail size={18} className="text-[#7A1F3D]" />
-                                    info@SriDivyam.com
+                                    Bajrangastro@gmail.com
                                 </a>
 
                                 {/* PHONE */}
                                 <a
-                                    href="tel:+12195550114"
+                                    href="tel:+918595046368"
                                     className="flex items-center gap-3 hover:text-black"
                                 >
                                     <FiPhone size={18} className="text-[#7A1F3D]" />
@@ -121,7 +123,7 @@ export default function Footer() {
 
                 {/* BOTTOM BAR */}
                 <div className="mt-12  pt-6 flex flex-col md:flex-row justify-between items-center  text-gray-500 gap-4">
-                    <p className="text-[16px]">@2026 Sri Divyam. All right Reserved</p>
+                    <p className="text-[16px]">@2026 Bajrang Astro. All right Reserved</p>
 
                     <div className="flex gap-6 text-[16px] md:mr-10">
                         <a href="#" className="hover:text-black tracking-wider">Terms And Condition</a>
