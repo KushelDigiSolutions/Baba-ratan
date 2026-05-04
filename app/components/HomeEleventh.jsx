@@ -5,7 +5,7 @@ export default function HomeEleventh() {
     return (
         <section className="relative max-w-[1720px] mx-auto py-10 md:px-0 px-4 flex items-center overflow-hidden">
 
-            {/* Background Image */}
+            {/* Background Image - Reverted to mystical scene to remove baba from background */}
             <div className="absolute inset-0 -z-10">
                 <Image
                     src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776405311/mystical-numerology-scene_2_m39keo.png"
@@ -14,8 +14,8 @@ export default function HomeEleventh() {
                     className="object-cover"
                     priority
                 />
-                {/* Overlay for color tint */}
-                <div className="absolute inset-0 bg-[#B8645F]/60"></div>
+                {/* Reddish overlay to match the theme color */}
+                <div className="absolute inset-0 bg-[#B8645F]/80"></div>
             </div>
 
             {/* Content */}
@@ -24,16 +24,12 @@ export default function HomeEleventh() {
                 {/* LEFT TEXT */}
                 <div className="text-white space-y-6 xl:px-0 px-10">
                     <h6 className="text-3xl sm:text-4xl md:text-5xl max-w-[600px]  font-[500] leading-tight">
-                        Get a Glimpse into Your
-                        Future with Our Accurate
-                        Astrology Predictions
+                        Discover What the Stars & Your Hands Reveal About Your Future
+
                     </h6>
 
                     <p className="text-sm sm:text-base md:text-2xl text-white leading-relaxed max-w-[600px]">
-                        Ruled by Mercury, there are a little commons between Gemini and Cancer.
-                        It’s all about being heard and read. There, the similarities end,
-                        however. The body, mind and spirit can’t be separated and it’s physical
-                        being which dictates spiritual contentment.
+                        At <span className="font-semibold text-white">Bajrang Astro</span>, every <span className="font-semibold text-white">Janam Kundli</span> and <span className="font-semibold text-white">palm reading</span> session is deeply personal. We don't give generic predictions, we study your unique planetary positions and hand lines to give you honest, accurate guidance that actually helps you make better life decisions.
                     </p>
                 </div>
 

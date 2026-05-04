@@ -5,23 +5,23 @@ import Image from "next/image";
 const timelineData = [
     {
         title: "Honesty & Transparency",
-        desc: "Building trust through crystalline clarity in every celestial alignment.",
+        desc: "No fear tactics, no false promises, just clear, truthful Vedic astrology consultation and Janam Kundli analysis that you can trust completely.",
         icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776756155/Honesty_Transparency_yfoyk1.png",
     },
     {
         title: "Client-First Approach",
-        desc: "Your spiritual alignment is our central mission and guiding star.",
+        desc: "Your problems, your life, your Kundli every session with Pandit Vishal Johari is 100% focused on giving you real answers and genuine relief.",
         icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776756155/Client-First_Approach_wmxohb.png",
 
     },
     {
         title: "Authentic Knowledge",
-        desc: "Deeply rooted in lineage-based wisdom passed through generations.",
+        desc: "Every Janam Kundli analysis and palm reading at Bajrang Astro is rooted in original Vedic astrology scriptures passed down through generations of wisdom.",
         icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776756155/Authentic_Knowledge_hcbsnf.png",
     },
     {
         title: "Result-Oriented Work",
-        desc: "Measuring our celestial impact by the tangible transformation in your life.",
+        desc: "We measure our success by your transformation in career, marriage, health, and finances through accurate online astrology services across India.",
         icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776756155/Result-Oriented_Work_z8bckm.png",
     },
 ];
@@ -56,7 +56,7 @@ export default function AboutEight() {
         >
             <div className="text-center mb-16">
                 <p className="text-[#E57661] tracking-[0.3em] text-sm md:text-base font-bold uppercase mb-4 animate-fade-in-up">
-                    FOUNDATIONS OF BEING
+                    BAJRANG ASTRO
                 </p>
                 <h5 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#1f2937] animate-fade-in-up delay-100">
                     Our Values

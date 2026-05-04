@@ -1,13 +1,62 @@
 "use client";
 import Image from "next/image";
 
-const testimonials = Array(8).fill({
-    name: "Joshua Sijo",
-    username: "Joshua Sijo",
-    text: "Being new to the App world, the process of developing an App seemed overwhelming to my company.",
-    avatar:
-        "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png",
-});
+const testimonials = [
+    {
+        name: "Richa Agarwal",
+        username: "Verified Client",
+        text: "I was struggling with career decisions for years. After my Janam Kundli analysis at Bajrang Astro, everything became clear. Best decision I ever made.",
+        avatar: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png",
+    },
+    {
+        name: "Tushar Koushik",
+        username: "Business Owner",
+        text: "Got my office Vastu in Noida. Within 3 months, business picked up noticeably. Highly recommend Bajrang Astro to every business owner.",
+        avatar: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png",
+    },
+    {
+        name: "Swapnil Arora",
+        username: "Verified Client",
+        text: "Palm reading session was so accurate it gave me goosebumps. Pandit ji told things about my past that nobody else could have known.",
+        avatar: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png",
+    },
+    {
+        name: "Rohit Kumar",
+        username: "Home Owner",
+        text: "Home Vastu correction changed the entire atmosphere of our house. Family fights reduced completely. Feeling so much peace now.",
+        avatar: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png",
+    },
+    {
+        name: "Kavish Jain",
+        username: "Factory Owner",
+        text: "Consulted for factory Vastu in Meerut. Production issues resolved within weeks. Truly life-changing guidance from Bajrang Astro.",
+        avatar: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png",
+    },
+    {
+        name: "Neeraj Kumar",
+        username: "Verified Client",
+        text: "Very honest astrologer. No fake promises, no fear tactics just clear, practical guidance. My Kundli reading was 100% accurate.",
+        avatar: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png",
+    },
+    {
+        name: "Mohit Monga",
+        username: "Shop Owner",
+        text: "I was sceptical at first but the Vastu consultation for my shop in Ghaziabad completely turned my business around. Sales doubled in 2 months.",
+        avatar: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png",
+    },
+    {
+        name: "Manish Chandel",
+        username: "Entrepreneur",
+        text: "Bajrang Astro's palm reading helped me understand my strengths and the right time to start my own business. Worth every rupee.",
+        avatar: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png",
+    },
+    {
+        name: "Amit Agarwal",
+        username: "Verified Client",
+        text: "Got Kundli matching done before my marriage. Pandit ji explained everything in simple language. Very trustworthy and knowledgeable.",
+        avatar: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png",
+    },
+];
 
 export default function Testimonials() {
     return (
@@ -20,11 +69,11 @@ export default function Testimonials() {
         >
             {/* Heading */}
             <div className="text-center mb-14">
-                <h2 className="text-4xl font-semibold text-[#0B2545]">
-                    What Our Happy Customers Say
+                <h2 className="text-4xl font-semibold text-[#E57661]">
+                    What Our Happy Clients Say
                 </h2>
                 <p className="mt-2 text-lg text-gray-600">
-                    Hear from those who chose right with Gemstones
+                    Real people, real results, hear from those who trusted <span className="font-semibold text-black">Bajrang Astro</span>
                 </p>
             </div>
 
@@ -96,10 +145,10 @@ function TestimonialCard({ data }) {
                 />
                 <div>
                     <div className="flex items-center gap-1">
-                        <p className="text-sm font-semibold text-[#0B2545]">
+                        <p className="text-sm font-semibold text-[#E57661]">
                             {data.name}
                         </p>
-                        <span className="text-blue-500 text-xs"><img src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073615/Vertical_container_1_giyzdn.png" alt="verified" width={15} height={15} /></span>
+                        <span className="text-[#E57661] text-xs"><img src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073615/Vertical_container_1_giyzdn.png" alt="verified" width={15} height={15} /></span>
                     </div>
                     <p className="text-xs text-gray-500">{data.username}</p>
                 </div>

@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 export default function AboutSixth() {
@@ -9,7 +8,7 @@ export default function AboutSixth() {
         {/* LEFT CONTENT */}
         <div>
           <p className="text-sm tracking-widest text-[#E57661] font-semibold mb-4">
-            WHY THE NEXUS
+            WHY BAJRANG ASTRO
           </p>
 
           <h4 className="text-4xl md:text-5xl font-[400] text-[#0D1C32] mb-6">
@@ -17,9 +16,7 @@ export default function AboutSixth() {
           </h4>
 
           <p className="text-[#303030] text-[19px] leading-relaxed mb-10 max-w-xl">
-            We blend ancient cosmic intelligence with modern architectural
-            precision to create harmonious environments and life paths that
-            resonate with your unique celestial signature.
+            Pandit Vishal Johari blends ancient Vedic astrology with honest, modern guidance, creating accurate Kundli readings and real life solutions that align with your unique birth chart.
           </p>
 
           {/* FEATURES */}
@@ -32,10 +29,10 @@ export default function AboutSixth() {
               </div>
               <div>
                 <h4 className="font-[500] text-xl text-[#0D1C32]">
-                  Experienced Experts
+                  Experienced Astrologer
                 </h4>
-                <p className="text-[#303030] text-[16px] max-w-[220px]">
-                  Vetted masters with decades of lineage-based wisdom.
+                <p className="text-[#303030] text-[16px] max-w-[260px]">
+                  15+ years of expertise in Janam Kundli analysis, palm reading in Delhi, and Vastu consulting across India.
                 </p>
               </div>
             </div>
@@ -49,8 +46,8 @@ export default function AboutSixth() {
                 <h4 className="font-[500] text-xl  text-[#0D1C32]">
                   Practical Solutions
                 </h4>
-                <p className="text-[#303030] text-[16px] max-w-[220px]">
-                  Actionable remedies designed for a modern lifestyle.
+                <p className="text-[#303030] text-[16px] max-w-[260px]">
+                  Clear, actionable remedies based on your Janam Kundli are designed for real life, not just theory.
                 </p>
               </div>
             </div>
@@ -59,7 +56,7 @@ export default function AboutSixth() {
             <div className="flex gap-4 items-start">
               <div className="bg-[#E57661] px-4 py-3 rounded-[10px] shrink-0">
                 <Image
-                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776508590/LIVE_INSIGHT_4_a1pn9u.png"
+                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776508590/LIVE_INSIGH_4T_a1pn9u.png"
                   alt="LIVE_INSIGH_4T"
                   width={20}
                   height={20}
@@ -67,10 +64,10 @@ export default function AboutSixth() {
               </div>
               <div className="max-w-[260px]">
                 <h4 className="font-[500] whitespace-nowrap text-xl text-[#0D1C32]">
-                  Personalized Consultation
+                  Personalised Consultation
                 </h4>
                 <p className="text-[#303030] text-[16px] ">
-                  Deep-dive sessions tailored to your exact birth coordinates.
+                  Every session tailored to your exact birth details and life situation.
                 </p>
               </div>
             </div>
@@ -84,8 +81,8 @@ export default function AboutSixth() {
                 <h5 className="font-[500] text-xl text-[#0D1C32]">
                   Proven Results
                 </h5>
-                <p className="text-[#303030] text-[16px] max-w-[220px]">
-                  Documented transformations across thousands of lives.
+                <p className="text-[#303030] text-[16px] max-w-[260px]">
+                  1000+ lives transformed through online astrology services across India.
                 </p>
               </div>
             </div>
@@ -110,6 +107,3 @@ export default function AboutSixth() {
     </section>
   );
 }
-
-
-

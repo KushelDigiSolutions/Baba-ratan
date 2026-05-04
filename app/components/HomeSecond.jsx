@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const HomeSecond = () => {
     return (
@@ -27,12 +28,13 @@ const HomeSecond = () => {
                             </h2>
 
                             <p className="text-[#44474D] mb-6 leading-relaxed">
-                                Align your built environment with the five fundamental elements to optimize energy flow and catalyze success.
+                               Balance your home, office, or factory with the five fundamental elements of nature and watch how blocked energy transforms into growth, peace, and lasting success. 
+
                             </p>
 
-                            <button className="text-[#E57661] text-[19px] flex items-center justify-center gap-2 hover:gap-3 transition-all">
-                                Discover Harmony →
-                            </button>
+                            <Link href="/vastu-consulting" className="text-[#E57661] text-[19px] flex items-center justify-center gap-2 hover:gap-3 transition-all">
+                            Explore Vastu Services ↗
+                            </Link>
                         </div>
 
                         {/* Right Bottom Image */}
@@ -77,13 +79,13 @@ const HomeSecond = () => {
                             </h2>
 
                             <p className="text-white mb-6 max-w-[400px] leading-relaxed">
-                                Decoding your celestial blueprint to navigate life's
-                                cycles with precision and foresight.
+                               Unlock the secrets written in your birth chart and the lines of your hands with accurate, honest readings that guide your biggest life decisions. 
+
                             </p>
 
-                            <button className="flex items-center gap-2 hover:gap-3 transition-all text-[18px]">
-                                View Readings ↗
-                            </button>
+                            <Link href="/astrology-services" className="flex items-center gap-2 hover:gap-3 transition-all text-[18px]">
+                               Explore Astrology Services ↗
+                            </Link>
                         </div>
                     </div>
 
@@ -112,20 +114,22 @@ const HomeSecond = () => {
                             Gemstone & Spiritual Shop
                         </h3>
 
-                        <p className="text-[#44474D] max-w-[450px] md:text-[19px] mb-6">
-                            Curated alchemical tools, from high-frequency
-                            gemstones to precision-crafted brass pyramids,
-                            designed to amplify your energy alignment.
+                        <p className="text-[#44474D] max-w-[500px] md:text-[19px] mb-6 leading-relaxed">
+                            From certified natural gemstones to energised brass pyramids, every product is carefully selected to strengthen your aura and support your Vastu and astrology remedies.
+                        </p>
+
+                        <p className="text-[#44474D] max-w-[500px] md:text-[19px] mb-6 leading-relaxed">
+                            All products are 100% authentic, lab-tested, and energised before delivery.
                         </p>
 
                         <div className="flex gap-4 flex-wrap">
-                            <button className="bg-[#E57661]  cursor-pointer rounded-[6px] text-white px-10 py-5 hover:bg-white hover:text-[#E57661] border border-[#E57661]  ">
+                            <Link href="/shop" className="bg-[#E57661] cursor-pointer rounded-[6px] text-white px-10 py-5 hover:bg-white hover:text-[#E57661] border border-[#E57661]">
                                 Shop Collection
-                            </button>
+                            </Link>
 
-                            <button className="border border-[#E57661] cursor-pointer rounded-[6px] text-[#E57661] px-10 py-5 hover:bg-[#E57661] hover:text-white  ">
+                            <Link href="/shop" className="border border-[#E57661] cursor-pointer rounded-[6px] text-[#E57661] px-10 py-5 hover:bg-[#E57661] hover:text-white">
                                 Authenticity Guide
-                            </button>
+                            </Link>
                         </div>
                     </div>
 

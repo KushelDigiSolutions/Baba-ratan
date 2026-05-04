@@ -39,21 +39,21 @@ export default function ConsultationForm() {
       newErrors.email = "Invalid email format";
     }
 
-    // Contact Number: digits only, max 10
-    if (formData.contactNumber) {
-      const contactRegex = /^\d{1,10}$/;
-      if (!contactRegex.test(formData.contactNumber)) {
-        newErrors.contactNumber = "Contact number must be up to 10 digits and contain only numbers";
-      } else if (formData.contactNumber.length < 10) {
-        newErrors.contactNumber = "Contact number should be 10 digits";
-      }
+    // Contact Number: digits only, exactly 10
+    if (!formData.contactNumber) {
+      newErrors.contactNumber = "Contact Number is required";
+    } else if (formData.contactNumber.length !== 10) {
+      newErrors.contactNumber = "Contact number must be exactly 10 digits";
     }
 
     if (!serviceType) {
       newErrors.serviceType = "Please select a service";
     }
 
-    if (serviceType === "astrology") {
+    const isAstrology = ["Janam Kundli Analysis", "Palm Reading", "Kundli Matching"].includes(serviceType);
+    const isVastu = ["Vastu Consulting — Home", "Vastu Consulting — Office", "Vastu Consulting — Factory"].includes(serviceType);
+
+    if (isAstrology) {
       if (!formData.dob) newErrors.dob = "Date of Birth is required";
       if (!formData.tob) newErrors.tob = "Time of Birth is required";
       if (!formData.pob) newErrors.pob = "Place of Birth is required";
@@ -61,7 +61,7 @@ export default function ConsultationForm() {
       if (!formData.message) newErrors.message = "Message is required";
     }
 
-    if (serviceType === "vastu") {
+    if (isVastu) {
       if (!formData.layoutPlan) newErrors.layoutPlan = "Layout Plan is required";
       if (!formData.googleLocation) newErrors.googleLocation = "Google Location is required";
       if (!formData.propertyEntrance) newErrors.propertyEntrance = "Property Entrance is required";
@@ -87,6 +87,10 @@ export default function ConsultationForm() {
     // For contact number, prevent typing more than 10 digits and non-digits
     if (name === "contactNumber") {
       const sanitizedValue = value.replace(/\D/g, '').slice(0, 10);
+      setFormData({ ...formData, [name]: sanitizedValue });
+    } else if (name === "fullName") {
+      // Prevent anything other than alphabets and spaces
+      const sanitizedValue = value.replace(/[^A-Za-z\s]/g, '');
       setFormData({ ...formData, [name]: sanitizedValue });
     } else {
       setFormData({ ...formData, [name]: value });
@@ -118,11 +122,17 @@ export default function ConsultationForm() {
           <h1 className={styles.title}>Consultation <span>Request</span></h1>
 
           <p className={styles.subtitle}>
-            Align your journey with celestial wisdom. Choose your service to begin.
+            Start your journey with Pandit Vishal Johari. Choose your service and take the first step today.
           </p>
+
+          <div className={styles.contactInfo}>
+            <h2>Contact Information</h2>
+            <p>Pandit Vishal Johari <span>(Vedic Astrologer & Vastu Consultant)</span></p>
+          </div>
 
           <form className={styles.form} onSubmit={handleSubmit} noValidate>
             {/* COMMON FIELDS */}
+            <h3 className={styles.sectionHeading}>Talk to Experts Astrologer</h3>
 
             <div className={styles.row}>
               <div className={styles.formGroup}>
@@ -135,18 +145,6 @@ export default function ConsultationForm() {
                   placeholder="Enter your full name"
                   value={formData.fullName}
                   onChange={handleInputChange}
-                  onKeyDown={(e) => {
-                    // Allow only alphabets and space
-                    if (
-                      !/[A-Za-z\s]/.test(e.key) &&
-                      e.key !== "Backspace" &&
-                      e.key !== "ArrowLeft" &&
-                      e.key !== "ArrowRight" &&
-                      e.key !== "Tab"
-                    ) {
-                      e.preventDefault();
-                    }
-                  }}
                 />
                 {errors.fullName && <p className={styles.errorText}>{errors.fullName}</p>}
               </div>
@@ -168,11 +166,13 @@ export default function ConsultationForm() {
 
             <div className={styles.row}>
               <div className={styles.formGroup}>
-                <label>Contact Number</label>
+                <label>
+                  Contact Number <span>*</span>
+                </label>
                 <input
                   type="tel"
                   name="contactNumber"
-                  placeholder="Optional contact number"
+                  placeholder="Enter 10-digit number"
                   value={formData.contactNumber}
                   onChange={handleInputChange}
                 />
@@ -188,15 +188,19 @@ export default function ConsultationForm() {
                   onChange={handleServiceChange}
                 >
                   <option value="">Choose a service</option>
-                  <option value="astrology">Astrology</option>
-                  <option value="vastu">Vastu</option>
+                  <option value="Janam Kundli Analysis">Janam Kundli Analysis</option>
+                  <option value="Palm Reading">Palm Reading</option>
+                  <option value="Vastu Consulting — Home">Vastu Consulting — Home</option>
+                  <option value="Vastu Consulting — Office">Vastu Consulting — Office</option>
+                  <option value="Vastu Consulting — Factory">Vastu Consulting — Factory</option>
+                  <option value="Kundli Matching">Kundli Matching</option>
                 </select>
                 {errors.serviceType && <p className={styles.errorText}>{errors.serviceType}</p>}
               </div>
             </div>
 
             {/* ASTROLOGY */}
-            {serviceType === "astrology" && (
+            {["Janam Kundli Analysis", "Palm Reading", "Kundli Matching"].includes(serviceType) && (
               <>
                 <div className={styles.row}>
                   <div className={styles.formGroup}>
@@ -266,7 +270,7 @@ export default function ConsultationForm() {
                   <textarea
                     name="message"
                     rows="3"
-                    placeholder="Write your questions..."
+                    placeholder="Write your questions or concerns..."
                     value={formData.message}
                     onChange={handleInputChange}
                   ></textarea>
@@ -276,7 +280,7 @@ export default function ConsultationForm() {
             )}
 
             {/* VASTU */}
-            {serviceType === "vastu" && (
+            {["Vastu Consulting — Home", "Vastu Consulting — Office", "Vastu Consulting — Factory"].includes(serviceType) && (
               <>
                 <div className={styles.row}>
                   <div className={styles.formGroup}>
@@ -334,10 +338,9 @@ export default function ConsultationForm() {
                     Message <span>*</span>
                   </label>
                   <textarea
-                    
                     name="message"
                     rows="3"
-                    placeholder="Describe your vastu concerns..."
+                    placeholder="Describe your vastu concerns or specific problems..."
                     value={formData.message}
                     onChange={handleInputChange}
                   ></textarea>
@@ -348,7 +351,7 @@ export default function ConsultationForm() {
 
             {serviceType && (
               <button type="submit" className={styles.submitBtn}>
-                Submit Request
+                Book Free Consultation
               </button>
             )}
           </form>

@@ -8,17 +8,18 @@ export default function HomeFourth() {
 
             <div className="text-center flex flex-col items-center">
                 <p className="text-[#E57661] text-sm tracking-widest font-medium">
-                    ARCHITECTURAL WISDOM
+
+                    VASTU SHASTRA
+
                 </p>
 
                 <h3 className="text-2xl md:text-4xl font-[500] mt-3">
-                    Why Vastu is Important for <br className="hidden md:block" />
-                    Your Success
+                    Why Vastu is Important for Your Success
                 </h3>
 
                 <p className="text-[#303030] max-w-[740px] mt-4 text-[14px] md:text-[19px] font-[400]">
-                    Aligning your physical space with the energetic flow of the universe is the catalyst for
-                    professional and personal transcendence.
+                    When your home or workplace is aligned with nature's five elements, success stops feeling like a struggle, it becomes a natural outcome of living and working in the right energy.
+
                 </p>
             </div>
 
@@ -33,10 +34,8 @@ export default function HomeFourth() {
                         </div>
 
                         <h4 className="font-[500] text-[#191C1D] text-2xl">Business Growth</h4>
-                        <p className="text-[#44474D]/90 text-[16px] mt-4 max-w-[290px]  leading-7 font-[400]">
-                            Strategic placement of executive suites
-                            to harness the energy of leadership and
-                            expansive scaling.
+                        <p className="text-[#44474D]/90 text-[16px] mt-4 max-w-[320px]  leading-7 font-[400]">
+                            Right placement of your office desk and entrance direction directly attracts better clients, bigger deals, and faster <span className="font-bold">business growth in Delhi NCR.</span>
                         </p>
                     </div>
 
@@ -60,9 +59,8 @@ export default function HomeFourth() {
 
                         <h4 className="font-[500] text-[#191C1D] text-2xl">Positive Energy</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 max-w-[290px] leading-7 font-[400]">
-                            Designing entryways that invite 'Prana',
-                            ensuring your environment breathes
-                            with vitality and creative spark.
+                            A Vastu-balanced home invites fresh, positive energy into every room, reducing stress, improving relationships, and bringing peace to daily life.
+
                         </p>
                     </div>
 
@@ -85,9 +83,7 @@ export default function HomeFourth() {
                         </div>
                         <h4 className="font-[500] text-[#191C1D] text-2xl">Removing Obstacles</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 max-w-[300px] leading-7 font-[400]">
-                            Neutralizing directional defects to clear
-                            the path for decision-making and
-                            seamless project execution.
+                            Hidden <span className="font-bold text-black">Vastu doshas</span> in your space create invisible blocks in career, health, and finances. We identify and correct them without major renovation.
                         </p>
                     </div>
 
@@ -115,11 +111,8 @@ export default function HomeFourth() {
                         </div>
                         <h4 className="font-[500] text-[#191C1D] text-2xl md:text-3xl md:max-w-[100px]">Financial Stability</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 md:max-w-[200px] leading-7 font-[400]">
-                            South-West orientation
-                            mastery to anchor your
-                            wealth and prevent
-                            energetic 'leaks' in your
-                            revenue stream.
+                            Correct South-West zone alignment in your home or office locks in wealth and stops money from draining, giving your finances a strong, stable foundation.
+
                         </p>
                     </div>
 
@@ -154,11 +147,8 @@ export default function HomeFourth() {
 
                         <h4 className="font-[500] text-[#191C1D] text-2xl md:text-3xl md:max-w-[100px]">Peaceful Environment</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 md:max-w-[200px] leading-7 font-[400]">
-                            Infusing air, water, and
-                            earth elements into your
-                            workspace to reduce
-                            cortisol and enhance deep-
-                            focus states.
+                            Balancing air, water, and earth elements in your living or work space naturally reduces stress, improves focus, and brings lasting harmony to your daily life.
+
                         </p>
                     </div>
                 </div>

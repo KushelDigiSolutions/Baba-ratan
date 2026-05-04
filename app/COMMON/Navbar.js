@@ -187,7 +187,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 
+import { useCart } from '../context/CartContext';
+
 export default function Navbar() {
+    const { cartCount } = useCart();
     const router = useRouter();
     const [open, setOpen] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
@@ -227,7 +230,17 @@ export default function Navbar() {
                     <div className="top-links desktop-only">
                         <span><BiSolidUser size={20} /> Account</span>
                         <span><FaHeart size={20} /> Wishlist</span>
-                        <span><HiShoppingCart size={20} /> My Bag</span>
+                        <Link href="/cart" className="flex items-center gap-1">
+                            <div className="relative">
+                                <HiShoppingCart size={20} />
+                                {cartCount > 0 && (
+                                    <span className="absolute -top-2 -right-2 bg-[#E57661] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
+                                        {cartCount}
+                                    </span>
+                                )}
+                            </div>
+                            <span>My Bag</span>
+                        </Link>
                     </div>
 
                     {/* HAMBURGER */}
@@ -263,8 +276,8 @@ export default function Navbar() {
                                 <Link href="/shop">Shop</Link>
                             </li>
 
-                            <li className={pathname === '/about' ? 'active' : ''}>
-                                <Link href="/about">About us</Link>
+                            <li className={pathname === '/about-us' ? 'active' : ''}>
+                                <Link href="/about-us">About us</Link>
                             </li>
 
                             {/* <li className={pathname === '/contact' ? 'active' : ''}>
@@ -325,7 +338,7 @@ export default function Navbar() {
                             <li><Link href="/vastu-consulting">Vastu Consulting</Link></li>
                             <li><Link href="/astrology-services">Astrology Services</Link></li>
                             <li><Link href="/shop">Shop</Link></li>
-                            <li><Link href="/about">About us</Link></li>
+                            <li><Link href="/about-us">About us</Link></li>
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
                     </ul>
@@ -333,7 +346,17 @@ export default function Navbar() {
                     <div className="mobile-links">
                         <span><BiSolidUser /> Account</span>
                         <span><FaHeart /> Wishlist</span>
-                        <span><HiShoppingCart /> My Bag</span>
+                        <Link href="/cart" className="flex items-center gap-1">
+                            <div className="relative">
+                                <HiShoppingCart />
+                                {cartCount > 0 && (
+                                    <span className="absolute -top-2 -right-2 bg-[#E57661] text-white text-[8px] w-3 h-3 rounded-full flex items-center justify-center font-bold">
+                                        {cartCount}
+                                    </span>
+                                )}
+                            </div>
+                            <span>My Bag</span>
+                        </Link>
                     </div>
 
                     <a href="tel:+918595046368" className="mobile-astro">

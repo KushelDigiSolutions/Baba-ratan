@@ -37,8 +37,8 @@ export default function AstralSection() {
 
                 {/* LEFT CONTENT */}
                 <div className={`transition-all duration-1000 ease-out ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>
-                    <h2 className="text-4xl md:text-5xl font-bold max-w-[500px] leading-tight mb-12">
-                        Astral knowledge, applied to life.
+                    <h2 className="text-4xl md:text-5xl font-bold max-w-[600px] leading-tight mb-12">
+                        Vedic wisdom, applied to your life.
                     </h2>
 
                     {/* ITEM 1 */}
@@ -55,11 +55,10 @@ export default function AstralSection() {
 
                         <div>
                             <h3 className="text-2xl font-semibold mb-3">
-                                Self-Awareness
+                                Know Yourself Deeply
                             </h3>
-                            <p className="text-[#FFFFFF]/90 text-lg max-w-[450px] leading-relaxed">
-                                Deeply understand your emotional triggers and natural talents
-                                through Moon and Mercury analysis.
+                            <p className="text-[#FFFFFF]/90 text-lg max-w-[500px] leading-relaxed">
+                                Through accurate <span className="font-bold text-white">Janam Kundli analysis</span>, <span className="font-bold text-white">Pandit Vishal Johari</span> reveals your true strengths, hidden talents, and emotional patterns so you can make better life decisions every day.
                             </p>
                         </div>
                     </div>
@@ -78,11 +77,10 @@ export default function AstralSection() {
 
                         <div>
                             <h3 className="text-2xl font-semibold mb-3">
-                                Perfect Timing
+                                Right Action at the Right Time
                             </h3>
-                            <p className="text-[#FFFFFF]/90 text-lg max-w-[450px] leading-relaxed">
-                                Align your major life decisions with the natural ebb and flow
-                                of the universe's cycles.
+                            <p className="text-[#FFFFFF]/90 text-lg max-w-[500px] leading-relaxed">
+                                <span className="font-bold text-white">Vedic astrology consultation</span> at <span className="font-bold text-white">Bajrang Astro</span> identifies your best dasha periods so you never miss the right moment for career growth, marriage, or financial investment.
                             </p>
                         </div>
                     </div>

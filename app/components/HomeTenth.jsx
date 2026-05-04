@@ -4,23 +4,42 @@ import Image from "next/image";
 export default function HomeTenth() {
   const cards = [
     {
-      title: "Astro Reading",
-      desc: "There are many variations of passages of Lorem Ipsum available, but the majority",
+      title: "Janam Kundli Analysis ",
+      desc: (
+        <>
+          Get a deep, accurate reading of your <span className="font-semibold text-black">birth chart</span> to understand your career, health, relationships, and life path.
+        </>
+      ),
+
       icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776431898/Astro_Reading_wybndz.png",
     },
     {
-      title: "Compatibility",
-      desc: "There are many variations of passages of Lorem Ipsum available, but the majority",
+      title: "Kundli Matching ",
+      desc: (
+        <>
+          Check <span className="font-semibold text-black">marriage compatibility</span> between two people based on their birth charts — before taking the biggest decision of your life.
+        </>
+      ),
+
       icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776431898/Compatibility_pylzmh.png",
     },
     {
-      title: "Horoscope",
-      desc: "There are many variations of passages of Lorem Ipsum available, but the majority",
+      title: "Daily Horoscope",
+      desc: (
+        <>
+          Know what the <span className="font-semibold text-black">planets have planned</span> for you today in career, love, health, and finances, and make smarter decisions.
+        </>
+      ),
       icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776431897/Horoscope_qfgoit.png",
     },
     {
-      title: "Personal Gems",
-      desc: "There are many variations of passages of Lorem Ipsum available, but the majority",
+      title: "Palm Reading ",
+      desc: (
+        <>
+          Your hands reveal your future. Get an expert <span className="font-semibold text-black">Hast Rekha analysis</span> for career, marriage, wealth, and life timeline.
+        </>
+      ),
+
       icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776431897/Personal_Gems_eeho4j.png",
     },
   ];

@@ -12,16 +12,28 @@ import './ProductDetail.css';
 import { FaLinkedin } from 'react-icons/fa';
 import Footer from '../COMMON/Footer';
 
+import { useCart } from '../context/CartContext';
+
 const ProductDetailSection = ({ product }) => {
-    const [quantity, setQuantity] = useState(1);
+    const { addToCart, getItemQuantity, updateQuantity } = useCart();
+    const [localQuantity, setLocalQuantity] = useState(1);
     const [activeTab, setActiveTab] = useState('description');
+    const [addedToCart, setAddedToCart] = useState(false);
 
     if (!product) return null;
 
-    const handleQuantityChange = (value) => {
+    const cartQuantity = getItemQuantity(product.id);
+
+    const handleLocalQuantityChange = (value) => {
         if (value > 0) {
-            setQuantity(value);
+            setLocalQuantity(value);
         }
+    };
+
+    const handleAddToCart = () => {
+        addToCart(product, localQuantity);
+        setAddedToCart(true);
+        setTimeout(() => setAddedToCart(false), 3000);
     };
 
     const fontStyle = { fontFamily: "'GT Walsheim Trial', sans-serif" };
@@ -136,17 +148,48 @@ const ProductDetailSection = ({ product }) => {
                     <div className="flex flex-col gap-4 mt-4">
                         <p className="text-[#303030] text-[18px] font-medium">Quantity:</p>
                         <div className="flex flex-col min-[500px]:flex-row items-stretch min-[500px]:items-center gap-4">
-                            <div className="w-fit flex items-center border border-gray-200 h-[54px] rounded-md overflow-hidden">
-                                <button onClick={() => handleQuantityChange(quantity - 1)} className="w-12 cursor-pointer h-full flex items-center justify-center text-xl text-[#303030] hover:bg-gray-50">−</button>
-                                <input type="number" value={quantity} readOnly className="w-12 cursor-pointer h-full text-center font-bold text-[#303030] outline-none" />
-                                <button onClick={() => handleQuantityChange(quantity + 1)} className="w-12 cursor-pointer h-full flex items-center justify-center text-xl text-[#303030] hover:bg-gray-50">+</button>
-                            </div>
+                            {cartQuantity > 0 ? (
+                                <div className="w-fit flex items-center border border-[#EF7E6A] h-[54px] rounded-md overflow-hidden bg-[#fff5f3]">
+                                    <button 
+                                        onClick={() => updateQuantity(product.id, cartQuantity - 1)} 
+                                        className="w-12 cursor-pointer h-full flex items-center justify-center text-xl text-[#EF7E6A] hover:bg-[#ffe4df]"
+                                    >
+                                        −
+                                    </button>
+                                    <span className="w-12 h-full flex items-center justify-center font-bold text-[#303030]">
+                                        {cartQuantity}
+                                    </span>
+                                    <button 
+                                        onClick={() => updateQuantity(product.id, cartQuantity + 1)} 
+                                        className="w-12 cursor-pointer h-full flex items-center justify-center text-xl text-[#EF7E6A] hover:bg-[#ffe4df]"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            ) : (
+                                <>
+                                    <div className="w-fit flex items-center border border-gray-200 h-[54px] rounded-md overflow-hidden">
+                                        <button onClick={() => handleLocalQuantityChange(localQuantity - 1)} className="w-12 cursor-pointer h-full flex items-center justify-center text-xl text-[#303030] hover:bg-gray-50">−</button>
+                                        <input type="number" value={localQuantity} readOnly className="w-12 cursor-pointer h-full text-center font-bold text-[#303030] outline-none" />
+                                        <button onClick={() => handleLocalQuantityChange(localQuantity + 1)} className="w-12 cursor-pointer h-full flex items-center justify-center text-xl text-[#303030] hover:bg-gray-50">+</button>
+                                    </div>
 
-                            <button className="w-fit md:flex-1 cursor-pointer bg-[#EF7E6A] px-6 md:px-0 text-white font-bold h-[54px] rounded-md hover:bg-[#E56A52] transition uppercase tracking-widest text-[14px] flex items-center justify-center gap-2">
-                                <FiShoppingCart className="text-lg" />
-                                ADD TO CART
-                            </button>
+                                    <button 
+                                        onClick={handleAddToCart}
+                                        className="w-fit md:flex-1 cursor-pointer bg-[#EF7E6A] px-6 md:px-0 text-white font-bold h-[54px] rounded-md hover:bg-[#E56A52] transition uppercase tracking-widest text-[14px] flex items-center justify-center gap-2"
+                                    >
+                                        <FiShoppingCart className="text-lg" />
+                                        {addedToCart ? 'ADDED SUCCESSFULLY!' : 'ADD TO CART'}
+                                    </button>
+                                </>
+                            )}
                         </div>
+
+                        {addedToCart && cartQuantity === 0 && (
+                            <p className="text-green-600 text-sm font-medium animate-pulse">
+                                ✓ Product added to your bag successfully!
+                            </p>
+                        )}
 
                         <button className="w-full border cursor-pointer border-[#EF7E6A] text-[#EF7E6A] font-bold h-[54px] rounded-md hover:bg-[#fff5f3] transition uppercase tracking-widest text-[14px] flex items-center justify-center gap-2">
                             <FiHeart className="text-lg" />

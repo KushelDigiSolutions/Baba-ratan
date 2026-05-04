@@ -1,5 +1,5 @@
-
 "use client";
+import Link from 'next/link';
 
 export default function HomeNinth() {
   return (
@@ -8,18 +8,18 @@ export default function HomeNinth() {
         
         {/* Heading */}
         <h6 className="text-2xl md:text-6xl font-[500]  mb-6">
-          Ready to Align Your Universe?
+          Ready to Change Your Life?
         </h6>
 
         {/* Description */}
         <p className="text-sm md:text-2xl text-white max-w-[800px] mx-auto mb-9 leading-relaxed">
-          Join <span className="font-semibold text-white">500+</span> professionals and families who have unlocked their space's true potential through Celestial Vastu.
+          Join <span className="font-semibold text-white">1000+</span> families and businesses across India who found clarity, peace, and growth through <span className="font-semibold text-white">Bajrang Astro</span> expert <span className="font-semibold text-white">Vastu, Kundli & Palm Reading</span> guidance.
         </p>
 
         {/* Button */}
-        <button className="bg-[#E57661] hover:bg-[#d86551] text-[16px] md:text-[18px] text-white px-6 md:px-10 md:py-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-white hover:text-[#d86551] cursor-pointer  active:scale-95">
+        <Link href="/contact" className="inline-block bg-[#E57661] hover:bg-[#d86551] text-[16px] md:text-[18px] text-white px-6 md:px-10 md:py-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-white hover:text-[#d86551] cursor-pointer active:scale-95">
           Start Your Transformation
-        </button>
+        </Link>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ export default function HeroNewSection() {
 
    bg-[url('https://res.cloudinary.com/dd9tagtiw/image/upload/v1766992308/Group_87_aykgkf.png')]
 
-    bg-cover bg-center
+    bg-cover bg-right
   "
         >
 
@@ -21,31 +21,36 @@ export default function HeroNewSection() {
                 {/* LEFT CONTENT */}
                 <div className="w-full md:px-0 px-10 xl:pb-0 pb-10 lg:w-1/2 text-center lg:text-left">
                     <h1 className="text-white text-2xl sm:text-3xl lg:text-[40px] max-w-[690px] font-[500] leading-tight">
-                        Transform Your Space with Vastu
-                        Align Your Life with Astrology
+                        Trusted Astrologer in India
                     </h1>
 
-                    <p className="text-[#FFFFFF] mt-4 text-[18px]  sm:text-base lg:text-[24px] xl:max-w-[500px]">
-                        Create balance, attract success, and unlock positive energy in every aspect of life.
+                    <p className="text-[#FFFFFF] mt-4 text-[18px] sm:text-base lg:text-[24px] xl:max-w-[500px]">
+                        Transform Your Space with Vastu Align Your Life with Astrology
+                    </p>
+
+                    <p className="text-white mt-4 text-sm md:text-base lg:text-[18px] leading-relaxed xl:max-w-[550px] opacity-90 font-[300]">
+                        With 15+ years of experience, <span className="font-semibold">Pandit Vishal Johari</span> at <span className="font-semibold">Bajrang Astro</span> has helped 1000+ families and businesses across India find clarity, peace, and real growth through Janam Kundli, Palm Reading, and expert Vastu Consulting.
                     </p>
 
 
                     <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <button className="flex text-[21px] cursor-pointer items-center justify-center gap-2 bg-[#e07a5f] hover:bg-[#d96c50] px-6 py-2 rounded-lg font-[400]">
+                        <a href="tel:+918595046368" className="flex text-[21px] cursor-pointer items-center justify-center gap-2 bg-[#e07a5f] border border-[#e07a5f] hover:bg-white hover:text-black transition px-6 py-2 rounded-lg font-[400]">
                             <FaPhoneAlt />
                             Call Us
-                        </button>
+                        </a>
 
-                        <button className=" w-auto flex text-[21px] cursor-pointer items-center justify-center gap-2 border border-white px-6 py-2 rounded-lg hover:bg-white hover:text-black transition">
+                        <a 
+                            href="https://wa.me/918595046368"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className=" w-auto flex text-[21px] cursor-pointer items-center justify-center gap-2 border border-white px-6 py-2 rounded-lg hover:bg-white hover:text-black transition"
+                        >
                             <FaWhatsapp size={26} />
-                            Chat Now
-                        </button>
+                            Chat on WhatsApp
+                        </a>
                     </div>
 
-                    {/* FOOT TEXT */}
-                    <p className="mt-6 text-xl italic text-[#ffff]">
-                        “1000+ Happy Clients | Proven Results”
-                    </p>
+                   
                 </div>
 
                 {/* RIGHT IMAGE (BABA) */}

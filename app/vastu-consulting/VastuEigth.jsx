@@ -4,11 +4,11 @@ import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 
 export default function VastuEigth() {
-    const [selected, setSelected] = useState("Residential Villa");
+    const [selected, setSelected] = useState("Home / Flat");
 
     const [open, setOpen] = useState(false);
 
-    const options = ["Residential Villa", "Apartment", "Office"];
+    const options = ["Home / Flat", "Office", "Factory", "Shop / Showroom", "Plot / Land"];
     return (
         <section className="w-full flex justify-center px-4 py-10 bg-[#FFFFFF]">
             <div className="w-full max-w-7xl bg-[#e9e9e9] rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
@@ -16,7 +16,7 @@ export default function VastuEigth() {
 
                 <div className="p-6 sm:p-10 md:py-14 md:px-20">
                     <h5 className="text-2xl sm:text-3xl md:text-[40px] font-semibold text-[#222] mb-8">
-                        Begin Your Ritual
+                        Book Your Vastu Consultation
                     </h5>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -45,7 +45,7 @@ export default function VastuEigth() {
 
                     <div className="mb-6 relative">
                         <label className="text-xs font-[600] tracking-widest text-[#78716C] uppercase mb-2 block">
-                            Space Type
+                            Property Type
                         </label>
 
                         <div
@@ -83,13 +83,13 @@ export default function VastuEigth() {
                         </label>
                         <textarea
                             rows={4}
-                            placeholder="Tell us about your space's energy..."
+                            placeholder="Tell us about the problems you are facing in your space..."
                             className="w-full bg-white rounded-xl px-4 py-3 outline-none resize-none"
                         />
                     </div>
 
                     <button className="w-full cursor-pointer bg-[#7a5a1f] text-white py-4 rounded-xl text-sm sm:text-base font-medium shadow-md hover:opacity-90 transition">
-                        Request Consultation
+                        Request Free Consultation
                     </button>
                 </div>
 

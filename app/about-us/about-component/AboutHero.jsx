@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 export default function AboutHero() {
   return (
@@ -29,16 +30,21 @@ export default function AboutHero() {
       <div className="absolute inset-0 bg-gradient-to-r from-[#b45c54]/60 to-[#b96a7a]/90 z-0"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-3xl text-white">
-        <h1 className="text-3xl sm:text-4xl md:text-[37px] font-[500] leading-tight mb-6">
-          Real Guidance <br /> Real Experts
+      <div className="relative z-10 max-w-4xl text-white">
+        <h1 className="text-3xl sm:text-4xl md:text-[50px] font-[600] leading-tight mb-8">
+          Honest Guidance. 
+ <br />  Trusted Expertise.
         </h1>
 
-        <p className="text-sm sm:text-base md:text-[24px] max-w-[600px] mx-auto leading-8 text-white">
-          Answers to your questions. Insights that help you find your way.
-          Take charge of your journey with horoscopes, psychic readings,
-          and more.
+        <p className="text-sm sm:text-base md:text-[22px] max-w-[800px] mx-auto leading-relaxed text-white/90 mb-10">
+          Real answers to your life's biggest questions, through accurate Janam Kundli analysis, expert Palm Reading, and authentic Vastu consulting by Pandit Vishal Johari at Bajrang Astro. Trusted by 1000+ families and businesses across India.
         </p>
+
+        <div className="flex justify-center">
+          <Link href="/contact" className="inline-block bg-white text-[#b45c54] px-10 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-[#FCF8F4] hover:scale-105 transition-all duration-300 cursor-pointer">
+            Book Your Consultation
+          </Link>
+        </div>
       </div>
     </section>
   );

@@ -8,28 +8,28 @@ export default function VastuHero() {
 
                 <div className=" lg:text-left xl:mb-7 ">
                     <p className="text-[#E57661] text-xs md:text-[16px] font-[500] mb-3">
-                        ANCIENT WISDOM, MODERN LIVING
+                        VASTU SHASTRA, MODERN LIVING
                     </p>
 
                     <h1 className="text-3xl md:text-6xl font-[500] tracking-tight md:leading-17  text-[#333]">
-                        Transform Your
-                        <span className="text-[#E57661]"> Space,</span> Transcend
+                        Correct Your
+                        <span className="text-[#E57661]"> Space,</span> Transform
                         Your Life.
                     </h1>
 
-                    <p className="mt-5 text-[#303030] text-lg md:text-[24px] max-w-md  lg:mx-0">
-                        We architect organized peace by aligning your environment with the cosmic flow of Vastu Shastra.
+                    <p className="mt-5 text-[#303030] text-lg md:text-[24px] max-w-xl  lg:mx-0">
+                        Pandit Vishal Johari at Bajrang Astro brings the ancient science of Vastu Shastra into your home, office, and business removing energy blocks and creating the right environment for success, peace, and growth.
                     </p>
 
                     {/* BUTTONS */}
-                    <div className="flex flex-col sm:flex-row gap-4 mt-6  lg:justify-start">
-                        <button className="bg-[#E57661] cursor-pointer w-fit text-white px-6 py-5 rounded-full font-medium shadow-md hover:bg-white border border-[#E57661] hover:border-[#E57661] hover:text-[#333] transition">
-                            Start Your Alignment
-                        </button>
+                    <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 mt-8 lg:justify-start">
+                        <a href="tel:+918595046368" className="bg-[#E57661] cursor-pointer w-fit text-white px-6 py-4 rounded-full font-medium shadow-md hover:bg-white border border-[#E57661] hover:border-[#E57661] hover:text-[#333] transition">
+                            Call Now
+                        </a>
 
-                        <button className="border cursor-pointer border-[#E57661] w-fit bg-white text-[#333] px-15 py-5 rounded-full font-medium hover:bg-[#E57661] hover:text-white transition">
-                            Whatsapp
-                        </button>
+                        <a href="https://wa.me/918595046368" target="_blank" rel="noopener noreferrer" className="border cursor-pointer border-[#E57661] w-fit bg-white text-[#333] px-12 py-4 rounded-full font-medium hover:bg-[#E57661] hover:text-white transition">
+                            WhatsApp Us
+                        </a>
                     </div>
                 </div>
 

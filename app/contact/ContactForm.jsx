@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"
 import { motion } from "framer-motion";
@@ -41,6 +41,11 @@ export default function ContactForm() {
 
     const [errors, setErrors] = useState({});
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     // ✅ Validation
     const validate = () => {
@@ -95,7 +100,7 @@ export default function ContactForm() {
 
             style={{
                 background: `
-        radial-gradient(113.61% 98.59% at 20% 70%, #D6E3FF 0%, rgba(214,227,255,0) 40%),
+        radial-gradient(113.61% 98.59% at 20% 70%, #FDE0DC 0%, rgba(253,224,220,0) 40%),
         radial-gradient(106.8% 92.68% at 70% 30%, #FFDEA5 0%, rgba(255,222,165,0) 40%)
       `,
             }}>
@@ -112,7 +117,7 @@ export default function ContactForm() {
                 <h1 className=" text-2xl md:text-4xl font-[500]">Consultation <span>Request</span></h1>
 
                 <p className="text-[17px] md:text-lg font-[300]">
-                    Align your journey with celestial wisdom. Choose your service to begin.
+                    Start your journey with Pandit Vishal Johari. Choose your service and take the first step today.
                 </p>
             </motion.div>
 
@@ -131,56 +136,13 @@ export default function ContactForm() {
                         Contact Information
                     </h2>
 
-                    <p className="text-gray-600 mb-8 leading-relaxed">
-                        Meenal (Vastu & Astrology Consultant)
+                    <p className="text-gray-800 text-xl font-medium mb-8 leading-relaxed">
+                        Pandit Vishal Johari <span className="text-gray-600 text-base font-normal italic">(Vedic Astrologer & Vastu Consultant)</span>
                     </p>
 
                     <div className="space-y-10">
 
-                        {/* Email */}
-                        <div className="flex items-start gap-4">
-                            <FaEnvelope className="text-[#E57661] mt-1 text-lg" />
-                            <div>
-                                <p className="text-gray-500 text-sm">Email</p>
-                                <p className="text-gray-800 text-base">
-                                    info@astrovastullc.com
-                                </p>
-                            </div>
-                        </div>
 
-                        {/* Phone */}
-                        <div className="flex items-start gap-4">
-                            <FaPhoneAlt className="text-[#E57661] mt-1 text-lg" />
-                            <div>
-                                <p className="text-gray-500 text-sm">Phone</p>
-                                <p className="text-gray-800 text-base">
-                                    +641-230-0819
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* USA */}
-                        <div className="flex items-start gap-4">
-                            <FaMapMarkerAlt className="text-[#E57661] mt-1 text-lg" />
-                            <div>
-                                <p className="text-gray-500 text-sm">USA Office</p>
-                                <p className="text-gray-800 text-base leading-relaxed">
-                                    Bridgemill Dr., Columbus, GA 31904
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* India */}
-                        <div className="flex items-start gap-4">
-                            <FaMapMarkerAlt className="text-[#E57661] mt-1 text-lg" />
-                            <div>
-                                <p className="text-gray-500 text-sm">India Office</p>
-                                <p className="text-gray-800 text-base leading-relaxed">
-                                    B-838 2nd floor (back side) <br />
-                                    Gate no.4, Greenfield Colony, Faridabad
-                                </p>
-                            </div>
-                        </div>
 
                     </div>
                 </motion.div>
@@ -194,7 +156,7 @@ export default function ContactForm() {
                 >
 
                     <h2 className="text-2xl font-[500] mb-6 text-gray-800">
-                        Talk to Your Consultant
+                        Talk to Experts Astrologer
                     </h2>
 
                     <form onSubmit={handleSubmit} className="space-y-5">
@@ -205,6 +167,7 @@ export default function ContactForm() {
                                 type="text"
                                 placeholder="Full Name"
                                 value={form.name}
+                                suppressHydrationWarning
                                 onChange={(e) => {
                                     const value = e.target.value;
                                     // Prevent numbers typing
@@ -223,6 +186,7 @@ export default function ContactForm() {
                                 type="email"
                                 placeholder="Email"
                                 value={form.email}
+                                suppressHydrationWarning
                                 onChange={(e) =>
                                     setForm({ ...form, email: e.target.value })
                                 }
@@ -238,6 +202,7 @@ export default function ContactForm() {
                                 placeholder="Phone"
                                 value={form.phone}
                                 maxLength={10}
+                                suppressHydrationWarning
                                 onChange={(e) => {
                                     const value = e.target.value;
                                     // Only numbers allowed
@@ -269,7 +234,14 @@ export default function ContactForm() {
 
                             {dropdownOpen && (
                                 <div className="absolute w-full focus:outline-none border-gray-300 focus:border-[#E57661] bg-white rounded-lg mt-1 shadow-md z-10">
-                                    {["Astrology", "Vastu"].map((item) => (
+                                    {[
+                                        "Janam Kundli Analysis",
+                                        "Palm Reading",
+                                        "Vastu Consulting — Home",
+                                        "Vastu Consulting — Office",
+                                        "Vastu Consulting — Factory",
+                                        "Kundli Matching"
+                                    ].map((item) => (
                                         <div
                                             key={item}
                                             onClick={() => {
@@ -292,6 +264,7 @@ export default function ContactForm() {
                             <textarea
                                 placeholder="Message"
                                 value={form.message}
+                                suppressHydrationWarning
                                 onChange={(e) =>
                                     setForm({ ...form, message: e.target.value })
                                 }
@@ -303,9 +276,10 @@ export default function ContactForm() {
                         {/* Button */}
                         <button
                             type="submit"
+                            suppressHydrationWarning
                             className="w-full bg-[#E57661] text-white py-3 rounded-lg hover:bg-[#d96552] transition cursor-pointer"
                         >
-                            Submit
+                            Book Free Consultation
                         </button>
 
                     </form>

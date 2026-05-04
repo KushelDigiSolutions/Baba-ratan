@@ -3,32 +3,34 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 
-const data = {
-    residential: {
-        title: "Residential Alignment",
-        desc: "Transform your home into a sanctuary that attracts health, wealth, and profound peace for the entire family.",
-        img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837109/Residential_Alignment_vvyo7x.png",
-    },
-    commercial: {
-        title: "Commercial Prosperity",
-        desc: "Optimize your workplace to boost employee productivity, creative output, and bottom-line revenue.",
-        icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837106/Commercial_Prosperity_vcfsfv.png",
-    },
-    plot: {
-        title: "Plot & Soil Analysis",
-        desc: "Choose the right foundation. We analyze energy patterns, soil quality, and directional slopes before you build.",
-        icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837106/Plot_Soil_Analysis_yy7vwk.png",
-    },
-    industrial: {
-        title: "Industrial Flow",
-        desc: "Large scale factory layouts to minimize machine downtime and ensure safety protocols align with elemental forces.",
-        img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837108/Industrial_Flow_gxwnlo.png",
-    },
-};
+
 
 export default function VastuSixth() {
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
+
+    const data = {
+        residential: {
+            title: "Home Vastu Consulting",
+            desc: "Transform your home into a place of peace, health, and abundance with Pandit Vishal Johari expert home Vastu analysis across India.",
+            img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837109/Residential_Alignment_vvyo7x.png",
+        },
+        commercial: {
+            title: "Office Vastu Consulting",
+            desc: "Align your workplace energy to boost team performance, attract better clients, and grow your business revenue consistently.",
+            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837106/Commercial_Prosperity_vcfsfv.png",
+        },
+        plot: {
+            title: "Plot & Land Analysis",
+            desc: "Before you buy or build let Pandit Vishal Johari analyse the soil energy, directional slope, and Vastu compatibility of your plot to avoid future problems.",
+            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837106/Plot_Soil_Analysis_yy7vwk.png",
+        },
+        industrial: {
+            title: "Factory & Industrial Vastu",
+            desc: "Reduce machine breakdowns, worker issues, and production losses with a complete factory Vastu consultation customised for large industrial spaces.",
+            img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837108/Industrial_Flow_gxwnlo.png",
+        },
+    };
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -56,13 +58,13 @@ export default function VastuSixth() {
             <div className="max-w-[1250px] mx-auto flex flex-col gap-6">
                 <div className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                     <h4 className="text-[28px] md:text-[40px] font-[500] text-[#1E1E1E]">
-                        Rituals of{" "}
-                        <span className="text-[#7A5A1A]">Space</span>
+                        Our Vastu{" "}
+                        <span className="text-[#E57661]">Services</span>
                     </h4>
 
                     {/* Subtext */}
                     <p className="text-[16px] md:text-[25px] text-[#303030]">
-                        Precision analysis for every environment.
+                        Expert analysis for every property type across India.
                     </p>
                 </div>
 

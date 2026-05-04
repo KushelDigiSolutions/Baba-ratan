@@ -55,23 +55,23 @@ export default function TrustedProducts() {
       {/* HEADER */}
       <div className="trusted-header">
         <p className="small-title">Buy Gemstones Online</p>
-        <h6>Products of Trusted Excellence</h6>
+        <h6>100% Certified & Energised Delivered Across India</h6>
       </div>
 
       {/* TABS */}
-    <div className='tab-container'>
+      <div className='tab-container'>
         <div className="tabs">
-        {TABS.map((tab) => (
-          <button
-            key={tab}
-            className={`tab ${activeTab === tab ? 'active' : ''}`}
-            onClick={() => setActiveTab(tab)}
-          >
-            {tab}
-          </button>
-        ))}
+          {TABS.map((tab) => (
+            <button
+              key={tab}
+              className={`tab ${activeTab === tab ? 'active' : ''}`}
+              onClick={() => setActiveTab(tab)}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
       </div>
-    </div>
 
       {/* PRODUCTS */}
       <div className="product-grid">
@@ -94,25 +94,25 @@ export default function TrustedProducts() {
 
       {/* FOOTER */}
       <div className="trusted-footer">
-       <div className="benefits">
-  <span className="benefit-item">
-    <GiCheckMark className="benefit-icon" />
-    Improves Communication
-  </span>
+        <div className="benefits">
+          <span className="benefit-item">
+            <GiCheckMark className="benefit-icon" />
+            Improves Communication
+          </span>
 
-  <span className="benefit-item">
-    <GiCheckMark className="benefit-icon" />
-    Personality & Charisma
-  </span>
+          <span className="benefit-item">
+            <GiCheckMark className="benefit-icon" />
+            Personality & Charisma
+          </span>
 
-  <span className="benefit-item">
-    <GiCheckMark className="benefit-icon" />
-    Business Growth
-  </span>
-</div>
-<Link href="/shop">
-                    <button className="view-all">View All</button>
-                </Link>
+          <span className="benefit-item">
+            <GiCheckMark className="benefit-icon" />
+            Business Growth
+          </span>
+        </div>
+        <Link href="/shop">
+          <button className="view-all">View All</button>
+        </Link>
       </div>
     </section>
   );

@@ -8,15 +8,15 @@ export default function HomeEigth() {
         {
             id: 1,
             beforeImg:
-            "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430366/Low_Growth_Poor_Energy_Flow_nfaknr.png"
-                ,
+                "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430366/Low_Growth_Poor_Energy_Flow_nfaknr.png"
+            ,
             afterImg:
                 "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430368/Balanced_Space_Positive_Energy_zdur5k.png",
 
-             Percent:"+40%",
+            Percent: "+60%",
 
-            result: " Revenue Growth",
-            desc: "Achieved within 6 months of structural realignment and executive desk repositioning.",
+            result: "  Revenue Growth",
+            desc: "Achieved within 4 months of office, Vastu correction and owner desk repositioning in Noida.",
         },
 
         {
@@ -27,17 +27,17 @@ export default function HomeEigth() {
                 "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430367/Improved_Harmony_Aligned_Flow_qglrri.png",
 
             result: "Total Domestic Peace",
-            desc: "Conflict reduced by 80% through South-West master bedroom correction and North-East clearing.",
+            desc: "Family conflicts were reduced completely through South-West bedroom correction and North-East zone clearing.",
         },
-          {
+        {
             id: 3,
             beforeImg:
                 "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430366/Confusion_Instability_c6kb9n.png",
             afterImg:
                 "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430365/Clarity_Opportunities_akbuyl.png",
 
-            result: "Promoted in 90 Days",
-            desc: "Enhanced career prospects by activating the North zone for career and wealth flow.",
+            result: "Promoted Within 6 Months",
+            desc: "Career growth unlocked by activating the North zone for wealth and professional success.",
         },
     ];
 
@@ -51,11 +51,12 @@ export default function HomeEigth() {
 
                 <h5 className="text-2xl md:text-4xl font-semibold mt-3 text-gray-800">
                     See the Difference the Right Direction Can Make
+
                 </h5>
 
                 <p className="text-gray-500 mt-4 text-sm md:text-base">
-                    Real spaces. Real problems. Real results. Witness the alchemical shift
-                    from stagnation to prosperity through architectural alignment.
+                    Real people. Real problems. Real results. See how Bajrang Astro Vastu consulting turned stagnation into success across India.
+
                 </p>
             </div>
 
@@ -68,7 +69,7 @@ export default function HomeEigth() {
                     >
                         {/* IMAGE GRID */}
                         <div className="grid grid-cols-1 md:grid-cols-2">
-                          
+
                             <div className="relative h-[300px] md:h-[600px] max-w-[900px]">
                                 <Image
                                     src={card.beforeImg}
@@ -77,8 +78,8 @@ export default function HomeEigth() {
                                     className="md:object-cover object-contain"
                                 />
 
-                         
-                                
+
+
                             </div>
 
                             <div className="relative h-[300px] md:h-[600px]">
@@ -89,7 +90,7 @@ export default function HomeEigth() {
                                     className="md:object-cover object-contain"
                                 />
 
-                               
+
                             </div>
                         </div>
 
@@ -100,12 +101,12 @@ export default function HomeEigth() {
                                     THE TRANSFORMATION
                                 </p>
 
-                                <h5 className={`text-2xl xl:text-[40px]  max-w-[350px] ${card.id==1?"font-[500]":"font-[700]"} leading-11 text-[#000000]` }>
-                                    {card.Percent&&<span className="font-bold">{card.Percent}</span>} {card.result}
+                                <h5 className={`text-2xl xl:text-[40px]  max-w-[350px] ${card.id == 1 ? "font-[500]" : "font-[700]"} leading-11 text-[#000000]`}>
+                                    {card.Percent && <span className="font-bold">{card.Percent}</span>} {card.result}
                                 </h5>
 
                                 <p className="text-[#44474D] max-w-[400px] text-[16px] xl:text-[17px] mt-5">
-                                   {card.desc}
+                                    {card.desc}
                                 </p>
                             </div>
                         </div>

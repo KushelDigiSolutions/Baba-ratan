@@ -6,37 +6,38 @@ export default function HomeFifth() {
         { text: "Business not growing", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Business_not_growing_t9ft7q.png" },
         { text: "Financial instability", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Financial_instability_r6dzk6.png" },
         { text: "Stress at home or office", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Stress_at_home_or_office_us0kek.png" },
-        { text: (
-      <>
-        Constant negative <br />  energy
-      </>
-    ), icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Constantnegativeenergy_m6t30w.png" },
-        { text: "Repeated failures", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
-        { text: "Repeated failures", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
+        {
+            text: (
+                <>
+                    Constant negative <br />  energy
+                </>
+            ), icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Constantnegativeenergy_m6t30w.png"
+        },
+        { text: "Repeated failures in career", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
+        { text: "Conflicts in relationships", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
     ];
 
     return (
         <section className=" relative max-w-[1720px] mx-auto py-16 px-4 md:px-10">
-              {/* <Image
+            {/* <Image
         src="YOUR_BG_IMAGE_URL"
         alt="background"
         fill
         priority
         className="object-cover -z-10"
       /> */}
-      <div className="absolute inset-0 bg-[radial-gradient(140.3%_104.29%_at_10%_20%,rgba(254,212,136,0.15)_0%,#F8F9FA_90%)] -z-10" />
+            <div className="absolute inset-0 bg-[#FED48826] -z-10" />
             <div className="max-w-7xl mx-auto">
 
                 {/* Heading */}
                 <div className="text-center mb-12">
                     <h5 className="text-2xl md:text-[35px] font-[500] text-black">
-                        Facing These Challenges in Your <br className="hidden md:block" />
-                        Life or Business?
+                       Struggling in Your Life or Business? 
+
                     </h5>
 
-                    <p className="mt-4 text-[#303030] text-[16px] md:text-[23px] font-[400] max-w-[700px] mx-auto">
-                        Sometimes, the problems we face are not just external they may be
-                        rooted in the energy of our space.
+                    <p className="mt-4 text-[#303030] text-[16px] md:text-[23px] font-[400] max-w-[850px] mx-auto">
+                        Most problems we face are not just bad luck they may be silently caused by <span className="font-bold">Vastu imbalances</span> or unfavourable planetary positions in your <span className="font-bold">Janam Kundli.</span>
                     </p>
                 </div>
 
@@ -50,7 +51,7 @@ export default function HomeFifth() {
                                 key={index}
                                 className="bg-[#FFFFFFCC]/80 rounded-2xl p-8  transition duration-300 flex flex-col gap-4"
                             >
-                                
+
                                 <div className="relative w-6 h-6">
                                     <Image
                                         src={item.icon}
@@ -67,7 +68,7 @@ export default function HomeFifth() {
                         ))}
                     </div>
 
-                  
+
                     <div className="relative rounded-[30px] overflow-hidden  h-[300px]  md:h-[500px] ">
 
                         <Image

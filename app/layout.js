@@ -12,9 +12,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Gemstone Website",
-  description: "A website for gemstones",
+  metadataBase: new URL('https://bajrangastro.com'),
+  title: "Bajrang Astro | Trusted Vedic Astrology & Gemstones",
+  description: "Get trusted Vedic astrology consultation, Janam Kundli analysis, and 100% certified gemstones from Bajrang Astro.",
 };
+
+import { CartProvider } from "./context/CartContext";
 
 export default function RootLayout({ children }) {
   return (
@@ -22,7 +25,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );

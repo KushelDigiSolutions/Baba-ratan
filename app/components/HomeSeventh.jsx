@@ -40,26 +40,28 @@ export default function HomeSeventh() {
         {
             id: "01",
             title: "Consultation & Analysis",
-            desc: "We understand your space, challenges, and goals through a detailed consultation and energy analysis. Our experts map the cosmic blueprint of your surroundings.",
+            desc: "We listen to your problems, study your Janam Kundli or property layout, and identify the exact root cause affecting your life or business.",
+
             align: "left",
             icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776427280/Consultation_Analysis_gj4g6p.png",
-            buttonText: "ALIGNING INTENTIONS"
+            buttonText: "CALL NOW"
         },
         {
             id: "02",
-            title: "Detailed Report & Guidance",
-            desc: "You receive clear, actionable recommendations with practical solutions tailored to your needs. We provide a bespoke architectural guide for spiritual harmony.",
+            title: "Personalised Report & Guidance",
+
+            desc: "You receive a clear, written report with simple, actionable solutions, whether it is a Vastu correction, a gemstone remedy, or a palm reading insight.",
             align: "right",
             icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776427280/DetailedReport_ysutuh.png",
-            buttonText: "COSMIC BLUEPRINT"
+            buttonText: "WhatsApp us today"
         },
         {
             id: "03",
             title: "Implementation & Support",
-            desc: "Apply the suggested changes and experience positive transformation, balance, and growth. Watch as your environment begins to resonate with cosmic frequencies.",
+            desc: "Apply the suggested changes and start experiencing real transformation in your energy, relationships, finances, and overall well-being.",
             align: "left",
             icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776427280/Implementatn_Results_zypupl.png",
-            buttonText: "ENERGY TRANSFORMATION"
+            buttonText: "BOOK NOW "
         },
     ];
 
@@ -73,16 +75,16 @@ export default function HomeSeventh() {
                     HOW IT WORKS
                 </p>
 
-                <h5 className="text-3xl md:text-4xl font-[500] text-gray-800 leading-tight">
+                <h5 className="text-3xl md:text-[45px] font-[500] text-[#2D2D2D] leading-[1.2] max-w-[800px] mx-auto">
                     A Simple 3-Step Process to
-                    <span className="block text-[#E57661] mt-2">
-                        Transform Your Space
+                    <span className="block text-[#E57661] mt-1">
+                        Transform Your Space & Life
                     </span>
                 </h5>
 
                 <p className="mt-6 text-[#303030] gray-600 text-base md:text-[24px]">
-                    Our approach is designed to be clear, practical, and result-oriented
-                    guiding you step by step.
+                    Our approach is honest, practical, and result-focused, guiding you clearly from problem to solution, step by step. 
+
                 </p>
             </div>
 
@@ -169,7 +171,10 @@ export default function HomeSeventh() {
                                         {step.desc}
                                     </p>
 
-                                    <p
+                                    <a
+                                        href={index === 0 ? "tel:+918595046368" : index === 1 ? "https://wa.me/918595046368" : "/contact"}
+                                        target={index === 1 ? "_blank" : "_self"}
+                                        rel={index === 1 ? "noopener noreferrer" : ""}
                                         className={`mt-4 text-[#E57661] text-[17px] ${index == 0 ? "font-[500]" : "font-semibold"} flex items-center gap-2 ${step.align === "right" ? "justify-end" : ""}`}
                                     >
                                         {step.align !== "right" && (
@@ -179,7 +184,7 @@ export default function HomeSeventh() {
                                         {step.align === "right" && (
                                             <span className="w-8 h-[1px] bg-[#E57661]"></span>
                                         )}
-                                    </p>
+                                    </a>
                                 </div>
                             </div>
                         </div>

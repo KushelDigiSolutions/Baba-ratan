@@ -16,24 +16,24 @@ import VastuThird from './VastuThird'
 const VastuConsulting = () => {
        const faqData = [
   {
-    question: "Who is the best business consultant in India?",
+    question: "Who is the best Vastu consultant in India?",
     answer:
-      "Shubham Gupta Business Consultant is known as one of the best business consultants in India, helping startups and companies grow with simple and effective strategies.",
+      "Pandit Vishal Johari of Bajrang Astro is one of the most trusted Vastu consultants in India, known for accurate space analysis and practical corrections for homes, offices, and factories.",
   },
   {
-    question: "How can a business consultant help my business?",
+    question: "How can Vastu consulting help my home or business?",
     answer:
-      "A business consultant like Shubham Gupta Business Consultant helps you improve your planning, fix problems, and grow your business step by step.",
+      "Expert Vastu consultation by Pandit Vishal Johari identifies hidden energy blocks in your space and corrects them, bringing financial growth, peace, and positive energy back into your life.",
   },
   {
-    question: "Do you provide services in Noida and Delhi NCR?",
+    question: "Do you provide Vastu services across India?",
     answer:
-      "Yes, Shubham Gupta Business Consultant in Noida provides services across Delhi NCR and helps businesses grow with local market understanding.",
+      "Yes, Bajrang Astro provides Vastu consulting across India. Site visits are available in Delhi NCR, Noida, Gurgaon, Ghaziabad, and Meerut. Online Vastu analysis is available pan-India.",
   },
   {
-    question: "Can I get a free consultation for my business?",
+    question: "Can I get a free Vastu consultation with Pandit Vishal Johari?",
     answer:
-      "Yes, you can contact Shubham Gupta Business Consultant to get a free consultation and understand how to improve your business.",
+      "Yes, you can connect with Pandit Vishal Johari for a free initial chat on WhatsApp or call to understand your Vastu dosh and find the right solution for your space.",
   },
 ];
   return (
