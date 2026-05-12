@@ -7,11 +7,13 @@ import Navbar from '../COMMON/Navbar';
 import Footer from '../COMMON/Footer';
 
 const CartSection = () => {
-    const { cart, removeFromCart, updateQuantity, cartCount } = useCart();
+    const { cart, cartSummary, isLoading, removeFromCart, updateQuantity, cartCount } = useCart();
+    const apiBase = "https://bajrangastro.kdscrm.com";
 
-    const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
-    const shipping = subtotal > 99 ? 0 : 15;
-    const total = subtotal + shipping;
+    const subtotal = cartSummary?.sub_total || cart.reduce((total, item) => total + (Number(item.price) * item.quantity), 0);
+    const shipping = cartSummary?.shipping_amount || (subtotal > 2000 ? 0 : 50);
+    const tax = cartSummary?.tax_amount || 0;
+    const total = cartSummary?.grand_total || (Number(subtotal) + Number(shipping) + Number(tax));
 
     const fontStyle = { fontFamily: "'GT Walsheim Trial', sans-serif" };
 
@@ -30,7 +32,12 @@ const CartSection = () => {
                     My Bag <span className="text-[#E57661] text-xl">({cartCount} items)</span>
                 </h1>
 
-                {cart.length === 0 ? (
+                {isLoading ? (
+                    <div className="flex flex-col items-center justify-center py-20 bg-white rounded-3xl border border-gray-100 shadow-sm">
+                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#E57661]"></div>
+                        <p className="mt-4 text-gray-500 font-medium">Syncing your bag...</p>
+                    </div>
+                ) : cart.length === 0 ? (
                     <div className="bg-white rounded-3xl p-12 text-center shadow-sm border border-gray-100 flex flex-col items-center gap-6">
                         <div className="w-20 h-20 bg-orange-50 rounded-full flex items-center justify-center text-[#E57661]">
                             <FiShoppingBag size={40} />
@@ -50,14 +57,24 @@ const CartSection = () => {
                             {cart.map((item) => (
                                 <div key={item.id} className="bg-white rounded-2xl p-4 md:p-6 shadow-sm border border-gray-100 flex gap-4 md:gap-6 items-center">
                                     <div className={`w-24 h-24 md:w-32 md:h-32 rounded-xl overflow-hidden flex-shrink-0 ${item.imageBg || 'bg-[#F6F1EA]'}`}>
-                                        <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                                        <img 
+                                            src={
+                                                item.main_image || item.image
+                                                    ? ( (item.main_image || item.image).startsWith('http') 
+                                                        ? (item.main_image || item.image) 
+                                                        : `${apiBase}/${item.main_image || item.image}`)
+                                                    : "https://res.cloudinary.com/dd9tagtiw/image/upload/v1766821528/Emerald-PNG-Image-File_1_rkoyhz.png"
+                                            } 
+                                            alt={item.name} 
+                                            className="w-full h-full object-cover" 
+                                        />
                                     </div>
 
                                     <div className="flex-grow">
                                         <div className="flex justify-between items-start mb-2">
                                             <div>
-                                                <h3 className="text-lg md:text-xl font-bold text-[#303030]">{item.name}</h3>
-                                                <p className="text-sm text-gray-500 line-clamp-1">{item.subtitle || item.description}</p>
+                                                <h3 className="text-lg md:text-xl font-bold text-[#303030] line-clamp-1">{item.name}</h3>
+                                                <div className="text-sm text-gray-500 line-clamp-1" dangerouslySetInnerHTML={{ __html: item.short_description || item.subtitle || item.description }} />
                                             </div>
                                             <button 
                                                 onClick={() => removeFromCart(item.id)}
@@ -71,7 +88,7 @@ const CartSection = () => {
                                             <div className="flex items-center border border-gray-200 rounded-lg overflow-hidden h-10">
                                                 <button 
                                                     onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                                                    className="w-10 flex items-center justify-center hover:bg-gray-50 text-gray-600 transition"
+                                                    className="w-10 flex cursor-pointer items-center justify-center hover:bg-gray-50 text-gray-600 transition"
                                                 >
                                                     <FiMinus size={14} />
                                                 </button>
@@ -80,14 +97,14 @@ const CartSection = () => {
                                                 </span>
                                                 <button 
                                                     onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                                                    className="w-10 flex items-center justify-center hover:bg-gray-50 text-gray-600 transition"
+                                                    className="w-10 flex cursor-pointer items-center justify-center hover:bg-gray-50 text-gray-600 transition"
                                                 >
                                                     <FiPlus size={14} />
                                                 </button>
                                             </div>
 
                                             <div className="text-lg md:text-xl font-bold text-[#E57661]">
-                                                ${(item.price * item.quantity).toFixed(2)}
+                                                ₹ {Number(item.total || (item.price * item.quantity)).toLocaleString('en-IN')}
                                             </div>
                                         </div>
                                     </div>
@@ -102,22 +119,26 @@ const CartSection = () => {
                             <div className="space-y-4 mb-8">
                                 <div className="flex justify-between text-gray-600">
                                     <span>Subtotal</span>
-                                    <span className="font-medium text-[#303030]">${subtotal.toFixed(2)}</span>
+                                    <span className="font-medium text-[#303030]">₹ {Number(subtotal).toLocaleString('en-IN')}</span>
+                                </div>
+                                <div className="flex justify-between text-gray-600">
+                                    <span>Tax Amount</span>
+                                    <span className="font-medium text-[#303030]">₹ {Number(tax).toLocaleString('en-IN')}</span>
                                 </div>
                                 <div className="flex justify-between text-gray-600">
                                     <span>Shipping</span>
                                     <span className="font-medium text-[#303030]">
-                                        {shipping === 0 ? <span className="text-green-600">Free</span> : `$${shipping.toFixed(2)}`}
+                                        {Number(shipping) === 0 ? <span className="text-green-600">Free</span> : `₹ ${Number(shipping).toLocaleString('en-IN')}`}
                                     </span>
                                 </div>
-                                {shipping > 0 && (
+                                {Number(shipping) > 0 && Number(subtotal) < 2000 && (
                                     <p className="text-[12px] text-orange-600 bg-orange-50 p-2 rounded-lg">
-                                        Add ${(100 - subtotal).toFixed(2)} more for FREE shipping!
+                                        Add ₹ {(2000 - Number(subtotal)).toLocaleString('en-IN')} more for FREE shipping!
                                     </p>
                                 )}
                                 <div className="border-t border-gray-100 pt-4 flex justify-between">
                                     <span className="text-lg font-bold text-[#303030]">Total</span>
-                                    <span className="text-2xl font-bold text-[#E57661]">${total.toFixed(2)}</span>
+                                    <span className="text-2xl font-bold text-[#E57661]">₹ {Number(total).toLocaleString('en-IN')}</span>
                                 </div>
                             </div>
 

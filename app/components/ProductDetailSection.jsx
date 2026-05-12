@@ -13,12 +13,16 @@ import { FaLinkedin } from 'react-icons/fa';
 import Footer from '../COMMON/Footer';
 
 import { useCart } from '../context/CartContext';
+import { useWishlist } from '../context/WishlistContext';
 
 const ProductDetailSection = ({ product }) => {
+    const apiBase = "https://bajrangastro.kdscrm.com";
     const { addToCart, getItemQuantity, updateQuantity } = useCart();
+    const { addToWishlist } = useWishlist();
     const [localQuantity, setLocalQuantity] = useState(1);
     const [activeTab, setActiveTab] = useState('description');
     const [addedToCart, setAddedToCart] = useState(false);
+    const [isWishlisting, setIsWishlisting] = useState(false);
 
     if (!product) return null;
 
@@ -34,6 +38,15 @@ const ProductDetailSection = ({ product }) => {
         addToCart(product, localQuantity);
         setAddedToCart(true);
         setTimeout(() => setAddedToCart(false), 3000);
+    };
+
+    const handleWishlist = async () => {
+        setIsWishlisting(true);
+        const success = await addToWishlist(product.id);
+        if (success) {
+            // Optional: show a success message
+        }
+        setIsWishlisting(false);
     };
 
     const fontStyle = { fontFamily: "'GT Walsheim Trial', sans-serif" };
@@ -58,7 +71,13 @@ const ProductDetailSection = ({ product }) => {
 
                     <div className={`${product.imageBg || 'bg-[#F6F1EA]'} rounded-[16px] overflow-hidden h-[360px] flex items-center justify-center`}>
                         <img
-                            src={product.image}
+                            src={
+                                product.main_image || product.image
+                                    ? ( (product.main_image || product.image).startsWith('http') 
+                                        ? (product.main_image || product.image) 
+                                        : `${apiBase}/${product.main_image || product.image}`)
+                                    : "https://res.cloudinary.com/dd9tagtiw/image/upload/v1766821528/Emerald-PNG-Image-File_1_rkoyhz.png"
+                            }
                             alt={product.name}
                             className="w-full h-full object-cover"
                         />
@@ -66,13 +85,19 @@ const ProductDetailSection = ({ product }) => {
 
                     {/* Thumbnail Slider */}
                     <div className="flex gap-3 min-[500px]:gap-6 overflow-x-auto">
-                        {[1, 2, 3, 4].map((i) => (
+                        {(product.images && product.images.length > 0 ? product.images : [1]).map((img, i) => (
                             <div
                                 key={i}
                                 className={`${product.imageBg || 'bg-[#F6F1EA]'} rounded-[20px] min-w-[90px] w-24 h-24 min-[500px]:w-30 min-[500px]:h-30 cursor-pointer transition-all`}
                             >
                                 <img
-                                    src={product.image}
+                                    src={
+                                        img.image || product.main_image || product.image
+                                            ? ( (img.image || product.main_image || product.image).startsWith('http') 
+                                                ? (img.image || product.main_image || product.image) 
+                                                : `${apiBase}/${img.image || product.main_image || product.image}`)
+                                            : "https://res.cloudinary.com/dd9tagtiw/image/upload/v1766821528/Emerald-PNG-Image-File_1_rkoyhz.png"
+                                    }
                                     alt={`Thumbnail ${i}`}
                                     className="w-full h-full object-cover opacity-90"
                                 />
@@ -142,7 +167,7 @@ const ProductDetailSection = ({ product }) => {
                     </div>
 
                     <div className="text-[26px] md:text-[30px] font-[600] text-[#EF7E6A]">
-                        ${product.price?.toFixed(2)}
+                        ₹ {typeof product.price === 'number' ? product.price.toLocaleString('en-IN') : product.price || "Contact for price"}
                     </div>
 
                     <div className="flex flex-col gap-4 mt-4">
@@ -191,9 +216,13 @@ const ProductDetailSection = ({ product }) => {
                             </p>
                         )}
 
-                        <button className="w-full border cursor-pointer border-[#EF7E6A] text-[#EF7E6A] font-bold h-[54px] rounded-md hover:bg-[#fff5f3] transition uppercase tracking-widest text-[14px] flex items-center justify-center gap-2">
+                        <button 
+                            onClick={handleWishlist}
+                            disabled={isWishlisting}
+                            className="w-full border cursor-pointer border-[#EF7E6A] text-[#EF7E6A] font-bold h-[54px] rounded-md hover:bg-[#fff5f3] transition uppercase tracking-widest text-[14px] flex items-center justify-center gap-2 disabled:opacity-50"
+                        >
                             <FiHeart className="text-lg" />
-                            ADD TO WISHLIST
+                            {isWishlisting ? 'ADDING...' : 'ADD TO WISHLIST'}
                         </button>
                     </div>
 
@@ -281,9 +310,10 @@ const ProductDetailSection = ({ product }) => {
                     <div className="flex flex-col gap-14">
                         {activeTab === 'description' && (
                             <>
-                                <p className="text-[#303030] text-[16px] leading-[1.8] font-normal">
-                                    {product.tabs?.description || product.description}
-                                </p>
+                                <div 
+                                    className="text-[#303030] text-[16px] leading-[1.8] font-normal summernote-content"
+                                    dangerouslySetInnerHTML={{ __html: product.tabs?.description || product.description || 'No description available.' }}
+                                />
 
                                 <div className="grid grid-cols-1 min-[500px]:grid-cols-2 gap-8 min-[500px]:gap-20">
                                     <div className="flex flex-col gap-8">
@@ -291,15 +321,15 @@ const ProductDetailSection = ({ product }) => {
                                         <div className="flex flex-col gap-6">
                                             <div className="flex justify-between text-[15px]">
                                                 <span className="text-[#303030] font-medium">Weight:</span>
-                                                <span className="text-[#303030] font-medium">{product.physicalAttributes?.weight || 'TBD'}</span>
+                                                <span className="text-[#303030] font-medium">{product.physicalAttributes?.weight || product.weight || 'TBD'}</span>
                                             </div>
                                             <div className="flex justify-between text-[15px]">
                                                 <span className="text-[#303030] font-medium">Cut:</span>
-                                                <span className="text-[#303030] font-medium">{product.physicalAttributes?.cut || 'TBD'}</span>
+                                                <span className="text-[#303030] font-medium">{product.physicalAttributes?.cut || product.cut || 'TBD'}</span>
                                             </div>
                                             <div className="flex justify-between text-[15px]">
                                                 <span className="text-[#303030] font-medium">Origin:</span>
-                                                <span className="text-[#303030] font-medium">{product.physicalAttributes?.origin || 'TBD'}</span>
+                                                <span className="text-[#303030] font-medium">{product.physicalAttributes?.origin || product.origin || product.country_of_origin || 'India'}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -330,9 +360,10 @@ const ProductDetailSection = ({ product }) => {
                                 <h4 className="text-[20px] font-bold text-[#E57661] uppercase tracking-wider">
                                     {activeTab.replace(/([A-Z])/g, ' $1')}
                                 </h4>
-                                <p className="text-[#303030] text-[18px] leading-[1.8]">
-                                    {product.tabs?.[activeTab] || `Information about ${activeTab} will be available soon.`}
-                                </p>
+                                <div 
+                                    className="text-[#303030] text-[18px] leading-[1.8] summernote-content"
+                                    dangerouslySetInnerHTML={{ __html: product.tabs?.[activeTab] || product[activeTab] || `Information about ${activeTab} will be available soon.` }}
+                                />
                             </div>
                         )}
                     </div>
@@ -343,10 +374,11 @@ const ProductDetailSection = ({ product }) => {
                             <p className="text-white text-[15px] leading-[1.8] font-normal mb-5 opacity-90">
                                 {product.wearingRitual?.instructions || 'Instructions will be available soon.'}
                             </p>
-                            <div className="bg-white rounded-lg p-1 mb-6 flex items-center justify-center text-center">
-                                <p className="text-[#E57661] text-[17px] font-[400] italic leading-relaxed">
-                                    {product.wearingRitual?.mantra || 'Mantra loading...'}
-                                </p>
+                             <div className="bg-white rounded-lg p-1 mb-6 flex items-center justify-center text-center">
+                                <div 
+                                    className="text-[#E57661] text-[17px] font-[400] italic leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: product.wearingRitual?.mantra || product.mantra || 'Mantra loading...' }}
+                                />
                             </div>
                             <button className="flex items-center cursor-pointer gap-2 text-[14px] font-[400] border-b border-white pb-1 hover:gap-3 transition-all uppercase tracking-widest">
                                 Download Full Ritual Guide

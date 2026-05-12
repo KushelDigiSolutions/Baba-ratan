@@ -27,8 +27,6 @@
 //     <ConsultationForm onClose={() => setShowForm(false)} />
 // )}
 
-
-
 //             {/* ================= TOP BAR ================= */}
 //             <div className="top-bar">
 //                 <a href="tel:+918595046368" className="top-left">
@@ -76,12 +74,10 @@
 //                     <img src="/favicon.ico" alt="Logo" />
 //                 </div>
 
-
 //                 {/* DESKTOP ASTRO */}
 //                 <div className="astro-call desktop-only">
 
 //                     <div className="nav-left">
-
 
 //                         <ul className="menu desktop-only">
 //                             <li className={pathname === '/vastu-consulting' ? 'active' : ''}>
@@ -124,7 +120,6 @@
 //                             />
 //                         </div>
 //                     </a>
-
 
 //                 </div>
 
@@ -170,47 +165,56 @@
 //     );
 // }
 
+"use client";
 
-
-'use client';
-
-import './navbar.css';
-import { FiPhone, FiSearch, FiMenu, FiX } from 'react-icons/fi';
+import "./navbar.css";
+import { FiPhone, FiSearch, FiMenu, FiX } from "react-icons/fi";
 import { IoCallSharp } from "react-icons/io5";
 import { HiShoppingCart } from "react-icons/hi";
 import { FaHeart } from "react-icons/fa";
 import { BiSolidUser } from "react-icons/bi";
-import { useRouter } from 'next/navigation';
-import { useState } from 'react';
-import SearchPopup from '../components/SearchPopup';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import Image from 'next/image';
+import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
+import SearchPopup from "../components/SearchPopup";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
 
-import { useCart } from '../context/CartContext';
+import { useCart } from "../context/CartContext";
+import { useAuth } from "../context/AuthContext";
+import { useWishlist } from "../context/WishlistContext";
 
 export default function Navbar() {
-    const { cartCount } = useCart();
-    const router = useRouter();
-    const [open, setOpen] = useState(false);
-    const [showPopup, setShowPopup] = useState(false);
-    const pathname = usePathname();
+  const { cartCount } = useCart();
+  const { wishlistItems } = useWishlist();
+  const { user, logout } = useAuth();
+  const router = useRouter();
+  const [open, setOpen] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-    return (
-        <header className="navbar-wrapper">
+  const pathname = usePathname();
+  const displayName =
+    user?.name?.split(" ")[0] || user?.email?.split("@")[0] || "Account";
 
-            {/* ================= TOP BAR ================= */}
-            <div className="top-bar">
-                <a href="tel:+918595046368" className="top-left">
-                    <span className="phone">
-                        <IoCallSharp size={20} color="#ffff" />+91 8595046368
-                    </span>
-                </a>
+  return (
+    <header className="navbar-wrapper">
+      {/* ================= TOP BAR ================= */}
+      <div className="top-bar">
+        <a href="tel:+918595046368" className="top-left">
+          <span className="phone">
+            <IoCallSharp size={20} color="#ffff" />
+            +91 8595046368
+          </span>
+        </a>
 
-                <div className="top-right">
-
-                    {/* DESKTOP SEARCH (CLICK → POPUP) */}
-                    {/* <div
+        <div className="top-right">
+          {/* DESKTOP SEARCH (CLICK → POPUP) */}
+          {/* <div
                         className="search-box desktop-only"
                         onClick={() => setShowPopup(true)}
                     >
@@ -227,148 +231,191 @@ export default function Navbar() {
                         />
                     </div> */}
 
-                    <div className="top-links desktop-only">
-                        <span><BiSolidUser size={20} /> Account</span>
-                        <span><FaHeart size={20} /> Wishlist</span>
-                        <Link href="/cart" className="flex items-center gap-1">
-                            <div className="relative">
-                                <HiShoppingCart size={20} />
-                                {cartCount > 0 && (
-                                    <span className="absolute -top-2 -right-2 bg-[#E57661] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
-                                        {cartCount}
-                                    </span>
-                                )}
-                            </div>
-                            <span>My Bag</span>
-                        </Link>
-                    </div>
+          <div className="top-links desktop-only">
+            {mounted && user ? (
+              <Link href={"/profile"} className="relative group">
+                <span className="flex items-center gap-1 text-white cursor-pointer">
+                  <BiSolidUser size={20} />
+                  <span>Hi, {displayName}</span>
+                </span>
+              </Link>
+            ) : (
+              <Link href="/login" className="flex items-center gap-1">
+                <BiSolidUser size={20} />
+                <span>Login</span>
+              </Link>
+            )}
 
-                    {/* HAMBURGER */}
-                    <div className="hamburger" onClick={() => setOpen(!open)}>
-                        {open ? <FiX size={24} /> : <FiMenu size={24} />}
-                    </div>
-                </div>
-            </div>
+            <Link href="/wishlist" className="flex items-center gap-1">
+              <div className="relative">
+                <FaHeart size={20} />
+                {mounted && wishlistItems.length > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-[#E57661] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
+                    {wishlistItems.length}
+                  </span>
+                )}
+              </div>
+              <span>Wishlist</span>
+            </Link>
 
-            {/* ================= MAIN NAV ================= */}
-            <nav className="main-nav">
-                <div className="logo" onClick={() => router.push('/')}>
-                    <img src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png" alt="Logo" />
-                </div>
+            <Link href="/cart" className="flex items-center gap-1">
+              <div className="relative">
+                <HiShoppingCart size={20} />
+                {mounted && cartCount > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-[#E57661] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
+                    {cartCount}
+                  </span>
+                )}
+              </div>
+              <span>My Bag</span>
+            </Link>
+          </div>
 
+          {/* HAMBURGER */}
+          <div className="hamburger" onClick={() => setOpen(!open)}>
+            {open ? <FiX size={24} /> : <FiMenu size={24} />}
+          </div>
+        </div>
+      </div>
 
-                {/* DESKTOP ASTRO */}
-                <div className="astro-call desktop-only">
+      {/* ================= MAIN NAV ================= */}
+      <nav className="main-nav">
+        <div className="logo" onClick={() => router.push("/")}>
+          <img
+            src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png"
+            alt="Logo"
+          />
+        </div>
 
-                    <div className="nav-left">
+        {/* DESKTOP ASTRO */}
+        <div className="astro-call desktop-only">
+          <div className="nav-left">
+            <ul className="menu desktop-only">
+              <li className={pathname === "/vastu-consulting" ? "active" : ""}>
+                <Link href="/vastu-consulting">Vastu Consulting</Link>
+              </li>
 
+              <li
+                className={pathname === "/astrology-services" ? "active" : ""}
+              >
+                <Link href="/astrology-services">Astrology Services</Link>
+              </li>
 
-                        <ul className="menu desktop-only">
-                            <li className={pathname === '/vastu-consulting' ? 'active' : ''}>
-                                <Link href="/vastu-consulting">Vastu Consulting</Link>
-                            </li>
+              <li className={pathname === "/shop" ? "active" : ""}>
+                <Link href="/shop">Shop</Link>
+              </li>
 
-                            <li className={pathname === '/astrology-services' ? 'active' : ''}>
-                                <Link href="/astrology-services">Astrology Services</Link>
-                            </li>
+              <li className={pathname === "/about-us" ? "active" : ""}>
+                <Link href="/about-us">About us</Link>
+              </li>
 
-                            <li className={pathname === '/shop' ? 'active' : ''}>
-                                <Link href="/shop">Shop</Link>
-                            </li>
-
-                            <li className={pathname === '/about-us' ? 'active' : ''}>
-                                <Link href="/about-us">About us</Link>
-                            </li>
-
-                            {/* <li className={pathname === '/contact' ? 'active' : ''}>
+              {/* <li className={pathname === '/contact' ? 'active' : ''}>
                                 <Link href="/contact">Contact</Link>
                             </li> */}
 
-                            <li className="dropdown">
-                                <span className={pathname.includes('/contact') ? 'active' : ''}>
-                                    Contact
-                                </span>
+              <li className="dropdown">
+                <Link
+                  href="/contact"
+                  className={pathname.includes("/contact") ? "active" : ""}
+                >
+                  Contact
+                </Link>
 
-                                <ul className="dropdown-menu">
-                                    <li>
-                                        <Link href="/contact">Template 1</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/contact2">Template 2</Link>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="tel:+918595046368" className="astro-left px-3 rounded-[7px] bg-[#FFF5E9]">
+                {/* <ul className="dropdown-menu">
+                  <li>
+                    <Link href="/contact">Template 1</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact2">Template 2</Link>
+                  </li>
+                </ul> */}
+              </li>
+            </ul>
+          </div>
+          <a
+            href="tel:+918595046368"
+            className="astro-left px-3 rounded-[7px] bg-[#FFF5E9]"
+          >
+            <div className="astro-icon">
+              {/* <FiPhone /> */}
+              <IoCallSharp size={32} color="#E57661" />
+            </div>
+            <div className="astro-text">
+              <p>Talk to our Astrologer</p>
+              <span className="text-[#E57661]">+91 8595046368</span>
+            </div>
+            <div className="astro-image">
+              <img
+                src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1766820530/compressed_52b5069c46640705212e2b570fb52627_3_zlf0wr.png"
+                alt="Astrologer"
+              />
+            </div>
+          </a>
+        </div>
 
-                        <div className="astro-icon">
-                            {/* <FiPhone /> */}
-                            <IoCallSharp size={32} color="#E57661" />
-                        </div>
-                        <div className="astro-text">
-                            <p>Talk to our Astrologer</p>
-                            <span className='text-[#E57661]'>+91 8595046368</span>
-                        </div>
-                        <div className="astro-image">
-                            <img
-                                src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1766820530/compressed_52b5069c46640705212e2b570fb52627_3_zlf0wr.png"
-                                alt="Astrologer"
-                            />
-                        </div>
-                    </a>
-
-
-                </div>
-
-                {/* MOBILE SEARCH ICON → POPUP */}
-                {/* <div
+        {/* MOBILE SEARCH ICON → POPUP */}
+        {/* <div
                     className="mobile-search-icon"
                     onClick={() => setShowPopup(true)}
                 >
                     <FiSearch size={22} />
                 </div> */}
-            </nav>
+      </nav>
 
-            {/* ================= MOBILE MENU ================= */}
-            {open && (
-                <div className="mobile-menu">
-                    <ul>
-                        <ul className="  .mobile-menu ul">
-                            <li><Link href="/vastu-consulting">Vastu Consulting</Link></li>
-                            <li><Link href="/astrology-services">Astrology Services</Link></li>
-                            <li><Link href="/shop">Shop</Link></li>
-                            <li><Link href="/about-us">About us</Link></li>
-                            <li><Link href="/contact">Contact</Link></li>
-                        </ul>
-                    </ul>
+      {/* ================= MOBILE MENU ================= */}
+      {open && (
+        <div className="mobile-menu">
+          <ul>
+            <ul className="  .mobile-menu ul">
+              <li>
+                <Link href="/vastu-consulting">Vastu Consulting</Link>
+              </li>
+              <li>
+                <Link href="/astrology-services">Astrology Services</Link>
+              </li>
+              <li>
+                <Link href="/shop">Shop</Link>
+              </li>
+              <li>
+                <Link href="/about-us">About us</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link>
+              </li>
+            </ul>
+          </ul>
 
-                    <div className="mobile-links">
-                        <span><BiSolidUser /> Account</span>
-                        <span><FaHeart /> Wishlist</span>
-                        <Link href="/cart" className="flex items-center gap-1">
-                            <div className="relative">
-                                <HiShoppingCart />
-                                {cartCount > 0 && (
-                                    <span className="absolute -top-2 -right-2 bg-[#E57661] text-white text-[8px] w-3 h-3 rounded-full flex items-center justify-center font-bold">
-                                        {cartCount}
-                                    </span>
-                                )}
-                            </div>
-                            <span>My Bag</span>
-                        </Link>
-                    </div>
+          <div className="mobile-links">
+            <span>
+              <BiSolidUser /> Account
+            </span>
+            <span>
+              <FaHeart /> Wishlist
+            </span>
+            <Link href="/cart" className="flex items-center gap-1">
+              <div className="relative">
+                <HiShoppingCart />
+                {cartCount > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-[#E57661] text-white text-[8px] w-3 h-3 rounded-full flex items-center justify-center font-bold">
+                    {cartCount}
+                  </span>
+                )}
+              </div>
+              <span>My Bag</span>
+            </Link>
+          </div>
 
-                    <a href="tel:+918595046368" className="mobile-astro">
-                        <IoCallSharp size={20} color="#E57661" />Talk to Astrologer
-                    </a>
-                </div>
-            )}
+          <a href="tel:+918595046368" className="mobile-astro">
+            <IoCallSharp size={20} color="#E57661" />
+            Talk to Astrologer
+          </a>
+        </div>
+      )}
 
-            {/* ================= SEARCH POPUP ================= */}
-            {/* {showPopup && (
+      {/* ================= SEARCH POPUP ================= */}
+      {/* {showPopup && (
                 <SearchPopup onClose={() => setShowPopup(false)} />
             )} */}
-        </header>
-    );
+    </header>
+  );
 }

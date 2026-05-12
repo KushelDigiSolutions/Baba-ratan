@@ -126,8 +126,8 @@ export default function Footer() {
                     <p className="text-[16px]">@2026 Bajrang Astro. All right Reserved</p>
 
                     <div className="flex gap-6 text-[16px] md:mr-10">
-                        <a href="#" className="hover:text-black tracking-wider">Terms And Condition</a>
-                        <a href="#" className="hover:text-black tracking-wider">Privacy Policy</a>
+                        <a href="/terms-condition" className="hover:text-black tracking-wider">Terms And Condition</a>
+                        <a href="/privacy-policy" className="hover:text-black tracking-wider">Privacy Policy</a>
                     </div>
                 </div>
 
