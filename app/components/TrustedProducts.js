@@ -1,54 +1,58 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import './TrustedProducts.css';
-import { FiHeart } from 'react-icons/fi';
+import { useState, useEffect } from "react";
+import "./TrustedProducts.css";
+import { FiHeart } from "react-icons/fi";
 import { GiCheckMark } from "react-icons/gi";
-import Link from 'next/link';
+import Link from "next/link";
+import { useCategory } from "../context/CategoryContext";
+import { useWishlist } from "../context/WishlistContext";
 
-const TABS = [
-  'Emerald (Panna)',
-  'Ruby (Manik)',
-  'Yellow Sapphire (Pukhraj)',
-  'Blue Sapphire (Neelam)',
-  'White Coral (Safed Moonga)',
-];
-
-const PRODUCTS = {
-  'Emerald (Panna)': [
-    { id: 1, title: 'Emerald - 6 carats', price: '₹ 21000', origin: 'Zambia', sold: true },
-    { id: 2, title: 'Emerald - 6.5 carats', price: '₹ 25000', origin: 'Zambia' },
-    { id: 3, title: 'Emerald - 5 carats', price: '₹ 16000', origin: 'Zambia' },
-    { id: 4, title: 'Emerald - 8.5 carats', price: '₹ 75000', origin: 'Zambia' },
-  ],
-  'Ruby (Manik)': [
-    { id: 1, title: 'Ruby - 5 carats', price: '₹ 32000', origin: 'Myanmar' },
-    { id: 2, title: 'Ruby - 6 carats', price: '₹ 45000', origin: 'Myanmar' },
-    { id: 3, title: 'Ruby - 7 carats', price: '₹ 58000', origin: 'Myanmar' },
-    { id: 4, title: 'Ruby - 8 carats', price: '₹ 72000', origin: 'Myanmar' },
-  ],
-  'Yellow Sapphire (Pukhraj)': [
-    { id: 1, title: 'Pukhraj - 5 carats', price: '₹ 28000', origin: 'Sri Lanka' },
-    { id: 2, title: 'Pukhraj - 6 carats', price: '₹ 36000', origin: 'Sri Lanka' },
-    { id: 3, title: 'Pukhraj - 7 carats', price: '₹ 48000', origin: 'Sri Lanka' },
-    { id: 4, title: 'Pukhraj - 8 carats', price: '₹ 62000', origin: 'Sri Lanka' },
-  ],
-  'Blue Sapphire (Neelam)': [
-    { id: 1, title: 'Neelam - 4 carats', price: '₹ 52000', origin: 'Sri Lanka' },
-    { id: 2, title: 'Neelam - 5 carats', price: '₹ 68000', origin: 'Sri Lanka' },
-    { id: 3, title: 'Neelam - 6 carats', price: '₹ 82000', origin: 'Sri Lanka' },
-    { id: 4, title: 'Neelam - 7 carats', price: '₹ 98000', origin: 'Sri Lanka' },
-  ],
-  'White Coral (Safed Moonga)': [
-    { id: 1, title: 'Moonga - 6 carats', price: '₹ 18000', origin: 'Italy' },
-    { id: 2, title: 'Moonga - 7 carats', price: '₹ 24000', origin: 'Italy' },
-    { id: 3, title: 'Moonga - 8 carats', price: '₹ 31000', origin: 'Italy' },
-    { id: 4, title: 'Moonga - 9 carats', price: '₹ 38000', origin: 'Italy' },
-  ],
-};
+const apiBase =
+  process.env.NEXT_PUBLIC_API_BASE ?? "https://bajrangastro.kdscrm.com/api";
 
 export default function TrustedProducts() {
-  const [activeTab, setActiveTab] = useState(TABS[0]);
+  const {
+    categories,
+    products,
+    activeCategory,
+    categoriesLoading,
+    productsLoading,
+    categoriesError,
+    productsError,
+    handleCategoryChange,
+  } = useCategory();
+
+  const { wishlistItems, addToWishlist, removeFromWishlist } = useWishlist();
+
+  const handleTabClick = (category) => {
+    handleCategoryChange(category);
+  };
+
+  const isInWishlist = (productId) => {
+    return wishlistItems.some(item =>
+      item.product_id === productId || item.product?.id === productId
+    );
+  };
+
+  const handleWishlistClick = async (e, productId) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (isInWishlist(productId)) {
+      // If already in wishlist, remove it
+      if (window.confirm("Remove this item from your wishlist?")) {
+        await removeFromWishlist(productId);
+      }
+      return;
+    }
+
+    // Otherwise, add it
+    const success = await addToWishlist(productId);
+    if (success) {
+      alert("Added to wishlist!");
+    }
+  };
 
   return (
     <section className="trusted-section">
@@ -59,37 +63,81 @@ export default function TrustedProducts() {
       </div>
 
       {/* TABS */}
-      <div className='tab-container'>
+      <div className="tab-container">
         <div className="tabs">
-          {TABS.map((tab) => (
-            <button
-              key={tab}
-              className={`tab ${activeTab === tab ? 'active' : ''}`}
-              onClick={() => setActiveTab(tab)}
-            >
-              {tab}
-            </button>
-          ))}
+          {categoriesLoading ? (
+            <div className="loading">Loading categories...</div>
+          ) : categoriesError ? (
+            <div className="error">
+              Error loading categories: {categoriesError}
+            </div>
+          ) : (
+            categories.map((category) => (
+              <button
+                key={category.id || category.slug}
+                className={`tab ${activeCategory?.id === category.id ? "active" : ""}`}
+                onClick={() => handleTabClick(category)}
+              >
+                {category.name}
+              </button>
+            ))
+          )}
         </div>
       </div>
 
       {/* PRODUCTS */}
       <div className="product-grid">
-        {PRODUCTS[activeTab].map((item) => (
-          <div className="product-card" key={item.id}>
-            {item.sold && <span className="badge sold">Sold Out</span>}
-            <FiHeart className="wishlist" />
+        {productsLoading ? (
+          <div className="loading">Loading products...</div>
+        ) : productsError ? (
+          <div className="error">Error loading products: {productsError}</div>
+        ) : products.length > 0 ? (
+          products.map((product) => (
+            <Link href={`/gemstones/${activeCategory.slug}/${product.slug}`} className="product-card" key={product.id}>
+              {product.sold && <span className="badge sold">Sold Out</span>}
+              <div
+                className="wishlist-container"
+                onClick={(e) => handleWishlistClick(e, product.id)}
+              >
+                <FiHeart
+                  className={`wishlist ${isInWishlist(product.id) ? "active" : ""}`}
+                  style={{
+                    fill: isInWishlist(product.id) ? "#de7a63" : "none",
+                    color: isInWishlist(product.id) ? "#de7a63" : "inherit"
+                  }}
+                />
+              </div>
 
-            <img
-              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1766821528/Emerald-PNG-Image-File_1_rkoyhz.png"
-              alt={item.title}
-            />
+              <img
+                src={
+                  product.main_image || product.image
+                    ? `${product.main_image || product.image}`
+                    : "https://res.cloudinary.com/dd9tagtiw/image/upload/v1766821528/Emerald-PNG-Image-File_1_rkoyhz.png"
+                }
+                alt={product.name || product.title}
+              />
 
-            <h6>{item.title}</h6>
-            <p>Origin: {item.origin}</p>
-            <strong>{item.price}</strong>
+              <h6 className="py-[5px]">{product.name || product.title}</h6>
+              <p className="py-[5px]">
+                Origin: {product.origin || product.country_of_origin || "India"}
+              </p>
+              <strong className="py-[5px]">
+                ₹ {product.price || product.price_range || "Contact for price"}
+              </strong>
+
+              <Link
+                href={`/gemstones/${activeCategory.slug}/${product.slug}`}
+                className="view-details bg-[#e28771] px-[10px] py-[5px] rounded-[4px]"
+              >
+                View Details
+              </Link>
+            </Link>
+          ))
+        ) : (
+          <div className="no-products">
+            No products available for this category
           </div>
-        ))}
+        )}
       </div>
 
       {/* FOOTER */}

@@ -9,7 +9,7 @@ export default function HeroNewSection() {
 
    bg-[url('https://res.cloudinary.com/dd9tagtiw/image/upload/v1766992308/Group_87_aykgkf.png')]
 
-    bg-cover bg-right
+    bg-cover bg-[position:120%]
   "
         >
 

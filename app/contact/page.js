@@ -1,45 +1,16 @@
 import React from 'react'
-import ContactComponent from './ContactComponent'
-
-export const metadata = {
-    title: "Contact Bajrang Astro | Book Free Consultation Now",
-    description:
-        "Connect with Pandit Vishal Johari at Bajrang Astro for Janam Kundli, palm reading & Vastu consulting. Free initial chat available. Call or WhatsApp us today.",
-    alternates: {
-        canonical: "/contact",
-    },
-};
+import ConsultationForm from '../contact/ConsultationForm'
+import Footer from '../COMMON/Footer'
+import Navbar from '../COMMON/Navbar'
 
 const page = () => {
-  const softwareSchema = {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    name: "Contact Bajrang Astro | Book Free Consultation Now",
-    description:
-      "Connect with Pandit Vishal Johari at Bajrang Astro for Janam Kundli, palm reading & Vastu consulting. Free initial chat available. Call or WhatsApp us today.",
-    url: "https://bajrangastro.com/contact",
-    image:
-      "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",
-    publisher: {
-      "@type": "Organization",
-      name: "Bajrang Astro",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",
-      },
-    },
-  };
-    return (
-        <>
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify(softwareSchema),
-              }}
-            />
-            <ContactComponent />
-        </>
-    )
+  return (
+    <div>
+        <Navbar/>
+        <ConsultationForm/>
+        <Footer/>
+    </div>
+  )
 }
 
 export default page

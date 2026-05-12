@@ -123,11 +123,11 @@ const HomeSecond = () => {
                         </p>
 
                         <div className="flex gap-4 flex-wrap">
-                            <Link href="/shop" className="bg-[#E57661] cursor-pointer rounded-[6px] text-white px-10 py-5 hover:bg-white hover:text-[#E57661] border border-[#E57661]">
+                            <Link href="/shop" className="bg-[#E57661] cursor-pointer rounded-[6px] text-white px-10 py-4 hover:bg-white hover:text-[#E57661] border border-[#E57661]">
                                 Shop Collection
                             </Link>
 
-                            <Link href="/shop" className="border border-[#E57661] cursor-pointer rounded-[6px] text-[#E57661] px-10 py-5 hover:bg-[#E57661] hover:text-white">
+                            <Link href="/shop" className="border border-[#E57661] cursor-pointer rounded-[6px] text-[#E57661] px-10 py-4 hover:bg-[#E57661] hover:text-white">
                                 Authenticity Guide
                             </Link>
                         </div>
