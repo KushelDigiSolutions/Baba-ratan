@@ -63,13 +63,18 @@ const AuthPage = () => {
       if (!validateName(name)) {
         validationErrors.name = "Full name must contain at least two letters.";
       }
+
       if (!validatePhone(phone)) {
-        validationErrors.phone = "Phone number must be exactly 10 digits.";
+        validationErrors.phone =
+          "Phone number must be exactly 10 digits.";
       }
+
       if (!passwordConfirmation) {
-        validationErrors.passwordConfirmation = "Please confirm your password.";
+        validationErrors.passwordConfirmation =
+          "Please confirm your password.";
       } else if (password !== passwordConfirmation) {
-        validationErrors.passwordConfirmation = "Passwords do not match.";
+        validationErrors.passwordConfirmation =
+          "Passwords do not match.";
       }
     }
 
@@ -93,14 +98,18 @@ const AuthPage = () => {
           password,
           passwordConfirmation,
         });
+
         setStatusMessage(
-          "Account created successfully. Redirecting to home...",
+          "Account created successfully. Redirecting to home..."
         );
       }
+
       setTimeout(() => router.push("/"), 1000);
     } catch (error) {
       setErrors({
-        api: error?.message || "Unable to complete request. Please try again.",
+        api:
+          error?.message ||
+          "Unable to complete request. Please try again.",
       });
     } finally {
       setLoading(false);
@@ -108,8 +117,9 @@ const AuthPage = () => {
   };
 
   return (
-    <div className=" bg-[#d97869] relative overflow-hidden flex items-center justify-center px-4 py-10">
+    <div className="bg-[#d97869] relative overflow-hidden flex items-center justify-center px-4 py-10">
       <div className="absolute top-20 left-20 w-72 h-72 bg-white/10 blur-3xl rounded-full"></div>
+
       <div className="absolute bottom-10 right-10 w-80 h-80 bg-orange-300/10 blur-3xl rounded-full"></div>
 
       <div className="w-full max-w-6xl grid lg:grid-cols-2 bg-white/10 backdrop-blur-xl border border-white/20 rounded-[30px] overflow-hidden shadow-2xl z-10">
@@ -162,8 +172,9 @@ const AuthPage = () => {
               <div className="relative">
                 <User
                   size={20}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-[#d97869]"
+                  className="absolute left-4 top-7 -translate-y-1/2 text-[#d97869]"
                 />
+
                 <input
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -171,8 +182,11 @@ const AuthPage = () => {
                   placeholder="Full Name"
                   className="w-full h-14 rounded-2xl border border-gray-200 pl-12 pr-4 outline-none focus:border-[#d97869] transition-all"
                 />
+
                 {errors.name && (
-                  <p className="mt-2 text-sm text-red-600">{errors.name}</p>
+                  <p className="mt-2 text-sm text-red-600">
+                    {errors.name}
+                  </p>
                 )}
               </div>
             )}
@@ -181,8 +195,9 @@ const AuthPage = () => {
               <div className="relative">
                 <Phone
                   size={20}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-[#d97869]"
+                  className="absolute left-4 top-7 -translate-y-1/2 text-[#d97869]"
                 />
+
                 <input
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
@@ -190,8 +205,11 @@ const AuthPage = () => {
                   placeholder="Phone Number"
                   className="w-full h-14 rounded-2xl border border-gray-200 pl-12 pr-4 outline-none focus:border-[#d97869] transition-all"
                 />
+
                 {errors.phone && (
-                  <p className="mt-2 text-sm text-red-600">{errors.phone}</p>
+                  <p className="mt-2 text-sm text-red-600">
+                    {errors.phone}
+                  </p>
                 )}
               </div>
             )}
@@ -199,8 +217,9 @@ const AuthPage = () => {
             <div className="relative">
               <Mail
                 size={20}
-                className="absolute left-4 top-1/2 -translate-y-1/2 text-[#d97869]"
+                className="absolute left-4 top-7 -translate-y-1/2 text-[#d97869]"
               />
+
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -208,16 +227,20 @@ const AuthPage = () => {
                 placeholder="Email Address"
                 className="w-full h-14 rounded-2xl border border-gray-200 pl-12 pr-4 outline-none focus:border-[#d97869] transition-all"
               />
+
               {errors.email && (
-                <p className="mt-2 text-sm text-red-600">{errors.email}</p>
+                <p className="mt-2 text-sm text-red-600">
+                  {errors.email}
+                </p>
               )}
             </div>
 
             <div className="relative">
               <Lock
                 size={20}
-                className="absolute left-4 top-1/2 -translate-y-1/2 text-[#d97869]"
+                className="absolute left-4 top-7 -translate-y-1/2 text-[#d97869]"
               />
+
               <input
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -225,15 +248,23 @@ const AuthPage = () => {
                 placeholder="Password"
                 className="w-full h-14 rounded-2xl border border-gray-200 pl-12 pr-14 outline-none focus:border-[#d97869] transition-all"
               />
+
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500"
+                className="absolute right-4 top-7 -translate-y-1/2 text-gray-500"
               >
-                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                {showPassword ? (
+                  <EyeOff size={20} />
+                ) : (
+                  <Eye size={20} />
+                )}
               </button>
+
               {errors.password && (
-                <p className="mt-2 text-sm text-red-600">{errors.password}</p>
+                <p className="mt-2 text-sm text-red-600">
+                  {errors.password}
+                </p>
               )}
             </div>
 
@@ -241,15 +272,19 @@ const AuthPage = () => {
               <div className="relative">
                 <Lock
                   size={20}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-[#d97869]"
+                  className="absolute left-4 top-7 -translate-y-1/2 text-[#d97869]"
                 />
+
                 <input
                   value={passwordConfirmation}
-                  onChange={(e) => setPasswordConfirmation(e.target.value)}
+                  onChange={(e) =>
+                    setPasswordConfirmation(e.target.value)
+                  }
                   type={showPassword ? "text" : "password"}
                   placeholder="Confirm Password"
                   className="w-full h-14 rounded-2xl border border-gray-200 pl-12 pr-14 outline-none focus:border-[#d97869] transition-all"
                 />
+
                 {errors.passwordConfirmation && (
                   <p className="mt-2 text-sm text-red-600">
                     {errors.passwordConfirmation}
@@ -264,6 +299,7 @@ const AuthPage = () => {
                   <input type="checkbox" />
                   Remember me
                 </label>
+
                 <button
                   type="button"
                   className="text-[#d97869] font-medium hover:underline"
@@ -273,10 +309,16 @@ const AuthPage = () => {
               </div>
             )}
 
-            {errors.api && <p className="text-sm text-red-600">{errors.api}</p>}
+            {errors.api && (
+              <p className="text-sm text-red-600">
+                {errors.api}
+              </p>
+            )}
 
             {statusMessage && (
-              <p className="text-sm text-green-600">{statusMessage}</p>
+              <p className="text-sm text-green-600">
+                {statusMessage}
+              </p>
             )}
 
             <button
@@ -289,20 +331,28 @@ const AuthPage = () => {
                   ? "Logging in..."
                   : "Creating account..."
                 : isLogin
-                  ? "Login Now"
-                  : "Create Account"}
+                ? "Login Now"
+                : "Create Account"}
+
               <ArrowRight size={18} />
             </button>
           </form>
 
           <div className="flex items-center gap-4 my-8">
             <div className="flex-1 h-px bg-gray-200"></div>
-            <span className="text-gray-400 text-sm">OR</span>
+
+            <span className="text-gray-400 text-sm">
+              OR
+            </span>
+
             <div className="flex-1 h-px bg-gray-200"></div>
           </div>
 
           <p className="text-center text-gray-500">
-            {isLogin ? "Don’t have an account?" : "Already have an account?"}
+            {isLogin
+              ? "Don’t have an account?"
+              : "Already have an account?"}
+
             <button
               type="button"
               onClick={() => {
