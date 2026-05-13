@@ -33,14 +33,14 @@ const ProfilePage = () => {
   const [isEditingAddress, setIsEditingAddress] = useState(false);
   const [editingAddressId, setEditingAddressId] = useState(null);
   const [newAddress, setNewAddress] = useState({
-    label: "home",
+    label: "",
     name: "Kartik",
     phone: "1234567890",
     address_line1: "1925 Gardenia Dr.",
     city: "Ghajiyabad",
     state: "UP",
     postal_code: "250103",
-    country: "INR",
+    country: "IN",
   });
   const [isPostingAddress, setIsPostingAddress] = useState(false);
   const [addressSubmitError, setAddressSubmitError] = useState(null);
@@ -50,6 +50,7 @@ const ProfilePage = () => {
   const [profileUpdateError, setProfileUpdateError] = useState(null);
   const [profileUpdateSuccess, setProfileUpdateSuccess] = useState(null);
   const [isEditingProfileMode, setIsEditingProfileMode] = useState(false);
+  const [editProfileData, setEditProfileData] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const { user, logout } = useAuth();
   const { wishlistItems, isLoading: isLoadingWishlist, removeFromWishlist } = useWishlist();
@@ -209,14 +210,14 @@ const ProfilePage = () => {
       setIsEditingAddress(false);
       setEditingAddressId(null);
       setNewAddress({
-        label: "home",
+        label: "",
         name: "",
         phone: "",
         address_line1: "",
         city: "",
         state: "",
         postal_code: "",
-        country: "INR",
+        country: "",
       });
       loadAddresses();
     } catch (error) {
@@ -230,14 +231,14 @@ const ProfilePage = () => {
     setEditingAddressId(address.id);
     setIsEditingAddress(true);
     setNewAddress({
-      label: address.label || "home",
+      label: address.label || "",
       name: address.name || "",
       phone: address.phone || "",
       address_line1: address.address_line1 || "",
       city: address.city || "",
       state: address.state || "",
       postal_code: address.postal_code || "",
-      country: address.country || "INR",
+      country: address.country || "",
     });
     setShowAddAddressForm(true);
     setAddressSubmitError(null);
@@ -249,14 +250,14 @@ const ProfilePage = () => {
     setIsEditingAddress(false);
     setEditingAddressId(null);
     setNewAddress({
-      label: "home",
+      label: "",
       name: "",
       phone: "",
       address_line1: "",
       city: "",
       state: "",
       postal_code: "",
-      country: "INR",
+      country: "",
     });
   };
 
@@ -270,17 +271,17 @@ const ProfilePage = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\d{10}$/;
 
-    if (!profile.name || profile.name.trim() === "") {
+    if (!editProfileData?.name || editProfileData.name.trim() === "") {
       setProfileUpdateError("Name is required.");
       return;
     }
 
-    if (!profile.email || !emailRegex.test(profile.email)) {
+    if (!editProfileData?.email || !emailRegex.test(editProfileData.email)) {
       setProfileUpdateError("Please enter a valid email address.");
       return;
     }
 
-    if (!profile.phone || !phoneRegex.test(profile.phone)) {
+    if (!editProfileData?.phone || !phoneRegex.test(editProfileData.phone)) {
       setProfileUpdateError("Please enter a valid 10-digit phone number.");
       return;
     }
@@ -291,11 +292,11 @@ const ProfilePage = () => {
 
     try {
       const formData = new FormData();
-      formData.append("name", profile.name || "");
-      formData.append("email", profile.email || "");
-      formData.append("phone", profile.phone || "");
-      formData.append("dob", profile.dob || profile.date_of_birth || "");
-      formData.append("address", profile.address || "");
+      formData.append("name", editProfileData.name || "");
+      formData.append("email", editProfileData.email || "");
+      formData.append("phone", editProfileData.phone || "");
+      formData.append("dob", editProfileData.dob || editProfileData.date_of_birth || "");
+      formData.append("address", editProfileData.address || "");
 
       if (selectedFile) {
         formData.append("avatar", selectedFile);
@@ -311,23 +312,27 @@ const ProfilePage = () => {
       });
 
       const data = await response.json();
-      
+
       if (!response.ok) {
         // Handle specific validation errors from backend if available
         let errorMessage = data.message || "Failed to update profile";
-        
+
         if (data.errors) {
           errorMessage = Object.values(data.errors).flat().join(" ");
         } else if (typeof data.message === "object" && data.message !== null) {
           errorMessage = Object.values(data.message).flat().join(" ");
         }
-        
+
         throw new Error(errorMessage);
       }
 
+      // Update the main profile state with the updated data from API or edit state
+      const updatedProfile = data.data ?? data.profile ?? editProfileData;
+      setProfile(updatedProfile);
+
       setProfileUpdateSuccess("Profile updated successfully!");
       setIsEditingProfileMode(false); // Exit edit mode on success
-      
+
       // Message disappears after 3 seconds
       setTimeout(() => {
         setProfileUpdateSuccess(null);
@@ -350,7 +355,7 @@ const ProfilePage = () => {
       setSelectedFile(file);
       const reader = new FileReader();
       reader.onloadend = () => {
-        setProfile({ ...profile, avatar: reader.result });
+        setEditProfileData({ ...editProfileData, avatar: reader.result });
       };
       reader.readAsDataURL(file);
     }
@@ -368,9 +373,9 @@ const ProfilePage = () => {
             <div className="w-28 h-28 rounded-full border-4 border-white overflow-hidden shadow-lg relative group">
               <img
                 src={
-                  profile?.avatar
-                    ? profile.avatar
-                    : "https://randomuser.me/api/portraits/men/32.jpg"
+                  isEditingProfileMode
+                    ? (editProfileData?.avatar || profile?.avatar)
+                    : profile?.avatar
                 }
                 alt="profile"
                 className="w-full h-full object-cover"
@@ -393,6 +398,7 @@ const ProfilePage = () => {
               <button
                 onClick={() => {
                   setActiveTab("My Profile");
+                  setEditProfileData({ ...profile });
                   setIsEditingProfileMode(true);
                 }}
                 className="mt-5 cursor-pointer flex items-center gap-2 bg-white text-[#de7a63] px-5 py-2 rounded-full font-semibold hover:scale-105 transition"
@@ -515,9 +521,9 @@ const ProfilePage = () => {
                         <User className="text-[#de7a63]" size={20} />
                         <input
                           type="text"
-                          value={profile.name || ""}
+                          value={isEditingProfileMode ? (editProfileData?.name || "") : (profile?.name || "")}
                           readOnly={!isEditingProfileMode}
-                          onChange={(e) => setProfile({ ...profile, name: e.target.value })}
+                          onChange={(e) => setEditProfileData({ ...editProfileData, name: e.target.value })}
                           className={`w-full outline-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""}`}
                         />
                       </div>
@@ -530,9 +536,9 @@ const ProfilePage = () => {
                         <Mail className="text-[#de7a63]" size={20} />
                         <input
                           type="email"
-                          value={profile.email || ""}
+                          value={isEditingProfileMode ? (editProfileData?.email || "") : (profile?.email || "")}
                           readOnly={!isEditingProfileMode}
-                          onChange={(e) => setProfile({ ...profile, email: e.target.value })}
+                          onChange={(e) => setEditProfileData({ ...editProfileData, email: e.target.value })}
                           className={`w-full outline-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""}`}
                         />
                       </div>
@@ -545,9 +551,9 @@ const ProfilePage = () => {
                         <Phone className="text-[#de7a63]" size={20} />
                         <input
                           type="text"
-                          value={profile.phone || ""}
+                          value={isEditingProfileMode ? (editProfileData?.phone || "") : (profile?.phone || "")}
                           readOnly={!isEditingProfileMode}
-                          onChange={(e) => setProfile({ ...profile, phone: e.target.value })}
+                          onChange={(e) => setEditProfileData({ ...editProfileData, phone: e.target.value })}
                           className={`w-full outline-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""}`}
                         />
                       </div>
@@ -560,10 +566,21 @@ const ProfilePage = () => {
                         <Calendar className="text-[#de7a63]" size={20} />
                         <input
                           type="date"
-                          value={profile.dob || profile.date_of_birth || ""}
+                          max={new Date().toISOString().split("T")[0]}
+                          value={
+                            isEditingProfileMode
+                              ? (editProfileData?.dob || editProfileData?.date_of_birth || "")
+                              : (profile?.dob || profile?.date_of_birth || "")
+                          }
                           readOnly={!isEditingProfileMode}
-                          onChange={(e) => setProfile({ ...profile, dob: e.target.value })}
-                          className={`w-full outline-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""}`}
+                          onChange={(e) =>
+                            setEditProfileData({
+                              ...editProfileData,
+                              dob: e.target.value,
+                            })
+                          }
+                          className={`w-full outline-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""
+                            }`}
                         />
                       </div>
                     </div>
@@ -575,9 +592,9 @@ const ProfilePage = () => {
                         <MapPin className="text-[#de7a63]" size={20} />
                         <textarea
                           rows={3}
-                          value={profile.address || ""}
+                          value={isEditingProfileMode ? (editProfileData?.address || "") : (profile?.address || "")}
                           readOnly={!isEditingProfileMode}
-                          onChange={(e) => setProfile({ ...profile, address: e.target.value })}
+                          onChange={(e) => setEditProfileData({ ...editProfileData, address: e.target.value })}
                           className={`w-full outline-none resize-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""}`}
                         />
                       </div>
@@ -762,7 +779,7 @@ const ProfilePage = () => {
                           })
                         }
                         className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="home"
+                        placeholder="Home / Office ..."
                       />
                     </div>
 
@@ -777,7 +794,7 @@ const ProfilePage = () => {
                           setNewAddress({ ...newAddress, name: e.target.value })
                         }
                         className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="Kartik"
+                        placeholder="Full Name"
                       />
                     </div>
 
@@ -795,7 +812,7 @@ const ProfilePage = () => {
                           })
                         }
                         className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="1234567890"
+                        placeholder="Phone Number"
                       />
                     </div>
 
@@ -813,7 +830,7 @@ const ProfilePage = () => {
                           })
                         }
                         className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="1925 Gardenia Dr."
+                        placeholder="Address Line 1"
                       />
                     </div>
 
@@ -828,7 +845,7 @@ const ProfilePage = () => {
                           setNewAddress({ ...newAddress, city: e.target.value })
                         }
                         className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="Ghajiyabad"
+                        placeholder="New Delhi"
                       />
                     </div>
 
@@ -882,7 +899,7 @@ const ProfilePage = () => {
                           })
                         }
                         className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="INR"
+                        placeholder="IN"
                       />
                     </div>
                   </div>
