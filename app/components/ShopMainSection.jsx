@@ -23,7 +23,7 @@ const ShopMainSection = ({ selectedFilters = { Purpose: '', Planet: '', Gemstone
       // Best practice: appending page to URL
       const response = await fetch(`${apiBase}/all/products?page=${page}`);
       if (!response.ok) throw new Error("Failed to fetch products");
-      
+
       const json = await response.json();
       if (json.status && json.data) {
         setProducts(json.data.data || []);
@@ -47,12 +47,13 @@ const ShopMainSection = ({ selectedFilters = { Purpose: '', Planet: '', Gemstone
     return {
       id: item.id,
       name: item.name,
+      slug: `${item.category.slug}/${item.slug}`,
       gemstone: item.category?.name || "Gemstone",
       planet: item.brand?.name || "",
       purpose: item.category?.name || "",
       isCertified: item.featured === 1,
       tags: [item.category?.name, item.brand?.name].filter(Boolean),
-      image: item.main_image 
+      image: item.main_image
         ? (item.main_image.startsWith("http") ? item.main_image : `${imageBase}${item.main_image}`)
         : "https://via.placeholder.com/400",
       description: item.short_description || item.name,

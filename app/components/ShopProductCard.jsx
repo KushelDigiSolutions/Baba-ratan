@@ -4,8 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 const ShopProductCard = ({ product, showArrow = false }) => {
   return (
-    <Link href={`/shop/${product.id}`} className="group h-full block">
-
+    <Link href={`/gemstones/${product.slug}`} className="group h-full block">
       <div
         className="
           rounded-[24px] 2xl:rounded-[40px]
@@ -21,7 +20,6 @@ const ShopProductCard = ({ product, showArrow = false }) => {
           2xl:h-[860px]
         "
       >
-
         {/* IMAGE */}
         <div
           className={`
@@ -33,14 +31,12 @@ const ShopProductCard = ({ product, showArrow = false }) => {
             md:h-[300px]     
             lg:h-[380px]     
 
-            ${
-              showArrow
-                ? "xl:h-[440px] 2xl:h-[520px]"
-                : "xl:h-[480px] 2xl:h-[560px]"
+            ${showArrow
+              ? "xl:h-[440px] 2xl:h-[520px]"
+              : "xl:h-[480px] 2xl:h-[560px]"
             }
           `}
         >
-
           {/* Certified Tag */}
           {product.isCertified && (
             <span className="absolute top-4 left-4 md:top-6 md:left-6 bg-white/90 backdrop-blur-md text-[10px] md:text-[11px] font-bold px-4 py-2 md:px-5 md:py-2 rounded-full shadow-lg z-10 tracking-widest uppercase text-gray-800">
@@ -64,14 +60,9 @@ const ShopProductCard = ({ product, showArrow = false }) => {
 
             flex flex-col flex-grow
 
-            ${
-              showArrow
-                ? "gap-3 md:gap-4 xl:gap-5"
-                : "gap-2 md:gap-3 xl:gap-4"
-            }
+            ${showArrow ? "gap-3 md:gap-4 xl:gap-5" : "gap-2 md:gap-3 xl:gap-4"}
           `}
         >
-
           {/* TAGS */}
           <div className="flex gap-2 flex-wrap">
             {product.tags.map((tag, i) => (
@@ -89,10 +80,9 @@ const ShopProductCard = ({ product, showArrow = false }) => {
             className={`
               font-bold text-[#1F2937] leading-tight
 
-              ${
-                showArrow
-                  ? "text-[18px] md:text-[22px] xl:text-[32px]"
-                  : "text-[17px] md:text-[20px] xl:text-[24px]"
+              ${showArrow
+                ? "text-[18px] md:text-[22px] xl:text-[32px]"
+                : "text-[17px] md:text-[20px] xl:text-[24px]"
               }
             `}
           >
@@ -106,10 +96,9 @@ const ShopProductCard = ({ product, showArrow = false }) => {
               leading-relaxed
               line-clamp-2
 
-              ${
-                showArrow
-                  ? "text-[13px] md:text-[15px] xl:text-[18px]"
-                  : "text-[12px] md:text-[14px] xl:text-[15px]"
+              ${showArrow
+                ? "text-[13px] md:text-[15px] xl:text-[18px]"
+                : "text-[12px] md:text-[14px] xl:text-[15px]"
               }
             `}
           >
@@ -118,15 +107,13 @@ const ShopProductCard = ({ product, showArrow = false }) => {
 
           {/* BOTTOM */}
           <div className="flex items-center justify-between mt-auto">
-
             <p
               className={`
                 font-[500] text-[#1F2937]
 
-                ${
-                  showArrow
-                    ? "text-[18px] md:text-[20px] xl:text-[24px]"
-                    : "text-[16px] md:text-[18px] xl:text-[20px]"
+                ${showArrow
+                  ? "text-[18px] md:text-[20px] xl:text-[24px]"
+                  : "text-[16px] md:text-[18px] xl:text-[20px]"
                 }
               `}
             >
@@ -145,7 +132,6 @@ const ShopProductCard = ({ product, showArrow = false }) => {
                 View Details
               </span>
             )}
-
           </div>
         </div>
       </div>
