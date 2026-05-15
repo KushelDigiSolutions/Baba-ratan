@@ -63,7 +63,7 @@ const PrivacyPolicyPage = () => {
               This Privacy Policy explains how we collect, use, and protect your
               personal information when you use our astrology consultation,
               Janam Kundli analysis, Vastu guidance, palm reading, and gemstone
-              recommendation services by Pandit Vishal Johari.
+              recommendation services by Vishal Verma.
             </p>
           </div>
 
@@ -223,7 +223,7 @@ const PrivacyPolicyPage = () => {
                   </h3>
 
                   <p className="text-gray-600 leading-8">
-                    For any privacy-related queries, contact Pandit Vishal Johari at: +91 85950 46368,
+                    For any privacy-related queries, contact Vishal Verma at: +91 85950 46368,
                     info@bajrangastro.com
                   </p>
                 </div>
@@ -241,7 +241,7 @@ const PrivacyPolicyPage = () => {
 
               {/* Phone */}
               <a
-                href="tel:+918595046368"
+                href="tel:+917042600873"
                 className="flex items-center gap-5 bg-white rounded-2xl p-5 border border-[#f1d7d1] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
               >
                 <div className="w-16 h-16 rounded-2xl bg-[#d97869] text-white flex items-center justify-center  transition-transform duration-300">

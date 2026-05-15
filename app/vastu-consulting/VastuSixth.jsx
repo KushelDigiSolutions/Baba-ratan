@@ -12,7 +12,7 @@ export default function VastuSixth() {
     const data = {
         residential: {
             title: "Home Vastu Consulting",
-            desc: "Transform your home into a place of peace, health, and abundance with Pandit Vishal Johari expert home Vastu analysis across India.",
+            desc: "Transform your home into a place of peace, health, and abundance with Vishal Verma expert home Vastu analysis across India.",
             img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837109/Residential_Alignment_vvyo7x.png",
         },
         commercial: {
@@ -22,7 +22,7 @@ export default function VastuSixth() {
         },
         plot: {
             title: "Plot & Land Analysis",
-            desc: "Before you buy or build let Pandit Vishal Johari analyse the soil energy, directional slope, and Vastu compatibility of your plot to avoid future problems.",
+            desc: "Before you buy or build let Vishal Verma analyse the soil energy, directional slope, and Vastu compatibility of your plot to avoid future problems.",
             icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837106/Plot_Soil_Analysis_yy7vwk.png",
         },
         industrial: {
@@ -51,7 +51,7 @@ export default function VastuSixth() {
     }, []);
 
     return (
-        <section 
+        <section
             ref={sectionRef}
             className="bg-[radial-gradient(140.3%_104.29%_at_10%_20%,rgba(254,212,136,0.15)_0%,#F8F9FA_90%)] py-10 px-4 md:px-10 lg:px-20 overflow-hidden"
         >

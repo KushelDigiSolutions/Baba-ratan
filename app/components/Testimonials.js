@@ -112,8 +112,9 @@ export default function Testimonials() {
 /* CARD COMPONENT */
 function TestimonialCard({ data }) {
     const imageUrl = data.image 
-        ? `${apiBase.replace("/api", "")}/${data.image}`
+        ? (data.image.startsWith("http") ? data.image : `${apiBase.replace("/api", "")}/${data.image}`)
         : "https://res.cloudinary.com/dd9tagtiw/image/upload/v1767073281/Vertical_container_ww4wdc.png";
+
 
     return (
         <div className="min-w-[320px] max-w-[320px] bg-white rounded-xl p-5 shadow-sm">

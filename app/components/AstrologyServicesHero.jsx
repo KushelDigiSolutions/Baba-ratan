@@ -14,15 +14,15 @@ const AstrologyServicesHero = () => {
                         Discover What Your Stars Reveal About Your Life
                     </h1>
                     <p className=" text-[20px] md:text-[23px] text-[#303030] leading-[1.4] mb-10 xl:max-w-[550px] mx-auto   lg:mx-0">
-                        Pandit Vishal Johari, one of the best astrologers in India, at Bajrang Astro offers deeply personalised Vedic astrology consultation, accurate Janam Kundli analysis, and expert palm reading in Delhi and across India. Get honest guidance for career, marriage, health, and finances, available both online and offline.
+                        Vishal Verma, one of the best astrologers in India, at Bajrang Astro offers deeply personalised Vedic astrology consultation, accurate Janam Kundli analysis, and expert palm reading in Delhi and across India. Get honest guidance for career, marriage, health, and finances, available both online and offline.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-5 items-center justify-center lg:justify-start">
-                        <a href="tel:+918595046368" className="w-full sm:w-[240px] flex items-center justify-center bg-[#E57661] text-white py-3.5 rounded-full text-lg font-[300] cursor-pointer transition-all duration-300 hover:bg-white hover:text-[#E57661] hover:-translate-y-0.5 shadow-[0_4px_15px_rgba(229,118,97,0.2)] hover:shadow-[0_6px_20px_rgba(229,118,97,0.3)]">
+                        <a href="tel:+917042600873" className="w-full sm:w-[240px] flex items-center justify-center bg-[#E57661] text-white py-3.5 rounded-full text-lg font-[300] cursor-pointer transition-all duration-300 hover:bg-white hover:text-[#E57661] hover:-translate-y-0.5 shadow-[0_4px_15px_rgba(229,118,97,0.2)] hover:shadow-[0_6px_20px_rgba(229,118,97,0.3)]">
                             Call Now
                         </a>
-                        <a 
-                            href="https://wa.me/918595046368" 
-                            target="_blank" 
+                        <a
+                            href="https://wa.me/917042600873"
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="w-full sm:w-[240px] flex items-center justify-center border border-[#E57661] text-[#E57661] py-3.5 rounded-full text-lg font-[300] cursor-pointer transition-all duration-300 hover:bg-[#E57661] hover:text-white hover:-translate-y-0.5"
                         >

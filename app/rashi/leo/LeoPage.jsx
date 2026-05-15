@@ -95,9 +95,14 @@ const LeoPage = () => {
                 Read Horoscope
               </button>
 
-              <button className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-[#d97706] transition">
+              <a 
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-7 py-3 rounded-full border border-white text-white hover:bg-white hover:text-[#d96d55] transition inline-block text-center"
+              >
                 Talk To Astrologer
-              </button>
+              </a>
             </div>
           </div>
 
@@ -392,9 +397,15 @@ const LeoPage = () => {
             </p>
 
             <div className="flex flex-wrap justify-center gap-5 mt-10">
-              <button className="px-8 py-4 rounded-full bg-[#d97706] text-white font-semibold hover:bg-[#b96500] transition">
+              <a 
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-full bg-[#d97706] text-white font-semibold hover:bg-[#b96500] transition inline-block text-center"
+              >
                 Book Consultation
-              </button>
+              </a>
+
 
               <button className="px-8 py-4 rounded-full border border-[#d97706] text-[#d97706] font-semibold hover:bg-[#d97706] hover:text-white transition">
                 Chat On WhatsApp

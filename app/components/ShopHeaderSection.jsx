@@ -56,7 +56,7 @@ const ShopHeaderSection = ({ selectedFilters, setSelectedFilters }) => {
                 </h1>
 
                 <p className="max-w-3xl mx-auto text-[#303030] text-sm sm:text-base md:text-lg leading-relaxed mb-10 md:mb-20 opacity-90">
-                    100% certified, naturally sourced gemstones, personally recommended by <span className="font-semibold text-black">Pandit Vishal Johari</span> at <span className="font-semibold text-black">Bajrang Astro</span> based on your <span className="font-semibold text-black">Janam Kundli</span> and planetary positions for maximum positive impact.
+                    100% certified, naturally sourced gemstones, personally recommended by <span className="font-semibold text-black">Vishal Verma</span> at <span className="font-semibold text-black">Bajrang Astro</span> based on your <span className="font-semibold text-black">Janam Kundli</span> and planetary positions for maximum positive impact.
                 </p>
 
                 {/* Filter Bar */}
@@ -73,8 +73,8 @@ const ShopHeaderSection = ({ selectedFilters, setSelectedFilters }) => {
                                     setSelectedFilters({ Purpose: '', Planet: '', Gemstone: '' });
                                 }}
                                 className={`px-4 md:px-6 py-1.5 rounded-xl text-sm md:text-base font-[400] flex items-center gap-2 ${selectedCategory === 'All Gems'
-                                        ? 'bg-[#E57661] text-white'
-                                        : 'text-[#666666]'
+                                    ? 'bg-[#E57661] text-white'
+                                    : 'text-[#666666]'
                                     }`}
                             >
                                 <img

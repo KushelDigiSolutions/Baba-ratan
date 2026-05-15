@@ -32,7 +32,7 @@ export default function KetuGrahPage() {
 
                         <h1 className="text-5xl md:text-8xl font-black leading-tight mt-8">
                             <span className="text-white">Ketu</span> {" "}
-                          
+
 
                             <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 text-transparent bg-clip-text">
                                 Grah
@@ -52,7 +52,7 @@ export default function KetuGrahPage() {
                                 <ArrowRight size={20} />
                             </button>
 
-                            <a href="tel:+917042600087">
+                            <a href="tel:+917042600873">
                                 <button className="border cursor-pointer border-white/20 bg-white/5 backdrop-blur-md px-8 py-4 rounded-2xl font-semibold hover:bg-white/10 transition">
                                     Talk To Astrologer
                                 </button>
@@ -67,27 +67,27 @@ export default function KetuGrahPage() {
                         <div className="absolute w-[450px] h-[450px] bg-violet-600 blur-[140px] opacity-35 rounded-full"></div>
 
                         {/* Planet */}
-                 <div className="relative flex items-center justify-center">
+                        <div className="relative flex items-center justify-center">
 
-    {/* MYSTIC GLOW */}
-    <div className="absolute w-44 h-44 sm:w-60 sm:h-60 rounded-full bg-fuchsia-500/20 blur-3xl animate-pulse" />
+                            {/* MYSTIC GLOW */}
+                            <div className="absolute w-44 h-44 sm:w-60 sm:h-60 rounded-full bg-fuchsia-500/20 blur-3xl animate-pulse" />
 
-    {/* OUTER ENERGY RING */}
-    <div className="absolute w-56 h-56 sm:w-72 sm:h-72 rounded-full border border-fuchsia-400/20 animate-spin [animation-duration:14s]" />
+                            {/* OUTER ENERGY RING */}
+                            <div className="absolute w-56 h-56 sm:w-72 sm:h-72 rounded-full border border-fuchsia-400/20 animate-spin [animation-duration:14s]" />
 
-    <div className="absolute w-72 h-72 sm:w-[380px] sm:h-[380px] rounded-full border border-cyan-400/10 animate-[spin_18s_linear_infinite_reverse]" />
+                            <div className="absolute w-72 h-72 sm:w-[380px] sm:h-[380px] rounded-full border border-cyan-400/10 animate-[spin_18s_linear_infinite_reverse]" />
 
-    {/* MAIN ICON */}
-    <Sparkles className="w-32 sm:w-44 h-32 sm:h-44 text-fuchsia-100 opacity-90 drop-shadow-[0_0_35px_rgba(217,70,239,0.8)]" />
+                            {/* MAIN ICON */}
+                            <Sparkles className="w-32 sm:w-44 h-32 sm:h-44 text-fuchsia-100 opacity-90 drop-shadow-[0_0_35px_rgba(217,70,239,0.8)]" />
 
-    {/* CENTER ENERGY CORE */}
-    <div className="absolute w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-200 to-cyan-300 shadow-[0_0_30px_rgba(236,72,153,0.9)]" />
+                            {/* CENTER ENERGY CORE */}
+                            <div className="absolute w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-200 to-cyan-300 shadow-[0_0_30px_rgba(236,72,153,0.9)]" />
 
-    {/* FLOATING PARTICLES */}
-    <div className="absolute top-10 left-16 w-2 h-2 bg-fuchsia-300 rounded-full animate-ping" />
-    <div className="absolute bottom-16 right-14 w-3 h-3 bg-cyan-300 rounded-full animate-pulse" />
-    <div className="absolute top-1/2 right-8 w-2 h-2 bg-white rounded-full animate-ping" />
-</div>
+                            {/* FLOATING PARTICLES */}
+                            <div className="absolute top-10 left-16 w-2 h-2 bg-fuchsia-300 rounded-full animate-ping" />
+                            <div className="absolute bottom-16 right-14 w-3 h-3 bg-cyan-300 rounded-full animate-pulse" />
+                            <div className="absolute top-1/2 right-8 w-2 h-2 bg-white rounded-full animate-ping" />
+                        </div>
 
                         {/* Floating Cards */}
                         <div className="absolute top-10 left-0 bg-white/10 backdrop-blur-lg border border-white/10 rounded-2xl p-4 hidden md:block">
@@ -209,7 +209,7 @@ export default function KetuGrahPage() {
                                 karmic learning ka powerful phase mana jata hai.
                             </p>
 
-                            <button  className="mt-8 cursor-pointer bg-violet-600 px-7 py-4 rounded-2xl font-semibold hover:bg-violet-700 transition">
+                            <button className="mt-8 cursor-pointer bg-violet-600 px-7 py-4 rounded-2xl font-semibold hover:bg-violet-700 transition">
                                 Learn More
                             </button>
                         </div>
@@ -266,7 +266,7 @@ export default function KetuGrahPage() {
                         </p>
                     </div>
 
-                    <a href="tel:+917042600087">
+                    <a href="tel:+917042600873">
                         <button className="bg-white cursor-pointer text-black px-8 py-5 rounded-2xl font-bold flex items-center gap-3 hover:scale-105 transition">
                             <Phone />
                             Consult Now

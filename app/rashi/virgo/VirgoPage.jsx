@@ -95,9 +95,15 @@ const VirgoPage = () => {
                 Read Horoscope
               </button>
 
-              <button className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-[#5b8c51] transition">
+              <a 
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-[#5b8c51] transition inline-block text-center"
+              >
                 Talk To Astrologer
-              </button>
+              </a>
+
             </div>
           </div>
 
@@ -393,9 +399,15 @@ const VirgoPage = () => {
             </p>
 
             <div className="flex flex-wrap justify-center gap-5 mt-10">
-              <button className="px-8 py-4 rounded-full bg-[#5b8c51] text-white font-semibold hover:bg-[#476d3f] transition">
+              <a 
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-full bg-[#5b8c51] text-white font-semibold hover:bg-[#476d3f] transition inline-block text-center"
+              >
                 Book Consultation
-              </button>
+              </a>
+
 
               <button className="px-8 py-4 rounded-full border border-[#5b8c51] text-[#5b8c51] font-semibold hover:bg-[#5b8c51] hover:text-white transition">
                 Chat On WhatsApp

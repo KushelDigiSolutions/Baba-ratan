@@ -19,9 +19,9 @@ import Testimonials from "./components/Testimonials";
 import TrustedProducts from "./components/TrustedProducts";
 
 export const metadata = {
-  title: "Bajrang Astro | Best Astrologer in India – Vishal Johari",
+  title: "Bajrang Astro | Best Astrologer in India – Vishal Verma",
   description:
-    "Get accurate Janam Kundli analysis, palm reading & Vastu consulting from Pandit Vishal Johari. Best astrologer in India. Call now for free consultation.",
+    "Get accurate Janam Kundli analysis, palm reading & Vastu consulting from Vishal Verma. Best astrologer in India. Call now for free consultation.",
   alternates: {
     canonical: "/",
   },
@@ -31,13 +31,13 @@ export default function Home() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Bajrang Astro | Best Astrologer in India – Vishal Johari",
+    name: "Bajrang Astro | Best Astrologer in India – Vishal Verma",
     description:
-      "Get accurate Janam Kundli analysis, palm reading & Vastu consulting from Pandit Vishal Johari. Best astrologer in India. Call now for free consultation.",
+      "Get accurate Janam Kundli analysis, palm reading & Vastu consulting from Vishal Verma. Best astrologer in India. Call now for free consultation.",
     url: "https://bajrangastro.com",
     image:
       "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",
-    telephone: "+918595046368",
+    telephone: "+917042600873",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Noida",
@@ -51,12 +51,12 @@ export default function Home() {
     {
       question: "Who is the best astrologer in India?",
       answer:
-        "Pandit Vishal Johari of Bajrang Astro is one of the most trusted astrologers in India, known for accurate Janam Kundli analysis, expert Palm Reading, and practical Vastu consulting across India.",
+        "Vishal Verma of Bajrang Astro is one of the most trusted astrologers in India, known for accurate Janam Kundli analysis, expert Palm Reading, and practical Vastu consulting across India.",
     },
     {
       question: "How can Vastu consulting help my home or business?",
       answer:
-        "Pandit Vishal Johari identifies hidden Vastu doshas in your space and gives simple, practical corrections without demolition to bring growth, peace, and positive energy back into your life.",
+        "Vishal Verma identifies hidden Vastu doshas in your space and gives simple, practical corrections without demolition to bring growth, peace, and positive energy back into your life.",
     },
     {
       question: "Do you provide services across India?",
@@ -64,14 +64,14 @@ export default function Home() {
         "Yes, Bajrang Astro provides both online and offline services across India. Kundli analysis and Palm Reading are available via WhatsApp and video call. Vastu site visits are available across Delhi NCR.",
     },
     {
-      question: "Can I get a free consultation with Pandit Vishal Johari?",
+      question: "Can I get a free consultation with Vishal Verma?",
       answer:
-        "Yes, you can connect with Pandit Vishal Johari for a free initial chat on WhatsApp or call to discuss your problem and understand which service is right for you.",
+        "Yes, you can connect with Vishal Verma for a free initial chat on WhatsApp or call to discuss your problem and understand which service is right for you.",
     },
     {
       question: "Is Vedic Astrology accurate and scientifically valid?",
       answer:
-        "Vedic Astrology is a thousands-of-years-old planetary science practiced across India and globally. Pandit Vishal Johari uses precise birth chart calculations to give accurate, honest predictions not guesswork.",
+        "Vedic Astrology is a thousands-of-years-old planetary science practiced across India and globally. Vishal Verma uses precise birth chart calculations to give accurate, honest predictions not guesswork.",
     },
   ];
   return (
@@ -98,7 +98,7 @@ export default function Home() {
       <HomeNinth />
       <HomeTenth />
       <HomeEleventh />
-      <TrustedProducts />
+      {/* <TrustedProducts /> */}
       <Testimonials />
       <FaQ data={faqData} />
       <Footer />

@@ -15,7 +15,7 @@ export default function AboutThird() {
     },
     {
       title: "Vision",
-      desc: "To become India's most trusted name in online astrology services and Vastu Shastra, where every person, from any corner of the world, can access the best astrologer in India, Pandit Vishal Johari, with ease.",
+      desc: "To become India's most trusted name in online astrology services and Vastu Shastra, where every person, from any corner of the world, can access the best astrologer in India, Vishal Verma, with ease.",
       icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776500045/Vision_bqc7zo.png",
       bg: "bg-[#E57661]",
       text: "text-white",
@@ -58,7 +58,7 @@ export default function AboutThird() {
             {/* Bottom Link */}
             <div className="mt-10">
               <a
-                href={item.btnText === "Call Now" ? "tel:+918595046368" : "#"}
+                href={item.btnText === "Call Now" ? "tel:+917042600873" : "#"}
                 className={`flex items-center cursor-pointer gap-2 text-sm md:text-base font-medium ${item.linkColor} group`}
               >
                 {item.btnText}

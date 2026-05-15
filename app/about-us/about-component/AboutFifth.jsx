@@ -7,7 +7,7 @@ const cards = [
     {
         title: "Vastu Consulting",
         subtitle: "Home, Office, Commercial",
-        desc: "Correct your home, office, or factory energy with expert Vastu consulting by Pandit Vishal Johari, a trusted Vastu consultant in Delhi NCR for 15+ years.",
+        desc: "Correct your home, office, or factory energy with expert Vastu consulting by Vishal Verma, a trusted Vastu consultant in Delhi NCR for 15+ years.",
         img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502026/Vastu_Consulting_mqvg6c.png",
     },
     {
@@ -19,7 +19,7 @@ const cards = [
     {
         title: "Personalized Remedies",
         subtitle: "",
-        desc: "Gemstones, mantras, and practical solutions recommended personally by Pandit Vishal Johari based on your Janam Kundli and planetary positions for real, lasting results. ",
+        desc: "Gemstones, mantras, and practical solutions recommended personally by Vishal Verma based on your Janam Kundli and planetary positions for real, lasting results. ",
         img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502027/Personalized_Remedies_zwahiu.png",
     },
 ];

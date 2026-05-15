@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaFacebookF, FaXTwitter, FaLinkedin, FaThreads } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaXTwitter, FaLinkedin, FaThreads, FaYoutube } from "react-icons/fa6";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import { FiInstagram, FiTwitter } from "react-icons/fi";
 import { FaFacebook } from "react-icons/fa6";
@@ -29,27 +29,22 @@ export default function Footer() {
                         </div>
 
                         <p className="text-lg leading-relaxed max-w-[450px] xl:max-w-[350px] text-[#303030] mb-6">
-                            India's trusted destination for authentic Vedic astrology consultation, accurate Janam Kundli analysis, Vastu guidance, and certified gemstones by Pandit Vishal Johari.
+                            India's trusted destination for authentic Vedic astrology consultation, accurate Janam Kundli analysis, Vastu guidance, and certified gemstones by Vishal Verma.
                         </p>
 
                         {/* SOCIAL */}
                         <div className="flex gap-4">
-                            <a href="#" className="flex items-center justify-center transition hover:scale-110">
-                                <FaInstagram className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
-                            </a>
-                            <a href="#" className="flex items-center justify-center transition hover:scale-110">
-                                <FaSquareXTwitter className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
-                            </a>
-                            <a href="#" className="flex items-center justify-center transition hover:scale-110">
+                            <a href="https://www.facebook.com/bajrangastro/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center transition hover:scale-110">
                                 <FaFacebook className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
                             </a>
-                            <a href="#" className="flex items-center justify-center transition hover:scale-110">
+                            <a href="https://www.linkedin.com/company/bajrang-astro/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center transition hover:scale-110">
                                 <FaLinkedin className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
                             </a>
-                            <a href="#" className="flex items-center justify-center transition hover:scale-110">
-                                <FaThreads className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
+                            <a href="https://www.youtube.com/@bajrangiratankendra" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center transition hover:scale-110">
+                                <FaYoutube className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
                             </a>
                         </div>
+
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-[30%_30%_40%] md:gap-0 gap-10 ">
@@ -69,10 +64,10 @@ export default function Footer() {
                         <div>
                             <h3 className="font-[500] text-lg mb-4">Categories</h3>
                             <ul className="space-y-3 text-[#3F3F50] text-[16px]">
-                                <li><Link href="/shop/1" className="hover:text-black">Ruby (Manik)</Link></li>
-                                <li><Link href="/shop/2" className="hover:text-black">Blue Sapphire (Neelam)</Link></li>
-                                <li><Link href="/shop/3" className="hover:text-black">Emerald (Panna)</Link></li>
-                                <li><Link href="/shop/4" className="hover:text-black">Yellow Sapphire (Pukhraj)</Link></li>
+                                <li><Link href="#" className="hover:text-black">Ruby (Manik)</Link></li>
+                                <li><Link href="#" className="hover:text-black">Blue Sapphire (Neelam)</Link></li>
+                                <li><Link href="#" className="hover:text-black">Emerald (Panna)</Link></li>
+                                <li><Link href="#" className="hover:text-black">Yellow Sapphire (Pukhraj)</Link></li>
                             </ul>
                         </div>
 
@@ -87,35 +82,36 @@ export default function Footer() {
 
                                 {/* EMAIL */}
                                 <a
-                                    href="mailto:Bajrangastro@gmail.com"
+                                    href="mailto:bajrangastro@gmail.com"
                                     className="flex items-center gap-3 hover:text-black"
                                 >
                                     <FiMail size={18} className="text-[#7A1F3D]" />
-                                    Bajrangastro@gmail.com
+                                    bajrangastro@gmail.com
                                 </a>
 
                                 {/* PHONE */}
                                 <a
-                                    href="tel:+918595046368"
+                                    href="tel:+917042600873"
                                     className="flex items-center gap-3 hover:text-black"
                                 >
                                     <FiPhone size={18} className="text-[#7A1F3D]" />
-                                    (219) 555-0114
+                                    +91 7042600873
                                 </a>
 
                                 {/* LOCATION */}
                                 <a
-                                    href="https://maps.google.com/?q=3891 Ranchview Dr, Richardson, California 62639"
+                                    href="https://maps.google.com/?q=172, Shop no 4, Bhargav Market Sadar Sarafa Meerut Cantt, Meerut, Uttar Pradesh 250001"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     className="flex items-start gap-3 hover:text-black"
                                 >
                                     <FiMapPin size={18} className="mt-1 text-[#7A1F3D]" />
                                     <span>
-                                        3891 Ranchview Dr. <br />
-                                        Richardson, California 62639
+                                        172, Shop no 4, Bhargav Market <br />
+                                        Sadar Sarafa Meerut Cantt, <br />
+                                        Meerut, UP 250001
                                     </span>
                                 </a>
-
                             </div>
                         </div>
                     </div>

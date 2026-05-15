@@ -19,7 +19,7 @@ export default function AboutSeventh() {
         },
         {
             title: "Continuous Guidance",
-            desc: "Ongoing WhatsApp support from Pandit Vishal Johari the best astrologer in India to ensure lasting positive results in your life.",
+            desc: "Ongoing WhatsApp support from Vishal Verma the best astrologer in India to ensure lasting positive results in your life.",
             icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776753210/Continuous_Guidance_a5okxm.png",
         },
     ];
@@ -30,7 +30,7 @@ export default function AboutSeventh() {
             <div className="flex flex-col justify-center items-center text-center pt-5  pb-10 px-4">
 
                 <p className="text-[#E57661] text-sm md:text-base tracking-[0.2em] font-semibold mb-4 uppercase">
-                    PANDIT VISHAL JOHARI
+                    Vishal Verma
                 </p>
 
                 <h5 className="text-3xl md:text-5xl font-[500] text-[#E57661] mb-5">

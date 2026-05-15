@@ -93,12 +93,12 @@ const ChandraGrahPage = () => {
             </p>
 
             <div className="flex flex-wrap gap-5 mt-10">
-                <a href="tel:+917042600087">
-                    <button className="bg-white cursor-pointer text-[#1e293b] px-8 py-4 rounded-2xl font-bold shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2">
-                Talk to Astrologer <ArrowRight size={18} />
-              </button>
-                </a>
-            
+              <a href="tel:+917042600873">
+                <button className="bg-white cursor-pointer text-[#1e293b] px-8 py-4 rounded-2xl font-bold shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                  Talk to Astrologer <ArrowRight size={18} />
+                </button>
+              </a>
+
 
               <button className="border cursor-pointer border-white/30 bg-white/5 backdrop-blur-md px-8 py-4 rounded-2xl font-semibold hover:bg-white/10 transition-all">
                 View Remedies
@@ -374,14 +374,14 @@ const ChandraGrahPage = () => {
 
             <div className="flex flex-wrap justify-center gap-6">
               <a
-  href="tel:+917042600873"
-  className="inline-block"
->
-    <button className="bg-blue-600 border cursor-pointer border-white/30 hover:bg-blue-700 text-white px-10 py-5 rounded-3xl font-bold text-lg shadow-2xl transition-all hover:scale-105">
-                Book Consultation
-              </button>
-</a>
-            
+                href="tel:+917042600873"
+                className="inline-block"
+              >
+                <button className="bg-blue-600 border cursor-pointer border-white/30 hover:bg-blue-700 text-white px-10 py-5 rounded-3xl font-bold text-lg shadow-2xl transition-all hover:scale-105">
+                  Book Consultation
+                </button>
+              </a>
+
               <button className="border cursor-pointer border-white/30 text-white hover:bg-white/10 px-10 py-5 rounded-3xl font-bold text-lg transition-all">
                 Contact Support
               </button>

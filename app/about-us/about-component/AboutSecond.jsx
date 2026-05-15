@@ -13,7 +13,7 @@ export default function AboutSecond() {
           </h2>
 
           <p className="text-[#303030] text-[17px] max-w-[580px] md:text-[21px] leading-relaxed mb-5">
-            Bajrang Astro is led by Pandit Vishal Johari, one of the best astrologers in India, with 15+ years of experience in Vedic astrology consultation, accurate Janam Kundli analysis, and expert palm reading across India. .
+            Bajrang Astro is led by Vishal Verma, one of the best astrologers in India, with 15+ years of experience in Vedic astrology consultation, accurate Janam Kundli analysis, and expert palm reading across India. .
           </p>
 
           <p className="text-[#303030] max-w-[580px] text-[17px] md:text-[21px] leading-relaxed">

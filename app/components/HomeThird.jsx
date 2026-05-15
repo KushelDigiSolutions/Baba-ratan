@@ -3,11 +3,11 @@ import Link from 'next/link'
 export default function HomeThird() {
   return (
     <section className="max-w-[1720px] mx-auto bg-white py-16 px-4 flex items-center justify-center">
-      
+
       <div className=" flex flex-col items-center text-center ">
-   
+
         <h3 className="text-3xl md:text-[40px] font-medium text-gray-800 leading-tight">
-         Real Guidance Backed by Centuries of Wisdom
+          Real Guidance Backed by Centuries of Wisdom
         </h3>
 
         <p className="mt-6 text-[#303030] text-base md:text-[20px] max-w-[850px] leading-relaxed font-[400]">
@@ -16,13 +16,14 @@ export default function HomeThird() {
 
         <div className="mt-8">
           <a
-            href="https://wa.me/918595046368"
+            href="https://calendly.com/bajrangastroofficial/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#E57661] cursor-pointer text-white px-6 py-3 rounded-lg text-base md:text-[16px] font-medium transition-all duration-300 hover:bg-white hover:text-[#E57661] border border-[#E57661]"
           >
-           Talk to Astrologer
+            Talk to Astrologer
           </a>
+
         </div>
 
       </div>

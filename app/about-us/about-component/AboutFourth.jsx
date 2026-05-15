@@ -27,13 +27,13 @@ export default function AboutFourth() {
             </h3>
 
             <p className="text-sm md:text-base text-white leading-relaxed max-w-[400px]">
-              Pandit Vishal Johari doesn't just read your chart — he understands your life. Book a 1:1 Vedic astrology consultation for a complete Janam Kundli analysis and hast rekha reading personalised only for you.
+              Vishal Verma doesn't just read your chart — he understands your life. Book a 1:1 Vedic astrology consultation for a complete Janam Kundli analysis and hast rekha reading personalised only for you.
               .
             </p>
           </div>
 
           <div className="mt-8">
-            <a href="https://wa.me/918595046368" target="_blank" rel="noopener noreferrer" className="flex group items-center cursor-pointer gap-2 text-[16px] font-semibold tracking-wide">
+            <a href="https://wa.me/917042600873" target="_blank" rel="noopener noreferrer" className="flex group items-center cursor-pointer gap-2 text-[16px] font-semibold tracking-wide">
               WhatsApp Us   <span className="transition-transform duration-300 group-hover:translate-x-2">
                 →
               </span>

@@ -119,9 +119,9 @@ const ShopMainSection = ({ selectedFilters = { Purpose: '', Planet: '', Gemstone
               Not sure which gemstone is right for your Kundli?
             </h2>
             <p className="text-white/80 text-md md:text-lg mb-8 leading-relaxed">
-              Get a personalised gemstone recommendation from <span className="font-bold text-white">Pandit Vishal Johari</span>, based on your Janam Kundli analysis and planetary positions, for career, health, marriage, and financial growth.
+              Get a personalised gemstone recommendation from <span className="font-bold text-white">Vishal Verma</span>, based on your Janam Kundli analysis and planetary positions, for career, health, marriage, and financial growth.
             </p>
-            <a href="https://wa.me/918595046368" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#B05B48] rounded-xl font-semibold text-sm md:text-base ">
+            <a href="https://wa.me/917042600873" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#B05B48] rounded-xl font-semibold text-sm md:text-base ">
               Free Chat Now
               <span> <img src="https://res.cloudinary.com/daup99ghe/image/upload/v1776765056/Get_Expert_Recommendation_dbbu4y.png" alt="arrow" className="w-4 h-4 object-contain" />
 

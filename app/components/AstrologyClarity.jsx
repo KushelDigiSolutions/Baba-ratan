@@ -6,7 +6,7 @@ const AstrologyClarity = () => {
     const cards = [
         {
             title: "Stuck in Career?",
-            content: "Your Janam Kundli reveals the exact planetary reason behind your career blockage. Pandit Vishal Johari, trusted astrologer in Delhi NCR, helps you find the right direction and the right time to act.",
+            content: "Your Janam Kundli reveals the exact planetary reason behind your career blockage. Vishal Verma, trusted astrologer in Delhi NCR, helps you find the right direction and the right time to act.",
             icon: "https://res.cloudinary.com/daup99ghe/image/upload/v1776922588/Stuck_in_Career_iorplc.png",
         },
         {
@@ -30,8 +30,8 @@ const AstrologyClarity = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     {cards.map((card, index) => (
-                        <div 
-                            key={index} 
+                        <div
+                            key={index}
                             className="bg-white rounded-[32px] p-10 flex flex-col items-start transition-transform "
                         >
                             <div className="mb-8 w-7 h-7">

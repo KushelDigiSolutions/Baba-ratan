@@ -51,7 +51,7 @@ export default function RahuGrahPage() {
                                 Explore Remedies
                                 <ArrowRight size={20} />
                             </button>
-                            <a href="tel:+917042600087">
+                            <a href="tel:+917042600873">
                                 <button className="border border-white/20 bg-white/5 backdrop-blur-md px-8 py-4 rounded-2xl font-semibold hover:bg-white/10 transition">
                                     Talk To Astrologer
                                 </button>
@@ -285,7 +285,7 @@ export default function RahuGrahPage() {
                             gemstone suggestions and Rahu dosha solutions.
                         </p>
                     </div>
-                    <a href="tel:+917042600087">
+                    <a href="tel:+917042600873">
                         <button className="bg-white  cursor-pointer text-black px-8 py-5 rounded-2xl font-bold flex items-center gap-3 hover:scale-105 transition">
                             <Phone />
                             Consult Now

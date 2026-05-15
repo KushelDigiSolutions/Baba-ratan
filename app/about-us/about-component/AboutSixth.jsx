@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Headset } from "lucide-react";
+
 
 export default function AboutSixth() {
   return (
@@ -16,7 +18,7 @@ export default function AboutSixth() {
           </h4>
 
           <p className="text-[#303030] text-[19px] leading-relaxed mb-10 max-w-xl">
-            Pandit Vishal Johari blends ancient Vedic astrology with honest, modern guidance, creating accurate Kundli readings and real life solutions that align with your unique birth chart.
+            Vishal Verma blends ancient Vedic astrology with honest, modern guidance, creating accurate Kundli readings and real life solutions that align with your unique birth chart.
           </p>
 
           {/* FEATURES */}
@@ -55,12 +57,8 @@ export default function AboutSixth() {
             {/* ITEM */}
             <div className="flex gap-4 items-start">
               <div className="bg-[#E57661] px-4 py-3 rounded-[10px] shrink-0">
-                <Image
-                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776508590/LIVE_INSIGH_4T_a1pn9u.png"
-                  alt="LIVE_INSIGH_4T"
-                  width={20}
-                  height={20}
-                />
+                <Headset className="text-white" size={24} />
+
               </div>
               <div className="max-w-[260px]">
                 <h4 className="font-[500] whitespace-nowrap text-xl text-[#0D1C32]">
