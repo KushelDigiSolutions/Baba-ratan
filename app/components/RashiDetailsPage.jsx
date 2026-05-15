@@ -97,9 +97,15 @@ const RashiDetailsPage = () => {
                 Explore Rashis
               </button>
 
-              <button className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-[#d96d55] transition">
+              <a 
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-[#d96d55] transition inline-block text-center"
+              >
                 Talk To Astrologer
-              </button>
+              </a>
+
             </div>
           </div>
 

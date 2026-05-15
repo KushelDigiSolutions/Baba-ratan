@@ -29,7 +29,7 @@ export default function AstralSection() {
     }, []);
 
     return (
-        <section 
+        <section
             ref={sectionRef}
             className="bg-[#251F1E] text-white py-20 md:py-24 px-6 md:px-12 lg:px-20 overflow-hidden"
         >
@@ -58,7 +58,7 @@ export default function AstralSection() {
                                 Know Yourself Deeply
                             </h3>
                             <p className="text-[#FFFFFF]/90 text-lg max-w-[500px] leading-relaxed">
-                                Through accurate <span className="font-bold text-white">Janam Kundli analysis</span>, <span className="font-bold text-white">Pandit Vishal Johari</span> reveals your true strengths, hidden talents, and emotional patterns so you can make better life decisions every day.
+                                Through accurate <span className="font-bold text-white">Janam Kundli analysis</span>, <span className="font-bold text-white">Vishal Verma</span> reveals your true strengths, hidden talents, and emotional patterns so you can make better life decisions every day.
                             </p>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ export default function AstralSection() {
                     {/* ITEM 2 */}
                     <div className="flex gap-6 group">
                         <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#E57661] transition-transform duration-300 group-hover:scale-110">
-                             <Image
+                            <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776926631/Perfect_Timing_faxjks.png"
                                 alt="Perfect Timing Icon"
                                 width={24}
@@ -88,10 +88,10 @@ export default function AstralSection() {
 
                 {/* RIGHT SIDE (Rotating Wheel with Static Icons) */}
                 <div className={`relative flex justify-center items-center transition-all duration-1000 delay-300 ease-out ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}>
-                    
+
                     {/* Wheel Container */}
                     <div className="relative w-full max-w-[450px] aspect-square flex items-center justify-center">
-                        
+
                         {/* Rotating Wheel Asset */}
                         <div className="relative w-full h-full flex items-center justify-center animate-spin-slow overflow-hidden">
                             <img

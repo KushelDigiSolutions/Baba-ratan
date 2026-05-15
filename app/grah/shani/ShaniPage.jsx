@@ -63,12 +63,12 @@ export default function ShaniGrahPage() {
                                     Explore Remedies
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 duration-300" />
                                 </button>
-              <a href="tel:+917042600087">
-                  <button className="bg-white/5 border cursor-pointer border-indigo-500/30 text-indigo-200 hover:bg-white hover:text-[#05030a] px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg">
-                                    Talk To Astrologer
-                                </button>
-              </a>
-                              
+                                <a href="tel:+917042600873">
+                                    <button className="bg-white/5 border cursor-pointer border-indigo-500/30 text-indigo-200 hover:bg-white hover:text-[#05030a] px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg">
+                                        Talk To Astrologer
+                                    </button>
+                                </a>
+
                             </div>
 
                             {/* MINI STATS */}
@@ -122,7 +122,7 @@ export default function ShaniGrahPage() {
 
                                     <div className="absolute bottom-16 right-14 w-32 h-32 rounded-full bg-black/40 blur-2xl"></div>
 
-                                     <Orbit className="w-32 sm:w-44 h-32 sm:h-44 text-indigo-100 opacity-90 drop-shadow-[0_0_35px_rgba(129,140,248,0.7)] animate-spin [animation-duration:12s]" />
+                                    <Orbit className="w-32 sm:w-44 h-32 sm:h-44 text-indigo-100 opacity-90 drop-shadow-[0_0_35px_rgba(129,140,248,0.7)] animate-spin [animation-duration:12s]" />
 
                                 </div>
 
@@ -380,10 +380,10 @@ export default function ShaniGrahPage() {
                             </p>
 
                             <div className="flex flex-wrap justify-center gap-5 mt-12">
-                                  <a href="tel:+917042600873">   <button className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-xl">
+                                <a href="tel:+917042600873">   <button className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-xl">
                                     Book Consultation
                                 </button></a>
-                              
+
 
                                 <button className="border border-indigo-500/50 text-indigo-300 hover:bg-white hover:text-[#05030a] px-8 py-4 rounded-2xl font-semibold duration-300">
                                     Learn More

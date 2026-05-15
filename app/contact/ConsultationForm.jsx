@@ -97,32 +97,32 @@ export default function ConsultationForm() {
       const payload =
         serviceType === "Astro Consulting"
           ? {
-              name: formData.name,
-              phone: formData.phone,
-              email: formData.email,
-              city: formData.city,
-              query_type: "astrology",
-              dob: formData.dob,
-              birth_time: formData.birth_time,
-              birth_place: formData.birth_place,
-              gender: formData.gender,
-              issue_type: formData.issue_type,
-              message: formData.message,
-              status: "pending",
-            }
+            name: formData.name,
+            phone: formData.phone,
+            email: formData.email,
+            city: formData.city,
+            query_type: "astrology",
+            dob: formData.dob,
+            birth_time: formData.birth_time,
+            birth_place: formData.birth_place,
+            gender: formData.gender,
+            issue_type: formData.issue_type,
+            message: formData.message,
+            status: "pending",
+          }
           : {
-              name: formData.name,
-              phone: formData.phone,
-              email: formData.email,
-              city: formData.city,
-              query_type: "vastu",
-              property_type: formData.property_type,
-              property_address: formData.property_address,
-              direction: formData.direction,
-              issue_type: formData.issue_type,
-              message: formData.message,
-              status: "pending",
-            };
+            name: formData.name,
+            phone: formData.phone,
+            email: formData.email,
+            city: formData.city,
+            query_type: "vastu",
+            property_type: formData.property_type,
+            property_address: formData.property_address,
+            direction: formData.direction,
+            issue_type: formData.issue_type,
+            message: formData.message,
+            status: "pending",
+          };
 
       const response = await fetch(
         "https://bajrangastro.kdscrm.com/api/queries",
@@ -209,14 +209,14 @@ export default function ConsultationForm() {
           </h1>
 
           <p className={styles.subtitle}>
-            Start your journey with Pandit Vishal Johari. Choose your service
+            Start your journey with Vishal Verma. Choose your service
             and take the first step today.
           </p>
 
           <div className={styles.contactInfo}>
             <h2>Contact Information</h2>
             <p>
-              Pandit Vishal Johari{" "}
+              Vishal Verma{" "}
               <span>(Vedic Astrologer & Vastu Consultant)</span>
             </p>
           </div>
@@ -540,13 +540,13 @@ export default function ConsultationForm() {
               </>
             )}
 
-             <button
-                type="submit"
-                className={styles.submitBtn}
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? "Submitting..." : "Book Free Consultation"}
-              </button>
+            <button
+              type="submit"
+              className={styles.submitBtn}
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Submitting..." : "Book Free Consultation"}
+            </button>
           </form>
         </div>
       </div>

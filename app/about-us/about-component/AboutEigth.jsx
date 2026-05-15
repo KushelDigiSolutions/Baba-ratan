@@ -10,7 +10,7 @@ const timelineData = [
     },
     {
         title: "Client-First Approach",
-        desc: "Your problems, your life, your Kundli every session with Pandit Vishal Johari is 100% focused on giving you real answers and genuine relief.",
+        desc: "Your problems, your life, your Kundli every session with Vishal Verma is 100% focused on giving you real answers and genuine relief.",
         icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776756155/Client-First_Approach_wmxohb.png",
 
     },
@@ -35,10 +35,10 @@ export default function AboutEight() {
             if (!sectionRef.current) return;
             const rect = sectionRef.current.getBoundingClientRect();
             const viewportHeight = window.innerHeight;
-            
+
             const totalHeight = rect.height;
-            const offset = viewportHeight * 0.7; 
-            
+            const offset = viewportHeight * 0.7;
+
             let progress = (offset - rect.top) / totalHeight;
             progress = Math.max(0, Math.min(1, progress));
             setScrollPercentage(progress);
@@ -50,7 +50,7 @@ export default function AboutEight() {
     }, []);
 
     return (
-        <section 
+        <section
             ref={sectionRef}
             className="bg-[#f8f6f3] max-w-[1720px] mx-auto bg-[radial-gradient(206.31%_103.07%_at_50%_0%,_#FFFBF2_0%,_#FFFFFF_100%)] py-20 px-4 md:px-10 lg:px-20 overflow-hidden"
         >
@@ -67,9 +67,9 @@ export default function AboutEight() {
             <div className="max-w-6xl mx-auto relative">
                 {/* CENTER LINE (Background) */}
                 <div className="hidden md:block md:absolute left-1/2 top-0 -translate-x-1/2 w-[2px] h-full bg-[#E57661]/15" />
-                
+
                 {/* CENTER LINE (Progress) */}
-                <div 
+                <div
                     className="hidden md:block md:absolute left-1/2 top-0 -translate-x-1/2 w-[2px] bg-[#E57661] transition-all duration-300 ease-out"
                     style={{ height: `${scrollPercentage * 100}%` }}
                 />
@@ -80,11 +80,11 @@ export default function AboutEight() {
                         const isActive = scrollPercentage >= itemThreshold;
 
                         return (
-                            <TimelineRow 
-                                key={index} 
-                                item={item} 
-                                index={index} 
-                                isActive={isActive} 
+                            <TimelineRow
+                                key={index}
+                                item={item}
+                                index={index}
+                                isActive={isActive}
                             />
                         );
                     })}

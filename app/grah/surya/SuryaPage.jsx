@@ -43,9 +43,15 @@ export default function SuryaGrahPage() {
                   Explore Remedies
                 </button>
 
-                <button className="border border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-[#c96e67] duration-300">
+                <a 
+                  href="https://calendly.com/bajrangastroofficial/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-[#c96e67] duration-300 inline-block text-center"
+                >
                   Talk to Astrologer
-                </button>
+                </a>
+
               </div>
 
               <div className="grid grid-cols-3 gap-5 mt-12">

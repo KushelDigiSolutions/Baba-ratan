@@ -13,42 +13,42 @@ import AboutSixth from "./about-component/AboutSixth"
 import AboutThird from "./about-component/AboutThird"
 
 const AboutComponent = () => {
-     const faqData = [
-  {
-    question: "Who is Pandit Vishal Johari and why is he the best astrologer in India?",
-    answer:
-      "Pandit Vishal Johari is the founder of Bajrang Astro, one of the best astrologers in India with 15+ years of experience in Janam Kundli analysis, Vedic astrology consultation, and palm reading, trusted by 1000+ clients across India.",
-  },
-  {
-    question: "What makes Bajrang Astro different from other astrology services?",
-    answer:
-      "At Bajrang Astro, every Vedic astrology consultation is 100% honest, personalised, and practical, with no fear tactics, no unnecessary remedies. Pandit Vishal Johari gives you real answers based on your exact Janam Kundli and life situation.",
-  },
-  {
-    question: "Do you provide online astrology services across India?",
-    answer:
-      "Yes, Bajrang Astro provides online astrology services pan-India including accurate Janam Kundli online, hast rekha reading, and Kundli matching via WhatsApp and video call from anywhere in India or abroad.",
-  },
-  {
-    question: "Can I get a free consultation with Pandit Vishal Johari?",
-    answer:
-      "Yes, you can connect with Pandit Vishal Johari for a free initial chat discuss your problem and get guidance on the right Vedic astrology or Vastu consulting service for your specific situation.",
-  },
-];
+  const faqData = [
+    {
+      question: "Who is Vishal Verma and why is he the best astrologer in India?",
+      answer:
+        "Vishal Verma is the founder of Bajrang Astro, one of the best astrologers in India with 15+ years of experience in Janam Kundli analysis, Vedic astrology consultation, and palm reading, trusted by 1000+ clients across India.",
+    },
+    {
+      question: "What makes Bajrang Astro different from other astrology services?",
+      answer:
+        "At Bajrang Astro, every Vedic astrology consultation is 100% honest, personalised, and practical, with no fear tactics, no unnecessary remedies. Vishal Verma gives you real answers based on your exact Janam Kundli and life situation.",
+    },
+    {
+      question: "Do you provide online astrology services across India?",
+      answer:
+        "Yes, Bajrang Astro provides online astrology services pan-India including accurate Janam Kundli online, hast rekha reading, and Kundli matching via WhatsApp and video call from anywhere in India or abroad.",
+    },
+    {
+      question: "Can I get a free consultation with Vishal Verma?",
+      answer:
+        "Yes, you can connect with Vishal Verma for a free initial chat discuss your problem and get guidance on the right Vedic astrology or Vastu consulting service for your specific situation.",
+    },
+  ];
   return (
     <>
-    <Navbar/>
-      <AboutHero/>
-      <AboutSecond/>
-      <AboutThird/>
-      <AboutFourth/>
-      <AboutFifth/>
-      <AboutSixth/>
-      <AboutSeventh/>
-      <AboutEigth/>
-      <FaQ data={faqData}/>
-      <Footer/>
-      
+      <Navbar />
+      <AboutHero />
+      <AboutSecond />
+      <AboutThird />
+      <AboutFourth />
+      <AboutFifth />
+      <AboutSixth />
+      <AboutSeventh />
+      <AboutEigth />
+      <FaQ data={faqData} />
+      <Footer />
+
     </>
   )
 }

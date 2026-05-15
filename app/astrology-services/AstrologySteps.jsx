@@ -74,7 +74,7 @@ export default function AstrologySteps() {
                 Share Your Birth Details
               </h3>
               <p className="text-[#303030]/80 text-lg leading-relaxed">
-                Simply provide your date, time, and place of birth, and Pandit Vishal Johari will prepare your accurate Janam Kundli for a complete Vedic astrology consultation.
+                Simply provide your date, time, and place of birth, and Vishal Verma will prepare your accurate Janam Kundli for a complete Vedic astrology consultation.
               </p>
             </div>
 
@@ -152,10 +152,16 @@ export default function AstrologySteps() {
 
         {/* CTA BUTTON */}
         <div className={`flex justify-center mt-20 md:mt-32 transition-all duration-1000 delay-500 ${visibleSteps.step3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <Link href="/contact" className="bg-[#E57661] text-white px-12 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-[#d96552] hover:scale-105 transition-all duration-300 cursor-pointer inline-block">
+          <a 
+            href="https://calendly.com/bajrangastroofficial/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#E57661] text-white px-12 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-[#d96552] hover:scale-105 transition-all duration-300 cursor-pointer inline-block"
+          >
             Book Your Reading
-          </Link>
+          </a>
         </div>
+
       </div>
     </section>
   );

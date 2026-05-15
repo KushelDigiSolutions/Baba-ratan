@@ -71,9 +71,15 @@ const AriesRashiPage = () => {
                 Read Horoscope
               </button>
 
-              <button className="px-7 py-3 rounded-full border border-white text-white hover:bg-white hover:text-[#d96d55] transition">
+              <a 
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-7 py-3 rounded-full border border-white text-white hover:bg-white hover:text-[#d96d55] transition inline-block text-center"
+              >
                 Talk To Astrologer
-              </button>
+              </a>
+
             </div>
           </div>
 
@@ -302,9 +308,15 @@ const AriesRashiPage = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10">
-            <button className="px-8 py-4 rounded-full bg-[#d96d55] text-white font-semibold hover:bg-[#bf573f] transition">
+            <a 
+              href="https://calendly.com/bajrangastroofficial/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 rounded-full bg-[#d96d55] text-white font-semibold hover:bg-[#bf573f] transition inline-block text-center"
+            >
               Book Consultation
-            </button>
+            </a>
+
 
             <button className="px-8 py-4 rounded-full border border-[#d96d55] text-[#d96d55] font-semibold hover:bg-[#d96d55] hover:text-white transition">
               Chat On WhatsApp

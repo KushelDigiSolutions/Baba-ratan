@@ -71,7 +71,7 @@ const TermsAndConditionsPage = () => {
 
               <p className="text-gray-600 leading-8">
                 All astrology, Vastu, and gemstone services provided by
-                Pandit Vishal Johari at Bajrang Astro are based on ancient
+                Vishal Verma at Bajrang Astro are based on ancient
                 Vedic astrology and Vastu Shastra principles. Results may
                 vary based on individual circumstances and planetary positions.
               </p>
@@ -146,7 +146,7 @@ const TermsAndConditionsPage = () => {
                 <p>
                   No refund will be issued — only store credit or an
                   exchange of equal value may be considered at the sole
-                  discretion of Pandit Vishal Johari.
+                  discretion of Vishal Verma.
                 </p>
 
                 <p>
@@ -168,7 +168,7 @@ const TermsAndConditionsPage = () => {
               </h3>
 
               <p className="text-gray-600 leading-8">
-                Pandit Vishal Johari provides consultations based on
+                Vishal Verma provides consultations based on
                 the birth details and information provided by the client.
                 Bajrang Astro is not responsible for inaccurate readings
                 resulting from incorrect information provided by the client.
@@ -196,9 +196,9 @@ const TermsAndConditionsPage = () => {
               </h3>
 
               <p className="text-gray-600 leading-8">
-            All gemstones sold by Bajrang Astro are certified and energised. Once 
-purchased and delivered, standard gemstones cannot be returned or exchanged. For premium 
-gemstones, the 3-day return policy as mentioned in Point 4 applies. 
+                All gemstones sold by Bajrang Astro are certified and energised. Once
+                purchased and delivered, standard gemstones cannot be returned or exchanged. For premium
+                gemstones, the 3-day return policy as mentioned in Point 4 applies.
               </p>
             </div>
 
@@ -209,9 +209,9 @@ gemstones, the 3-day return policy as mentioned in Point 4 applies.
               </h3>
 
               <p className="text-gray-600 leading-8">
-             All content on the Bajrang Astro website, including text, images, and 
-reports, is the intellectual property of Bajrang Astro and cannot be copied or reproduced 
-without written permission.
+                All content on the Bajrang Astro website, including text, images, and
+                reports, is the intellectual property of Bajrang Astro and cannot be copied or reproduced
+                without written permission.
               </p>
             </div>
 
@@ -222,8 +222,8 @@ without written permission.
               </h3>
 
               <p className="text-gray-600 leading-8">
-            These Terms & Conditions are governed by the laws of India. Any disputes 
-will be subject to the jurisdiction of the courts in Meerut, Uttar Pradesh. 
+                These Terms & Conditions are governed by the laws of India. Any disputes
+                will be subject to the jurisdiction of the courts in Meerut, Uttar Pradesh.
               </p>
             </div>
 
@@ -234,8 +234,8 @@ will be subject to the jurisdiction of the courts in Meerut, Uttar Pradesh.
               </h3>
 
               <p className="text-gray-600 leading-8">
-                reserves the right to update these Terms & Conditions at 
-any time without prior notice. 
+                reserves the right to update these Terms & Conditions at
+                any time without prior notice.
               </p>
             </div>
           </div>
@@ -251,43 +251,43 @@ any time without prior notice.
               please contact us:
             </p>
 
-           <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
 
-  {/* Phone */}
-  <a
-    href="tel:+918595046368"
-    className="flex items-center gap-4 p-4 rounded-2xl hover:bg-[#fff0ec] transition duration-300"
-  >
-    <div className="w-14 h-14 rounded-2xl bg-[#d97869] text-white flex items-center justify-center">
-      <Phone size={24} />
-    </div>
+              {/* Phone */}
+              <a
+                href="tel:+917042600873"
+                className="flex items-center gap-4 p-4 rounded-2xl hover:bg-[#fff0ec] transition duration-300"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-[#d97869] text-white flex items-center justify-center">
+                  <Phone size={24} />
+                </div>
 
-    <div>
-      <p className="text-sm text-gray-500">Call Us</p>
-      <h4 className="font-semibold text-[#222]">
-        +91 85950 46368
-      </h4>
-    </div>
-  </a>
+                <div>
+                  <p className="text-sm text-gray-500">Call Us</p>
+                  <h4 className="font-semibold text-[#222]">
+                    +91 85950 46368
+                  </h4>
+                </div>
+              </a>
 
-  {/* Email */}
-  <a
-    href="mailto:info@bajrangastro.com"
-    className="flex items-center gap-4 p-4 rounded-2xl hover:bg-[#fff0ec] transition duration-300"
-  >
-    <div className="w-14 h-14 rounded-2xl bg-[#d97869] text-white flex items-center justify-center">
-      <Mail size={24} />
-    </div>
+              {/* Email */}
+              <a
+                href="mailto:info@bajrangastro.com"
+                className="flex items-center gap-4 p-4 rounded-2xl hover:bg-[#fff0ec] transition duration-300"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-[#d97869] text-white flex items-center justify-center">
+                  <Mail size={24} />
+                </div>
 
-    <div>
-      <p className="text-sm text-gray-500">Email Support</p>
-      <h4 className="font-semibold text-[#222]">
-        info@bajrangastro.com
-      </h4>
-    </div>
-  </a>
+                <div>
+                  <p className="text-sm text-gray-500">Email Support</p>
+                  <h4 className="font-semibold text-[#222]">
+                    info@bajrangastro.com
+                  </h4>
+                </div>
+              </a>
 
-</div>
+            </div>
           </div>
 
           {/* Footer */}

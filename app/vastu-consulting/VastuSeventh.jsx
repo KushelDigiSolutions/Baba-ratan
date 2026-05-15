@@ -13,7 +13,7 @@ export default function VastuSeveth() {
                     </h5>
 
                     <p className="mt-6 text-[#303030] text-lg md:text-[20px] leading-relaxed max-w-[500px]">
-                        Pandit Vishal Johari at Bajrang Astro doesn't just rearrange your space he identifies the root energy blocks and corrects them using authentic Vastu Shastra principles combined with today's practical approach.
+                        Vishal Verma at Bajrang Astro doesn't just rearrange your space he identifies the root energy blocks and corrects them using authentic Vastu Shastra principles combined with today's practical approach.
                     </p>
 
                     {/* POINTS */}

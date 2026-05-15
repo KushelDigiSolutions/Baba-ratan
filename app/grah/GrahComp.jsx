@@ -192,9 +192,15 @@ export default function GrahPage() {
                 Explore Grah
               </button>
 
-              <button className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-black transition">
+              <a 
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-black transition inline-block text-center"
+              >
                 Talk To Astrologer
-              </button>
+              </a>
+
             </div>
           </div>
 
@@ -460,9 +466,15 @@ export default function GrahPage() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-5 mt-10">
-              <button className="bg-[#c96e67] hover:bg-[#b85d57] text-white px-8 py-4 rounded-2xl font-semibold duration-300">
+              <a 
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#c96e67] hover:bg-[#b85d57] text-white px-8 py-4 rounded-2xl font-semibold duration-300 inline-block text-center"
+              >
                 Book Consultation
-              </button>
+              </a>
+
 
               <button className="border border-[#c96e67] text-[#c96e67] hover:bg-[#c96e67] hover:text-white px-8 py-4 rounded-2xl font-semibold duration-300">
                 Contact Now

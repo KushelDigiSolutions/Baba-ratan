@@ -63,7 +63,7 @@ export default function GuruGrahPage() {
                   Explore Remedies
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 duration-300" />
                 </button>
-                <a href="tel:+917042600087">
+                <a href="tel:+917042600873">
                   <button className="bg-white/80 border cursor-pointer border-[#e9c87b] text-[#8b5e1a] hover:bg-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg">
                     Talk To Astrologer
                   </button>

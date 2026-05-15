@@ -38,10 +38,10 @@ export default function Navbar() {
     <header className="navbar-wrapper">
       {/* ================= TOP BAR ================= */}
       <div className="top-bar">
-        <a href="tel:+918595046368" className="top-left">
+        <a href="tel:+917042600873" className="top-left">
           <span className="phone">
             <IoCallSharp size={20} color="#ffff" />
-            +91 8595046368
+            +91 7042600873
           </span>
         </a>
 
@@ -398,11 +398,11 @@ export default function Navbar() {
                 <Link href="/astrology-services">Astrology Services</Link>
               </li> */}
 
-              <li className={pathname === "/shop" ? "active" : ""}>
+              {/* <li className={pathname === "/shop" ? "active" : ""}>
                 <Link href="/shop">Shop</Link>
-              </li>
+              </li> */}
 
-              
+
 
               {/* <li className={pathname === '/contact' ? 'active' : ''}>
                                 <Link href="/contact">Contact</Link>
@@ -428,24 +428,28 @@ export default function Navbar() {
             </ul>
           </div>
           <a
-            href="tel:+918595046368"
+            href="https://calendly.com/bajrangastroofficial/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="astro-left px-3 rounded-[7px] bg-[#FFF5E9]"
           >
+
             <div className="astro-icon">
               {/* <FiPhone /> */}
               <IoCallSharp size={32} color="#E57661" />
             </div>
             <div className="astro-text">
               <p>Talk to our Astrologer</p>
-              <span className="text-[#E57661]">+91 8595046368</span>
+              <span className="text-[#E57661]">+91 7042600873</span>
             </div>
             <div className="astro-image">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1766820530/compressed_52b5069c46640705212e2b570fb52627_3_zlf0wr.png"
                 alt="Astrologer"
-              />
+              /> */}
             </div>
           </a>
+
         </div>
 
         {/* MOBILE SEARCH ICON → POPUP */}
@@ -468,9 +472,9 @@ export default function Navbar() {
               <li>
                 <Link href="/astrology-services">Astrology Services</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/shop">Shop</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/about-us">About us</Link>
               </li>
@@ -500,10 +504,16 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <a href="tel:+918595046368" className="mobile-astro">
+          <a 
+            href="https://calendly.com/bajrangastroofficial/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mobile-astro"
+          >
             <IoCallSharp size={20} color="#E57661" />
             Talk to Astrologer
           </a>
+
         </div>
       )}
 

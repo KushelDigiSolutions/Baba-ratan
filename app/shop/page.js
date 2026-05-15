@@ -3,7 +3,7 @@ import ShopComponent from './ShopComponent';
 export const metadata = {
   title: "Buy Certified Gemstones Online India | Bajrang Astro",
   description:
-    "Shop 100% certified, energised gemstones recommended by Pandit Vishal Johari. Natural Ruby, Emerald, Neelam & more. Kundli-based gemstone advice. Order now.",
+    "Shop 100% certified, energised gemstones recommended by Vishal Verma. Natural Ruby, Emerald, Neelam & more. Kundli-based gemstone advice. Order now.",
   alternates: {
     canonical: "/shop",
   },
@@ -15,7 +15,7 @@ export default function ShopPage() {
     "@type": "Store",
     name: "Buy Certified Gemstones Online India | Bajrang Astro",
     description:
-      "Shop 100% certified, energised gemstones recommended by Pandit Vishal Johari. Natural Ruby, Emerald, Neelam & more. Kundli-based gemstone advice. Order now.",
+      "Shop 100% certified, energised gemstones recommended by Vishal Verma. Natural Ruby, Emerald, Neelam & more. Kundli-based gemstone advice. Order now.",
     url: "https://bajrangastro.com/shop",
     image:
       "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",

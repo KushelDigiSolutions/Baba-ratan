@@ -18,16 +18,16 @@ export default function VastuHero() {
                     </h1>
 
                     <p className="mt-5 text-[#303030] text-lg md:text-[24px] max-w-xl  lg:mx-0">
-                        Pandit Vishal Johari at Bajrang Astro brings the ancient science of Vastu Shastra into your home, office, and business removing energy blocks and creating the right environment for success, peace, and growth.
+                        Vishal Verma at Bajrang Astro brings the ancient science of Vastu Shastra into your home, office, and business removing energy blocks and creating the right environment for success, peace, and growth.
                     </p>
 
                     {/* BUTTONS */}
                     <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 mt-8 lg:justify-start">
-                        <a href="tel:+918595046368" className="bg-[#E57661] cursor-pointer w-fit text-white px-6 py-4 rounded-full font-medium shadow-md hover:bg-white border border-[#E57661] hover:border-[#E57661] hover:text-[#333] transition">
+                        <a href="tel:+917042600873" className="bg-[#E57661] cursor-pointer w-fit text-white px-6 py-4 rounded-full font-medium shadow-md hover:bg-white border border-[#E57661] hover:border-[#E57661] hover:text-[#333] transition">
                             Call Now
                         </a>
 
-                        <a href="https://wa.me/918595046368" target="_blank" rel="noopener noreferrer" className="border cursor-pointer border-[#E57661] w-fit bg-white text-[#333] px-12 py-4 rounded-full font-medium hover:bg-[#E57661] hover:text-white transition">
+                        <a href="https://wa.me/917042600873" target="_blank" rel="noopener noreferrer" className="border cursor-pointer border-[#E57661] w-fit bg-white text-[#333] px-12 py-4 rounded-full font-medium hover:bg-[#E57661] hover:text-white transition">
                             WhatsApp Us
                         </a>
                     </div>

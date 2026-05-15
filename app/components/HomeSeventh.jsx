@@ -83,7 +83,7 @@ export default function HomeSeventh() {
                 </h5>
 
                 <p className="mt-6 text-[#303030] gray-600 text-base md:text-[24px]">
-                    Our approach is honest, practical, and result-focused, guiding you clearly from problem to solution, step by step. 
+                    Our approach is honest, practical, and result-focused, guiding you clearly from problem to solution, step by step.
 
                 </p>
             </div>
@@ -172,7 +172,7 @@ export default function HomeSeventh() {
                                     </p>
 
                                     <a
-                                        href={index === 0 ? "tel:+918595046368" : index === 1 ? "https://wa.me/918595046368" : "/contact"}
+                                        href={index === 0 ? "tel:+917042600873" : index === 1 ? "https://wa.me/917042600873" : "/contact"}
                                         target={index === 1 ? "_blank" : "_self"}
                                         rel={index === 1 ? "noopener noreferrer" : ""}
                                         className={`mt-4 text-[#E57661] text-[17px] ${index == 0 ? "font-[500]" : "font-semibold"} flex items-center gap-2 ${step.align === "right" ? "justify-end" : ""}`}
