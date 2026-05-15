@@ -59,14 +59,16 @@ export default function GuruGrahPage() {
 
               {/* BUTTONS */}
               <div className="flex flex-wrap gap-5 mt-10">
-                <button className="group bg-[#8b5e1a] hover:bg-[#70450c] text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 duration-300 shadow-[0_15px_40px_rgba(139,94,26,0.35)]">
+                <button className="group cursor-pointer bg-[#8b5e1a] hover:bg-[#70450c] text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 duration-300 shadow-[0_15px_40px_rgba(139,94,26,0.35)]">
                   Explore Remedies
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 duration-300" />
                 </button>
+                <a href="tel:+917042600087">
+                  <button className="bg-white/80 border cursor-pointer border-[#e9c87b] text-[#8b5e1a] hover:bg-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg">
+                    Talk To Astrologer
+                  </button>
+                </a>
 
-                <button className="bg-white/80 border border-[#e9c87b] text-[#8b5e1a] hover:bg-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg">
-                  Talk To Astrologer
-                </button>
               </div>
 
               {/* MINI STATS */}

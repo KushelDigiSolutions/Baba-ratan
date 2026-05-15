@@ -87,10 +87,13 @@ export default function BudhGrahPage() {
                 <button className="bg-white hover:scale-105 duration-300 text-[#138f66] px-8 py-4 rounded-2xl font-semibold shadow-2xl">
                   Explore Remedies
                 </button>
-
-                <button className="border border-white/30 text-white hover:bg-white hover:text-[#138f66] duration-300 px-8 py-4 rounded-2xl font-semibold">
+              
+                          <a href="tel:+917042600087">
+                              <button className="border cursor-pointer border-white/30 text-white hover:bg-white hover:text-[#138f66] duration-300 px-8 py-4 rounded-2xl font-semibold">
                   Talk To Astrologer
                 </button>
+                          </a>
+              
               </div>
             </div>
 
@@ -382,9 +385,14 @@ export default function BudhGrahPage() {
               </p>
 
               <div className="flex flex-wrap justify-center gap-5 mt-12">
-                <button className="bg-[#138f66] hover:bg-[#0f7553] text-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-xl">
-                  Book Consultation
-                </button>
+             <a
+  href="tel:+917042600873"
+  className="inline-block"
+>
+  <button className="bg-[#138f66] cursor-pointer hover:bg-[#0f7553] text-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-xl">
+    Book Consultation
+  </button>
+</a>
 
                 <button className="border border-[#138f66] text-[#138f66] hover:bg-[#138f66] hover:text-white px-8 py-4 rounded-2xl font-semibold duration-300 flex items-center gap-2">
                   Learn More <ArrowRight className="w-5 h-5" />
