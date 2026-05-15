@@ -114,6 +114,10 @@ const ProfilePage = () => {
       }
       setAddressSubmitSuccess("Address deleted successfully.");
       loadAddresses();
+
+      setTimeout(() => {
+        setAddressSubmitSuccess(null);
+      }, 3000);
     } catch (error) {
       setAddressError(error?.message || "Failed to delete address.");
     } finally {
@@ -220,6 +224,10 @@ const ProfilePage = () => {
         country: "",
       });
       loadAddresses();
+
+      setTimeout(() => {
+        setAddressSubmitSuccess(null);
+      }, 3000);
     } catch (error) {
       setAddressSubmitError(error?.message || "Failed to save address.");
     } finally {
@@ -938,91 +946,92 @@ const ProfilePage = () => {
                 </form>
               )}
 
-              {isLoadingAddresses ? (
-                <div className="text-center py-16 text-gray-500">
-                  Loading addresses...
-                </div>
-              ) : addressError ? (
-                <div className="text-center py-16 text-red-500">
-                  {addressError}
-                </div>
-              ) : addresses.length === 0 ? (
-                <div className="text-center py-16 text-gray-500">
-                  No saved addresses found.
-                </div>
-              ) : (
-                <div className="grid md:grid-cols-2 gap-6">
-                  {addresses.map((address, index) => {
-                    const label =
-                      address.label || address.name || `Address ${index + 1}`;
-                    const lines = [];
-                    if (address.address_line1)
-                      lines.push(address.address_line1);
-                    if (address.address_line2)
-                      lines.push(address.address_line2);
-                    if (address.city) lines.push(address.city);
-                    if (address.state) lines.push(address.state);
-                    if (address.postal_code) lines.push(address.postal_code);
-                    if (address.country) lines.push(address.country);
-                    if (address.phone) lines.push(`Phone: ${address.phone}`);
-                    if (address.contact_number)
-                      lines.push(`Phone: ${address.contact_number}`);
+              {!showAddAddressForm && (
+                isLoadingAddresses ? (
+                  <div className="text-center py-16 text-gray-500">
+                    Loading addresses...
+                  </div>
+                ) : addressError ? (
+                  <div className="text-center py-16 text-red-500">
+                    {addressError}
+                  </div>
+                ) : addresses.length === 0 ? (
+                  <div className="text-center py-16 text-gray-500">
+                    No saved addresses found.
+                  </div>
+                ) : (
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {addresses.map((address, index) => {
+                      const label =
+                        address.label || address.name || `Address ${index + 1}`;
+                      const lines = [];
 
-                    const content =
-                      lines.length > 0
-                        ? lines
-                        : [
-                          address.full_address ||
-                          address.address ||
-                          JSON.stringify(address),
-                        ];
+                      if (address.address_line1)
+                        lines.push(address.address_line1);
+                      if (address.address_line2)
+                        lines.push(address.address_line2);
+                      if (address.city) lines.push(address.city);
+                      if (address.state) lines.push(address.state);
+                      if (address.postal_code) lines.push(address.postal_code);
+                      if (address.country) lines.push(address.country);
+                      if (address.phone) lines.push(`Phone: ${address.phone}`);
+                      if (address.contact_number)
+                        lines.push(`Phone: ${address.contact_number}`);
 
-                    return (
-                      <div
-                        key={index}
-                        className="border-2 border-dashed border-[#de7a63]/30 rounded-3xl p-6"
-                      >
-                        <div className="flex items-start justify-between">
-                          <div>
-                            <h3 className="font-bold text-lg">{label}</h3>
+                      const content =
+                        lines.length > 0
+                          ? lines
+                          : [
+                            address.full_address ||
+                            address.address ||
+                            JSON.stringify(address),
+                          ];
 
-                            <p className="text-gray-600 mt-3 leading-7 whitespace-pre-line">
-                              {content.map((line, lineIndex) => (
-                                <span key={lineIndex}>
-                                  {line}
-                                  {lineIndex < content.length - 1 ? (
-                                    <br />
-                                  ) : null}
-                                </span>
-                              ))}
-                            </p>
+                      return (
+                        <div
+                          key={index}
+                          className="border-2 border-dashed border-[#de7a63]/30 rounded-3xl p-6"
+                        >
+                          <div className="flex items-start justify-between">
+                            <div>
+                              <h3 className="font-bold text-lg">{label}</h3>
+
+                              <p className="text-gray-600 mt-3 leading-7 whitespace-pre-line">
+                                {content.map((line, lineIndex) => (
+                                  <span key={lineIndex}>
+                                    {line}
+                                    {lineIndex < content.length - 1 ? <br /> : null}
+                                  </span>
+                                ))}
+                              </p>
+                            </div>
+
+                            <MapPin className="text-[#de7a63]" />
                           </div>
 
-                          <MapPin className="text-[#de7a63]" />
-                        </div>
+                          <div className="flex gap-3 mt-6">
+                            <button
+                              onClick={() => handleEditClick(address)}
+                              className="px-4 py-2 cursor-pointer bg-[#de7a63] text-white rounded-xl"
+                            >
+                              Edit
+                            </button>
 
-                        <div className="flex gap-3 mt-6">
-                          <button
-                            onClick={() => handleEditClick(address)}
-                            className="px-4 py-2 cursor-pointer bg-[#de7a63] text-white rounded-xl"
-                          >
-                            Edit
-                          </button>
-
-                          <button
-                            className="px-4 py-2 cursor-pointer border rounded-xl text-red-500 disabled:opacity-60"
-                            disabled={isDeletingAddressId === address.id}
-                            onClick={() => handleDeleteAddress(address.id)}
-                          >
-                            {isDeletingAddressId === address.id
-                              ? "Deleting..."
-                              : "Delete"}
-                          </button>
+                            <button
+                              className="px-4 py-2 cursor-pointer border rounded-xl text-red-500 disabled:opacity-60"
+                              disabled={isDeletingAddressId === address.id}
+                              onClick={() => handleDeleteAddress(address.id)}
+                            >
+                              {isDeletingAddressId === address.id
+                                ? "Deleting..."
+                                : "Delete"}
+                            </button>
+                          </div>
                         </div>
-                      </div>
-                    );
-                  })}
-                </div>
+                      );
+                    })}
+                  </div>
+                )
               )}
             </div>
           )}
