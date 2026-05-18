@@ -7,24 +7,23 @@ import {
   FiBriefcase,
   FiActivity,
   FiArrowRight,
+  FiSun,
   FiTrendingUp,
-  FiShield,
-  FiMoon,
 } from "react-icons/fi";
 
 const traits = [
-  "Disciplined",
-  "Hardworking",
-  "Responsible",
-  "Ambitious",
-  "Practical",
-  "Patient",
+  "अनुशासित",
+  "परिश्रमी",
+  "व्यावहारिक",
+  "महत्वाकांक्षी",
+  "धैर्यवान",
+  "वफादार",
 ];
 
 const luckyThings = [
   {
     title: "Lucky Color",
-    value: "Black & Brown",
+    value: "Black & Dark Blue",
   },
   {
     title: "Lucky Number",
@@ -42,71 +41,74 @@ const luckyThings = [
 
 const faqData = [
   {
-    question: "What kind of personality does Capricorn have?",
+    question: "मकर राशि के जातकों का मुख्य स्वभाव कैसा होता है?",
     answer:
-      "Capricorn natives are disciplined, hardworking, practical, and highly ambitious individuals who focus strongly on success and stability.",
+      "मकर राशि के जातक स्वभाव से बेहद अनुशासित, परिश्रमी, व्यावहारिक और अत्यधिक महत्वाकांक्षी होते हैं। वे जीवन में किसी भी प्रकार की जल्दबाजी के बजाय धैर्य, निरंतरता और कड़ी मेहनत से स्थायी सफलता प्राप्त करने में विश्वास रखते हैं।",
   },
   {
-    question: "Which planet rules Capricorn?",
+    question: "मकर राशि का स्वामी ग्रह कौन सा है और इसका क्या प्रभाव है?",
     answer:
-      "Saturn rules Capricorn and represents discipline, patience, responsibility, structure, and long-term growth.",
+      "कर्मफल दाता शनिदेव के प्रबल प्रभाव के कारण, उनमें जिम्मेदारी की गहरी भावना, परिपक्वता और गजब का सांगठनिक (Organizational) कौशल पाया जाता है। वे बिना थके अपने लक्ष्यों की ओर अग्रसर रहते हैं, जिससे वे जीवन के उत्तरार्ध में महान ऊंचाइयां और सुख-समृद्धि अर्जित करते हैं।",
   },
   {
-    question: "Which careers suit Capricorn natives?",
+    question: "मकर राशि के लोगों के लिए कौन सा करियर क्षेत्र सबसे उपयुक्त माना गया है?",
     answer:
-      "Management, finance, business, administration, engineering, law, and leadership professions suit Capricorn people.",
+      "ये जातक कॉर्पोरेट प्रशासन, वित्त व सीए, स्वतंत्र उद्योग, वकालत, सिविल इंजीनियरिंग और प्रशासनिक सेवाओं में सर्वश्रेष्ठ प्रदर्शन करते हैं। समय के साथ इनका धन लगातार संचित होता है।",
   },
 ];
 
 const CapricornPage = () => {
   return (
     <div className="w-full bg-[#faf9f7] overflow-hidden">
-      {/* HERO SECTION */}
-      <section className="relative py-20 md:py-28 px-4 md:px-10 lg:px-20 bg-gradient-to-br from-[#1f2937] via-[#374151] to-[#4b5563] overflow-hidden">
+      {/* HERO SECTION - English */}
+      <section className="relative py-12 sm:py-16 md:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-br from-[#1f2937] via-[#374151] to-[#4b5563] overflow-hidden">
         {/* Glow */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-80 h-80 bg-gray-200 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-slate-300 rounded-full blur-3xl" />
+          <div className="absolute top-10 left-10 w-80 h-80 bg-white rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-10 w-80 h-80 bg-gray-600 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* LEFT */}
-          <div className="text-white">
-            <span className="inline-block px-5 py-2 rounded-full bg-white/10 border border-white/10 backdrop-blur-md text-sm font-medium mb-6">
+          <div className="text-white text-center lg:text-left">
+            <span className="inline-block px-5 py-2 rounded-full bg-white/20 border border-white/20 backdrop-blur-md text-sm font-medium mb-6">
               Capricorn Zodiac Sign
             </span>
 
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold leading-[1.2] sm:leading-tight">
               Capricorn Rashi
             </h1>
 
-            <h2 className="text-3xl md:text-5xl font-semibold text-gray-200 mt-3">
+            <h2 className="text-3xl md:text-5xl font-semibold text-[#d1d5db] mt-3">
               मकर राशि ♑
             </h2>
 
-            <p className="mt-8 text-lg md:text-xl leading-9 text-white/90 max-w-2xl">
-              Capricorn is an earth sign ruled by Saturn. Capricorn natives are
-              disciplined, ambitious, practical, and hardworking personalities
-              who believe strongly in stability and long-term success.
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-white/90 max-w-2xl mx-auto lg:mx-0">
+              Capricorn, the disciplined and determined Earth sign ruled by the planet of karma and time, Saturn. Symbolized by the sea-goat, Capricorn natives possess unyielding perseverance, stellar administrative intellect, absolute realism, and a silent power that steadily scales the highest peaks of success.
             </p>
 
-            <div className="flex flex-wrap gap-5 mt-10">
-              <button className="px-8 py-4 rounded-full bg-white text-[#1f2937] font-semibold hover:scale-105 transition">
+            <div className="flex flex-wrap gap-4 mt-6 sm:mt-8 justify-center lg:justify-start">
+              <button className="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-[#1f2937] font-semibold hover:scale-105 transition">
                 Read Horoscope
               </button>
 
-              <button className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-[#1f2937] transition">
+              <a
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-[#1f2937] transition inline-block text-center"
+              >
                 Talk To Astrologer
-              </button>
+              </a>
             </div>
           </div>
 
           {/* RIGHT */}
-          <div className="flex justify-center">
-            <div className="relative w-[320px] h-[320px] md:w-[520px] md:h-[520px] rounded-full bg-white/10 border border-white/10 backdrop-blur-xl flex items-center justify-center shadow-2xl">
+          <div className="flex justify-center order-first lg:order-last">
+            <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full bg-white/10 border border-white/20 backdrop-blur-xl flex items-center justify-center shadow-2xl">
               <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/20 animate-spin [animation-duration:40s]" />
 
-              <div className="text-[150px] md:text-[240px] text-white drop-shadow-2xl">
+              <div className="text-[90px] sm:text-[140px] md:text-[180px] text-white drop-shadow-2xl">
                 ♑
               </div>
 
@@ -115,62 +117,59 @@ const CapricornPage = () => {
               </div>
 
               <div className="absolute bottom-14 left-12 text-white text-4xl">
-                ☾
+                ⏳
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ABOUT SECTION */}
-      <section className="py-20 px-4 md:px-10 lg:px-20">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+      {/* ABOUT SECTION - Hindi */}
+      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-14 items-center">
           {/* IMAGE */}
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1400&auto=format&fit=crop"
-              alt="Capricorn"
-              className="w-full h-[550px] object-cover rounded-[40px] shadow-2xl"
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1400&auto=format&fit=crop"
+              alt="Capricorn Success"
+              className="w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
 
-            <div className="absolute -bottom-8 -right-8 bg-white shadow-2xl rounded-3xl p-6 border border-gray-200">
-              <h3 className="text-[#374151] font-semibold">
-                Element
+            <div className="absolute -bottom-6 -right-6 sm:-bottom-8 sm:-right-8 bg-white shadow-2xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-gray-200">
+              <h3 className="text-[#374151] font-semibold text-sm sm:text-base">
+                तत्व
               </h3>
 
-              <p className="text-3xl font-bold text-[#111827] mt-2">
-                Earth 🌍
+              <p className="text-2xl sm:text-3xl font-bold text-[#111827] mt-2">
+                पृथ्वी 🌍
               </p>
             </div>
           </div>
 
           {/* CONTENT */}
-          <div>
-            <span className="text-[#374151] font-semibold uppercase tracking-wider">
-              About Capricorn
+          <div className="mt-6 lg:mt-0">
+            <span className="text-[#374151] font-semibold uppercase tracking-wider text-sm sm:text-base">
+              मकर राशि के बारे में
             </span>
 
-            <h2 className="text-4xl md:text-6xl font-bold text-[#111827] mt-4 leading-tight">
-              Personality Of Capricorn Natives
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-[#111827] mt-4 leading-[1.3] sm:leading-tight">
+              मकर राशि के जातकों का व्यक्तित्व
             </h2>
 
-            <p className="text-gray-600 text-lg leading-9 mt-8">
-              Capricorn natives are practical, disciplined, and highly focused
-              individuals. They believe in patience, consistency, and achieving
-              goals through hard work.
+            <p className="text-gray-600 text-base sm:text-lg leading-7 sm:leading-9 mt-6">
+              मकर राशि के जातक स्वभाव से बेहद अनुशासित, परिश्रमी, व्यावहारिक और अत्यधिक महत्वाकांक्षी होते हैं। वे जीवन में किसी भी प्रकार की जल्दबाजी के बजाय धैर्य, निरंतरता और कड़ी मेहनत से स्थायी सफलता प्राप्त करने में विश्वास रखते हैं।
             </p>
 
-            <p className="text-gray-600 text-lg leading-9 mt-5">
-              Ruled by Saturn, Capricorn people are naturally responsible and
-              mature personalities who value structure and long-term success.
+            <p className="text-gray-600 text-base sm:text-lg leading-7 sm:leading-9 mt-4">
+              कर्मफल दाता शनिदेव के प्रबल प्रभाव के कारण, उनमें जिम्मेदारी की गहरी भावना, परिपक्वता और गजब का सांगठनिक (Organizational) कौशल पाया जाता है। वे बिना थके अपने लक्ष्यों की ओर अग्रसर रहते हैं, जिससे वे जीवन के उत्तरार्ध में महान ऊंचाइयां और सुख-समृद्धि अर्जित करते हैं।
             </p>
 
             {/* TRAITS */}
-            <div className="flex flex-wrap gap-4 mt-10">
+            <div className="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8">
               {traits.map((item, index) => (
                 <div
                   key={index}
-                  className="px-5 py-3 rounded-full bg-gray-100 border border-gray-200 text-[#374151] font-medium"
+                  className="px-4 sm:px-5 py-2 sm:py-3 rounded-full bg-gray-100 border border-gray-200 text-[#374151] font-medium text-sm sm:text-base"
                 >
                   {item}
                 </div>
@@ -180,29 +179,29 @@ const CapricornPage = () => {
         </div>
       </section>
 
-      {/* LUCKY SECTION */}
-      <section className="py-20 px-4 md:px-10 lg:px-20 bg-white">
-        <div className="text-center mb-14">
-          <span className="text-[#374151] font-semibold uppercase tracking-wider">
+      {/* LUCKY SECTION - English */}
+      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20 bg-white">
+        <div className="text-center mb-10 sm:mb-14">
+          <span className="text-[#374151] font-semibold uppercase tracking-wider text-sm sm:text-base">
             Capricorn Astrology
           </span>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-[#111827] mt-4">
+          <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-[#111827] mt-4 leading-[1.3] sm:leading-tight">
             Lucky Things For Capricorn
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-7">
           {luckyThings.map((item, index) => (
             <div
               key={index}
-              className="bg-[#fafafa] border border-gray-200 rounded-[35px] p-8 hover:shadow-2xl transition hover:-translate-y-2"
+              className="bg-[#fafafa] border border-gray-200 rounded-[24px] sm:rounded-[35px] p-5 sm:p-8 hover:shadow-2xl transition hover:-translate-y-2"
             >
-              <h3 className="text-[#374151] text-lg font-semibold">
+              <h3 className="text-[#374151] text-base sm:text-lg font-semibold">
                 {item.title}
               </h3>
 
-              <p className="text-3xl font-bold text-[#111827] mt-5">
+              <p className="text-xl sm:text-3xl font-bold text-[#111827] mt-3 sm:mt-5">
                 {item.value}
               </p>
             </div>
@@ -210,156 +209,154 @@ const CapricornPage = () => {
         </div>
       </section>
 
-      {/* LOVE CAREER HEALTH */}
-      <section className="py-20 px-4 md:px-10 lg:px-20">
-        <div className="text-center mb-16">
-          <span className="text-[#374151] font-semibold uppercase tracking-wider">
-            Capricorn Insights
+      {/* LOVE CAREER HEALTH - Hindi */}
+      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-10 sm:mb-14">
+          <span className="text-[#374151] font-semibold uppercase tracking-wider text-sm sm:text-base">
+            मकर राशि के प्रभाव क्षेत्र
           </span>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-[#111827] mt-4">
-            Love, Career & Health
+          <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-[#111827] mt-4 leading-[1.3] sm:leading-tight">
+            प्रेम, करियर और स्वास्थ्य का संपूर्ण विश्लेषण
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
           {/* LOVE */}
-          <div className="bg-white rounded-[35px] p-9 shadow-md hover:shadow-2xl transition">
-            <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center text-[#374151] text-4xl">
+          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gray-100 flex items-center justify-center text-[#374151] text-3xl sm:text-4xl mb-4 sm:mb-6">
               <FiHeart />
             </div>
 
-            <h3 className="text-3xl font-bold text-[#111827] mt-7">
-              Love & Relationship
+            <h3 className="text-xl sm:text-2xl font-bold text-[#111827]">
+              प्रेम और संबंध
             </h3>
 
-            <p className="text-gray-600 leading-8 mt-5">
-              Capricorn natives are loyal, responsible, and dependable partners
-              who value commitment and emotional security in relationships.
+            <p className="text-gray-600 leading-7 mt-4 text-base sm:text-lg">
+              मकर राशि के लोग प्रेम में अत्यधिक गंभीर, वफादार और पूरी तरह से विश्वसनीय साथी होते हैं। वे सतही और अस्थाई संबंधों को नापसंद करते हैं और अपने साथी के प्रति सदैव जिम्मेदार रहते हैं।
             </p>
           </div>
 
           {/* CAREER */}
-          <div className="bg-white rounded-[35px] p-9 shadow-md hover:shadow-2xl transition">
-            <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center text-[#374151] text-4xl">
+          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gray-100 flex items-center justify-center text-[#374151] text-3xl sm:text-4xl mb-4 sm:mb-6">
               <FiBriefcase />
             </div>
 
-            <h3 className="text-3xl font-bold text-[#111827] mt-7">
-              Career & Finance
+            <h3 className="text-xl sm:text-2xl font-bold text-[#111827]">
+              करियर और वित्त
             </h3>
 
-            <p className="text-gray-600 leading-8 mt-5">
-              Capricorn people excel in finance, management, engineering,
-              administration, business, and leadership professions.
+            <p className="text-gray-600 leading-7 mt-4 text-base sm:text-lg">
+              ये जातक कॉर्पोरेट प्रशासन, वित्त व सीए, स्वतंत्र उद्योग, वकालत, सिविल इंजीनियरिंग और प्रशासनिक सेवाओं में सर्वश्रेष्ठ प्रदर्शन करते हैं। समय के साथ इनका धन लगातार संचित होता है।
             </p>
           </div>
 
           {/* HEALTH */}
-          <div className="bg-white rounded-[35px] p-9 shadow-md hover:shadow-2xl transition">
-            <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center text-[#374151] text-4xl">
+          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gray-100 flex items-center justify-center text-[#374151] text-3xl sm:text-4xl mb-4 sm:mb-6">
               <FiActivity />
             </div>
 
-            <h3 className="text-3xl font-bold text-[#111827] mt-7">
-              Health & Wellness
+            <h3 className="text-xl sm:text-2xl font-bold text-[#111827]">
+              स्वास्थ्य और कल्याण
             </h3>
 
-            <p className="text-gray-600 leading-8 mt-5">
-              Capricorn natives should focus on stress management, proper rest,
-              balanced nutrition, and maintaining healthy routines.
+            <p className="text-gray-600 leading-7 mt-4 text-base sm:text-lg">
+              अत्यधिक कार्यभार के कारण इन्हें घुटनों (Knees), जोड़ों में दर्द, हड्डियों की कमजोरी और त्वचा संबंधी समस्याओं से बचना चाहिए। नियमित व्यायाम, पोषक आहार और पर्याप्त विश्राम इनके लिए हितकारी हैं।
             </p>
           </div>
         </div>
       </section>
 
-      {/* SPECIAL SECTION */}
-      <section className="py-24 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#1f2937] to-[#4b5563]">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+      {/* SPECIAL SECTION - Hindi */}
+      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#1f2937] to-[#4b5563]">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-14 items-center">
           {/* LEFT */}
-          <div className="text-white">
-            <div className="w-24 h-24 rounded-full bg-white/10 flex items-center justify-center text-5xl backdrop-blur-md">
+          <div className="text-white text-center lg:text-left">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto lg:mx-0 rounded-full bg-white/10 flex items-center justify-center text-4xl sm:text-5xl backdrop-blur-md">
               <FiTrendingUp />
             </div>
 
-            <h2 className="text-4xl md:text-6xl font-bold mt-8 leading-tight">
-              Capricorn & Success
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold mt-6 leading-[1.3] sm:leading-tight">
+              मकर राशि और कर्म की शक्ति
             </h2>
 
-            <p className="text-lg md:text-xl leading-9 text-white/90 mt-8">
-              Capricorn natives believe in discipline, patience, and long-term
-              planning. Their hardworking nature helps them achieve great
-              success in life.
+            <p className="text-base sm:text-lg leading-7 sm:leading-8 text-white/90 mt-6 max-w-2xl mx-auto lg:mx-0">
+              मकर राशि के लोग अपने दृढ़ संकल्प, आत्म-नियंत्रण और शांत स्वभाव के लिए जाने जाते हैं। उनकी बिना विचलित हुए लगातार अपने लक्ष्य की ओर बढ़ते रहने की शक्ति उन्हें समाज में एक अत्यंत सफल और कुशल निर्माता साबित करती है।
             </p>
 
-            <button className="mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-[#1f2937] font-semibold hover:scale-105 transition">
+            <a
+              href="https://calendly.com/bajrangastroofficial/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto mt-6 sm:mt-10 inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-[#1f2937] font-semibold hover:scale-105 transition text-center"
+            >
               Explore Compatibility
               <FiArrowRight />
-            </button>
+            </a>
           </div>
 
           {/* RIGHT */}
-          <div className="relative">
+          <div className="relative order-first lg:order-last">
             <img
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1400&auto=format&fit=crop"
               alt="Capricorn Success"
-              className="w-full h-[450px] object-cover rounded-[40px] shadow-2xl"
+              className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
 
-            <div className="absolute top-6 left-6 bg-white/10 backdrop-blur-md rounded-2xl px-5 py-3 text-white border border-white/10">
+            <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-white/10 backdrop-blur-md rounded-xl sm:rounded-2xl px-4 py-2 sm:px-5 sm:py-3 text-white border border-white/20 text-sm sm:text-base">
               Saturn Energy ✨
             </div>
           </div>
         </div>
       </section>
 
-      {/* DAILY HOROSCOPE */}
-      <section className="py-24 px-4 md:px-10 lg:px-20 bg-[#faf9f7]">
+      {/* DAILY HOROSCOPE - English */}
+      <section className="py-12 sm:py-16 md:py-20 px-4 md:px-10 lg:px-20 bg-[#faf9f7]">
         <div className="max-w-5xl mx-auto text-center">
-          <div className="w-28 h-28 mx-auto rounded-full bg-gray-100 flex items-center justify-center text-[#374151] text-5xl shadow-xl">
-            <FiMoon />
+          <div className="w-20 h-20 sm:w-28 sm:h-28 mx-auto rounded-full bg-gray-100 flex items-center justify-center text-[#374151] text-4xl sm:text-5xl shadow-xl">
+            <FiSun />
           </div>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-[#111827] mt-8">
+          <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-[#111827] mt-8 leading-[1.3] sm:leading-tight">
             Today's Capricorn Horoscope
           </h2>
 
-          <p className="text-lg md:text-xl leading-9 text-gray-600 mt-8">
-            Today is favorable for planning, career decisions, and financial
-            growth. Stay disciplined and trust your practical mindset while
-            handling responsibilities.
+          <p className="text-base sm:text-lg leading-7 sm:leading-8 text-gray-600 mt-6 max-w-3xl mx-auto">
+            Today the structured Saturnian energies provide exceptional focus and administrative control, Capricorn. Saturn aligning with your legacy house unlocks long-overdue professional achievements and rewards your persistent efforts. Maintain your realistic overview, streamline your budget, and execute your long-term strategies.
           </p>
 
-          <button className="mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#374151] text-white font-semibold hover:bg-[#1f2937] transition">
+          <button className="w-full sm:w-auto mt-6 sm:mt-10 inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#374151] text-white font-semibold hover:scale-105 transition">
             Read Full Horoscope
             <FiArrowRight />
           </button>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20 px-4 md:px-10 lg:px-20">
-        <div className="text-center mb-14">
-          <span className="text-[#374151] font-semibold uppercase tracking-wider">
-            FAQs
+      {/* FAQ - Hindi */}
+      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
+        <div className="text-center mb-10 sm:mb-14">
+          <span className="text-[#374151] font-semibold uppercase tracking-wider text-sm sm:text-base">
+            अक्सर पूछे जाने वाले प्रश्न
           </span>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-[#111827] mt-4">
-            Frequently Asked Questions
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#111827] mt-4 leading-[1.3] sm:leading-tight">
+            मकर राशि से जुड़े महत्वपूर्ण प्रश्न
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6">
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-[30px] border border-gray-200 p-8"
+              className="bg-white rounded-[24px] sm:rounded-[30px] border border-gray-200 p-5 sm:p-8"
             >
-              <h3 className="text-2xl font-bold text-[#111827]">
+              <h3 className="text-lg sm:text-xl font-bold text-[#111827]">
                 {item.question}
               </h3>
 
-              <p className="text-gray-600 leading-8 mt-5">
+              <p className="text-gray-600 leading-7 mt-4 sm:mt-5 text-base sm:text-lg">
                 {item.answer}
               </p>
             </div>
@@ -367,36 +364,39 @@ const CapricornPage = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24 px-4 md:px-10 lg:px-20">
-        <div className="bg-gray-100 border border-gray-200 rounded-[45px] p-10 md:p-16 text-center relative overflow-hidden">
+      {/* CTA - English */}
+      <section className="pt-4 pb-10 sm:pb-16 px-4 md:px-10 lg:px-20">
+        <div className="bg-gray-100 border border-gray-200 rounded-[30px] sm:rounded-[45px] p-6 sm:p-10 md:p-16 text-center relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full opacity-10">
-            <div className="absolute top-10 left-10 text-[180px] text-[#374151]">
+            <div className="absolute top-4 sm:top-10 left-4 sm:left-10 text-[100px] sm:text-[180px] text-[#374151]">
               ♑
             </div>
           </div>
 
           <div className="relative z-10">
-            <div className="w-24 h-24 mx-auto rounded-full bg-[#374151] text-white flex items-center justify-center text-5xl shadow-2xl">
+            <div className="w-16 h-16 sm:w-24 sm:h-24 mx-auto rounded-full bg-[#374151] text-white flex items-center justify-center text-3xl sm:text-5xl shadow-2xl">
               <FiStar />
             </div>
 
-            <h2 className="text-4xl md:text-6xl font-bold text-[#111827] mt-8 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-[#111827] mt-6 sm:mt-8 leading-[1.2] sm:leading-tight">
               Get Personalized Capricorn Guidance
             </h2>
 
-            <p className="max-w-3xl mx-auto mt-7 text-gray-600 text-lg leading-9">
-              Connect with expert astrologers for Capricorn horoscope, kundli
-              analysis, career guidance, relationship advice, and spiritual
-              remedies.
+            <p className="max-w-3xl mx-auto mt-4 sm:mt-6 text-gray-600 text-base sm:text-lg leading-7 sm:leading-9">
+              Build an unshakeable foundation for your financial, relationship, and career future. Connect with our elite Vedic specialists today for Saturn remedies and Kundli analysis.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-5 mt-10">
-              <button className="px-8 py-4 rounded-full bg-[#374151] text-white font-semibold hover:bg-[#1f2937] transition">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-5 mt-6 sm:mt-8">
+              <a
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#374151] text-white font-semibold hover:bg-[#1f2937] transition inline-block text-center"
+              >
                 Book Consultation
-              </button>
+              </a>
 
-              <button className="px-8 py-4 rounded-full border border-[#374151] text-[#374151] font-semibold hover:bg-[#374151] hover:text-white transition">
+              <button className="w-full sm:w-auto px-8 py-4 rounded-full border border-[#374151] text-[#374151] font-semibold hover:bg-[#374151] hover:text-white transition">
                 Chat On WhatsApp
               </button>
             </div>

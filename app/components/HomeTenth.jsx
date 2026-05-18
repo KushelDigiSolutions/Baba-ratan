@@ -86,7 +86,7 @@ export default function HomeTenth() {
             width={480}
             height={480}
             priority
-            className="object-contain"
+            className="w-full max-w-[480px] h-auto object-contain"
           />
         </div>
 

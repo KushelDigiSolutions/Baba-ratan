@@ -14,142 +14,141 @@ import {
   Crown,
   ArrowRight,
 } from "lucide-react";
-import { link } from "framer-motion/client";
 import Link from "next/link";
 
 const grahData = [
   {
-    name: "Surya Grah",
+    name: "Surya Grah (Sun)",
     link: "/grah/surya",
     icon: <Sun className="w-8 h-8" />,
     color: "from-orange-400 to-red-400",
     about:
-      "Surya grah ko sabhi grahon ka raja mana jata hai. Yeh leadership, confidence, energy aur success ka pratik hota hai.",
+      "Surya, the cosmic king, governs soul vitality, immense authority, and unparalleled career growth in Vedic astrology.",
     effects: [
-      "Atmavishwas badhata hai",
-      "Career growth deta hai",
-      "Authority aur leadership deta hai",
-      "Health aur energy ko strong karta hai",
+      "Ignites unshakeable self-confidence",
+      "Attracts prestigious leadership roles",
+      "Guarantees rapid career advancement",
+      "Enhances physical and mental vitality",
     ],
     mantra: "Om Hraam Hreem Hraum Sah Suryaya Namah",
   },
   {
-    name: "Chandra Grah",
+    name: "Chandra Grah (Moon)",
     link: "/grah/chandra",
     icon: <Moon className="w-8 h-8" />,
     color: "from-slate-300 to-blue-200",
     about:
-      "Chandra man aur emotions ka grah hai. Yeh shanti, creativity aur mental balance ko control karta hai.",
+      "The Moon signifies emotional intelligence, deep inner peace, and boundless creativity, guiding your subconscious mind.",
     effects: [
-      "Mind ko calm karta hai",
-      "Emotional balance deta hai",
-      "Relationship ko improve karta hai",
-      "Creative thinking badhata hai",
+      "Restores profound mental tranquility",
+      "Cultivates deep emotional harmony",
+      "Strengthens interpersonal relationships",
+      "Unleashes powerful creative potential",
     ],
     mantra: "Om Shraam Shreem Shraum Sah Chandraya Namah",
   },
   {
-    name: "Mangal Grah",
+    name: "Mangal Grah (Mars)",
     link: "/grah/mangal",
     icon: <Flame className="w-8 h-8" />,
     color: "from-red-500 to-orange-400",
     about:
-      "Mangal shakti, courage aur determination ka pratik mana jata hai. Yeh confidence aur action ko strong karta hai.",
+      "Mars embodies fierce courage, boundless physical energy, and the unyielding willpower to conquer all life obstacles.",
     effects: [
-      "Courage badhata hai",
-      "Decision making strong karta hai",
-      "Property aur land se sambandhit fayda",
-      "Competition me jeet dilata hai",
+      "Fosters fearless decision-making",
+      "Boosts stamina and athletic drive",
+      "Ensures victory in legal disputes",
+      "Resolves complex property matters",
     ],
     mantra: "Om Kraam Kreem Kraum Sah Bhaumaya Namah",
   },
   {
-    name: "Budh Grah",
+    name: "Budh Grah (Mercury)",
     link: "/grah/budh",
     icon: <Sparkles className="w-8 h-8" />,
     color: "from-green-400 to-emerald-500",
     about:
-      "Budh intelligence, communication aur business ka grah hai. Yeh logical thinking aur communication skills ko improve karta hai.",
+      "Mercury represents intellectual brilliance, exceptional communication, and strategic acumen in commerce and trading.",
     effects: [
-      "Communication improve hota hai",
-      "Business growth deta hai",
-      "Intelligence strong karta hai",
-      "Learning ability badhata hai",
+      "Sharpens analytical and logical skills",
+      "Enhances eloquence and public speaking",
+      "Drives massive business profitability",
+      "Accelerates learning and academics",
     ],
     mantra: "Om Braam Breem Braum Sah Budhaya Namah",
   },
   {
-    name: "Guru Grah",
+    name: "Guru Grah (Jupiter)",
     link: "/grah/guru",
     icon: <Crown className="w-8 h-8" />,
     color: "from-yellow-400 to-orange-300",
     about:
-      "Guru grah knowledge, wisdom aur spirituality ka pratik hai. Yeh education aur success me madad karta hai.",
+      "Jupiter is the grand benefactor of wisdom, divine grace, spiritual expansion, and boundless prosperity.",
     effects: [
-      "Knowledge aur wisdom deta hai",
-      "Education me success",
-      "Marriage life improve karta hai",
-      "Financial stability deta hai",
+      "Attracts immense wealth and fortune",
+      "Blesses with profound wisdom",
+      "Ensures a harmonious married life",
+      "Protects against negative energies",
     ],
     mantra: "Om Graam Greem Graum Sah Gurave Namah",
   },
   {
-    name: "Shukra Grah",
+    name: "Shukra Grah (Venus)",
     link: "/grah/shukra",
     icon: <Heart className="w-8 h-8" />,
     color: "from-pink-400 to-rose-400",
     about:
-      "Shukra love, luxury aur beauty ka grah mana jata hai. Yeh relationships aur comfort ko improve karta hai.",
+      "Venus radiates the energies of supreme luxury, artistic beauty, material comforts, and eternal romantic bliss.",
     effects: [
-      "Love life improve hoti hai",
-      "Luxury aur comfort deta hai",
-      "Art aur creativity badhata hai",
-      "Marriage life strong karta hai",
+      "Draws passionate romantic love",
+      "Manifests high-end material wealth",
+      "Elevates artistic and creative talents",
+      "Ensures luxurious living standards",
     ],
     mantra: "Om Draam Dreem Draum Sah Shukraya Namah",
   },
   {
-    name: "Shani Grah",
+    name: "Shani Grah (Saturn)",
     link: "/grah/shani",
     icon: <Shield className="w-8 h-8" />,
     color: "from-gray-700 to-slate-800",
     about:
-      "Shani discipline, karma aur hard work ka grah hai. Yeh insaan ko patience aur maturity sikhata hai.",
+      "Saturn is the ultimate karmic judge, instilling iron-clad discipline, immense patience, and long-lasting achievements.",
     effects: [
-      "Discipline deta hai",
-      "Hard work ka result deta hai",
-      "Patience strong karta hai",
-      "Life me stability lata hai",
+      "Rewards unwavering hard work",
+      "Builds enduring life stability",
+      "Teaches profound spiritual lessons",
+      "Nullifies past negative karmic debts",
     ],
     mantra: "Om Praam Preem Praum Sah Shanaye Namah",
   },
   {
-    name: "Rahu Grah",
+    name: "Rahu Grah (North Node)",
     link: "/grah/rahu",
     icon: <Orbit className="w-8 h-8" />,
     color: "from-purple-500 to-indigo-500",
     about:
-      "Rahu illusion aur sudden success ka grah hai. Yeh foreign opportunities aur modern technology se juda hota hai.",
+      "Rahu fuels insatiable ambition, sudden material gains, and massive technological or foreign success.",
     effects: [
-      "Foreign opportunities deta hai",
-      "Technology aur media me growth",
-      "Sudden fame deta hai",
-      "Risk taking power badhata hai",
+      "Unlocks lucrative foreign opportunities",
+      "Triggers sudden wealth accumulation",
+      "Enhances technological proficiency",
+      "Fuels massive worldly ambitions",
     ],
     mantra: "Om Bhraam Bhreem Bhraum Sah Rahave Namah",
   },
   {
-    name: "Ketu Grah",
+    name: "Ketu Grah (South Node)",
     link: "/grah/ketu",
     icon: <Gem className="w-8 h-8" />,
     color: "from-cyan-400 to-sky-500",
     about:
-      "Ketu spirituality aur moksha ka grah hai. Yeh inner peace aur spiritual growth ko strong karta hai.",
+      "Ketu represents deep spiritual liberation, mystical intuition, and detachment from worldly illusions.",
     effects: [
-      "Spiritual growth deta hai",
-      "Meditation power strong karta hai",
-      "Inner peace deta hai",
-      "Negative energy dur karta hai",
+      "Accelerates spiritual awakening",
+      "Enhances profound intuition",
+      "Removes deep-seated hidden fears",
+      "Guides towards ultimate Moksha",
     ],
     mantra: "Om Sraam Sreem Sraum Sah Ketave Namah",
   },
@@ -159,74 +158,76 @@ export default function GrahPage() {
   return (
     <div className="bg-[#fff7f5] text-[#3a2a2a] overflow-hidden">
       {/* HERO SECTION */}
-      <section className="relative py-20 md:py-28 px-4 md:px-10 lg:px-20 overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#1e293b]">
+      <section className="relative py-16 md:py-20 px-4 md:px-10 lg:px-20 overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#1e293b]">
         {/* Glow */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-96 h-96 bg-yellow-500 rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           {/* LEFT */}
           <div className="text-white">
-            <span className="px-5 py-2 rounded-full bg-white/10 border border-white/10 inline-block text-sm mb-6">
-              Navgrah Astrology
+            <span className="px-5 py-2 rounded-full bg-white/10 border border-white/10 inline-block text-sm mb-6 font-semibold">
+              Vedic Astrological Guidance
             </span>
 
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              Navgrah
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              Unlock Celestial Wisdom
             </h1>
 
-            <h2 className="text-3xl md:text-5xl font-semibold text-yellow-300 mt-3">
-              नवग्रह ज्ञान
+            <h2 className="text-3xl md:text-4xl font-semibold text-yellow-300 mt-2">
+              The 9 Cosmic Influences
             </h2>
 
-            <p className="mt-8 text-lg md:text-xl leading-9 text-gray-300 max-w-2xl">
-              In Vedic astrology, Navgrah are the nine powerful celestial
-              energies that influence human life, destiny, emotions, career,
-              relationships, health, and spiritual growth.
+            <p className="mt-6 text-lg md:text-xl leading-9 text-gray-300 max-w-2xl">
+              Embark on a profound spiritual journey by discovering how the Navagrahas—the nine divine planetary forces—shape every aspect of your existence, from immense wealth to profound inner peace.
             </p>
 
-            <div className="flex flex-wrap gap-5 mt-10">
-              <button className="px-8 py-4 rounded-full bg-yellow-400 text-black font-semibold hover:scale-105 transition">
-                Explore Grah
+            <div className="flex flex-wrap gap-5 mt-8">
+              <button 
+                onClick={() => {
+                  document.getElementById("grah-knowledge-base")?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="px-8 py-4 rounded-full bg-yellow-400 text-black font-semibold hover:scale-105 transition cursor-pointer"
+              >
+                Discover Planets
               </button>
 
               <a 
                 href="https://calendly.com/bajrangastroofficial/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-black transition inline-block text-center"
+                className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-black transition inline-block text-center font-semibold"
               >
-                Talk To Astrologer
+                Consult Expert
               </a>
-
             </div>
           </div>
 
           {/* RIGHT */}
           <div className="flex justify-center">
-            <div className="relative w-[320px] h-[320px] md:w-[520px] md:h-[520px] rounded-full bg-white/5 border border-white/10 backdrop-blur-xl flex items-center justify-center">
+            <div className="relative w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[480px] md:h-[480px] max-w-full rounded-full bg-white/5 border border-white/10 backdrop-blur-xl flex items-center justify-center">
               <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/20 animate-spin [animation-duration:40s]" />
 
-              <div className="text-[120px] md:text-[200px]">
+              <div className="text-[90px] sm:text-[120px] md:text-[180px]">
                 🪐
               </div>
 
               {/* Orbit Dots */}
-              <div className="absolute top-12 left-1/2 -translate-x-1/2 text-3xl">
+              <div className="absolute top-12 left-1/2 -translate-x-1/2 text-2xl sm:text-3xl animate-bounce">
                 ☀️
               </div>
 
-              <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-3xl">
+              <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-2xl sm:text-3xl">
                 🌙
               </div>
 
-              <div className="absolute left-10 top-1/2 -translate-y-1/2 text-3xl">
+              <div className="absolute left-10 top-1/2 -translate-y-1/2 text-2xl sm:text-3xl animate-pulse">
                 🔥
               </div>
 
-              <div className="absolute right-10 top-1/2 -translate-y-1/2 text-3xl">
+              <div className="absolute right-10 top-1/2 -translate-y-1/2 text-2xl sm:text-3xl">
                 ✨
               </div>
             </div>
@@ -235,47 +236,43 @@ export default function GrahPage() {
       </section>
 
       {/* INTRO */}
-      <section className="py-20">
+      <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-14 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
                 src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop"
                 alt="astrology"
-                className="rounded-3xl shadow-2xl h-[500px] object-cover w-full"
+                className="rounded-3xl shadow-2xl h-[450px] object-cover w-full"
               />
             </div>
 
             <div>
               <span className="text-[#c96e67] font-semibold uppercase tracking-widest">
-                About Navgrah
+                ग्रहों का रहस्य
               </span>
 
-              <h2 className="text-4xl font-bold mt-4 leading-tight">
-                Navgrah Kya Hote Hai?
+              <h2 className="text-4xl font-bold mt-4 leading-[1.3]">
+                नवग्रह का हमारे जीवन में क्या महत्व है?
               </h2>
 
               <p className="text-gray-600 leading-8 mt-6 text-lg">
-                Vedic astrology me Navgrah ka bahut bada importance hota hai.
-                Har grah insaan ki life ke alag-alag aspects ko control karta
-                hai jaise career, health, marriage, education aur finance.
+                सनातन वैदिक ज्योतिष में नवग्रहों की भूमिका अत्यंत महत्वपूर्ण है। ये नौ दिव्य ग्रह आपकी किस्मत, व्यापार, दांपत्य जीवन और स्वास्थ्य की दिशा तय करते हैं।
               </p>
 
               <p className="text-gray-600 leading-8 mt-4 text-lg">
-                Kundli me kisi bhi grah ki strong ya weak position aapki life
-                par direct impact dalti hai. Isi liye grah dosh aur unke upay
-                astrology me important mane jate hai.
+                जब कोई ग्रह शुभ अवस्था में होता है, तो वह व्यक्ति को अपार सफलता दिलाता है। इसके विपरीत, नीच या अशुभ ग्रह जीवन में कई परेशानियां और रुकावटें पैदा करते हैं, जिनका ज्योतिषीय समाधान आवश्यक है।
               </p>
 
-              <div className="grid grid-cols-2 gap-5 mt-8">
-                <div className="bg-white p-6 rounded-2xl shadow-md">
+              <div className="grid grid-cols-2 gap-5 mt-6">
+                <div className="bg-white p-6 border border-[#f5d5cf] rounded-2xl shadow-sm">
                   <h3 className="text-3xl font-bold text-[#c96e67]">9</h3>
-                  <p className="text-gray-600 mt-2">Main Grah</p>
+                  <p className="text-gray-600 mt-2">प्रमुख ग्रह</p>
                 </div>
 
-                <div className="bg-white p-6 rounded-2xl shadow-md">
+                <div className="bg-white p-6 border border-[#f5d5cf] rounded-2xl shadow-sm">
                   <h3 className="text-3xl font-bold text-[#c96e67]">12</h3>
-                  <p className="text-gray-600 mt-2">Rashi Connection</p>
+                  <p className="text-gray-600 mt-2">राशियों पर प्रभाव</p>
                 </div>
               </div>
             </div>
@@ -284,31 +281,30 @@ export default function GrahPage() {
       </section>
 
       {/* GRAH CARDS */}
-      <section className="py-20 bg-gradient-to-b from-[#fff7f5] to-[#ffe8e3]">
+      <section id="grah-knowledge-base" className="py-16 md:py-20 bg-gradient-to-b from-[#fff7f5] to-[#ffe8e3]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
             <span className="text-[#c96e67] uppercase tracking-[4px] font-semibold">
-              Navgrah Details
+              Cosmic Energies
             </span>
 
-            <h2 className="text-5xl font-bold mt-4">
-              Sabhi Grah Ki Complete Information
+            <h2 className="text-4xl md:text-5xl font-bold mt-4">
+              Navagraha Knowledge Base
             </h2>
 
-            <p className="text-gray-600 leading-8 mt-5 text-lg">
-              Har grah ka apna ek alag importance aur energy hoti hai jo insaan
-              ki life ko influence karti hai.
+            <p className="text-gray-600 leading-8 mt-4 text-lg">
+              Each celestial body emits powerful vibrations that directly influence your fate. Gain deeper insights into the distinct traits and divine benefits of all nine planetary forces.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-16">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
             {grahData.map((grah, index) => (
               <Link href={grah.link}
                 key={index}
-                className="group bg-white rounded-[30px] p-8 shadow-lg hover:-translate-y-2 duration-300 border border-[#f5d5cf]"
+                className="group bg-white rounded-[30px] p-8 shadow-sm hover:shadow-xl duration-300 border border-[#f5d5cf] flex flex-col h-full hover:-translate-y-2 cursor-pointer"
               >
                 <div
-                  className={`w-20 h-20 rounded-3xl bg-gradient-to-r ${grah.color} text-white flex items-center justify-center shadow-lg`}
+                  className={`w-20 h-20 rounded-3xl bg-gradient-to-r ${grah.color} text-white flex items-center justify-center shadow-md shrink-0`}
                 >
                   {grah.icon}
                 </div>
@@ -321,30 +317,32 @@ export default function GrahPage() {
 
                 <div className="mt-6">
                   <h4 className="font-semibold text-lg mb-3">
-                    Grah Ke Prabhav
+                    Astrological Benefits
                   </h4>
 
                   <ul className="space-y-3">
                     {grah.effects.map((effect, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <div className="w-2 h-2 rounded-full bg-[#c96e67] mt-2"></div>
+                        <div className="w-2 h-2 rounded-full bg-[#c96e67] mt-2 shrink-0"></div>
                         <span className="text-gray-700">{effect}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="mt-8 p-4 rounded-2xl bg-[#fff5f2] border border-[#f7d8d0]">
-                  <p className="text-sm text-[#c96e67] font-semibold">
-                    Beej Mantra
-                  </p>
+                <div className="mt-auto pt-6">
+                  <div className="p-4 rounded-2xl bg-[#fff5f2] border border-[#f7d8d0]">
+                    <p className="text-sm text-[#c96e67] font-semibold">
+                      Beej Mantra
+                    </p>
 
-                  <p className="mt-2 font-medium">{grah.mantra}</p>
+                    <p className="mt-2 font-medium">{grah.mantra}</p>
+                  </div>
+
+                  <button className="mt-6 flex items-center gap-2 text-[#c96e67] font-semibold group-hover:gap-4 duration-300 cursor-pointer">
+                    Learn More <ArrowRight className="w-5 h-5" />
+                  </button>
                 </div>
-
-                <button className="mt-8 flex items-center gap-2 text-[#c96e67] font-semibold group-hover:gap-4 duration-300">
-                  Learn More <ArrowRight className="w-5 h-5" />
-                </button>
               </Link>
             ))}
           </div>
@@ -352,40 +350,39 @@ export default function GrahPage() {
       </section>
 
       {/* DOSH SECTION */}
-      <section className="py-24 bg-white">
+      <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-[#c96e67] uppercase tracking-[4px] font-semibold">
-                Grah Dosh
+                अशुभ ग्रहों का प्रभाव
               </span>
 
-              <h2 className="text-5xl font-bold mt-4 leading-tight">
-                Grah Dosh Kya Hota Hai?
+              <h2 className="text-4xl md:text-5xl font-bold mt-4 leading-[1.3]">
+                ग्रह दोष क्या है और इसके लक्षण?
               </h2>
 
               <p className="text-gray-600 leading-8 mt-6 text-lg">
-                Jab kundli me koi grah weak position me hota hai ya negative
-                effect deta hai tab use grah dosh kaha jata hai.
+                ज्योतिष के अनुसार, जब जन्म चक्र में कोई ग्रह कमजोर, वक्री या शत्रु राशि में होता है, तो वह अशुभ फल देने लगता है। इस अवस्था को 'ग्रह दोष' कहा जाता है, जो जीवन में निरंतर बाधाओं का कारण बनता है।
               </p>
 
-              <div className="space-y-5 mt-8">
+              <div className="space-y-4 mt-6">
                 {[
-                  "Career me problems",
-                  "Marriage delay",
-                  "Financial issues",
-                  "Mental stress aur health problems",
-                  "Relationship conflicts",
+                  "व्यापार में घाटा और नौकरी में बार-बार रुकावट",
+                  "विवाह में अत्यधिक विलंब और पारिवारिक विवाद",
+                  "अचानक धन का नुकसान और बढ़ता हुआ कर्ज",
+                  "मानसिक अशांति और अज्ञात शारीरिक बीमारियां",
+                  "मित्रों और सगे-संबंधियों से बिना कारण मतभेद",
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-4 bg-[#fff5f2] p-5 rounded-2xl"
+                    className="flex items-center gap-4 bg-[#fff5f2] p-4 rounded-2xl border border-[#f7d8d0]"
                   >
-                    <div className="w-12 h-12 rounded-full bg-[#c96e67] text-white flex items-center justify-center font-bold">
+                    <div className="w-10 h-10 rounded-full bg-[#c96e67] text-white flex items-center justify-center font-bold shrink-0">
                       {i + 1}
                     </div>
 
-                    <p className="text-lg font-medium">{item}</p>
+                    <p className="text-base font-medium">{item}</p>
                   </div>
                 ))}
               </div>
@@ -395,7 +392,7 @@ export default function GrahPage() {
               <img
                 src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
                 alt="grah dosh"
-                className="rounded-[40px] shadow-2xl object-cover h-[650px] w-full"
+                className="rounded-[40px] shadow-2xl object-cover h-[550px] w-full"
               />
             </div>
           </div>
@@ -403,43 +400,41 @@ export default function GrahPage() {
       </section>
 
       {/* REMEDIES */}
-      <section className="py-24 bg-gradient-to-r from-[#c96e67] to-[#d98982]">
-        <div className="max-w-6xl mx-auto px-6 text-center">
+      <section className="py-16 md:py-20 bg-gradient-to-r from-[#c96e67] to-[#d98982]">
+        <div className="max-w-6xl mx-auto px-6 text-center text-white">
           <span className="text-white/80 uppercase tracking-[4px] font-semibold">
-            Astrology Remedies
+            Spiritual Healing
           </span>
 
-          <h2 className="text-5xl font-bold text-white mt-5">
-            Grah Shanti Ke Powerful Upay
+          <h2 className="text-4xl md:text-5xl font-bold mt-4">
+            Potent Astrological Remedies
           </h2>
 
           <p className="text-white/90 max-w-3xl mx-auto leading-8 text-lg mt-6">
-            Astrology me grah dosh ko kam karne ke liye alag-alag remedies aur
-            spiritual upay bataye gaye hai.
+            Discover deeply powerful and authentic Vedic methods to eliminate severe Graha Doshas, calm malefic planets, and harmonize your life's cosmic energy.
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
             {[
-              "Mantra Jaap",
-              "Gemstone Wearing",
-              "Puja & Havan",
-              "Donation & Charity",
+              "Sacred Mantras",
+              "Gemstone Therapy",
+              "Vedic Yagyas",
+              "Acts of Charity",
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8"
+                className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-6 text-center"
               >
-                <div className="w-16 h-16 rounded-2xl bg-white text-[#c96e67] flex items-center justify-center mx-auto">
-                  <Star className="w-8 h-8" />
+                <div className="w-14 h-14 rounded-2xl bg-white text-[#c96e67] flex items-center justify-center mx-auto shadow-md animate-pulse">
+                  <Star className="w-6 h-6" />
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mt-6">
+                <h3 className="text-xl font-bold text-white mt-6">
                   {item}
                 </h3>
 
-                <p className="text-white/80 leading-7 mt-4">
-                  Proper astrology guidance ke according remedies karne se
-                  positive results milte hai.
+                <p className="text-white/85 leading-7 mt-4 text-sm">
+                  Performing these sacred rituals under expert guidance ensures a blessed and prosperous future.
                 </p>
               </div>
             ))}
@@ -448,36 +443,33 @@ export default function GrahPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#fff7f5]">
+      <section className="py-16 md:py-20 bg-[#fff7f5]">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="bg-white rounded-[40px] shadow-2xl p-12 text-center border border-[#f5d7d1]">
+          <div className="bg-white rounded-[40px] shadow-2xl p-10 text-center border border-[#f5d7d1]">
             <span className="text-[#c96e67] uppercase tracking-[4px] font-semibold">
-              Astrology Consultation
+              व्यक्तिगत मार्गदर्शन
             </span>
 
-            <h2 className="text-5xl font-bold mt-5 leading-tight">
-              Expert Astrologer Se Guidance Le
+            <h2 className="text-4xl font-bold mt-4 leading-[1.3]">
+              अनुभवी ज्योतिषियों से बात करें
             </h2>
 
-            <p className="text-gray-600 leading-8 text-lg mt-6 max-w-3xl mx-auto">
-              Agar aap apni kundli, grah dosh ya future ke bare me detailed
-              guidance chahte hai to expert astrologer se consultation le
-              sakte hai.
+            <p className="text-gray-600 leading-8 text-lg mt-4 max-w-3xl mx-auto">
+              क्या आप जानना चाहते हैं कि कौन सा ग्रह आपको सफलता दिला सकता है? अभी हमारे ज्योतिष विशेषज्ञों से जुड़ें और अपने जीवन की हर समस्या का अचूक और प्रामाणिक समाधान पाएं।
             </p>
 
-            <div className="flex flex-wrap justify-center gap-5 mt-10">
+            <div className="flex flex-wrap justify-center gap-5 mt-8">
               <a 
                 href="https://calendly.com/bajrangastroofficial/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#c96e67] hover:bg-[#b85d57] text-white px-8 py-4 rounded-2xl font-semibold duration-300 inline-block text-center"
+                className="bg-[#c96e67] hover:bg-[#b85d57] text-white px-8 py-4 rounded-2xl font-semibold duration-300 inline-block text-center shadow-md cursor-pointer"
               >
-                Book Consultation
+                अपॉइंटमेंट फिक्स करें
               </a>
 
-
-              <button className="border border-[#c96e67] text-[#c96e67] hover:bg-[#c96e67] hover:text-white px-8 py-4 rounded-2xl font-semibold duration-300">
-                Contact Now
+              <button className="border border-[#c96e67] text-[#c96e67] hover:bg-[#c96e67] hover:text-white px-8 py-4 rounded-2xl font-semibold duration-300 cursor-pointer">
+                अधिक जानकारी
               </button>
             </div>
           </div>

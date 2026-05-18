@@ -52,10 +52,11 @@ export default function Footer() {
                         <div>
                             <h3 className="font-[500] text-lg mb-4">Useful Links</h3>
                             <ul className="space-y-3 text-[#3F3F50] text-[16px]">
+                                <li><Link href="/about-us" className="hover:text-black">About us</Link></li>
+                                <li><Link href="/grah" className="hover:text-black">Grah</Link></li>
+                                <li><Link href="/rashi" className="hover:text-black">Rashi</Link></li>
                                 <li><Link href="/vastu-consulting" className="hover:text-black">Vastu Consulting</Link></li>
                                 <li><Link href="/astrology-services" className="hover:text-black">Astrology Services</Link></li>
-                                <li><Link href="/shop" className="hover:text-black">Shop</Link></li>
-                                <li><Link href="/about-us" className="hover:text-black">About us</Link></li>
                                 <li><Link href="/contact" className="hover:text-black">Contact</Link></li>
                             </ul>
                         </div>
