@@ -1,6 +1,8 @@
 User-agent: *
+Allow: /
 Disallow: /cgi-bin/
 Disallow: /admin/
 Disallow: /private/
 Disallow: /thank-you/
-Sitemap: https://bajrangastro.com/sitemap.xml
+
+Sitemap: https://www.bajrangastro.com/sitemap.xml
