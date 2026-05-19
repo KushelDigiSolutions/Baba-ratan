@@ -158,14 +158,14 @@ export default function GrahPage() {
   return (
     <div className="bg-[#fff7f5] text-[#3a2a2a] overflow-hidden">
       {/* HERO SECTION */}
-      <section className="relative py-16 md:py-20 px-4 md:px-10 lg:px-20 overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#1e293b]">
+      <section className="relative py-12 lg:py-20 px-4 md:px-10 lg:px-20 overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#1e293b]">
         {/* Glow */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-96 h-96 bg-yellow-500 rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* LEFT */}
           <div className="text-white">
             <span className="px-5 py-2 rounded-full bg-white/10 border border-white/10 inline-block text-sm mb-6 font-semibold">
@@ -180,7 +180,7 @@ export default function GrahPage() {
               The 9 Cosmic Influences
             </h2>
 
-            <p className="mt-6 text-lg md:text-xl leading-9 text-gray-300 max-w-2xl">
+            <p className="mt-6 text-lg md:text-xl leading-9 text-gray-300 max-w-2xl mx-auto lg:mx-0">
               Embark on a profound spiritual journey by discovering how the Navagrahas—the nine divine planetary forces—shape every aspect of your existence, from immense wealth to profound inner peace.
             </p>
 
@@ -236,10 +236,10 @@ export default function GrahPage() {
       </section>
 
       {/* INTRO */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-12 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop"
                 alt="astrology"
@@ -281,7 +281,7 @@ export default function GrahPage() {
       </section>
 
       {/* GRAH CARDS */}
-      <section id="grah-knowledge-base" className="py-16 md:py-20 bg-gradient-to-b from-[#fff7f5] to-[#ffe8e3]">
+      <section id="grah-knowledge-base" className="py-12 lg:py-20 bg-gradient-to-b from-[#fff7f5] to-[#ffe8e3]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
             <span className="text-[#c96e67] uppercase tracking-[4px] font-semibold">
@@ -297,7 +297,7 @@ export default function GrahPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
             {grahData.map((grah, index) => (
               <Link href={grah.link}
                 key={index}
@@ -350,10 +350,10 @@ export default function GrahPage() {
       </section>
 
       {/* DOSH SECTION */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-12 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <span className="text-[#c96e67] uppercase tracking-[4px] font-semibold">
                 अशुभ ग्रहों का प्रभाव
               </span>
@@ -400,7 +400,7 @@ export default function GrahPage() {
       </section>
 
       {/* REMEDIES */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-[#c96e67] to-[#d98982]">
+      <section className="py-12 lg:py-20 bg-gradient-to-r from-[#c96e67] to-[#d98982]">
         <div className="max-w-6xl mx-auto px-6 text-center text-white">
           <span className="text-white/80 uppercase tracking-[4px] font-semibold">
             Spiritual Healing
@@ -443,7 +443,7 @@ export default function GrahPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-20 bg-[#fff7f5]">
+      <section className="py-12 lg:py-20 bg-[#fff7f5]">
         <div className="max-w-5xl mx-auto px-6">
           <div className="bg-white rounded-[40px] shadow-2xl p-10 text-center border border-[#f5d7d1]">
             <span className="text-[#c96e67] uppercase tracking-[4px] font-semibold">

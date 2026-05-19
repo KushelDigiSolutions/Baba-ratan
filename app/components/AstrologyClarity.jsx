@@ -32,9 +32,9 @@ const AstrologyClarity = () => {
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-[32px] p-10 flex flex-col items-start transition-transform "
+                            className="bg-white rounded-[32px] p-10 flex flex-col items-center lg:items-start text-center lg:text-left transition-transform "
                         >
-                            <div className="mb-8 w-7 h-7">
+                            <div className="mb-8 w-7 h-7 mx-auto lg:mx-0">
                                 <img src={card.icon} alt={card.title} className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-xl font-[500] text-[#2D2D2D] mb-3">
@@ -43,7 +43,7 @@ const AstrologyClarity = () => {
                             <p className="text-[17px] text-[#4A4A4A] leading-relaxed mb-5">
                                 {card.content}
                             </p>
-                            <div className="w-16 h-1 bg-[#E57661] rounded-full mt-auto"></div>
+                            <div className="w-16 h-1 bg-[#E57661] rounded-full mt-auto mx-auto lg:mx-0"></div>
                         </div>
                     ))}
                 </div>

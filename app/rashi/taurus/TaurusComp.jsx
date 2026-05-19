@@ -60,14 +60,14 @@ const TaurusPage = () => {
   return (
     <div className="w-full bg-[#fffaf7] overflow-hidden">
       {/* HERO SECTION - English */}
-      <section className="relative py-12 sm:py-16 md:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-br from-[#e57661] via-[#e57661] to-[#e57661] overflow-hidden">
+      <section className="relative py-12 sm:py-12 lg:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-br from-[#e57661] via-[#e57661] to-[#e57661] overflow-hidden">
         {/* Background Glow */}
         <div className="absolute top-0 left-0 w-full h-full opacity-20">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-72 h-72 bg-yellow-200 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* LEFT */}
           <div className="text-white text-center lg:text-left">
             <span className="inline-block px-5 py-2 rounded-full bg-white/20 backdrop-blur-md text-sm font-medium mb-6 border border-white/20">
@@ -86,7 +86,7 @@ const TaurusPage = () => {
               Taurus, the steadfast earth sign ruled by the planet of beauty and opulence, Venus. Represented by the bull, Taurus natives exhibit unshakeable loyalty, patient determination, and an innate appreciation for luxury, art, and the finer comforts of life.
             </p>
 
-            <div className="flex flex-wrap gap-4 mt-6 sm:mt-8 justify-center lg:justify-start">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-6 sm:mt-8 justify-center lg:justify-start">
               <button className="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-[#e57661] font-semibold hover:scale-105 transition">
                 Read Horoscope
               </button>
@@ -124,8 +124,8 @@ const TaurusPage = () => {
       </section>
 
       {/* ABOUT SECTION - Hindi */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-14 items-center">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 items-center">
           {/* IMAGE */}
           <div className="relative">
             <img
@@ -179,7 +179,7 @@ const TaurusPage = () => {
       </section>
 
       {/* LUCKY SECTION - English */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20 bg-white">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20 bg-white">
         <div className="text-center mb-10 sm:mb-14">
           <span className="text-[#e57661] font-semibold uppercase tracking-wider text-sm sm:text-base">
             Taurus Astrology
@@ -190,7 +190,7 @@ const TaurusPage = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-7">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-7">
           {luckyThings.map((item, index) => (
             <div
               key={index}
@@ -209,7 +209,7 @@ const TaurusPage = () => {
       </section>
 
       {/* LOVE CAREER HEALTH - Hindi */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20">
         <div className="text-center mb-10 sm:mb-14">
           <span className="text-[#e57661] font-semibold uppercase tracking-wider text-sm sm:text-base">
             वृषभ राशि के प्रभाव क्षेत्र
@@ -220,9 +220,9 @@ const TaurusPage = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* LOVE */}
-          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition">
+          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#fff1ea] flex items-center justify-center text-[#e57661] text-3xl sm:text-4xl mb-4 sm:mb-6">
               <FiHeart />
             </div>
@@ -237,7 +237,7 @@ const TaurusPage = () => {
           </div>
 
           {/* CAREER */}
-          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition">
+          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#fff1ea] flex items-center justify-center text-[#e57661] text-3xl sm:text-4xl mb-4 sm:mb-6">
               <FiBriefcase />
             </div>
@@ -252,7 +252,7 @@ const TaurusPage = () => {
           </div>
 
           {/* HEALTH */}
-          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition">
+          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#fff1ea] flex items-center justify-center text-[#e57661] text-3xl sm:text-4xl mb-4 sm:mb-6">
               <FiActivity />
             </div>
@@ -269,7 +269,7 @@ const TaurusPage = () => {
       </section>
 
       {/* DAILY HOROSCOPE - English */}
-      <section className="py-12 sm:py-16 md:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#e57661] to-[#e57661]">
+      <section className="py-12 sm:py-12 lg:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#e57661] to-[#e57661]">
         <div className="max-w-5xl mx-auto text-center text-white">
           <div className="w-24 h-24 mx-auto rounded-full bg-white/20 flex items-center justify-center text-4xl sm:text-5xl mb-4 sm:mb-6 backdrop-blur-md">
             <FiSun />
@@ -291,7 +291,7 @@ const TaurusPage = () => {
       </section>
 
       {/* FAQ - Hindi */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20">
         <div className="text-center mb-10 sm:mb-14">
           <span className="text-[#e57661] font-semibold uppercase tracking-wider text-sm sm:text-base">
             अक्सर पूछे जाने वाले प्रश्न
@@ -322,7 +322,7 @@ const TaurusPage = () => {
 
       {/* CTA - English */}
       <section className="pt-4 pb-10 sm:pb-16 px-4 md:px-10 lg:px-20">
-        <div className="bg-[#fff1ea] border border-[#f0d7cc] rounded-[30px] sm:rounded-[45px] p-6 sm:p-10 md:p-16 text-center relative overflow-hidden">
+        <div className="bg-[#fff1ea] border border-[#f0d7cc] rounded-[30px] sm:rounded-[40px] p-6 sm:p-10 md:p-12 lg:p-16 text-center relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full opacity-10">
             <div className="absolute top-4 sm:top-10 left-4 sm:left-10 text-[100px] sm:text-[180px] text-[#e57661]">
               ♉

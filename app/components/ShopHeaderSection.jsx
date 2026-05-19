@@ -61,7 +61,7 @@ const ShopHeaderSection = ({ selectedFilters, setSelectedFilters }) => {
 
                 {/* Filter Bar */}
 
-                <div className="max-w-5xl mx-auto bg-white rounded-lg border border-gray-200 p-3 lg:p-1 flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-3">
+                <div className="max-w-5xl mx-auto bg-white rounded-lg border border-gray-200 p-3 lg:p-1 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left justify-between gap-4 lg:gap-3">
 
                     {/* LEFT SIDE - Wrapped on Mobile */}
                     <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 w-full lg:w-auto">

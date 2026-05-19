@@ -29,10 +29,10 @@ export default function MangalGrahPage() {
         {/* DOT GRID */}
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:28px_28px]"></div>
 
-        <div className="max-w-7xl mx-auto px-6 py-24 relative z-10 w-full">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="max-w-7xl mx-auto px-6 py-12 md:py-16 lg:py-24 relative z-10 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             {/* LEFT */}
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-xl">
                 <div className="w-2 h-2 rounded-full bg-yellow-300"></div>
 
@@ -45,7 +45,7 @@ export default function MangalGrahPage() {
                 Mangal <span className="text-yellow-300">Grah</span>
               </h1>
 
-              <p className="text-white/85 text-lg lg:text-xl leading-9 mt-8 max-w-2xl">
+              <p className="text-white/85 text-lg lg:text-xl leading-9 mt-8 max-w-2xl mx-auto lg:mx-0">
                 Mars (Mangal Dev) stands as the cosmic commander of power, fire, and determination. Far from being just an aggressive influence, a benefic Mars blesses you with unshakeable courage, supreme executive authority, and an extraordinary drive to conquer every professional milestone.
               </p>
 
@@ -152,9 +152,9 @@ export default function MangalGrahPage() {
       </section>
 
       {/* ABOUT */}
-      <section className="py-16 md:py-28">
+      <section className="py-12 md:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             {/* IMAGE */}
             <div className="relative mb-10 lg:mb-0">
               <div className="absolute inset-0 rounded-[40px] bg-gradient-to-r from-[#b83232] to-[#ff7b54] rotate-6"></div>
@@ -227,7 +227,7 @@ export default function MangalGrahPage() {
       </section>
 
       {/* EFFECTS */}
-      <section className="py-16 md:py-28 bg-gradient-to-b from-[#fff7f5] to-[#ffe8df]">
+      <section className="py-12 md:py-20 lg:py-28 bg-gradient-to-b from-[#fff7f5] to-[#ffe8df]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto">
             <span className="text-[#b83232] uppercase tracking-[4px] font-semibold">
@@ -294,7 +294,7 @@ export default function MangalGrahPage() {
       </section>
 
       {/* REMEDIES */}
-      <section id="remedies-section" className="py-16 md:py-28 bg-[#1d1212] relative overflow-hidden">
+      <section id="remedies-section" className="py-12 md:py-20 lg:py-28 bg-[#1d1212] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -385,7 +385,7 @@ export default function MangalGrahPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-28 bg-[#fff7f5]">
+      <section className="py-12 md:py-20 lg:py-28 bg-[#fff7f5]">
         <div className="max-w-5xl mx-auto px-6">
           <div className="bg-white border border-[#f4d7d2] rounded-[24px] sm:rounded-[45px] shadow-2xl p-6 sm:p-12 lg:p-16 text-center relative overflow-hidden">
             <div className="absolute top-0 right-0 w-[200px] h-[200px] bg-[#fff0eb] rounded-full blur-3xl"></div>

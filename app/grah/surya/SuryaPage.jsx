@@ -22,8 +22,8 @@ export default function SuryaGrahPage() {
         <div className="absolute inset-0 opacity-10 bg-[url('/stars.png')] bg-cover"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <span className="bg-white/20 text-white border border-white/20 px-5 py-2 rounded-full text-sm tracking-wide">
                 नवग्रह • सूर्य देव
               </span>
@@ -32,11 +32,11 @@ export default function SuryaGrahPage() {
                 सूर्य ग्रह
               </h1>
 
-              <p className="text-xl text-white/90 leading-9 mt-8 max-w-2xl">
+              <p className="text-xl text-white/90 leading-9 mt-8 max-w-2xl mx-auto lg:mx-0">
                 वैदिक ज्योतिष में सूर्य (Sun) को ग्रहों का राजा और आत्मा का कारक माना जाता है। मजबूत सूर्य आपके जीवन में अपार नेतृत्व क्षमता, तेज, राजकीय मान-सम्मान और करियर में सर्वोच्च सफलता सुनिश्चित करता है।
               </p>
 
-              <div className="flex flex-wrap gap-5 mt-10">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-10">
                 <button className="bg-white text-[#c96e67] px-8 py-4 rounded-2xl font-semibold hover:scale-105 duration-300">
                   उपाय जानें
                 </button>
@@ -120,10 +120,10 @@ export default function SuryaGrahPage() {
       </section>
 
       {/* ABOUT */}
-      <section className="py-16 md:py-20">
+      <section className="py-12 lg:py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
                 alt="surya"
@@ -131,7 +131,7 @@ export default function SuryaGrahPage() {
               />
             </div>
 
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <span className="text-[#c96e67] font-semibold uppercase tracking-[4px]">
                 About Lord Surya
               </span>
@@ -173,7 +173,7 @@ export default function SuryaGrahPage() {
       </section>
 
       {/* EFFECTS */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-[#fff7f5] to-[#ffe9e3]">
+      <section className="py-12 lg:py-20 bg-gradient-to-b from-[#fff7f5] to-[#ffe9e3]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
             <span className="text-[#c96e67] uppercase tracking-[4px] font-semibold">
@@ -230,10 +230,10 @@ export default function SuryaGrahPage() {
       </section>
 
       {/* WEAK SURYA */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-12 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <span className="text-[#c96e67] uppercase tracking-[4px] font-semibold">
                 Signs of Surya Dosha
               </span>
@@ -269,7 +269,7 @@ export default function SuryaGrahPage() {
               </div>
             </div>
 
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200&auto=format&fit=crop"
                 alt="weak surya"
@@ -281,7 +281,7 @@ export default function SuryaGrahPage() {
       </section>
 
       {/* REMEDIES */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-[#c96e67] to-[#de8d67]">
+      <section className="py-12 lg:py-20 bg-gradient-to-r from-[#c96e67] to-[#de8d67]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
             <span className="text-white/80 uppercase tracking-[4px] font-semibold">
@@ -348,7 +348,7 @@ export default function SuryaGrahPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-20 bg-[#fff7f5]">
+      <section className="py-12 lg:py-20 bg-[#fff7f5]">
         <div className="max-w-5xl mx-auto px-6">
           <div className="bg-white rounded-[40px] p-10 text-center">
             <div className="w-24 h-24 rounded-full bg-gradient-to-r from-[#c96e67] to-[#de8d67] text-white flex items-center justify-center mx-auto shadow-xl">

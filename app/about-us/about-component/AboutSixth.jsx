@@ -17,7 +17,7 @@ export default function AboutSixth() {
             Why Choose Us
           </h4>
 
-          <p className="text-[#303030] text-[19px] leading-relaxed mb-10 max-w-xl">
+          <p className="text-[#303030] text-[19px] leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
             Vishal Verma blends ancient Vedic astrology with honest, modern guidance, creating accurate Kundli readings and real life solutions that align with your unique birth chart.
           </p>
 

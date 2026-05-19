@@ -17,7 +17,7 @@ export default function VastuHero() {
                         Your Life.
                     </h1>
 
-                    <p className="mt-5 text-[#303030] text-lg md:text-[24px] max-w-xl  lg:mx-0">
+                    <p className="mt-5 text-[#303030] text-lg md:text-[24px] max-w-xl mx-auto lg:mx-0  lg:mx-0">
                         Vishal Verma at Bajrang Astro brings the ancient science of Vastu Shastra into your home, office, and business removing energy blocks and creating the right environment for success, peace, and growth.
                     </p>
 

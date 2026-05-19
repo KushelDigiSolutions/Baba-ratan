@@ -49,7 +49,7 @@ const RashiDetailsPage = () => {
   return (
     <div className="w-full bg-[#fffcfb] overflow-hidden">
       {/* HERO SECTION - 100% English */}
-      <section className="relative py-12 sm:py-16 md:py-24 px-4 md:px-10 lg:px-20 bg-gradient-to-br from-[#e07a63] via-[#e57661] to-[#cf624b] overflow-hidden">
+      <section className="relative py-12 md:py-20 lg:py-24 px-4 md:px-10 lg:px-20 bg-gradient-to-br from-[#e07a63] via-[#e57661] to-[#cf624b] overflow-hidden">
         {/* Decorative Stars & Moons */}
         <div className="absolute top-0 left-0 w-full h-full opacity-15 pointer-events-none">
           <div className="absolute top-10 left-10 text-[120px] sm:text-[180px] text-white">✦</div>
@@ -57,7 +57,7 @@ const RashiDetailsPage = () => {
           <div className="absolute top-1/2 left-1/3 text-3xl sm:text-4xl text-white">✦</div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-12 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* LEFT */}
           <div className="text-white text-center lg:text-left mt-8 lg:mt-0">
             <span className="inline-block px-5 py-2 rounded-full bg-white/20 border border-white/20 backdrop-blur-md text-sm font-semibold tracking-wider mb-6">
@@ -115,8 +115,8 @@ const RashiDetailsPage = () => {
       </section>
 
       {/* ABOUT RASHI - 100% Hindi */}
-      <section className="py-10 md:py-20 px-4 md:px-10 lg:px-20 bg-white">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-12 items-center">
+      <section className="py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20 bg-white">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* IMAGE */}
           <div className="relative">
             <img
@@ -183,7 +183,7 @@ const RashiDetailsPage = () => {
       </div>
 
       {/* HOROSCOPE INSIGHTS SECTION - 100% Hindi */}
-      <section className="py-10 md:py-20 px-4 md:px-10 lg:px-20 bg-white">
+      <section className="py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20 bg-white">
         <div className="text-center mb-10 sm:mb-12">
           <span className="text-[#e57661] font-bold uppercase tracking-wider text-sm sm:text-base">
             राशिफल भविष्यवाणियां
@@ -194,7 +194,7 @@ const RashiDetailsPage = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {horoscopeCards.map((item, index) => (
             <div
               key={index}
@@ -222,7 +222,7 @@ const RashiDetailsPage = () => {
       </section>
 
       {/* DAILY HOROSCOPE SECTION - 100% English */}
-      <section className="py-10 md:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#e07a63] to-[#cf624b]">
+      <section className="py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#e07a63] to-[#cf624b]">
         <div className="max-w-5xl mx-auto text-center text-white">
           <div className="w-16 h-16 sm:w-24 sm:h-24 mx-auto rounded-full bg-white/20 flex items-center justify-center text-3xl sm:text-5xl mb-4 sm:mb-6 backdrop-blur-md">
             <FiStar />
@@ -243,7 +243,7 @@ const RashiDetailsPage = () => {
       </section>
 
       {/* FAQ - 100% Hindi */}
-      <section className="py-10 md:py-20 px-4 md:px-10 lg:px-20">
+      <section className="py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
         <div className="text-center mb-10 sm:mb-12">
           <span className="text-[#e57661] font-bold uppercase tracking-wider text-sm sm:text-base">
             अक्सर पूछे जाने वाले प्रश्न
@@ -274,7 +274,7 @@ const RashiDetailsPage = () => {
 
       {/* CTA - 100% English */}
       <section className="pt-4 pb-10 sm:pb-16 px-4 md:px-10 lg:px-20">
-        <div className="bg-[#fff1ec] border border-[#f1d6cf] rounded-[30px] sm:rounded-[45px] p-6 sm:p-10 md:p-16 text-center relative overflow-hidden">
+        <div className="bg-[#fff1ec] border border-[#f1d6cf] rounded-[30px] sm:rounded-[40px] p-6 sm:p-10 md:p-12 lg:p-16 text-center relative overflow-hidden">
           {/* Background decoration */}
           <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
             <div className="absolute top-4 sm:top-10 left-4 sm:left-10 text-[100px] sm:text-[200px] text-[#e57661]">✦</div>

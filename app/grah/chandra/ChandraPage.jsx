@@ -47,7 +47,7 @@ const ChandraGrahPage = () => {
   return (
     <div className="bg-[#F8FAFC] text-[#1E293B] overflow-hidden">
       {/* HERO SECTION */}
-      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#334155] text-white py-20 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#334155] text-white py-12 md:py-16 lg:py-20 overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-20 pointer-events-none">
           {[...Array(20)].map((_, i) => (
@@ -73,9 +73,8 @@ const ChandraGrahPage = () => {
           ))}
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-16 items-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
+        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+          <motion.div className="text-center lg:text-left" initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
@@ -88,11 +87,11 @@ const ChandraGrahPage = () => {
               <span className="text-blue-300">मन और मानसिक शांति</span>
             </h1>
 
-            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed max-w-xl">
+            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
               चंद्र देव हमारे अंतर्मन, भावनाओं और आंतरिक प्रसन्नता के परम संचालक हैं। जन्म कुंडली में शुभ चंद्रमा का प्रभाव जीवन में असीम मानसिक शांति, मधुर संबंध और सृजनात्मक ऊर्जा का संचार करता है।
             </p>
 
-            <div className="flex flex-wrap gap-5 mt-10">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-10">
               <a href="tel:+917042600873">
                 <button className="bg-white cursor-pointer text-[#1e293b] px-8 py-4 rounded-2xl font-bold shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2">
                   ज्योतिषी से बात करें <ArrowRight size={18} />
@@ -154,7 +153,7 @@ const ChandraGrahPage = () => {
       </section>
 
       {/* IMPORTANCE SECTION */}
-      <section className="py-24 relative bg-white overflow-hidden">
+      <section className="py-12 md:py-16 lg:py-24 relative bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center mb-20">
             <motion.span
@@ -210,7 +209,7 @@ const ChandraGrahPage = () => {
       </section>
 
       {/* QUICK DETAILS GRID */}
-      <section className="py-24 text-white !bg-[#0F172A]" style={{ backgroundColor: '#0F172A' }}>
+      <section className="py-12 md:py-16 lg:py-24 text-white !bg-[#0F172A]" style={{ backgroundColor: '#0F172A' }}>
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
             चंद्र ग्रह <span className="text-blue-400">एक नज़र में</span>
@@ -241,7 +240,7 @@ const ChandraGrahPage = () => {
       </section>
 
       {/* EFFECTS SECTION */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-12 md:py-16 lg:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-10">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -302,7 +301,7 @@ const ChandraGrahPage = () => {
       </section>
 
       {/* REMEDIES GRID */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-12 md:py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 leading-[1.3]">
@@ -329,7 +328,7 @@ const ChandraGrahPage = () => {
       </section>
 
       {/* FAQ SECTION */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-12 md:py-16 lg:py-24 bg-slate-50">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16">Astrological FAQs About Chandra</h2>
 
@@ -353,7 +352,7 @@ const ChandraGrahPage = () => {
       </section>
 
       {/* CTA SECTION */}
-      <section className="relative py-24 !bg-[#1E293B] overflow-hidden" style={{ backgroundColor: '#1E293B' }}>
+      <section className="relative py-12 md:py-16 lg:py-24 !bg-[#1E293B] overflow-hidden" style={{ backgroundColor: '#1E293B' }}>
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
 
         <div className="max-w-5xl mx-auto text-center px-6 relative z-10">
@@ -366,7 +365,7 @@ const ChandraGrahPage = () => {
               चंद्र देव की <span className="text-blue-400">कृपा प्राप्त करें</span>
             </h2>
 
-            <p className="text-xl text-white leading-relaxed max-w-2xl mx-auto mb-12">
+            <p className="text-xl text-white leading-relaxed max-w-2xl mx-auto lg:mx-0 mx-auto mb-12">
               क्या आप मन की बेचैनी या जीवन में बढ़ते तनाव से परेशान हैं? आज ही अपनी कुंडली का विस्तृत चंद्र प्रभाव विश्लेषण प्राप्त करें और हमारे ज्योतिषियों से विशेष समाधान पाएं।
             </p>
 

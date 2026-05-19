@@ -47,8 +47,8 @@ const AriesRashiPage = () => {
   return (
     <div className="w-full bg-[#fff8f5] overflow-hidden">
       {/* HERO SECTION - English */}
-      <section className="relative py-12 sm:py-16 md:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-br from-[#d96d55] to-[#b85645]">
-        <div className="grid lg:grid-cols-2 gap-10 md:gap-12 items-center">
+      <section className="relative py-12 sm:py-12 lg:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-br from-[#d96d55] to-[#b85645]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Left */}
           <div className="text-white text-center lg:text-left">
             <span className="inline-block px-4 py-1 rounded-full bg-white/20 text-xs sm:text-sm font-medium mb-5">
@@ -64,7 +64,7 @@ const AriesRashiPage = () => {
               Aries, the very first sign of the zodiac wheel, is ruled by the fiery planet Mars. Symbolized by the ram, Aries natives embody unyielding courage, absolute determination, and a fierce pioneering spirit that drives them to lead and conquer all challenges.
             </p>
 
-            <div className="flex flex-wrap gap-4 mt-6 sm:mt-8 justify-center lg:justify-start">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-6 sm:mt-8 justify-center lg:justify-start">
               <button className="w-full sm:w-auto px-7 py-3 rounded-full bg-white text-[#d96d55] font-semibold hover:scale-105 transition">
                 Read Horoscope
               </button>
@@ -98,8 +98,8 @@ const AriesRashiPage = () => {
       </section>
 
       {/* ABOUT SECTION - Hindi */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-10 items-center">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-center">
           {/* Image */}
           <div>
             <img
@@ -143,7 +143,7 @@ const AriesRashiPage = () => {
       </section>
 
       {/* LUCKY THINGS - English */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20 bg-white">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20 bg-white">
         <div className="text-center mb-10 sm:mb-14">
           <span className="text-[#d96d55] font-semibold uppercase tracking-wider text-sm sm:text-base">
             Astrology Details
@@ -154,7 +154,7 @@ const AriesRashiPage = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {luckyThings.map((item, index) => (
             <div
               key={index}
@@ -173,7 +173,7 @@ const AriesRashiPage = () => {
       </section>
 
       {/* LIFE SECTIONS - Hindi */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20">
         <div className="text-center mb-10 sm:mb-14">
           <span className="text-[#d96d55] font-semibold uppercase tracking-wider text-sm sm:text-base">
             मेष राशि के प्रमुख प्रभाव क्षेत्र
@@ -184,7 +184,7 @@ const AriesRashiPage = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Love */}
           <div className="bg-white rounded-[24px] sm:rounded-[30px] p-6 sm:p-8 shadow-md hover:shadow-2xl transition">
             <FiHeart className="text-[#d96d55] text-4xl sm:text-5xl mb-4 sm:mb-6" />
@@ -227,7 +227,7 @@ const AriesRashiPage = () => {
       </section>
 
       {/* DAILY HOROSCOPE - English */}
-      <section className="py-12 sm:py-16 md:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#d96d55] to-[#b85645]">
+      <section className="py-12 sm:py-12 lg:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#d96d55] to-[#b85645]">
         <div className="max-w-5xl mx-auto text-center text-white">
           <FiSun className="mx-auto text-4xl sm:text-6xl mb-4 sm:mb-6" />
 
@@ -247,7 +247,7 @@ const AriesRashiPage = () => {
       </section>
 
       {/* FAQ - Hindi */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20">
         <div className="text-center mb-10 sm:mb-14">
           <span className="text-[#d96d55] font-semibold uppercase tracking-wider text-sm sm:text-base">
             अक्सर पूछे जाने वाले प्रश्न
@@ -278,7 +278,7 @@ const AriesRashiPage = () => {
 
       {/* CTA - English */}
       <section className="pt-4 pb-10 sm:pb-16 px-4 md:px-10 lg:px-20">
-        <div className="bg-[#fff1ec] border border-[#f3d3c9] rounded-[24px] sm:rounded-[40px] p-6 sm:p-10 md:p-16 text-center">
+        <div className="bg-[#fff1ec] border border-[#f3d3c9] rounded-[24px] sm:rounded-[36px] md:rounded-[40px] p-6 sm:p-10 md:p-12 lg:p-16 text-center">
           <FiStar className="mx-auto text-4xl sm:text-6xl text-[#d96d55] mb-4 sm:mb-6" />
 
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#4e2723] leading-[1.2] sm:leading-tight">

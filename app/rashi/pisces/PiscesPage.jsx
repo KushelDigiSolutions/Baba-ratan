@@ -61,14 +61,14 @@ const PiscesPage = () => {
   return (
     <div className="w-full bg-[#f8fdff] overflow-hidden">
       {/* HERO SECTION - English */}
-      <section className="relative py-12 sm:py-16 md:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-br from-[#0d9488] via-[#0f766e] to-[#2dd4bf] overflow-hidden">
+      <section className="relative py-12 sm:py-12 lg:py-20 px-4 md:px-10 lg:px-20 bg-gradient-to-br from-[#0d9488] via-[#0f766e] to-[#2dd4bf] overflow-hidden">
         {/* Glow */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-80 h-80 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-teal-100 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* LEFT */}
           <div className="text-white text-center lg:text-left">
             <span className="inline-block px-5 py-2 rounded-full bg-white/20 border border-white/20 backdrop-blur-md text-sm font-medium mb-6">
@@ -87,7 +87,7 @@ const PiscesPage = () => {
               Pisces, the mystical and deeply compassionate Water sign ruled by benevolent Jupiter and spiritual Neptune. Symbolized by two fishes swimming in opposite directions, Pisces natives possess a beautiful soul of divine empathy, artistic genius, powerful intuition, and a heart committed to healing the world.
             </p>
 
-            <div className="flex flex-wrap gap-4 mt-6 sm:mt-8 justify-center lg:justify-start">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-6 sm:mt-8 justify-center lg:justify-start">
               <button className="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-[#0f766e] font-semibold hover:scale-105 transition">
                 Read Horoscope
               </button>
@@ -125,8 +125,8 @@ const PiscesPage = () => {
       </section>
 
       {/* ABOUT SECTION - Hindi */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-14 items-center">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 items-center">
           {/* IMAGE */}
           <div className="relative">
             <img
@@ -180,7 +180,7 @@ const PiscesPage = () => {
       </section>
 
       {/* LUCKY SECTION - English */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20 bg-white">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20 bg-white">
         <div className="text-center mb-10 sm:mb-14">
           <span className="text-[#0f766e] font-semibold uppercase tracking-wider text-sm sm:text-base">
             Pisces Astrology
@@ -191,7 +191,7 @@ const PiscesPage = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-7">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-7">
           {luckyThings.map((item, index) => (
             <div
               key={index}
@@ -210,7 +210,7 @@ const PiscesPage = () => {
       </section>
 
       {/* LOVE CAREER HEALTH - Hindi */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20">
         <div className="text-center mb-10 sm:mb-14">
           <span className="text-[#0f766e] font-semibold uppercase tracking-wider text-sm sm:text-base">
             मीन राशि के प्रभाव क्षेत्र
@@ -221,9 +221,9 @@ const PiscesPage = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* LOVE */}
-          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition">
+          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#effffd] flex items-center justify-center text-[#0f766e] text-3xl sm:text-4xl mb-4 sm:mb-6">
               <FiHeart />
             </div>
@@ -238,7 +238,7 @@ const PiscesPage = () => {
           </div>
 
           {/* CAREER */}
-          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition">
+          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#effffd] flex items-center justify-center text-[#0f766e] text-3xl sm:text-4xl mb-4 sm:mb-6">
               <FiBriefcase />
             </div>
@@ -253,7 +253,7 @@ const PiscesPage = () => {
           </div>
 
           {/* HEALTH */}
-          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition">
+          <div className="bg-white rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-md hover:shadow-2xl transition flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#effffd] flex items-center justify-center text-[#0f766e] text-3xl sm:text-4xl mb-4 sm:mb-6">
               <FiActivity />
             </div>
@@ -270,8 +270,8 @@ const PiscesPage = () => {
       </section>
 
       {/* SPECIAL SECTION - Hindi */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#0f766e] to-[#14b8a6]">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-14 items-center">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#0f766e] to-[#14b8a6]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 items-center">
           {/* LEFT */}
           <div className="text-white text-center lg:text-left">
             <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto lg:mx-0 rounded-full bg-white/10 flex items-center justify-center text-4xl sm:text-5xl backdrop-blur-md">
@@ -313,7 +313,7 @@ const PiscesPage = () => {
       </section>
 
       {/* DAILY HOROSCOPE - English */}
-      <section className="py-12 sm:py-16 md:py-20 px-4 md:px-10 lg:px-20 bg-[#f8fdff]">
+      <section className="py-12 sm:py-12 lg:py-20 px-4 md:px-10 lg:px-20 bg-[#f8fdff]">
         <div className="max-w-5xl mx-auto text-center">
           <div className="w-20 h-20 sm:w-28 sm:h-28 mx-auto rounded-full bg-[#effffd] flex items-center justify-center text-[#0f766e] text-4xl sm:text-5xl shadow-xl">
             <FiSun />
@@ -335,7 +335,7 @@ const PiscesPage = () => {
       </section>
 
       {/* FAQ - Hindi */}
-      <section className="py-10 md:py-16 px-4 md:px-10 lg:px-20">
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20">
         <div className="text-center mb-10 sm:mb-14">
           <span className="text-[#0f766e] font-semibold uppercase tracking-wider text-sm sm:text-base">
             अक्सर पूछे जाने वाले प्रश्न
@@ -366,7 +366,7 @@ const PiscesPage = () => {
 
       {/* CTA - English */}
       <section className="pt-4 pb-10 sm:pb-16 px-4 md:px-10 lg:px-20">
-        <div className="bg-[#effffd] border border-teal-100 rounded-[30px] sm:rounded-[45px] p-6 sm:p-10 md:p-16 text-center relative overflow-hidden">
+        <div className="bg-[#effffd] border border-teal-100 rounded-[30px] sm:rounded-[40px] p-6 sm:p-10 md:p-12 lg:p-16 text-center relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full opacity-10">
             <div className="absolute top-4 sm:top-10 left-4 sm:left-10 text-[100px] sm:text-[180px] text-[#0f766e]">
               ♓

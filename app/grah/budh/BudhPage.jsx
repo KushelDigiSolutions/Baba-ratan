@@ -28,10 +28,10 @@ export default function BudhGrahPage() {
         {/* Grid */}
         <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:28px_28px]" />
 
-        <div className="max-w-7xl mx-auto px-6 py-24 relative z-10 w-full">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="max-w-7xl mx-auto px-6 py-12 md:py-16 lg:py-24 relative z-10 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             {/* LEFT */}
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-xl">
                 <div className="w-2 h-2 rounded-full bg-lime-300" />
 
@@ -44,7 +44,7 @@ export default function BudhGrahPage() {
                 बुध <span className="text-lime-300">ग्रह</span>
               </h1>
 
-              <p className="text-white/85 text-lg lg:text-xl leading-9 mt-8 max-w-2xl">
+              <p className="text-white/85 text-lg lg:text-xl leading-9 mt-8 max-w-2xl mx-auto lg:mx-0">
                 वैदिक ज्योतिष में बुध (Mercury) को बुद्धि, तार्किक क्षमता और व्यापार का प्रबल कारक माना गया है। मजबूत बुध आपकी कुशाग्रता, वाणी की मिठास और करियर में अभूतपूर्व सफलता का मार्ग प्रशस्त करता है।
               </p>
 
@@ -80,7 +80,7 @@ export default function BudhGrahPage() {
               </div>
 
               {/* BUTTONS */}
-              <div className="flex flex-wrap gap-5 mt-12">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-12">
                 <button className="bg-white hover:scale-105 duration-300 text-[#138f66] px-8 py-4 rounded-2xl font-semibold shadow-2xl">
                   उपाय खोजें
                 </button>
@@ -150,9 +150,9 @@ export default function BudhGrahPage() {
       </section>
 
       {/* ABOUT */}
-      <section className="py-16 md:py-20">
+      <section className="py-12 lg:py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* IMAGE */}
             <div className="relative">
               <div className="absolute inset-0 rounded-[40px] bg-gradient-to-r from-[#138f66] to-[#22c55e] rotate-6"></div>
@@ -207,7 +207,7 @@ export default function BudhGrahPage() {
       </section>
 
       {/* EFFECTS */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-[#f5fff8] to-[#dcffe8]">
+      <section className="py-12 lg:py-20 bg-gradient-to-b from-[#f5fff8] to-[#dcffe8]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto">
             <span className="text-[#138f66] uppercase tracking-[4px] font-semibold">
@@ -322,7 +322,7 @@ export default function BudhGrahPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-20 bg-[#f5fff8]">
+      <section className="py-12 lg:py-20 bg-[#f5fff8]">
         <div className="max-w-5xl mx-auto px-6">
           <div className="bg-white border border-[#d5f5df] rounded-[45px] shadow-2xl p-12 lg:p-16 text-center relative overflow-hidden">
             <div className="relative z-10">

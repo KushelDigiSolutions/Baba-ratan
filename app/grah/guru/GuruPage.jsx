@@ -34,9 +34,9 @@ export default function GuruGrahPage() {
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-orange-300/30 rounded-full blur-[120px]" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 min-h-screen items-center gap-20 py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen items-center gap-20 py-12 md:py-16 lg:py-20">
             {/* LEFT */}
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="inline-flex items-center gap-3 bg-white/70 border border-white px-5 py-3 rounded-full shadow-lg backdrop-blur-xl">
                 <div className="w-3 h-3 rounded-full bg-[#c58a2d]" />
                 <span className="text-sm font-semibold tracking-[3px] uppercase text-[#7a4d0b]">
@@ -51,12 +51,12 @@ export default function GuruGrahPage() {
                 </span>
               </h1>
 
-              <p className="mt-8 text-lg sm:text-xl leading-9 text-[#5e4a2d] max-w-2xl">
+              <p className="mt-8 text-lg sm:text-xl leading-9 text-[#5e4a2d] max-w-2xl mx-auto lg:mx-0">
                 Jupiter, known as Brihaspati, remains the supreme celestial guide of divine wisdom, higher knowledge, and spiritual growth. A benefic Guru fills your life with absolute positivity, continuous financial abundance, and exceptional fortune.
               </p>
 
               {/* BUTTONS */}
-              <div className="flex flex-wrap gap-4 sm:gap-5 mt-10">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10">
                 <a href="#remedies-section" className="w-full sm:w-auto">
                   <button className="w-full justify-center group cursor-pointer bg-[#8b5e1a] hover:bg-[#70450c] text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 duration-300 shadow-[0_15px_40px_rgba(139,94,26,0.35)]">
                     Explore Remedies
@@ -146,11 +146,11 @@ export default function GuruGrahPage() {
       </section>
 
       {/* ================= ABOUT SECTION (Hindi) ================= */}
-      <section className="py-16 md:py-28 relative">
+      <section className="py-12 md:py-20 lg:py-28 relative">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
             {/* LEFT CONTENT */}
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <span className="text-[#c58a2d] uppercase tracking-[4px] font-bold">
                 गुरु देव के बारे में
               </span>
@@ -253,7 +253,7 @@ export default function GuruGrahPage() {
       </section>
 
       {/* ================= EFFECTS SECTION (English) ================= */}
-      <section className="py-16 md:py-28 bg-[#2f220e] relative overflow-hidden">
+      <section className="py-12 md:py-20 lg:py-28 bg-[#2f220e] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -317,9 +317,9 @@ export default function GuruGrahPage() {
       </section>
 
       {/* ================= MANTRA & REMEDIES SECTION (Hindi) ================= */}
-      <section id="remedies-section" className="py-16 md:py-28 bg-[#fffaf0]">
+      <section id="remedies-section" className="py-12 md:py-20 lg:py-28 bg-[#fffaf0]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
             {/* REMEDIES LIST */}
             <div>
               <span className="text-[#c58a2d] uppercase tracking-[4px] font-bold">
@@ -393,7 +393,7 @@ export default function GuruGrahPage() {
       </section>
 
       {/* ================= CTA SECTION (English) ================= */}
-      <section className="py-16 md:py-28">
+      <section className="py-12 md:py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6">
           <div className="bg-white rounded-[24px] sm:rounded-[45px] border border-[#f4deb0] shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-6 sm:p-12 lg:p-16 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-40 sm:w-60 h-40 sm:h-60 bg-[#fff3d4] rounded-full blur-3xl"></div>

@@ -5,7 +5,7 @@ export default function HeroNewSection() {
     return (
         <section
             className="
-    relative w-full xl:py-20 flex items-center justify-center text-white
+    relative w-full xl:py-12 md:py-16 lg:py-20 flex items-center justify-center text-white
     bg-[url('https://res.cloudinary.com/dd9tagtiw/image/upload/v1778848847/mystical-numerology-scene_xitymj.jpg')]
     bg-cover bg-[position:100%]
   "
@@ -13,7 +13,7 @@ export default function HeroNewSection() {
             {/* Background Overlay */}
             <div className="absolute inset-0 bg-[rgb(229,118,97)]/60"></div>
 
-            <div className="relative z-10 max-w-7xl w-full md:px-6 pt-10 xl:py-12 flex flex-col lg:flex-row items-center justify-between md:gap-10">
+            <div className="relative z-10 max-w-7xl w-full md:px-6 pt-10 xl:py-12 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left justify-between md:gap-10">
 
                 {/* LEFT CONTENT */}
                 <div className="w-full md:px-0 px-4 xl:pb-0 pb-10 lg:w-1/2 text-center lg:text-left">

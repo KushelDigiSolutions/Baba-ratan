@@ -18,16 +18,16 @@ export default function RahuGrahPage() {
   return (
     <div className="bg-[#05010a] text-white overflow-hidden">
       {/* HERO SECTION */}
-      <section className="relative flex items-center px-6 lg:px-20 py-20">
+      <section className="relative flex items-center px-6 lg:px-20 py-12 md:py-16 lg:py-20">
         {/* Background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#1d1033_0%,#090013_45%,#020004_100%)]"></div>
 
         {/* Stars */}
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
 
-        <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-center w-full">
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
           {/* LEFT */}
-          <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
             <span className="px-5 py-2 rounded-full border border-cyan-500 text-sm tracking-[4px] uppercase bg-cyan-500/10">
               नवग्रह • राहु देव
             </span>
@@ -39,11 +39,11 @@ export default function RahuGrahPage() {
               </span>
             </h1>
 
-            <p className="text-gray-300 text-lg leading-9 mt-8 max-w-2xl">
+            <p className="text-gray-300 text-lg leading-9 mt-8 max-w-2xl mx-auto lg:mx-0">
               वैदिक ज्योतिष चक्र में राहु देव को गहन रहस्य, तीक्ष्ण बुद्धि, नवाचार और सांसारिक ऐश्वर्य का प्रतीक माना जाता है। अनुकूल राहु व्यक्ति को रातों-रात सर्वोच्च सफलता, प्रसिद्धि और यश दिलाता है।
             </p>
 
-            <div className="flex flex-wrap gap-4 sm:gap-5 mt-10">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10">
               <a href="tel:+917042600873" className="w-full sm:w-auto">
                 <button className="w-full justify-center bg-gradient-to-r cursor-pointer from-cyan-500 to-blue-600 px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:scale-105 transition">
                   ज्योतिषी से बात करें
@@ -119,7 +119,7 @@ export default function RahuGrahPage() {
       </section>
 
       {/* EFFECTS SECTION */}
-      <section className="py-16 md:py-28 px-6 lg:px-20">
+      <section className="py-12 md:py-20 lg:py-28 px-6 lg:px-20">
         <div className="text-center mb-10 sm:mb-16">
           <span className="text-cyan-400 uppercase tracking-[4px] font-bold">
             Celestial Qualities
@@ -128,12 +128,12 @@ export default function RahuGrahPage() {
             Effects of a Powerful Rahu
           </h2>
 
-          <p className="text-gray-400 mt-4 sm:mt-5 max-w-2xl mx-auto text-base sm:text-lg leading-8">
+          <p className="text-gray-400 mt-4 sm:mt-5 max-w-2xl mx-auto lg:mx-0 mx-auto text-base sm:text-lg leading-8">
             An auspicious and well-aspected Rahu in your horoscope offers revolutionary logical reasoning, complete fearlessness, and sudden career expansion.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {[
             {
               icon: Sparkles,
@@ -175,10 +175,10 @@ export default function RahuGrahPage() {
       </section>
 
       {/* DOSHA & REMEDIES */}
-      <section id="remedies-section" className="py-16 md:py-28 px-6 lg:px-20 bg-white/[0.03]">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+      <section id="remedies-section" className="py-12 md:py-20 lg:py-28 px-6 lg:px-20 bg-white/[0.03]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* LEFT */}
-          <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.3] sm:leading-tight">
               राहु दोष निवारण के <br />
               <span className="text-cyan-400 py-2 inline-block">अचूक उपाय</span>
@@ -235,7 +235,7 @@ export default function RahuGrahPage() {
       </section>
 
       {/* TIMELINE SECTION */}
-      <section className="py-16 md:py-28 px-6 lg:px-20">
+      <section className="py-12 md:py-20 lg:py-28 px-6 lg:px-20">
         <div className="text-center mb-10 sm:mb-16">
           <span className="text-cyan-400 uppercase tracking-[4px] font-bold">
             Astrological Impact
@@ -249,7 +249,7 @@ export default function RahuGrahPage() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {[
             "Stock Market Intuition",
             "Political Diplomacy",
@@ -273,14 +273,14 @@ export default function RahuGrahPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-28 px-6 lg:px-20">
-        <div className="bg-gradient-to-r from-cyan-600 to-blue-700 rounded-[24px] sm:rounded-[40px] p-6 sm:p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10">
+      <section className="py-12 md:py-20 lg:py-28 px-6 lg:px-20">
+        <div className="bg-gradient-to-r from-cyan-600 to-blue-700 rounded-[24px] sm:rounded-[36px] md:rounded-[40px] p-6 sm:p-10 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left justify-between gap-8 sm:gap-10">
           <div className="text-center lg:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.3] sm:leading-tight">
               राहु दोष से मुक्ति और <span className="py-2 inline-block">मार्गदर्शन</span>
             </h2>
 
-            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-white/80 max-w-2xl mx-auto lg:mx-0">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-white/80 max-w-2xl mx-auto lg:mx-0 mx-auto lg:mx-0">
               क्या आप राहु की क्रूर दशा, अंतर्दशा अथवा मानसिक भ्रम से परेशान हैं? आज ही अपनी कुंडली का सटीक विश्लेषण कराएं और हमारे ज्योतिषियों से दिव्य उपाय जानें।
             </p>
           </div>

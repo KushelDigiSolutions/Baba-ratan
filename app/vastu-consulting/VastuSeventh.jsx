@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function VastuSeveth() {
     return (
         <section className="bg-[radial-gradient(113.61%_98.59%_at_20%_70%,#D6E3FF_0%,rgba(214,227,255,0)_40%),radial-gradient(106.8%_92.68%_at_70%_30%,#FFDEA5_0%,rgba(255,222,165,0)_40%)] py-12 md:py-20 px-4 md:px-10 lg:px-20">
-            <div className="max-w-7xl relative mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-7xl relative mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                 {/* LEFT CONTENT */}
                 <div>

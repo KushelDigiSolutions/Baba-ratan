@@ -57,7 +57,7 @@ export default function AstrologySteps() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl md:text-[40px] font-bold text-[#303030] mb-16 md:mb-24">
+        <h2 className="text-3xl md:text-[40px] font-bold text-[#303030] mb-16 md:mb-24 text-center">
           Three Steps to Your Reading
         </h2>
 
@@ -68,7 +68,7 @@ export default function AstrologySteps() {
             className="flex flex-col md:flex-row items-center gap-12 md:gap-20"
           >
             {/* TEXT BOX */}
-            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out ${visibleSteps.step1 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out flex flex-col items-center text-center md:items-start md:text-left ${visibleSteps.step1 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
               <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">01</div>
               <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
                 Share Your Birth Details
@@ -97,7 +97,7 @@ export default function AstrologySteps() {
             className="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-20"
           >
             {/* TEXT BOX */}
-            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out ${visibleSteps.step2 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
+            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out flex flex-col items-center text-center md:items-start md:text-left ${visibleSteps.step2 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
               <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">02</div>
               <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
                 Deep Kundli Analysis
@@ -126,7 +126,7 @@ export default function AstrologySteps() {
             className="flex flex-col md:flex-row items-center gap-12 md:gap-20"
           >
             {/* TEXT BOX */}
-            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out ${visibleSteps.step3 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out flex flex-col items-center text-center md:items-start md:text-left ${visibleSteps.step3 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
               <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">03</div>
               <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
                 Personalised Remedies

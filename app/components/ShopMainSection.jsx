@@ -141,12 +141,12 @@ const ShopMainSection = ({ selectedFilters = { Purpose: '', Planet: '', Gemstone
               ))}
             </div>
           ) : error ? (
-            <div className="text-center py-20 bg-white/50 rounded-[30px] border border-dashed border-red-300">
+            <div className="text-center py-12 md:py-16 lg:py-20 bg-white/50 rounded-[30px] border border-dashed border-red-300">
               <h3 className="text-2xl font-[500] text-red-500">Error loading products.</h3>
               <p className="text-gray-500 mt-2">{error}</p>
             </div>
           ) : filteredProducts.length === 0 ? (
-            <div className="text-center py-20 bg-white/50 rounded-[30px] border border-dashed border-gray-300">
+            <div className="text-center py-12 md:py-16 lg:py-20 bg-white/50 rounded-[30px] border border-dashed border-gray-300">
               <h3 className="text-2xl font-[500] text-gray-400">No products found matching these filters.</h3>
               <p className="text-gray-400 mt-2">Try selecting a different category or gemstone.</p>
             </div>

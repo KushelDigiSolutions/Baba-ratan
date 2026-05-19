@@ -32,9 +32,9 @@ export default function ShukraGrahPage() {
         <div className="absolute bottom-[-120px] right-[-120px] w-[500px] h-[500px] bg-fuchsia-500/20 rounded-full blur-[150px] animate-pulse"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-20 min-h-screen items-center py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 min-h-screen items-center py-12 md:py-16 lg:py-20">
             {/* LEFT */}
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-pink-500/20 bg-pink-500/10 backdrop-blur-xl">
                 <div className="w-2 h-2 rounded-full bg-pink-400 animate-ping"></div>
 
@@ -53,12 +53,12 @@ export default function ShukraGrahPage() {
                 </span>
               </h1>
 
-              <p className="mt-10 text-lg sm:text-xl leading-9 text-white/70 max-w-2xl">
+              <p className="mt-10 text-lg sm:text-xl leading-9 text-white/70 max-w-2xl mx-auto lg:mx-0">
                 In Vedic Astrology, Lord Shukra (Venus) governs profound material wealth, exquisite beauty, magnetic romance, and artistic brilliance. A benefically placed Shukra blesses the native with an incredibly luxurious lifestyle, domestic bliss, and immense popularity.
               </p>
 
               {/* BUTTONS */}
-              <div className="flex flex-wrap gap-4 sm:gap-5 mt-10 sm:mt-12">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10 sm:mt-12">
                 <button className="w-full sm:w-auto justify-center group relative overflow-hidden px-8 py-4 rounded-2xl font-semibold flex items-center">
                   <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-fuchsia-600"></div>
 
@@ -177,7 +177,7 @@ export default function ShukraGrahPage() {
       </section>
 
       {/* ================= BENTO SECTION ================= */}
-      <section className="py-16 md:py-28 relative">
+      <section className="py-12 md:py-20 lg:py-28 relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-3 gap-8">
             {/* BIG CARD */}
@@ -252,7 +252,7 @@ export default function ShukraGrahPage() {
       </section>
 
       {/* ================= MANTRA SECTION ================= */}
-      <section className="py-16 md:py-28 relative overflow-hidden">
+      <section className="py-12 md:py-20 lg:py-28 relative overflow-hidden">
         {/* BG */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#22091f] via-[#3a1033] to-[#180816]"></div>
 
@@ -299,7 +299,7 @@ export default function ShukraGrahPage() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-16 md:py-28 bg-[#07040b]">
+      <section className="py-12 md:py-20 lg:py-28 bg-[#07040b]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="relative overflow-hidden rounded-[24px] sm:rounded-[50px] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-12 lg:p-16">
             {/* Glow */}

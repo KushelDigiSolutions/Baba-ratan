@@ -68,7 +68,7 @@ const rashiData = [
 
 const RashiSection = () => {
   return (
-    <section className="w-full bg-[#fdf6f3] py-10 md:py-16 px-4 md:px-10 lg:px-20 overflow-hidden">
+    <section className="w-full bg-[#fdf6f3] py-12 lg:py-16 px-4 md:px-10 lg:px-20 overflow-hidden">
       {/* Heading */}
       <div className="text-center mb-10 sm:mb-16">
         <span className="inline-block px-4 sm:px-5 py-2 rounded-full bg-[#e07a63]/10 text-[#e57661] text-xs sm:text-sm font-bold tracking-wider mb-4 uppercase">

@@ -21,7 +21,7 @@ const CartSection = () => {
         <div className="bg-[#F8F9FA] min-h-screen flex flex-col" style={fontStyle}>
             <Navbar />
             
-            <main className="flex-grow max-w-7xl w-full mx-auto px-5 md:px-10 py-10 md:py-16">
+            <main className="flex-grow max-w-7xl w-full mx-auto px-5 md:px-10 py-12 lg:py-16">
                 <div className="flex items-center gap-2 mb-8">
                     <Link href="/shop" className="text-[#E57661] hover:underline flex items-center gap-1 text-sm md:text-base">
                         <FiArrowLeft /> Back to Shop
@@ -33,7 +33,7 @@ const CartSection = () => {
                 </h1>
 
                 {isLoading ? (
-                    <div className="flex flex-col items-center justify-center py-20 bg-white rounded-3xl border border-gray-100 shadow-sm">
+                    <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-20 bg-white rounded-3xl border border-gray-100 shadow-sm">
                         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#E57661]"></div>
                         <p className="mt-4 text-gray-500 font-medium">Syncing your bag...</p>
                     </div>

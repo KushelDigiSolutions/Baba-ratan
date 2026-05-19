@@ -33,9 +33,9 @@ export default function ShaniGrahPage() {
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px]" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 min-h-screen items-center gap-20 py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen items-center gap-20 py-12 md:py-16 lg:py-20">
             {/* LEFT */}
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full shadow-lg backdrop-blur-xl">
                 <div className="w-3 h-3 rounded-full bg-indigo-500 animate-pulse" />
                 <span className="text-sm font-semibold tracking-[3px] uppercase text-indigo-300">
@@ -50,12 +50,12 @@ export default function ShaniGrahPage() {
                 </span>
               </h1>
 
-              <p className="mt-8 text-lg sm:text-xl leading-9 text-indigo-100/70 max-w-2xl">
+              <p className="mt-8 text-lg sm:text-xl leading-9 text-indigo-100/70 max-w-2xl mx-auto lg:mx-0">
                 Lord Shani acts as the celestial guardian of universal truth. Governing your actions, discipline, and ultimate destiny, a benefic Saturn rewards your persistent dedication with true stability, absolute power, and long-lasting prosperity.
               </p>
 
               {/* BUTTONS */}
-              <div className="flex flex-wrap gap-4 sm:gap-5 mt-10">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10">
                 <a href="#remedies-section" className="w-full sm:w-auto">
                   <button className="w-full justify-center group cursor-pointer bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 duration-300 shadow-[0_15px_40px_rgba(79,70,229,0.35)]">
                     Explore Remedies
@@ -145,11 +145,11 @@ export default function ShaniGrahPage() {
       </section>
 
       {/* ================= ABOUT SECTION (Hindi) ================= */}
-      <section className="py-16 md:py-28 relative">
+      <section className="py-12 md:py-20 lg:py-28 relative">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
             {/* LEFT CONTENT */}
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <span className="text-indigo-400 uppercase tracking-[4px] font-bold">
                 शनि देव की दिव्य महिमा
               </span>
@@ -188,9 +188,9 @@ export default function ShaniGrahPage() {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-white/5 border border-white/10 rounded-3xl p-6 shadow-lg flex items-start gap-5 hover:-translate-y-1 duration-300"
+                    className="bg-white/5 border border-white/10 rounded-3xl p-6 shadow-lg flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5 hover:-translate-y-1 duration-300 w-full"
                   >
-                    <div className="w-12 h-12 rounded-2xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 rounded-2xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 mx-auto sm:mx-0">
                       <CheckCircle2 className="w-6 h-6" />
                     </div>
                     <div>
@@ -252,7 +252,7 @@ export default function ShaniGrahPage() {
       </section>
 
       {/* ================= EFFECTS SECTION (English) ================= */}
-      <section className="py-16 md:py-28 bg-[#0a0718] relative overflow-hidden">
+      <section className="py-12 md:py-20 lg:py-28 bg-[#0a0718] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -316,9 +316,9 @@ export default function ShaniGrahPage() {
       </section>
 
       {/* ================= MANTRA & REMEDIES SECTION (Hindi) ================= */}
-      <section id="remedies-section" className="py-16 md:py-28 bg-[#05030a]">
+      <section id="remedies-section" className="py-12 md:py-20 lg:py-28 bg-[#05030a]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
             {/* REMEDIES LIST */}
             <div>
               <span className="text-indigo-400 uppercase tracking-[4px] font-bold">
@@ -392,7 +392,7 @@ export default function ShaniGrahPage() {
       </section>
 
       {/* ================= CTA SECTION (English) ================= */}
-      <section className="py-16 md:py-28">
+      <section className="py-12 md:py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6">
           <div className="bg-white/5 backdrop-blur-md rounded-[24px] sm:rounded-[45px] border border-indigo-500/20 shadow-[0_20px_60px_rgba(0,0,0,0.5)] p-6 sm:p-12 lg:p-16 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-40 sm:w-60 h-40 sm:h-60 bg-indigo-500/10 rounded-full blur-3xl"></div>

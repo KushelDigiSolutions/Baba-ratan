@@ -52,7 +52,7 @@ export default function VastuSecond() {
     return (
         <section
             ref={sectionRef}
-            className="py-20 px-4 md:px-10 lg:px-20 overflow-hidden"
+            className="py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20 overflow-hidden"
             style={{
                 background: `
         radial-gradient(113.61% 98.59% at 20% 70%, #D6E3FF 0%, rgba(214,227,255,0) 40%),

@@ -25,7 +25,7 @@ export default function AboutThird() {
   ];
 
   return (
-    <section className="max-w-[1720px] mx-auto px-4 md:px-10 lg:px-20 py-10 md:py-16 bg-[#F8F8F8]">
+    <section className="max-w-[1720px] mx-auto px-4 md:px-10 lg:px-20 py-12 lg:py-16 bg-[#F8F8F8]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
         {data.map((item, index) => (
           <div

@@ -16,16 +16,16 @@ export default function KetuGrahPage() {
     return (
         <div className="bg-[#04010a] text-white overflow-hidden">
             {/* HERO SECTION */}
-            <section className="relative flex items-center px-6 lg:px-20 py-20">
+            <section className="relative flex items-center px-6 lg:px-20 py-12 md:py-16 lg:py-20">
                 {/* Background */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#2a0b42_0%,#100018_45%,#030005_100%)]"></div>
 
                 {/* Stars Texture */}
                 <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
 
-                <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-center w-full">
+                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
                     {/* LEFT */}
-                    <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
                         <span className="px-5 py-2 rounded-full border border-violet-500 text-sm tracking-[4px] uppercase bg-violet-500/10">
                             Navgrah • Ketu Dev
                         </span>
@@ -39,11 +39,11 @@ export default function KetuGrahPage() {
                             </span>
                         </h1>
 
-                        <p className="text-gray-300 text-lg leading-9 mt-8 max-w-2xl">
+                        <p className="text-gray-300 text-lg leading-9 mt-8 max-w-2xl mx-auto lg:mx-0">
                             Ketu is the shadow planet of absolute spiritual enlightenment, karmic detachment, and profound mysticism. A strong Ketu grants the ultimate 'Moksha', highly accurate psychic intuition, and incredible success in deep research and occult sciences.
                         </p>
 
-                        <div className="flex flex-wrap gap-4 sm:gap-5 mt-10">
+                        <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10">
                             <button className="w-full sm:w-auto justify-center bg-gradient-to-r cursor-pointer from-violet-600 to-fuchsia-600 px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:scale-105 transition">
                                 Explore Remedies
                                 <ArrowRight size={20} />
@@ -101,18 +101,18 @@ export default function KetuGrahPage() {
             </section>
 
             {/* EFFECTS SECTION */}
-            <section className="py-16 md:py-28 px-6 lg:px-20">
+            <section className="py-12 md:py-20 lg:py-28 px-6 lg:px-20">
                 <div className="text-center mb-10 sm:mb-16">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.3] sm:leading-tight">
                         बलवान केतु के प्रभाव
                     </h2>
 
-                    <p className="text-gray-400 mt-4 sm:mt-5 max-w-2xl mx-auto text-base sm:text-lg">
+                    <p className="text-gray-400 mt-4 sm:mt-5 max-w-2xl mx-auto lg:mx-0 mx-auto text-base sm:text-lg">
                         अनुकूल स्थिति में होने पर केतु जातक को सांसारिक मोह-माया से मुक्त कर, आत्मा को उसकी सर्वोच्च चेतना तक ले जाता है।
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                     {[
                         {
                             icon: Sparkles,
@@ -154,10 +154,10 @@ export default function KetuGrahPage() {
             </section>
 
             {/* REMEDIES SECTION */}
-            <section className="py-16 md:py-28 px-6 lg:px-20 bg-white/[0.03]">
+            <section className="py-12 md:py-20 lg:py-28 px-6 lg:px-20 bg-white/[0.03]">
                 <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                     {/* LEFT */}
-                    <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.3] sm:leading-tight">
                             Remedies For <br className="block sm:hidden" />
                             <span className="text-violet-400 py-2 inline-block"> Ketu Dosha</span>
@@ -212,7 +212,7 @@ export default function KetuGrahPage() {
             </section>
 
             {/* INFLUENCE SECTION */}
-            <section className="py-16 md:py-28 px-6 lg:px-20">
+            <section className="py-12 md:py-20 lg:py-28 px-6 lg:px-20">
                 <div className="text-center mb-10 sm:mb-16">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.3] sm:leading-tight">
                         केतु के मुख्य प्रभाव क्षेत्र
@@ -223,7 +223,7 @@ export default function KetuGrahPage() {
                     </p>
                 </div>
 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                     {[
                         "तंत्र एवं रहस्यमयी विद्या",
                         "विदेशी निर्यात व व्यापार",
@@ -247,14 +247,14 @@ export default function KetuGrahPage() {
             </section>
 
             {/* CTA */}
-            <section className="py-16 md:py-28 px-6 lg:px-20">
-                <div className="bg-gradient-to-r from-violet-600 to-fuchsia-700 rounded-[24px] sm:rounded-[40px] p-6 sm:p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10">
+            <section className="py-12 md:py-20 lg:py-28 px-6 lg:px-20">
+                <div className="bg-gradient-to-r from-violet-600 to-fuchsia-700 rounded-[24px] sm:rounded-[36px] md:rounded-[40px] p-6 sm:p-10 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left justify-between gap-8 sm:gap-10">
                     <div className="text-center lg:text-left">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.3] sm:leading-tight text-white">
                             Need Ketu Grah Guidance?
                         </h2>
 
-                        <p className="mt-4 sm:mt-6 text-base sm:text-lg text-white/80 max-w-2xl mx-auto lg:mx-0">
+                        <p className="mt-4 sm:mt-6 text-base sm:text-lg text-white/80 max-w-2xl mx-auto lg:mx-0 mx-auto lg:mx-0">
                             Talk with expert astrologers and get personalized remedies,
                             gemstone suggestions and Ketu dosha solutions.
                         </p>

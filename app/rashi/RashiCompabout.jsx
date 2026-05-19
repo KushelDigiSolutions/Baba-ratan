@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function RashiCompabout() {
   return (
-    <section className="py-20 px-4 md:px-10 lg:px-20">
-            <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <section className="py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img
                   src="https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?q=80&w=1400&auto=format&fit=crop"
