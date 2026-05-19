@@ -8,7 +8,7 @@ html,
 body {
   font-family: 'GT Walsheim Trial', sans-serif !important;
   scrollbar-width: none;
-  overflow-x: clip;
+  overflow-x: hidden !important;
 }
 
 :root {
