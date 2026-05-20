@@ -56,7 +56,7 @@ export default function VastuSixth() {
             className="bg-[radial-gradient(140.3%_104.29%_at_10%_20%,rgba(254,212,136,0.15)_0%,#F8F9FA_90%)] py-10 px-4 md:px-10 lg:px-20 overflow-hidden"
         >
             <div className="max-w-[1250px] mx-auto flex flex-col gap-6">
-                <div className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+                <div className={`transition-all duration-1000 text-center lg:text-left flex flex-col items-center lg:items-start ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                     <h4 className="text-[28px] md:text-[40px] font-[500] text-[#1E1E1E]">
                         Our Vastu{" "}
                         <span className="text-[#E57661]">Services</span>
@@ -72,7 +72,7 @@ export default function VastuSixth() {
                 <div className="grid lg:grid-cols-[57%_43%] justify-center items-center gap-2">
 
                     {/* BIG CARD */}
-                    <div className={`bg-[#FFFFFF] p-4 md:p-6 rounded-3xl transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+                    <div className={`bg-[#FFFFFF] p-4 md:p-6 rounded-3xl transition-all duration-1000 delay-300 flex flex-col items-center lg:items-start text-center lg:text-left ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                         <div className="rounded-2xl overflow-hidden">
                             <Image
                                 src={data.residential.img}
@@ -92,8 +92,8 @@ export default function VastuSixth() {
                     </div>
 
                     {/* SMALL CARD */}
-                    <div className={`bg-[#D9735B] h-[350px] text-white p-11 lg:p-8 xl:p-11 rounded-3xl flex flex-col justify-between transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-                        <div>
+                    <div className={`bg-[#D9735B] h-[350px] text-white p-11 lg:p-8 xl:p-11 rounded-3xl flex flex-col justify-between items-center lg:items-start text-center lg:text-left transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+                        <div className="flex flex-col items-center lg:items-start">
                             <Image
                                 src={data.commercial.icon}
                                 alt="icon"
@@ -107,7 +107,7 @@ export default function VastuSixth() {
                                 {data.commercial.desc}
                             </p>
                         </div>
-                        <button className="mt-6 cursor-pointer text-[19px] flex items-center">
+                        <button className="mt-6 cursor-pointer text-[19px] flex items-center justify-center lg:justify-start w-full lg:w-auto">
                             <span className="border-b border-white pb-[2px]">
                                 Explore Strategy
                             </span>
@@ -120,8 +120,8 @@ export default function VastuSixth() {
                 <div className="grid lg:grid-cols-[40%_60%] gap-2">
 
                     {/* LEFT CARD */}
-                    <div className={`bg-[#775A19] text-white p-12 rounded-3xl flex flex-col justify-between transition-all duration-1000 delay-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-                        <div>
+                    <div className={`bg-[#775A19] text-white p-12 rounded-3xl flex flex-col justify-between items-center lg:items-start text-center lg:text-left transition-all duration-1000 delay-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+                        <div className="flex flex-col items-center lg:items-start">
                             <Image
                                 src={data.plot.icon}
                                 alt="icon"
@@ -136,7 +136,7 @@ export default function VastuSixth() {
                             </p>
                         </div>
 
-                        <button className="mt-6 cursor-pointer text-[19px] flex items-center">
+                        <button className="mt-6 cursor-pointer text-[19px] flex items-center justify-center lg:justify-start w-full lg:w-auto">
                             <span className="border-b border-white pb-[2px]">
                                 Explore Strategy
                             </span>
@@ -156,14 +156,14 @@ export default function VastuSixth() {
                             />
                         </div>
 
-                        <div>
+                        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
                             <h5 className="text-2xl md:text-[30px] font-[500] text-[#303030]">
                                 {data.industrial.title}
                             </h5>
                             <p className="text-lg md:text-[20px] text-[#303030] mt-2">
                                 {data.industrial.desc}
                             </p>
-                            <button className="mt-3 cursor-pointer text-[16px] text-[#D9735B] flex items-center">
+                            <button className="mt-3 cursor-pointer text-[16px] text-[#D9735B] flex items-center justify-center lg:justify-start w-full lg:w-auto">
                                 <span className="border-b border-white pb-[2px]">
                                     Learn More
                                 </span>

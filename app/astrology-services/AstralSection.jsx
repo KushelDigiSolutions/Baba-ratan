@@ -31,19 +31,19 @@ export default function AstralSection() {
     return (
         <section
             ref={sectionRef}
-            className="bg-[#251F1E] text-white py-12 md:py-16 lg:py-20 md:py-24 px-6 md:px-12 lg:px-20 overflow-hidden"
+            className="bg-[#251F1E] text-white py-12 lg:py-24 px-6 lg:px-20 overflow-hidden"
         >
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                 {/* LEFT CONTENT */}
                 <div className={`transition-all duration-1000 ease-out text-center lg:text-left flex flex-col items-center lg:items-start ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>
-                    <h2 className="text-4xl md:text-5xl font-bold max-w-[600px] leading-tight mb-12 mx-auto lg:mx-0">
+                    <h2 className="text-4xl lg:text-5xl font-bold max-w-[600px] leading-tight mb-8 lg:mb-12 mx-auto lg:mx-0">
                         Vedic wisdom, applied to your life.
                     </h2>
 
                     {/* ITEM 1 */}
-                    <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 mb-12 group w-full">
-                        <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#E57661] transition-transform duration-300 group-hover:scale-110 mx-auto sm:mx-0">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-6 mb-12 group w-full">
+                        <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#E57661] transition-transform duration-300 group-hover:scale-110 mx-auto lg:mx-0">
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776926632/Self-Awareness_hmfx7f.png"
                                 alt="Self Awareness Icon"
@@ -64,8 +64,8 @@ export default function AstralSection() {
                     </div>
 
                     {/* ITEM 2 */}
-                    <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 group w-full">
-                        <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#E57661] transition-transform duration-300 group-hover:scale-110 mx-auto sm:mx-0">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-6 group w-full">
+                        <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#E57661] transition-transform duration-300 group-hover:scale-110 mx-auto lg:mx-0">
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776926631/Perfect_Timing_faxjks.png"
                                 alt="Perfect Timing Icon"

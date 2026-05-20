@@ -14,12 +14,12 @@ export default function VastuEigth() {
             <div className="w-full max-w-7xl bg-[#e9e9e9] rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
 
 
-                <div className="p-6 sm:p-10 md:py-14 md:px-20">
-                    <h5 className="text-2xl sm:text-3xl md:text-[40px] font-semibold text-[#222] mb-8">
+                <div className="p-6 sm:p-10 md:py-14 md:px-20 flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <h5 className="text-2xl sm:text-3xl md:text-[40px] font-semibold text-[#222] mb-8 w-full">
                         Book Your Vastu Consultation
                     </h5>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 w-full text-left">
                         <div>
                             <label className="text-xs font-[600] tracking-widest text-[#78716C] uppercase mb-2 block">
                                 First Name
@@ -43,7 +43,7 @@ export default function VastuEigth() {
                         </div>
                     </div>
 
-                    <div className="mb-6 relative">
+                    <div className="mb-6 relative w-full text-left">
                         <label className="text-xs font-[600] tracking-widest text-[#78716C] uppercase mb-2 block">
                             Property Type
                         </label>
@@ -77,7 +77,7 @@ export default function VastuEigth() {
                         )}
                     </div>
 
-                    <div className="mb-8">
+                    <div className="mb-8 w-full text-left">
                         <label className="text-xs font-[600] tracking-widest text-[#78716C] uppercase mb-2 block">
                             Message
                         </label>

@@ -30,10 +30,10 @@ export default function AboutThird() {
         {data.map((item, index) => (
           <div
             key={index}
-            className={`${item.bg} ${item.text} rounded-2xl p-6 md:p-14 flex flex-col justify-between `}
+            className={`${item.bg} ${item.text} rounded-2xl p-6 md:p-14 flex flex-col justify-between items-center text-center md:items-start md:text-left`}
           >
             {/* Top Content */}
-            <div>
+            <div className="flex flex-col items-center md:items-start">
               {/* Icon */}
               <div className="mb-10">
                 <Image
@@ -59,7 +59,7 @@ export default function AboutThird() {
             <div className="mt-10">
               <a
                 href={item.btnText === "Call Now" ? "tel:+917042600873" : "#"}
-                className={`flex items-center cursor-pointer gap-2 text-sm md:text-base font-medium ${item.linkColor} group`}
+                className={`flex items-center justify-center md:justify-start cursor-pointer gap-2 text-sm md:text-base font-medium ${item.linkColor} group`}
               >
                 {item.btnText}
                 <span className="transition-transform duration-300 group-hover:translate-x-2">

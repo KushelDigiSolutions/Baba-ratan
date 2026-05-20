@@ -56,7 +56,7 @@ export default function HomeTenth() {
               className="bg-white rounded-xl border border-[#E57661] p-9 flex flex-col gap-4 h-full  transition"
             >
 
-              <div className="w-16 h-16 relative">
+              <div className="w-16 h-16 relative mx-auto md:mx-0">
                 <Image
                   src={card.icon}
                   alt={card.title}
@@ -66,11 +66,11 @@ export default function HomeTenth() {
               </div>
 
 
-              <h6 className=" text-[22px] md:text-[32px] font-medium text-[#303030]">
+              <h6 className=" text-[22px] md:text-[32px] font-medium text-[#303030] text-center md:text-left">
                 {card.title}
               </h6>
 
-              <p className="text-[#5A5A5A] text-[17px] md:text-[20px] leading-relaxed">
+              <p className="text-[#5A5A5A] text-[17px] md:text-[20px] leading-relaxed text-center md:text-left">
                 {card.desc}
               </p>
             </div>

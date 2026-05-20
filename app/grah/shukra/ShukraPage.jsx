@@ -1,3 +1,4 @@
+﻿// app/grah/shukra/page.jsx
 "use client";
 
 import React from "react";
@@ -6,14 +7,13 @@ import {
   Sparkles,
   Gem,
   ArrowRight,
-  Stars,
   Music2,
-  Flower2,
   Crown,
   MoonStar,
   HeartHandshake,
-  Diamond,
+  Star,
 } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function ShukraGrahPage() {
   return (
@@ -44,9 +44,7 @@ export default function ShukraGrahPage() {
               </div>
 
               <h1 className="mt-10 text-5xl sm:text-7xl lg:text-[120px] font-black leading-[1.1]">
-                <span className="block text-white">
-                  Shukra
-                </span>
+                <span className="block text-white">Shukra</span>
 
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-400 to-purple-400 py-2">
                   Grah
@@ -54,7 +52,9 @@ export default function ShukraGrahPage() {
               </h1>
 
               <p className="mt-10 text-lg sm:text-xl leading-9 text-white/70 max-w-2xl mx-auto lg:mx-0">
-                In Vedic Astrology, Lord Shukra (Venus) governs profound material wealth, exquisite beauty, magnetic romance, and artistic brilliance. A benefically placed Shukra blesses the native with an incredibly luxurious lifestyle, domestic bliss, and immense popularity.
+                In Vedic Astrology, Lord Shukra (Venus) governs profound
+                material wealth, beauty, romance, luxury, and artistic
+                brilliance.
               </p>
 
               {/* BUTTONS */}
@@ -75,8 +75,8 @@ export default function ShukraGrahPage() {
                 </button>
               </div>
 
-              {/* FLOATING INFO */}
-              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-16">
+              {/* INFO CARDS */}
+              <div className="grid grid-cols-3 gap-3 sm:gap-5 mt-16">
                 {[
                   {
                     title: "Day",
@@ -93,7 +93,7 @@ export default function ShukraGrahPage() {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-white/5 border border-white/10 backdrop-blur-2xl rounded-3xl p-2 sm:p-5 hover:-translate-y-2 duration-300 text-center"
+                    className="bg-white/5 border border-white/10 backdrop-blur-2xl rounded-3xl p-4 hover:-translate-y-2 duration-300 text-center"
                   >
                     <p className="text-pink-200/60 text-xs sm:text-sm">
                       {item.title}
@@ -109,24 +109,25 @@ export default function ShukraGrahPage() {
 
             {/* RIGHT */}
             <div className="relative flex justify-center mt-10 lg:mt-0">
-              {/* OUTER RING */}
+              {/* RINGS */}
               <div className="absolute w-[320px] sm:w-[420px] lg:w-[500px] h-[320px] sm:h-[420px] lg:h-[500px] rounded-full border border-pink-500/10 animate-spin [animation-duration:25s]"></div>
 
               <div className="absolute w-[260px] sm:w-[320px] lg:w-[380px] h-[260px] sm:h-[320px] lg:h-[380px] rounded-full border border-fuchsia-500/10 animate-spin [animation-duration:18s]"></div>
 
               {/* PLANET */}
-              <div className="relative w-[200px] sm:w-[300px] lg:w-[430px] h-[200px] sm:h-[300px] lg:h-[430px]">
-                {/* GLOW */}
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="relative w-[200px] sm:w-[300px] lg:w-[430px] h-[200px] sm:h-[300px] lg:h-[430px]"
+              >
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-500 via-fuchsia-500 to-purple-600 rounded-full blur-[70px] opacity-70 animate-pulse"></div>
 
-                {/* PLANET */}
                 <div className="relative z-10 w-full h-full rounded-full bg-gradient-to-br from-pink-300 via-pink-500 to-fuchsia-700 shadow-[0_0_120px_rgba(236,72,153,0.45)] overflow-hidden flex items-center justify-center">
-                  {/* PLANET TEXTURE */}
-                  <div className="absolute top-6 sm:top-10 left-6 sm:left-10 w-16 sm:w-28 h-16 sm:h-28 rounded-full bg-white/20 blur-3xl"></div>
+                  <div className="absolute top-10 left-10 w-28 h-28 rounded-full bg-white/20 blur-3xl"></div>
 
-                  <div className="absolute bottom-6 sm:bottom-10 right-6 sm:right-10 w-20 sm:w-32 h-20 sm:h-32 rounded-full bg-black/20 blur-3xl"></div>
+                  <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-black/20 blur-3xl"></div>
 
-                  {/* CENTER ICON */}
                   <div className="relative">
                     <div className="absolute inset-0 bg-white blur-3xl opacity-30"></div>
 
@@ -134,7 +135,7 @@ export default function ShukraGrahPage() {
                   </div>
                 </div>
 
-                {/* FLOATING MINI CARDS */}
+                {/* FLOATING CARDS */}
                 <div className="hidden lg:block absolute top-10 -left-20 bg-white/10 border border-white/10 backdrop-blur-xl rounded-3xl p-5 animate-bounce [animation-duration:4s]">
                   <div className="flex items-center gap-4">
                     <div className="w-14 h-14 rounded-2xl bg-pink-500/20 text-pink-300 flex items-center justify-center">
@@ -142,13 +143,9 @@ export default function ShukraGrahPage() {
                     </div>
 
                     <div>
-                      <p className="text-white/50 text-sm">
-                        Represents
-                      </p>
+                      <p className="text-white/50 text-sm">Represents</p>
 
-                      <h3 className="font-bold text-xl">
-                        Love
-                      </h3>
+                      <h3 className="font-bold text-xl">Love</h3>
                     </div>
                   </div>
                 </div>
@@ -160,176 +157,265 @@ export default function ShukraGrahPage() {
                     </div>
 
                     <div>
-                      <p className="text-white/50 text-sm">
-                        Controls
-                      </p>
+                      <p className="text-white/50 text-sm">Controls</p>
 
-                      <h3 className="font-bold text-xl">
-                        Luxury
-                      </h3>
+                      <h3 className="font-bold text-xl">Luxury</h3>
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ================= BENTO SECTION ================= */}
-      <section className="py-12 md:py-20 lg:py-28 relative">
+      {/* ================= ABOUT ================= */}
+      <section className="py-12 lg:py-20 bg-[#07040b]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* BIG CARD */}
-            <div className="lg:col-span-2 bg-gradient-to-br from-[#1b0d1f] to-[#2d102c] border border-pink-500/10 rounded-[24px] sm:rounded-[45px] p-6 sm:p-10 relative overflow-hidden group hover:-translate-y-3 duration-500">
-              <div className="absolute top-0 right-0 w-80 h-80 bg-pink-500/10 rounded-full blur-[100px]"></div>
-
-              <div className="relative z-10">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white flex items-center justify-center shadow-2xl">
-                  <Crown className="w-8 h-8 sm:w-10 sm:h-10" />
-                </div>
-
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mt-6 sm:mt-10 leading-[1.3] sm:leading-[1.4]">
-                  सौंदर्य और आकर्षण
-                </h2>
-
-                <p className="text-white/70 text-base sm:text-lg leading-8 sm:leading-9 mt-6 sm:mt-8 max-w-3xl">
-                  बलवान शुक्र जातक के चारों ओर एक चुंबकीय आकर्षण पैदा करता है, जिससे जीवन में असीमित सुख-सुविधाएं, ऐश्वर्य, और प्रगाढ़ प्रेम संबंधों की प्राप्ति होती है।
-                </p>
-
-                <div className="flex flex-wrap gap-3 sm:gap-4 mt-8 sm:mt-10">
-                  {[
-                    "प्रेम",
-                    "विलासिता",
-                    "रचनात्मकता",
-                    "सौंदर्य",
-                  ].map((tag, i) => (
-                    <div
-                      key={i}
-                      className="px-4 sm:px-5 py-2 sm:py-3 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 text-pink-200 text-sm sm:text-base"
-                    >
-                      {tag}
-                    </div>
-                  ))}
-                </div>
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1200&auto=format&fit=crop"
+                alt="shukra"
+                className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-white/10"
+              />
             </div>
 
-            {/* SIDE CARDS */}
-            <div className="space-y-6 sm:space-y-8">
-              {[
-                {
-                  icon: <Diamond className="w-7 h-7 sm:w-8 sm:h-8" />,
-                  title: "भौतिक ऐश्वर्य",
-                  desc: "आलीशान भवन, लग्जरी वाहन और सर्वोच्च आर्थिक संपन्नता के द्वार खोलता है।",
-                },
-                {
-                  icon: <Music2 className="w-7 h-7 sm:w-8 sm:h-8" />,
-                  title: "कलात्मक निपुणता",
-                  desc: "मीडिया, सिनेमा, फैशन डिज़ाइन और गायन के क्षेत्र में असाधारण प्रसिद्धि दिलाता है।",
-                },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="bg-white/5 border border-white/10 backdrop-blur-2xl rounded-[24px] sm:rounded-[35px] p-6 sm:p-8 hover:bg-white/10 hover:-translate-y-2 duration-300"
-                >
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white flex items-center justify-center shadow-xl">
-                    {item.icon}
+            <div>
+              <span className="text-pink-400 font-extrabold uppercase tracking-[4px]">
+                About Lord Shukra
+              </span>
+
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-5 text-white leading-tight">
+                The Cosmic Sovereign of Beauty and Abundance
+              </h2>
+
+              <p className="text-gray-300 leading-8 text-lg mt-8">
+                Lord Shukra blesses natives with wealth, romance, attraction,
+                artistic excellence, and luxurious living.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-6 mt-10">
+                {[
+                  "Magnetic Charisma",
+                  "Luxury & Wealth",
+                  "Marital Bliss",
+                  "Artistic Excellence",
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-white/5 rounded-2xl p-6 border border-white/10"
+                  >
+                    <div className="w-14 h-14 rounded-2xl bg-pink-500/20 text-pink-300 flex items-center justify-center">
+                      <Star className="w-7 h-7" />
+                    </div>
+
+                    <h3 className="font-semibold text-lg text-pink-200 mt-5">
+                      {item}
+                    </h3>
                   </div>
-
-                  <h3 className="text-2xl sm:text-3xl font-black mt-6 sm:mt-8">
-                    {item.title}
-                  </h3>
-
-                  <p className="text-white/60 text-base sm:text-lg leading-7 sm:leading-8 mt-4 sm:mt-5">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ================= MANTRA SECTION ================= */}
-      <section className="py-12 md:py-20 lg:py-28 relative overflow-hidden">
-        {/* BG */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#22091f] via-[#3a1033] to-[#180816]"></div>
+      {/* ================= BENEFITS ================= */}
+      <section className="py-12 md:py-20 lg:py-28 bg-gradient-to-b from-[#07040b] to-[#1a081c]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <span className="text-pink-400 uppercase tracking-[4px] font-extrabold">
+              सकारात्मक परिणाम
+            </span>
 
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:28px_28px]"></div>
-
-        <div className="max-w-5xl mx-auto px-6 relative z-10">
-          <div className="text-center">
-            <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-pink-500/10 border border-pink-500/20 backdrop-blur-xl">
-              <Stars className="w-5 h-5 text-pink-300" />
-
-              <span className="uppercase tracking-[4px] text-sm text-pink-200">
-                Shukra Remedies
-              </span>
-            </div>
-
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black mt-6 sm:mt-10 leading-[1.3] sm:leading-[1.4]">
-              Sacred Beej Mantra
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black mt-6 leading-[1.3] text-white">
+              मजबूत शुक्र के चमत्कारी लाभ
             </h2>
 
-            {/* MANTRA BOX */}
-            <div className="mt-10 sm:mt-14 relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-fuchsia-600 blur-[80px] opacity-40"></div>
+            <p className="text-gray-300 text-lg leading-9 mt-6 font-medium">
+              शुक्र ग्रह व्यक्ति को प्रेम, सौंदर्य, धन, विलासिता और कला का
+              आशीर्वाद प्रदान करता है।
+            </p>
+          </div>
 
-              <div className="relative bg-white/5 border border-white/10 backdrop-blur-2xl rounded-[24px] sm:rounded-[45px] p-6 sm:p-14">
-                <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-pink-500 to-fuchsia-600 flex items-center justify-center mx-auto shadow-[0_20px_70px_rgba(236,72,153,0.35)]">
-                  <Flower2 className="w-10 h-10 sm:w-14 sm:h-14 text-white" />
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
+            {[
+              {
+                icon: <Crown className="w-8 h-8" />,
+                title: "भौतिक सुख-समृद्धि",
+                desc: "धन, वैभव, वाहन और विलासिता का आशीर्वाद।",
+              },
+              {
+                icon: <Sparkles className="w-8 h-8" />,
+                title: "आकर्षण व सौंदर्य",
+                desc: "व्यक्तित्व में आकर्षण और लोकप्रियता बढ़ती है।",
+              },
+              {
+                icon: <Heart className="w-8 h-8" />,
+                title: "दाम्पत्य मधुरता",
+                desc: "वैवाहिक जीवन में प्रेम और सामंजस्य आता है।",
+              },
+              {
+                icon: <Music2 className="w-8 h-8" />,
+                title: "कलात्मक प्रतिभा",
+                desc: "संगीत, कला और डिजाइन में सफलता मिलती है।",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white/5 backdrop-blur-md rounded-[30px] p-8 border border-white/10"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white flex items-center justify-center">
+                  {item.icon}
                 </div>
 
-                <p className="text-pink-100 text-xl sm:text-3xl lg:text-5xl font-bold leading-relaxed mt-6 sm:mt-10">
-                  ॐ द्रां द्रीं द्रौं सः शुक्राय नमः
-                </p>
+                <h3 className="text-2xl font-bold text-white mt-6">
+                  {item.title}
+                </h3>
 
-                <p className="text-white/70 text-base sm:text-lg leading-8 sm:leading-9 mt-6 sm:mt-8 max-w-3xl mx-auto">
-                  Chanting this powerful Beej Mantra with a Sphatik (Crystal) rosary on Fridays completely eradicates poverty and aligns your aura with divine prosperity.
+                <p className="text-pink-200/60 leading-7 mt-4">
+                  {item.desc}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                <button className="w-full sm:w-auto mt-8 sm:mt-10 bg-gradient-to-r from-pink-500 to-fuchsia-600 hover:scale-105 duration-300 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl flex items-center justify-center mx-auto">
-                  Start Consultation
-                </button>
+      {/* ================= WEAK SHUKRA ================= */}
+      <section className="py-12 lg:py-20 bg-[#07040b]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-pink-400 uppercase tracking-[4px] font-extrabold">
+                Signs of Weak Venus
+              </span>
+
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-5 leading-tight">
+                Negative Impacts of a Weak Shukra
+              </h2>
+
+              <div className="space-y-5 mt-10">
+                {[
+                  "Relationship conflicts",
+                  "Financial instability",
+                  "Skin and hormonal issues",
+                  "Creative block",
+                  "Loss of confidence",
+                  "Overindulgence and addictions",
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex gap-5 bg-white/5 border border-white/10 rounded-2xl p-5"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-pink-500 text-white flex items-center justify-center font-bold shrink-0">
+                      {i + 1}
+                    </div>
+
+                    <p className="text-lg font-bold text-pink-100">{item}</p>
+                  </div>
+                ))}
               </div>
             </div>
+
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1200&auto=format&fit=crop"
+                alt="weak shukra"
+                className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-pink-500/30"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= REMEDIES ================= */}
+      <section className="py-12 lg:py-20 bg-gradient-to-br from-[#07040b] via-[#1a081c] to-[#07040b] border-t border-b border-pink-500/30">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center">
+            <span className="text-pink-400 uppercase tracking-[4px] font-extrabold">
+              ज्योतिषीय उपाय
+            </span>
+
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-5 leading-[1.3]">
+              शुक्र ग्रह को बलवान करने के उपाय
+            </h2>
+
+            <p className="text-pink-200/70 leading-8 max-w-3xl mx-auto text-lg mt-6 font-medium">
+              इन उपायों से शुक्र ग्रह के शुभ प्रभाव बढ़ते हैं।
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
+            {[
+              "सफेद वस्तुओं का दान",
+              "हीरा या ओपल धारण",
+              "इत्र का प्रयोग",
+              "श्री सूक्त का पाठ",
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white/5 border border-white/10 rounded-[30px] p-8"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-pink-500 text-white flex items-center justify-center">
+                  <Sparkles className="w-8 h-8" />
+                </div>
+
+                <h3 className="text-2xl font-bold mt-6 text-white">
+                  {item}
+                </h3>
+              </div>
+            ))}
+          </div>
+
+          {/* MANTRA */}
+          <div className="bg-white/5 rounded-[35px] p-8 mt-12 text-center border border-white/10">
+            <h3 className="text-3xl font-extrabold text-white">
+              शुक्र बीज मंत्र
+            </h3>
+
+            <p className="text-pink-300 text-2xl sm:text-3xl font-extrabold mt-6 tracking-wide">
+              ॐ द्रां द्रीं द्रौं सः शुक्राय नमः
+            </p>
           </div>
         </div>
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-12 md:py-20 lg:py-28 bg-[#07040b]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="relative overflow-hidden rounded-[24px] sm:rounded-[50px] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-12 lg:p-16">
-            {/* Glow */}
-            <div className="absolute top-0 left-0 w-40 sm:w-72 h-40 sm:h-72 bg-pink-500/10 rounded-full blur-[100px]"></div>
+      <section className="py-12 lg:py-20 bg-[#07040b]">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="bg-white/5 backdrop-blur-md rounded-[40px] p-10 text-center border border-white/10">
+            <div className="w-24 h-24 rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-600 text-white flex items-center justify-center mx-auto">
+              <HeartHandshake className="w-12 h-12" />
+            </div>
 
-            <div className="relative z-10 text-center">
-              <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white flex items-center justify-center mx-auto shadow-[0_20px_60px_rgba(236,72,153,0.35)]">
-                <HeartHandshake className="w-10 h-10 sm:w-14 sm:h-14" />
-              </div>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white mt-8 leading-tight">
+              Personalized Astrological Guidance
+            </h2>
 
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black mt-6 sm:mt-10 leading-[1.3] sm:leading-[1.4]">
-                विशेषज्ञ
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-fuchsia-400 py-2">
-                  ज्योतिषीय परामर्श
-                </span>
-              </h2>
+            <p className="text-pink-100/70 leading-8 text-lg mt-6 max-w-3xl mx-auto">
+              Consult our experienced astrologers to understand the effects of
+              Venus in your Kundli.
+            </p>
 
-              <p className="text-white/70 text-base sm:text-lg leading-8 sm:leading-9 mt-6 sm:mt-8 max-w-3xl mx-auto">
-                अपनी जन्म कुंडली में शुक्र ग्रह की सटीक स्थिति को समझें। सच्चे प्रेम, अटूट सुख-समृद्धि और दांपत्य जीवन की बाधाओं को दूर करने के लिए आज ही हमारे अनुभवी ज्योतिषियों से मार्गदर्शन प्राप्त करें।
-              </p>
+            <div className="flex flex-wrap justify-center gap-5 mt-10">
+              <a
+                href="tel:+917042600873"
+                className="bg-pink-500 hover:bg-pink-400 text-white px-8 py-4 rounded-2xl font-semibold duration-300"
+              >
+                Book Consultation
+              </a>
 
-              <div className="flex flex-wrap justify-center gap-4 sm:gap-5 mt-8 sm:mt-12">
-                <button className="w-full sm:w-auto bg-gradient-to-r from-pink-500 to-fuchsia-600 hover:scale-105 duration-300 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl flex items-center justify-center">
-                  परामर्श बुक करें
-                </button>
-
-                <button className="w-full sm:w-auto border border-white/10 bg-white/5 hover:bg-white hover:text-[#120611] duration-300 text-white px-8 py-4 rounded-2xl font-semibold flex items-center justify-center">
-                  अधिक जानें
-                </button>
-              </div>
+              <a
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-pink-500/50 text-pink-300 hover:bg-white hover:text-[#07040b] px-8 py-4 rounded-2xl font-semibold duration-300 flex items-center gap-2"
+              >
+                Book Digital Call
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>

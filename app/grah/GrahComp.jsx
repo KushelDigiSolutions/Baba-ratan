@@ -126,7 +126,7 @@ const grahData = [
     name: "Rahu Grah (North Node)",
     link: "/grah/rahu",
     icon: <Orbit className="w-8 h-8" />,
-    color: "from-purple-500 to-indigo-500",
+    color: "from-gray-500 to-zinc-700",
     about:
       "Rahu fuels insatiable ambition, sudden material gains, and massive technological or foreign success.",
     effects: [
@@ -141,7 +141,7 @@ const grahData = [
     name: "Ketu Grah (South Node)",
     link: "/grah/ketu",
     icon: <Gem className="w-8 h-8" />,
-    color: "from-cyan-400 to-sky-500",
+    color: "from-zinc-400 to-stone-500",
     about:
       "Ketu represents deep spiritual liberation, mystical intuition, and detachment from worldly illusions.",
     effects: [
@@ -167,7 +167,7 @@ export default function GrahPage() {
 
         <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* LEFT */}
-          <div className="text-white">
+          <div className="text-white flex flex-col items-center text-center lg:items-start lg:text-left">
             <span className="px-5 py-2 rounded-full bg-white/10 border border-white/10 inline-block text-sm mb-6 font-semibold">
               Vedic Astrological Guidance
             </span>
@@ -247,7 +247,7 @@ export default function GrahPage() {
               />
             </div>
 
-            <div>
+            <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
               <span className="text-[#c96e67] font-semibold uppercase tracking-widest">
                 ग्रहों का रहस्य
               </span>
@@ -301,7 +301,7 @@ export default function GrahPage() {
             {grahData.map((grah, index) => (
               <Link href={grah.link}
                 key={index}
-                className="group bg-white rounded-[30px] p-8 shadow-sm hover:shadow-xl duration-300 border border-[#f5d5cf] flex flex-col h-full hover:-translate-y-2 cursor-pointer"
+                className="group bg-white rounded-[30px] p-8 shadow-sm hover:shadow-xl duration-300 border border-[#f5d5cf] flex flex-col h-full hover:-translate-y-2 cursor-pointer items-center text-center md:items-start md:text-left"
               >
                 <div
                   className={`w-20 h-20 rounded-3xl bg-gradient-to-r ${grah.color} text-white flex items-center justify-center shadow-md shrink-0`}
@@ -339,7 +339,7 @@ export default function GrahPage() {
                     <p className="mt-2 font-medium">{grah.mantra}</p>
                   </div>
 
-                  <button className="mt-6 flex items-center gap-2 text-[#c96e67] font-semibold group-hover:gap-4 duration-300 cursor-pointer">
+                  <button className="mt-6 flex items-center justify-center md:justify-start gap-2 text-[#c96e67] font-semibold group-hover:gap-4 duration-300 cursor-pointer">
                     Learn More <ArrowRight className="w-5 h-5" />
                   </button>
                 </div>
@@ -382,7 +382,7 @@ export default function GrahPage() {
                       {i + 1}
                     </div>
 
-                    <p className="text-base font-medium">{item}</p>
+                    <p className="text-base font-medium text-left">{item}</p>
                   </div>
                 ))}
               </div>

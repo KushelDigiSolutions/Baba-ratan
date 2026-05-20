@@ -135,7 +135,7 @@ const RashiDetailsPage = () => {
           </div>
 
           {/* CONTENT */}
-          <div className="mt-6 lg:mt-0">
+          <div className="mt-6 lg:mt-0 flex flex-col items-center text-center lg:items-start lg:text-left">
             <span className="text-[#e57661] font-bold uppercase tracking-wider text-sm sm:text-base">
               वैदिक ज्योतिष में राशि का महत्व और प्रभाव
             </span>
@@ -153,7 +153,7 @@ const RashiDetailsPage = () => {
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6 mt-8">
-              <div className="bg-[#fffcfb] border border-[#f1d6cf] rounded-3xl p-6 shadow-sm">
+              <div className="bg-[#fffcfb] border border-[#f1d6cf] rounded-3xl p-6 shadow-sm flex flex-col items-center text-center sm:items-start sm:text-left">
                 <FiSun className="text-4xl text-[#e57661]" />
                 <h3 className="text-xl font-bold text-[#5b2d2a] mt-4">
                   ग्रहों का दिव्य प्रभाव
@@ -163,7 +163,7 @@ const RashiDetailsPage = () => {
                 </p>
               </div>
 
-              <div className="bg-[#fffcfb] border border-[#f1d6cf] rounded-3xl p-6 shadow-sm">
+              <div className="bg-[#fffcfb] border border-[#f1d6cf] rounded-3xl p-6 shadow-sm flex flex-col items-center text-center sm:items-start sm:text-left">
                 <FiMoon className="text-4xl text-[#e57661]" />
                 <h3 className="text-xl font-bold text-[#5b2d2a] mt-4">
                   मन और भावनात्मक आधार
@@ -198,7 +198,7 @@ const RashiDetailsPage = () => {
           {horoscopeCards.map((item, index) => (
             <div
               key={index}
-              className="bg-[#fffcfb] border border-[#f1d6cf] rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-sm hover:shadow-2xl transition hover:-translate-y-2"
+              className="bg-[#fffcfb] border border-[#f1d6cf] rounded-[24px] sm:rounded-[35px] p-6 sm:p-9 shadow-sm hover:shadow-2xl transition hover:-translate-y-2 flex flex-col items-center text-center md:items-start md:text-left"
             >
               <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#fff1ec] flex items-center justify-center text-[#e57661] text-3xl sm:text-4xl shadow-md">
                 {item.icon}
@@ -212,7 +212,7 @@ const RashiDetailsPage = () => {
                 {item.desc}
               </p>
 
-              <button className="mt-6 inline-flex items-center gap-2 text-[#e57661] font-bold hover:gap-3 transition cursor-pointer">
+              <button className="mt-6 inline-flex items-center justify-center md:justify-start gap-2 text-[#e57661] font-bold hover:gap-3 transition cursor-pointer">
                 विस्तार से पढ़ें
                 <FiArrowRight />
               </button>
@@ -258,7 +258,7 @@ const RashiDetailsPage = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-white border border-[#f1d6cf] rounded-[24px] sm:rounded-[30px] p-6 sm:p-8 shadow-sm"
+              className="bg-white border border-[#f1d6cf] rounded-[24px] sm:rounded-[30px] p-6 sm:p-8 shadow-sm text-center md:text-left flex flex-col items-center md:items-start"
             >
               <h3 className="text-xl sm:text-2xl font-bold text-[#5b2d2a]">
                 {item.q}

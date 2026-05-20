@@ -22,8 +22,8 @@ export default function HomeEleventh() {
             <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-[60%_40%] gap-10 items-center">
 
                 {/* LEFT TEXT */}
-                <div className="text-white space-y-6 xl:px-0 px-10">
-                    <h6 className="text-3xl sm:text-4xl md:text-5xl max-w-[600px]  font-[500] leading-tight">
+                <div className="text-white space-y-6 xl:px-0 px-4 sm:px-10 flex flex-col items-center text-center lg:items-start lg:text-left">
+                    <h6 className="text-3xl sm:text-4xl md:text-5xl max-w-[600px] font-[500] leading-tight">
                         Discover What the Stars & Your Hands Reveal About Your Future
 
                     </h6>

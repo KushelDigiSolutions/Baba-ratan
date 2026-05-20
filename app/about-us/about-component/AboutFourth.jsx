@@ -9,7 +9,7 @@ export default function AboutFourth() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-[70%_30%] gap-6">
 
         {/* LEFT CARD */}
-        <div className="bg-[#E57661] text-white rounded-2xl p-6 md:p-15 flex flex-col justify-between min-h-[300px]">
+        <div className="bg-[#E57661] text-white rounded-2xl p-6 md:p-15 flex flex-col justify-between min-h-[300px] items-center text-center md:items-start md:text-left">
 
           <div className="mb-6">
             <Image
@@ -20,7 +20,7 @@ export default function AboutFourth() {
             />
           </div>
 
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="text-2xl md:text-3xl font-[500] mb-4">
               Janam Kundli & Palm Reading
 
@@ -33,7 +33,7 @@ export default function AboutFourth() {
           </div>
 
           <div className="mt-8">
-            <a href="https://wa.me/917042600873" target="_blank" rel="noopener noreferrer" className="flex group items-center cursor-pointer gap-2 text-[16px] font-semibold tracking-wide">
+            <a href="https://wa.me/917042600873" target="_blank" rel="noopener noreferrer" className="flex group items-center justify-center md:justify-start cursor-pointer gap-2 text-[16px] font-semibold tracking-wide">
               WhatsApp Us   <span className="transition-transform duration-300 group-hover:translate-x-2">
                 →
               </span>

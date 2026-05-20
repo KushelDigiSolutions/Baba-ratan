@@ -110,7 +110,7 @@ const AriesRashiPage = () => {
           </div>
 
           {/* Content */}
-          <div className="mt-6 lg:mt-0">
+          <div className="mt-6 lg:mt-0 flex flex-col items-center text-center lg:items-start lg:text-left">
             <span className="text-[#d96d55] font-semibold uppercase tracking-wider text-sm sm:text-base">
               मेष राशि के बारे में
             </span>
@@ -128,7 +128,7 @@ const AriesRashiPage = () => {
             </p>
 
             {/* Traits */}
-            <div className="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 mt-6 sm:mt-8">
               {traits.map((item, index) => (
                 <div
                   key={index}
@@ -158,7 +158,7 @@ const AriesRashiPage = () => {
           {luckyThings.map((item, index) => (
             <div
               key={index}
-              className="bg-[#fff7f4] border border-[#f3d8d0] rounded-2xl sm:rounded-3xl p-5 sm:p-7 hover:shadow-xl transition"
+              className="bg-[#fff7f4] border border-[#f3d8d0] rounded-2xl sm:rounded-3xl p-5 sm:p-7 hover:shadow-xl transition flex flex-col items-center text-center sm:items-start sm:text-left"
             >
               <h3 className="text-[#d96d55] text-sm sm:text-lg font-semibold">
                 {item.label}
@@ -186,7 +186,7 @@ const AriesRashiPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Love */}
-          <div className="bg-white rounded-[24px] sm:rounded-[30px] p-6 sm:p-8 shadow-md hover:shadow-2xl transition">
+          <div className="bg-white rounded-[24px] sm:rounded-[30px] p-6 sm:p-8 shadow-md hover:shadow-2xl transition flex flex-col items-center text-center lg:items-start lg:text-left">
             <FiHeart className="text-[#d96d55] text-4xl sm:text-5xl mb-4 sm:mb-6" />
 
             <h3 className="text-xl sm:text-2xl font-bold text-[#4e2723]">
@@ -199,7 +199,7 @@ const AriesRashiPage = () => {
           </div>
 
           {/* Career */}
-          <div className="bg-white rounded-[24px] sm:rounded-[30px] p-6 sm:p-8 shadow-md hover:shadow-2xl transition">
+          <div className="bg-white rounded-[24px] sm:rounded-[30px] p-6 sm:p-8 shadow-md hover:shadow-2xl transition flex flex-col items-center text-center lg:items-start lg:text-left">
             <FiBriefcase className="text-[#d96d55] text-4xl sm:text-5xl mb-4 sm:mb-6" />
 
             <h3 className="text-xl sm:text-2xl font-bold text-[#4e2723]">
@@ -212,7 +212,7 @@ const AriesRashiPage = () => {
           </div>
 
           {/* Health */}
-          <div className="bg-white rounded-[24px] sm:rounded-[30px] p-6 sm:p-8 shadow-md hover:shadow-2xl transition">
+          <div className="bg-white rounded-[24px] sm:rounded-[30px] p-6 sm:p-8 shadow-md hover:shadow-2xl transition flex flex-col items-center text-center lg:items-start lg:text-left">
             <FiSmile className="text-[#d96d55] text-4xl sm:text-5xl mb-4 sm:mb-6" />
 
             <h3 className="text-xl sm:text-2xl font-bold text-[#4e2723]">
@@ -262,7 +262,7 @@ const AriesRashiPage = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-white border border-[#f0d5cd] rounded-2xl sm:rounded-3xl p-5 sm:p-7"
+              className="bg-white border border-[#f0d5cd] rounded-2xl sm:rounded-3xl p-5 sm:p-7 text-center md:text-left flex flex-col items-center md:items-start"
             >
               <h3 className="text-lg sm:text-xl font-bold text-[#4e2723]">
                 {item.q}

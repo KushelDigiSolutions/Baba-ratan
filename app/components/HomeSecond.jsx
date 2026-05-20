@@ -11,7 +11,7 @@ const HomeSecond = () => {
                 <div className="grid grid-cols-1 md:grid-cols-[54%_44%]  gap-6">
 
                     {/* LEFT CARD */}
-                    <div className="bg-white p-6 md:p-10  relative overflow-hidden flex flex-col justify-between ">
+                    <div className="bg-white p-6 md:p-10 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
 
                         {/* Top Icon */}
                         <Image
@@ -22,17 +22,17 @@ const HomeSecond = () => {
                         />
 
                         {/* Content */}
-                        <div className="lg:max-w-[70%] mt-20 xl:mt-46">
-                            <h2 className="text-3xl font-[400] mb-3">
+                        <div className="lg:max-w-[70%] mt-10 md:mt-20 xl:mt-46">
+                            <h2 className="text-3xl font-[400] mb-3 text-center md:text-left">
                                 Vastu Consulting
                             </h2>
 
-                            <p className="text-[#44474D] mb-6 leading-relaxed">
+                            <p className="text-[#44474D] mb-6 leading-relaxed text-center md:text-left">
                                Balance your home, office, or factory with the five fundamental elements of nature and watch how blocked energy transforms into growth, peace, and lasting success. 
 
                             </p>
 
-                            <Link href="/vastu-consulting" className="text-[#E57661] text-[19px] flex items-center justify-center gap-2 hover:gap-3 transition-all">
+                            <Link href="/vastu-consulting" className="text-[#E57661] text-[19px] flex items-center justify-center md:justify-start gap-2 hover:gap-3 transition-all">
                             Explore Vastu Services ↗
                             </Link>
                         </div>
@@ -43,10 +43,8 @@ const HomeSecond = () => {
                             alt="vastu"
                             width={160}
                             height={160}
-                            className=" absolute bottom-16 right-7 object-contain"
+                            className="absolute bottom-6 right-7 object-contain hidden sm:block"
                         />
-
-
 
                     </div>
 
@@ -56,7 +54,7 @@ const HomeSecond = () => {
                         style={{
                             backgroundImage:
                                 "url('https://res.cloudinary.com/dumjuhrob/image/upload/v1776411609/Astrology_Services_pekzoy.png')",
-                            backgroundSize: "contain ",
+                            backgroundSize: "cover",
                             backgroundPosition: "center",
                         }}
                     >
@@ -73,17 +71,17 @@ const HomeSecond = () => {
                         </div>
 
                         {/* CONTENT (BOTTOM LEFT) */}
-                        <div className="relative z-10 ">
-                            <h2 className="text-3xl font-[400] mb-3">
+                        <div className="relative z-10">
+                            <h2 className="text-3xl font-[400] mb-3 text-center md:text-left">
                                 Astrology Services
                             </h2>
 
-                            <p className="text-white mb-6 max-w-[400px] leading-relaxed">
+                            <p className="text-white mb-6 max-w-[400px] leading-relaxed text-center md:text-left">
                                Unlock the secrets written in your birth chart and the lines of your hands with accurate, honest readings that guide your biggest life decisions. 
 
                             </p>
 
-                            <Link href="/astrology-services" className="flex items-center gap-2 hover:gap-3 transition-all text-[18px]">
+                            <Link href="/astrology-services" className="flex items-center justify-center md:justify-start gap-2 hover:gap-3 transition-all text-[18px]">
                                Explore Astrology Services ↗
                             </Link>
                         </div>
@@ -93,10 +91,10 @@ const HomeSecond = () => {
 
 
                 {/* 🔶 BOTTOM BIG CARD */}
-                <div className="grid grid-cols-1 md:grid-cols-2  bg-white ">
+                <div className="grid grid-cols-1 md:grid-cols-2 bg-white">
 
                     {/* LEFT TEXT */}
-                    <div className="p-6 md:p-15 flex flex-col justify-center">
+                    <div className="p-6 md:p-15 flex flex-col justify-center items-center md:items-start text-center md:text-left">
                         <div className='flex items-center mb-4 gap-2'>
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776413765/Gemstone_Spiritual_Shop-icon_mfsfba.png"
@@ -105,7 +103,7 @@ const HomeSecond = () => {
                                 height={20}
                                 className='object-contain'
                             />
-                            <p className="text-[#775A19]  font-medium">
+                            <p className="text-[#775A19] font-medium">
                                 Aura Enhancement
                             </p>
                         </div>
@@ -122,7 +120,7 @@ const HomeSecond = () => {
                             All products are 100% authentic, lab-tested, and energised before delivery.
                         </p>
 
-                        <div className="flex gap-4 flex-wrap">
+                        <div className="flex gap-4 flex-wrap justify-center md:justify-start">
                             <Link href="/shop" className="bg-[#E57661] cursor-pointer rounded-[6px] text-white px-10 py-4 hover:bg-white hover:text-[#E57661] border border-[#E57661]">
                                 Shop Collection
                             </Link>
@@ -133,7 +131,7 @@ const HomeSecond = () => {
                         </div>
                     </div>
 
-                    <div className='relative w-full'>
+                    <div className='relative w-full min-h-[300px]'>
                         {/* RIGHT IMAGE */}
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776413611/Gemstone_Spiritual_Shop_2_smqkkq.png"

@@ -57,19 +57,19 @@ export default function AstrologySteps() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl md:text-[40px] font-bold text-[#303030] mb-16 md:mb-24 text-center">
+        <h2 className="text-3xl lg:text-[40px] font-bold text-[#303030] mb-12 lg:mb-24 text-center">
           Three Steps to Your Reading
         </h2>
 
-        <div className="space-y-24 md:space-y-40">
+        <div className="space-y-16 lg:space-y-40">
           {/* STEP 1 */}
           <div
             ref={step1Ref}
-            className="flex flex-col md:flex-row items-center gap-12 md:gap-20"
+            className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
           >
             {/* TEXT BOX */}
-            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out flex flex-col items-center text-center md:items-start md:text-left ${visibleSteps.step1 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
-              <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">01</div>
+            <div className={`w-full lg:w-1/2 bg-white p-8 lg:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out flex flex-col items-center text-center lg:items-start lg:text-left ${visibleSteps.step1 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+              <div className="text-[60px] lg:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">01</div>
               <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
                 Share Your Birth Details
               </h3>
@@ -79,7 +79,7 @@ export default function AstrologySteps() {
             </div>
 
             {/* IMAGE BOX */}
-            <div className={`w-full md:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step1 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
+            <div className={`w-full lg:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step1 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922603/Input_Birth_Data_ryrj5t.png"
@@ -94,11 +94,11 @@ export default function AstrologySteps() {
           {/* STEP 2 */}
           <div
             ref={step2Ref}
-            className="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-20"
+            className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20"
           >
             {/* TEXT BOX */}
-            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out flex flex-col items-center text-center md:items-start md:text-left ${visibleSteps.step2 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
-              <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">02</div>
+            <div className={`w-full lg:w-1/2 bg-white p-8 lg:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out flex flex-col items-center text-center lg:items-start lg:text-left ${visibleSteps.step2 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
+              <div className="text-[60px] lg:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">02</div>
               <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
                 Deep Kundli Analysis
               </h3>
@@ -108,7 +108,7 @@ export default function AstrologySteps() {
             </div>
 
             {/* IMAGE BOX */}
-            <div className={`w-full md:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step2 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
+            <div className={`w-full lg:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step2 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922605/Planetary_Analysis_nkqjf9.png"
@@ -123,11 +123,11 @@ export default function AstrologySteps() {
           {/* STEP 3 */}
           <div
             ref={step3Ref}
-            className="flex flex-col md:flex-row items-center gap-12 md:gap-20"
+            className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
           >
             {/* TEXT BOX */}
-            <div className={`w-full md:w-1/2 bg-white p-8 md:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out flex flex-col items-center text-center md:items-start md:text-left ${visibleSteps.step3 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
-              <div className="text-[60px] md:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">03</div>
+            <div className={`w-full lg:w-1/2 bg-white p-8 lg:p-14 rounded-[32px] shadow-sm border border-[#F3EBE9] transition-all duration-1000 ease-out flex flex-col items-center text-center lg:items-start lg:text-left ${visibleSteps.step3 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+              <div className="text-[60px] lg:text-[80px] leading-none font-bold text-[#FDE0DC] mb-6">03</div>
               <h3 className="text-2xl md:text-[28px] text-[#303030] font-bold mb-4">
                 Personalised Remedies
               </h3>
@@ -137,7 +137,7 @@ export default function AstrologySteps() {
             </div>
 
             {/* IMAGE BOX */}
-            <div className={`w-full md:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step3 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
+            <div className={`w-full lg:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step3 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922604/Personalized_Remedies_rkyik6.png"
@@ -151,7 +151,7 @@ export default function AstrologySteps() {
         </div>
 
         {/* CTA BUTTON */}
-        <div className={`flex justify-center mt-20 md:mt-32 transition-all duration-1000 delay-500 ${visibleSteps.step3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+        <div className={`flex justify-center mt-12 lg:mt-32 transition-all duration-1000 delay-500 ${visibleSteps.step3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <a 
             href="https://calendly.com/bajrangastroofficial/30min"
             target="_blank"

@@ -49,7 +49,7 @@ export default function HomeFifth() {
                         {cards.map((item, index) => (
                             <div
                                 key={index}
-                                className="bg-[#FFFFFFCC]/80 rounded-2xl p-8  transition duration-300 flex flex-col gap-4"
+                                className="bg-[#FFFFFFCC]/80 rounded-2xl p-8 transition duration-300 flex flex-col gap-4 items-center text-center xl:items-start xl:text-left"
                             >
 
                                 <div className="relative w-6 h-6">
@@ -69,7 +69,7 @@ export default function HomeFifth() {
                     </div>
 
 
-                    <div className="relative rounded-[30px] overflow-hidden  h-[300px]  md:h-[500px] ">
+                    <div className="relative rounded-[30px] overflow-hidden h-[280px] sm:h-[350px] md:h-[450px]">
 
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776421672/Serene_Vastu_Space_gxtnne.png"
@@ -82,8 +82,8 @@ export default function HomeFifth() {
                         <div className="absolute inset-0 bg-black/10" />
 
                         {/* TOP CARD */}
-                        <div className="absolute top-6 right-6 bg-[#FFFFFF] rounded-[20px] px-6 py-7  flex flex-col gap-1">
-                            <div className="flex flex-col  items-start gap-2">
+                        <div className="absolute top-4 right-4 bg-[#FFFFFF] rounded-[20px] px-4 py-5 flex flex-col gap-1">
+                            <div className="flex flex-col items-start gap-2">
 
                                 <div className="relative w-4 h-4">
                                     <Image

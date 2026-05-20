@@ -147,7 +147,7 @@ const CapricornPage = () => {
           </div>
 
           {/* CONTENT */}
-          <div className="mt-6 lg:mt-0">
+          <div className="mt-6 lg:mt-0 flex flex-col items-center text-center lg:items-start lg:text-left">
             <span className="text-[#374151] font-semibold uppercase tracking-wider text-sm sm:text-base">
               मकर राशि के बारे में
             </span>
@@ -165,7 +165,7 @@ const CapricornPage = () => {
             </p>
 
             {/* TRAITS */}
-            <div className="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 mt-6 sm:mt-8">
               {traits.map((item, index) => (
                 <div
                   key={index}
@@ -195,7 +195,7 @@ const CapricornPage = () => {
           {luckyThings.map((item, index) => (
             <div
               key={index}
-              className="bg-[#fafafa] border border-gray-200 rounded-[24px] sm:rounded-[35px] p-5 sm:p-8 hover:shadow-2xl transition hover:-translate-y-2"
+              className="bg-[#fafafa] border border-gray-200 rounded-[24px] sm:rounded-[35px] p-5 sm:p-8 hover:shadow-2xl transition hover:-translate-y-2 flex flex-col items-center text-center sm:items-start sm:text-left"
             >
               <h3 className="text-[#374151] text-base sm:text-lg font-semibold">
                 {item.title}
@@ -273,7 +273,7 @@ const CapricornPage = () => {
       <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#1f2937] to-[#4b5563]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 items-center">
           {/* LEFT */}
-          <div className="text-white text-center lg:text-left">
+          <div className="text-white text-center lg:text-left flex flex-col items-center lg:items-start">
             <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto lg:mx-0 rounded-full bg-white/10 flex items-center justify-center text-4xl sm:text-5xl backdrop-blur-md">
               <FiTrendingUp />
             </div>
@@ -350,7 +350,7 @@ const CapricornPage = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-[24px] sm:rounded-[30px] border border-gray-200 p-5 sm:p-8"
+              className="bg-white rounded-[24px] sm:rounded-[30px] border border-gray-200 p-5 sm:p-8 text-center md:text-left flex flex-col items-center md:items-start"
             >
               <h3 className="text-lg sm:text-xl font-bold text-[#111827]">
                 {item.question}

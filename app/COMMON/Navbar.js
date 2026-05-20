@@ -127,12 +127,12 @@ export default function Navbar() {
 
       {/* ================= MAIN NAV ================= */}
       <nav className="main-nav">
-        <div className="logo" onClick={() => router.push("/")}>
+        <Link href="/" className="logo">
           <img
             src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png"
             alt="Logo"
           />
-        </div>
+        </Link>
 
         {/* DESKTOP ASTRO */}
         <div className="astro-call desktop-only">
@@ -402,19 +402,9 @@ export default function Navbar() {
                 </ul>
               </li>
 
-              {/* <li className={pathname === "/vastu-consulting" ? "active" : ""}>
-                <Link href="/vastu-consulting">Vastu Consulting</Link>
-              </li>
-
-              <li
-                className={pathname === "/astrology-services" ? "active" : ""}
-              >
-                <Link href="/astrology-services">Astrology Services</Link>
-              </li> */}
-
-              {/* <li className={pathname === "/shop" ? "active" : ""}>
+              <li className={pathname === "/shop" ? "active" : ""}>
                 <Link href="/shop">Shop</Link>
-              </li> */}
+              </li>
 
 
 
@@ -478,7 +468,7 @@ export default function Navbar() {
       {/* ================= MOBILE MENU ================= */}
       {open && (
         <div className="fixed inset-0 w-full h-[100vh] bg-black/40 z-[99999] overflow-y-auto flex justify-center items-start font-sans">
-          <div className="w-full max-w-[450px] min-h-[100vh] bg-white flex flex-col shadow-2xl">
+          <div className="w-full min-h-[100vh] bg-white flex flex-col shadow-2xl">
             {/* Top Bar */}
             <div className="bg-[#E57661] text-white flex justify-between items-center px-6 py-[14px]">
               <a href="tel:+917042600873" className="flex items-center gap-3 font-medium text-[16px] text-white no-underline">
@@ -491,13 +481,17 @@ export default function Navbar() {
             </div>
 
             {/* Logo Section */}
-            <div className="px-6 py-[22px] border-b border-[#f3f4f6] flex justify-between items-center bg-white">
+            <Link 
+              href="/"
+              className="px-6 py-[22px] border-b border-[#f3f4f6] flex justify-between items-center bg-white cursor-pointer"
+              onClick={() => setOpen(false)}
+            >
               <img
                 src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png"
                 alt="Logo"
                 className="h-[75px] w-auto object-contain"
               />
-            </div>
+            </Link>
             {/* Menu Items */}
             <ul className="flex flex-col px-6 mt-2 space-y-0 divide-y divide-[#f3f4f6] list-none p-0 bg-white">
               {/* ABOUT US */}
@@ -585,6 +579,13 @@ export default function Navbar() {
                     <li><Link href="/astrology-services" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Astrology Services</Link></li>
                   </ul>
                 )}
+              </li>
+
+              {/* SHOP */}
+              <li className="py-[8px] text-left">
+                <Link href="/shop" onClick={() => setOpen(false)} className="block w-full font-medium text-[16px] text-[#e57661] no-underline hover:opacity-80 transition-opacity">
+                  Shop
+                </Link>
               </li>
 
               {/* CONTACT */}

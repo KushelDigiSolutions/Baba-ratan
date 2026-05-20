@@ -146,7 +146,7 @@ const TaurusPage = () => {
           </div>
 
           {/* CONTENT */}
-          <div className="mt-6 lg:mt-0">
+          <div className="mt-6 lg:mt-0 flex flex-col items-center text-center lg:items-start lg:text-left">
             <span className="text-[#e57661] font-semibold uppercase tracking-wider text-sm sm:text-base">
               वृषभ राशि के बारे में
             </span>
@@ -164,7 +164,7 @@ const TaurusPage = () => {
             </p>
 
             {/* TRAITS */}
-            <div className="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 mt-6 sm:mt-8">
               {traits.map((item, index) => (
                 <div
                   key={index}
@@ -194,7 +194,7 @@ const TaurusPage = () => {
           {luckyThings.map((item, index) => (
             <div
               key={index}
-              className="bg-[#fff8f4] border border-[#f0d7cc] rounded-[24px] sm:rounded-[35px] p-5 sm:p-8 hover:shadow-2xl transition hover:-translate-y-2"
+              className="bg-[#fff8f4] border border-[#f0d7cc] rounded-[24px] sm:rounded-[35px] p-5 sm:p-8 hover:shadow-2xl transition hover:-translate-y-2 flex flex-col items-center text-center sm:items-start sm:text-left"
             >
               <h3 className="text-[#e57661] text-base sm:text-lg font-semibold">
                 {item.title}
@@ -306,7 +306,7 @@ const TaurusPage = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-[24px] sm:rounded-[30px] border border-[#f1d7ca] p-5 sm:p-8"
+              className="bg-white rounded-[24px] sm:rounded-[30px] border border-[#f1d7ca] p-5 sm:p-8 text-center md:text-left flex flex-col items-center md:items-start"
             >
               <h3 className="text-lg sm:text-xl font-bold text-[#4d2b20]">
                 {item.question}
