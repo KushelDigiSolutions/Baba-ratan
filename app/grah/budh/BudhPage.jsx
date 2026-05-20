@@ -398,37 +398,6 @@ export default function BudhGrahPage() {
           </div>
         </div>
       </section>
-
-      <section className="bg-gradient-to-br from-[#22c55e] to-[#138f66] text-white flex items-center justify-center mx-auto shadow-2xl">
-        <div className="text-center">
-          <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mx-auto">
-            <HeartHandshake className="w-14 h-14" />
-          </div>
-
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black mt-10 leading-[1.3]">
-            व्यक्तिगत <span className="text-[#138f66]">मार्गदर्शन</span>
-          </h2>
-
-          <p className="text-gray-600 text-lg leading-9 mt-8 max-w-3xl mx-auto">
-            क्या आप जानना चाहते हैं कि आपकी कुंडली में बुध की स्थिति आपके करियर और व्यापार को कैसे प्रभावित कर रही है? आज ही हमारे विशेषज्ञ ज्योतिषियों से व्यक्तिगत सलाह लें।
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-5 mt-12">
-            <a
-              href="tel:+917042600873"
-              className="inline-block"
-            >
-              <button className="bg-[#138f66] cursor-pointer hover:bg-[#0f7553] text-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-xl">
-                अपॉइंटमेंट बुक करें
-              </button>
-            </a>
-
-            <button className="border border-[#138f66] text-[#138f66] hover:bg-[#138f66] hover:text-white px-8 py-4 rounded-2xl font-semibold duration-300 flex items-center gap-2">
-              अधिक जानकारी देखें <ArrowRight className="w-5 h-5" />
-            </button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

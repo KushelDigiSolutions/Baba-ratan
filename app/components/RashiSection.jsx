@@ -9,80 +9,84 @@ const rashiData = [
     hindiName: "Mesh (मेष)",
     icon: "♈",
     link: "/rashi/aries",
-    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779253955/aries%20rashi.webp",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268339/Aries_rashi.jpg",
   },
   {
     name: "Taurus",
     hindiName: "Vrishabha (वृषभ)",
     icon: "♉",
     link: "/rashi/taurus",
-    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779255006/taurus_rashi_image_hbmvpg.png",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268347/Taurus_rashi.png",
   },
   {
     name: "Gemini",
     hindiName: "Mithuna (मिथुन)",
     icon: "♊",
     link: "/rashi/gemini",
-    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779255900/gemini%20rashi%20image.png",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268341/Gemini_rashi.png",
   },
   {
     name: "Cancer",
     hindiName: "Karka (कर्क)",
     icon: "♋",
     link: "/rashi/cancer",
-    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779254452/cancer_rashi_image_k8cglm.png",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268340/Cancer_rashi.png",
   },
   {
     name: "Leo",
     hindiName: "Simha (सिंह)",
     icon: "♌",
     link: "/rashi/leo",
-    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779255084/leo_rashi_image_luo7fc.png",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268341/Leo_rashi.png",
   },
   {
     name: "Virgo",
     hindiName: "Kanya (कन्या)",
     icon: "♍",
     link: "/rashi/virgo",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268348/Virgo%20rashi.png",
   },
   {
     name: "Libra",
     hindiName: "Tula (तुला)",
     icon: "♎",
     link: "/rashi/libra",
-    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779254874/libra%20rashi%20image.png",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268342/Libra_rashi.png",
   },
   {
     name: "Scorpio",
     hindiName: "Vrishchika (वृश्चिक)",
     icon: "♏",
     link: "/rashi/scorpio",
-    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779255170/scorpio_rashi_image_nrrwlc.png",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268346/scropio-rashi.png",
   },
   {
     name: "Sagittarius",
     hindiName: "Dhanu (धनु)",
     icon: "♐",
     link: "/rashi/sagittarius",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268345/Sagittarius_rashi.png",
   },
   {
     name: "Capricorn",
     hindiName: "Makara (मकर)",
     icon: "♑",
     link: "/rashi/capricorn",
-    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779254780/capricorn_rashi_image_jlu8d9.png",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268342/Capricorn_rashi.png",
   },
   {
     name: "Aquarius",
     hindiName: "Kumbha (कुंभ)",
     icon: "♒",
     link: "/rashi/aquarius",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268347/Aquarius_rashi.png",
   },
   {
     name: "Pisces",
     hindiName: "Meena (मीन)",
     icon: "♓",
     link: "/rashi/pisces",
+    image: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268344/Pisces_rashi.png",
   },
 ];
 
@@ -264,9 +268,9 @@ const RashiSection = () => {
             <div className="relative z-10 flex flex-col items-center text-center h-full w-full">
               
               {/* Flat design circular zodiac image exactly like the screenshot */}
-              <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full border border-[#f1d6cf] bg-white flex items-center justify-center shadow-sm overflow-hidden mb-4 group-hover:scale-105 transition-transform duration-300 relative">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full flex items-center justify-center overflow-hidden mb-4 transition-transform duration-300 relative">
                 {rashi.image ? (
-                  <img src={rashi.image} alt={rashi.name} className="w-full h-full object-cover" />
+                  <img src={rashi.image} alt={rashi.name} className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
                 ) : (
                   renderZodiacSVG(rashi.name)
                 )}

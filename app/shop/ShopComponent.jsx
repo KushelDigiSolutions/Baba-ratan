@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from 'react';
 import Navbar from '../COMMON/Navbar';
-import ShopHeaderSection from '../components/ShopHeaderSection';
-import ShopMainSection from '../components/ShopMainSection';
+import ShopHeaderSection from './ShopHeaderSection';
+import ShopMainSection from './ShopMainSection';
 import Footer from '../COMMON/Footer';
 
 export default function ShopComponent() {

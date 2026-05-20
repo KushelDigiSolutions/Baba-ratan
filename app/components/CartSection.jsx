@@ -15,7 +15,7 @@ const CartSection = () => {
     const tax = cartSummary?.tax_amount || 0;
     const total = cartSummary?.grand_total || (Number(subtotal) + Number(shipping) + Number(tax));
 
-    const fontStyle = { fontFamily: "'GT Walsheim Trial', sans-serif" };
+    const fontStyle = { fontFamily: "'GT Walsheim Trial', var(--font-geist-sans), sans-serif" };
 
     return (
         <div className="bg-[#F8F9FA] min-h-screen flex flex-col" style={fontStyle}>

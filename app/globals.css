@@ -1,4 +1,31 @@
-@import url('https://fonts.cdnfonts.com/css/gt-walsheim-trial');
+@font-face {
+  font-family: 'GT Walsheim Trial';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/GT-Walsheim-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GT Walsheim Trial';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/GT-Walsheim-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GT Walsheim Trial';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/GT-Walsheim-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GT Walsheim Trial';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/GT-Walsheim-Bold.woff') format('woff');
+}
+
 @import "tailwindcss";
 
 @source "./**/*.{js,jsx,ts,tsx}";
@@ -9,6 +36,13 @@ body {
   font-family: 'GT Walsheim Trial', var(--font-geist-sans), sans-serif !important;
   scrollbar-width: none;
   overflow-x: clip;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit !important;
 }
 
 :root {

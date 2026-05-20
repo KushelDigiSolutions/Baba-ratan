@@ -100,12 +100,30 @@ const RashiDetailsPage = () => {
               <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/20 animate-spin [animation-duration:50s]" />
               
               <div className="grid grid-cols-4 gap-3 sm:gap-6 p-4 sm:p-8 relative z-10">
-                {["♈", "♉", "♊", "♋", "♌", "♍", "♎", "♏", "♐", "♑", "♒", "♓"].map((icon, index) => (
+                {[
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268339/Aries_rashi.jpg",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268347/Taurus_rashi.png",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268341/Gemini_rashi.png",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268340/Cancer_rashi.png",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268341/Leo_rashi.png",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268348/Virgo%20rashi.png",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268342/Libra_rashi.png",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268346/scropio-rashi.png",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268345/Sagittarius_rashi.png",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268342/Capricorn_rashi.png",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268347/Aquarius_rashi.png",
+                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268344/Pisces_rashi.png"
+                ].map((imgUrl, index) => (
                   <div
                     key={index}
-                    className="w-10 h-10 sm:w-14 sm:h-14 md:w-18 md:h-18 rounded-full bg-white/20 flex items-center justify-center text-xl sm:text-2xl md:text-3xl text-white hover:scale-115 hover:bg-white hover:text-[#e57661] transition duration-300 shadow-md cursor-pointer"
+                    className="w-10 h-10 sm:w-14 sm:h-14 md:w-18 md:h-18 rounded-full flex items-center justify-center hover:scale-115 transition duration-300 shadow-md cursor-pointer overflow-hidden bg-white/20"
                   >
-                    {icon}
+                    <img 
+                      src={imgUrl} 
+                      alt="Zodiac Rashi" 
+                      className="w-full h-full object-cover scale-[1.18]" 
+                      style={{ clipPath: "circle(42.5%)" }}
+                    />
                   </div>
                 ))}
               </div>

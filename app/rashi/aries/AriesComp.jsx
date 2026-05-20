@@ -8,6 +8,7 @@ import {
   FiSmile,
   FiSun,
   FiArrowRight,
+  FiAward,
 } from "react-icons/fi";
 
 const traits = [
@@ -80,18 +81,10 @@ const AriesRashiPage = () => {
             </div>
           </div>
 
-          {/* Right */}
+          {/* RIGHT */}
           <div className="flex justify-center order-first lg:order-last">
-            <div className="relative">
-              <div className="w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-2xl">
-                <div className="text-[90px] sm:text-[140px] md:text-[180px] text-white">
-                  ♈
-                </div>
-              </div>
-
-              {/* Floating Glow */}
-              <div className="absolute -top-5 -left-5 w-20 h-20 bg-white/20 rounded-full blur-2xl" />
-              <div className="absolute bottom-0 right-0 w-24 h-24 bg-yellow-300/20 rounded-full blur-2xl" />
+            <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full overflow-hidden flex items-center justify-center shadow-2xl">
+              <img src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268339/Aries_rashi.jpg" alt="Aries Rashi" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
             </div>
           </div>
         </div>
@@ -222,6 +215,50 @@ const AriesRashiPage = () => {
             <p className="text-gray-600 leading-7 mt-4">
               शारीरिक रूप से ये जातक काफी सक्रिय होते हैं, लेकिन इन्हें अत्यधिक मानसिक तनाव और गुस्से से बचना चाहिए। योग, नियमित ध्यान और पर्याप्त नींद इनके मानसिक स्वास्थ्य को संतुलित रखती है।
             </p>
+          </div>
+        </div>
+      </section>
+
+      
+      {/* SPECIAL SECTION - Hindi */}
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#d96d55] to-[#b85645]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 items-center">
+          {/* LEFT */}
+          <div className="text-white text-center lg:text-left flex flex-col items-center lg:items-start">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto lg:mx-0 rounded-full bg-white/20 flex items-center justify-center text-4xl sm:text-5xl backdrop-blur-md">
+              <FiAward />
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold mt-6 leading-[1.3] sm:leading-tight">
+              मेष राशि और नेतृत्व क्षमता
+            </h2>
+
+            <p className="text-base sm:text-lg leading-7 sm:leading-8 text-white/90 mt-6 max-w-2xl mx-auto lg:mx-0">
+              मेष राशि के जातक जन्मजात नेतृत्वकर्ता होते हैं। उनका आत्मविश्वास, निडरता और जोखिम उठाने की क्षमता उन्हें हर क्षेत्र में सबसे आगे रखती है। वे मुश्किल से मुश्किल परिस्थितियों में भी हार नहीं मानते और दूसरों के लिए प्रेरणास्रोत बनते हैं।
+            </p>
+
+            <a
+              href="https://calendly.com/bajrangastroofficial/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto mt-6 sm:mt-10 inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-[#d96d55] font-semibold hover:scale-105 transition text-center"
+            >
+              Explore Compatibility
+              <FiArrowRight />
+            </a>
+          </div>
+
+          {/* RIGHT */}
+          <div className="relative order-first lg:order-last">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+              alt="Aries Leadership"
+              className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
+            />
+
+            <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-white/20 backdrop-blur-md rounded-xl sm:rounded-2xl px-4 py-2 sm:px-5 sm:py-3 text-white border border-white/20 text-sm sm:text-base">
+              Mars Energy 🔥
+            </div>
           </div>
         </div>
       </section>

@@ -80,7 +80,7 @@ const LibraPage = () => {
             </h1>
 
             <h2 className="text-3xl md:text-5xl font-semibold text-[#ffeef2] mt-3">
-              तुला राशि ♎
+              तुला राशि
             </h2>
 
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-white/90 max-w-2xl mx-auto lg:mx-0">
@@ -105,20 +105,8 @@ const LibraPage = () => {
 
           {/* RIGHT */}
           <div className="flex justify-center order-first lg:order-last">
-            <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full bg-white/10 border border-white/20 backdrop-blur-xl flex items-center justify-center shadow-2xl">
-              <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/20 animate-spin [animation-duration:40s]" />
-
-              <div className="text-[90px] sm:text-[140px] md:text-[180px] text-white drop-shadow-2xl">
-                ♎
-              </div>
-
-              <div className="absolute top-14 right-10 text-white text-4xl">
-                ✦
-              </div>
-
-              <div className="absolute bottom-14 left-12 text-white text-4xl">
-                ✨
-              </div>
+            <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full overflow-hidden flex items-center justify-center shadow-2xl">
+              <img src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268342/Libra_rashi.png" alt="Libra Rashi" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
             </div>
           </div>
         </div>

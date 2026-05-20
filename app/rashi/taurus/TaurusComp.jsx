@@ -8,6 +8,7 @@ import {
   FiActivity,
   FiSun,
   FiArrowRight,
+  FiShield,
 } from "react-icons/fi";
 
 const traits = [
@@ -79,7 +80,7 @@ const TaurusPage = () => {
             </h1>
 
             <h2 className="text-3xl md:text-5xl font-semibold text-[#ffe8d7] mt-3">
-              वृषभ राशि ♉
+              वृषभ राशि
             </h2>
 
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-white/90 max-w-2xl mx-auto lg:mx-0">
@@ -104,20 +105,8 @@ const TaurusPage = () => {
 
           {/* RIGHT */}
           <div className="flex justify-center order-first lg:order-last">
-            <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full bg-white/10 border border-white/20 backdrop-blur-xl flex items-center justify-center shadow-2xl">
-              <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/20 animate-spin [animation-duration:30s]" />
-
-              <div className="text-[90px] sm:text-[140px] md:text-[180px] text-white drop-shadow-2xl">
-                ♉
-              </div>
-
-              <div className="absolute top-12 right-10 text-white text-4xl">
-                ✦
-              </div>
-
-              <div className="absolute bottom-14 left-10 text-white text-3xl">
-                ☾
-              </div>
+            <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full overflow-hidden flex items-center justify-center shadow-2xl">
+              <img src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268347/Taurus_rashi.png" alt="Taurus Rashi" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
             </div>
           </div>
         </div>
@@ -264,6 +253,50 @@ const TaurusPage = () => {
             <p className="text-gray-600 leading-7 mt-4 text-base sm:text-lg">
               शारीरिक रूप से बलिष्ठ होने पर भी इन्हें आलस्य, गले के संक्रमण और तनाव में अत्यधिक भोजन करने की आदत से बचना चाहिए। नियमित व्यायाम और योग इनके स्वास्थ्य को दुरुस्त रखता है।
             </p>
+          </div>
+        </div>
+      </section>
+
+      
+      {/* SPECIAL SECTION - Hindi */}
+      <section className="py-12 lg:py-16 px-4 md:px-10 lg:px-20 bg-gradient-to-r from-[#e57661] to-[#d46550]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 items-center">
+          {/* LEFT */}
+          <div className="text-white text-center lg:text-left flex flex-col items-center lg:items-start">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto lg:mx-0 rounded-full bg-white/20 flex items-center justify-center text-4xl sm:text-5xl backdrop-blur-md">
+              <FiShield />
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold mt-6 leading-[1.3] sm:leading-tight">
+              वृषभ राशि और स्थिरता
+            </h2>
+
+            <p className="text-base sm:text-lg leading-7 sm:leading-8 text-white/90 mt-6 max-w-2xl mx-auto lg:mx-0">
+              वृषभ राशि के जातक अपने जीवन में स्थिरता, सुरक्षा और शांति को सर्वाधिक महत्व देते हैं। उनकी दृढ़ इच्छाशक्ति और धैर्य उन्हें किसी भी लक्ष्य को प्राप्त करने में मदद करती है। वे अपने प्रियजनों के प्रति अत्यंत समर्पित और विश्वसनीय होते हैं।
+            </p>
+
+            <a
+              href="https://calendly.com/bajrangastroofficial/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto mt-6 sm:mt-10 inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-[#e57661] font-semibold hover:scale-105 transition text-center"
+            >
+              Explore Compatibility
+              <FiArrowRight />
+            </a>
+          </div>
+
+          {/* RIGHT */}
+          <div className="relative order-first lg:order-last">
+            <img
+              src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1400&auto=format&fit=crop"
+              alt="Taurus Stability"
+              className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
+            />
+
+            <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-white/20 backdrop-blur-md rounded-xl sm:rounded-2xl px-4 py-2 sm:px-5 sm:py-3 text-white border border-white/20 text-sm sm:text-base">
+              Venus Energy 🌿
+            </div>
           </div>
         </div>
       </section>
