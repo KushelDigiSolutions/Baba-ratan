@@ -25,15 +25,15 @@ export default function AboutThird() {
   ];
 
   return (
-    <section className="max-w-[1720px] mx-auto px-4 md:px-10 lg:px-20 py-10 md:py-16 bg-[#F8F8F8]">
+    <section className="max-w-[1720px] mx-auto px-4 md:px-10 lg:px-20 py-12 lg:py-16 bg-[#F8F8F8]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
         {data.map((item, index) => (
           <div
             key={index}
-            className={`${item.bg} ${item.text} rounded-2xl p-6 md:p-14 flex flex-col justify-between `}
+            className={`${item.bg} ${item.text} rounded-2xl p-6 md:p-14 flex flex-col justify-between items-center text-center md:items-start md:text-left`}
           >
             {/* Top Content */}
-            <div>
+            <div className="flex flex-col items-center md:items-start">
               {/* Icon */}
               <div className="mb-10">
                 <Image
@@ -59,7 +59,7 @@ export default function AboutThird() {
             <div className="mt-10">
               <a
                 href={item.btnText === "Call Now" ? "tel:+917042600873" : "#"}
-                className={`flex items-center cursor-pointer gap-2 text-sm md:text-base font-medium ${item.linkColor} group`}
+                className={`flex items-center justify-center md:justify-start cursor-pointer gap-2 text-sm md:text-base font-medium ${item.linkColor} group`}
               >
                 {item.btnText}
                 <span className="transition-transform duration-300 group-hover:translate-x-2">

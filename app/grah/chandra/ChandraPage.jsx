@@ -1,3 +1,4 @@
+// app/grah/chandra/page.jsx
 "use client";
 
 import React from "react";
@@ -11,42 +12,45 @@ import {
   HelpCircle,
   ArrowRight,
   Zap,
+  ShieldCheck,
+  HeartHandshake,
+  Orbit,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ChandraGrahPage = () => {
   const remedies = [
-    "Chant Om Som Somaya Namah",
-    "Observe Monday Fast",
-    "Donate Milk, Rice & White Clothes",
-    "Wear Pearl Gemstone",
-    "Respect Mother & Elders",
-    "Meditation Under Moonlight",
+    "भगवान शिव के 'चंद्रशेखर' स्वरूप का प्रतिदिन रुद्राक्ष की माला से ध्यान करें और शिवलिंग पर जल अर्पित करें।",
+    "सोमवार को चांदी के पात्र में कच्चा दूध और अक्षत डालकर चंद्र देव को अर्घ्य दें।",
+    "पूर्णिमा के दिन व्रत रखें और गंगाजल मिश्रित जल से स्नान कर मानसिक शुद्धता प्राप्त करें।",
+    "अपनी माता या सास को चांदी का कोई आभूषण या सफेद वस्त्र उपहार स्वरूप भेंट करें।",
+    "नियमित रूप से 'ॐ श्रां श्रीं श्रौं सः चंद्रमसे नमः' बीज मंत्र का 108 बार मानसिक जाप करें।",
+    "तनाव और घबराहट दूर करने के लिए सदैव अपने पास एक शुद्ध चांदी का चौकोर टुकड़ा रखें।",
   ];
 
   const faqs = [
     {
-      q: "What does Chandra represent in astrology?",
-      a: "Chandra represents the mind, emotions, mother, and mental peace in Vedic astrology.",
+      q: "How does the Moon phase (Shukla Paksha/Krishna Paksha) impact my birth chart?",
+      a: "Being born during Shukla Paksha (waxing Moon) generally brings natural optimism and steady growth, while Krishna Paksha births often yield highly introspective and deeply intuitive personalities.",
     },
     {
-      q: "How can I strengthen weak moon?",
-      a: "Strengthen the Moon by chanting mantras, fasting on Mondays, and respecting your mother.",
+      q: "What is Kemdrum Dosha and how does it affect mental peace?",
+      a: "Kemdrum Dosha occurs when the Moon is entirely isolated in the chart. It triggers intense feelings of loneliness and financial struggles, requiring strong spiritual remedies to overcome.",
     },
     {
-      q: "Who should wear Pearl gemstone?",
-      a: "Pearl is recommended for those whose Moon is a benefic planet but weak in their birth chart.",
+      q: "Can a strong Chandra mitigate other malefic planetary effects?",
+      a: "Yes, an exceptionally strong Moon acts as a divine shield, balancing the aggressive energies of Mars and Saturn by maintaining your emotional stability during extreme crisis.",
     },
     {
-      q: "What are symptoms of weak Chandra?",
-      a: "Symptoms include mental stress, mood swings, sleep disorders, and emotional instability.",
+      q: "Why is water so heavily emphasized in Moon remedies?",
+      a: "The Moon physically governs the tides and fundamentally controls the water element. Consuming water from silver vessels aligns your internal fluid balance with lunar vibrations.",
     },
   ];
 
   return (
     <div className="bg-[#F8FAFC] text-[#1E293B] overflow-hidden">
       {/* HERO SECTION */}
-      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#334155] text-white py-20 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#334155] text-white py-12 md:py-16 lg:py-20 overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-20 pointer-events-none">
           {[...Array(20)].map((_, i) => (
@@ -72,36 +76,33 @@ const ChandraGrahPage = () => {
           ))}
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-16 items-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
+        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+          <motion.div className="text-center lg:text-left" initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium mb-6 text-blue-200">
-              <Sparkles size={14} /> Moon Planet Analysis
+              <Sparkles size={14} /> नवग्रह • चंद्र देव
             </span>
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              Chandra Grah <br />
-              <span className="text-blue-300">Astrology Guide</span>
+              चंद्र ग्रह <br />
+              <span className="text-blue-300">मन और मानसिक शांति</span>
             </h1>
 
-            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed max-w-xl">
-              Chandra controls emotions, mental peace, intuition, and stability.
-              Discover how the Moon's placement impacts your destiny and explore powerful remedies.
+            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              चंद्र देव हमारे अंतर्मन, भावनाओं और आंतरिक प्रसन्नता के परम संचालक हैं। जन्म कुंडली में शुभ चंद्रमा का प्रभाव जीवन में असीम मानसिक शांति, मधुर संबंध और सृजनात्मक ऊर्जा का संचार करता है।
             </p>
 
-            <div className="flex flex-wrap gap-5 mt-10">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-10">
               <a href="tel:+917042600873">
                 <button className="bg-white cursor-pointer text-[#1e293b] px-8 py-4 rounded-2xl font-bold shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2">
-                  Talk to Astrologer <ArrowRight size={18} />
+                  ज्योतिषी से बात करें <ArrowRight size={18} />
                 </button>
               </a>
 
-
               <button className="border cursor-pointer border-white/30 bg-white/5 backdrop-blur-md px-8 py-4 rounded-2xl font-semibold hover:bg-white/10 transition-all">
-                View Remedies
+                उपाय देखें
               </button>
             </div>
           </motion.div>
@@ -114,7 +115,7 @@ const ChandraGrahPage = () => {
               transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
             />
             <motion.div
-              className="absolute w-[400px] h-[400px] md:w-[600px] md:h-[600px] rounded-full border border-white/10"
+              className="absolute w-[400px] h-[400px] md:w-[600px] md:h-[300px] sm:h-[400px] lg:h-[600px] rounded-full border border-white/10"
               animate={{ rotate: -360 }}
               transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
             />
@@ -144,8 +145,8 @@ const ChandraGrahPage = () => {
                     <Zap size={20} className="text-white" />
                   </div>
                   <div>
-                    <p className="text-xs text-blue-200">Mental Energy</p>
-                    <p className="font-bold">Emotional Power</p>
+                    <p className="text-xs text-blue-200">मानसिक ऊर्जा</p>
+                    <p className="font-bold">भावनात्मक शक्ति</p>
                   </div>
                 </div>
               </motion.div>
@@ -154,239 +155,252 @@ const ChandraGrahPage = () => {
         </div>
       </section>
 
-      {/* IMPORTANCE SECTION */}
-      <section className="py-24 relative bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="text-center mb-20">
-            <motion.span
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              className="text-blue-600 font-bold uppercase tracking-widest text-sm"
-            >
-              Celestial Influence
-            </motion.span>
-            <h2 className="text-4xl md:text-6xl font-bold mt-4 text-[#1E293B]">
-              Why Chandra is Vital?
-            </h2>
-            <div className="w-24 h-1 bg-blue-500 mx-auto mt-6 rounded-full" />
-          </div>
+      {/* ================= ABOUT SECTION ================= */}
+      <section className="py-12 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <img
+                src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1200&auto=format&fit=crop"
+                alt="chandra"
+                className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-slate-200/50"
+              />
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <span className="text-blue-600 font-extrabold uppercase tracking-[4px]">
+                About Lord Chandra
+              </span>
+
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-5 text-slate-800 leading-tight">
+                The Mother of Emotional Consciousness
+              </h2>
+
+              <p className="text-slate-700 leading-8 text-lg mt-8">
+                In Vedic astrology, the Moon (Chandra) governs the mind, emotions, maternal connections, and your deep inner temperament. It represents the peace of your soul and your psychological foundation.
+              </p>
+
+              <p className="text-slate-700 leading-8 text-lg mt-5 font-medium">
+                A highly favorable Moon establishes supreme mental stillness, absolute emotional security, and steady focus in critical life choices, shielding you from stress.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-6 mt-10 w-full">
+                {[
+                  "Unparalleled Emotional Resilience & Deep Calm",
+                  "Magnified Creative Imagination & Intuition",
+                  "Sweet, Harmonious Personal & Maternal Relations",
+                  "Steady Flow of Liquid Cash and Financial Stability",
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col items-center text-center sm:items-start sm:text-left shadow-sm hover:scale-[1.02] duration-300"
+                  >
+                    <div className="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center shadow-sm">
+                      <Star className="w-7 h-7" />
+                    </div>
+
+                    <h3 className="font-semibold text-lg text-slate-800 mt-5">{item}</h3>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EFFECTS */}
+      <section className="py-12 lg:py-20 bg-gradient-to-b from-[#f0f4f8] to-[#e2ebf0]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <span className="text-blue-600 uppercase tracking-[4px] font-extrabold">
+              सकारात्मक परिणाम
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black mt-6 leading-[1.3] text-[#1E293B]">
+              मजबूत चंद्रमा के दिव्य लाभ
+            </h2>
+            <p className="text-slate-700 text-lg leading-9 mt-6 font-medium">
+              जब जन्म कुंडली में चंद्र देव उच्च या स्वराशि में होकर बलवान होते हैं, तो वे जातक को असीम मानसिक शक्ति, शांति और भौतिक सुख प्रदान करते हैं।
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
             {[
               {
-                icon: <Heart className="text-white" size={28} />,
-                title: "Emotional Strength",
-                desc: "Governs emotional stability, bonding, and your inner feeling world.",
-                color: "bg-pink-500",
+                icon: <ShieldCheck className="w-8 h-8" />,
+                title: "अतुलनीय मानसिक शांति",
+                desc: "मन शांत, एकाग्र और सदैव प्रसन्न रहता है। डिप्रेशन, चिंता और मानसिक तनाव कोसों दूर रहते हैं।",
               },
               {
-                icon: <Shield className="text-white" size={28} />,
-                title: "Inner Peace",
-                desc: "A strong Moon brings tranquility and clarity to your decision-making process.",
-                color: "bg-blue-500",
+                icon: <Sparkles className="w-8 h-8" />,
+                title: "सृजनात्मक प्रतिभा",
+                desc: "जातक के भीतर कला, संगीत, लेखन और रचनात्मक क्षेत्रों में असाधारण और दिव्य प्रतिभा विकसित होती है।",
               },
               {
-                icon: <Sparkles className="text-white" size={28} />,
-                title: "Creative Intuition",
-                desc: "Powers your imagination, dreams, and the subconscious mind.",
-                color: "bg-indigo-500",
+                icon: <Heart className="w-8 h-8" />,
+                title: "मधुर पारिवारिक संबंध",
+                desc: "माता के साथ अत्यंत स्नेही संबंध बनते हैं और समाज में जातक को भरपूर मान-सम्मान और लोकप्रियता मिलती है।",
+              },
+              {
+                icon: <Orbit className="w-8 h-8" />,
+                title: "आर्थिक समृद्धि",
+                desc: "जीवन में कभी भी नकदी (Liquid Cash) की कमी नहीं होती और दूध, चांदी, जल से जुड़े व्यापार में भारी सफलता मिलती है।",
               },
             ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-                className="group bg-slate-50 border border-slate-100 p-10 rounded-[2.5rem] hover:bg-white hover:shadow-2xl transition-all duration-500"
-              >
-                <div className={`w-16 h-16 rounded-2xl ${item.color} flex items-center justify-center mb-8 group-hover:scale-110 transition-transform`}>
+              <div key={i} className="bg-white rounded-[30px] p-8 hover:-translate-y-2 duration-300 flex flex-col items-center text-center sm:items-start sm:text-left shadow-sm border border-slate-200">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center shadow-sm">
                   {item.icon}
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                <p className="text-slate-500 leading-relaxed text-lg">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* QUICK DETAILS GRID */}
-      <section className="py-24 text-white !bg-[#0F172A]" style={{ backgroundColor: '#0F172A' }}>
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
-            Chandra Grah <span className="text-blue-400">At a Glance</span>
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              ["Planet", "Moon"],
-              ["Day", "Monday"],
-              ["Gemstone", "Pearl"],
-              ["Metal", "Silver"],
-              ["Color", "White/Silver"],
-              ["Element", "Water"],
-              ["Direction", "North-West"],
-              ["Deity", "Lord Shiva"],
-            ].map(([title, value], i) => (
-              <motion.div
-                key={i}
-                whileHover={{ y: -5 }}
-                className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm"
-              >
-                <p className="text-sm text-blue-300/70 mb-2 uppercase tracking-wider">{title}</p>
-                <h4 className="font-bold text-xl">{value}</h4>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* EFFECTS SECTION */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-10">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            className="bg-white rounded-[3rem] p-12 shadow-sm border border-slate-200"
-          >
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center">
-                <CheckCircle size={24} />
+                <h3 className="text-2xl font-bold text-[#1E293B] mt-6">{item.title}</h3>
+                <p className="text-slate-600 leading-7 mt-4">{item.desc}</p>
               </div>
-              <h3 className="text-3xl font-bold text-slate-800">Positive Effects</h3>
-            </div>
-
-            <ul className="space-y-6">
-              {[
-                "Deep mental peace & stability",
-                "Exceptional memory and focus",
-                "High emotional intelligence",
-                "Strong intuition & creativity",
-                "Family harmony and love",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-4 text-slate-600 text-lg">
-                  <div className="mt-1 w-2 h-2 rounded-full bg-green-500 shrink-0" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            className="bg-white rounded-[3rem] p-12 shadow-sm border border-slate-200"
-          >
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center">
-                <HelpCircle size={24} />
-              </div>
-              <h3 className="text-3xl font-bold text-slate-800">Negative Effects</h3>
-            </div>
-
-            <ul className="space-y-6">
-              {[
-                "Unnecessary stress & anxiety",
-                "Frequent mood swings",
-                "Sleep disorders & lethargy",
-                "Chronic overthinking",
-                "Internal emotional imbalance",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-4 text-slate-600 text-lg">
-                  <div className="mt-1 w-2 h-2 rounded-full bg-red-500 shrink-0" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* REMEDIES GRID */}
-      <section className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold text-slate-900">
-              Chandra Remedies
-            </h2>
-            <p className="mt-4 text-slate-500 text-lg">Effective ways to balance Moon energy</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {remedies.map((item, i) => (
-              <motion.div
-                key={i}
-                whileHover={{ scale: 1.02 }}
-                className="bg-slate-50 border border-slate-100 rounded-3xl p-8 flex gap-5 items-center shadow-sm"
-              >
-                <div className="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center shrink-0">
-                  <Star className="text-blue-600" size={24} />
-                </div>
-                <p className="font-bold text-slate-800 text-lg">{item}</p>
-              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ SECTION */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">Questions? We have answers.</h2>
+      {/* WEAK CHANDRA */}
+      <section className="py-12 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <span className="text-blue-600 uppercase tracking-[4px] font-extrabold">
+                Signs of Chandra Dosha
+              </span>
 
-          <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <motion.div
-                key={i}
-                className="bg-white border border-slate-200 rounded-3xl p-8 hover:border-blue-400 transition-colors cursor-pointer"
-              >
-                <div className="flex justify-between items-center">
-                  <h4 className="font-bold text-xl text-slate-800">{faq.q}</h4>
-                  <div className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center">
-                    <ArrowRight className="text-slate-400" size={16} />
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E293B] mt-5 leading-tight">
+                Negative Impacts of a Weak Moon
+              </h2>
+
+              <p className="text-slate-700 leading-8 text-lg mt-6">
+                A debilitated or afflicted Moon in the horoscope can severely destabilize your emotional wellness, causing extreme mood fluctuations and a persistent lack of peace.
+              </p>
+
+              <div className="space-y-5 mt-10">
+                {[
+                  "Severe anxiety, unexplained phobias, and panic attacks",
+                  "Frequent respiratory issues, lung disorders, and severe colds",
+                  "Deep sense of emotional isolation and chronic depression",
+                  "Strained relationship with mother or maternal figures",
+                  "Loss of focus and constant mental restlessness",
+                  "Sudden financial fluctuations and loss of liquid wealth",
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center sm:text-left shadow-sm"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold shrink-0 shadow-sm">
+                      {i + 1}
+                    </div>
+
+                    <p className="text-lg font-bold text-[#1E293B]">{item}</p>
                   </div>
-                </div>
-                <p className="mt-4 text-slate-500 leading-relaxed">{faq.a}</p>
-              </motion.div>
-            ))}
+                ))}
+              </div>
+            </div>
+
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <img
+                src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1200&auto=format&fit=crop"
+                alt="weak chandra"
+                className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-slate-200/50"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA SECTION */}
-      <section className="relative py-24 !bg-[#1E293B] overflow-hidden" style={{ backgroundColor: '#1E293B' }}>
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
+      {/* REMEDIES */}
+      <section id="remedies-section" className="py-12 lg:py-20 bg-gradient-to-br from-[#f0f4f8] via-[#e2ebf0] to-[#d9e2ec] border-t border-b border-blue-500/30">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center">
+            <span className="text-blue-600 uppercase tracking-[4px] font-extrabold">
+              ज्योतिषीय उपाय
+            </span>
 
-        <div className="max-w-5xl mx-auto text-center px-6 relative z-10">
-          <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            className="bg-white/5 backdrop-blur-2xl border border-white/10 p-12 rounded-[4rem]"
-          >
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-8">
-              Unlock Your <span className="text-blue-400">Moon Power</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1E293B] mt-5 leading-[1.3] md:leading-[1.4]">
+              चंद्र देव को बलवान करने के अचूक तरीके
             </h2>
 
-            <p className="text-xl text-white leading-relaxed max-w-2xl mx-auto mb-12">
-              Get a personalized Moon analysis and detailed kundli report
-              with specific remedies and gemstone recommendations.
+            <p className="text-slate-700 leading-8 max-w-3xl mx-auto text-lg mt-6 font-medium">
+              वैदिक ज्योतिष में चंद्र देव के अशुभ प्रभावों को दूर करने और इसके शुभ फलों को प्राप्त करने के लिए अत्यंत प्रभावशाली उपाय और अनुष्ठान बताए गए हैं।
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
+            {[
+              {
+                title: "शिव उपासना",
+                desc: "प्रतिदिन शिवलिंग पर कच्चा दूध मिश्रित जल चढ़ाएं और 'ॐ नमः शिवाय' का जाप करें। यह सर्वोत्तम चंद्र उपाय है।",
+              },
+              {
+                title: "माता की सेवा",
+                desc: "नियमित रूप से अपनी माता और माता समान स्त्रियों के चरण स्पर्श कर उनका आशीर्वाद लें और उन्हें कभी न दुखाएं।",
+              },
+              {
+                title: "चांदी का प्रयोग",
+                desc: "दाहिने हाथ की कनिष्ठिका उंगली में चांदी की अंगूठी में असली मोती धारण करें या चांदी के पात्र में पानी पिएं।",
+              },
+              {
+                title: "सोमवार का व्रत",
+                desc: "सोमवार के दिन नमक रहित व्रत रखें और सफेद वस्तुओं जैसे दूध, चावल, चीनी या सफेद वस्त्रों का दान करें।",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white/95 border border-slate-200 rounded-[30px] p-8 text-[#1E293B] flex flex-col items-center text-center sm:items-start sm:text-left shadow-md"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-blue-600 text-white flex items-center justify-center shadow-md">
+                  <Sparkles className="w-8 h-8" />
+                </div>
+
+                <h3 className="text-2xl font-bold mt-6">{item.title}</h3>
+
+                <p className="leading-7 text-gray-600 mt-4 font-medium">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-white rounded-[35px] p-8 mt-12 text-center shadow-xl border border-slate-200">
+            <h3 className="text-3xl font-extrabold text-[#1E293B]">
+              चंद्र बीज मंत्र
+            </h3>
+
+            <p className="text-blue-600 text-2xl sm:text-3xl font-extrabold mt-6 tracking-wide drop-shadow-sm">
+              ॐ श्रां श्रीं श्रौं सः चंद्राय नमः
             </p>
 
-            <div className="flex flex-wrap justify-center gap-6">
-              <a
-                href="tel:+917042600873"
-                className="inline-block"
-              >
-                <button className="bg-blue-600 border cursor-pointer border-white/30 hover:bg-blue-700 text-white px-10 py-5 rounded-3xl font-bold text-lg shadow-2xl transition-all hover:scale-105">
-                  Book Consultation
-                </button>
+            <p className="text-gray-700 leading-8 mt-5 text-lg max-w-2xl mx-auto font-medium">
+              सोमवार की शाम को इस पवित्र मंत्र का 108 बार जाप करने से मानसिक शांति, उत्तम स्वास्थ्य और एकाग्रता प्राप्त होती है।
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-12 lg:py-20 bg-slate-50">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="bg-white rounded-[40px] p-10 text-center border border-slate-200 shadow-lg">
+            <div className="w-24 h-24 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white flex items-center justify-center mx-auto shadow-lg">
+              <HeartHandshake className="w-12 h-12" />
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#1E293B] mt-8 leading-tight">
+              Personalized Astrological Guidance
+            </h2>
+
+            <p className="text-gray-700 leading-8 text-lg mt-6 max-w-3xl mx-auto">
+              Want to deeply analyze the position of the Moon in your Kundli and discover highly effective remedies? Book a personalized session with our renowned Vedic experts.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-5 mt-10">
+              <a href="tel:+917042600873" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg shadow-blue-500/20 cursor-pointer">
+                Book Consultation
               </a>
 
-              <button className="border cursor-pointer border-white/30 text-white hover:bg-white/10 px-10 py-5 rounded-3xl font-bold text-lg transition-all">
-                Contact Support
-              </button>
+              <a href="https://calendly.com/bajrangastroofficial/30min" target="_blank" rel="noopener noreferrer" className="border border-blue-600/50 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-2xl font-semibold duration-300 flex items-center gap-2 cursor-pointer shadow-sm">
+                Book Digital Call <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

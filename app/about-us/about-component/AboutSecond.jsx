@@ -7,7 +7,7 @@ export default function AboutSecond() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[48%_52%] gap-12 items-center">
 
         {/* LEFT CONTENT */}
-        <div>
+        <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
           <h2 className="text-3xl md:text-[40px] font-[500] text-[#303030] mb-6">
             Who We Are
           </h2>
@@ -18,8 +18,6 @@ export default function AboutSecond() {
 
           <p className="text-[#303030] max-w-[580px] text-[17px] md:text-[21px] leading-relaxed">
             Our approach is simple, honest, and practical, no fear tactics, no false promises. Just clear online astrology services and real guidance that helps you make better decisions in career, marriage, health, and finances.
-
-
           </p>
         </div>
 

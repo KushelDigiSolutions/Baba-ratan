@@ -24,10 +24,10 @@ const DigitalBirthChart = () => {
                 </div>
 
                 {/* Main Content Area */}
-                <div className="relative w-full max-w-[1200px] flex flex-col-reverse sm:flex-row sm:h-[450px] lg:h-[550px] items-center justify-center gap-10 sm:gap-0">
+                <div className="relative w-full max-w-[1200px] flex flex-col-reverse lg:flex-row lg:h-[550px] items-center justify-center gap-10 lg:gap-0">
 
-                    {/* Side Cards for Mobile (Below 640px) */}
-                    <div className="sm:hidden flex flex-col gap-6 w-full px-6 z-30">
+                    {/* Side Cards for Mobile/Tablet (Below 1024px) */}
+                    <div className="lg:hidden flex flex-col sm:flex-row gap-6 w-full px-6 z-30 justify-center">
                         <div className="bg-white/90 backdrop-blur-sm p-6 rounded-[24px] shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-gray-100 text-center opacity-0 animate-fade-in-up delay-100">
                             <p className="text-[#E57661] text-xl font-[600] mb-1">Dashamsa (10th House)</p>
                             <p className="text-[#4A4A4A] text-lg">Your career & professional destiny</p>
@@ -71,16 +71,16 @@ const DigitalBirthChart = () => {
                         </div>
                     </div>
 
-                    {/* Dashamsa Card (Desktop/Tablet - Above 640px) */}
-                    <div className="hidden sm:block absolute left-[-10px] lg:left-0 top-[65%] sm:top-[70%] -translate-y-1/2 z-30 group opacity-0 animate-fade-in-left delay-400">
+                    {/* Dashamsa Card (Desktop - Above 1024px) */}
+                    <div className="hidden lg:block absolute left-[-10px] lg:left-0 top-[65%] lg:top-[70%] -translate-y-1/2 z-30 group opacity-0 animate-fade-in-left delay-400">
                         <div className="bg-white/80 backdrop-blur-md border border-white p-4 lg:p-6 rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] w-[180px] lg:w-[240px] transition-all duration-300 group-hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)]">
                             <p className="text-[#E57661] text-lg lg:text-2xl font-[500] mb-1 lg:mb-2">Dashamsa (10th House)</p>
                             <p className="text-[#4A4A4A] text-sm lg:text-lg flex flex-col leading-snug">Your career & professional destiny</p>
                         </div>
                     </div>
 
-                    {/* Lagna Card (Desktop/Tablet - Above 640px) */}
-                    <div className="hidden sm:block absolute right-[-10px] lg:right-0 top-[30%] sm:top-[25%] -translate-y-1/2 z-30 group opacity-0 animate-fade-in-right delay-400">
+                    {/* Lagna Card (Desktop - Above 1024px) */}
+                    <div className="hidden lg:block absolute right-[-10px] lg:right-0 top-[30%] lg:top-[25%] -translate-y-1/2 z-30 group opacity-0 animate-fade-in-right delay-400">
                         <div className="bg-white/80 backdrop-blur-md border border-white p-4 lg:p-6 rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] w-[180px] lg:w-[240px] transition-all duration-300 group-hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)]">
                             <p className="text-[#E57661] text-lg lg:text-2xl font-[500] mb-1 lg:mb-2">Lagna (Ascendant)</p>
                             <p className="text-[#4A4A4A] text-sm lg:text-lg leading-snug">Your personality & life path direction</p>

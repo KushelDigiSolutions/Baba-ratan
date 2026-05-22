@@ -25,10 +25,24 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [mobileGrahOpen, setMobileGrahOpen] = useState(false);
+  const [mobileRashiOpen, setMobileRashiOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   const pathname = usePathname();
   const displayName =
@@ -113,12 +127,12 @@ export default function Navbar() {
 
       {/* ================= MAIN NAV ================= */}
       <nav className="main-nav">
-        <div className="logo" onClick={() => router.push("/")}>
+        <Link href="/" className="logo">
           <img
             src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png"
             alt="Logo"
           />
-        </div>
+        </Link>
 
         {/* DESKTOP ASTRO */}
         <div className="astro-call desktop-only">
@@ -217,7 +231,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="text-[black] hover:text-[#e57661]"
-                      href="/grah/shani"
+                      href="/grah/ketu"
                     >
                       Ketu Graha
                     </Link>
@@ -388,19 +402,9 @@ export default function Navbar() {
                 </ul>
               </li>
 
-              {/* <li className={pathname === "/vastu-consulting" ? "active" : ""}>
-                <Link href="/vastu-consulting">Vastu Consulting</Link>
-              </li>
-
-              <li
-                className={pathname === "/astrology-services" ? "active" : ""}
-              >
-                <Link href="/astrology-services">Astrology Services</Link>
-              </li> */}
-
-              {/* <li className={pathname === "/shop" ? "active" : ""}>
+              <li className={pathname === "/shop" ? "active" : ""}>
                 <Link href="/shop">Shop</Link>
-              </li> */}
+              </li>
 
 
 
@@ -431,7 +435,7 @@ export default function Navbar() {
             href="https://calendly.com/bajrangastroofficial/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="astro-left px-3 rounded-[7px] bg-[#FFF5E9]"
+            className="astro-left px-3 rounded-[7px] bg-[#FFF5E9] desktop-only"
           >
 
             <div className="astro-icon">
@@ -463,57 +467,188 @@ export default function Navbar() {
 
       {/* ================= MOBILE MENU ================= */}
       {open && (
-        <div className="mobile-menu">
-          <ul>
-            <ul className="  .mobile-menu ul">
-              <li>
-                <Link href="/vastu-consulting">Vastu Consulting</Link>
+        <div className="fixed inset-0 w-full h-[100vh] bg-black/40 z-[99999] overflow-y-auto flex justify-center items-start font-sans">
+          <div className="w-full min-h-[100vh] bg-white flex flex-col shadow-2xl">
+            {/* Top Bar */}
+            <div className="bg-[#E57661] text-white flex justify-between items-center px-6 py-[14px]">
+              <a href="tel:+917042600873" className="flex items-center gap-3 font-medium text-[16px] text-white no-underline">
+                <IoCallSharp size={20} color="#ffffff" />
+                <span>+91 7042600873</span>
+              </a>
+              <button onClick={() => setOpen(false)} className="text-white text-2xl font-bold focus:outline-none bg-transparent border-0 cursor-pointer p-1">
+                <FiX size={24} />
+              </button>
+            </div>
+
+            {/* Logo Section */}
+            <Link 
+              href="/"
+              className="px-6 py-[22px] border-b border-[#f3f4f6] flex justify-between items-center bg-white cursor-pointer"
+              onClick={() => setOpen(false)}
+            >
+              <img
+                src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png"
+                alt="Logo"
+                className="h-[75px] w-auto object-contain"
+              />
+            </Link>
+            {/* Menu Items */}
+            <ul className="flex flex-col px-6 mt-2 space-y-0 divide-y divide-[#f3f4f6] list-none p-0 bg-white">
+              {/* ABOUT US */}
+              <li className="py-[8px] text-left">
+                <Link href="/about-us" onClick={() => setOpen(false)} className="block w-full font-medium text-[16px] text-[#e57661] no-underline hover:opacity-80 transition-opacity">
+                  About us
+                </Link>
               </li>
-              <li>
-                <Link href="/astrology-services">Astrology Services</Link>
+
+              {/* GRAH WITH DROPDOWN */}
+              <li className="py-[8px] text-left">
+                <div className="flex justify-between items-center w-full">
+                  <Link href="/grah" onClick={() => setOpen(false)} className="font-medium text-[16px] text-[#e57661] no-underline hover:opacity-80 transition-opacity">
+                    Grah
+                  </Link>
+                  <button
+                    className="px-4 py-1 text-xl font-medium text-[#e57661] focus:outline-none bg-transparent border-0 cursor-pointer"
+                    onClick={() => setMobileGrahOpen(!mobileGrahOpen)}
+                  >
+                    {mobileGrahOpen ? "−" : "+"}
+                  </button>
+                </div>
+                {mobileGrahOpen && (
+                  <ul className="mt-3 pl-4 space-y-3 border-l-2 border-[#ffe8e3] list-none">
+                    <li><Link href="/grah/surya" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Surya Graha</Link></li>
+                    <li><Link href="/grah/chandra" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Chandra Graha</Link></li>
+                    <li><Link href="/grah/mangal" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Mangal Graha</Link></li>
+                    <li><Link href="/grah/budh" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Budh Graha</Link></li>
+                    <li><Link href="/grah/guru" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Guru Graha</Link></li>
+                    <li><Link href="/grah/shukra" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Shukra Graha</Link></li>
+                    <li><Link href="/grah/shani" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Shani Graha</Link></li>
+                    <li><Link href="/grah/rahu" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Rahu Graha</Link></li>
+                    <li><Link href="/grah/ketu" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Ketu Graha</Link></li>
+                  </ul>
+                )}
               </li>
-              {/* <li>
-                <Link href="/shop">Shop</Link>
-              </li> */}
-              <li>
-                <Link href="/about-us">About us</Link>
+
+              {/* RASHI WITH DROPDOWN */}
+              <li className="py-[8px] text-left">
+                <div className="flex justify-between items-center w-full">
+                  <Link href="/rashi" onClick={() => setOpen(false)} className="font-medium text-[16px] text-[#e57661] no-underline hover:opacity-80 transition-opacity">
+                    Rashi
+                  </Link>
+                  <button
+                    className="px-4 py-1 text-xl font-medium text-[#e57661] focus:outline-none bg-transparent border-0 cursor-pointer"
+                    onClick={() => setMobileRashiOpen(!mobileRashiOpen)}
+                  >
+                    {mobileRashiOpen ? "−" : "+"}
+                  </button>
+                </div>
+                {mobileRashiOpen && (
+                  <ul className="mt-3 pl-4 space-y-3 border-l-2 border-[#ffe8e3] list-none">
+                    <li><Link href="/rashi/aries" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Aries (Mesh)</Link></li>
+                    <li><Link href="/rashi/taurus" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Taurus (Vrishabha)</Link></li>
+                    <li><Link href="/rashi/gemini" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Gemini (Mithun)</Link></li>
+                    <li><Link href="/rashi/cancer" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Cancer (Karka)</Link></li>
+                    <li><Link href="/rashi/leo" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Leo (Singh)</Link></li>
+                    <li><Link href="/rashi/virgo" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Virgo (Kanya)</Link></li>
+                    <li><Link href="/rashi/libra" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Libra (Tula)</Link></li>
+                    <li><Link href="/rashi/scorpio" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Scorpio (Vrishchik)</Link></li>
+                    <li><Link href="/rashi/sagittarius" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Sagittarius (Dhanu)</Link></li>
+                    <li><Link href="/rashi/capricorn" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Capricorn (Makar)</Link></li>
+                    <li><Link href="/rashi/aquarius" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Aquarius (Kumbh)</Link></li>
+                    <li><Link href="/rashi/pisces" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Pisces (Meen)</Link></li>
+                  </ul>
+                )}
               </li>
-              <li>
-                <Link href="/contact">Contact</Link>
+
+              {/* SERVICES WITH DROPDOWN */}
+              <li className="py-[8px] text-left">
+                <div className="flex justify-between items-center w-full">
+                  <span className="font-medium text-[16px] text-[#e57661]">
+                    Services
+                  </span>
+                  <button
+                    className="px-4 py-1 text-xl font-medium text-[#e57661] focus:outline-none bg-transparent border-0 cursor-pointer"
+                    onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  >
+                    {mobileServicesOpen ? "−" : "+"}
+                  </button>
+                </div>
+                {mobileServicesOpen && (
+                  <ul className="mt-3 pl-4 space-y-3 border-l-2 border-[#ffe8e3] list-none">
+                    <li><Link href="/vastu-consulting" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Vastu Consulting</Link></li>
+                    <li><Link href="/astrology-services" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Astrology Services</Link></li>
+                  </ul>
+                )}
+              </li>
+
+              {/* SHOP */}
+              <li className="py-[8px] text-left">
+                <Link href="/shop" onClick={() => setOpen(false)} className="block w-full font-medium text-[16px] text-[#e57661] no-underline hover:opacity-80 transition-opacity">
+                  Shop
+                </Link>
+              </li>
+
+              {/* CONTACT */}
+              <li className="py-[8px] text-left">
+                <Link href="/contact" onClick={() => setOpen(false)} className="block w-full font-medium text-[16px] text-[#e57661] no-underline hover:opacity-80 transition-opacity">
+                  Contact
+                </Link>
               </li>
             </ul>
-          </ul>
 
-          <div className="mobile-links">
-            <span>
-              <BiSolidUser /> Account
-            </span>
-            <span>
-              <FaHeart /> Wishlist
-            </span>
-            <Link href="/cart" className="flex items-center gap-1">
-              <div className="relative">
-                <HiShoppingCart />
-                {cartCount > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-[#E57661] text-white text-[8px] w-3 h-3 rounded-full flex items-center justify-center font-bold">
-                    {cartCount}
-                  </span>
-                )}
-              </div>
-              <span>My Bag</span>
-            </Link>
+            {/* BOTTOM LINKS (Account, Wishlist, My Bag) */}
+            <div className="flex justify-between items-center py-[22px] px-6 border-b border-[#f3f4f6] bg-white">
+              {mounted && user ? (
+                <Link href="/profile" className="flex items-center gap-2 text-[#E57661] font-semibold text-[15px] no-underline" onClick={() => setOpen(false)}>
+                  <BiSolidUser size={18} color="#E57661" />
+                  <span>Hi, {displayName}</span>
+                </Link>
+              ) : (
+                <Link href="/login" className="flex items-center gap-2 text-[#E57661] font-semibold text-[15px] no-underline" onClick={() => setOpen(false)}>
+                  <BiSolidUser size={18} color="#E57661" />
+                  <span>Account</span>
+                </Link>
+              )}
+
+              <Link href="/wishlist" className="flex items-center gap-2 text-[#E57661] font-semibold text-[15px] no-underline" onClick={() => setOpen(false)}>
+                <div className="relative flex items-center">
+                  <FaHeart size={18} color="#E57661" />
+                  {mounted && wishlistItems.length > 0 && (
+                    <span className="absolute -top-2 -right-2 bg-[#E57661] text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center font-bold border border-white">
+                      {wishlistItems.length}
+                    </span>
+                  )}
+                </div>
+                <span>Wishlist</span>
+              </Link>
+
+              <Link href="/cart" className="flex items-center gap-2 text-[#E57661] font-semibold text-[15px] no-underline" onClick={() => setOpen(false)}>
+                <div className="relative flex items-center">
+                  <HiShoppingCart size={18} color="#E57661" />
+                  {mounted && cartCount > 0 && (
+                    <span className="absolute -top-2 -right-2 bg-[#E57661] text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center font-bold border border-white">
+                      {cartCount}
+                    </span>
+                  )}
+                </div>
+                <span>My Bag</span>
+              </Link>
+            </div>
+
+            {/* TALK TO ASTROLOGER BUTTON */}
+            <div className="px-6 py-4 bg-white mt-1">
+              <a 
+                href="https://calendly.com/bajrangastroofficial/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-[#FFF5E9] hover:bg-[#ffe3c9] text-[#E57661] font-semibold py-[13px] px-4 rounded-[4px] flex justify-center items-center gap-3 transition-colors text-[16px] no-underline"
+                onClick={() => setOpen(false)}
+              >
+                <IoCallSharp size={20} color="#E57661" />
+                <span>Talk to Astrologer</span>
+              </a>
+            </div>
           </div>
-
-          <a 
-            href="https://calendly.com/bajrangastroofficial/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mobile-astro"
-          >
-            <IoCallSharp size={20} color="#E57661" />
-            Talk to Astrologer
-          </a>
-
         </div>
       )}
 

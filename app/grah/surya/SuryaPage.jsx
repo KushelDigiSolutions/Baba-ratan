@@ -13,59 +13,59 @@ import {
   Briefcase,
   Activity,
 } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function SuryaGrahPage() {
   return (
-    <div className="bg-[#fff7f5] overflow-hidden text-[#2d1f1f]">
+    <div className="bg-[#fffcf9] overflow-hidden text-[#5c2508]">
       {/* HERO SECTION */}
-      <section className="relative bg-[#c96e67]  py-24 lg:py-32">
+      <section className="relative bg-gradient-to-br from-[#ffecd9] via-[#ffd8b3] to-[#ffb88c] py-16 lg:py-24 border-b border-[#ffa366]/30">
         <div className="absolute inset-0 opacity-10 bg-[url('/stars.png')] bg-cover"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="bg-white/20 text-white border border-white/20 px-5 py-2 rounded-full text-sm tracking-wide">
-                Navgrah • Surya Grah
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <span className="bg-[#f97316]/10 text-[#d97706] border border-[#f97316]/20 px-5 py-2 rounded-full text-sm tracking-wide font-semibold">
+                नवग्रह • सूर्य देव
               </span>
 
-              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mt-7">
-                Surya Grah
+              <h1 className="text-5xl lg:text-7xl font-extrabold text-[#9a3412] leading-tight mt-7">
+                सूर्य ग्रह
               </h1>
 
-              <p className="text-xl text-white/90 leading-9 mt-8 max-w-2xl">
-                Surya Grah ko sabhi grahon ka raja mana jata hai. Yeh
-                confidence, leadership, success, authority aur positive energy
-                ka pratik hota hai.
+              <p className="text-lg sm:text-xl text-[#7c2d12] leading-9 mt-8 max-w-2xl mx-auto lg:mx-0 font-medium">
+                वैदिक ज्योतिष में सूर्य (Sun) को ग्रहों का राजा और आत्मा का कारक माना जाता है। मजबूत सूर्य आपके जीवन में अपार नेतृत्व क्षमता, तेज, राजकीय मान-सम्मान और करियर में सर्वोच्च सफलता सुनिश्चित करता है।
               </p>
 
-              <div className="flex flex-wrap gap-5 mt-10">
-                <button className="bg-white text-[#c96e67] px-8 py-4 rounded-2xl font-semibold hover:scale-105 duration-300">
-                  Explore Remedies
-                </button>
+              <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-10">
+                <a href="#remedies-section" className="w-full sm:w-auto">
+                  <button className="w-full justify-center bg-[#f97316] hover:bg-[#ea580c] text-white px-8 py-4 rounded-2xl font-semibold transition duration-300 shadow-lg shadow-orange-500/20 cursor-pointer">
+                    उपाय जानें
+                  </button>
+                </a>
 
                 <a 
                   href="https://calendly.com/bajrangastroofficial/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-[#c96e67] duration-300 inline-block text-center"
+                  className="w-full sm:w-auto border border-[#f97316]/40 bg-white/60 text-[#ea580c] px-8 py-4 rounded-2xl font-semibold hover:bg-white transition duration-300 inline-block text-center cursor-pointer shadow-sm"
                 >
-                  Talk to Astrologer
+                  ज्योतिषी से बात करें
                 </a>
-
               </div>
 
-              <div className="grid grid-cols-3 gap-5 mt-12">
+              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-12 w-full max-w-md">
                 {[
-                  { label: "Element", value: "Fire" },
-                  { label: "Day", value: "Sunday" },
-                  { label: "Gemstone", value: "Ruby" },
+                  { label: "तत्व", value: "अग्नि" },
+                  { label: "दिन", value: "रविवार" },
+                  { label: "रत्न", value: "माणिक्य" },
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center"
+                    className="bg-white/95 border border-[#ffd8b3] rounded-2xl p-2 sm:p-5 text-center shadow-sm"
                   >
-                    <p className="text-white/70 text-sm">{item.label}</p>
-                    <h3 className="text-white font-bold text-xl mt-2">
+                    <p className="text-[#9a3412] text-xs sm:text-sm font-semibold">{item.label}</p>
+                    <h3 className="text-[#7c2d12] font-bold text-sm sm:text-base md:text-xl mt-2">
                       {item.value}
                     </h3>
                   </div>
@@ -73,102 +73,104 @@ export default function SuryaGrahPage() {
               </div>
             </div>
 
-            <div className="relative flex justify-center items-center min-h-[520px]">
-  {/* Background Glow */}
-  <div className="absolute w-[420px] h-[420px] rounded-full bg-yellow-400/20 blur-3xl"></div>
+            <div className="relative flex justify-center items-center min-h-[360px] sm:min-h-[520px] w-full overflow-hidden">
+              {/* Background Glow */}
+              <div className="absolute w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] rounded-full bg-orange-300/30 blur-3xl"></div>
 
-  {/* Outer Orbit */}
-  <div className="absolute w-[520px] h-[520px] rounded-full border border-white/20 animate-[spin_30s_linear_infinite]"></div>
+              {/* Outer Orbit */}
+              <div className="hidden sm:block absolute w-[520px] h-[520px] rounded-full border border-[#f97316]/20 animate-[spin_30s_linear_infinite]"></div>
 
-  {/* Middle Orbit */}
-  <div className="absolute w-[420px] h-[420px] rounded-full border border-white/10"></div>
+              {/* Middle Orbit */}
+              <div className="hidden sm:block absolute w-[420px] h-[420px] rounded-full border border-[#f97316]/10"></div>
 
-  {/* Small Floating Planets */}
-  <div className="absolute top-16 right-12 w-14 h-14 rounded-full bg-gradient-to-br from-orange-300 to-yellow-500 shadow-[0_0_30px_rgba(255,190,60,0.6)] animate-pulse"></div>
+              {/* Small Floating Planets */}
+              <div className="hidden sm:block absolute top-16 right-12 w-14 h-14 rounded-full bg-gradient-to-br from-orange-300 to-yellow-500 shadow-[0_0_30px_rgba(251,146,60,0.4)] animate-pulse"></div>
 
-  <div className="absolute bottom-20 left-10 w-10 h-10 rounded-full bg-gradient-to-br from-red-300 to-orange-500 shadow-[0_0_20px_rgba(255,120,60,0.5)] animate-bounce"></div>
+              <div className="hidden sm:block absolute bottom-20 left-10 w-10 h-10 rounded-full bg-gradient-to-br from-red-300 to-orange-400 shadow-[0_0_20px_rgba(249,115,22,0.3)] animate-bounce"></div>
 
-  {/* Main Sun */}
-  <div className="relative z-10">
-    {/* Pulse Glow */}
-    <div className="absolute inset-0 rounded-full bg-yellow-300/30 blur-2xl scale-125 animate-pulse"></div>
+              {/* Main Sun */}
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="relative z-10 scale-90 sm:scale-100"
+              >
+                {/* Pulse Glow */}
+                <div className="absolute inset-0 rounded-full bg-orange-400/20 blur-2xl scale-125 animate-pulse"></div>
 
-    {/* Sun Body */}
-    <div className="relative w-[320px] h-[320px] rounded-full bg-gradient-to-br from-yellow-300 via-orange-400 to-orange-600 shadow-[0_0_140px_rgba(255,190,60,0.75)] border border-white/20 flex items-center justify-center overflow-hidden">
-      
-      {/* Inner Ring */}
-      <div className="absolute inset-5 rounded-full border border-white/10"></div>
+                {/* Sun Body */}
+                <div className="relative w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] max-w-full rounded-full bg-gradient-to-br from-yellow-300 via-orange-400 to-orange-500 shadow-[0_0_100px_rgba(249,115,22,0.5)] border border-[#ffb88c] flex items-center justify-center overflow-hidden">
+                  
+                  {/* Inner Ring */}
+                  <div className="absolute inset-5 rounded-full border border-white/20"></div>
 
-      {/* Shine Effect */}
-      <div className="absolute top-10 left-14 w-28 h-28 bg-white/20 blur-2xl rounded-full"></div>
+                  {/* Shine Effect */}
+                  <div className="absolute top-10 left-14 w-28 h-28 bg-white/20 blur-2xl rounded-full"></div>
 
-      {/* Rotating Light Ring */}
-      <div className="absolute inset-0 rounded-full border-2 border-transparent border-white animate-spin"></div>
+                  {/* Rotating Light Ring */}
+                  <div className="absolute inset-0 rounded-full border-2 border-transparent border-white/40 animate-spin"></div>
 
-      <Sun className="w-40 h-40 text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.8)]" />
-    </div>
-  </div>
+                  <Sun className="w-32 h-32 sm:w-40 sm:h-40 text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.8)]" />
+                </div>
+              </motion.div>
 
-  {/* Floating Glass Card */}
-  <div className="absolute bottom-6  z-50 right-0 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-5 py-4 shadow-2xl">
-    <p className="text-white/60 text-sm">Surya Energy</p>
-    <h3 className="text-white font-semibold text-lg mt-1">
-      Power & Leadership
-    </h3>
-  </div>
-</div>
+              {/* Floating Glass Card */}
+              <div className="absolute bottom-6 z-50 right-0 sm:right-6 bg-white/95 border border-[#ffd8b3] rounded-2xl px-5 py-4 shadow-xl">
+                <p className="text-[#9a3412] text-sm font-semibold">ब्रह्मांडीय ऊर्जा</p>
+                <h3 className="text-[#7c2d12] font-semibold text-lg mt-1">
+                  शक्ति और नेतृत्व
+                </h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ABOUT */}
-      <section className="py-24">
+      <section className="py-12 lg:py-20 bg-[#fffcf9]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?q=80&w=1200&auto=format&fit=crop"
                 alt="surya"
-                className="rounded-[35px] shadow-2xl h-[600px] object-cover w-full"
+                className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-[#ffd8b3]/30"
               />
             </div>
 
-            <div>
-              <span className="text-[#c96e67] font-semibold uppercase tracking-[4px]">
-                About Surya
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <span className="text-[#f97316] font-extrabold uppercase tracking-[4px]">
+                About Lord Surya
               </span>
 
-              <h2 className="text-5xl font-bold mt-5 leading-tight">
-                Surya Grah Ka Importance
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-5 text-[#9a3412] leading-tight">
+                The King of Planetary Forces
               </h2>
 
-              <p className="text-gray-600 leading-8 text-lg mt-8">
-                Astrology me Surya Grah personality, confidence aur success ko
-                represent karta hai. Kundli me strong Surya insaan ko powerful
-                leadership aur respect deta hai.
+              <p className="text-gray-700 leading-8 text-lg mt-8">
+                In Vedic astrology, the Sun represents your soul's core, raw vitality, and fundamental willpower. It is the primary driving force behind all worldly achievements.
               </p>
 
-              <p className="text-gray-600 leading-8 text-lg mt-5">
-                Agar Surya weak ho to confidence issues, career struggles aur
-                authority problems dekhne ko mil sakti hai.
+              <p className="text-gray-700 leading-8 text-lg mt-5 font-medium">
+                A strongly placed Sun in your birth chart blesses you with unbreakable self-confidence, robust health, and the magnetic charisma to lead and inspire the masses.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-6 mt-10">
                 {[
-                  "Leadership Power",
-                  "Government Success",
-                  "Career Growth",
-                  "Positive Energy",
+                  "Unshakable Spiritual Core and Inner Radiance",
+                  "Unprecedented Governmental and Administrative Success",
+                  "Absolute Immunity against Hidden Enemies and Rivals",
+                  "Generational Wealth and Royal Prestige Accumulation",
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-white rounded-2xl p-6  border-[#f4d6d0]"
+                    className="bg-white rounded-2xl p-6 border border-[#ffd8b3] flex flex-col items-center text-center sm:items-start sm:text-left shadow-sm"
                   >
-                    <div className="w-14 h-14 rounded-2xl bg-[#fff0ec] text-[#c96e67] flex items-center justify-center">
+                    <div className="w-14 h-14 rounded-2xl bg-[#ffedd5] text-[#f97316] flex items-center justify-center shadow-sm">
                       <Star className="w-7 h-7" />
                     </div>
 
-                    <h3 className="font-medium text-xl mt-5">{item}</h3>
+                    <h3 className="font-semibold text-lg text-[#7c2d12] mt-5">{item}</h3>
                   </div>
                 ))}
               </div>
@@ -178,55 +180,54 @@ export default function SuryaGrahPage() {
       </section>
 
       {/* EFFECTS */}
-      <section className="py-24 bg-gradient-to-b from-[#fff7f5] to-[#ffe9e3]">
+      <section className="py-12 lg:py-20 bg-gradient-to-b from-[#fffcf9] to-[#ffecd9]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-[#c96e67] uppercase tracking-[4px] font-semibold">
-              Surya Effects
+            <span className="text-[#f97316] uppercase tracking-[4px] font-extrabold">
+              सकारात्मक प्रभाव
             </span>
 
-            <h2 className="text-5xl font-bold mt-5">
-              Surya Grah Ke Positive Effects
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-5 text-[#9a3412] leading-[1.3] md:leading-[1.4]">
+              मजबूत सूर्य के चमत्कारी लाभ
             </h2>
 
-            <p className="text-gray-600 leading-8 mt-6 text-lg">
-              Strong Surya life me success, confidence aur powerful personality
-              lata hai.
+            <p className="text-gray-700 leading-8 mt-6 text-lg font-medium">
+              जब आपकी कुंडली में सूर्य बलवान स्थिति में होता है, तो वह आपके व्यक्तित्व को एक अलग ही चमक और आत्मविश्वास प्रदान करता है, जिससे आप हर क्षेत्र में विजय प्राप्त करते हैं।
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
             {[
               {
-                icon: <Crown className="w-8 h-8" />,
-                title: "Leadership",
-                desc: "Leadership qualities aur authority ko strong karta hai.",
-              },
-              {
                 icon: <Briefcase className="w-8 h-8" />,
-                title: "Career Growth",
-                desc: "Career me promotion aur success dilata hai.",
-              },
-              {
-                icon: <Flame className="w-8 h-8" />,
-                title: "Confidence",
-                desc: "Self-confidence aur motivation ko increase karta hai.",
+                title: "राजकीय सम्मान",
+                desc: "शासन-प्रशासन और राजनीति के क्षेत्र में उच्च पद और अद्वितीय दबदबा प्राप्त होता है।",
               },
               {
                 icon: <Activity className="w-8 h-8" />,
-                title: "Health",
-                desc: "Energy aur physical strength ko improve karta hai.",
+                title: "पिता से मधुर संबंध",
+                desc: "पैतृक संपत्ति का पूर्ण लाभ मिलता है और पिता के साथ आत्मीय संबंध मजबूत होते हैं।",
+              },
+              {
+                icon: <Star className="w-8 h-8" />,
+                title: "आत्मिक ऊर्जा",
+                desc: "आत्मा में एक विशेष प्रकार का ओज उत्पन्न होता है जो हर निराशा को नष्ट कर देता है।",
+              },
+              {
+                icon: <Crown className="w-8 h-8" />,
+                title: "नेत्र ज्योति और अस्थि बल",
+                desc: "नेत्र संबंधी विकार दूर होते हैं और शरीर की अस्थियां वज़्र के समान मजबूत बनती हैं।",
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white rounded-[30px] p-8  hover:-translate-y-2 duration-300"
+                className="bg-white rounded-[30px] p-8 hover:-translate-y-2 duration-300 flex flex-col items-center text-center sm:items-start sm:text-left shadow-sm border border-[#ffd8b3]/60"
               >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-[#c96e67] to-[#de8d67] text-white flex items-center justify-center">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-[#f97316] to-[#fb923c] text-white flex items-center justify-center shadow-sm">
                   {item.icon}
                 </div>
 
-                <h3 className="text-2xl font-bold mt-6">{item.title}</h3>
+                <h3 className="text-2xl font-bold text-[#7c2d12] mt-6">{item.title}</h3>
 
                 <p className="text-gray-600 leading-7 mt-4">{item.desc}</p>
               </div>
@@ -236,46 +237,50 @@ export default function SuryaGrahPage() {
       </section>
 
       {/* WEAK SURYA */}
-      <section className="py-24 bg-white">
+      <section className="py-12 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="text-[#c96e67] uppercase tracking-[4px] font-semibold">
-                Weak Surya
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <span className="text-[#f97316] uppercase tracking-[4px] font-extrabold">
+                Signs of Surya Dosha
               </span>
 
-              <h2 className="text-5xl font-bold mt-5 leading-tight">
-                Weak Surya Ke Lakshan
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#9a3412] mt-5 leading-tight">
+                Negative Impacts of a Weak Sun
               </h2>
+
+              <p className="text-gray-700 leading-8 text-lg mt-6">
+                A debilitated or afflicted Sun in the horoscope can severely limit your potential, causing unwarranted obstacles and a persistent lack of inner drive.
+              </p>
 
               <div className="space-y-5 mt-10">
                 {[
-                  "Confidence ki kami",
-                  "Government related issues",
-                  "Career growth me problems",
-                  "Health aur energy low rehna",
-                  "Father relationship issues",
-                  "Respect aur authority me kami",
+                  "Chronic lethargy and deep-seated pessimism",
+                  "Unwarranted defamation and false legal allegations",
+                  "Severe heart palpitations and chronic bone ailments",
+                  "Continuous friction and losses in ancestral wealth",
+                  "Extreme difficulty in passing government examinations",
+                  "Loss of willpower to lead or manage responsibilities",
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-5 bg-[#fff5f2] border border-[#f5d7d1] rounded-2xl p-5"
+                    className="flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-[#fffcf9] border border-[#ffd8b3] rounded-2xl p-5 text-center sm:text-left shadow-sm"
                   >
-                    <div className="w-12 h-12 rounded-full bg-[#c96e67] text-white flex items-center justify-center font-bold">
+                    <div className="w-12 h-12 rounded-full bg-[#f97316] text-white flex items-center justify-center font-bold shrink-0 shadow-sm">
                       {i + 1}
                     </div>
 
-                    <p className="text-lg font-medium">{item}</p>
+                    <p className="text-lg font-bold text-[#7c2d12]">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200&auto=format&fit=crop"
                 alt="weak surya"
-                className="rounded-[35px] shadow-2xl h-[650px] object-cover w-full"
+                className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#ffd8b3]/30"
               />
             </div>
           </div>
@@ -283,98 +288,95 @@ export default function SuryaGrahPage() {
       </section>
 
       {/* REMEDIES */}
-      <section className="py-24 bg-gradient-to-r from-[#c96e67] to-[#de8d67]">
+      <section id="remedies-section" className="py-12 lg:py-20 bg-gradient-to-br from-[#ffecd9] via-[#ffd8b3] to-[#ffb88c] border-t border-b border-[#ffa366]/30">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
-            <span className="text-white/80 uppercase tracking-[4px] font-semibold">
-              Surya Remedies
+            <span className="text-[#9a3412] uppercase tracking-[4px] font-extrabold">
+              ज्योतिषीय उपाय
             </span>
 
-            <h2 className="text-5xl font-bold text-white mt-5">
-              Surya Grah Ko Strong Kaise Kare
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#7c2d12] mt-5 leading-[1.3] md:leading-[1.4]">
+              सूर्य ग्रह को बलवान करने के अचूक तरीके
             </h2>
 
-            <p className="text-white/90 leading-8 max-w-3xl mx-auto text-lg mt-6">
-              Astrology me Surya ko strong karne ke liye kuch powerful remedies
-              aur spiritual practices batayi gayi hai.
+            <p className="text-[#5c2508] leading-8 max-w-3xl mx-auto text-lg mt-6 font-medium">
+              वैदिक ज्योतिष में सूर्य के अशुभ प्रभावों को दूर करने और इसके शुभ फलों को प्राप्त करने के लिए अत्यंत प्रभावशाली उपाय और अनुष्ठान बताए गए हैं।
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
             {[
               {
-                title: "Surya Mantra",
-                desc: "Daily Surya mantra jaap karna beneficial hota hai.",
+                title: "आदित्य हृदय स्तोत्र",
+                desc: "प्रतिदिन प्रातःकाल आदित्य हृदय स्तोत्र का पाठ करने से असाध्य रोगों और शत्रुओं का नाश होता है।",
               },
               {
-                title: "Surya Arghya",
-                desc: "Subah Surya ko jal chadhana shubh mana jata hai.",
+                title: "तांबे का बर्तन",
+                desc: "रात भर तांबे के पात्र में रखे जल का प्रात: सेवन करना सूर्य की सकारात्मक ऊर्जा को अवशोषित करता है।",
               },
               {
-                title: "Ruby Stone",
-                desc: "Ruby gemstone Surya ko strong karta hai.",
+                title: "गेहूं और गुड़ का दान",
+                desc: "प्रत्येक रविवार को गरीबों में गेहूं, लाल वस्त्र और गुड़ का दान करने से राजयोग का निर्माण होता है।",
               },
               {
-                title: "Sunday Fast",
-                desc: "Sunday vrat positive energy aur blessings deta hai.",
+                title: "पिता की सेवा",
+                desc: "प्रतिदिन पिता या पितातुल्य व्यक्तियों के चरण स्पर्श कर उनका आशीर्वाद लेना सबसे बड़ा सूर्य उपाय है।",
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-[30px] p-8 text-white"
+                className="bg-white/95 border border-[#ffd8b3] rounded-[30px] p-8 text-[#7c2d12] flex flex-col items-center text-center sm:items-start sm:text-left shadow-md"
               >
-                <div className="w-16 h-16 rounded-2xl bg-white text-[#c96e67] flex items-center justify-center">
+                <div className="w-16 h-16 rounded-2xl bg-[#f97316] text-white flex items-center justify-center shadow-md">
                   <Sparkles className="w-8 h-8" />
                 </div>
 
                 <h3 className="text-2xl font-bold mt-6">{item.title}</h3>
 
-                <p className="leading-7 text-white/80 mt-4">{item.desc}</p>
+                <p className="leading-7 text-gray-600 mt-4 font-medium">{item.desc}</p>
               </div>
             ))}
           </div>
 
-          <div className="bg-white rounded-[35px] p-10 mt-20 text-center shadow-2xl">
-            <h3 className="text-3xl font-bold">
-              Surya Beej Mantra
+          <div className="bg-white rounded-[35px] p-8 mt-12 text-center shadow-xl border border-[#ffd8b3]">
+            <h3 className="text-3xl font-extrabold text-[#9a3412]">
+              सूर्य बीज मंत्र
             </h3>
 
-            <p className="text-[#c96e67] text-2xl font-semibold mt-6">
+            <p className="text-[#ea580c] text-2xl sm:text-3xl font-extrabold mt-6 tracking-wide drop-shadow-sm">
               ॐ ह्रां ह्रीं ह्रौं सः सूर्याय नमः
             </p>
 
-            <p className="text-gray-600 leading-8 mt-5 text-lg">
-              Roz subah 108 baar is mantra ka jaap karna Surya Grah ko strong
-              banane me helpful mana jata hai.
+            <p className="text-gray-700 leading-8 mt-5 text-lg max-w-2xl mx-auto font-medium">
+              सूर्योदय के समय इस पवित्र मंत्र का 108 बार जाप करने से मान-सम्मान, धन और सौभाग्य की प्राप्ति होती है।
             </p>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#fff7f5]">
+      <section className="py-12 lg:py-20 bg-[#fffcf9]">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="bg-white rounded-[40px]  p-12 text-center">
-            <div className="w-24 h-24 rounded-full bg-gradient-to-r from-[#c96e67] to-[#de8d67] text-white flex items-center justify-center mx-auto shadow-xl">
+          <div className="bg-white rounded-[40px] p-10 text-center border border-[#ffd8b3] shadow-lg">
+            <div className="w-24 h-24 rounded-full bg-gradient-to-r from-[#f97316] to-[#fb923c] text-white flex items-center justify-center mx-auto shadow-lg">
               <HeartHandshake className="w-12 h-12" />
             </div>
 
-            <h2 className="text-5xl font-bold mt-8 leading-tight">
-              Personalized Surya Consultation
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#9a3412] mt-8 leading-tight">
+              Personalized Astrological Guidance
             </h2>
 
-            <p className="text-gray-600 leading-8 text-lg mt-6 max-w-3xl mx-auto">
-              Apni kundli me Surya ki position aur uske effects ko samajhne ke
-              liye expert astrologer se consultation le sakte hai.
+            <p className="text-gray-700 leading-8 text-lg mt-6 max-w-3xl mx-auto">
+              Want to deeply analyze the position of the Sun in your Kundli and discover highly effective remedies? Book a personalized session with our renowned Vedic experts.
             </p>
 
             <div className="flex flex-wrap justify-center gap-5 mt-10">
-              <button className="bg-[#c96e67] hover:bg-[#b85d57] text-white px-8 py-4 rounded-2xl font-semibold duration-300">
+              <a href="https://calendly.com/bajrangastroofficial/30min" target="_blank" rel="noopener noreferrer" className="bg-[#f97316] hover:bg-[#ea580c] text-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg shadow-orange-500/20 cursor-pointer">
                 Book Consultation
-              </button>
+              </a>
 
-              <button className="border border-[#c96e67] text-[#c96e67] hover:bg-[#c96e67] hover:text-white px-8 py-4 rounded-2xl font-semibold duration-300 flex items-center gap-2">
-                Learn More <ArrowRight className="w-5 h-5" />
+              <button className="border border-[#f97316]/50 text-[#f97316] hover:bg-[#f97316] hover:text-white px-8 py-4 rounded-2xl font-semibold duration-300 flex items-center gap-2 cursor-pointer shadow-sm">
+                View More Details <ArrowRight className="w-5 h-5" />
               </button>
             </div>
           </div>

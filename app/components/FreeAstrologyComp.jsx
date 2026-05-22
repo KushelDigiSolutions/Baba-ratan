@@ -78,7 +78,7 @@ const FreeAstrologyReadings = () => {
                      Astrology Readings
                 </h2>
 
-                <p className="text-gray-600 mt-4 max-w-2xl text-sm md:text-base leading-7">
+                <p className="text-gray-600 mt-4 max-w-2xl mx-auto lg:mx-0 text-sm md:text-base leading-7">
                     Explore free astrology tools and spiritual guidance including kundli,
                     horoscope, tarot, vastu, numerology and more.
                 </p>

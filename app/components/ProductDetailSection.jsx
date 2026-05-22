@@ -49,7 +49,7 @@ const ProductDetailSection = ({ product }) => {
         setIsWishlisting(false);
     };
 
-    const fontStyle = { fontFamily: "'GT Walsheim Trial', sans-serif" };
+    const fontStyle = { fontFamily: "'GT Walsheim Trial', var(--font-geist-sans), sans-serif" };
 
     return (
         <div className="bg-white min-h-screen" style={fontStyle}>

@@ -1,3 +1,4 @@
+// app/grah/guru/page.jsx
 "use client";
 
 import React from "react";
@@ -14,12 +15,13 @@ import {
   Orbit,
   GraduationCap,
   CheckCircle2,
+  Phone,
 } from "lucide-react";
 
 export default function GuruGrahPage() {
   return (
     <div className="bg-[#fffdf8] text-[#2b2215] overflow-hidden">
-      {/* ================= HERO ================= */}
+      {/* ================= HERO SECTION (English) ================= */}
       <section className="relative overflow-hidden">
         {/* BACKGROUND */}
         <div className="absolute inset-0 bg-[#f6e4b3]" />
@@ -32,47 +34,44 @@ export default function GuruGrahPage() {
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-orange-300/30 rounded-full blur-[120px]" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 min-h-screen items-center gap-20 py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen items-center gap-20 py-12 md:py-16 lg:py-20">
             {/* LEFT */}
-            <div>
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="inline-flex items-center gap-3 bg-white/70 border border-white px-5 py-3 rounded-full shadow-lg backdrop-blur-xl">
                 <div className="w-3 h-3 rounded-full bg-[#c58a2d]" />
-
                 <span className="text-sm font-semibold tracking-[3px] uppercase text-[#7a4d0b]">
-                  Navgrah • Guru Dev
+                  Navgrah • Lord Guru
                 </span>
               </div>
 
-              <h1 className="mt-8 text-6xl sm:text-7xl lg:text-[110px] font-black leading-none">
+              <h1 className="mt-8 text-5xl sm:text-7xl lg:text-[110px] font-black leading-[1.1]">
                 <span className="text-[#8b5e1a]">Guru</span>
-
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#f2b84b] to-[#8b5e1a]">
-                  Grah
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#f2b84b] to-[#8b5e1a] py-2">
+                  Planet
                 </span>
               </h1>
 
-              <p className="mt-8 text-lg sm:text-xl leading-9 text-[#5e4a2d] max-w-2xl">
-                Guru Grah wisdom, spirituality, prosperity aur higher
-                learning ka pratik mana jata hai. Strong Guru life me
-                positivity, fortune aur success lekar aata hai.
+              <p className="mt-8 text-lg sm:text-xl leading-9 text-[#5e4a2d] max-w-2xl mx-auto lg:mx-0">
+                Jupiter, known as Brihaspati, remains the supreme celestial guide of divine wisdom, higher knowledge, and spiritual growth. A benefic Guru fills your life with absolute positivity, continuous financial abundance, and exceptional fortune.
               </p>
 
               {/* BUTTONS */}
-              <div className="flex flex-wrap gap-5 mt-10">
-                <button className="group cursor-pointer bg-[#8b5e1a] hover:bg-[#70450c] text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 duration-300 shadow-[0_15px_40px_rgba(139,94,26,0.35)]">
-                  Explore Remedies
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 duration-300" />
-                </button>
-                <a href="tel:+917042600873">
-                  <button className="bg-white/80 border cursor-pointer border-[#e9c87b] text-[#8b5e1a] hover:bg-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg">
-                    Talk To Astrologer
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10">
+                <a href="#remedies-section" className="w-full sm:w-auto">
+                  <button className="w-full justify-center group cursor-pointer bg-[#8b5e1a] hover:bg-[#70450c] text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 duration-300 shadow-[0_15px_40px_rgba(139,94,26,0.35)]">
+                    Explore Remedies
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 duration-300" />
                   </button>
                 </a>
-
+                <a href="tel:+917042600873" className="w-full sm:w-auto">
+                  <button className="w-full bg-white/80 border cursor-pointer border-[#e9c87b] text-[#8b5e1a] hover:bg-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg">
+                    Consult Astrologer
+                  </button>
+                </a>
               </div>
 
               {/* MINI STATS */}
-              <div className="grid sm:grid-cols-3 gap-5 mt-14">
+              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-14">
                 {[
                   {
                     title: "Day",
@@ -84,18 +83,17 @@ export default function GuruGrahPage() {
                   },
                   {
                     title: "Gemstone",
-                    value: "Pukhraj",
+                    value: "Yellow Sapphire",
                   },
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-white/70 backdrop-blur-xl border border-white rounded-3xl p-6 shadow-xl"
+                    className="bg-white/70 backdrop-blur-xl border border-white rounded-2xl sm:rounded-3xl p-3 sm:p-6 shadow-xl text-center"
                   >
-                    <p className="text-[#8b5e1a]/70 text-sm">
+                    <p className="text-[#8b5e1a]/70 text-xs sm:text-sm">
                       {item.title}
                     </p>
-
-                    <h3 className="text-2xl font-black mt-2 text-[#8b5e1a]">
+                    <h3 className="text-sm sm:text-base md:text-2xl font-black mt-1 sm:mt-2 text-[#8b5e1a]">
                       {item.value}
                     </h3>
                   </div>
@@ -109,36 +107,26 @@ export default function GuruGrahPage() {
               <div className="absolute w-[500px] h-[500px] rounded-full bg-gradient-to-br from-[#ffcf67] to-[#c58a2d] blur-[100px] opacity-40" />
 
               {/* PLANET */}
-              <div className="relative z-10">
+              <div className="relative z-10 mt-10 lg:mt-0">
                 {/* OUTER RING */}
-                <div className="absolute inset-[-50px] rounded-full border border-[#c58a2d]/30 animate-spin"></div>
-
-                <div className="absolute inset-[-90px] rounded-full border border-[#c58a2d]/20"></div>
+                <div className="absolute inset-[-20px] sm:inset-[-50px] rounded-full border border-[#c58a2d]/30 animate-spin"></div>
+                <div className="absolute inset-[-40px] sm:inset-[-90px] rounded-full border border-[#c58a2d]/20"></div>
 
                 {/* PLANET */}
-                <div className="w-[300px] sm:w-[420px] h-[300px] sm:h-[420px] rounded-full bg-gradient-to-br from-[#ffe29a] via-[#f2b84b] to-[#8b5e1a] shadow-[0_0_120px_rgba(242,184,75,0.55)] flex items-center justify-center relative overflow-hidden">
-                  {/* PLANET TEXTURE */}
-                  <div className="absolute top-10 left-10 w-24 h-24 rounded-full bg-white/10 blur-2xl"></div>
-
-                  <div className="absolute bottom-16 right-14 w-32 h-32 rounded-full bg-black/10 blur-2xl"></div>
-
-                  <SunMedium className="w-32 sm:w-44 h-32 sm:h-44 text-white" />
+                <div className="w-[200px] sm:w-[300px] lg:w-[420px] h-[200px] sm:h-[300px] lg:h-[420px] rounded-full bg-gradient-to-br from-[#ffe29a] via-[#f2b84b] to-[#8b5e1a] shadow-[0_0_120px_rgba(242,184,75,0.55)] flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute top-6 sm:top-10 left-6 sm:left-10 w-16 sm:w-24 h-16 sm:h-24 rounded-full bg-white/10 blur-2xl"></div>
+                  <div className="absolute bottom-10 sm:bottom-16 right-10 sm:right-14 w-20 sm:w-32 h-20 sm:h-32 rounded-full bg-black/10 blur-2xl"></div>
+                  <SunMedium className="w-20 sm:w-32 lg:w-44 h-20 sm:h-32 lg:h-44 text-white" />
                 </div>
 
-                {/* FLOATING CARD */}
+                {/* FLOATING GLASS CARDS */}
                 <div className="absolute -top-8 -right-10 bg-white rounded-3xl shadow-2xl border border-[#f4deb0] p-5 hidden lg:flex items-center gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-[#fff3d4] text-[#8b5e1a] flex items-center justify-center">
                     <BookOpen className="w-7 h-7" />
                   </div>
-
                   <div>
-                    <p className="text-sm text-gray-500">
-                      Represents
-                    </p>
-
-                    <h3 className="font-bold text-xl">
-                      Wisdom
-                    </h3>
+                    <p className="text-sm text-gray-500">Represents</p>
+                    <h3 className="font-bold text-xl text-black">Intellect</h3>
                   </div>
                 </div>
 
@@ -146,15 +134,9 @@ export default function GuruGrahPage() {
                   <div className="w-14 h-14 rounded-2xl bg-[#fff3d4] text-[#8b5e1a] flex items-center justify-center">
                     <Crown className="w-7 h-7" />
                   </div>
-
                   <div>
-                    <p className="text-sm text-gray-500">
-                      Controls
-                    </p>
-
-                    <h3 className="font-bold text-xl">
-                      Prosperity
-                    </h3>
+                    <p className="text-sm text-gray-500">Controls</p>
+                    <h3 className="font-bold text-xl text-black">Abundance</h3>
                   </div>
                 </div>
               </div>
@@ -163,232 +145,262 @@ export default function GuruGrahPage() {
         </div>
       </section>
 
-      {/* ================= ABOUT ================= */}
-      <section className="py-28 relative">
+      {/* ABOUT */}
+      <section className="py-12 lg:py-20 bg-[#fffdf8]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* LEFT CONTENT */}
-            <div>
-              <span className="text-[#c58a2d] uppercase tracking-[4px] font-bold">
-                About Guru Grah
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <img
+                src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?q=80&w=1200&auto=format&fit=crop"
+                alt="guru"
+                className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-[#f4deb0]/30"
+              />
+            </div>
+
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <span className="text-[#c58a2d] font-extrabold uppercase tracking-[4px]">
+                About Lord Guru
               </span>
 
-              <h2 className="text-5xl lg:text-6xl font-black leading-tight mt-6">
-                Wisdom Aur Knowledge Ka Planet
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-5 text-[#8b5e1a] leading-tight">
+                The Guru of Wisdom & Abundance
               </h2>
 
-              <p className="mt-8 text-lg leading-9 text-gray-600">
-                Guru Grah astrology me spirituality, intelligence,
-                prosperity aur positivity ko represent karta hai.
-                Strong Guru insaan ko respect aur fortune deta hai.
+              <p className="text-gray-700 leading-8 text-lg mt-8">
+                In Vedic astrology, Jupiter (Guru) represents supreme wisdom, spiritual righteousness, intellect, and divine grace. It is the most benevolent planetary force in the cosmos.
               </p>
 
-              {/* FEATURES */}
-              <div className="space-y-5 mt-10">
+              <p className="text-gray-700 leading-8 text-lg mt-5 font-medium">
+                A strongly placed Guru in your birth chart blesses you with deep knowledge, high administrative stature, virtuous children, marital bliss, and continuous financial expansion.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-6 mt-10">
                 {[
-                  "Spiritual growth aur positivity badhata hai",
-                  "Financial prosperity aur fortune attract karta hai",
-                  "Knowledge aur wisdom improve karta hai",
-                  "Respect aur honor provide karta hai",
+                  "Supreme Academic Wisdom and Intellect",
+                  "Virtuous Marital Harmony and Progeny Blessing",
+                  "Immense Wealth, Gold, and Financial Prosperity",
+                  "Divine Protection and Spiritual Enlightenment",
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-white border border-[#f4deb0] rounded-3xl p-6 shadow-lg flex items-start gap-4 hover:-translate-y-1 duration-300"
+                    className="bg-white rounded-2xl p-6 border border-[#f4deb0] flex flex-col items-center text-center sm:items-start sm:text-left shadow-sm"
                   >
-                    <div className="w-12 h-12 rounded-2xl bg-[#fff3d4] text-[#c58a2d] flex items-center justify-center shrink-0">
-                      <CheckCircle2 className="w-6 h-6" />
+                    <div className="w-14 h-14 rounded-2xl bg-[#fff3d4] text-[#c58a2d] flex items-center justify-center shadow-sm">
+                      <Star className="w-7 h-7" />
                     </div>
 
-                    <p className="text-lg text-gray-700 leading-8">
-                      {item}
-                    </p>
+                    <h3 className="font-semibold text-lg text-[#8b5e1a] mt-5">{item}</h3>
                   </div>
                 ))}
               </div>
             </div>
-
-            {/* RIGHT CARD DESIGN */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-[#fff5d8] to-[#ffe7b0] rounded-[45px] p-8 shadow-[0_25px_60px_rgba(0,0,0,0.08)] border border-[#f2d28a] relative overflow-hidden">
-                {/* DECOR */}
-                <div className="absolute top-0 right-0 w-40 h-40 rounded-full bg-[#f2c14e]/20 blur-3xl"></div>
-
-                <div className="grid sm:grid-cols-2 gap-6 relative z-10">
-                  {[
-                    {
-                      icon: <GraduationCap className="w-8 h-8" />,
-                      title: "Education",
-                    },
-                    {
-                      icon: <ShieldCheck className="w-8 h-8" />,
-                      title: "Protection",
-                    },
-                    {
-                      icon: <Orbit className="w-8 h-8" />,
-                      title: "Growth",
-                    },
-                    {
-                      icon: <Gem className="w-8 h-8" />,
-                      title: "Prosperity",
-                    },
-                  ].map((item, i) => (
-                    <div
-                      key={i}
-                      className="bg-white rounded-3xl p-8 shadow-lg border border-[#f7e5bc] hover:-translate-y-2 duration-300"
-                    >
-                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f2c14e] to-[#c58a2d] text-white flex items-center justify-center shadow-lg">
-                        {item.icon}
-                      </div>
-
-                      <h3 className="text-2xl font-black mt-6">
-                        {item.title}
-                      </h3>
-
-                      <p className="text-gray-600 mt-3 leading-7">
-                        Strong Guru brings positivity and wisdom.
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* ================= EFFECTS ================= */}
-      <section className="py-28 bg-[#2f220e] relative overflow-hidden">
-        {/* BG */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
-
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+      {/* EFFECTS */}
+      <section className="py-12 md:py-20 lg:py-28 bg-gradient-to-b from-[#fffdf8] to-[#fcf5e3]">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto">
-            <span className="text-yellow-300 uppercase tracking-[4px] font-bold">
-              Positive Effects
+            <span className="text-[#c58a2d] uppercase tracking-[4px] font-extrabold">
+              सकारात्मक परिणाम
             </span>
 
-            <h2 className="text-5xl lg:text-6xl font-black text-white mt-6">
-              Strong Guru Ke Benefits
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black mt-6 leading-[1.3] text-[#8b5e1a]">
+              मजबूत गुरु के चमत्कारी लाभ
             </h2>
 
-            <p className="text-white/70 text-lg leading-9 mt-6">
-              Strong Guru life me wisdom, luck aur prosperity lata
-              hai.
+            <p className="text-gray-700 text-lg leading-9 mt-6 font-medium">
+              जब जन्म कुंडली में देवगुरु बृहस्पति शुभ और बलवान होते हैं, तो वे जातक को असीम ज्ञान, यश, धार्मिक झुकाव और अटूट वित्तीय समृद्धि प्रदान करते हैं।
             </p>
           </div>
 
-          {/* EFFECT GRID */}
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
             {[
               {
                 icon: <BookOpen className="w-8 h-8" />,
-                title: "Wisdom",
+                title: "दिव्य ज्ञान व विवेक",
+                desc: "असाधारण बौद्धिक क्षमता, सही निर्णय लेने की शक्ति और शिक्षा, अध्यापन या परामर्श के क्षेत्र में अभूतपूर्व सफलता मिलती है।",
               },
               {
                 icon: <Star className="w-8 h-8" />,
-                title: "Good Luck",
+                title: "संतान सुख",
+                desc: "सदाचारी, बुद्धिमान और माता-पिता का आदर करने वाली संतान का सुख प्राप्त होता है जो कुल का नाम रोशन करती है।",
               },
               {
                 icon: <Crown className="w-8 h-8" />,
-                title: "Honor",
+                title: "व्यापारिक विस्तार",
+                desc: "नैतिक मूल्यों और ईमानदारी से समझौता किए बिना व्यापारिक साम्राज्य का अभूतपूर्व और निरंतर विस्तार होता है।",
               },
               {
                 icon: <Sparkles className="w-8 h-8" />,
-                title: "Positivity",
+                title: "सकारात्मक आभामंडल",
+                desc: "जातक के चारों ओर एक सुरक्षात्मक और दिव्य आभामंडल बनता है जो नकारात्मकता को पूर्ण रूप से नष्ट कर देता है।",
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className="group bg-white/5 border border-white/10 rounded-[35px] p-8 backdrop-blur-xl hover:bg-white/10 hover:-translate-y-3 duration-300"
+                className="bg-white rounded-[30px] p-8 hover:-translate-y-2 duration-300 flex flex-col items-center text-center sm:items-start sm:text-left shadow-sm border border-[#f4deb0]"
               >
-                <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-[#f2c14e] to-[#8b5e1a] text-white flex items-center justify-center shadow-2xl">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#ffe29a] to-[#8b5e1a] text-[#8b5e1a] flex items-center justify-center shadow-sm">
                   {item.icon}
                 </div>
 
-                <h3 className="text-white text-3xl font-black mt-8">
+                <h3 className="text-2xl font-bold text-[#8b5e1a] mt-6">
                   {item.title}
                 </h3>
 
-                <p className="text-white/60 text-lg leading-8 mt-5">
-                  Strong Guru enhances wisdom and success in life.
+                <p className="text-gray-600 leading-7 mt-4">
+                  {item.desc}
                 </p>
-
-                <button className="flex items-center gap-2 text-yellow-300 font-semibold mt-8 group-hover:gap-4 duration-300">
-                  Learn More <ArrowRight className="w-5 h-5" />
-                </button>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ================= MANTRA SECTION ================= */}
-      <section className="py-28 bg-[#fffaf0]">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="relative overflow-hidden rounded-[50px] bg-gradient-to-br from-[#f2c14e] via-[#d39b31] to-[#8b5e1a] p-12 sm:p-16 text-center shadow-[0_25px_80px_rgba(139,94,26,0.3)]">
-            {/* DECOR */}
-            <div className="absolute top-[-60px] right-[-60px] w-56 h-56 rounded-full bg-white/10"></div>
+      {/* WEAK GURU */}
+      <section className="py-12 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <span className="text-[#c58a2d] uppercase tracking-[4px] font-extrabold">
+                Signs of Guru Dosha
+              </span>
 
-            <div className="absolute bottom-[-60px] left-[-60px] w-56 h-56 rounded-full bg-white/10"></div>
-
-            <div className="relative z-10">
-              <div className="w-28 h-28 rounded-full bg-white/10 border border-white/20 backdrop-blur-xl flex items-center justify-center mx-auto">
-                <Gem className="w-14 h-14 text-white" />
-              </div>
-
-              <h2 className="text-4xl sm:text-5xl font-black text-white mt-10">
-                Guru Beej Mantra
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#8b5e1a] mt-5 leading-tight">
+                Negative Impacts of a Weak Jupiter
               </h2>
 
-              <p className="text-yellow-100 text-2xl sm:text-4xl font-bold leading-relaxed mt-8">
-                ॐ ग्रां ग्रीं ग्रौं सः गुरुवे नमः
+              <p className="text-gray-700 leading-8 text-lg mt-6">
+                A debilitated or afflicted Jupiter in the horoscope can severely obstruct your higher learning, child-related happiness, and financial expansion.
               </p>
 
-              <p className="text-white/85 text-lg leading-9 mt-8 max-w-3xl mx-auto">
-                Roz Guru mantra ka jaap aur Guruvar ko yellow color
-                use karna shubh mana jata hai.
-              </p>
+              <div className="space-y-5 mt-10">
+                {[
+                  "Frequent hurdles in higher education and severe loss of memory",
+                  "Delays in childbirth or persistent conflicts with children",
+                  "Severe financial debts, wrong investments, and business losses",
+                  "Liver disorders, obesity, diabetes, and other health issues",
+                  "Loss of reputation, social isolation, and trust deficit in life",
+                  "Strained relationship with father, mentors, or elder siblings",
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-[#fffdf8] border border-[#f4deb0] rounded-2xl p-5 text-center sm:text-left shadow-sm"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-[#8b5e1a] text-white flex items-center justify-center font-bold shrink-0 shadow-sm">
+                      {i + 1}
+                    </div>
 
-              <button className="mt-10 bg-white text-[#8b5e1a] hover:scale-105 duration-300 px-8 py-4 rounded-2xl font-semibold shadow-2xl">
-                Start Consultation
-              </button>
+                    <p className="text-lg font-bold text-[#8b5e1a]">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <img
+                src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?q=80&w=1200&auto=format&fit=crop"
+                alt="weak guru"
+                className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#f4deb0]/30"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ================= CTA ================= */}
-      <section className="py-28">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="bg-white rounded-[45px] border border-[#f4deb0] shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-12 lg:p-16 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-60 h-60 bg-[#fff3d4] rounded-full blur-3xl"></div>
+      {/* REMEDIES */}
+      <section id="remedies-section" className="py-12 lg:py-20 bg-gradient-to-br from-[#fffdf8] via-[#fcf5e3] to-[#f4deb0] border-t border-b border-[#8b5e1a]/30">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center">
+            <span className="text-[#8b5e1a] uppercase tracking-[4px] font-extrabold">
+              ज्योतिषीय उपाय
+            </span>
 
-            <div className="relative z-10 text-center">
-              <div className="w-28 h-28 rounded-full bg-gradient-to-br from-[#f2c14e] to-[#8b5e1a] text-white flex items-center justify-center mx-auto shadow-2xl">
-                <HeartHandshake className="w-14 h-14" />
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#8b5e1a] mt-5 leading-[1.3] md:leading-[1.4]">
+              बृहस्पति ग्रह को बलवान करने के अचूक तरीके
+            </h2>
+
+            <p className="text-[#5e4a2d] leading-8 max-w-3xl mx-auto text-lg mt-6 font-medium">
+              वैदिक ज्योतिष में बृहस्पति के अशुभ प्रभावों को दूर करने और इसके शुभ फलों को प्राप्त करने के लिए अत्यंत प्रभावशाली उपाय और अनुष्ठान बताए गए हैं।
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
+            {[
+              {
+                title: "केसर का तिलक",
+                desc: "प्रतिदिन मस्तक, कंठ और नाभि पर शुद्ध केसर या हल्दी का तिलक लगाने से बृहस्पति देव अत्यंत बलवान होते हैं।",
+              },
+              {
+                title: "चने की दाल का दान",
+                desc: "गुरुवार को मंदिर में चने की दाल, बेसन के लड्डू, पीले वस्त्र या हल्दी का दान करना अत्यंत शुभ होता है।",
+              },
+              {
+                title: "पीतल के पात्र",
+                desc: "भोजन या जल पीने के लिए सोने या पीतल के पात्रों का प्रयोग करें, यह गुरु की ऊर्जा को शरीर में बढ़ाता है।",
+              },
+              {
+                title: "विष्णु उपासना",
+                desc: "'श्री रामरक्षा स्तोत्र' या 'विष्णु सहस्रनाम' का नियमित पाठ करने से गुरु के समस्त दोष तत्काल भस्म हो जाते हैं।",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white/95 border border-[#f4deb0] rounded-[30px] p-8 text-[#8b5e1a] flex flex-col items-center text-center sm:items-start sm:text-left shadow-md"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-[#8b5e1a] text-white flex items-center justify-center shadow-md">
+                  <Sparkles className="w-8 h-8" />
+                </div>
+
+                <h3 className="text-2xl font-bold mt-6">{item.title}</h3>
+
+                <p className="leading-7 text-gray-600 mt-4 font-medium">{item.desc}</p>
               </div>
+            ))}
+          </div>
 
-              <h2 className="text-5xl lg:text-6xl font-black mt-10 leading-tight">
-                Personalized
-                <span className="block text-[#8b5e1a]">
-                  Guru Consultation
-                </span>
-              </h2>
+          <div className="bg-white rounded-[35px] p-8 mt-12 text-center shadow-xl border border-[#f4deb0]">
+            <h3 className="text-3xl font-extrabold text-[#8b5e1a]">
+              गुरु बीज मंत्र
+            </h3>
 
-              <p className="text-gray-600 text-lg leading-9 mt-8 max-w-3xl mx-auto">
-                Apni kundli me Guru ki position aur uske effects ko
-                samajhne ke liye expert astrologer se consultation le.
-              </p>
+            <p className="text-[#c58a2d] text-2xl sm:text-3xl font-extrabold mt-6 tracking-wide drop-shadow-sm">
+              ॐ ग्रां ग्रीं ग्रौं सः गुरुवे नमः
+            </p>
 
-              <div className="flex flex-wrap justify-center gap-5 mt-12">
-                <button className="bg-[#8b5e1a] hover:bg-[#70450c] text-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-xl">
-                  Book Consultation
-                </button>
+            <p className="text-gray-700 leading-8 mt-5 text-lg max-w-2xl mx-auto font-medium">
+              गुरुवार के दिन इस महामंत्र का 108 बार जाप करने से जीवन की सभी बाधाएं दूर होती हैं और ज्ञान का विकास होता है।
+            </p>
+          </div>
+        </div>
+      </section>
 
-                <button className="border border-[#8b5e1a] text-[#8b5e1a] hover:bg-[#8b5e1a] hover:text-white px-8 py-4 rounded-2xl font-semibold duration-300">
-                  Learn More
-                </button>
-              </div>
+      {/* CTA */}
+      <section className="py-12 lg:py-20 bg-[#fffdf8]">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="bg-white rounded-[40px] p-10 text-center border border-[#f4deb0] shadow-lg">
+            <div className="w-24 h-24 rounded-full bg-gradient-to-r from-[#ffe29a] to-[#8b5e1a] text-white flex items-center justify-center mx-auto shadow-lg">
+              <HeartHandshake className="w-12 h-12" />
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#8b5e1a] mt-8 leading-tight">
+              Personalized Astrological Guidance
+            </h2>
+
+            <p className="text-gray-700 leading-8 text-lg mt-6 max-w-3xl mx-auto">
+              Want to deeply analyze the position of Jupiter in your Kundli and discover highly effective remedies? Book a personalized session with our renowned Vedic experts.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-5 mt-10">
+              <a href="tel:+917042600873" className="bg-[#8b5e1a] hover:bg-[#70450c] text-white px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg shadow-yellow-500/20 cursor-pointer">
+                Book Consultation
+              </a>
+
+              <a href="https://calendly.com/bajrangastroofficial/30min" target="_blank" rel="noopener noreferrer" className="border border-[#8b5e1a]/50 text-[#8b5e1a] hover:bg-[#8b5e1a] hover:text-white px-8 py-4 rounded-2xl font-semibold duration-300 flex items-center gap-2 cursor-pointer shadow-sm">
+                Book Digital Call <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>

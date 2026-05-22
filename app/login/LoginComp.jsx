@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -177,9 +177,16 @@ const AuthPage = () => {
 
                 <input
                   value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    if (/^[a-zA-Z\s]*$/.test(val)) {
+                      setName(val);
+                      if (errors.name) setErrors((prev) => ({ ...prev, name: null }));
+                    }
+                  }}
                   type="text"
                   placeholder="Full Name"
+                  maxLength={50}
                   className="w-full h-14 rounded-2xl border border-gray-200 pl-12 pr-4 outline-none focus:border-[#d97869] transition-all"
                 />
 
@@ -200,9 +207,18 @@ const AuthPage = () => {
 
                 <input
                   value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    if (/^\d*$/.test(val)) {
+                      setPhone(val);
+                      if (val.length === 10 && errors.phone) {
+                        setErrors((prev) => ({ ...prev, phone: null }));
+                      }
+                    }
+                  }}
                   type="tel"
                   placeholder="Phone Number"
+                  maxLength={10}
                   className="w-full h-14 rounded-2xl border border-gray-200 pl-12 pr-4 outline-none focus:border-[#d97869] transition-all"
                 />
 
@@ -222,7 +238,17 @@ const AuthPage = () => {
 
               <input
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  if (errors.email && validateEmail(e.target.value)) {
+                    setErrors((prev) => ({ ...prev, email: null }));
+                  }
+                }}
+                onBlur={() => {
+                  if (email && !validateEmail(email)) {
+                    setErrors((prev) => ({ ...prev, email: "Please enter a valid email address." }));
+                  }
+                }}
                 type="email"
                 placeholder="Email Address"
                 className="w-full h-14 rounded-2xl border border-gray-200 pl-12 pr-4 outline-none focus:border-[#d97869] transition-all"

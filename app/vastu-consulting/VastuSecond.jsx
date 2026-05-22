@@ -52,7 +52,7 @@ export default function VastuSecond() {
     return (
         <section
             ref={sectionRef}
-            className="py-20 px-4 md:px-10 lg:px-20 overflow-hidden"
+            className="py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20 overflow-hidden"
             style={{
                 background: `
         radial-gradient(113.61% 98.59% at 20% 70%, #D6E3FF 0%, rgba(214,227,255,0) 40%),
@@ -74,11 +74,11 @@ export default function VastuSecond() {
 
             <div className="max-w-6xl mx-auto relative">
                 {/* CENTER LINE (Background) */}
-                <div className="hidden md:block absolute left-1/2 top-0 -translate-x-1/2 w-[2px] h-full bg-[#E57661]/15" />
+                <div className="hidden lg:block absolute left-1/2 top-0 -translate-x-1/2 w-[2px] h-full bg-[#E57661]/15" />
                 
                 {/* CENTER LINE (Progress) */}
                 <div 
-                    className="hidden md:block absolute left-1/2 top-0 -translate-x-1/2 w-[2px] bg-[#E57661] transition-all duration-300 ease-out"
+                    className="hidden lg:block absolute left-1/2 top-0 -translate-x-1/2 w-[2px] bg-[#E57661] transition-all duration-300 ease-out"
                     style={{ height: `${scrollPercentage * 100}%` }}
                 />
 
@@ -106,9 +106,9 @@ function VastuRow({ item, index, isActive }) {
     const isLeft = index % 2 === 0;
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-4 xl:gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] items-center gap-4 xl:gap-6">
             {/* LEFT */}
-            <div className={`hidden md:block ${isLeft ? "md:text-right" : ""} transition-all duration-1000 ease-out ${isActive ? (isLeft ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10") : (isLeft ? "opacity-0 -translate-x-10" : "opacity-0 translate-x-10")}`}>
+            <div className={`hidden lg:block ${isLeft ? "lg:text-right" : ""} transition-all duration-1000 ease-out ${isActive ? (isLeft ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10") : (isLeft ? "opacity-0 -translate-x-10" : "opacity-0 translate-x-10")}`}>
                 {isLeft && <Content item={item} align="right" />}
             </div>
 
@@ -120,12 +120,12 @@ function VastuRow({ item, index, isActive }) {
             </div>
 
             {/* RIGHT */}
-            <div className={`hidden md:block ${!isLeft ? "md:text-left" : ""} transition-all duration-1000 ease-out ${isActive ? (!isLeft ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10") : (!isLeft ? "opacity-0 translate-x-10" : "opacity-0 -translate-x-10")}`}>
+            <div className={`hidden lg:block ${!isLeft ? "lg:text-left" : ""} transition-all duration-1000 ease-out ${isActive ? (!isLeft ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10") : (!isLeft ? "opacity-0 translate-x-10" : "opacity-0 -translate-x-10")}`}>
                 {!isLeft && <Content item={item} align="left" />}
             </div>
 
             {/* MOBILE */}
-            <div className={`md:hidden text-center transition-all duration-1000 ease-out ${isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+            <div className={`lg:hidden text-center transition-all duration-1000 ease-out ${isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                 <Content item={item} align="center" />
             </div>
         </div>
@@ -136,17 +136,17 @@ function Content({ item, align }) {
     return (
         <div
             className={`flex flex-col gap-4 max-w-[420px]
-        ${align === "right" ? " xl:ml-auto items-end md:text-left" : ""}
-        ${align === "left" ? " xl:ml-36 items-start md:text-left" : ""}
-        ${align === "center" ? "mx-auto items-center md:text-center" : ""}
+        ${align === "right" ? " xl:ml-auto items-end lg:items-end lg:text-right text-center" : ""}
+        ${align === "left" ? " xl:ml-36 items-start lg:items-start lg:text-left text-center" : ""}
+        ${align === "center" ? "mx-auto items-center text-center" : ""}
       `}
         >
-            <h3 className="text-2xl md:text-3xl md:text-left  w-full font-[500] text-[#333]">
+            <h3 className="text-2xl lg:text-3xl font-[500] text-[#333] text-center lg:text-left w-full">
                 {item.title}
             </h3>
 
             <div className="w-full">
-                <p className="text-[#101010] text-[16px] md:text-[23px] md:max-w-[340px] md:px-0 px-10 leading-relaxed">
+                <p className="text-[#101010] text-[16px] lg:text-[23px] lg:max-w-[340px] lg:px-0 px-10 leading-relaxed text-center lg:text-left">
                     {item.desc}
                 </p>
             </div>

@@ -65,43 +65,38 @@ export default function HomeEigth() {
                 {cards.map((card) => (
                     <div
                         key={card.id}
-                        className="relative rounded-[40px]  md:mx-10 xl:mx-30  overflow-hidden"
+                        className="relative rounded-[40px] md:mx-10 xl:mx-30 overflow-hidden"
                     >
                         {/* IMAGE GRID */}
                         <div className="grid grid-cols-1 md:grid-cols-2">
 
-                            <div className="relative h-[300px] md:h-[600px] max-w-[900px]">
+                            <div className="relative h-[220px] sm:h-[280px] md:h-[500px]">
                                 <Image
                                     src={card.beforeImg}
                                     alt="before"
                                     fill
-                                    className="md:object-cover object-contain"
+                                    className="object-cover"
                                 />
-
-
-
                             </div>
 
-                            <div className="relative h-[300px] md:h-[600px]">
+                            <div className="relative h-[220px] sm:h-[280px] md:h-[500px]">
                                 <Image
                                     src={card.afterImg}
                                     alt="after"
                                     fill
-                                    className="md:object-cover object-contain"
+                                    className="object-cover"
                                 />
-
-
                             </div>
                         </div>
 
                         {/* CENTER FLOATING CARD */}
-                        <div className="md:absolute mt-10 inset-0 md:mt-40 flex items-center justify-center px-4">
-                            <div className=" bg-white md:bg-white/92 md:backdrop-blur-[1px]  rounded-[30px]  p-6 md:p-10 flex flex-col items-center justify-center text-center  ">
+                        <div className="md:absolute mt-6 md:mt-0 inset-0 md:flex md:items-center md:justify-center px-4">
+                            <div className="bg-white md:bg-white/92 md:backdrop-blur-[1px] rounded-[30px] p-6 md:p-10 flex flex-col items-center justify-center text-center mx-auto max-w-[400px]">
                                 <p className="text-[#E57661] text-[17px] font-[300] mb-2">
                                     THE TRANSFORMATION
                                 </p>
 
-                                <h5 className={`text-2xl xl:text-[40px]  max-w-[350px] ${card.id == 1 ? "font-[500]" : "font-[700]"} leading-11 text-[#000000]`}>
+                                <h5 className={`text-2xl xl:text-[40px] max-w-[350px] ${card.id == 1 ? "font-[500]" : "font-[700]"} leading-11 text-[#000000]`}>
                                     {card.Percent && <span className="font-bold">{card.Percent}</span>} {card.result}
                                 </h5>
 

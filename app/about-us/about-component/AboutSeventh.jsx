@@ -78,7 +78,7 @@ export default function AboutSeventh() {
                         className="w-full h-full md object-cover object-contain"
                     />
 
-                    <div className=" absolute inset-0  p-6 flex flex-col justify-end">
+                    <div className="absolute inset-0 p-6 flex flex-col justify-end items-center text-center md:items-start md:text-left">
                         <h5 className="text-white text-2xl md:text-3xl font-[400] mb-2">
                             Authentic Vedic Science
                         </h5>
@@ -88,10 +88,10 @@ export default function AboutSeventh() {
                     </div>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 flex flex-col justify-center shadow-sm">
-                    <h5 className="text-[26px] font-[500] pl-10 mb-4">Proven Impact</h5>
+                <div className="bg-white rounded-2xl p-6 flex flex-col justify-center items-center text-center md:items-start md:text-left shadow-sm">
+                    <h5 className="text-[26px] font-[500] md:pl-10 mb-4">Proven Impact</h5>
 
-                    <ul className="space-y-3 text-[20px] pl-10">
+                    <ul className="space-y-3 text-[20px] md:pl-10 text-left">
                         <li className="flex items-center gap-2 text-[#303030]/90">
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776753210/rightTick_ehghq6.png"

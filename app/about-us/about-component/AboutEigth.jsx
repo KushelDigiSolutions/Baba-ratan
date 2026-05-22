@@ -52,7 +52,7 @@ export default function AboutEight() {
     return (
         <section
             ref={sectionRef}
-            className="bg-[#f8f6f3] max-w-[1720px] mx-auto bg-[radial-gradient(206.31%_103.07%_at_50%_0%,_#FFFBF2_0%,_#FFFFFF_100%)] py-20 px-4 md:px-10 lg:px-20 overflow-hidden"
+            className="bg-[#f8f6f3] max-w-[1720px] mx-auto bg-[radial-gradient(206.31%_103.07%_at_50%_0%,_#FFFBF2_0%,_#FFFFFF_100%)] py-12 md:py-16 lg:py-20 px-4 md:px-10 lg:px-20 overflow-hidden"
         >
             <div className="text-center mb-16">
                 <p className="text-[#E57661] tracking-[0.3em] text-sm md:text-base font-bold uppercase mb-4 animate-fade-in-up">
