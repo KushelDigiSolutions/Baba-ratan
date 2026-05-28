@@ -40,7 +40,7 @@ export default function Testimonials() {
 
     return (
         <section
-            className="py-10 overflow-hidden max-w-[1720px] mx-auto"
+            className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] py-10 overflow-hidden w-full"
             style={{
                 background:
                     "linear-gradient(180deg, rgba(229, 118, 97, 0.5) 0%, rgba(229, 118, 97, 0.2) 20%, rgba(229, 118, 97, 0.2) 20%, rgba(229, 118, 97, 0.2) 93.96%)",

@@ -68,7 +68,7 @@ export default function HomeSeventh() {
     return (
         <section
             ref={sectionRef}
-            className="max-w-[1720px] mx-auto py-16 px-4 md:px-10 bg-[#FAF4E8] overflow-hidden"
+            className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] py-16 md:px-10 bg-[#FAF4E8] overflow-hidden"
         >
             <div className="max-w-3xl mx-auto text-center mb-16">
                 <p className="text-[22px] tracking-wide text-[#303030] font-[500] uppercase mb-3">

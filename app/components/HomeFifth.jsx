@@ -18,7 +18,7 @@ export default function HomeFifth() {
     ];
 
     return (
-        <section className=" relative max-w-[1720px] mx-auto py-16 px-4 md:px-10">
+        <section className=" relative max-w-[1720px] mx-auto px-[20px] xl:px-[90px] py-16 md:px-10">
             {/* <Image
         src="YOUR_BG_IMAGE_URL"
         alt="background"
@@ -27,7 +27,7 @@ export default function HomeFifth() {
         className="object-cover -z-10"
       /> */}
             <div className="absolute inset-0 bg-[#FED48826] -z-10" />
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px]">
 
                 {/* Heading */}
                 <div className="text-center mb-12">

@@ -23,7 +23,7 @@ const AstrologyClarity = () => {
 
     return (
         <section className="w-full py-15 px-[9%] bg-[#F3F3F3]">
-            <div className="max-w-[1400px] mx-auto">
+            <div className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px]">
                 <h2 className="text-4xl md:text-4xl lg:text-5xl text-[#2D2D2D] font-[400] text-center mb-15 leading-tight">
                     The answers you have been looking for
                 </h2>

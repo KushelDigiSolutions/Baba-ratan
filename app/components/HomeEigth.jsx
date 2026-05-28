@@ -42,7 +42,7 @@ export default function HomeEigth() {
     ];
 
     return (
-        <section className="max-w-[1720px] mx-auto py-16 px-4 bg-[#F8F9FA]">
+        <section className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] py-16 bg-[#F8F9FA]">
             {/* HEADER */}
             <div className="text-center max-w-2xl mx-auto mb-12">
                 <p className="text-[#E57661] font-medium tracking-wide text-sm">

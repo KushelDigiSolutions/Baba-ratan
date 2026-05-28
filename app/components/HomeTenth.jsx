@@ -45,8 +45,8 @@ export default function HomeTenth() {
   ];
 
   return (
-    <section className="bg-[#FDFDFD] max-w-[1720px] mx-auto py-16 px-4 md:px-16">
-      <div className="max-w-7xl mx-auto grid xl:grid-cols-[60%_40%] gap-12 items-center ">
+    <section className="bg-[#FDFDFD] max-w-[1720px] mx-auto px-[20px] xl:px-[90px] py-16 md:px-16">
+      <div className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] grid xl:grid-cols-[60%_40%] gap-12 items-center ">
 
         {/* LEFT SIDE (CARDS) */}
         <div className=" grid sm:grid-cols-2 gap-6">

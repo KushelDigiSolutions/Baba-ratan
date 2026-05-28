@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function HomeNinth() {
   return (
-    <section className="max-w-[1720px] mx-auto flex justify-center px-4 py-10 bg-white">
+    <section className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] flex justify-center py-10 bg-white">
       <div className=" bg-[#5A3E43] xl:px-60 md:py-24   text-white rounded-3xl px-6 md:px-12 py-10 md:py-14 text-center shadow-lg">
         
         {/* Heading */}
