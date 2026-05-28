@@ -51,10 +51,10 @@ export default function AboutSeventh() {
                 {cards.map((item, i) => (
                     <div
                         key={i}
-                        className="bg-white/90 rounded-2xl p-6 text-center  transition"
+                        className="group bg-white/90 rounded-3xl p-6 text-center transition-all duration-500 ease-out border-[3px] border-transparent hover:border-[#E57661] hover:bg-gradient-to-br hover:from-white hover:to-[#FEF4F2] hover:shadow-[0_20px_40px_-15px_rgba(229,118,97,0.3)] hover:-translate-y-3 hover:scale-[1.02] cursor-pointer"
                     >
-                        <div className="bg-[#E57661] w-14 h-14 mx-auto flex items-center justify-center rounded-xl mb-5">
-                            <Image src={item.icon} alt={item.title} width={26} height={26} />
+                        <div className="bg-[#E57661] w-14 h-14 mx-auto flex items-center justify-center rounded-xl mb-5 transition-all duration-500 ease-out group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-[0_10px_20px_rgba(229,118,97,0.4)] group-hover:rotate-3">
+                            <Image src={item.icon} alt={item.title} width={26} height={26} className="transition-transform duration-500 group-hover:scale-110" />
                         </div>
 
                         <h5 className="text-2xl font-[500] mb-2">{item.title}</h5>

@@ -21,7 +21,7 @@ const CartSection = () => {
         <div className="bg-[#F8F9FA] min-h-screen flex flex-col" style={fontStyle}>
             <Navbar />
             
-            <main className="flex-grow max-w-7xl w-full mx-auto px-5 md:px-10 py-12 lg:py-16">
+            <main className="flex-grow max-w-[1720px] mx-auto px-[20px] xl:px-[90px] w-full py-12 lg:py-16">
                 <div className="flex items-center gap-2 mb-8">
                     <Link href="/shop" className="text-[#E57661] hover:underline flex items-center gap-1 text-sm md:text-base">
                         <FiArrowLeft /> Back to Shop

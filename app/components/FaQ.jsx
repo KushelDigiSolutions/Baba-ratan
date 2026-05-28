@@ -11,7 +11,7 @@ export default function FaQ({ data }) {
   };
 
   return (
-    <section className="max-w-[1720px] mx-auto bg-[#FFFFFF] py-12 px-9 md:px-20 lg:px-30">
+    <section className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] bg-[#FFFFFF] py-12">
       
       {/* Heading */}
       <div className="mb-10 text-center lg:text-left flex flex-col items-center lg:items-start">

@@ -14,7 +14,7 @@ const DigitalBirthChart = () => {
                 />
             </div>
 
-            <div className="relative z-10 max-w-[1400px] mx-auto flex flex-col items-center">
+            <div className="relative z-10 max-w-[1720px] mx-auto px-[20px] xl:px-[90px] flex flex-col items-center">
                 {/* Header */}
                 <div className="text-center mb-16 opacity-0 animate-fade-in-up">
                     <p className="text-[#E57661] text-lg font-[500] tracking-widest uppercase mb-4">YOUR KUNDLI</p>

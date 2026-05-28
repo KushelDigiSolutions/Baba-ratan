@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HomeEleventh() {
     return (
-        <section className="relative max-w-[1720px] mx-auto py-10 md:px-0 px-4 flex items-center overflow-hidden">
+        <section className="relative w-full py-10 flex items-center overflow-hidden">
 
             {/* Background Image - Reverted to mystical scene to remove baba from background */}
             <div className="absolute inset-0 -z-10">
@@ -19,7 +19,7 @@ export default function HomeEleventh() {
             </div>
 
             {/* Content */}
-            <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-[60%_40%] gap-10 items-center">
+            <div className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] w-full grid grid-cols-1 lg:grid-cols-[60%_40%] gap-10 items-center">
 
                 {/* LEFT TEXT */}
                 <div className="text-white space-y-6 xl:px-0 px-4 sm:px-10 flex flex-col items-center text-center lg:items-start lg:text-left">

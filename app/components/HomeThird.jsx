@@ -2,7 +2,7 @@
 import Link from 'next/link'
 export default function HomeThird() {
   return (
-    <section className="max-w-[1720px] mx-auto bg-white py-16 px-4 flex items-center justify-center">
+    <section className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] bg-white py-16 flex items-center justify-center">
 
       <div className=" flex flex-col items-center text-center ">
 

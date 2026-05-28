@@ -13,7 +13,7 @@ export default function HeroNewSection() {
             {/* Background Overlay */}
             <div className="absolute inset-0 bg-[rgb(229,118,97)]/60"></div>
 
-            <div className="relative z-10 max-w-7xl w-full md:px-6 pt-10 xl:py-12 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left justify-between md:gap-10">
+            <div className="relative z-10 max-w-[1720px] mx-auto px-[20px] xl:px-[90px] w-full pt-10 xl:py-12 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left justify-between md:gap-10">
 
                 {/* LEFT CONTENT */}
                 <div className="w-full md:px-0 px-4 xl:pb-0 pb-10 lg:w-1/2 text-center lg:text-left">

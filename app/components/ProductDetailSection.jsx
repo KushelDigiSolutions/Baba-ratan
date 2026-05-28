@@ -55,7 +55,7 @@ const ProductDetailSection = ({ product }) => {
         <div className="bg-white min-h-screen" style={fontStyle}>
 
             {/* Functional Breadcrumb */}
-            <div className="max-w-7xl mx-auto px-5 min-[500px]:px-20 pb-3 pt-8 text-[18px] md:text-[22px] text-[#303030]">
+            <div className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] px-5 min-[500px]:px-20 pb-3 pt-8 text-[18px] md:text-[22px] text-[#303030]">
                 <Link href="/" className="font-[300] hover:text-[#E57661] transition-colors">Home</Link>
                 <span className="mx-2 opacity-50">/</span>
                 <Link href="/shop" className="font-[300] hover:text-[#E57661] transition-colors">Shop</Link>
@@ -64,7 +64,7 @@ const ProductDetailSection = ({ product }) => {
             </div>
 
             {/* Product Top Section */}
-            <div className="max-w-7xl mx-auto px-5 min-[500px]:px-20 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <div className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] px-5 min-[500px]:px-20 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
                 {/* Left Column */}
                 <div className="flex flex-col gap-5">
@@ -285,7 +285,7 @@ const ProductDetailSection = ({ product }) => {
             </div>
 
             {/* Tabs Section */}
-            <div className="max-w-7xl mx-auto px-5 min-[500px]:px-20 py-10 min-[500px]:py-16">
+            <div className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] px-5 min-[500px]:px-20 py-10 min-[500px]:py-16">
                 <div className="flex gap-6 min-[500px]:gap-12 mb-10 min-[500px]:mb-16 border-b border-gray-100 overflow-x-auto whitespace-nowrap scrollbar-hide">
                     {['description', 'benefits', 'astrologicalSignificance', 'wearingMethod', 'certification'].map((tab) => (
                         <button

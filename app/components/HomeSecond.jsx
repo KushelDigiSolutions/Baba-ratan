@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 const HomeSecond = () => {
     return (
-        <section className="max-w-[1720px] mx-auto px-4 md:px-12 py-10 bg-[#f7f7f7]">
-            <div className="max-w-[1230px] mx-auto space-y-6">
+        <section className="w-full py-10 bg-[#f7f7f7]">
+            <div className="max-w-[1720px] mx-auto px-[20px] xl:px-[90px] space-y-6">
 
                 <div className="grid grid-cols-1 md:grid-cols-[54%_44%]  gap-6">
 
