@@ -47,7 +47,6 @@ const PrivacyPolicyPage = () => {
       {/* Main Content */}
       <div className="max-w-5xl mx-auto px-4 py-16">
         <div className="bg-white rounded-[30px] border border-[#f1d7d1] p-6 md:p-12 shadow-sm">
-
           {/* Introduction */}
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-5">
@@ -69,7 +68,6 @@ const PrivacyPolicyPage = () => {
 
           {/* Privacy Sections */}
           <div className="space-y-10">
-
             {/* Section 1 */}
             <div className="border-b border-[#f3dfda] pb-8">
               <div className="flex items-start gap-4">
@@ -94,10 +92,7 @@ const PrivacyPolicyPage = () => {
             {/* Section 2 */}
             <div className="border-b border-[#f3dfda] pb-8">
               <div className="flex items-start gap-4">
-                <CheckCircle2
-                  className="text-[#d97869] mt-1"
-                  size={26}
-                />
+                <CheckCircle2 className="text-[#d97869] mt-1" size={26} />
 
                 <div>
                   <h3 className="text-2xl font-bold text-[#222] mb-4">
@@ -157,10 +152,7 @@ const PrivacyPolicyPage = () => {
             {/* Section 5 */}
             <div className="border-b border-[#f3dfda] pb-8">
               <div className="flex items-start gap-4">
-                <ExternalLink
-                  className="text-[#d97869] mt-1"
-                  size={26}
-                />
+                <ExternalLink className="text-[#d97869] mt-1" size={26} />
 
                 <div>
                   <h3 className="text-2xl font-bold text-[#222] mb-4">
@@ -168,8 +160,9 @@ const PrivacyPolicyPage = () => {
                   </h3>
 
                   <p className="text-gray-600 leading-8">
-                    Our website may contain links to external platforms like WhatsApp or social
-                    media. We are not responsible for the privacy practices of those platforms.
+                    Our website may contain links to external platforms like
+                    WhatsApp or social media. We are not responsible for the
+                    privacy practices of those platforms.
                   </p>
                 </div>
               </div>
@@ -186,8 +179,9 @@ const PrivacyPolicyPage = () => {
                   </h3>
 
                   <p className="text-gray-600 leading-8">
-                    We take reasonable steps to protect your personal information. However, no
-                    internet transmission is 100% secure, and we cannot guarantee absolute security.
+                    We take reasonable steps to protect your personal
+                    information. However, no internet transmission is 100%
+                    secure, and we cannot guarantee absolute security.
                   </p>
                 </div>
               </div>
@@ -200,12 +194,11 @@ const PrivacyPolicyPage = () => {
 
                 <div>
                   <h3 className="text-2xl font-bold text-[#222] mb-4">
-                    7.  Changes to Privacy Policy Bajrang Astro
+                    7. Changes to Privacy Policy Bajrang Astro
                   </h3>
 
                   <p className="text-gray-600 leading-8">
-                    reserves the right to update this Privacy Policy at any
-                    t
+                    reserves the right to update this Privacy Policy at any t
                     ime. Changes will be reflected on this page.
                   </p>
                 </div>
@@ -223,8 +216,8 @@ const PrivacyPolicyPage = () => {
                   </h3>
 
                   <p className="text-gray-600 leading-8">
-                    For any privacy-related queries, contact Vishal Verma at: +91 85950 46368,
-                    info@bajrangastro.com
+                    For any privacy-related queries, contact Vishal Verma at:
+                    +91 7042600873, bajrangastroofficial@gmail.com
                   </p>
                 </div>
               </div>
@@ -238,7 +231,6 @@ const PrivacyPolicyPage = () => {
             </h3>
 
             <div className="grid md:grid-cols-2 gap-6">
-
               {/* Phone */}
               <a
                 href="tel:+917042600873"
@@ -249,19 +241,17 @@ const PrivacyPolicyPage = () => {
                 </div>
 
                 <div>
-                  <p className="text-sm text-gray-500 mb-1">
-                    Phone Number
-                  </p>
+                  <p className="text-sm text-gray-500 mb-1">Phone Number</p>
 
                   <h4 className="font-semibold text-lg text-[#222]">
-                    +91 85950 46368
+                    +91 7042600873
                   </h4>
                 </div>
               </a>
 
               {/* Email */}
               <a
-                href="mailto:info@bajrangastro.com"
+                href="mailto:bajrangastroofficial@gmail.com"
                 className="flex items-center gap-5 bg-white rounded-2xl p-5 border border-[#f1d7d1] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
               >
                 <div className="w-16 h-16 rounded-2xl bg-[#d97869] text-white flex items-center justify-center transition-transform duration-300">
@@ -269,12 +259,10 @@ const PrivacyPolicyPage = () => {
                 </div>
 
                 <div>
-                  <p className="text-sm text-gray-500 mb-1">
-                    Email Address
-                  </p>
+                  <p className="text-sm text-gray-500 mb-1">Email Address</p>
 
                   <h4 className="font-semibold text-lg text-[#222]">
-                    info@bajrangastro.com
+                    bajrangastroofficial@gmail.com
                   </h4>
                 </div>
               </a>
@@ -287,7 +275,6 @@ const PrivacyPolicyPage = () => {
               © 2025 Bajrang Astro. All Rights Reserved.
             </p>
           </div>
-
         </div>
       </div>
     </div>

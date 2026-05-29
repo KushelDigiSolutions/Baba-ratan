@@ -53,13 +53,17 @@ const ProfilePage = () => {
   const [editProfileData, setEditProfileData] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const { user, logout } = useAuth();
-  const { wishlistItems, isLoading: isLoadingWishlist, removeFromWishlist } = useWishlist();
+  const {
+    wishlistItems,
+    isLoading: isLoadingWishlist,
+    removeFromWishlist,
+  } = useWishlist();
   const router = useRouter();
 
   const addressApiBase =
-    process.env.NEXT_PUBLIC_API_BASE ?? "https://bajrangastro.kdscrm.com/api";
+    process.env.NEXT_PUBLIC_API_BASE ?? "https://admin.bajrangastro.com/api";
   const profileApiBase =
-    process.env.NEXT_PUBLIC_API_BASE ?? "https://bajrangastro.kdscrm.com/api";
+    process.env.NEXT_PUBLIC_API_BASE ?? "https://admin.bajrangastro.com/api";
 
   // Fetch profile info when My Profile tab is active
   useEffect(() => {
@@ -303,7 +307,10 @@ const ProfilePage = () => {
       formData.append("name", editProfileData.name || "");
       formData.append("email", editProfileData.email || "");
       formData.append("phone", editProfileData.phone || "");
-      formData.append("dob", editProfileData.dob || editProfileData.date_of_birth || "");
+      formData.append(
+        "dob",
+        editProfileData.dob || editProfileData.date_of_birth || "",
+      );
       formData.append("address", editProfileData.address || "");
 
       if (selectedFile) {
@@ -345,9 +352,10 @@ const ProfilePage = () => {
       setTimeout(() => {
         setProfileUpdateSuccess(null);
       }, 3000);
-
     } catch (error) {
-      setProfileUpdateError(error.message || "An error occurred while updating profile");
+      setProfileUpdateError(
+        error.message || "An error occurred while updating profile",
+      );
       // Error also disappears after 5 seconds for better UX
       setTimeout(() => {
         setProfileUpdateError(null);
@@ -382,7 +390,7 @@ const ProfilePage = () => {
               <img
                 src={
                   isEditingProfileMode
-                    ? (editProfileData?.avatar || profile?.avatar)
+                    ? editProfileData?.avatar || profile?.avatar
                     : profile?.avatar
                 }
                 alt="profile"
@@ -391,13 +399,20 @@ const ProfilePage = () => {
               {isEditingProfileMode && (
                 <label className="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity">
                   <Plus className="text-white" size={32} />
-                  <input type="file" accept="image/*" className="hidden" onChange={handleAvatarChange} />
+                  <input
+                    type="file"
+                    accept="image/*"
+                    className="hidden"
+                    onChange={handleAvatarChange}
+                  />
                 </label>
               )}
             </div>
 
             <div>
-              <h1 className="text-4xl font-bold">Hi, {profile?.name || "User"} 👋</h1>
+              <h1 className="text-4xl font-bold">
+                Hi, {profile?.name || "User"} 👋
+              </h1>
 
               <p className="text-white/90 mt-2 text-lg">
                 Welcome back to Bajrang Astro
@@ -451,10 +466,11 @@ const ProfilePage = () => {
               <button
                 key={index}
                 onClick={() => setActiveTab(item)}
-                className={`w-full text-left px-4 py-3 cursor-pointer rounded-xl transition font-medium ${activeTab === item
-                  ? "bg-[#de7a63] text-white"
-                  : "hover:bg-[#fdf1ec] text-gray-700"
-                  }`}
+                className={`w-full text-left px-4 py-3 cursor-pointer rounded-xl transition font-medium ${
+                  activeTab === item
+                    ? "bg-[#de7a63] text-white"
+                    : "hover:bg-[#fdf1ec] text-gray-700"
+                }`}
               >
                 {item}
               </button>
@@ -529,9 +545,18 @@ const ProfilePage = () => {
                         <User className="text-[#de7a63]" size={20} />
                         <input
                           type="text"
-                          value={isEditingProfileMode ? (editProfileData?.name || "") : (profile?.name || "")}
+                          value={
+                            isEditingProfileMode
+                              ? editProfileData?.name || ""
+                              : profile?.name || ""
+                          }
                           readOnly={!isEditingProfileMode}
-                          onChange={(e) => setEditProfileData({ ...editProfileData, name: e.target.value })}
+                          onChange={(e) =>
+                            setEditProfileData({
+                              ...editProfileData,
+                              name: e.target.value,
+                            })
+                          }
                           className={`w-full outline-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""}`}
                         />
                       </div>
@@ -544,9 +569,18 @@ const ProfilePage = () => {
                         <Mail className="text-[#de7a63]" size={20} />
                         <input
                           type="email"
-                          value={isEditingProfileMode ? (editProfileData?.email || "") : (profile?.email || "")}
+                          value={
+                            isEditingProfileMode
+                              ? editProfileData?.email || ""
+                              : profile?.email || ""
+                          }
                           readOnly={!isEditingProfileMode}
-                          onChange={(e) => setEditProfileData({ ...editProfileData, email: e.target.value })}
+                          onChange={(e) =>
+                            setEditProfileData({
+                              ...editProfileData,
+                              email: e.target.value,
+                            })
+                          }
                           className={`w-full outline-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""}`}
                         />
                       </div>
@@ -559,9 +593,18 @@ const ProfilePage = () => {
                         <Phone className="text-[#de7a63]" size={20} />
                         <input
                           type="text"
-                          value={isEditingProfileMode ? (editProfileData?.phone || "") : (profile?.phone || "")}
+                          value={
+                            isEditingProfileMode
+                              ? editProfileData?.phone || ""
+                              : profile?.phone || ""
+                          }
                           readOnly={!isEditingProfileMode}
-                          onChange={(e) => setEditProfileData({ ...editProfileData, phone: e.target.value })}
+                          onChange={(e) =>
+                            setEditProfileData({
+                              ...editProfileData,
+                              phone: e.target.value,
+                            })
+                          }
                           className={`w-full outline-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""}`}
                         />
                       </div>
@@ -577,8 +620,10 @@ const ProfilePage = () => {
                           max={new Date().toISOString().split("T")[0]}
                           value={
                             isEditingProfileMode
-                              ? (editProfileData?.dob || editProfileData?.date_of_birth || "")
-                              : (profile?.dob || profile?.date_of_birth || "")
+                              ? editProfileData?.dob ||
+                                editProfileData?.date_of_birth ||
+                                ""
+                              : profile?.dob || profile?.date_of_birth || ""
                           }
                           readOnly={!isEditingProfileMode}
                           onChange={(e) =>
@@ -587,8 +632,11 @@ const ProfilePage = () => {
                               dob: e.target.value,
                             })
                           }
-                          className={`w-full outline-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""
-                            }`}
+                          className={`w-full outline-none bg-transparent ${
+                            !isEditingProfileMode
+                              ? "cursor-default text-gray-500"
+                              : ""
+                          }`}
                         />
                       </div>
                     </div>
@@ -600,9 +648,18 @@ const ProfilePage = () => {
                         <MapPin className="text-[#de7a63]" size={20} />
                         <textarea
                           rows={3}
-                          value={isEditingProfileMode ? (editProfileData?.address || "") : (profile?.address || "")}
+                          value={
+                            isEditingProfileMode
+                              ? editProfileData?.address || ""
+                              : profile?.address || ""
+                          }
                           readOnly={!isEditingProfileMode}
-                          onChange={(e) => setEditProfileData({ ...editProfileData, address: e.target.value })}
+                          onChange={(e) =>
+                            setEditProfileData({
+                              ...editProfileData,
+                              address: e.target.value,
+                            })
+                          }
                           className={`w-full outline-none resize-none bg-transparent ${!isEditingProfileMode ? "cursor-default text-gray-500" : ""}`}
                         />
                       </div>
@@ -693,9 +750,13 @@ const ProfilePage = () => {
                         <img
                           src={
                             item.product?.main_image || item.product?.image
-                              ? ((item.product?.main_image || item.product?.image).startsWith('http')
-                                ? (item.product?.main_image || item.product?.image)
-                                : `${profileApiBase.replace('/api', '')}/${item.product?.main_image || item.product?.image}`)
+                              ? (
+                                  item.product?.main_image ||
+                                  item.product?.image
+                                ).startsWith("http")
+                                ? item.product?.main_image ||
+                                  item.product?.image
+                                : `${profileApiBase.replace("/api", "")}/${item.product?.main_image || item.product?.image}`
                               : "https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?q=80&w=1200&auto=format&fit=crop"
                           }
                           alt={item.product?.name || "Product"}
@@ -709,7 +770,12 @@ const ProfilePage = () => {
                         </h3>
 
                         <p className="text-gray-500 text-sm mt-2 line-clamp-2">
-                          {item.product?.subtitle || item.product?.description?.replace(/<[^>]*>?/gm, '') || "No description available."}
+                          {item.product?.subtitle ||
+                            item.product?.description?.replace(
+                              /<[^>]*>?/gm,
+                              "",
+                            ) ||
+                            "No description available."}
                         </p>
 
                         <div className="flex items-center justify-between mt-5">
@@ -719,9 +785,12 @@ const ProfilePage = () => {
 
                           <button
                             onClick={() => {
-                              if (window.confirm("Remove this item from wishlist?")) {
+                              if (
+                                window.confirm(
+                                  "Remove this item from wishlist?",
+                                )
+                              ) {
                                 removeFromWishlist(item.product?.id);
-
                               }
                             }}
                             className="text-red-500 cursor-pointer hover:scale-110 transition p-2"
@@ -738,7 +807,7 @@ const ProfilePage = () => {
                   <Heart className="mx-auto text-gray-300 mb-4" size={48} />
                   <p className="text-gray-500">Your wishlist is empty.</p>
                   <button
-                    onClick={() => router.push('/shop')}
+                    onClick={() => router.push("/shop")}
                     className="mt-4 text-[#de7a63] font-semibold underline"
                   >
                     Browse products
@@ -946,8 +1015,8 @@ const ProfilePage = () => {
                 </form>
               )}
 
-              {!showAddAddressForm && (
-                isLoadingAddresses ? (
+              {!showAddAddressForm &&
+                (isLoadingAddresses ? (
                   <div className="text-center py-16 text-gray-500">
                     Loading addresses...
                   </div>
@@ -982,10 +1051,10 @@ const ProfilePage = () => {
                         lines.length > 0
                           ? lines
                           : [
-                            address.full_address ||
-                            address.address ||
-                            JSON.stringify(address),
-                          ];
+                              address.full_address ||
+                                address.address ||
+                                JSON.stringify(address),
+                            ];
 
                       return (
                         <div
@@ -1000,7 +1069,9 @@ const ProfilePage = () => {
                                 {content.map((line, lineIndex) => (
                                   <span key={lineIndex}>
                                     {line}
-                                    {lineIndex < content.length - 1 ? <br /> : null}
+                                    {lineIndex < content.length - 1 ? (
+                                      <br />
+                                    ) : null}
                                   </span>
                                 ))}
                               </p>
@@ -1031,8 +1102,7 @@ const ProfilePage = () => {
                       );
                     })}
                   </div>
-                )
-              )}
+                ))}
             </div>
           )}
         </div>

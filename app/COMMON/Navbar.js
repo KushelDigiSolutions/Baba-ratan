@@ -394,9 +394,9 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="text-[black] hover:text-[#e57661]"
-                      href="/astrology-services"
+                      href="/astrology-consulting"
                     >
-                      Astrology Services
+                      Astrology Consulting
                     </Link>
                   </li>
                 </ul>
@@ -435,16 +435,13 @@ export default function Navbar() {
             href="https://calendly.com/bajrangastroofficial/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="astro-left px-3 rounded-[7px] bg-[#FFF5E9] desktop-only"
+            className="astro-left text-white px-3 p-[10px] rounded-[7px] bg-[#e57661] desktop-only"
           >
 
-            <div className="astro-icon">
-              {/* <FiPhone /> */}
-              <IoCallSharp size={32} color="#E57661" />
-            </div>
+            
             <div className="astro-text">
-              <p>Talk to our Astrologer</p>
-              <span className="text-[#E57661]">+91 7042600873</span>
+              <p className="!text-white">Talk to our Astrologer</p>
+              {/* <span className="text-[#E57661]">+91 7042600873</span> */}
             </div>
             <div className="astro-image">
               {/* <img
@@ -576,7 +573,7 @@ export default function Navbar() {
                 {mobileServicesOpen && (
                   <ul className="mt-3 pl-4 space-y-3 border-l-2 border-[#ffe8e3] list-none">
                     <li><Link href="/vastu-consulting" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Vastu Consulting</Link></li>
-                    <li><Link href="/astrology-services" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Astrology Services</Link></li>
+                    <li><Link href="/astrology-consulting" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Astrology Services</Link></li>
                   </ul>
                 )}
               </li>

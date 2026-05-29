@@ -106,7 +106,7 @@ const VirgoPage = () => {
           {/* RIGHT */}
           <div className="flex justify-center order-first lg:order-last">
             <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full overflow-hidden flex items-center justify-center shadow-2xl">
-              <img src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779974298/Virgo_image_sy6ji6.png" alt="Virgo Rashi" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
+              <img src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054091/Virgo_image__grk6rp.png" alt="Virgo Rashi" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
             </div>
           </div>
         </div>

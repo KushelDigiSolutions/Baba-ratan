@@ -82,8 +82,8 @@ export default function AstrologySteps() {
             <div className={`w-full lg:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step1 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922603/Input_Birth_Data_ryrj5t.png"
-                  alt="Step 1"
+                  src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780058796/birth_details_bajarangastro_ffrt1h.png"
+                  alt="Input_Birth_Data"
                   fill
                   className="object-cover"
                 />
@@ -112,7 +112,7 @@ export default function AstrologySteps() {
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922605/Planetary_Analysis_nkqjf9.png"
-                  alt="Step 2"
+                  alt="Planetary_Analysis"
                   fill
                   className="object-cover"
                 />
@@ -140,8 +140,8 @@ export default function AstrologySteps() {
             <div className={`w-full lg:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step3 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922604/Personalized_Remedies_rkyik6.png"
-                  alt="Step 3"
+                  src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780058374/personalised-remedies_mmcksu.png"
+                  alt="personalised-remedies"
                   fill
                   className="object-cover"
                 />

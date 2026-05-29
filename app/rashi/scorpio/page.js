@@ -3,6 +3,11 @@ import Navbar from '@/app/COMMON/Navbar'
 import React from 'react'
 import ScorpioPage from './Scorpio'
 
+export const metadata = {
+    title: 'Scorpio | Bajrang Astro Website',
+    description: 'Discover the unique traits and characteristics of individuals born under the sign of Scorpio.',
+    canonical: '/rashi/scorpio',
+};
 export default function page() {
   return (
     <>

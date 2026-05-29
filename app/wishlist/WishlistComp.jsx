@@ -17,10 +17,14 @@ import { FiShoppingCart } from "react-icons/fi";
 const WishlistPage = () => {
   const { wishlistItems, isLoading, removeFromWishlist } = useWishlist();
   const { addToCart } = useCart();
-  const apiBase = "https://bajrangastro.kdscrm.com";
+  const apiBase = "https://admin.bajrangastro.com";
 
   const removeItem = (id) => {
-    if (window.confirm("Are you sure you want to remove this item from your wishlist?")) {
+    if (
+      window.confirm(
+        "Are you sure you want to remove this item from your wishlist?",
+      )
+    ) {
       removeFromWishlist(id);
     }
   };
@@ -39,9 +43,7 @@ const WishlistPage = () => {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-5">
-            My Wishlist
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-5">My Wishlist</h1>
 
           <p className="max-w-2xl mx-auto text-white/80 text-lg leading-8">
             Save your favorite astrology and spiritual products to purchase
@@ -55,7 +57,9 @@ const WishlistPage = () => {
         {isLoading ? (
           <div className="flex flex-col items-center justify-center py-20">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#d97869]"></div>
-            <p className="mt-4 text-gray-500 font-medium">Loading your wishlist...</p>
+            <p className="mt-4 text-gray-500 font-medium">
+              Loading your wishlist...
+            </p>
           </div>
         ) : wishlistItems.length > 0 ? (
           <>
@@ -91,9 +95,11 @@ const WishlistPage = () => {
                     <img
                       src={
                         item.product?.main_image || item.product?.image
-                          ? ((item.product?.main_image || item.product?.image).startsWith('http')
-                            ? (item.product?.main_image || item.product?.image)
-                            : `${apiBase}/${item.product?.main_image || item.product?.image}`)
+                          ? (
+                              item.product?.main_image || item.product?.image
+                            ).startsWith("http")
+                            ? item.product?.main_image || item.product?.image
+                            : `${apiBase}/${item.product?.main_image || item.product?.image}`
                           : "https://res.cloudinary.com/dd9tagtiw/image/upload/v1766821528/Emerald-PNG-Image-File_1_rkoyhz.png"
                       }
                       alt={item.product?.name || "Product"}
@@ -139,13 +145,10 @@ const WishlistPage = () => {
                       </button>
 
                       <Link
-                        href={`/gemstones/${item.product?.category?.slug || 'shop'}/${item.product?.slug || item.product?.id}`}
+                        href={`/gemstones/${item.product?.category?.slug || "shop"}/${item.product?.slug || item.product?.id}`}
                         className="w-14 h-14 rounded-2xl border border-[#ead0ca] flex items-center justify-center hover:bg-[#fff2ef] transition-all duration-300"
                       >
-                        <ArrowRight
-                          size={20}
-                          className="text-[#d97869]"
-                        />
+                        <ArrowRight size={20} className="text-[#d97869]" />
                       </Link>
                     </div>
                   </div>

@@ -43,6 +43,9 @@ export default function Footer() {
                             <a href="https://www.youtube.com/@bajrangiratankendra" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center transition hover:scale-110">
                                 <FaYoutube className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
                             </a>
+                            <a href="https://www.instagram.com/bajrangastro/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center transition hover:scale-110">
+                                <FaInstagram className="text-[#E57661] hover:text-[#D1644F] transition-colors" size={32} />
+                            </a>
                         </div>
 
                     </div>
@@ -56,7 +59,7 @@ export default function Footer() {
                                 <li><Link href="/grah" className="hover:text-black">Grah</Link></li>
                                 <li><Link href="/rashi" className="hover:text-black">Rashi</Link></li>
                                 <li><Link href="/vastu-consulting" className="hover:text-black">Vastu Consulting</Link></li>
-                                <li><Link href="/astrology-services" className="hover:text-black">Astrology Services</Link></li>
+                                <li><Link href="/astrology-consulting" className="hover:text-black">Astrology Services</Link></li>
                                 <li><Link href="/contact" className="hover:text-black">Contact</Link></li>
                             </ul>
                         </div>
@@ -83,11 +86,11 @@ export default function Footer() {
 
                                 {/* EMAIL */}
                                 <a
-                                    href="mailto:bajrangastro@gmail.com"
+                                    href="mailto:bajrangastroofficial@gmail.com"
                                     className="flex items-center gap-3 hover:text-black"
                                 >
                                     <FiMail size={18} className="text-[#7A1F3D]" />
-                                    bajrangastro@gmail.com
+                                    bajrangastroofficial@gmail.com
                                 </a>
 
                                 {/* PHONE */}
@@ -113,6 +116,21 @@ export default function Footer() {
                                         Meerut, UP 250001
                                     </span>
                                 </a>
+                                <a
+                                    href="https://maps.google.com/maps/place/Shri+Jaipur+Bajrangi+Ratan+Kendra/data=!4m2!3m1!1s0x0:0x989afa4414442598?sa=X&ved=1t:2428&hl=en&ictx=111"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-start gap-3 hover:text-black"
+                                >
+                                    <FiMapPin size={18} className="mt-1 text-[#7A1F3D]" />
+                                    <span>
+                                        247/1, Rohta Rd, opposite Star <br />
+                                         Public School,  Tej Vihar,
+                                        Fazalpur,<br /> Meerut, Uttar Pradesh 250002
+                                    </span>
+                                </a>
+
+
                             </div>
                         </div>
                     </div>
@@ -120,7 +138,7 @@ export default function Footer() {
 
                 {/* BOTTOM BAR */}
                 <div className="mt-12  pt-6 flex flex-col md:flex-row justify-between items-center  text-gray-500 gap-4">
-                    <p className="text-[16px]">@2026 Bajrang Astro. All right Reserved</p>
+                    <p className="text-[16px]">@2026 Bajrang Astro. All right Reserved, Designed and Developed by <a className="font-semibold" href="https://www.kusheldigi.com/" target="_blank">Kushel Digi Solutions</a></p>
 
                     <div className="flex gap-6 text-[16px] md:mr-10">
                         <a href="/terms-condition" className="hover:text-black tracking-wider">Terms And Condition</a>

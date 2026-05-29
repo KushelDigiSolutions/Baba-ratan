@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Get trusted Vedic astrology in India consultation & accurate Janam Kundli analysis from Vishal Verma at Bajrang Astro, an expert astrologer in India. Book now",
   alternates: {
-    canonical: "/astrology-services",
+    canonical: "/astrology-consulting",
   },
 };
 
