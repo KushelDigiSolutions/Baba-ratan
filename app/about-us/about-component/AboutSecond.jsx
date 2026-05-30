@@ -27,8 +27,8 @@ export default function AboutSecond() {
           <div className="relative w-full max-w-md h-[350px] md:h-[380px]   overflow-hidden flex items-end justify-center">
 
             <Image
-              src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776405399/banner-baba_tlmud0.png"
-              alt="person"
+              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780117664/vishal_verma_astrologer___fox6oc.png"
+              alt="vishal_verma_astrologer"
               width={400}
               height={500}
               className="object-contain h-full w-auto"
