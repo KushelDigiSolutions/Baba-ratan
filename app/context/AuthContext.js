@@ -4,7 +4,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 
 const AuthContext = createContext();
 const apiBase =
-  process.env.NEXT_PUBLIC_API_BASE ?? "https://bajrangastro.kdscrm.com/api";
+  process.env.NEXT_PUBLIC_API_BASE ?? "https://admin.bajrangastro.com/api";
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => {

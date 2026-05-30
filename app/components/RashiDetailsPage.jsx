@@ -101,19 +101,19 @@ const RashiDetailsPage = () => {
               
               <div className="grid grid-cols-4 gap-3 sm:gap-6 p-4 sm:p-8 relative z-10">
                 {[
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268339/Aries_rashi.jpg",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268347/Taurus_rashi.png",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268341/Gemini_rashi.png",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268340/Cancer_rashi.png",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268341/Leo_rashi.png",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268348/Virgo%20rashi.png",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268342/Libra_rashi.png",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268346/scropio-rashi.png",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268345/Sagittarius_rashi.png",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268342/Capricorn_rashi.png",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268347/Aquarius_rashi.png",
-                  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1779268344/Pisces_rashi.png"
-                ].map((imgUrl, index) => (
+  "https://res.cloudinary.com/dxlykgx6w/image/upload/v1780037725/Aries_image_btmfsl_va1fvf.png",
+  "https://res.cloudinary.com/dxlykgx6w/image/upload/v1780038270/Taurus_image_ltagqq.png",
+  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053482/Gemini_image__mhygmp.png",
+  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053754/Cancer_image_pt5jx3.png",
+  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053953/Leo_image__vkwou3.png",
+  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054091/Virgo_image__grk6rp.png",
+  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054238/Libra_image__zkkkkt.png",
+  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054348/Scorpio_image__epofxf.png",
+  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054514/Sagittarius_image__vfxz1m.png",
+  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054642/Capricorn_image__p8pyyw.png",
+  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054791/Aquarius_image__hztu1r.png",
+  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054887/Pisces_image__fkbuc7.png"
+].map((imgUrl, index) => (
                   <div
                     key={index}
                     className="w-10 h-10 sm:w-14 sm:h-14 md:w-18 md:h-18 rounded-full flex items-center justify-center hover:scale-115 transition duration-300 shadow-md cursor-pointer overflow-hidden bg-white/20"

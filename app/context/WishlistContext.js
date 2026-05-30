@@ -4,7 +4,8 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import { useAuth } from "./AuthContext";
 
 const WishlistContext = createContext();
-const apiBase = process.env.NEXT_PUBLIC_API_BASE ?? "https://bajrangastro.kdscrm.com/api";
+const apiBase =
+  process.env.NEXT_PUBLIC_API_BASE ?? "https://admin.bajrangastro.com/api";
 
 export const WishlistProvider = ({ children }) => {
   const [wishlistItems, setWishlistItems] = useState([]);
@@ -24,7 +25,8 @@ export const WishlistProvider = ({ children }) => {
       const data = await response.json();
 
       // Adjust based on the actual response where status might be missing
-      const items = data.data || data.wishlist || (Array.isArray(data) ? data : []);
+      const items =
+        data.data || data.wishlist || (Array.isArray(data) ? data : []);
       setWishlistItems(items);
     } catch (error) {
       console.error("Failed to fetch wishlist", error);

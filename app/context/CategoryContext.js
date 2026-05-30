@@ -5,7 +5,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 const CategoryContext = createContext();
 
 const apiBase =
-  process.env.NEXT_PUBLIC_API_BASE ?? "https://bajrangastro.kdscrm.com/api";
+  process.env.NEXT_PUBLIC_API_BASE ?? "https://admin.bajrangastro.com/api";
 
 export const CategoryProvider = ({ children }) => {
   const [categories, setCategories] = useState([]);
@@ -57,7 +57,9 @@ export const CategoryProvider = ({ children }) => {
       }
 
       const data = await response.json();
-      const productsData = Array.isArray(data) ? data : (data.products || data.data || []);
+      const productsData = Array.isArray(data)
+        ? data
+        : data.products || data.data || [];
       setProducts(productsData);
     } catch (err) {
       setProductsError(err.message);

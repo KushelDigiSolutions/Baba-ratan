@@ -81,7 +81,7 @@ const HomeSecond = () => {
 
                             </p>
 
-                            <Link href="/astrology-services" className="flex items-center justify-center md:justify-start gap-2 hover:gap-3 transition-all text-[18px]">
+                            <Link href="/astrology-consulting" className="flex items-center justify-center md:justify-start gap-2 hover:gap-3 transition-all text-[18px]">
                                Explore Astrology Services ↗
                             </Link>
                         </div>

@@ -3,6 +3,180 @@
 import { useState } from "react";
 import styles from "./ConsultationForms.module.css";
 
+const vastuIssueOptions = {
+  Residential: [
+    "Main Entrance",
+    "Bedroom Vastu",
+    "Kitchen Vastu",
+    "Bathroom / Toilet",
+    "Pooja Room",
+    "Staircase",
+    "Energy Imbalance",
+    "Financial Growth",
+    "Health Related",
+    "Relationship / Family",
+    "Interior Placement",
+    "Furniture Placement",
+    "Color Selection",
+    "Parking Area",
+    "Water Source Placement",
+    "Septic Tank",
+    "Borewell / Underground Tank",
+    "Overhead Tank",
+    "Balcony / Window",
+    "Vastu Dosh",
+    "Renovation Suggestion",
+    "Consultation Follow-up",
+    "Other",
+  ],
+  Commercial: [
+    "Main Entrance",
+    "Office Vastu",
+    "Commercial Space",
+    "Bathroom / Toilet",
+    "Staircase",
+    "Energy Imbalance",
+    "Financial Growth",
+    "Career Growth",
+    "Business Loss",
+    "Interior Placement",
+    "Furniture Placement",
+    "Color Selection",
+    "Parking Area",
+    "Water Source Placement",
+    "Vastu Dosh",
+    "Renovation Suggestion",
+    "Consultation Follow-up",
+    "Other",
+  ],
+  Industrial: [
+    "Main Entrance",
+    "Factory Vastu",
+    "Plot Direction",
+    "Bathroom / Toilet",
+    "Staircase",
+    "Energy Imbalance",
+    "Financial Growth",
+    "Business Loss",
+    "Construction Vastu",
+    "Parking Area",
+    "Water Source Placement",
+    "Septic Tank",
+    "Borewell / Underground Tank",
+    "Overhead Tank",
+    "Land Shape",
+    "Vastu Dosh",
+    "Renovation Suggestion",
+    "Consultation Follow-up",
+    "Other",
+  ],
+  Land: [
+    "Plot Direction",
+    "Land Shape",
+    "Energy Imbalance",
+    "Water Source Placement",
+    "Borewell / Underground Tank",
+    "Septic Tank",
+    "Vastu Dosh",
+    "Construction Vastu",
+    "Consultation Follow-up",
+    "Other",
+  ],
+  Educational: [
+    "Main Entrance",
+    "Office Vastu",
+    "Commercial Space",
+    "Bathroom / Toilet",
+    "Staircase",
+    "Energy Imbalance",
+    "Financial Growth",
+    "Career Growth",
+    "Interior Placement",
+    "Furniture Placement",
+    "Color Selection",
+    "Parking Area",
+    "Water Source Placement",
+    "Septic Tank",
+    "Borewell / Underground Tank",
+    "Overhead Tank",
+    "Vastu Dosh",
+    "Renovation Suggestion",
+    "Consultation Follow-up",
+    "Other",
+  ],
+  Spiritual: [
+    "Main Entrance",
+    "Pooja Room",
+    "Energy Imbalance",
+    "Construction Vastu",
+    "Interior Placement",
+    "Land Shape",
+    "Vastu Dosh",
+    "Renovation Suggestion",
+    "Consultation Follow-up",
+    "Other",
+  ],
+  Default: [
+    "Main Entrance",
+    "Bedroom Vastu",
+    "Kitchen Vastu",
+    "Bathroom / Toilet",
+    "Pooja Room",
+    "Staircase",
+    "Plot Direction",
+    "Office Vastu",
+    "Factory Vastu",
+    "Commercial Space",
+    "Energy Imbalance",
+    "Financial Growth",
+    "Health Related",
+    "Relationship / Family",
+    "Career Growth",
+    "Business Loss",
+    "Construction Vastu",
+    "Interior Placement",
+    "Furniture Placement",
+    "Color Selection",
+    "Parking Area",
+    "Water Source Placement",
+    "Septic Tank",
+    "Borewell / Underground Tank",
+    "Overhead Tank",
+    "Balcony / Window",
+    "Land Shape",
+    "Vastu Dosh",
+    "Renovation Suggestion",
+    "Consultation Follow-up",
+    "Other",
+  ],
+};
+
+const getVastuCategory = (propertyType) => {
+  if (
+    ["Home / Flat", "Villa / Bungalow", "Apartment", "Farmhouse"].includes(
+      propertyType,
+    )
+  )
+    return "Residential";
+  if (
+    [
+      "Office",
+      "Shop / Showroom",
+      "Commercial Building",
+      "Restaurant / Cafe",
+      "Hotel / Resort",
+      "Hospital / Clinic",
+    ].includes(propertyType)
+  )
+    return "Commercial";
+  if (["Factory", "Warehouse", "Industrial Property"].includes(propertyType))
+    return "Industrial";
+  if (["Plot / Land"].includes(propertyType)) return "Land";
+  if (["School / College"].includes(propertyType)) return "Educational";
+  if (["Temple / Religious Place"].includes(propertyType)) return "Spiritual";
+  return "Default";
+};
+
 export default function ConsultationForm() {
   const [serviceType, setServiceType] = useState("");
   const [formData, setFormData] = useState({
@@ -97,35 +271,35 @@ export default function ConsultationForm() {
       const payload =
         serviceType === "Astro Consulting"
           ? {
-            name: formData.name,
-            phone: formData.phone,
-            email: formData.email,
-            city: formData.city,
-            query_type: "astrology",
-            dob: formData.dob,
-            birth_time: formData.birth_time,
-            birth_place: formData.birth_place,
-            gender: formData.gender,
-            issue_type: formData.issue_type,
-            message: formData.message,
-            status: "pending",
-          }
+              name: formData.name,
+              phone: formData.phone,
+              email: formData.email,
+              city: formData.city,
+              query_type: "astrology",
+              dob: formData.dob,
+              birth_time: formData.birth_time,
+              birth_place: formData.birth_place,
+              gender: formData.gender,
+              issue_type: formData.issue_type,
+              message: formData.message,
+              status: "pending",
+            }
           : {
-            name: formData.name,
-            phone: formData.phone,
-            email: formData.email,
-            city: formData.city,
-            query_type: "vastu",
-            property_type: formData.property_type,
-            property_address: formData.property_address,
-            direction: formData.direction,
-            issue_type: formData.issue_type,
-            message: formData.message,
-            status: "pending",
-          };
+              name: formData.name,
+              phone: formData.phone,
+              email: formData.email,
+              city: formData.city,
+              query_type: "vastu",
+              property_type: formData.property_type,
+              property_address: formData.property_address,
+              direction: formData.direction,
+              issue_type: formData.issue_type,
+              message: formData.message,
+              status: "pending",
+            };
 
       const response = await fetch(
-        "https://bajrangastro.kdscrm.com/api/queries",
+        "https://admin.bajrangastro.com/api/queries",
         {
           method: "POST",
           headers: {
@@ -177,6 +351,8 @@ export default function ConsultationForm() {
       // Prevent anything other than alphabets and spaces
       const sanitizedValue = value.replace(/[^A-Za-z\s]/g, "");
       setFormData({ ...formData, [name]: sanitizedValue });
+    } else if (name === "property_type") {
+      setFormData({ ...formData, [name]: value, issue_type: "" });
     } else {
       setFormData({ ...formData, [name]: value });
     }
@@ -209,15 +385,14 @@ export default function ConsultationForm() {
           </h1>
 
           <p className={styles.subtitle}>
-            Start your journey with Vishal Verma. Choose your service
-            and take the first step today.
+            Start your journey with Vishal Verma. Choose your service and take
+            the first step today.
           </p>
 
           <div className={styles.contactInfo}>
             <h2>Contact Information</h2>
             <p>
-              Vishal Verma{" "}
-              <span>(Vedic Astrologer & Vastu Consultant)</span>
+              Vishal Verma <span>(Vedic Astrologer & Vastu Consultant)</span>
             </p>
           </div>
 
@@ -393,15 +568,41 @@ export default function ConsultationForm() {
                     onChange={handleInputChange}
                   >
                     <option value="">Select issue type</option>
-                    <option value="Career problem">Career problem</option>
-                    <option value="Marriage problem">Marriage problem</option>
-                    <option value="Health problem">Health problem</option>
-                    <option value="Financial problem">Financial problem</option>
-                    <option value="Education problem">Education problem</option>
-                    <option value="Relationship problem">
-                      Relationship problem
+                    <option value="Career / Job / Profession Issue">
+                      Career / Job / Profession Issue
                     </option>
-                    <option value="Sadi problem">Sadi problem</option>
+                    <option value="Business / Financial Issue">
+                      Business / Financial Issue
+                    </option>
+                    <option value="Market / Trading Issue">
+                      Market / Trading Issue
+                    </option>
+                    <option value="Relationship / Love / Marriage Issue">
+                      Relationship / Love / Marriage Issue
+                    </option>
+                    <option value="Family / Child Related Issue">
+                      Family / Child Related Issue
+                    </option>
+                    <option value="Health / Mental Stress Issue">
+                      Health / Mental Stress Issue
+                    </option>
+                    <option value="Education Issue">Education Issue</option>
+                    <option value="Foreign Travel / Settlement Issue">
+                      Foreign Travel / Settlement Issue
+                    </option>
+                    <option value="Legal Issue">Legal Issue</option>
+                    <option value="Property Related Concern">
+                      Property Related Concern
+                    </option>
+                    <option value="Kundli / Horoscope Matching">
+                      Kundli / Horoscope Matching
+                    </option>
+                    <option value="Dosha / Grah Dosh (Kundli Dosh, Planetary Effects)">
+                      Dosha / Grah Dosh (Kundli Dosh, Planetary Effects)
+                    </option>
+                    <option value="Spiritual Guidance">
+                      Spiritual Guidance
+                    </option>
                     <option value="Other">Other</option>
                   </select>
                   {errors.issue_type && (
@@ -441,10 +642,32 @@ export default function ConsultationForm() {
                       onChange={handleInputChange}
                     >
                       <option value="">Select property type</option>
-                      <option value="Home">Home</option>
+                      <option value="Home / Flat">Home / Flat</option>
+                      <option value="Villa / Bungalow">Villa / Bungalow</option>
+                      <option value="Apartment">Apartment</option>
                       <option value="Office">Office</option>
+                      <option value="Shop / Showroom">Shop / Showroom</option>
                       <option value="Factory">Factory</option>
-                      <option value="Shop">Shop</option>
+                      <option value="Warehouse">Warehouse</option>
+                      <option value="Plot / Land">Plot / Land</option>
+                      <option value="Commercial Building">
+                        Commercial Building
+                      </option>
+                      <option value="Restaurant / Cafe">
+                        Restaurant / Cafe
+                      </option>
+                      <option value="Hotel / Resort">Hotel / Resort</option>
+                      <option value="Hospital / Clinic">
+                        Hospital / Clinic
+                      </option>
+                      <option value="School / College">School / College</option>
+                      <option value="Temple / Religious Place">
+                        Temple / Religious Place
+                      </option>
+                      <option value="Industrial Property">
+                        Industrial Property
+                      </option>
+                      <option value="Farmhouse">Farmhouse</option>
                       <option value="Other">Other</option>
                     </select>
                     {errors.property_type && (
@@ -506,15 +729,13 @@ export default function ConsultationForm() {
                       onChange={handleInputChange}
                     >
                       <option value="">Select issue type</option>
-                      <option value="money problem">Money problem</option>
-                      <option value="health problem">Health problem</option>
-                      <option value="relationship problem">
-                        Relationship problem
-                      </option>
-                      <option value="business problem">Business problem</option>
-                      <option value="sleep problem">Sleep problem</option>
-                      <option value="stress problem">Stress problem</option>
-                      <option value="Other">Other</option>
+                      {vastuIssueOptions[
+                        getVastuCategory(formData.property_type)
+                      ].map((issue) => (
+                        <option key={issue} value={issue}>
+                          {issue}
+                        </option>
+                      ))}
                     </select>
                     {errors.issue_type && (
                       <p className={styles.errorText}>{errors.issue_type}</p>

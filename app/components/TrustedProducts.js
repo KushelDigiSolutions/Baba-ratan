@@ -9,7 +9,7 @@ import { useCategory } from "../context/CategoryContext";
 import { useWishlist } from "../context/WishlistContext";
 
 const apiBase =
-  process.env.NEXT_PUBLIC_API_BASE ?? "https://bajrangastro.kdscrm.com/api";
+  process.env.NEXT_PUBLIC_API_BASE ?? "https://admin.bajrangastro.com/api";
 
 export default function TrustedProducts() {
   const {
@@ -30,8 +30,8 @@ export default function TrustedProducts() {
   };
 
   const isInWishlist = (productId) => {
-    return wishlistItems.some(item =>
-      item.product_id === productId || item.product?.id === productId
+    return wishlistItems.some(
+      (item) => item.product_id === productId || item.product?.id === productId,
     );
   };
 
@@ -93,7 +93,11 @@ export default function TrustedProducts() {
           <div className="error">Error loading products: {productsError}</div>
         ) : products.length > 0 ? (
           products.map((product) => (
-            <Link href={`/gemstones/${activeCategory.slug}/${product.slug}`} className="product-card" key={product.id}>
+            <Link
+              href={`/gemstones/${activeCategory.slug}/${product.slug}`}
+              className="product-card"
+              key={product.id}
+            >
               {product.sold && <span className="badge sold">Sold Out</span>}
               <div
                 className="wishlist-container"
@@ -103,7 +107,7 @@ export default function TrustedProducts() {
                   className={`wishlist ${isInWishlist(product.id) ? "active" : ""}`}
                   style={{
                     fill: isInWishlist(product.id) ? "#de7a63" : "none",
-                    color: isInWishlist(product.id) ? "#de7a63" : "inherit"
+                    color: isInWishlist(product.id) ? "#de7a63" : "inherit",
                   }}
                 />
               </div>
