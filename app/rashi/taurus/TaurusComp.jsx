@@ -106,7 +106,7 @@ const TaurusPage = () => {
           {/* RIGHT */}
           <div className="flex justify-center order-first lg:order-last">
             <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full overflow-hidden flex items-center justify-center shadow-2xl">
-              <img src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1780038270/Taurus_image_ltagqq.png" alt="Taurus Rashi" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
+              <img src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1780038270/Taurus_image_ltagqq.png" alt="Taurus Vrishabh Rashi Vedic Astrology India — Bajrang Astro" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ const TaurusPage = () => {
           <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?q=80&w=1400&auto=format&fit=crop"
-              alt="Taurus"
+              alt="Taurus Rashi Personality Traits India — Vishal Verma"
               className="w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
 
@@ -290,7 +290,7 @@ const TaurusPage = () => {
           <div className="relative order-first lg:order-last">
             <img
               src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1400&auto=format&fit=crop"
-              alt="Taurus Stability"
+              alt="Vrishabh Rashi Lucky Gemstone India — Bajrang Astro"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
 

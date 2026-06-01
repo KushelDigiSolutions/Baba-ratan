@@ -1,15 +1,38 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaFacebookF, FaXTwitter, FaLinkedin, FaThreads, FaYoutube } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaXTwitter, FaLinkedin, FaThreads, FaYoutube, FaArrowUp } from "react-icons/fa6";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import { FiInstagram, FiTwitter } from "react-icons/fi";
 import { FaFacebook } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { useState, useEffect } from "react";
 
 
 
 export default function Footer() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const toggleVisibility = () => {
+            if (window.scrollY > 300) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        window.addEventListener("scroll", toggleVisibility);
+        return () => window.removeEventListener("scroll", toggleVisibility);
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
     return (
         <footer className="bg-[#F7F8F9] text-[#2d2d2d]">
             <div className="max-w-[1390px] mx-auto px-6 md:px-10 py-12">
@@ -22,7 +45,7 @@ export default function Footer() {
                         <div className="flex items-center gap-3 mb-5">
                             <Image
                                 src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png"
-                                alt="Logo"
+                                alt="Bajrang Astro — Best Astrologer in India by Vishal Verma"
                                 width={130}
                                 height={130}
                             />
@@ -140,13 +163,25 @@ export default function Footer() {
                 <div className="mt-12  pt-6 flex flex-col md:flex-row justify-between items-center  text-gray-500 gap-4">
                     <p className="text-[16px]">@2026 Bajrang Astro. All right Reserved, Designed and Developed by <a className="font-semibold" href="https://www.kusheldigi.com/" target="_blank">Kushel Digi Solutions</a></p>
 
-                    <div className="flex gap-6 text-[16px] md:mr-10">
+                    <div className="flex items-center gap-6 text-[16px] md:mr-10">
                         <a href="/terms-condition" className="hover:text-black tracking-wider">Terms And Condition</a>
                         <a href="/privacy-policy" className="hover:text-black tracking-wider">Privacy Policy</a>
                     </div>
                 </div>
 
             </div>
+            
+            {/* FLOATING BACK TO TOP BUTTON */}
+            {isVisible && (
+                <button 
+                    onClick={scrollToTop}
+                    className="fixed bottom-8 right-8 cursor-pointer z-[999] flex items-center justify-center w-12 h-12 bg-[#E57661] text-white rounded-full hover:bg-[#D1644F] transition-all shadow-xl hover:-translate-y-1"
+                    aria-label="Back to top"
+                    title="Back to top"
+                >
+                    <FaArrowUp size={20} />
+                </button>
+            )}
         </footer>
     );
 }

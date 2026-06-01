@@ -83,7 +83,7 @@ export default function AstrologySteps() {
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780058796/birth_details_bajarangastro_ffrt1h.png"
-                  alt="Input_Birth_Data"
+                  alt="Vedic Birth Chart Analysis India — Bajrang Astro"
                   fill
                   className="object-cover"
                 />
@@ -112,7 +112,7 @@ export default function AstrologySteps() {
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922605/Planetary_Analysis_nkqjf9.png"
-                  alt="Planetary_Analysis"
+                  alt="Kundli Matching Marriage Compatibility India — Bajrang Astro"
                   fill
                   className="object-cover"
                 />
@@ -141,7 +141,7 @@ export default function AstrologySteps() {
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780058374/personalised-remedies_mmcksu.png"
-                  alt="personalised-remedies"
+                  alt="Best Astrologer in Noida Delhi NCR — Bajrang Astro"
                   fill
                   className="object-cover"
                 />

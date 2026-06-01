@@ -97,7 +97,7 @@ export default function VastuEigth() {
                 <div className="relative h-[300px] md:h-auto">
                     <Image
                         src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776843485/Begin_Your_Ritual_nbppbj.png"
-                        alt="Consultation"
+                        alt="Vastu Consulting for Business India — Bajrang Astro"
                         fill
                         className="object-cover"
                     />

@@ -4,8 +4,8 @@ import React from 'react'
 import BudhGrahPage from './BudhPage'
 
 export const metadata = {
-    title: 'Budh Graha | Bajrang Astro Website',
-    description: 'Get in touch with our team for any inquiries or assistance.',
+    title: 'Budh (Mercury) in Vedic Astrology | Effects & Remedies',
+    description: 'Understand Budh (Mercury) effects in your Kundli, communication, business & intelligence. Get Budh remedies by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/grah/budh',
     },

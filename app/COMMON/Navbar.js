@@ -130,7 +130,7 @@ export default function Navbar() {
         <Link href="/" className="logo">
           <img
             src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png"
-            alt="Logo"
+            alt="Bajrang Astro — Best Astrologer in India by Vishal Verma"
           />
         </Link>
 

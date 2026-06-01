@@ -4,8 +4,8 @@ import React from 'react'
 import GuruGrahPage from './GuruPage'
 
 export const metadata = {
-    title: 'Guru Graha | Bajrang Astro Website',
-    description: 'Get in touch with our team for any inquiries or assistance.',
+    title: 'Guru (Jupiter) in Vedic Astrology | Effects & Remedies',
+    description: 'Know Guru (Jupiter) effects in your Kundli, wealth, wisdom & marriage. Get expert Guru remedies & gemstone advice by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/grah/guru',
     },

@@ -4,8 +4,9 @@ import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 export default function HeroNewSection() {
     return (
         <section
+         aria-label="Bajrang Astro — Best Astrologer in India by Vishal Verma"
             className="
-    relative w-full xl:py-12 md:py-16 lg:py-20 flex items-center justify-center text-white
+    relative w-full xl:py-12 md:py-16 lg:py-20 flex items-center justify-center text-white 
     bg-[url('https://res.cloudinary.com/dd9tagtiw/image/upload/v1778848847/mystical-numerology-scene_xitymj.jpg')]
     bg-cover bg-[position:100%]
   "

@@ -4,8 +4,8 @@ import React from 'react'
 import CancerPage from './CancerPage'
 
 export const metadata = {
-    title: 'Cancer | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Cancer.',
+    title: 'Cancer (Kark Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Cancer (Kark Rashi) personality, predictions & remedies in Vedic astrology. Expert Cancer horoscope by Vishal Verma at Bajrang Astro ',
     alternates: {
         canonical: '/rashi/cancer',
     },

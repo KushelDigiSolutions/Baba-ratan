@@ -3,8 +3,8 @@ import Navbar from '@/app/COMMON/Navbar'
 import React from 'react'
 import LibraPage from './LibraPage'
 export const metadata = {
-    title: 'Libra | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Libra.',
+    title: 'Libra (Tula Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Libra (Tula Rashi) personality, predictions & remedies in Vedic astrology. Expert Libra horoscope by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/rashi/libra',
     },

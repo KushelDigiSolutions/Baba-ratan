@@ -4,8 +4,8 @@ import Footer from '../COMMON/Footer'
 import Navbar from '../COMMON/Navbar'
 
 export const metadata = {
-    title: 'Login | Bajrang Astro Website',
-    description: 'Login to your Bajrang Astro account to access personalized astrological insights and gemstone recommendations.',
+    title: 'Login Portal | Bajrang Astro ',
+    description: 'Login to your Bajrang Astro account to manage your Kundli reports, gemstone orders & Vastu consultation bookings. Access your account securely today',
     alternates: {
         canonical: '/login',
     },

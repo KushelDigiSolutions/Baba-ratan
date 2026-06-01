@@ -30,7 +30,7 @@ export default function HomeFourth() {
                 <div className="bg-white p-5 md:p-10 rounded-[40px] flex flex-col justify-between">
                     <div>
                         <div className="w-13 h-13 flex items-center justify-center bg-[#E57661] rounded-xl mb-8 mx-auto md:mx-0">
-                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418837/Business_Growth-icon_kxwmjp.png" alt="" width={22} height={22} />
+                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418837/Business_Growth-icon_kxwmjp.png" alt="Trusted Vedic Astrology Consultation India — Bajrang Astro" width={22} height={22} />
                         </div>
 
                         <h4 className="font-[500] text-[#191C1D] text-2xl text-center md:text-left">Business Growth</h4>
@@ -42,7 +42,7 @@ export default function HomeFourth() {
                     <div className="mt-10">
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418837/Business_Growth_z7r999.png"
-                            alt=""
+                            alt="Vastu Consulting for Home and Office India — Bajrang Astro"
                             width={400}
                             height={200}
                             className="rounded-lg object-cover w-full h-[120px]"
@@ -54,7 +54,7 @@ export default function HomeFourth() {
                 <div className="bg-white p-5 md:p-9 rounded-[40px] flex flex-col justify-between">
                     <div>
                         <div className="w-13 h-13 flex items-center justify-center bg-[#E57661] rounded-xl mb-8 mx-auto md:mx-0">
-                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418837/Positive_Energy-icon_vraljq.png" alt="" width={22} height={22} />
+                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418837/Positive_Energy-icon_vraljq.png" alt="Positive Energy-icon-best astrologer-bajrang-astro Vishal Verma" width={22} height={22} />
                         </div>
 
                         <h4 className="font-[500] text-[#191C1D] text-2xl text-center md:text-left">Positive Energy</h4>
@@ -66,7 +66,7 @@ export default function HomeFourth() {
                     <div className="mt-6">
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418837/Positive_Energy_qfpnjv.png"
-                            alt=""
+                            alt="Vedic Astrology Services India — Bajrang Astro"
                             width={400}
                             height={200}
                             className="rounded-lg object-cover w-full h-[120px]"
@@ -78,7 +78,7 @@ export default function HomeFourth() {
                 <div className="bg-white p-5 md:p-9 rounded-[40px] flex flex-col justify-between">
                     <div>
                         <div className="w-13 h-13 flex items-center justify-center bg-[#E57661] rounded-xl mb-8 mx-auto md:mx-0">
-                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418836/Removing_Obstacles-icon_dykunx.png" alt="" width={22} height={22} />
+                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418836/Removing_Obstacles-icon_dykunx.png" alt="Removing Obstacles-icon-best astrologer-bajrang-astro Vishal Verma" width={22} height={22} />
                         </div>
                         <h4 className="font-[500] text-[#191C1D] text-2xl text-center md:text-left">Removing Obstacles</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 leading-7 font-[400] text-center md:text-left">
@@ -89,7 +89,7 @@ export default function HomeFourth() {
                     <div className="mt-6">
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418836/Removing_Obstacles_wfc5s7.png"
-                            alt=""
+                            alt="Best Astrologer in Delhi NCR — Bajrang Astro Vishal Johari"
                             width={400}
                             height={200}
                             className="rounded-lg object-cover w-full h-[120px]"
@@ -106,7 +106,7 @@ export default function HomeFourth() {
 
                     <div className="flex-1">
                         <div className="w-13 h-13 flex items-center justify-center bg-[#E57661] rounded-xl mb-4 mx-auto md:mx-0">
-                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418835/financial-icon_eeepqa.png" alt="" width={22} height={22} />
+                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418835/financial-icon_eeepqa.png" alt="Financial Stability-icon-best astrologer-bajrang-astro Vishal Verma" width={22} height={22} />
                         </div>
                         <h4 className="font-[500] text-[#191C1D] text-2xl md:text-3xl">Financial Stability</h4>
                         <p className="text-[#44474D]/90 text-[16px] mt-4 leading-7 font-[400]">
@@ -117,7 +117,7 @@ export default function HomeFourth() {
                     <div className="flex-1 w-full">
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418837/FinancialStability_zsl2e5.png"
-                            alt=""
+                            alt="Janam Kundli Analysis by Best Astrologer in India"
                             width={300}
                             height={200}
                             className="rounded-xl object-cover w-full h-[240px]"
@@ -131,7 +131,7 @@ export default function HomeFourth() {
                     <div className="flex-1 w-full order-2 md:order-1">
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418839/PeacefulEnvironment_xku2v3.png"
-                            alt=""
+                            alt="1000+ Happy Clients Bajrang Astro India — Vishal Verma"
                             width={300}
                             height={200}
                             className="rounded-xl object-cover w-full h-[240px]"
@@ -140,7 +140,7 @@ export default function HomeFourth() {
 
                     <div className="flex-1 order-1 md:order-2">
                         <div className="w-13 h-13 flex items-center justify-center bg-[#E57661] rounded-xl mb-4 mx-auto md:mx-0">
-                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418834/Peaceful-icon_mmamrq.png" alt="" width={22} height={22} />
+                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776418834/Peaceful-icon_mmamrq.png" alt="Peaceful Environment-icon-best astrologer-bajrang-astro Vishal Verma" width={22} height={22} />
                         </div>
 
                         <h4 className="font-[500] text-[#191C1D] text-2xl md:text-3xl">Peaceful Environment</h4>

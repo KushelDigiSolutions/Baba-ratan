@@ -152,7 +152,7 @@ export default function GuruGrahPage() {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?q=80&w=1200&auto=format&fit=crop"
-                alt="guru"
+                alt="Guru Jupiter Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-[#f4deb0]/30"
               />
             </div>
@@ -302,7 +302,7 @@ export default function GuruGrahPage() {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?q=80&w=1200&auto=format&fit=crop"
-                alt="weak guru"
+                alt="Weak Guru Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#f4deb0]/30"
               />
             </div>

@@ -6,18 +6,21 @@ import Image from "next/image";
 const cards = [
     {
         title: "Vastu Consulting",
+        alt:"15 Years Experience Astrologer India — Vishal Verma",
         subtitle: "Home, Office, Commercial",
         desc: "Correct your home, office, or factory energy with expert Vastu consulting by Vishal Verma, a trusted Vastu consultant in Delhi NCR for 15+ years.",
         img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502026/Vastu_Consulting_mqvg6c.png",
     },
     {
         title: "Astrology Services",
+        alt:"About Bajrang Astro — Janam Kundli Palm Reading Vastu India",
         subtitle: "Kundli, Career, Marriage",
         desc: "Get accurate Janam Kundli analysis, Kundli matching, and Vedic astrology consultation from the best astrologer in India, available both online and offline.",
         img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502027/Astrology_Services_gjnnhj.png",
     },
     {
         title: "Personalized Remedies",
+        alt:"Bajrang Astro Story — Trusted Vedic Astrology India",
         subtitle: "",
         desc: "Gemstones, mantras, and practical solutions recommended personally by Vishal Verma based on your Janam Kundli and planetary positions for real, lasting results. ",
         img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502027/Personalized_Remedies_zwahiu.png",
@@ -82,7 +85,7 @@ export default function AboutFifth() {
 
                             <Image
                                 src={card.img}
-                                alt={card.title}
+                                alt={card.alt}
                                 width={300}
                                 height={300}
                                 className="object-contain w-full"

@@ -84,7 +84,7 @@ const AriesRashiPage = () => {
           {/* RIGHT */}
           <div className="flex justify-center order-first lg:order-last">
             <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full overflow-hidden flex items-center justify-center shadow-2xl">
-              <img src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1780037725/Aries_image_btmfsl_va1fvf.png" alt="Aries Rashi" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
+              <img src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1780037725/Aries_image_btmfsl_va1fvf.png" alt="Aries Mesh Rashi Vedic Astrology India — Bajrang Astro" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ const AriesRashiPage = () => {
           <div>
             <img
               src="https://images.unsplash.com/photo-1516575150278-77136aed6920?q=80&w=1400&auto=format&fit=crop"
-              alt="Aries"
+              alt="Mesh Rashi Career Predictions India — Bajrang Astro"
               className="w-full rounded-[24px] sm:rounded-[30px] shadow-xl object-cover h-[300px] sm:h-[450px]"
             />
           </div>
@@ -252,7 +252,7 @@ const AriesRashiPage = () => {
           <div className="relative order-first lg:order-last">
             <img
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
-              alt="Aries Leadership"
+              alt="Mesh Rashi Remedies India — Vishal Verma Bajrang Astro"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
 

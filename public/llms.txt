@@ -1,0 +1,71 @@
+# Bajrang Astro
+
+> India's trusted destination for authentic Vedic astrology consultation, accurate Janam Kundli analysis, Vastu Shastra guidance, and certified gemstones — by Vishal Verma.
+
+Bajrang Astro is a professional astrology and Vastu consulting service run by Vishal Verma, based in Meerut, Uttar Pradesh, India. With 15+ years of experience, the service has helped 1000+ families and businesses across India find clarity, peace, and real growth through Janam Kundli analysis, Palm Reading (Hast Rekha), and expert Vastu Consulting.
+
+## Site Sections
+
+- [Home](https://www.bajrangastro.com/): Hero, services overview, zodiac directory, Navgrah explorer, Vastu benefits, process steps, transformation cases, and FAQ.
+- [About Us](https://www.bajrangastro.com/about-us): Background of astrologer Vishal Verma and the Bajrang Astro practice.
+- [Grah (Planets)](https://www.bajrangastro.com/grah): Overview and individual pages for all nine Navgrahas.
+  - [Surya (Sun)](https://www.bajrangastro.com/grah/surya)
+  - [Chandra (Moon)](https://www.bajrangastro.com/grah/chandra)
+  - [Mangal (Mars)](https://www.bajrangastro.com/grah/mangal)
+  - [Budh (Mercury)](https://www.bajrangastro.com/grah/budh)
+  - [Guru (Jupiter)](https://www.bajrangastro.com/grah/guru)
+  - [Shukra (Venus)](https://www.bajrangastro.com/grah/shukra)
+  - [Shani (Saturn)](https://www.bajrangastro.com/grah/shani)
+  - [Rahu](https://www.bajrangastro.com/grah/rahu)
+  - [Ketu](https://www.bajrangastro.com/grah/ketu)
+- [Rashi (Zodiac Signs)](https://www.bajrangastro.com/rashi): Overview and individual pages for all 12 Rashis with personality, career, compatibility, and planetary remedies.
+  - [Aries / Mesh](https://www.bajrangastro.com/rashi/aries)
+  - [Taurus / Vrishabha](https://www.bajrangastro.com/rashi/taurus)
+  - [Gemini / Mithun](https://www.bajrangastro.com/rashi/gemini)
+  - [Cancer / Karka](https://www.bajrangastro.com/rashi/cancer)
+  - [Leo / Singh](https://www.bajrangastro.com/rashi/leo)
+  - [Virgo / Kanya](https://www.bajrangastro.com/rashi/virgo)
+  - [Libra / Tula](https://www.bajrangastro.com/rashi/libra)
+  - [Scorpio / Vrishchik](https://www.bajrangastro.com/rashi/scorpio)
+  - [Sagittarius / Dhanu](https://www.bajrangastro.com/rashi/sagittarius)
+  - [Capricorn / Makar](https://www.bajrangastro.com/rashi/capricorn)
+  - [Aquarius / Kumbh](https://www.bajrangastro.com/rashi/aquarius)
+  - [Pisces / Meen](https://www.bajrangastro.com/rashi/pisces)
+- [Vastu Consulting](https://www.bajrangastro.com/vastu-consulting): Home, office, and factory Vastu analysis and corrections. Covers business growth, positive energy, removing obstacles, financial stability, and peaceful environments.
+- [Astrology Consulting](https://www.bajrangastro.com/astrology-consulting): Janam Kundli analysis, Kundli matching, Palm Reading (Hast Rekha), daily horoscope, planet transits, love compatibility, tarot, numerology, panchang, festivals, and spirituality guidance.
+- [Shop](https://www.bajrangastro.com/shop): Certified natural gemstones (Ruby/Manik, Blue Sapphire/Neelam, Emerald/Panna, Yellow Sapphire/Pukhraj) and energised spiritual products (brass pyramids, etc.). All products are lab-tested and energised before delivery.
+- [Contact](https://www.bajrangastro.com/contact): Booking and enquiry. Phone: +91 7042600873. Email: bajrangastroofficial@gmail.com.
+
+## Services
+
+- **Janam Kundli Analysis**: Deep birth chart reading covering career, health, relationships, and life path.
+- **Kundli Matching**: Marriage compatibility analysis based on birth charts.
+- **Palm Reading (Hast Rekha)**: Expert analysis of hand lines for career, marriage, wealth, and life timeline.
+- **Daily Horoscope**: Planetary guidance for career, love, health, and finances.
+- **Vastu Consulting**: Space analysis and correction for homes, offices, and factories using Vastu Shastra principles. Available for on-site visits in Delhi NCR; online consultations available nationwide.
+- **Gemstone & Spiritual Products**: Certified natural gemstones and energised spiritual items for aura enhancement and remedies.
+
+## Key Facts
+
+- Astrologer: Vishal Verma
+- Experience: 15+ years
+- Clients helped: 1000+ families and businesses
+- Languages: Hindi, English
+- Locations: Physical offices in Meerut, UP; services available pan-India (online) and site visits in Delhi NCR
+- Contact: +91 7042600873 | bajrangastroofficial@gmail.com
+- Booking: https://calendly.com/bajrangastroofficial/30min
+- WhatsApp: https://wa.me/917042600873
+- Address 1: 172, Shop No. 4, Bhargav Market, Sadar Sarafa, Meerut Cantt, Meerut, UP 250001
+- Address 2: 247/1, Rohta Rd, opposite Star Public School, Tej Vihar, Fazalpur, Meerut, UP 250002
+
+## Social
+
+- Facebook: https://www.facebook.com/bajrangastro/
+- Instagram: https://www.instagram.com/bajrangastro/
+- YouTube: https://www.youtube.com/@bajrangiratankendra
+- LinkedIn: https://www.linkedin.com/company/bajrang-astro/
+
+## Optional
+
+- [Terms & Conditions](https://www.bajrangastro.com/terms-condition)
+- [Privacy Policy](https://www.bajrangastro.com/privacy-policy)

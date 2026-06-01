@@ -7,11 +7,9 @@ export default function HomeFifth() {
         { text: "Financial instability", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Financial_instability_r6dzk6.png" },
         { text: "Stress at home or office", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Stress_at_home_or_office_us0kek.png" },
         {
-            text: (
-                <>
-                    Constant negative <br />  energy
-                </>
-            ), icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Constantnegativeenergy_m6t30w.png"
+            text: " Constant negative energy"
+                
+            , icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Constantnegativeenergy_m6t30w.png"
         },
         { text: "Repeated failures in career", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
         { text: "Conflicts in relationships", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
@@ -55,7 +53,7 @@ export default function HomeFifth() {
                                 <div className="relative w-6 h-6">
                                     <Image
                                         src={item.icon}
-                                        alt={item.text}
+                                        alt={item.text +"-icon-best astrologer bajrang astro vishal verma"}
                                         fill
                                         className="object-contain"
                                     />
@@ -73,7 +71,7 @@ export default function HomeFifth() {
 
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776421672/Serene_Vastu_Space_gxtnne.png"
-                            alt="vastu"
+                            alt="Vastu Shastra Consultation India — Bajrang Astro"
                             fill
                             priority
                             className="object-cover"

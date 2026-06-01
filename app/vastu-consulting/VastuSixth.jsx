@@ -76,7 +76,7 @@ export default function VastuSixth() {
                         <div className="rounded-2xl overflow-hidden">
                             <Image
                                 src={data.residential.img}
-                                alt="residential"
+                                alt="Home Vastu Consulting Expert India — Bajrang Astro"
                                 width={800}
                                 height={500}
                                 className="w-full object-contain rounded-2xl"
@@ -96,7 +96,7 @@ export default function VastuSixth() {
                         <div className="flex flex-col items-center lg:items-start">
                             <Image
                                 src={data.commercial.icon}
-                                alt="icon"
+                                alt="best office vastu consultant in india — Bajrang Astro"
                                 width={40}
                                 height={40}
                             />
@@ -124,7 +124,7 @@ export default function VastuSixth() {
                         <div className="flex flex-col items-center lg:items-start">
                             <Image
                                 src={data.plot.icon}
-                                alt="icon"
+                                alt="Plot Vastu Consultant India — Bajrang Astro"
                                 width={80}
                                 height={80}
                             />
@@ -149,7 +149,7 @@ export default function VastuSixth() {
                         <div className="lg:w-[200px] lg:h-[200px] rounded-xl overflow-hidden shrink-0">
                             <Image
                                 src={data.industrial.img}
-                                alt="industrial"
+                                alt="Factory Vastu Consulting India — Vishal Verma"
                                 width={300}
                                 height={300}
                                 className="w-full h-full object-cover"

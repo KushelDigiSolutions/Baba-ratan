@@ -106,7 +106,7 @@ const SagittariusPage = () => {
           {/* RIGHT */}
           <div className="flex justify-center order-first lg:order-last">
             <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full overflow-hidden flex items-center justify-center shadow-2xl">
-              <img src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054514/Sagittarius_image__vfxz1m.png" alt="Sagittarius Rashi" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
+              <img src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054514/Sagittarius_image__vfxz1m.png" alt="Sagittarius Dhanu Rashi Vedic Astrology India — Bajrang Astro" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ const SagittariusPage = () => {
           <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1400&auto=format&fit=crop"
-              alt="Sagittarius Adventure"
+              alt="Sagittarius Rashi Personality Traits India — Vishal Verma"
               className="w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
 
@@ -289,7 +289,7 @@ const SagittariusPage = () => {
           <div className="relative order-first lg:order-last">
             <img
               src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1400&auto=format&fit=crop"
-              alt="Sagittarius Adventure"
+              alt="Sagittarius Rashi Health Predictions India — Bajrang Astro"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
 

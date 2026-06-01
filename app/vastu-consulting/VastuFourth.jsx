@@ -60,7 +60,7 @@ export default function VastuFourth() {
       <div className="absolute inset-0">
         <Image
           src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776933734/Alchemical_2_k2sbjh.png"
-          alt="Background"
+          alt="Vastu Shastra Expert India — Vishal Verma Bajrang Astro"
           fill
           className="object-cover"
           priority
@@ -79,7 +79,7 @@ export default function VastuFourth() {
             <div className="w-20 h-20 rounded-full border-[#E57661]/30 bg-[#E576611A] flex items-center justify-center">
               <Image
                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776771665/Alchemical_vqmdl0.png"
-                alt="center"
+                alt="Vastu Consulting for Business India — Bajrang Astro"
                 width={30}
                 height={30}
               />
@@ -100,7 +100,7 @@ export default function VastuFourth() {
               <div className="w-15 h-15">
                 <Image
                   src={item.icon}
-                  alt={item.title}
+                  alt={item.title + "Vastu Dosh Remedies India — Bajrang Astro Vishal Johari"}
                   width={300}
                   height={300}
                 />
@@ -120,7 +120,7 @@ export default function VastuFourth() {
             <div className="w-30 h-30 border border-[#E57661]/30 rounded-full bg-[#E576611A] flex items-center justify-center">
               <Image
                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776771665/Alchemical_vqmdl0.png"
-                alt="center"
+                alt="Vastu Consulting for Business India — Bajrang Astro"
                 width={40}
                 height={40}
               />
@@ -163,7 +163,7 @@ export default function VastuFourth() {
                   <>
                     <Image
                       src={item.icon}
-                      alt={item.title}
+                      alt={item.title+"Vastu Correction Without Demolition India — Vishal Verma"}
                       width={100}
                       height={100}
                       className="transform -translate-y-10"
@@ -186,7 +186,7 @@ export default function VastuFourth() {
                     </div>
                     <Image
                       src={item.icon}
-                      alt={item.title}
+                      alt={item.title+"-Best Vastu Consultant in Delhi NCR Vishal Verma Bajrang Astro"}
                       width={100}
                       height={100}
                       className="transform -translate-y-15"
@@ -201,7 +201,7 @@ export default function VastuFourth() {
                     </div>
                     <Image
                       src={item.icon}
-                      alt={item.title}
+                      alt={item.title+"-Vastu Shastra Expert India — Vishal Verma Bajrang Astro"}
                       width={100}
                       height={100}
                       className="rotate-90 transform -translate-y-10"

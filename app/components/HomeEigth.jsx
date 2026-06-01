@@ -73,7 +73,7 @@ export default function HomeEigth() {
                             <div className="relative h-[220px] sm:h-[280px] md:h-[500px]">
                                 <Image
                                     src={card.beforeImg}
-                                    alt="before"
+                                    alt="1000+ Happy Clients Bajrang Astro India — Vishal Verma"
                                     fill
                                     className="object-cover"
                                 />
@@ -82,7 +82,7 @@ export default function HomeEigth() {
                             <div className="relative h-[220px] sm:h-[280px] md:h-[500px]">
                                 <Image
                                     src={card.afterImg}
-                                    alt="after"
+                                    alt="1000+ Happy Clients Bajrang Astro India — Vishal Verma"
                                     fill
                                     className="object-cover"
                                 />

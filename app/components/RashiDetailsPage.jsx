@@ -120,7 +120,7 @@ const RashiDetailsPage = () => {
                   >
                     <img 
                       src={imgUrl} 
-                      alt="Zodiac Rashi" 
+                      alt="12 Rashi Zodiac Signs Vedic Astrology India — Bajrang Astro" 
                       className="w-full h-full object-cover scale-[1.18]" 
                       style={{ clipPath: "circle(42.5%)" }}
                     />
@@ -139,7 +139,7 @@ const RashiDetailsPage = () => {
           <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?q=80&w=1400&auto=format&fit=crop"
-              alt="राशि ज्योतिष"
+              alt="Rashi Chart Predictions India — Vishal Verma"
               className="w-full h-[350px] sm:h-[500px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
             <div className="absolute -bottom-6 -right-6 sm:-bottom-8 sm:-right-8 bg-[#fff1ec] shadow-2xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-[#f1d6cf]">

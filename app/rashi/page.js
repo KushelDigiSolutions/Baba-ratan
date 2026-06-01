@@ -3,8 +3,8 @@ import Navbar from '../COMMON/Navbar'
 import RashiDetailsPage from '../components/RashiDetailsPage'
 
 export const metadata = {
-  title: "12 Rashis (Zodiac Signs) in Vedic Astrology | Bajrang Astro",
-  description: "Understand the 12 Rashis (Zodiac Signs) and their impact on your life. Get detailed insights into your moon sign, ruling planets, and personality with Bajrang Astro.",
+  title: "Rashi & Zodiac Signs in Vedic Astrology | Bajrang Astro",
+  description: "Explore all 12 Rashi (zodiac signs) in Vedic astrology, personality traits, predictions & remedies by Vishal Verma at Bajrang Astro ",
   alternates: {
     canonical: "/rashi",
   },

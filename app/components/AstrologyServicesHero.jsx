@@ -39,7 +39,7 @@ const AstrologyServicesHero = () => {
                         {/* MAIN IMAGE */}
                         <Image
                             src="https://res.cloudinary.com/daup99ghe/image/upload/v1776926750/Celestial_Precisionn_fuzicn.png"
-                            alt="Astrological Insight Cards"
+                            alt="Career Astrology Prediction India — Vishal Verma"
                             width={700}
                             height={500}
                             className="w-full h-auto object-contain z-10"

@@ -7,6 +7,7 @@ const rashiData = [
   {
     name: "Aries",
     hindiName: "Mesh (मेष)",
+    alt:"Aries Mesh Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♈",
     link: "/rashi/aries",
     image: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1780037725/Aries_image_btmfsl_va1fvf.png",
@@ -14,6 +15,7 @@ const rashiData = [
   {
     name: "Taurus",
     hindiName: "Vrishabha (वृषभ)",
+    alt:"Taurus Vrishabh Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♉",
     link: "/rashi/taurus",
     image: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1780038270/Taurus_image_ltagqq.png",
@@ -21,6 +23,7 @@ const rashiData = [
   {
     name: "Gemini",
     hindiName: "Mithuna (मिथुन)",
+    alt:"Gemini Mithun Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♊",
     link: "/rashi/gemini",
     image: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053482/Gemini_image__mhygmp.png",
@@ -28,6 +31,7 @@ const rashiData = [
   {
     name: "Cancer",
     hindiName: "Karka (कर्क)",
+    alt:"Cancer Kark Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♋",
     link: "/rashi/cancer",
     image: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053754/Cancer_image_pt5jx3.png",
@@ -35,6 +39,7 @@ const rashiData = [
   {
     name: "Leo",
     hindiName: "Simha (सिंह)",
+    alt:"Leo Simha Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♌",
     link: "/rashi/leo",
     image: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053953/Leo_image__vkwou3.png",
@@ -42,6 +47,7 @@ const rashiData = [
   {
     name: "Virgo",
     hindiName: "Kanya (कन्या)",
+    alt:"Virgo Kanya Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♍",
     link: "/rashi/virgo",
     image: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054091/Virgo_image__grk6rp.png",
@@ -49,6 +55,7 @@ const rashiData = [
   {
     name: "Libra",
     hindiName: "Tula (तुला)",
+    alt:"Libra Tula Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♎",
     link: "/rashi/libra",
     image: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054238/Libra_image__zkkkkt.png",
@@ -56,6 +63,7 @@ const rashiData = [
   {
     name: "Scorpio",
     hindiName: "Vrishchika (वृश्चिक)",
+    alt:"Scorpio Vrishchik Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♏",
     link: "/rashi/scorpio",
     image: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054348/Scorpio_image__epofxf.png",
@@ -63,6 +71,7 @@ const rashiData = [
   {
     name: "Sagittarius",
     hindiName: "Dhanu (धनु)",
+    alt:"Sagittarius Dhanu Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♐",
     link: "/rashi/sagittarius",
     image: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054514/Sagittarius_image__vfxz1m.png",
@@ -70,6 +79,7 @@ const rashiData = [
   {
     name: "Capricorn",
     hindiName: "Makara (मकर)",
+    alt:"Capricorn Makar Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♑",
     link: "/rashi/capricorn",
     image: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054642/Capricorn_image__p8pyyw.png",
@@ -77,6 +87,7 @@ const rashiData = [
   {
     name: "Aquarius",
     hindiName: "Kumbha (कुंभ)",
+    alt:"Aquarius Kumbh Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♒",
     link: "/rashi/aquarius",
     image: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054791/Aquarius_image__hztu1r.png",
@@ -84,6 +95,7 @@ const rashiData = [
   {
     name: "Pisces",
     hindiName: "Meena (मीन)",
+    alt:"Pisces Meen Rashi Vedic Astrology India — Bajrang Astro",
     icon: "♓",
     link: "/rashi/pisces",
     image: "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054887/Pisces_image__fkbuc7.png",
@@ -270,7 +282,7 @@ const RashiSection = () => {
               {/* Flat design circular zodiac image exactly like the screenshot */}
               <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full flex items-center justify-center overflow-hidden mb-4 transition-transform duration-300 relative">
                 {rashi.image ? (
-                  <img src={rashi.image} alt={rashi.name} className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
+                  <img src={rashi.image} alt={rashi.alt} className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
                 ) : (
                   renderZodiacSVG(rashi.name)
                 )}

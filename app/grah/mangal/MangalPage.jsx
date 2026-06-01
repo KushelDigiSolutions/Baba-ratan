@@ -1,4 +1,3 @@
-// app/grah/mangal/MangalPage.jsx
 "use client";
 
 import React from "react";
@@ -167,7 +166,7 @@ export default function MangalGrahPage() {
 
               <img
                 src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=1200&auto=format&fit=crop"
-                alt="mangal"
+                alt="Mangal Mars Planet Vedic Astrology India — Bajrang Astro"
                 className="relative z-10 rounded-[40px] shadow-2xl object-cover h-[320px] sm:h-[480px] lg:h-[650px] w-full"
               />
             </div>
@@ -319,7 +318,7 @@ export default function MangalGrahPage() {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=1200&auto=format&fit=crop"
-                alt="weak mangal"
+                alt="Weak Mangal Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#f4d7d2]/30"
               />
             </div>

@@ -20,7 +20,7 @@ export default function VastuSeveth() {
                     <div className="mt-8 space-y-4 w-full flex flex-col items-center lg:items-start">
                         <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
                             <div className="w-10 h-10 rounded-full bg-[#e07a5f] flex items-center justify-center shrink-0">
-                                <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842224/15_Years_of_Proven_Spatial_Alchemy_kh84hf.png" width={30} height={30} alt="" />
+                                <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842224/15_Years_of_Proven_Spatial_Alchemy_kh84hf.png" width={30} height={30} alt="15+ Years of Trusted Vastu Expertise — Bajrang Astro" />
                             </div>
                             <p className="text-[#303030] font-[400] text-lg">
                                 15+ Years of Trusted Vastu Expertise
@@ -29,7 +29,7 @@ export default function VastuSeveth() {
 
                         <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
                             <div className="w-10 h-10 rounded-full bg-[#e07a5f] flex items-center justify-center shrink-0">
-                                <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842224/15_Years_of_Proven_Spatial_Alchemy_kh84hf.png" width={30} height={30} alt="" />
+                                <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842224/15_Years_of_Proven_Spatial_Alchemy_kh84hf.png" width={30} height={30} alt="1000+ Homes & Businesses Transformed Across India — Bajrang Astro" />
                             </div>
                             <p className="text-[#303030] font-[400] text-lg">
                                 1000+ Homes & Businesses Transformed Across India
@@ -45,7 +45,7 @@ export default function VastuSeveth() {
                     <div className="relative z-10 lg:h-[380px] bg-white rounded-3xl p-6 md:p-10 w-[280px] sm:w-[320px] lg:w-[480px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] flex flex-col items-center lg:items-start text-center lg:text-left">
 
                         <div className="mb-4 text-[#e07a5f] text-2xl">
-                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842225/Scientific_Precision_taxxwp.png" width={20} height={20} alt="Scientific_Precision_" />
+                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842225/Scientific_Precision_taxxwp.png" width={20} height={20} alt="Scientific_Precision_best-astrologer vishal verma" />
                         </div>
 
                         <h5 className="text-xl md:text-2xl font-[500] text-[#222]">
@@ -66,7 +66,7 @@ export default function VastuSeveth() {
                           shadow-2xl flex flex-col items-center lg:items-start text-center lg:text-left">
 
                         <div className="mb-4 text-[#e07a5f] text-2xl">
-                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842224/Deep_Spiritual_Rooting_ao3zw8.png" width={40} height={40} alt="" />
+                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842224/Deep_Spiritual_Rooting_ao3zw8.png" width={40} height={40} alt="Deep Spiritual Rooting_best-astrologer vishal verma" />
                         </div>
 
                         <h5 className="text-xl md:text-2xl font-[500]">

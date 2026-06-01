@@ -4,8 +4,8 @@ import React from 'react'
 import LeoPage from './LeoPage'
 
 export const metadata = {
-    title: 'Leo | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Leo.',
+    title: 'Leo (Simha Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Leo (Simha Rashi) personality, predictions & remedies in Vedic astrology. Expert Leo horoscope by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/rashi/leo',
     },

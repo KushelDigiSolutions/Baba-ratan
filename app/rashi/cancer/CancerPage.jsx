@@ -106,7 +106,7 @@ const CancerPage = () => {
           {/* RIGHT */}
           <div className="flex justify-center order-first lg:order-last">
             <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full overflow-hidden flex items-center justify-center shadow-2xl">
-              <img src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053754/Cancer_image_pt5jx3.png" alt="Cancer Rashi" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
+              <img src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053754/Cancer_image_pt5jx3.png" alt="Cancer Kark Rashi Vedic Astrology India — Bajrang Astro" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ const CancerPage = () => {
           <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1400&auto=format&fit=crop"
-              alt="Cancer"
+              alt="Cancer Rashi Personality Traits India — Vishal Verma"
               className="w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
 
@@ -289,7 +289,7 @@ const CancerPage = () => {
           <div className="relative order-first lg:order-last">
             <img
               src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1400&auto=format&fit=crop"
-              alt="Cancer Emotion"
+              alt="Kark Rashi Finance Predictions India — Vishal Verma"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
 
