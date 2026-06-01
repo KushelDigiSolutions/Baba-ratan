@@ -6,7 +6,9 @@ import WishlistPage from './WishlistComp'
 export const metadata = {
     title: 'Wishlist | Bajrang Astro Website',
     description: 'Manage your wishlist of astrological services and gemstones.',
-    canonical: '/wishlist',
+    alternates: {
+        canonical: '/wishlist',
+    },
 };
 export default function page() {
   return (

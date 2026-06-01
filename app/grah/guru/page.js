@@ -6,7 +6,9 @@ import GuruGrahPage from './GuruPage'
 export const metadata = {
     title: 'Guru Graha | Bajrang Astro Website',
     description: 'Get in touch with our team for any inquiries or assistance.',
-    canonical: '/grah/guru',
+    alternates: {
+        canonical: '/grah/guru',
+    },
 };
 export default function page() {
   return (

@@ -6,7 +6,9 @@ import GeminiPage from './GeminiPage'
 export const metadata = {
     title: 'Gemini | Bajrang Astro Website',
     description: 'Discover the unique traits and characteristics of individuals born under the sign of Gemini.',
-    canonical: '/rashi/gemini',
+    alternates: {
+        canonical: '/rashi/gemini',
+    },
 };
 export default function page() {
   return (

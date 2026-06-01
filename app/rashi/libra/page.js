@@ -5,7 +5,9 @@ import LibraPage from './LibraPage'
 export const metadata = {
     title: 'Libra | Bajrang Astro Website',
     description: 'Discover the unique traits and characteristics of individuals born under the sign of Libra.',
-    canonical: '/rashi/libra',
+    alternates: {
+        canonical: '/rashi/libra',
+    },
 };
 export default function page() {
   return (

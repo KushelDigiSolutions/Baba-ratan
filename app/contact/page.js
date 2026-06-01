@@ -6,7 +6,9 @@ import Navbar from '../COMMON/Navbar'
 export const metadata = {
     title: 'Contact Us | Bajrang Astro Website',
     description: 'Get in touch with our team for any inquiries or assistance.',
-    canonical: '/contact',
+    alternates: {
+        canonical: '/contact',
+    },
 };
 const page = () => {
   return (

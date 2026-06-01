@@ -4,7 +4,9 @@ import CartSection from '../components/CartSection';
 export const metadata = {
     title: 'My Bag | Bajrang Astro Website',
     description: 'Review your selected gemstones before checkout.',
-    canonical: '/cart',
+    alternates: {
+        canonical: '/cart',
+    },
 };
 
 export default function CartPage() {
