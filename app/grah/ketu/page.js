@@ -6,7 +6,9 @@ import KetuGrahPage from './KetuPage'
 export const metadata = {
     title: 'Ketu Graha | Bajrang Astro Website',
     description: 'Get in touch with our team for any inquiries or assistance.',
-    canonical: '/grah/ketu',
+    alternates: {
+        canonical: '/grah/ketu',
+    },
 };
 export default function page() {
   return (

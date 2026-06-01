@@ -6,7 +6,9 @@ import CancerPage from './CancerPage'
 export const metadata = {
     title: 'Cancer | Bajrang Astro Website',
     description: 'Discover the unique traits and characteristics of individuals born under the sign of Cancer.',
-    canonical: '/rashi/cancer',
+    alternates: {
+        canonical: '/rashi/cancer',
+    },
 };
 export default function page() {
   return (

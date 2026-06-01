@@ -6,7 +6,9 @@ import LeoPage from './LeoPage'
 export const metadata = {
     title: 'Leo | Bajrang Astro Website',
     description: 'Discover the unique traits and characteristics of individuals born under the sign of Leo.',
-    canonical: '/rashi/leo',
+    alternates: {
+        canonical: '/rashi/leo',
+    },
 };
 export default function page() {
   return (
