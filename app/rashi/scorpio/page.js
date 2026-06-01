@@ -4,8 +4,8 @@ import React from 'react'
 import ScorpioPage from './Scorpio'
 
 export const metadata = {
-    title: 'Scorpio | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Scorpio.',
+    title: 'Scorpio (Vrishchik Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Scorpio (Vrishchik Rashi) personality, predictions & remedies in Vedic astrology. Expert Scorpio horoscope by Vishal Verma at Bajrang ',
     alternates: {
         canonical: '/rashi/scorpio',
     },

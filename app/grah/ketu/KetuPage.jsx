@@ -113,7 +113,7 @@ export default function KetuGrahPage() {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop"
-                alt="ketu"
+                alt="Ketu Shadow Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-white/10"
               />
             </div>
@@ -263,7 +263,7 @@ export default function KetuGrahPage() {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop"
-                alt="weak ketu"
+                alt="Weak Ketu Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-zinc-500/30"
               />
             </div>

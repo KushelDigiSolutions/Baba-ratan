@@ -162,7 +162,7 @@ const ChandraGrahPage = () => {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1200&auto=format&fit=crop"
-                alt="chandra"
+                alt="Chandra Moon Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-slate-200/50"
               />
             </div>
@@ -300,7 +300,7 @@ const ChandraGrahPage = () => {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1200&auto=format&fit=crop"
-                alt="weak chandra"
+                alt="Weak Chandra Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-slate-200/50"
               />
             </div>

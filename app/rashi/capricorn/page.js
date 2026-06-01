@@ -4,8 +4,8 @@ import React from 'react'
 import CapricornPage from './CapricornPage'
 
 export const metadata = {
-    title: 'Capricorn | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Capricorn.',
+    title: 'Capricorn (Makar Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Capricorn (Makar Rashi) personality, predictions & remedies in Vedic astrology. Expert Capricorn horoscope by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/rashi/capricorn',
     },

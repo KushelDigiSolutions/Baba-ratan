@@ -165,7 +165,7 @@ export default function BudhGrahPage() {
 
               <img
                 src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?q=80&w=1200&auto=format&fit=crop"
-                alt="budh"
+                alt="Budh Mercury Planet Vedic Astrology India — Bajrang Astro"
                 className="relative z-10 rounded-[40px] shadow-2xl object-cover h-[320px] sm:h-[480px] lg:h-[650px] w-full"
               />
             </div>
@@ -295,7 +295,7 @@ export default function BudhGrahPage() {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1200&auto=format&fit=crop"
-                alt="weak budh"
+                alt="Weak Budh Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#d5f5df]/30"
               />
             </div>

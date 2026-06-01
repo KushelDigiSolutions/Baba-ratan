@@ -4,8 +4,8 @@ import React from 'react'
 import RahuGrahPage from './RahuPage'
 
 export const metadata = {
-    title: 'Rahu Graha | Bajrang Astro Website you can also use Rahu gemstone to mitigate the negative effects',
-    description: 'Get your personalized Rahu gemstone recommendations based on your birth chart and planetary positions. Our expert astrologers analyze your unique astrological profile to suggest the most effective gemstones for Rahu, helping you harness its energy for positive transformation and balance in your life.',
+    title: 'Rahu in Vedic Astrology | Effects & Remedies',
+    description: 'Understand Rahu effects in your Kundli, obsession, confusion & career impact. Get expert Rahu remedies by Vishal Verma at Bajrang Astro ',
     alternates: {
         canonical: '/grah/rahu',
     },

@@ -3,9 +3,9 @@ import Navbar from '../COMMON/Navbar'
 import Footer from '../COMMON/Footer'
 import GrahPage from './GrahComp'
 export const metadata = {
-  title: "Graha Dosha & Remedies | Navgrah Shanti Puja | Bajrang Astro",
+  title: "Navagraha & Planets in Vedic Astrology | Bajrang Astro",
   description:
-    "Graha Dosha & Remedies | Navgrah Shanti Puja | Bajrang Astro",
+    "Learn about all 9 planets (Navagraha) in Vedic astrology Surya, Chandra, Mangal, Budh, Guru, Shukra, Shani, Rahu & Ketu. Expert insights by Bajrang Astro!",
   alternates: {
     canonical: "/grah",
   },

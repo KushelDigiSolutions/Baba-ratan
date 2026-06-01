@@ -4,8 +4,8 @@ import React from 'react'
 import GeminiPage from './GeminiPage'
 
 export const metadata = {
-    title: 'Gemini | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Gemini.',
+    title: 'Gemini (Mithun Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Gemini (Mithun Rashi) personality, predictions & remedies in Vedic astrology. Expert Gemini horoscope by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/rashi/gemini',
     },

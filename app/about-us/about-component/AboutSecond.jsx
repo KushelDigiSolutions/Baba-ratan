@@ -28,7 +28,7 @@ export default function AboutSecond() {
 
             <Image
               src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780119212/vishal_verma_astrologer_gr3if8.png"
-              alt="vishal_verma_astrologer"
+              alt="About Bajrang Astro — Trusted Astrologer India Vishal Verma"
               width={400}
               height={500}
               className="object-contain h-full w-auto"

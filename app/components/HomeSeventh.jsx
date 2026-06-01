@@ -148,7 +148,7 @@ export default function HomeSeventh() {
                                         >
                                             <Image
                                                 src={step.icon}
-                                                alt={step.title}
+                                                alt={step.title+"-icon-best astrologer bajrang astro vishal verma"}
                                                 width={20}
                                                 height={20}
                                                 className="object-contain"

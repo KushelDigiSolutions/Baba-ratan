@@ -9,7 +9,7 @@ const DigitalBirthChart = () => {
             <div className="absolute inset-0 z-0 pointer-events-none">
                 <img
                     src="https://res.cloudinary.com/daup99ghe/image/upload/v1776926160/Gradient_BlurTHE_ENGINE_njp1ok.png"
-                    alt="Background Gradient"
+                    alt="Gradient Blur Background best astrologer in delhi ncr vishal verma bajrang astro"
                     className="w-full h-full object-cover opacity-30"
                 />
             </div>
@@ -45,7 +45,7 @@ const DigitalBirthChart = () => {
                         <div className="relative w-full h-full flex items-center justify-center animate-spin-slow overflow-hidden">
                             <img
                                 src="https://res.cloudinary.com/daup99ghe/image/upload/v1777008975/Border_n7ojgm.png"
-                                alt="Digital Birth Chart Wheel"
+                                alt="Janam Kundli Analysis Expert India — Bajrang Astro"
                                 className="w-full h-auto object-contain relative z-10"
                                 style={{ clipPath: 'circle(36% at 50% 50%)', transform: 'scale(1.20)' }}
                             />
@@ -55,7 +55,7 @@ const DigitalBirthChart = () => {
                         <div className="absolute inset-0 pointer-events-none z-30 flex items-center justify-center">
                             <img
                                 src="https://res.cloudinary.com/daup99ghe/image/upload/v1777011061/Central_Chart_2_tzr3ka.png"
-                                alt="Icons Wheel"
+                                alt="Central Chart Wheel best astrologer in delhi ncr vishal verma bajrang astro"
                                 className="w-full h-auto object-contain"
                                 style={{ transform: 'scale(1.12)' }}
                             />
@@ -65,7 +65,7 @@ const DigitalBirthChart = () => {
                         <div className="absolute top-1/2 left-[29%] -translate-x-1/2 -translate-y-1/2 w-[120%] hidden min-[1001px]:block pointer-events-none z-10">
                             <img
                                 src="https://res.cloudinary.com/daup99ghe/image/upload/v1776928415/Horizontal_Divider_rsjvju.png"
-                                alt="Divider"
+                                alt="Horizontal Divider best astrologer in delhi ncr vishal verma bajrang astro"
                                 className="w-full h-auto opacity-50"
                             />
                         </div>

@@ -4,8 +4,8 @@ import React from 'react'
 import SagittariusPage from './SagittariusPage'
 
 export const metadata = {
-    title: 'Sagittarius | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Sagittarius.',
+    title: 'Sagittarius (Dhanu Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Sagittarius (Dhanu Rashi) personality, predictions & remedies in Vedic astrology. Expert Sagittarius horoscope by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/rashi/sagittarius',
     },

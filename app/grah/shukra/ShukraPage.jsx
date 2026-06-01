@@ -176,7 +176,7 @@ export default function ShukraGrahPage() {
             <div>
               <img
                 src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1200&auto=format&fit=crop"
-                alt="shukra"
+                alt="Shukra Grah Effects Love Luxury India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-white/10"
               />
             </div>
@@ -322,7 +322,7 @@ export default function ShukraGrahPage() {
             <div>
               <img
                 src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1200&auto=format&fit=crop"
-                alt="weak shukra"
+                alt="Weak Shukra Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-pink-500/30"
               />
             </div>

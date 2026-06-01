@@ -4,8 +4,8 @@ import React from 'react'
 import ShaniGrahPage from './ShaniPage'
 
 export const metadata = {
-    title: 'Shani Graha | Bajrang Astro Website',
-    description: 'Get your personalized Shani gemstone recommendations based on your birth chart and planetary positions. Our expert astrologers analyze your unique astrological profile to suggest the most effective gemstones for Shani, helping you harness its energy for positive transformation and balance in your life.',
+    title: 'Shani (Saturn) in Vedic Astrology | Sade Sati & Remedies',
+    description: 'Know Shani (Saturn) & Sade Sati effects in your Kundli, career, delays & hardships. Get expert Shani remedies by Pandit Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/grah/shani',
     },

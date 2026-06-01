@@ -129,7 +129,7 @@ const AuthPage = () => {
           <div className="relative z-10">
             <img
               src="https://cdn-icons-png.flaticon.com/512/2640/2640627.png"
-              alt="astro"
+              alt="Login Bajrang Astro Kundli Reports India"
               className="w-24 mb-8"
             />
 

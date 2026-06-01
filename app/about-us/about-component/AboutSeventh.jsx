@@ -54,7 +54,7 @@ export default function AboutSeventh() {
                         className="group bg-white/90 rounded-3xl p-6 text-center transition-all duration-500 ease-out border-[3px] border-transparent hover:border-[#E57661] hover:bg-gradient-to-br hover:from-white hover:to-[#FEF4F2] hover:shadow-[0_20px_40px_-15px_rgba(229,118,97,0.3)] hover:-translate-y-3 hover:scale-[1.02] cursor-pointer"
                     >
                         <div className="bg-[#E57661] w-14 h-14 mx-auto flex items-center justify-center rounded-xl mb-5 transition-all duration-500 ease-out group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-[0_10px_20px_rgba(229,118,97,0.4)] group-hover:rotate-3">
-                            <Image src={item.icon} alt={item.title} width={26} height={26} className="transition-transform duration-500 group-hover:scale-110" />
+                            <Image src={item.icon} alt={item.title + "-icon-best astrologer-bajrang-astro Vishal Verma"} width={26} height={26} className="transition-transform duration-500 group-hover:scale-110" />
                         </div>
 
                         <h5 className="text-2xl font-[500] mb-2">{item.title}</h5>
@@ -72,7 +72,7 @@ export default function AboutSeventh() {
                 <div className="relative lg:col-span-2 rounded-2xl overflow-hidden">
                     <Image
                         src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776753213/Scientific_Spirituality_xzmetn.png"
-                        alt="Scientific_Spirituality_"
+                        alt="Bajrang Astro Story — Trusted Vedic Astrology India"
                         width={800}
                         height={400}
                         className="w-full h-full md object-cover object-contain"
@@ -95,7 +95,7 @@ export default function AboutSeventh() {
                         <li className="flex items-center gap-2 text-[#303030]/90">
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776753210/rightTick_ehghq6.png"
-                                alt="tick"
+                                alt="tick-icon-best astrologer-bajrang-astro Vishal Verma"
                                 width={18}
                                 height={18}
                                 className="object-contain"
@@ -108,7 +108,7 @@ export default function AboutSeventh() {
                         <li className="flex items-center gap-2 text-[#303030]/90">
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776753210/rightTick_ehghq6.png"
-                                alt="tick"
+                                alt="tick-icon-best astrologer-bajrang-astro Vishal Verma"
                                 width={18}
                                 height={18}
                                 className="object-contain"
@@ -119,7 +119,7 @@ export default function AboutSeventh() {
                         <li className="flex items-center gap-2 text-[#303030]/90">
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776753210/rightTick_ehghq6.png"
-                                alt="tick"
+                                alt="tick-icon-best astrologer-bajrang-astro Vishal Verma"
                                 width={18}
                                 height={18}
                                 className="object-contain"

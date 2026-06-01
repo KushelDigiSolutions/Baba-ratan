@@ -4,8 +4,8 @@ import Navbar from '../COMMON/Navbar'
 import Footer from '../COMMON/Footer'
 
 export const metadata = {
-    title: 'Terms and Conditions | Bajrang Astro Website',
-    description: 'Read our terms and conditions before using the Bajrang Astro website.',
+    title: 'Terms & Conditions | Bajrang Astro ',
+    description: 'Read Bajrang Astro terms & conditions for astrology, Vastu consulting & gemstone services. Refund policy & service guidelines by Vishal Verma.',
     alternates: {
         canonical: '/terms-condition',
     },

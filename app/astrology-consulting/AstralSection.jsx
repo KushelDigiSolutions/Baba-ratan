@@ -46,7 +46,7 @@ export default function AstralSection() {
                         <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#E57661] transition-transform duration-300 group-hover:scale-110 mx-auto lg:mx-0">
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776926632/Self-Awareness_hmfx7f.png"
-                                alt="Self Awareness Icon"
+                                alt="Self Awareness Icon best astrology consultation in delhi by Vishal Verma"
                                 width={24}
                                 height={24}
                                 className="object-contain"
@@ -68,7 +68,7 @@ export default function AstralSection() {
                         <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#E57661] transition-transform duration-300 group-hover:scale-110 mx-auto lg:mx-0">
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776926631/Perfect_Timing_faxjks.png"
-                                alt="Perfect Timing Icon"
+                                alt="Perfect Timing Icon best astrology consultation in delhi by Vishal Verma"
                                 width={24}
                                 height={24}
                                 className="object-contain"
@@ -96,7 +96,7 @@ export default function AstralSection() {
                         <div className="relative w-full h-full flex items-center justify-center animate-spin-slow overflow-hidden">
                             <img
                                 src="https://res.cloudinary.com/daup99ghe/image/upload/v1777011140/Border_1_ssr70s.png"
-                                alt="Astrology Wheel"
+                                alt="Online Astrology Services India — Bajrang Astro Vishal Johari"
                                 className="w-full h-auto object-contain relative z-10"
                                 style={{ clipPath: 'circle(36% at 50% 50%)', transform: 'scale(1.38)' }}
                             />
@@ -106,7 +106,7 @@ export default function AstralSection() {
                         <div className="absolute inset-0 pointer-events-none z-20 flex items-center justify-center">
                             <img
                                 src="https://res.cloudinary.com/daup99ghe/image/upload/v1777011061/Central_Chart_2_tzr3ka.png"
-                                alt="Icons Wheel"
+                                alt="Icons Wheel best astrology consultation in delhi by Vishal Verma"
                                 className="w-full h-auto object-contain"
                                 style={{ transform: 'scale(1.14)' }}
                             />

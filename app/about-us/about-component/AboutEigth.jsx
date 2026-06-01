@@ -133,7 +133,7 @@ function Content({ item, align }) {
         >
             {/* ICON */}
             <div className="bg-white px-7 py-6 md:px-5 md:py-4 lg:px-7 lg:py-6 rounded-[10px] shadow-[0_10px_40px_rgba(229,118,97,0.15)] w-max mx-auto md:mx-0">
-                <Image src={item.icon} alt={item.title} width={17} height={17} />
+                <Image src={item.icon} alt={item.title + "-icon-best astrologer-bajrang-astro Vishal Verma"} width={17} height={17} />
             </div>
 
             <h5 className="text-2xl md:text-xl lg:text-3xl font-[400] text-[#0F172A]">

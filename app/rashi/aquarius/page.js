@@ -4,8 +4,8 @@ import React from 'react'
 import AquariusPage from './AquariusPage'
 
 export const metadata = {
-    title: 'Aquarius | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Aquarius.',
+    title: 'Aquarius (Kumbh Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Aquarius (Kumbh Rashi) personality, predictions & remedies in Vedic astrology. Expert Aquarius horoscope by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/rashi/aquarius',
     },

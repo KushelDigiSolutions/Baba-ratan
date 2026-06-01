@@ -95,7 +95,7 @@ const FreeAstrologyReadings = () => {
                         <div className="relative overflow-hidden rounded-3xl">
                             <img
                                 src={service.image}
-                                alt={service.title}
+                                alt={service.title+"best astrologer bajrang astro vishal verma"}
                                 className="w-full h-[170px] object-cover rounded-3xl transition duration-500 group-hover:scale-110"
                             />
 

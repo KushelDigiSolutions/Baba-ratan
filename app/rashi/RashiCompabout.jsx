@@ -7,7 +7,7 @@ export default function RashiCompabout() {
               <div>
                 <img
                   src="https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?q=80&w=1400&auto=format&fit=crop"
-                  alt="Rashi"
+                  alt="12 Rashi Zodiac Signs Vedic Astrology India — Bajrang Astro"
                   className="w-full h-[500px] object-cover rounded-[40px] shadow-2xl"
                 />
               </div>

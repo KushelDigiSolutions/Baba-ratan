@@ -9,7 +9,7 @@ const VastuThird = () => {
         <div className="relative w-full h-[400px] sm:h-[400px] md:h-[750px] ">
           <Image
             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776770284/Chaos_p9mrrj.png"
-            alt="Left Chaos"
+            alt="Home Vastu Consulting Expert India — Bajrang Astro"
             fill
             className="object-contain xl:object-cover"
             priority
@@ -19,7 +19,7 @@ const VastuThird = () => {
         <div className="relative w-full h-[400px] sm:h-[400px] md:h-[750px]">
           <Image
             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776770284/Balance_v1hpza.png"
-            alt="Right Balance_v1hpza"
+            alt="Home Vastu Consulting Expert India — Bajrang Astro"
             fill
             className="object-contain xl:object-cover"
           />

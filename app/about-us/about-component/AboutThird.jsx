@@ -38,7 +38,7 @@ export default function AboutThird() {
               <div className="mb-10">
                 <Image
                   src={item.icon}
-                  alt={item.title}
+                  alt={item.title + " icon"}
                   width={30}
                   height={30}
                 />

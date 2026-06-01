@@ -14,11 +14,11 @@ export default function AboutFourth() {
           <div className="mb-6">
             <Image
               src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776501098/Deep_Personal_Reading_xd3s9a.png"
-              alt="icon"
+              alt="Best astrologer in India vishal verma "
               width={40}
               height={40}
-            />
-          </div>
+            /> 
+          </div> 
 
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-2xl md:text-3xl font-[500] mb-4">
@@ -47,7 +47,7 @@ export default function AboutFourth() {
           <div className="mb-4">
             <Image
               src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776501098/Transit_Updates_mawp64.png"
-              alt="icon"
+              alt="Best astrologer in India vishal verma "
               width={40}
               height={40}
             />

@@ -157,7 +157,7 @@ export default function ShaniGrahPage() {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1200&auto=format&fit=crop"
-                alt="shani"
+                alt="Shani Saturn Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-indigo-500/30"
               />
             </div>
@@ -306,7 +306,7 @@ export default function ShaniGrahPage() {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1200&auto=format&fit=crop"
-                alt="weak shani"
+                alt="Weak Shani Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-indigo-500/30"
               />
             </div>

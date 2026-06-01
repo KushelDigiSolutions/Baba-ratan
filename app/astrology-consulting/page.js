@@ -2,9 +2,9 @@
 import ServicesComponent from './ServicesComponent';
 
 export const metadata = {
-  title: "Trusted Vedic Astrology in India | Bajrang Astro",
+  title: "Expert Astrologer in NCR, India | Bajrang Astro",
   description:
-    "Get trusted Vedic astrology in India consultation & accurate Janam Kundli analysis from Vishal Verma at Bajrang Astro, an expert astrologer in India. Book now",
+    "Expert Vedic astrology consultation, Janam Kundli analysis & palm reading by Pandit Vishal Verma. Best astrologer in NCR, India. Book your session today",
   alternates: {
     canonical: "/astrology-consulting",
   },
@@ -14,9 +14,9 @@ export default function AstrologyServicesPage() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Trusted Vedic Astrology in India | Bajrang Astro",
+    name: "Expert Astrologer in NCR, India | Bajrang Astro",
     description:
-      "Get trusted Vedic astrology in India consultation & accurate Janam Kundli analysis from Vishal Verma at Bajrang Astro, an expert astrologer in India. Book now",
+      "Expert Vedic astrology consultation, Janam Kundli analysis & palm reading by Pandit Vishal Verma. Best astrologer in NCR, India. Book your session today",
     url: "https://bajrangastro.com/astrology-services",
     image:
       "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",

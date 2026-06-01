@@ -4,8 +4,8 @@ import Navbar from '@/app/COMMON/Navbar'
 import Footer from '@/app/COMMON/Footer'
 
 export const metadata = {
-    title: 'Aries | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Aries.',
+    title: 'Aries (Mesh Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Aries (Mesh Rashi) personality, predictions & remedies in Vedic astrology. Expert Aries horoscope by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/rashi/aries',
     },

@@ -4,8 +4,8 @@ import Footer from '../COMMON/Footer'
 import Navbar from '../COMMON/Navbar'
 
 export const metadata = {
-    title: 'Contact Us | Bajrang Astro Website',
-    description: 'Get in touch with our team for any inquiries or assistance.',
+    title: 'Contact Bajrang Astro | Book Consultation Now',
+    description: 'Connect with Vishal Verma at Bajrang Astro for Janam Kundli, palm reading & Vastu consulting. Available in Meerut, Noida & Ghaziabad. Call now',
     alternates: {
         canonical: '/contact',
     },

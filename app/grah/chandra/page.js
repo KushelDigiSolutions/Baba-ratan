@@ -4,8 +4,8 @@ import React from 'react'
 import ChandraGrahPage from './ChandraPage'
 
 export const metadata = {
-    title: 'Chandra Graha | Bajrang Astro Website',
-    description: 'Get in touch with our team for any inquiries or assistance.',
+    title: 'Chandra (Moon) in Vedic Astrology | Effects & Remedies',
+    description: 'Understand Chandra (Moon) effects in your Kundli, emotions, mind & relationships. Get expert Chandra remedies by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/grah/chandra',
     },

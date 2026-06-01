@@ -133,7 +133,7 @@ export default function SuryaGrahPage() {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?q=80&w=1200&auto=format&fit=crop"
-                alt="surya"
+                alt="Surya Sun Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-[#ffd8b3]/30"
               />
             </div>
@@ -279,7 +279,7 @@ export default function SuryaGrahPage() {
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
                 src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200&auto=format&fit=crop"
-                alt="weak surya"
+                alt="Weak Surya Remedies India — Bajrang Astro Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#ffd8b3]/30"
               />
             </div>

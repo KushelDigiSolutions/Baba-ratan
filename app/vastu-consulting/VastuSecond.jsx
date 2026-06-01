@@ -115,7 +115,7 @@ function VastuRow({ item, index, isActive }) {
             {/* CENTER ICON */}
             <div className={`flex justify-center relative transition-all duration-500 ${isActive ? "opacity-100 scale-110" : "opacity-40 scale-90"}`}>
                 <div className={`w-16 h-16 rounded-full flex items-center justify-center shadow-md z-10 transition-all duration-500 bg-white border ${isActive ? "border-[#E57661] shadow-[0_0_20px_5px_rgba(229,118,97,0.4)]" : "border-gray-200"}`}>
-                    <Image src={item.icon} alt="" width={24} height={24} />
+                    <Image src={item.icon} alt="icon best vastu consultant in delhi ncr vishal verma bajrang astro" width={24} height={24} />
                 </div>
             </div>
 

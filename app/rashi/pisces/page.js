@@ -4,8 +4,8 @@ import React from 'react'
 import PiscesPage from './PiscesPage'
 
 export const metadata = {
-    title: 'Pisces | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Pisces.',
+    title: 'Pisces (Meen Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Pisces (Meen Rashi) personality, predictions & remedies in Vedic astrology. Expert Pisces horoscope by Vishal Verma at Bajrang Astro India',
     alternates: {
         canonical: '/rashi/pisces',
     },

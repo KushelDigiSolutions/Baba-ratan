@@ -38,7 +38,7 @@ export default function HomeEleventh() {
                     <div className="relative md:ml-20 w-[280px] sm:w-[350px] md:w-[420px] lg:w-[500px] h-[350px] sm:h-[420px] md:h-[500px] lg:h-[500px]">
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776492605/Get_a_Glimpse_into_Your_Future_with_Our_Accurate_Astrology_Predictions_uxqy2g.png"
-                            alt="astrology hand"
+                            alt="Palm Reading Expert India — Vishal Verma Bajrang Astro"
                             fill
                             className="object-contain"
                         />

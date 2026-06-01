@@ -59,7 +59,7 @@ export default function HomeTenth() {
               <div className="w-16 h-16 relative mx-auto md:mx-0">
                 <Image
                   src={card.icon}
-                  alt={card.title}
+                  alt={card.title+"-icon-best astrologer bajrang astro vishal verma"}
                   fill
                   className="object-contain"
                 />
@@ -82,7 +82,7 @@ export default function HomeTenth() {
         <div className="flex justify-center xl:justify-start mt-10 xl:mt-0">
           <Image
             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776431899/There_are_many_variations_of_passages_of_Lorem_Ipsum_available_but_the_majority_yqmjyr.png"
-            alt="astro"
+            alt="Online Astrology Consultation India — Bajrang Astro"
             width={480}
             height={480}
             priority

@@ -1,9 +1,9 @@
 import VastuConsulting from './VastuConsulting'
 
 export const metadata = {
-  title: "Vastu Consultant in India | Bajrang Astro",
+  title: " Vastu Consulting for Home & Office | Bajrang Astro",
   description:
-    "Get expert Vastu consulting for home, office & factory from Vishal Verma at Bajrang Astro. Trusted Vastu consultant in Noida, Delhi NCR. Free call Today",
+    "Expert Vastu consulting for home, office & factory by Vishal Verma. Trusted Vastu consultant in Meerut, Noida & Delhi NCR. Book a site visit now",
   alternates: {
     canonical: "/vastu-consulting",
   },
@@ -13,9 +13,9 @@ const page = () => {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Vastu Consultant in India | Bajrang Astro",
+    name: " Vastu Consulting for Home & Office | Bajrang Astro",
     description:
-      "Get expert Vastu consulting for home, office & factory from Vishal Verma at Bajrang Astro. Trusted Vastu consultant in Noida, Delhi NCR. Free call Today",
+      "Expert Vastu consulting for home, office & factory by Vishal Verma. Trusted Vastu consultant in Meerut, Noida & Delhi NCR. Book a site visit now",
     url: "https://bajrangastro.com/vastu-consulting",
     image:
       "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",

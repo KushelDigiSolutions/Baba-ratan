@@ -41,7 +41,7 @@ export default function VastuHero() {
     xl:h-[600px]">
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776759154/TransformYourSpace_TranscendYourLife._s6ytmh.png"
-                            alt="Interior"
+                            alt="Vastu Consultant India — Vishal Verma Bajrang Astro"
                             fill
                             className="object-contain "
                         />

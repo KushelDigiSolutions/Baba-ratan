@@ -4,8 +4,8 @@ import React from 'react'
 import ShukraGrahPage from './ShukraPage'
 
 export const metadata = {
-    title: 'Shukra Graha | Bajrang Astro Website',
-    description: 'Get your personalized Shukra gemstone recommendations based on your birth chart and planetary positions. Our expert astrologers analyze your unique astrological profile to suggest the most effective gemstones for Shukra, helping you harness its energy for positive transformation and balance in your life.',
+    title: 'Shukra (Venus) in Vedic Astrology | Effects & Remedies',
+    description: 'Understand Shukra (Venus) effects in your Kundli love, luxury & relationships. Get Shukra remedies by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/grah/shukra',
     },

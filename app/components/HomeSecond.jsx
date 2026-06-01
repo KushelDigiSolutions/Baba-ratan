@@ -16,7 +16,7 @@ const HomeSecond = () => {
                         {/* Top Icon */}
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776411829/Vastu_Consulting-icon_k3oxm9.png"
-                            alt="icon"
+                            alt="best astrologer bajrang astro vastu consulting vishal verma"
                             width={30}
                             height={30}
                         />
@@ -40,7 +40,7 @@ const HomeSecond = () => {
                         {/* Right Bottom Image */}
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776411820/Vastu_Consulting_daaqvl.png"
-                            alt="vastu"
+                            alt="best astrologer bajrang astro vastu consulting vishal verma"
                             width={160}
                             height={160}
                             className="absolute bottom-6 right-7 object-contain hidden sm:block"
@@ -64,7 +64,7 @@ const HomeSecond = () => {
                         <div className="relative z-10">
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776412844/Astrology_Services-icon_sf9g5z.png"
-                                alt="icon"
+                                alt="best astrologer bajrang astro vastu consulting vishal verma"
                                 width={35}
                                 height={35}
                             />
@@ -98,7 +98,7 @@ const HomeSecond = () => {
                         <div className='flex items-center mb-4 gap-2'>
                             <Image
                                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776413765/Gemstone_Spiritual_Shop-icon_mfsfba.png"
-                                alt="icon"
+                                alt="best astrologer bajrang astro vastu consulting vishal verma"
                                 width={20}
                                 height={20}
                                 className='object-contain'
@@ -135,7 +135,7 @@ const HomeSecond = () => {
                         {/* RIGHT IMAGE */}
                         <Image
                             src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776413611/Gemstone_Spiritual_Shop_2_smqkkq.png"
-                            alt='Gemstone_Spiritual_Shop_2_smqkkq'
+                            alt="Bajrang Astro — Best Astrologer in India by Vishal Verma"
                             fill
                             className='object-cover'
                         />

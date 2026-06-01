@@ -4,8 +4,8 @@ import React from 'react'
 import KetuGrahPage from './KetuPage'
 
 export const metadata = {
-    title: 'Ketu Graha | Bajrang Astro Website',
-    description: 'Get in touch with our team for any inquiries or assistance.',
+    title: 'Ketu in Vedic Astrology | Effects & Remedies',
+    description: 'Know Ketu effects in your Kundli, spirituality, detachment & past life karma. Get expert Ketu remedies by Vishal Verma at Bajrang Astro',
     alternates: {
         canonical: '/grah/ketu',
     },

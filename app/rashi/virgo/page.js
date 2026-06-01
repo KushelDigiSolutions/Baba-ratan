@@ -4,8 +4,8 @@ import React from 'react'
 import VirgoPage from './VirgoPage'
 
 export const metadata = {
-    title: 'Virgo | Bajrang Astro Website',
-    description: 'Discover the unique traits and characteristics of individuals born under the sign of Virgo.',
+    title: 'Virgo (Kanya Rashi) in Vedic Astrology | Bajrang Astro',
+    description: 'Know Virgo (Kanya Rashi) personality, predictions & remedies in Vedic astrology. Expert Virgo horoscope by Vishal Verma at Bajrang Astro ',
     alternates: {
         canonical: '/rashi/virgo',
     },
