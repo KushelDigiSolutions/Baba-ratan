@@ -272,15 +272,15 @@ const jsonLd = [
     "name": "Navgrah – Nine Planets in Vedic Astrology",
     "url": "https://www.bajrangastro.com/grah",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Surya (Sun)", "url": "https://www.bajrangastro.com/grah/surya", "description": "Represents power, confidence & leadership." },
-      { "@type": "ListItem", "position": 2, "name": "Chandra (Moon)", "url": "https://www.bajrangastro.com/grah/chandra", "description": "Controls emotions, mind & peace." },
-      { "@type": "ListItem", "position": 3, "name": "Mangal (Mars)", "url": "https://www.bajrangastro.com/grah/mangal", "description": "Symbol of courage, strength & energy." },
-      { "@type": "ListItem", "position": 4, "name": "Budh (Mercury)", "url": "https://www.bajrangastro.com/grah/budh", "description": "Represents intelligence & communication." },
-      { "@type": "ListItem", "position": 5, "name": "Guru (Jupiter)", "url": "https://www.bajrangastro.com/grah/guru", "description": "Planet of wisdom, growth & spirituality." },
-      { "@type": "ListItem", "position": 6, "name": "Shukra (Venus)", "url": "https://www.bajrangastro.com/grah/shukra", "description": "Represents love, luxury & beauty." },
-      { "@type": "ListItem", "position": 7, "name": "Shani (Saturn)", "url": "https://www.bajrangastro.com/grah/shani", "description": "Planet of discipline, karma & justice." },
-      { "@type": "ListItem", "position": 8, "name": "Rahu", "url": "https://www.bajrangastro.com/grah/rahu", "description": "Represents illusion, desire & ambition." },
-      { "@type": "ListItem", "position": 9, "name": "Ketu", "url": "https://www.bajrangastro.com/grah/ketu", "description": "Symbol of spirituality & detachment." }
+      { "@type": "ListItem", "position": 1, "item": { "@type": "WebPage", "name": "Surya (Sun)", "url": "https://www.bajrangastro.com/grah/surya", "description": "Represents power, confidence & leadership." } },
+      { "@type": "ListItem", "position": 2, "item": { "@type": "WebPage", "name": "Chandra (Moon)", "url": "https://www.bajrangastro.com/grah/chandra", "description": "Controls emotions, mind & peace." } },
+      { "@type": "ListItem", "position": 3, "item": { "@type": "WebPage", "name": "Mangal (Mars)", "url": "https://www.bajrangastro.com/grah/mangal", "description": "Symbol of courage, strength & energy." } },
+      { "@type": "ListItem", "position": 4, "item": { "@type": "WebPage", "name": "Budh (Mercury)", "url": "https://www.bajrangastro.com/grah/budh", "description": "Represents intelligence & communication." } },
+      { "@type": "ListItem", "position": 5, "item": { "@type": "WebPage", "name": "Guru (Jupiter)", "url": "https://www.bajrangastro.com/grah/guru", "description": "Planet of wisdom, growth & spirituality." } },
+      { "@type": "ListItem", "position": 6, "item": { "@type": "WebPage", "name": "Shukra (Venus)", "url": "https://www.bajrangastro.com/grah/shukra", "description": "Represents love, luxury & beauty." } },
+      { "@type": "ListItem", "position": 7, "item": { "@type": "WebPage", "name": "Shani (Saturn)", "url": "https://www.bajrangastro.com/grah/shani", "description": "Planet of discipline, karma & justice." } },
+      { "@type": "ListItem", "position": 8, "item": { "@type": "WebPage", "name": "Rahu", "url": "https://www.bajrangastro.com/grah/rahu", "description": "Represents illusion, desire & ambition." } },
+      { "@type": "ListItem", "position": 9, "item": { "@type": "WebPage", "name": "Ketu", "url": "https://www.bajrangastro.com/grah/ketu", "description": "Symbol of spirituality & detachment." } }
     ]
   },
   {
@@ -289,18 +289,18 @@ const jsonLd = [
     "name": "12 Rashi – Zodiac Signs in Vedic Astrology",
     "url": "https://www.bajrangastro.com/rashi",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1,  "name": "Aries (Mesh)",            "url": "https://www.bajrangastro.com/rashi/aries" },
-      { "@type": "ListItem", "position": 2,  "name": "Taurus (Vrishabha)",      "url": "https://www.bajrangastro.com/rashi/taurus" },
-      { "@type": "ListItem", "position": 3,  "name": "Gemini (Mithun)",         "url": "https://www.bajrangastro.com/rashi/gemini" },
-      { "@type": "ListItem", "position": 4,  "name": "Cancer (Karka)",          "url": "https://www.bajrangastro.com/rashi/cancer" },
-      { "@type": "ListItem", "position": 5,  "name": "Leo (Singh)",             "url": "https://www.bajrangastro.com/rashi/leo" },
-      { "@type": "ListItem", "position": 6,  "name": "Virgo (Kanya)",           "url": "https://www.bajrangastro.com/rashi/virgo" },
-      { "@type": "ListItem", "position": 7,  "name": "Libra (Tula)",            "url": "https://www.bajrangastro.com/rashi/libra" },
-      { "@type": "ListItem", "position": 8,  "name": "Scorpio (Vrishchik)",     "url": "https://www.bajrangastro.com/rashi/scorpio" },
-      { "@type": "ListItem", "position": 9,  "name": "Sagittarius (Dhanu)",     "url": "https://www.bajrangastro.com/rashi/sagittarius" },
-      { "@type": "ListItem", "position": 10, "name": "Capricorn (Makar)",       "url": "https://www.bajrangastro.com/rashi/capricorn" },
-      { "@type": "ListItem", "position": 11, "name": "Aquarius (Kumbh)",        "url": "https://www.bajrangastro.com/rashi/aquarius" },
-      { "@type": "ListItem", "position": 12, "name": "Pisces (Meen)",           "url": "https://www.bajrangastro.com/rashi/pisces" }
+      { "@type": "ListItem", "position": 1,  "item": { "@type": "WebPage", "name": "Aries (Mesh)",            "url": "https://www.bajrangastro.com/rashi/aries" } },
+      { "@type": "ListItem", "position": 2,  "item": { "@type": "WebPage", "name": "Taurus (Vrishabha)",      "url": "https://www.bajrangastro.com/rashi/taurus" } },
+      { "@type": "ListItem", "position": 3,  "item": { "@type": "WebPage", "name": "Gemini (Mithun)",         "url": "https://www.bajrangastro.com/rashi/gemini" } },
+      { "@type": "ListItem", "position": 4,  "item": { "@type": "WebPage", "name": "Cancer (Karka)",          "url": "https://www.bajrangastro.com/rashi/cancer" } },
+      { "@type": "ListItem", "position": 5,  "item": { "@type": "WebPage", "name": "Leo (Singh)",             "url": "https://www.bajrangastro.com/rashi/leo" } },
+      { "@type": "ListItem", "position": 6,  "item": { "@type": "WebPage", "name": "Virgo (Kanya)",           "url": "https://www.bajrangastro.com/rashi/virgo" } },
+      { "@type": "ListItem", "position": 7,  "item": { "@type": "WebPage", "name": "Libra (Tula)",            "url": "https://www.bajrangastro.com/rashi/libra" } },
+      { "@type": "ListItem", "position": 8,  "item": { "@type": "WebPage", "name": "Scorpio (Vrishchik)",     "url": "https://www.bajrangastro.com/rashi/scorpio" } },
+      { "@type": "ListItem", "position": 9,  "item": { "@type": "WebPage", "name": "Sagittarius (Dhanu)",     "url": "https://www.bajrangastro.com/rashi/sagittarius" } },
+      { "@type": "ListItem", "position": 10, "item": { "@type": "WebPage", "name": "Capricorn (Makar)",       "url": "https://www.bajrangastro.com/rashi/capricorn" } },
+      { "@type": "ListItem", "position": 11, "item": { "@type": "WebPage", "name": "Aquarius (Kumbh)",        "url": "https://www.bajrangastro.com/rashi/aquarius" } },
+      { "@type": "ListItem", "position": 12, "item": { "@type": "WebPage", "name": "Pisces (Meen)",           "url": "https://www.bajrangastro.com/rashi/pisces" } }
     ]
   },
   {

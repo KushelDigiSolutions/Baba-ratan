@@ -127,16 +127,16 @@ export default function Footer() {
 
                                 {/* LOCATION */}
                                 <a
-                                    href="https://maps.google.com/?q=172, Shop no 4, Bhargav Market Sadar Sarafa Meerut Cantt, Meerut, Uttar Pradesh 250001"
+                                    href="https://www.google.com/maps/place/Shri+Jaipur+Bajrangi+Ratan+Kendra/@28.9940471,77.7008509,17z/data=!3m1!4b1!4m6!3m5!1s0x390c6586bc620c7f:0x3f376abf8bd72f5d!8m2!3d28.9940471!4d77.7008509!16s%2Fg%2F11z7cswvy4?hl=en&entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-start gap-3 hover:text-black"
                                 >
                                     <FiMapPin size={18} className="mt-1 text-[#7A1F3D]" />
                                     <span>
-                                        172, Shop no 4, Bhargav Market <br />
-                                        Sadar Sarafa Meerut Cantt, <br />
-                                        Meerut, UP 250001
+                                        172-A Bhargava Market, Sadar<br />
+                                        Bazaar, Meerut Cantt, Meerut, <br />
+                                         Uttar Pradesh 250001
                                     </span>
                                 </a>
                                 <a
