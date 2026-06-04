@@ -17,7 +17,7 @@ const page = () => {
     name: "About Bajrang Astro | Trusted Astrologer in Ghaziabad, India",
     description:
       "Bajrang Astro, India's trusted name in Vedic astrology, Janam Kundli analysis & Vastu consulting. 1000+ happy clients across India. Know our story today!",
-    url: "https://bajrangastro.com/about-us",
+    url: "https://www.bajrangastro.com/about-us",
     image:
       "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",
     publisher: {

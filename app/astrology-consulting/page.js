@@ -17,7 +17,7 @@ export default function AstrologyServicesPage() {
     name: "Expert Astrologer in NCR, India | Bajrang Astro",
     description:
       "Expert Vedic astrology consultation, Janam Kundli analysis & palm reading by Pandit Vishal Verma. Best astrologer in NCR, India. Book your session today",
-    url: "https://bajrangastro.com/astrology-services",
+    url: "https://www.bajrangastro.com/astrology-consulting",
     image:
       "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",
     provider: {

@@ -16,7 +16,7 @@ export default function ShopPage() {
     name: "Buy Certified Gemstones Online India | Bajrang Astro",
     description:
       "Shop now, 100% certified & energised natural gemstones recommended by Pandit Vishal Johari. Ruby, Emerald, Neelam & more. Kundli-based gemstone advice. Order now",
-    url: "https://bajrangastro.com/shop",
+    url: "https://www.bajrangastro.com/shop",
     image:
       "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",
     hasOfferCatalog: {

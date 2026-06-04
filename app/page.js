@@ -34,7 +34,7 @@ export default function Home() {
     name: "Bajrang Astro | Best Astrologer in India – Vishal Verma",
     description:
       "Get accurate Janam Kundli analysis, palm reading & Vastu consulting from Vishal Verma. Best astrologer in India. Call now for free consultation.",
-    url: "https://bajrangastro.com",
+    url: "https://www.bajrangastro.com/",
     image:
       "https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png",
     telephone: "+917042600873",
