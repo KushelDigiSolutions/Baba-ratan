@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://bajrangastro.com"),
+  metadataBase: new URL("https://www.bajrangastro.com/"),
   title: "Bajrang Astro | Best Astrologer in India – Vishal Verma",
   description:
     "Get accurate Janam Kundli analysis, palm reading & Vastu consulting from  Vishal Verma. Trusted astrologer in India. Book your consultation today",
@@ -22,7 +22,7 @@ export const metadata = {
     google: "googlefc7edee50f29e46a",
   },
   alternate: {
-    canonical: "https://bajrangastro.com",
+    canonical: "https://www.bajrangastro.com/",
   },
 };
 
