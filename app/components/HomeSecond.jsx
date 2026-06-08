@@ -15,7 +15,7 @@ const HomeSecond = () => {
 
                         {/* Top Icon */}
                         <Image
-                            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776411829/Vastu_Consulting-icon_k3oxm9.png"
+                            src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780734832/Palm_Reading_Expert_India_Vishal_Verma_Bajrang_Astro_icon_zxhzno.webp"
                             alt="best astrologer bajrang astro vastu consulting vishal verma"
                             width={30}
                             height={30}
@@ -97,7 +97,7 @@ const HomeSecond = () => {
                     <div className="p-6 md:p-15 flex flex-col justify-center items-center md:items-start text-center md:text-left">
                         <div className='flex items-center mb-4 gap-2'>
                             <Image
-                                src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776413765/Gemstone_Spiritual_Shop-icon_mfsfba.png"
+                                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780734833/Vastu_Consulting_for_Home_and_Office_India_Bajrang_Astro_icon_fwxmwl.webp"
                                 alt="best astrologer bajrang astro vastu consulting vishal verma"
                                 width={20}
                                 height={20}
@@ -134,7 +134,7 @@ const HomeSecond = () => {
                     <div className='relative w-full min-h-[300px]'>
                         {/* RIGHT IMAGE */}
                         <Image
-                            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776413611/Gemstone_Spiritual_Shop_2_smqkkq.png"
+                            src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780734833/Vishal_Verma_Trusted_Astrologer_in_Meerut_Noida_Ghaziabad_gemstone_nkmm2f.webp"
                             alt="Bajrang Astro — Best Astrologer in India by Vishal Verma"
                             fill
                             className='object-cover'

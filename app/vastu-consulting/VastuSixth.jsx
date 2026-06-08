@@ -92,7 +92,7 @@ export default function VastuSixth() {
                     </div>
 
                     {/* SMALL CARD */}
-                    <div className={`bg-[#D9735B] h-[350px] text-white p-11 lg:p-8 xl:p-11 rounded-3xl flex flex-col justify-between items-center lg:items-start text-center lg:text-left transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+                    <div className={`bg-[#D9735B] h-auto lg:min-h-[350px] min-h-[380px] text-white p-11 lg:p-8 xl:p-11 rounded-3xl flex flex-col justify-between items-center lg:items-start text-center lg:text-left transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                         <div className="flex flex-col items-center lg:items-start">
                             <Image
                                 src={data.commercial.icon}

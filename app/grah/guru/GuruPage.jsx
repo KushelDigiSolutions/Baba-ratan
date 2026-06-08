@@ -38,7 +38,7 @@ export default function GuruGrahPage() {
             {/* LEFT */}
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="inline-flex items-center gap-3 bg-white/70 border border-white px-5 py-3 rounded-full shadow-lg backdrop-blur-xl">
-                <div className="w-3 h-3 rounded-full bg-[#c58a2d]" />
+                <div className="w-2 h-2 rounded-full bg-[#c58a2d]" />
                 <span className="text-sm font-semibold tracking-[3px] uppercase text-[#7a4d0b]">
                   Navgrah • Lord Guru
                 </span>
@@ -55,8 +55,25 @@ export default function GuruGrahPage() {
                 Jupiter, known as Brihaspati, remains the supreme celestial guide of divine wisdom, higher knowledge, and spiritual growth. A benefic Guru fills your life with absolute positivity, continuous financial abundance, and exceptional fortune.
               </p>
 
-              {/* BUTTONS */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10">
+              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
+                {[
+                  { label: "तत्व", value: "आकाश" },
+                  { label: "दिन", value: "गुरुवार" },
+                  { label: "रत्न", value: "पुखराज" },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-white/95 border border-[#fce0b0] rounded-2xl p-2 sm:p-5 text-center shadow-sm"
+                  >
+                    <p className="text-[#c58a2d] text-xs sm:text-sm font-semibold">{item.label}</p>
+                    <h3 className="text-[#7a4d0b] font-bold text-sm sm:text-base md:text-xl mt-2">
+                      {item.value}
+                    </h3>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-8">
                 <a href="#remedies-section" className="w-full sm:w-auto">
                   <button className="w-full justify-center group cursor-pointer bg-[#8b5e1a] hover:bg-[#70450c] text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 duration-300 shadow-[0_15px_40px_rgba(139,94,26,0.35)]">
                     Explore Remedies
@@ -68,36 +85,6 @@ export default function GuruGrahPage() {
                     Consult Astrologer
                   </button>
                 </a>
-              </div>
-
-              {/* MINI STATS */}
-              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-14">
-                {[
-                  {
-                    title: "Day",
-                    value: "Thursday",
-                  },
-                  {
-                    title: "Element",
-                    value: "Ether",
-                  },
-                  {
-                    title: "Gemstone",
-                    value: "Yellow Sapphire",
-                  },
-                ].map((item, i) => (
-                  <div
-                    key={i}
-                    className="bg-white/70 backdrop-blur-xl border border-white rounded-2xl sm:rounded-3xl p-3 sm:p-6 shadow-xl text-center"
-                  >
-                    <p className="text-[#8b5e1a]/70 text-xs sm:text-sm">
-                      {item.title}
-                    </p>
-                    <h3 className="text-sm sm:text-base md:text-2xl font-black mt-1 sm:mt-2 text-[#8b5e1a]">
-                      {item.value}
-                    </h3>
-                  </div>
-                ))}
               </div>
             </div>
 

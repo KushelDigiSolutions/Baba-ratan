@@ -25,9 +25,10 @@ export default function SuryaGrahPage() {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
-              <span className="bg-[#f97316]/10 text-[#d97706] border border-[#f97316]/20 px-5 py-2 rounded-full text-sm tracking-wide font-semibold">
-                नवग्रह • सूर्य देव
-              </span>
+              <div className="inline-flex items-center gap-3 bg-[#f97316]/10 text-[#d97706] border border-[#f97316]/20 px-5 py-2 rounded-full text-sm tracking-wide font-semibold">
+                <div className="w-2 h-2 rounded-full bg-[#d97706]" />
+                <span>नवग्रह • सूर्य देव</span>
+              </div>
 
               <h1 className="text-5xl lg:text-7xl font-extrabold text-[#9a3412] leading-tight mt-7">
                 सूर्य ग्रह
@@ -37,24 +38,7 @@ export default function SuryaGrahPage() {
                 वैदिक ज्योतिष में सूर्य (Sun) को ग्रहों का राजा और आत्मा का कारक माना जाता है। मजबूत सूर्य आपके जीवन में अपार नेतृत्व क्षमता, तेज, राजकीय मान-सम्मान और करियर में सर्वोच्च सफलता सुनिश्चित करता है।
               </p>
 
-              <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-10">
-                <a href="#remedies-section" className="w-full sm:w-auto">
-                  <button className="w-full justify-center bg-[#f97316] hover:bg-[#ea580c] text-white px-8 py-4 rounded-2xl font-semibold transition duration-300 shadow-lg shadow-orange-500/20 cursor-pointer">
-                    उपाय जानें
-                  </button>
-                </a>
-
-                <a 
-                  href="https://calendly.com/bajrangastroofficial/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto border border-[#f97316]/40 bg-white/60 text-[#ea580c] px-8 py-4 rounded-2xl font-semibold hover:bg-white transition duration-300 inline-block text-center cursor-pointer shadow-sm"
-                >
-                  ज्योतिषी से बात करें
-                </a>
-              </div>
-
-              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-12 w-full max-w-md">
+              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
                 {[
                   { label: "तत्व", value: "अग्नि" },
                   { label: "दिन", value: "रविवार" },
@@ -70,6 +54,23 @@ export default function SuryaGrahPage() {
                     </h3>
                   </div>
                 ))}
+              </div>
+
+              <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-8">
+                <a href="#remedies-section" className="w-full sm:w-auto">
+                  <button className="w-full justify-center bg-[#f97316] hover:bg-[#ea580c] text-white px-8 py-4 rounded-2xl font-semibold transition duration-300 shadow-lg shadow-orange-500/20 cursor-pointer">
+                    उपाय जानें
+                  </button>
+                </a>
+
+                <a 
+                  href="https://calendly.com/bajrangastroofficial/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto border border-[#f97316]/40 bg-white/60 text-[#ea580c] px-8 py-4 rounded-2xl font-semibold hover:bg-white transition duration-300 inline-block text-center cursor-pointer shadow-sm"
+                >
+                  ज्योतिषी से बात करें
+                </a>
               </div>
             </div>
 

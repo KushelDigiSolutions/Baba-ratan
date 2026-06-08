@@ -106,7 +106,7 @@ const PiscesPage = () => {
           {/* RIGHT */}
           <div className="flex justify-center order-first lg:order-last">
             <div className="relative w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[420px] md:h-[420px] max-w-full rounded-full overflow-hidden flex items-center justify-center shadow-2xl">
-              <img src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054887/Pisces_image__fkbuc7.png" alt="Pisces Meen Rashi Vedic Astrology India — Bajrang Astro" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
+              <img src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578321/Janam_Kundli_Analysis_by_Best_Astrologer_in_India_pisces_zodiac_hvsbhh.png" alt="Pisces Meen Rashi Vedic Astrology India — Bajrang Astro" className="w-full h-full object-cover scale-[1.18]" style={{ clipPath: "circle(42.5%)" }} />
             </div>
           </div>
         </div>
@@ -355,11 +355,7 @@ const PiscesPage = () => {
       {/* CTA - English */}
       <section className="pt-4 pb-10 sm:pb-16 px-4 md:px-10 lg:px-20">
         <div className="bg-[#effffd] border border-teal-100 rounded-[30px] sm:rounded-[40px] p-6 sm:p-10 md:p-12 lg:p-16 text-center relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full opacity-10">
-            <div className="absolute top-4 sm:top-10 left-4 sm:left-10 text-[100px] sm:text-[180px] text-[#0f766e]">
-              ♓
-            </div>
-          </div>
+          
 
           <div className="relative z-10">
             <div className="w-16 h-16 sm:w-24 sm:h-24 mx-auto rounded-full bg-[#0f766e] text-white flex items-center justify-center text-3xl sm:text-5xl shadow-2xl">

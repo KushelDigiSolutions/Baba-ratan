@@ -101,18 +101,18 @@ const RashiDetailsPage = () => {
               
               <div className="grid grid-cols-4 gap-3 sm:gap-6 p-4 sm:p-8 relative z-10">
                 {[
-  "https://res.cloudinary.com/dxlykgx6w/image/upload/v1780037725/Aries_image_btmfsl_va1fvf.png",
-  "https://res.cloudinary.com/dxlykgx6w/image/upload/v1780038270/Taurus_image_ltagqq.png",
-  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053482/Gemini_image__mhygmp.png",
-  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053754/Cancer_image_pt5jx3.png",
-  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780053953/Leo_image__vkwou3.png",
-  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054091/Virgo_image__grk6rp.png",
-  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054238/Libra_image__zkkkkt.png",
-  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054348/Scorpio_image__epofxf.png",
-  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054514/Sagittarius_image__vfxz1m.png",
-  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054642/Capricorn_image__p8pyyw.png",
-  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054791/Aquarius_image__hztu1r.png",
-  "https://res.cloudinary.com/dd9tagtiw/image/upload/v1780054887/Pisces_image__fkbuc7.png"
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578897/Trusted_Vedic_Astrology_Consultation_India_Bajrang_Astro_aries_rashi_bklszt.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578315/Janam_Kundli_Analysis_by_Best_Astrologer_in_India_taurus_zodiac_fbwdtv.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578315/Palm_Reading_Expert_India_Vishal_Verma_Bajrang_Astro_gemini_zodiac_il9bgr.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578894/Vastu_Consulting_for_Home_and_Office_India_Bajrang_Astro_cancer_zodiac_jg8umo.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578442/Vishal_Verma_Trusted_Astrologer_in_Meerut_Noida_Ghaziabad_leo_zodiac_wdtoho.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578442/Vedic_Astrology_Services_India_Bajrang_Astro_virgo_zodiac_r3kzjt.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780579019/Vastu_Consulting_for_Home_and_Office_India_Bajrang_Astro_libra_zodiac_rw6gjf.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578315/Best_Astrologer_in_Delhi_NCR_Bajrang_Astro_Vishal_Johari_scorpio_zodiac_dufegc.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578315/Online_Astrology_Consultation_India_Bajrang_Astro_sagittarius_zodiac_oa78ki.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578315/Bajrang_Astro_Best_Astrologer_in_India_by_Vishal_Verma_capricorn_zodiac_s9hln7.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578893/Trusted_Vedic_Astrology_Consultation_India_Bajrang_Astro_aquarius_zodiac_ggukcr.png",
+  "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780578321/Janam_Kundli_Analysis_by_Best_Astrologer_in_India_pisces_zodiac_hvsbhh.png"
 ].map((imgUrl, index) => (
                   <div
                     key={index}

@@ -97,7 +97,7 @@ export default function VastuFourth() {
                     transitionDelay: `${300 + index * 100}ms`
                 }}
             >
-              <div className="w-15 h-15">
+              <div className={`w-15 h-15 ${index >= 3 ? "-scale-x-100" : ""}`}>
                 <Image
                   src={item.icon}
                   alt={item.title + "Vastu Dosh Remedies India — Bajrang Astro Vishal Johari"}
@@ -106,7 +106,7 @@ export default function VastuFourth() {
                 />
               </div>
 
-              <div className="bg-white w-60 h-9 flex items-center justify-center rounded-full text-sm font-medium">
+              <div className="bg-white w-60 h-9 flex items-center justify-center rounded-full text-sm font-medium translate-y-2">
                 {item.title}
               </div>
             </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./ConsultationForms.module.css";
+import { CheckCircle2, X } from "lucide-react";
 
 const vastuIssueOptions = {
   Residential: [
@@ -197,6 +198,7 @@ export default function ConsultationForm() {
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
   const validate = () => {
     let newErrors = {};
@@ -314,7 +316,7 @@ export default function ConsultationForm() {
       }
 
       const result = await response.json();
-      alert("Query submitted successfully!");
+      setShowSuccessPopup(true);
       // Reset form
       setFormData({
         name: "",
@@ -771,6 +773,36 @@ export default function ConsultationForm() {
           </form>
         </div>
       </div>
+
+      {/* SUCCESS POPUP */}
+      {showSuccessPopup && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+          <div className="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl relative animate-in fade-in zoom-in duration-300">
+            <button 
+              onClick={() => setShowSuccessPopup(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
+            >
+              <X size={24} />
+            </button>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                <CheckCircle2 className="text-green-600" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">Thank You!</h3>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Your query has been submitted successfully. Our team will get back to you shortly.
+              </p>
+              <button
+                onClick={() => setShowSuccessPopup(false)}
+                className="w-full bg-[#de7a63] hover:bg-[#c96650] text-white font-semibold py-3 px-6 rounded-2xl transition-colors cursor-pointer"
+              >
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

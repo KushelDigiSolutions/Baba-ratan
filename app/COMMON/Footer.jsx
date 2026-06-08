@@ -161,7 +161,20 @@ export default function Footer() {
 
                 {/* BOTTOM BAR */}
                 <div className="mt-12  pt-6 flex flex-col md:flex-row justify-between items-center  text-gray-500 gap-4">
-                    <p className="text-[16px]">@2026 Bajrang Astro. All right Reserved, Designed and Developed by <a className="font-semibold" href="https://www.kusheldigi.com/" target="_blank">Kushel Digi Solutions</a></p>
+                    <p className="text-[16px] text-left w-full md:w-auto">
+                        @2026 Bajrang Astro.
+                        <br className="lg:hidden" />
+                        <span className="hidden lg:inline"> </span>
+                        All right Reserved,
+                        <br className="lg:hidden" />
+                        <span className="hidden lg:inline"> </span>
+                        Designed and Developed by
+                        <br className="lg:hidden" />
+                        <span className="hidden lg:inline"> </span>
+                        <a className="font-semibold hover:text-black transition-colors" href="https://www.kusheldigi.com/" target="_blank">
+                            Kushel Digi Solutions
+                        </a>
+                    </p>
 
                     <div className="flex items-center gap-6 text-[16px] md:mr-10">
                         <a href="/terms-condition" className="hover:text-black tracking-wider">Terms And Condition</a>

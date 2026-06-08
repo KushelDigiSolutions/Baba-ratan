@@ -1,4 +1,4 @@
-﻿// app/grah/shukra/page.jsx
+// app/grah/shukra/page.jsx
 "use client";
 
 import React from "react";
@@ -36,7 +36,7 @@ export default function ShukraGrahPage() {
             {/* LEFT */}
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-pink-500/20 bg-pink-500/10 backdrop-blur-xl">
-                <div className="w-2 h-2 rounded-full bg-pink-400 animate-ping"></div>
+                <div className="w-2 h-2 rounded-full bg-pink-400"></div>
 
                 <span className="uppercase tracking-[4px] text-sm text-pink-200">
                   Navgrah • Shukra Dev
@@ -57,8 +57,27 @@ export default function ShukraGrahPage() {
                 brilliance.
               </p>
 
+              {/* INFO CARDS */}
+              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
+                {[
+                  { label: "तत्व", value: "जल" },
+                  { label: "दिन", value: "शुक्रवार" },
+                  { label: "रत्न", value: "हीरा" },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-white/95 border border-pink-200 rounded-2xl p-2 sm:p-5 text-center shadow-sm"
+                  >
+                    <p className="text-pink-500 text-xs sm:text-sm font-semibold">{item.label}</p>
+                    <h3 className="text-pink-800 font-bold text-sm sm:text-base md:text-xl mt-2">
+                      {item.value}
+                    </h3>
+                  </div>
+                ))}
+              </div>
+
               {/* BUTTONS */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10 sm:mt-12">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-8">
                 <button className="w-full sm:w-auto justify-center group relative overflow-hidden px-8 py-4 rounded-2xl font-semibold flex items-center">
                   <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-fuchsia-600"></div>
 
@@ -73,37 +92,6 @@ export default function ShukraGrahPage() {
                 <button className="w-full sm:w-auto justify-center border border-white/10 bg-white/5 backdrop-blur-xl hover:bg-white hover:text-[#120611] duration-300 px-8 py-4 rounded-2xl font-semibold flex items-center">
                   Talk To Astrologer
                 </button>
-              </div>
-
-              {/* INFO CARDS */}
-              <div className="grid grid-cols-3 gap-3 sm:gap-5 mt-16">
-                {[
-                  {
-                    title: "Day",
-                    value: "Friday",
-                  },
-                  {
-                    title: "Gem",
-                    value: "Diamond",
-                  },
-                  {
-                    title: "Energy",
-                    value: "Luxury",
-                  },
-                ].map((item, i) => (
-                  <div
-                    key={i}
-                    className="bg-white/5 border border-white/10 backdrop-blur-2xl rounded-3xl p-4 hover:-translate-y-2 duration-300 text-center"
-                  >
-                    <p className="text-pink-200/60 text-xs sm:text-sm">
-                      {item.title}
-                    </p>
-
-                    <h3 className="text-sm sm:text-base md:text-xl font-bold mt-2">
-                      {item.value}
-                    </h3>
-                  </div>
-                ))}
               </div>
             </div>
 

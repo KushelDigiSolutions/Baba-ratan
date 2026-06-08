@@ -50,30 +50,18 @@ export default function BudhGrahPage() {
               </p>
 
               {/* INFO */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-12">
+              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
                 {[
-                  {
-                    label: "तत्व",
-                    value: "पृथ्वी",
-                  },
-                  {
-                    label: "दिन",
-                    value: "बुधवार",
-                  },
-                  {
-                    label: "रत्न",
-                    value: "पन्ना",
-                  },
-                ].map((item, index) => (
+                  { label: "तत्व", value: "पृथ्वी" },
+                  { label: "दिन", value: "बुधवार" },
+                  { label: "रत्न", value: "पन्ना" },
+                ].map((item, i) => (
                   <div
-                    key={index}
-                    className="bg-white/10 border border-white/20 backdrop-blur-xl rounded-3xl p-6 text-center hover:-translate-y-2 duration-300"
+                    key={i}
+                    className="bg-white/95 border border-[#d5f5df] rounded-2xl p-2 sm:p-5 text-center shadow-sm"
                   >
-                    <p className="text-white/60 text-sm">
-                      {item.label}
-                    </p>
-
-                    <h3 className="text-white text-2xl font-bold mt-2">
+                    <p className="text-[#138f66] text-xs sm:text-sm font-semibold">{item.label}</p>
+                    <h3 className="text-[#0b5d45] font-bold text-sm sm:text-base md:text-xl mt-2">
                       {item.value}
                     </h3>
                   </div>

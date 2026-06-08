@@ -50,30 +50,18 @@ export default function MangalGrahPage() {
               </p>
 
               {/* INFO */}
-              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-12">
+              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
                 {[
-                  {
-                    label: "Element",
-                    value: "Fire",
-                  },
-                  {
-                    label: "Day",
-                    value: "Tuesday",
-                  },
-                  {
-                    label: "Gemstone",
-                    value: "Red Coral",
-                  },
-                ].map((item, index) => (
+                  { label: "तत्व", value: "अग्नि" },
+                  { label: "दिन", value: "मंगलवार" },
+                  { label: "रत्न", value: "मूंगा" },
+                ].map((item, i) => (
                   <div
-                    key={index}
-                    className="bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-2 sm:p-6 text-center hover:-translate-y-2 duration-300"
+                    key={i}
+                    className="bg-white/95 border border-red-200 rounded-2xl p-2 sm:p-5 text-center shadow-sm"
                   >
-                    <p className="text-white/60 text-xs sm:text-sm">
-                      {item.label}
-                    </p>
-
-                    <h3 className="text-white text-sm sm:text-base md:text-2xl font-bold mt-1 sm:mt-2">
+                    <p className="text-red-600 text-xs sm:text-sm font-semibold">{item.label}</p>
+                    <h3 className="text-red-900 font-bold text-sm sm:text-base md:text-xl mt-2">
                       {item.value}
                     </h3>
                   </div>
