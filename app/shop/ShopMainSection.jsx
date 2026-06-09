@@ -141,7 +141,7 @@ const ShopMainSection = ({
               Free Chat Now
               <span>
                 <img
-                  src="https://res.cloudinary.com/daup99ghe/image/upload/v1776765056/Get_Expert_Recommendation_dbbu4y.png"
+                  src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781003103/Energised_Gemstones_Online_India_Vishal_Verma_icon_jbmzvb.png"
                   alt="arrow"
                   className="w-4 h-4 object-contain"
                 />

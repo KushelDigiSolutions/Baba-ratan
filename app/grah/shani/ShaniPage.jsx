@@ -38,7 +38,7 @@ export default function ShaniGrahPage() {
             {/* LEFT */}
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full shadow-lg backdrop-blur-xl">
-                <div className="w-3 h-3 rounded-full bg-indigo-500 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-indigo-500" />
                 <span className="text-sm font-semibold tracking-[3px] uppercase text-indigo-300">
                   Celestial Order • The Lord of Karma
                 </span>
@@ -55,8 +55,25 @@ export default function ShaniGrahPage() {
                 Lord Shani acts as the celestial guardian of universal truth. Governing your actions, discipline, and ultimate destiny, a benefic Saturn rewards your persistent dedication with true stability, absolute power, and long-lasting prosperity.
               </p>
 
-              {/* BUTTONS */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10">
+              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
+                {[
+                  { label: "तत्व", value: "वायु" },
+                  { label: "दिन", value: "शनिवार" },
+                  { label: "रत्न", value: "नीलम" },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-white/10 border border-indigo-200/50 rounded-2xl p-2 sm:p-5 text-center shadow-sm"
+                  >
+                    <p className="text-indigo-400 text-xs sm:text-sm font-semibold">{item.label}</p>
+                    <h3 className="text-indigo-200 font-bold text-sm sm:text-base md:text-xl mt-2">
+                      {item.value}
+                    </h3>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-8">
                 <a href="#remedies-section" className="w-full sm:w-auto">
                   <button className="w-full justify-center group cursor-pointer bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 duration-300 shadow-[0_15px_40px_rgba(79,70,229,0.35)]">
                     Explore Remedies
@@ -68,36 +85,6 @@ export default function ShaniGrahPage() {
                     Consult Astrologer
                   </button>
                 </a>
-              </div>
-
-              {/* MINI STATS */}
-              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 sm:mt-14">
-                {[
-                  {
-                    title: "Cosmic Rule",
-                    value: "Karma",
-                  },
-                  {
-                    title: "Worship",
-                    value: "Saturday",
-                  },
-                  {
-                    title: "Stone",
-                    value: "Sapphire",
-                  },
-                ].map((item, i) => (
-                  <div
-                    key={i}
-                    className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl sm:rounded-3xl p-3 sm:p-6 shadow-xl text-center"
-                  >
-                    <p className="text-indigo-200/60 text-xs sm:text-sm">
-                      {item.title}
-                    </p>
-                    <h3 className="text-sm sm:text-base md:text-2xl font-black mt-1 sm:mt-2 text-indigo-300">
-                      {item.value}
-                    </h3>
-                  </div>
-                ))}
               </div>
             </div>
 
@@ -156,7 +143,7 @@ export default function ShaniGrahPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781008663/Shani_Saturn_Planet_Vedic_Astrology_India_Bajrang_Astro_cqv0js.avif"
                 alt="Shani Saturn Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-indigo-500/30"
               />
@@ -305,7 +292,7 @@ export default function ShaniGrahPage() {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781008742/Shani_Sade_Sati_Effects_Remedies_India_Vishal_Verma_n28ont.avif"
                 alt="Weak Shani Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-indigo-500/30"
               />

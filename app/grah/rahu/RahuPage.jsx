@@ -31,9 +31,10 @@ export default function RahuGrahPage() {
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
           {/* LEFT */}
           <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
-            <span className="px-5 py-2 rounded-full border border-gray-500 text-sm tracking-[4px] uppercase bg-gray-500/10">
-              नवग्रह • राहु देव
-            </span>
+            <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-zinc-500 text-sm tracking-[4px] uppercase bg-zinc-500/10 text-zinc-200">
+              <div className="w-2 h-2 rounded-full bg-zinc-400" />
+              <span>नवग्रह • राहु देव</span>
+            </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.1] sm:leading-tight mt-8">
               <span className="text-white">राहु </span>
@@ -46,7 +47,25 @@ export default function RahuGrahPage() {
               वैदिक ज्योतिष चक्र में राहु देव को गहन रहस्य, तीक्ष्ण बुद्धि, नवाचार और सांसारिक ऐश्वर्य का प्रतीक माना जाता है। अनुकूल राहु व्यक्ति को रातों-रात सर्वोच्च सफलता, प्रसिद्धि और यश दिलाता है।
             </p>
 
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10">
+            <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
+              {[
+                { label: "तत्व", value: "वायु" },
+                { label: "दिन", value: "शनिवार" },
+                { label: "रत्न", value: "गोमेद" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-white/5 border border-zinc-500/30 rounded-2xl p-2 sm:p-5 text-center shadow-sm"
+                >
+                  <p className="text-zinc-400 text-xs sm:text-sm font-semibold">{item.label}</p>
+                  <h3 className="text-white font-bold text-sm sm:text-base md:text-xl mt-2">
+                    {item.value}
+                  </h3>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-8">
               <a href="tel:+917042600873" className="w-full sm:w-auto">
                 <button className="w-full justify-center bg-gradient-to-r cursor-pointer from-gray-600 to-slate-700 px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:scale-105 transition">
                   ज्योतिषी से बात करें
@@ -132,7 +151,7 @@ export default function RahuGrahPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010166/Rahu_Shadow_Planet_Vedic_Astrology_India_Bajrang_Astro_chcgd5.avif"
                 alt="Rahu Shadow Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-white/10"
               />
@@ -282,7 +301,7 @@ export default function RahuGrahPage() {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010165/Rahu_Grah_Effects_Career_Confusion_India_Vishal_Verma_yecjy2.avif"
                 alt="Weak Rahu Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-gray-500/30"
               />

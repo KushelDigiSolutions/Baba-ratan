@@ -46,7 +46,7 @@ const ShopHeaderSection = ({ selectedFilters, setSelectedFilters }) => {
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 w-full lg:w-auto">
             <div className="flex-shrink-0 flex bg-[#F5F5F5] p-0.5 rounded-2xl">
               <button onClick={() => { setSelectedCategory('All Gems'); setSelectedFilters({ Purpose: '', Planet: '', Gemstone: '' }); }} className={`px-4 md:px-6 py-1.5 rounded-xl text-sm md:text-base font-[400] flex items-center gap-2 ${selectedCategory === 'All Gems' ? 'bg-[#E57661] text-white' : 'text-[#666666]'}`}>
-                <img src="https://res.cloudinary.com/daup99ghe/image/upload/v1776752611/AI_ijjadb.png" alt="AI" className="w-4 h-3 md:w-5 md:h-3 object-contain" />
+                <img src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781002349/Buy_Certified_Gemstones_Online_India_Bajrang_Astro_icon_wb13mu.png" alt="AI" className="w-4 h-3 md:w-5 md:h-3 object-contain" />
                 <span className="whitespace-nowrap">All Gems</span>
               </button>
             </div>
@@ -74,7 +74,7 @@ const ShopHeaderSection = ({ selectedFilters, setSelectedFilters }) => {
             <div className="h-5 w-[1px] bg-gray-200 hidden lg:block"></div>
             <button className="flex items-center gap-2 text-[#E57661] font-[400] text-sm md:text-base">
               <span className="whitespace-nowrap">Best Selling</span>
-              <img src="https://res.cloudinary.com/daup99ghe/image/upload/v1776752611/best_selling_cne3ao.png" alt="Best Selling" className="w-4 h-3 md:w-5 md:h-3 object-contain" />
+              <img src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781002446/Natural_Ruby_Manik_Gemstone_India_Bajrang_Astro_icon_dv6jzz.png" alt="Best Selling" className="w-4 h-3 md:w-5 md:h-3 object-contain" />
             </button>
           </div>
         </div>

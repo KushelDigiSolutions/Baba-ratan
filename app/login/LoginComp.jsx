@@ -128,9 +128,9 @@ const AuthPage = () => {
 
           <div className="relative z-10">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/2640/2640627.png"
-              alt="Login Bajrang Astro Kundli Reports India"
-              className="w-24 mb-8"
+              src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png"
+              alt="Bajrang Astro Logo"
+              className="w-32 md:w-40 mb-8 object-contain brightness-0 invert drop-shadow-md"
             />
 
             <h1 className="text-5xl font-bold leading-tight mb-6">

@@ -6,62 +6,62 @@ const astrologyServices = [
     {
         title: "Match Making",
         image:
-            "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654311/1000_Happy_Clients_Bajrang_Astro_India_Vishal_Verma_match_making_a6spql.jpg",
     },
     {
         title: "Kundli",
         image:
-            "https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654311/Best_Astrologer_in_Delhi_NCR_Bajrang_Astro_Vishal_Johari_kundli_f1ksqy.jpg",
     },
     {
         title: "Planet Transits",
         image:
-            "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654311/Online_Astrology_Consultation_India_Bajrang_Astro_planet_transit_acywsr.jpg",
     },
     {
         title: "Remedies",
         image:
-            "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654311/Trusted_Vedic_Astrology_Consultation_India_Bajrang_Astro_remedies_fialnt.jpg",
     },
     {
         title: "Love",
         image:
-            "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654312/Janam_Kundli_Analysis_by_Best_Astrologer_in_India_love_ujnr0f.jpg",
     },
     {
         title: "Panchang",
         image:
-            "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654342/Vastu_Consulting_for_Home_and_Office_India_Bajrang_Astro_panchang_dfgde3.jpg",
     },
     {
         title: "Tarot Reading",
         image:
-            "https://images.unsplash.com/photo-1515942661900-94b3d1972591?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654342/Vishal_Verma_Trusted_Astrologer_in_Meerut_Noida_Ghaziabad_tarot_reading_rqrfr5.jpg",
     },
     {
         title: "Numerology",
         image:
-            "https://images.unsplash.com/photo-1501139083538-0139583c060f?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654342/Vedic_Astrology_Services_India_Bajrang_Astro_numerology_ttxf6d.jpg",
     },
     {
         title: "Vastu",
         image:
-            "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654311/Palm_Reading_Expert_India_Vishal_Verma_Bajrang_Astro_vastu_bziao7.jpg",
     },
     {
         title: "Zodiac Signs",
         image:
-            "https://images.unsplash.com/photo-1532968961962-8a0cb3a2d4f5?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654312/Best_Astrologer_in_Delhi_NCR_Bajrang_Astro_Vishal_Johari_zodiac_apnvil.jpg",
     },
     {
         title: "Festivals",
         image:
-            "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654312/Online_Astrology_Consultation_India_Bajrang_Astro_festivals_dkvjnh.jpg",
     },
     {
         title: "Spirituality",
         image:
-            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop",
+            "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780654344/Trusted_Vedic_Astrology_Consultation_India_Bajrang_Astro_spritiulity_elfyft.jpg",
     },
 ];
 

@@ -241,7 +241,7 @@ export default function GrahPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780992884/Bajrang_Astro_Story_Trusted_Vedic_Astrology_India_zaruqm.avif"
                 alt="Navagraha 9 Planets Vedic Astrology India — Bajrang Astro"
                 className="rounded-3xl shadow-2xl h-[450px] object-cover w-full"
               />
@@ -390,7 +390,7 @@ export default function GrahPage() {
 
             <div>
               <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780993122/1000_Happy_Clients_Bajrang_Astro_Vishal_Verma_India_tm9hrd.avif"
                 alt="Graha Dosh Remedies India — Vishal Verma Bajrang Astro"
                 className="rounded-[40px] shadow-2xl object-cover h-[550px] w-full"
               />

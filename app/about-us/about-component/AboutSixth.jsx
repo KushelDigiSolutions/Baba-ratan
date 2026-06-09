@@ -27,7 +27,7 @@ export default function AboutSixth() {
             {/* ITEM */}
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start text-center sm:text-left">
               <div className="bg-[#E57661] px-4 py-3 rounded-[10px] shrink-0">
-                <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776508591/LIVE_INSIGHT_2_p8ccls.png" alt="Experienced best Astrologer-bajrang-astro-icon" width={18} height={18} />
+                <Image src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780990984/About_Bajrang_Astro_Janam_Kundli_Palm_Reading_Vastu_India_icon_sceaib.webp" alt="Experienced best Astrologer-bajrang-astro-icon" width={18} height={18} />
               </div>
               <div>
                 <h4 className="font-[500] text-xl text-[#0D1C32]">
@@ -42,7 +42,7 @@ export default function AboutSixth() {
             {/* ITEM */}
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start text-center sm:text-left">
               <div className="bg-[#E57661] px-5 py-4 rounded-[10px] shrink-0">
-                <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776508590/LIVE_INSIGHT_3_gkmaaa.png" alt="Practical Solutions-best bajrang-astro-icon" width={13} height={13} />
+                <Image src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780990984/About_Bajrang_Astro_Trusted_Astrologer_India_Vishal_Verma_icon_mgzf8c.webp" alt="Practical Solutions-best bajrang-astro-icon" width={13} height={13} />
               </div>
               <div>
                 <h4 className="font-[500] text-xl text-[#0D1C32]">
@@ -73,7 +73,7 @@ export default function AboutSixth() {
             {/* ITEM */}
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start text-center sm:text-left">
               <div className="bg-[#E57661] px-4 py-[17px] rounded-[10px] shrink-0">
-                <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776508591/LIVE_INSIGHT_5_psc8th.png" alt="Proven Results-best-icon best-astrologer-bajrang-astro Vishal Verma" width={20} height={20} />
+                <Image src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780991389/Bajrang_Astro_Team_Vedic_Astrology_Vastu_Experts_India_icon_go7ruo.png" alt="Proven Results-best-icon best-astrologer-bajrang-astro Vishal Verma" width={20} height={20} />
               </div>
               <div>
                 <h5 className="font-[500] text-xl text-[#0D1C32]">
@@ -93,7 +93,7 @@ export default function AboutSixth() {
         <div className="flex justify-center items-center h-full">
           <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:translate-y-10">
             <Image
-              src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776751668/Why_Choose_Us_we5rmo.png"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780991391/15_Years_Experience_Astrologer_India_Vishal_Verma_nz1uno.png"
               alt="About Bajrang Astro — Janam Kundli Palm Reading Vastu India"
               fill
               className="object-contain"

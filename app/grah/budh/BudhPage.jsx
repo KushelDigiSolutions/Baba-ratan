@@ -50,30 +50,18 @@ export default function BudhGrahPage() {
               </p>
 
               {/* INFO */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-12">
+              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
                 {[
-                  {
-                    label: "तत्व",
-                    value: "पृथ्वी",
-                  },
-                  {
-                    label: "दिन",
-                    value: "बुधवार",
-                  },
-                  {
-                    label: "रत्न",
-                    value: "पन्ना",
-                  },
-                ].map((item, index) => (
+                  { label: "तत्व", value: "पृथ्वी" },
+                  { label: "दिन", value: "बुधवार" },
+                  { label: "रत्न", value: "पन्ना" },
+                ].map((item, i) => (
                   <div
-                    key={index}
-                    className="bg-white/10 border border-white/20 backdrop-blur-xl rounded-3xl p-6 text-center hover:-translate-y-2 duration-300"
+                    key={i}
+                    className="bg-white/95 border border-[#d5f5df] rounded-2xl p-2 sm:p-5 text-center shadow-sm"
                   >
-                    <p className="text-white/60 text-sm">
-                      {item.label}
-                    </p>
-
-                    <h3 className="text-white text-2xl font-bold mt-2">
+                    <p className="text-[#138f66] text-xs sm:text-sm font-semibold">{item.label}</p>
+                    <h3 className="text-[#0b5d45] font-bold text-sm sm:text-base md:text-xl mt-2">
                       {item.value}
                     </h3>
                   </div>
@@ -164,7 +152,7 @@ export default function BudhGrahPage() {
               <div className="absolute inset-0 rounded-[40px] bg-gradient-to-r from-[#138f66] to-[#22c55e] rotate-6"></div>
 
               <img
-                src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781004500/Budh_Mercury_Planet_Vedic_Astrology_India_Bajrang_Astro_s5ak9g.avif  "
                 alt="Budh Mercury Planet Vedic Astrology India — Bajrang Astro"
                 className="relative z-10 rounded-[40px] shadow-2xl object-cover h-[320px] sm:h-[480px] lg:h-[650px] w-full"
               />
@@ -294,7 +282,7 @@ export default function BudhGrahPage() {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781004616/Budh_Grah_Effects_Communication_Business_India_Vishal_Verma_t7iuyk.avif"
                 alt="Weak Budh Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#d5f5df]/30"
               />

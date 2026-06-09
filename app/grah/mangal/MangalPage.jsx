@@ -50,30 +50,18 @@ export default function MangalGrahPage() {
               </p>
 
               {/* INFO */}
-              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-12">
+              <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
                 {[
-                  {
-                    label: "Element",
-                    value: "Fire",
-                  },
-                  {
-                    label: "Day",
-                    value: "Tuesday",
-                  },
-                  {
-                    label: "Gemstone",
-                    value: "Red Coral",
-                  },
-                ].map((item, index) => (
+                  { label: "तत्व", value: "अग्नि" },
+                  { label: "दिन", value: "मंगलवार" },
+                  { label: "रत्न", value: "मूंगा" },
+                ].map((item, i) => (
                   <div
-                    key={index}
-                    className="bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-2 sm:p-6 text-center hover:-translate-y-2 duration-300"
+                    key={i}
+                    className="bg-white/95 border border-red-200 rounded-2xl p-2 sm:p-5 text-center shadow-sm"
                   >
-                    <p className="text-white/60 text-xs sm:text-sm">
-                      {item.label}
-                    </p>
-
-                    <h3 className="text-white text-sm sm:text-base md:text-2xl font-bold mt-1 sm:mt-2">
+                    <p className="text-red-600 text-xs sm:text-sm font-semibold">{item.label}</p>
+                    <h3 className="text-red-900 font-bold text-sm sm:text-base md:text-xl mt-2">
                       {item.value}
                     </h3>
                   </div>
@@ -165,7 +153,7 @@ export default function MangalGrahPage() {
               <div className="absolute inset-0 rounded-[40px] bg-gradient-to-r from-[#b83232] to-[#ff7b54] rotate-6"></div>
 
               <img
-                src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010322/Manglik_Dosh_Effects_Marriage_India_Vishal_Verma_srohrb.avif"
                 alt="Mangal Mars Planet Vedic Astrology India — Bajrang Astro"
                 className="relative z-10 rounded-[40px] shadow-2xl object-cover h-[320px] sm:h-[480px] lg:h-[650px] w-full"
               />
@@ -317,7 +305,7 @@ export default function MangalGrahPage() {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010322/Mangal_Mars_Planet_Vedic_Astrology_India_Bajrang_Astro_u9dw4l.avif"
                 alt="Weak Mangal Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#f4d7d2]/30"
               />

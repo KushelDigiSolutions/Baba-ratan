@@ -31,9 +31,10 @@ export default function KetuGrahPage() {
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
           {/* LEFT */}
           <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
-            <span className="px-5 py-2 rounded-full border border-zinc-500 text-sm tracking-[4px] uppercase bg-zinc-500/10">
-              Navgrah • Ketu Dev
-            </span>
+            <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-zinc-500 text-sm tracking-[4px] uppercase bg-zinc-500/10 text-zinc-200">
+              <div className="w-2 h-2 rounded-full bg-zinc-400" />
+              <span>Navgrah • Ketu Dev</span>
+            </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-8xl font-black leading-[1.1] sm:leading-tight mt-8">
               <span className="text-white">Ketu</span>{" "}
@@ -46,7 +47,25 @@ export default function KetuGrahPage() {
               Ketu is the shadow planet of absolute spiritual enlightenment, karmic detachment, and profound mysticism. A strong Ketu grants the ultimate 'Moksha', highly accurate psychic intuition, and incredible success in deep research and occult sciences.
             </p>
 
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10">
+            <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
+              {[
+                { label: "तत्व", value: "अग्नि" },
+                { label: "दिन", value: "मंगलवार" },
+                { label: "रत्न", value: "लहसुनिया" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-white/5 border border-zinc-500/30 rounded-2xl p-2 sm:p-5 text-center shadow-sm"
+                >
+                  <p className="text-zinc-400 text-xs sm:text-sm font-semibold">{item.label}</p>
+                  <h3 className="text-white font-bold text-sm sm:text-base md:text-xl mt-2">
+                    {item.value}
+                  </h3>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-8">
               <button className="w-full sm:w-auto justify-center bg-gradient-to-r cursor-pointer from-zinc-600 to-stone-700 px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:scale-105 transition">
                 Explore Remedies
                 <ArrowRight size={20} />
@@ -112,7 +131,7 @@ export default function KetuGrahPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010780/Ketu_Shadow_Planet_Vedic_Astrology_India_Bajrang_Astro_bxvcrh.avif"
                 alt="Ketu Shadow Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-white/10"
               />
@@ -262,7 +281,7 @@ export default function KetuGrahPage() {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010780/Ketu_Grah_Effects_Spirituality_Karma_India_Vishal_Verma_ehdai6.avif"
                 alt="Weak Ketu Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-zinc-500/30"
               />

@@ -13,7 +13,7 @@ export default function AboutFourth() {
 
           <div className="mb-6">
             <Image
-              src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776501098/Deep_Personal_Reading_xd3s9a.png"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780990298/Bajrang_Astro_Story_Trusted_Vedic_Astrology_India_icon_wmf3z1.webp"
               alt="Best astrologer in India vishal verma "
               width={40}
               height={40}
@@ -46,7 +46,7 @@ export default function AboutFourth() {
 
           <div className="mb-4">
             <Image
-              src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776501098/Transit_Updates_mawp64.png"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780990295/1000_Happy_Clients_Bajrang_Astro_Vishal_Verma_India_icon_wkjzjg.webp"
               alt="Best astrologer in India vishal verma "
               width={40}
               height={40}

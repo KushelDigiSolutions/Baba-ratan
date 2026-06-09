@@ -43,7 +43,7 @@ export default function HomeSeventh() {
             desc: "We listen to your problems, study your Janam Kundli or property layout, and identify the exact root cause affecting your life or business.",
 
             align: "left",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776427280/Consultation_Analysis_gj4g6p.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780986853/1000_Happy_Clients_Bajrang_Astro_India_Vishal_Verma_icon_sgtpqn.png",
             buttonText: "CALL NOW"
         },
         {
@@ -52,7 +52,7 @@ export default function HomeSeventh() {
 
             desc: "You receive a clear, written report with simple, actionable solutions, whether it is a Vastu correction, a gemstone remedy, or a palm reading insight.",
             align: "right",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776427280/DetailedReport_ysutuh.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780986853/Best_Astrologer_in_Delhi_NCR_Bajrang_Astro_Vishal_Johari_icon_bime4n.png",
             buttonText: "WhatsApp us today"
         },
         {
@@ -60,7 +60,7 @@ export default function HomeSeventh() {
             title: "Implementation & Support",
             desc: "Apply the suggested changes and start experiencing real transformation in your energy, relationships, finances, and overall well-being.",
             align: "left",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776427280/Implementatn_Results_zypupl.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780986853/Online_Astrology_Consultation_India_Bajrang_Astro_icon_ilj5bo.png",
             buttonText: "BOOK NOW "
         },
     ];

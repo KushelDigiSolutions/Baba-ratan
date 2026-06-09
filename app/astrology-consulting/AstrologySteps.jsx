@@ -48,7 +48,7 @@ export default function AstrologySteps() {
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-full">
           <Image
-            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922599/Three_Steps_to_Alignment_wnxvae.png"
+            src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781001536/Vedic_Astrology_Services_India_Bajrang_Astro_Vishal_Verma_gpsnsl.png"
             alt="path"
             fill
             className="object-contain opacity-20"
@@ -82,7 +82,7 @@ export default function AstrologySteps() {
             <div className={`w-full lg:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step1 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780058796/birth_details_bajarangastro_ffrt1h.png"
+                  src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781001473/Janam_Kundli_Analysis_Expert_India_Bajrang_Astro_fghixp.png"
                   alt="Vedic Birth Chart Analysis India — Bajrang Astro"
                   fill
                   className="object-cover"
@@ -111,7 +111,7 @@ export default function AstrologySteps() {
             <div className={`w-full lg:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step2 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922605/Planetary_Analysis_nkqjf9.png"
+                  src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781001468/Palm_Reading_Hast_Rekha_Expert_India_Vishal_Verma_jp4mou.png"
                   alt="Kundli Matching Marriage Compatibility India — Bajrang Astro"
                   fill
                   className="object-cover"
@@ -140,7 +140,7 @@ export default function AstrologySteps() {
             <div className={`w-full lg:w-1/2 flex justify-center transition-all duration-1000 delay-200 ease-out ${visibleSteps.step3 ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
               <div className="relative w-full max-w-[420px] aspect-square shadow-2xl rounded-[40px] overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780058374/personalised-remedies_mmcksu.png"
+                  src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781001470/Kundli_Matching_Marriage_Compatibility_India_Bajrang_Astro_ktl7ka.png"
                   alt="Best Astrologer in Noida Delhi NCR — Bajrang Astro"
                   fill
                   className="object-cover"

@@ -44,7 +44,7 @@ export default function Footer() {
                     <div>
                         <div className="flex items-center gap-3 mb-5">
                             <Image
-                                src="https://res.cloudinary.com/daup99ghe/image/upload/v1777528042/iconof_astro-removebg-preview_vie6mi.png"
+                                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780575326/Bajrang_Astro_Best_Astrologer_in_India_by_Vishal_Verma_logo_vv5wgh.png"
                                 alt="Bajrang Astro — Best Astrologer in India by Vishal Verma"
                                 width={130}
                                 height={130}
@@ -161,7 +161,20 @@ export default function Footer() {
 
                 {/* BOTTOM BAR */}
                 <div className="mt-12  pt-6 flex flex-col md:flex-row justify-between items-center  text-gray-500 gap-4">
-                    <p className="text-[16px]">@2026 Bajrang Astro. All right Reserved, Designed and Developed by <a className="font-semibold" href="https://www.kusheldigi.com/" target="_blank">Kushel Digi Solutions</a></p>
+                    <p className="text-[16px] text-left w-full md:w-auto">
+                        @2026 Bajrang Astro.
+                        <br className="lg:hidden" />
+                        <span className="hidden lg:inline"> </span>
+                        All right Reserved,
+                        <br className="lg:hidden" />
+                        <span className="hidden lg:inline"> </span>
+                        Designed and Developed by
+                        <br className="lg:hidden" />
+                        <span className="hidden lg:inline"> </span>
+                        <a className="font-semibold hover:text-black transition-colors" href="https://www.kusheldigi.com/" target="_blank">
+                            Kushel Digi Solutions
+                        </a>
+                    </p>
 
                     <div className="flex items-center gap-6 text-[16px] md:mr-10">
                         <a href="/terms-condition" className="hover:text-black tracking-wider">Terms And Condition</a>

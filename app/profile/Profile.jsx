@@ -34,13 +34,13 @@ const ProfilePage = () => {
   const [editingAddressId, setEditingAddressId] = useState(null);
   const [newAddress, setNewAddress] = useState({
     label: "",
-    name: "Kartik",
-    phone: "1234567890",
-    address_line1: "1925 Gardenia Dr.",
-    city: "Ghajiyabad",
-    state: "UP",
-    postal_code: "250103",
-    country: "IN",
+    name: "",
+    phone: "",
+    address_line1: "",
+    city: "",
+    state: "",
+    postal_code: "",
+    country: "",
   });
   const [isPostingAddress, setIsPostingAddress] = useState(false);
   const [addressSubmitError, setAddressSubmitError] = useState(null);
@@ -842,6 +842,22 @@ const ProfilePage = () => {
               {showAddAddressForm && (
                 <form onSubmit={handleAddAddress} className="mb-8 space-y-5">
                   <div className="grid md:grid-cols-2 gap-5">
+                    {/* Row 1 */}
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Name
+                      </label>
+                      <input
+                        type="text"
+                        value={newAddress.name}
+                        onChange={(e) =>
+                          setNewAddress({ ...newAddress, name: e.target.value })
+                        }
+                        className="w-full border rounded-2xl px-4 py-3 outline-none focus:border-[#de7a63] transition-colors"
+                        placeholder="Enter your full name"
+                      />
+                    </div>
+
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Label
@@ -855,27 +871,13 @@ const ProfilePage = () => {
                             label: e.target.value,
                           })
                         }
-                        className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="Home / Office ..."
+                        className="w-full border rounded-2xl px-4 py-3 outline-none focus:border-[#de7a63] transition-colors"
+                        placeholder="Enter label (e.g. Home, Office)"
                       />
                     </div>
 
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        value={newAddress.name}
-                        onChange={(e) =>
-                          setNewAddress({ ...newAddress, name: e.target.value })
-                        }
-                        className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="Full Name"
-                      />
-                    </div>
-
-                    <div>
+                    {/* Row 2 */}
+                    <div className="md:col-span-2">
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Phone
                       </label>
@@ -888,14 +890,15 @@ const ProfilePage = () => {
                             phone: e.target.value,
                           })
                         }
-                        className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="Phone Number"
+                        className="w-full border rounded-2xl px-4 py-3 outline-none focus:border-[#de7a63] transition-colors"
+                        placeholder="Enter phone number"
                       />
                     </div>
 
-                    <div>
+                    {/* Row 3 */}
+                    <div className="md:col-span-2">
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Address Line 1
+                        Address
                       </label>
                       <input
                         type="text"
@@ -906,11 +909,12 @@ const ProfilePage = () => {
                             address_line1: e.target.value,
                           })
                         }
-                        className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="Address Line 1"
+                        className="w-full border rounded-2xl px-4 py-3 outline-none focus:border-[#de7a63] transition-colors"
+                        placeholder="Enter your full address"
                       />
                     </div>
 
+                    {/* Row 4 */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         City
@@ -921,8 +925,8 @@ const ProfilePage = () => {
                         onChange={(e) =>
                           setNewAddress({ ...newAddress, city: e.target.value })
                         }
-                        className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="New Delhi"
+                        className="w-full border rounded-2xl px-4 py-3 outline-none focus:border-[#de7a63] transition-colors"
+                        placeholder="Enter city"
                       />
                     </div>
 
@@ -939,11 +943,12 @@ const ProfilePage = () => {
                             state: e.target.value,
                           })
                         }
-                        className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="UP"
+                        className="w-full border rounded-2xl px-4 py-3 outline-none focus:border-[#de7a63] transition-colors"
+                        placeholder="Enter state"
                       />
                     </div>
 
+                    {/* Row 5 */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Postal Code
@@ -957,8 +962,8 @@ const ProfilePage = () => {
                             postal_code: e.target.value,
                           })
                         }
-                        className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="250103"
+                        className="w-full border rounded-2xl px-4 py-3 outline-none focus:border-[#de7a63] transition-colors"
+                        placeholder="Enter postal code"
                       />
                     </div>
 
@@ -975,8 +980,8 @@ const ProfilePage = () => {
                             country: e.target.value,
                           })
                         }
-                        className="w-full border rounded-2xl px-4 py-3 outline-none"
-                        placeholder="IN"
+                        className="w-full border rounded-2xl px-4 py-3 outline-none focus:border-[#de7a63] transition-colors"
+                        placeholder="Enter country"
                       />
                     </div>
                   </div>

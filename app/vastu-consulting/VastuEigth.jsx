@@ -96,7 +96,7 @@ export default function VastuEigth() {
                 {/* RIGHT IMAGE */}
                 <div className="relative h-[300px] md:h-auto">
                     <Image
-                        src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776843485/Begin_Your_Ritual_nbppbj.png"
+                        src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780999123/Office_Vastu_Consultant_Noida_Delhi_NCR_Bajrang_Astro_pzx72b.png"
                         alt="Vastu Consulting for Business India — Bajrang Astro"
                         fill
                         className="object-cover"

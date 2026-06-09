@@ -94,7 +94,25 @@ const ChandraGrahPage = () => {
               चंद्र देव हमारे अंतर्मन, भावनाओं और आंतरिक प्रसन्नता के परम संचालक हैं। जन्म कुंडली में शुभ चंद्रमा का प्रभाव जीवन में असीम मानसिक शांति, मधुर संबंध और सृजनात्मक ऊर्जा का संचार करता है।
             </p>
 
-            <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-10">
+            <div className="grid grid-cols-3 gap-2 sm:gap-5 mt-10 w-full max-w-md">
+              {[
+                { label: "तत्व", value: "जल" },
+                { label: "दिन", value: "सोमवार" },
+                { label: "रत्न", value: "मोती" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-white/95 border border-slate-200 rounded-2xl p-2 sm:p-5 text-center shadow-sm"
+                >
+                  <p className="text-blue-600 text-xs sm:text-sm font-semibold">{item.label}</p>
+                  <h3 className="text-slate-800 font-bold text-sm sm:text-base md:text-xl mt-2">
+                    {item.value}
+                  </h3>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-8">
               <a href="tel:+917042600873">
                 <button className="bg-white cursor-pointer text-[#1e293b] px-8 py-4 rounded-2xl font-bold shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2">
                   ज्योतिषी से बात करें <ArrowRight size={18} />
@@ -161,7 +179,7 @@ const ChandraGrahPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781008858/Chandra_Moon_Planet_Vedic_Astrology_India_Bajrang_Astro_sa7hch.avif"
                 alt="Chandra Moon Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-slate-200/50"
               />
@@ -299,7 +317,7 @@ const ChandraGrahPage = () => {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781008926/Chandra_Grah_Effects_Mind_Emotions_India_Vishal_Verma_a1geww.avif"
                 alt="Weak Chandra Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-slate-200/50"
               />

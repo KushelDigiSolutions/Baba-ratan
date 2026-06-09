@@ -6,27 +6,27 @@ const data = [
   {
     title: "Financial Abundance",
     position: "left-top",
-    icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776771285/Financial_Abundance_vw13tx.png",
+    icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998189/Vastu_Consultant_India_Vishal_Verma_Bajrang_Astro_zj9cnb.webp",
   },
   {
     title: "Career Velocity",
     position: "left-middle",
-    icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776771284/Career_Velocity_dqbhlp.png",
+    icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998189/Home_Vastu_Consulting_Expert_India_Bajrang_Astro_zg1c7a.webp",
   },
   {
     title: "Intuitive Clarity",
     position: "bottom",
-    icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776771283/Intuitive_Clarity_tt7el2.png",
+    icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998189/Vastu_Dosh_Remedies_India_Bajrang_Astro_Vishal_Johari_lasbzs.webp",
   },
   {
     title: "Deep Restorative Sleep",
     position: "right-top",
-    icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776771284/Deep_Restorative_Sleep_ejqiym.png",
+    icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998189/Office_Vastu_Consultant_Noida_Delhi_NCR_Bajrang_Astro_yacng7.webp",
   },
   {
     title: "Harmonious Relationships",
     position: "right-middle",
-    icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776771284/Harmonious_Relationships_agqfko.png",
+    icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998189/Factory_Vastu_Consulting_India_Vishal_Verma_wytjcn.webp",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function VastuFourth() {
                     transitionDelay: `${300 + index * 100}ms`
                 }}
             >
-              <div className="w-15 h-15">
+              <div className={`w-15 h-15 ${index >= 3 ? "-scale-x-100" : ""}`}>
                 <Image
                   src={item.icon}
                   alt={item.title + "Vastu Dosh Remedies India — Bajrang Astro Vishal Johari"}
@@ -106,7 +106,7 @@ export default function VastuFourth() {
                 />
               </div>
 
-              <div className="bg-white w-60 h-9 flex items-center justify-center rounded-full text-sm font-medium">
+              <div className="bg-white w-60 h-9 flex items-center justify-center rounded-full text-sm font-medium translate-y-2">
                 {item.title}
               </div>
             </div>

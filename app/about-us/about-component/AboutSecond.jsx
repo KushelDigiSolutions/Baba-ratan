@@ -27,7 +27,7 @@ export default function AboutSecond() {
           <div className="relative w-full max-w-md h-[350px] md:h-[380px]   overflow-hidden flex items-end justify-center">
 
             <Image
-              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1780119212/vishal_verma_astrologer_gr3if8.png"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780990054/Vishal_Verma_Best_Astrologer_in_Meerut_India_pblrna.webp"
               alt="About Bajrang Astro — Trusted Astrologer India Vishal Verma"
               width={400}
               height={500}

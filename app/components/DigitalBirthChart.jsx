@@ -8,7 +8,7 @@ const DigitalBirthChart = () => {
             {/* Background Image */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 <img
-                    src="https://res.cloudinary.com/daup99ghe/image/upload/v1776926160/Gradient_BlurTHE_ENGINE_njp1ok.png"
+                    src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781000535/Home_Vastu_Consulting_Expert_India_Bajrang_Astro_xvr9dw.png"
                     alt="Gradient Blur Background best astrologer in delhi ncr vishal verma bajrang astro"
                     className="w-full h-full object-cover opacity-30"
                 />
@@ -44,7 +44,7 @@ const DigitalBirthChart = () => {
                         {/* Rotating Wheel (Clipped to hide original icons) */}
                         <div className="relative w-full h-full flex items-center justify-center animate-spin-slow overflow-hidden">
                             <img
-                                src="https://res.cloudinary.com/daup99ghe/image/upload/v1777008975/Border_n7ojgm.png"
+                                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781000448/Vastu_Site_Visit_Noida_Gurgaon_Ghaziabad_Bajrang_Astro_o1yo0t.png"
                                 alt="Janam Kundli Analysis Expert India — Bajrang Astro"
                                 className="w-full h-auto object-contain relative z-10"
                                 style={{ clipPath: 'circle(36% at 50% 50%)', transform: 'scale(1.20)' }}
@@ -54,7 +54,7 @@ const DigitalBirthChart = () => {
                         {/* Static Icons Wheel (New Image) */}
                         <div className="absolute inset-0 pointer-events-none z-30 flex items-center justify-center">
                             <img
-                                src="https://res.cloudinary.com/daup99ghe/image/upload/v1777011061/Central_Chart_2_tzr3ka.png"
+                                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781000445/Vastu_Correction_Without_Demolition_India_Vishal_Verma_qjadax.png"
                                 alt="Central Chart Wheel best astrologer in delhi ncr vishal verma bajrang astro"
                                 className="w-full h-auto object-contain"
                                 style={{ transform: 'scale(1.12)' }}
@@ -64,7 +64,7 @@ const DigitalBirthChart = () => {
                         {/* Horizontal Divider (Visible only above 1000px) */}
                         <div className="absolute top-1/2 left-[29%] -translate-x-1/2 -translate-y-1/2 w-[120%] hidden min-[1001px]:block pointer-events-none z-10">
                             <img
-                                src="https://res.cloudinary.com/daup99ghe/image/upload/v1776928415/Horizontal_Divider_rsjvju.png"
+                                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781000437/Vastu_Consultant_India_Vishal_Verma_Bajrang_Astro_e76cnq.png"
                                 alt="Horizontal Divider best astrologer in delhi ncr vishal verma bajrang astro"
                                 className="w-full h-auto opacity-50"
                             />

@@ -8,7 +8,7 @@ export default function HomeEleventh() {
             {/* Background Image - Reverted to mystical scene to remove baba from background */}
             <div className="absolute inset-0 -z-10">
                 <Image
-                    src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776405311/mystical-numerology-scene_2_m39keo.png"
+                    src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780988463/Janam_Kundli_Analysis_by_Best_Astrologer_in_India_tln9if.png"
                     alt="background"
                     fill
                     className="object-cover"
@@ -37,7 +37,7 @@ export default function HomeEleventh() {
                 <div className="relative flex justify-center lg:justify-end">
                     <div className="relative md:ml-20 w-[280px] sm:w-[350px] md:w-[420px] lg:w-[500px] h-[350px] sm:h-[420px] md:h-[500px] lg:h-[500px]">
                         <Image
-                            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776492605/Get_a_Glimpse_into_Your_Future_with_Our_Accurate_Astrology_Predictions_uxqy2g.png"
+                            src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780988346/Trusted_Vedic_Astrology_Consultation_India_Bajrang_Astro_kmyc8z.webp"
                             alt="Palm Reading Expert India — Vishal Verma Bajrang Astro"
                             fill
                             className="object-contain"
