@@ -138,7 +138,7 @@ export default function GuruGrahPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781009800/Guru_Jupiter_Planet_Vedic_Astrology_India_Bajrang_Astro_t8jckd.avif"
                 alt="Guru Jupiter Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-[#f4deb0]/30"
               />
@@ -288,7 +288,7 @@ export default function GuruGrahPage() {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781009908/Guru_Grah_Effects_Wealth_Wisdom_India_Vishal_Verma_ovwpad.avif"
                 alt="Weak Guru Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#f4deb0]/30"
               />

@@ -153,7 +153,7 @@ export default function MangalGrahPage() {
               <div className="absolute inset-0 rounded-[40px] bg-gradient-to-r from-[#b83232] to-[#ff7b54] rotate-6"></div>
 
               <img
-                src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010322/Manglik_Dosh_Effects_Marriage_India_Vishal_Verma_srohrb.avif"
                 alt="Mangal Mars Planet Vedic Astrology India — Bajrang Astro"
                 className="relative z-10 rounded-[40px] shadow-2xl object-cover h-[320px] sm:h-[480px] lg:h-[650px] w-full"
               />
@@ -305,7 +305,7 @@ export default function MangalGrahPage() {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010322/Mangal_Mars_Planet_Vedic_Astrology_India_Bajrang_Astro_u9dw4l.avif"
                 alt="Weak Mangal Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#f4d7d2]/30"
               />

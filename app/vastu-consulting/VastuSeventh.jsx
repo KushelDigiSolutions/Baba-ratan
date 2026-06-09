@@ -45,7 +45,7 @@ export default function VastuSeveth() {
                     <div className="relative z-10 lg:h-[380px] bg-white rounded-3xl p-6 md:p-10 w-[280px] sm:w-[320px] lg:w-[480px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] flex flex-col items-center lg:items-start text-center lg:text-left">
 
                         <div className="mb-4 text-[#e07a5f] text-2xl">
-                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842225/Scientific_Precision_taxxwp.png" width={20} height={20} alt="Scientific_Precision_best-astrologer vishal verma" />
+                            <Image src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998939/Vastu_Correction_Without_Demolition_India_Vishal_Verma_icon_uaa6xn.webp" width={20} height={20} alt="Scientific_Precision_best-astrologer vishal verma" />
                         </div>
 
                         <h5 className="text-xl md:text-2xl font-[500] text-[#222]">
@@ -66,7 +66,7 @@ export default function VastuSeveth() {
                           shadow-2xl flex flex-col items-center lg:items-start text-center lg:text-left">
 
                         <div className="mb-4 text-[#e07a5f] text-2xl">
-                            <Image src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776842224/Deep_Spiritual_Rooting_ao3zw8.png" width={40} height={40} alt="Deep Spiritual Rooting_best-astrologer vishal verma" />
+                            <Image src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998939/Vastu_Consultant_India_Vishal_Verma_Bajrang_Astro_icon_fsj3jw.webp" width={40} height={40} alt="Deep Spiritual Rooting_best-astrologer vishal verma" />
                         </div>
 
                         <h5 className="text-xl md:text-2xl font-[500]">

@@ -38,7 +38,7 @@ const AstrologyServicesHero = () => {
 
                         {/* MAIN IMAGE */}
                         <Image
-                            src="https://res.cloudinary.com/daup99ghe/image/upload/v1776926750/Celestial_Precisionn_fuzicn.png"
+                            src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780999553/Factory_Vastu_Consulting_India_Vishal_Verma_lhxhzd.png"
                             alt="Career Astrology Prediction India — Vishal Verma"
                             width={700}
                             height={500}
@@ -49,7 +49,7 @@ const AstrologyServicesHero = () => {
                         {/* FLOATING IMAGE */}
                         <div className="absolute bottom-[10%] right-[11%] w-[35%] z-20 animate-float">
                             <Image
-                                src="https://res.cloudinary.com/daup99ghe/image/upload/v1776922216/Celestial_Precision_l75fhh.png"
+                                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780999648/Vastu_Dosh_Remedies_India_Bajrang_Astro_Vishal_Johari_r52upr.png"
                                 alt="Celestial Globe"
                                 width={250}
                                 height={250}

@@ -13,22 +13,22 @@ export default function VastuSixth() {
         residential: {
             title: "Home Vastu Consulting",
             desc: "Transform your home into a place of peace, health, and abundance with Vishal Verma expert home Vastu analysis across India.",
-            img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837109/Residential_Alignment_vvyo7x.png",
+            img: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998652/Best_Vastu_Consultant_in_Meerut_Bajrang_Astro_xmysor.webp",
         },
         commercial: {
             title: "Office Vastu Consulting",
             desc: "Align your workplace energy to boost team performance, attract better clients, and grow your business revenue consistently.",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837106/Commercial_Prosperity_vcfsfv.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998652/Vastu_Shastra_Expert_India_Vishal_Verma_Bajrang_Astro_icon_q63xqj.webp",
         },
         plot: {
             title: "Plot & Land Analysis",
             desc: "Before you buy or build let Vishal Verma analyse the soil energy, directional slope, and Vastu compatibility of your plot to avoid future problems.",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837106/Plot_Soil_Analysis_yy7vwk.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998651/Vastu_Consulting_for_Business_India_Bajrang_Astro_icon_bjuu1s.webp",
         },
         industrial: {
             title: "Factory & Industrial Vastu",
             desc: "Reduce machine breakdowns, worker issues, and production losses with a complete factory Vastu consultation customised for large industrial spaces.",
-            img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776837108/Industrial_Flow_gxwnlo.png",
+            img: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780998775/Vastu_Site_Visit_Noida_Gurgaon_Ghaziabad_Bajrang_Astro_oo95zh.webp",
         },
     };
 

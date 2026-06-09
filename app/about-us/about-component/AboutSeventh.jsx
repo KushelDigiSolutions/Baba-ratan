@@ -5,22 +5,22 @@ export default function AboutSeventh() {
         {
             title: "Understanding",
             desc: "Listening to your problems and identifying the root cause, whether it is a Janam Kundli blockage, Vastu dosh, or unfavourable planetary dasha.",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776753211/Understanding_loeggv.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780992086/Bajrang_Astro_Story_Trusted_Vedic_Astrology_India_icon_nowimm.webp",
         },
         {
             title: "Detailed Analysis",
             desc: "Deep study of your birth chart, planetary positions, and dasha cycles using authentic Vedic astrology consultation methods.",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776753211/Detailed_Analysis_t1u1xs.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780992087/Honest_Astrology_Guidance_India_Bajrang_Astro_Meerut_icon_zvvemd.webp",
         },
         {
             title: "Practical Solutions",
             desc: "Clear, actionable remedies, gemstones, mantras, or Vastu corrections tailored specifically to your Kundli and life situation.",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776753211/Practical_Solutions_m9cakf.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780992087/Honest_Astrology_Guidance_India_Bajrang_Astro_Meerut_icon_zvvemd.webp",
         },
         {
             title: "Continuous Guidance",
             desc: "Ongoing WhatsApp support from Vishal Verma the best astrologer in India to ensure lasting positive results in your life.",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776753210/Continuous_Guidance_a5okxm.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780992084/Bajrang_Astro_Office_Meerut_Best_Astrologer_Location_icon_gvcb34.webp",
         },
     ];
 
@@ -71,7 +71,7 @@ export default function AboutSeventh() {
                 {/* LEFT IMAGE CARD */}
                 <div className="relative lg:col-span-2 rounded-2xl overflow-hidden">
                     <Image
-                        src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776753213/Scientific_Spirituality_xzmetn.png"
+                        src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780992091/About_Bajrang_Astro_Janam_Kundli_Palm_Reading_Vastu_India_ddpzgt.png"
                         alt="Bajrang Astro Story — Trusted Vedic Astrology India"
                         width={800}
                         height={400}

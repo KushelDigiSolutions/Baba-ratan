@@ -11,7 +11,7 @@ export default function HomeTenth() {
         </>
       ),
 
-      icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776431898/Astro_Reading_wybndz.png",
+      icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780988073/Vedic_Astrology_Services_India_Bajrang_Astro_icon_wwz0es.webp",
     },
     {
       title: "Kundli Matching ",
@@ -21,7 +21,7 @@ export default function HomeTenth() {
         </>
       ),
 
-      icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776431898/Compatibility_pylzmh.png",
+      icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780988030/1000_Happy_Clients_Bajrang_Astro_India_Vishal_Verma_icon_nfe8yc.webp",
     },
     {
       title: "Daily Horoscope",
@@ -30,7 +30,7 @@ export default function HomeTenth() {
           Know what the <span className="font-semibold text-black">planets have planned</span> for you today in career, love, health, and finances, and make smarter decisions.
         </>
       ),
-      icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776431897/Horoscope_qfgoit.png",
+      icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780988072/Best_Astrologer_in_Delhi_NCR_Bajrang_Astro_Vishal_Johari_icon_wbzbgp.webp",
     },
     {
       title: "Palm Reading ",
@@ -40,7 +40,7 @@ export default function HomeTenth() {
         </>
       ),
 
-      icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776431897/Personal_Gems_eeho4j.png",
+      icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780988072/Online_Astrology_Consultation_India_Bajrang_Astro_icon_ahjg4a.webp",
     },
   ];
 
@@ -81,7 +81,7 @@ export default function HomeTenth() {
 
         <div className="flex justify-center xl:justify-start mt-10 xl:mt-0">
           <Image
-            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776431899/There_are_many_variations_of_passages_of_Lorem_Ipsum_available_but_the_majority_yqmjyr.png"
+            src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780988030/Bajrang_Astro_Best_Astrologer_in_India_by_Vishal_Verma_kgnxu6.webp"
             alt="Online Astrology Consultation India — Bajrang Astro"
             width={480}
             height={480}

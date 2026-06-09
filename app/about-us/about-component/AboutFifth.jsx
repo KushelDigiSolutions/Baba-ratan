@@ -9,21 +9,21 @@ const cards = [
         alt:"15 Years Experience Astrologer India — Vishal Verma",
         subtitle: "Home, Office, Commercial",
         desc: "Correct your home, office, or factory energy with expert Vastu consulting by Vishal Verma, a trusted Vastu consultant in Delhi NCR for 15+ years.",
-        img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502026/Vastu_Consulting_mqvg6c.png",
+        img: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780990300/Honest_Astrology_Guidance_India_Bajrang_Astro_Meerut_dl7akr.webp",
     },
     {
         title: "Astrology Services",
         alt:"About Bajrang Astro — Janam Kundli Palm Reading Vastu India",
         subtitle: "Kundli, Career, Marriage",
         desc: "Get accurate Janam Kundli analysis, Kundli matching, and Vedic astrology consultation from the best astrologer in India, available both online and offline.",
-        img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502027/Astrology_Services_gjnnhj.png",
+        img: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780990301/Vishal_Verma_Vedic_Astrologer_Vastu_Expert_India_osljfj.webp",
     },
     {
         title: "Personalized Remedies",
         alt:"Bajrang Astro Story — Trusted Vedic Astrology India",
         subtitle: "",
         desc: "Gemstones, mantras, and practical solutions recommended personally by Vishal Verma based on your Janam Kundli and planetary positions for real, lasting results. ",
-        img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502027/Personalized_Remedies_zwahiu.png",
+        img: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780990297/Bajrang_Astro_Office_Meerut_Best_Astrologer_Location_onhexu.webp",
     },
 ];
 

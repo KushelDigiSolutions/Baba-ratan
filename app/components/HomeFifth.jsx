@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export default function HomeFifth() {
     const cards = [
-        { text: "Business not growing", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Business_not_growing_t9ft7q.png" },
-        { text: "Financial instability", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Financial_instability_r6dzk6.png" },
-        { text: "Stress at home or office", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Stress_at_home_or_office_us0kek.png" },
+        { text: "Business not growing", icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780986048/Trusted_Vedic_Astrology_Consultation_India_Bajrang_Astro_icon_c2vkg3.webp" },
+        { text: "Financial instability", icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780986048/Janam_Kundli_Analysis_by_Best_Astrologer_in_India_icon_btrray.webp" },
+        { text: "Stress at home or office", icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780986048/Palm_Reading_Expert_India_Vishal_Verma_Bajrang_Astro_icon_gqh0ov.webp" },
         {
             text: " Constant negative energy"
                 
-            , icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Constantnegativeenergy_m6t30w.png"
+            , icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780986048/Vastu_Consulting_for_Home_and_Office_India_Bajrang_Astro_icon_dzi4rb.webp"
         },
-        { text: "Repeated failures in career", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
-        { text: "Conflicts in relationships", icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776421669/Repeated_failures_letzel.png" },
+        { text: "Repeated failures in career", icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780986049/Vishal_Verma_Trusted_Astrologer_in_Meerut_Noida_Ghaziabad_icon_h206tm.webp" },
+        { text: "Conflicts in relationships", icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780986048/Vedic_Astrology_Services_India_Bajrang_Astro_icon_fm9q6w.webp" },
     ];
 
     return (
@@ -70,7 +70,7 @@ export default function HomeFifth() {
                     <div className="relative rounded-[30px] overflow-hidden h-[280px] sm:h-[350px] md:h-[450px]">
 
                         <Image
-                            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776421672/Serene_Vastu_Space_gxtnne.png"
+                            src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780985034/Bajrang_Astro_Best_Astrologer_in_India_by_Vishal_Verma_ytyqw7.png"
                             alt="Vastu Shastra Consultation India — Bajrang Astro"
                             fill
                             priority

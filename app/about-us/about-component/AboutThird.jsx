@@ -7,7 +7,7 @@ export default function AboutThird() {
     {
       title: "Mission",
       desc: "To provide honest, accurate, and practical Vedic astrology consultation, Janam Kundli analysis, and Vastu consulting, helping every individual and family across India live a life of clarity, peace, and prosperity.",
-      icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776500045/Mission_nldevz.png",
+      icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780990299/Bajrang_Astro_Team_Vedic_Astrology_Vastu_Experts_India_icon_buwpgd.webp",
       bg: "bg-[#FFFFFF]",
       text: "text-[#303030]",
       linkColor: "text-[#E57661]",
@@ -16,7 +16,7 @@ export default function AboutThird() {
     {
       title: "Vision",
       desc: "To become India's most trusted name in online astrology services and Vastu Shastra, where every person, from any corner of the world, can access the best astrologer in India, Vishal Verma, with ease.",
-      icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776500045/Vision_bqc7zo.png",
+      icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780990294/15_Years_Experience_Astrologer_India_Vishal_Verma_icon_yxeicm.webp",
       bg: "bg-[#E57661]",
       text: "text-white",
       linkColor: "text-white",

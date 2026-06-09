@@ -40,7 +40,7 @@ export default function VastuHero() {
     lg:h-[700px] 
     xl:h-[600px]">
                         <Image
-                            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776759154/TransformYourSpace_TranscendYourLife._s6ytmh.png"
+                            src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780993682/Vastu_Consultant_India_Vishal_Verma_Bajrang_Astro_a0wjwb.webp"
                             alt="Vastu Consultant India — Vishal Verma Bajrang Astro"
                             fill
                             className="object-contain "
@@ -51,7 +51,7 @@ export default function VastuHero() {
                     <div className="hidden md:flex absolute -top-1 left-30 xl:left-3 bg-white shadow-lg rounded-[25px] w-20 h-20 items-center justify-center">
                         <div className="w-10 h-10 rounded-full flex items-center justify-center">
                             <Image
-                                src='https://res.cloudinary.com/dumjuhrob/image/upload/v1776763689/ANCIENT_WISDOM_MODERN_LIVING_v86qn5.png'
+                                src='https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780993824/Home_Vastu_Consulting_Expert_India_Bajrang_Astro_icon_zgflwv.webp'
                                 alt="ANCIENT_WISDOM_MODERN_LIVING_"
                                 width={30}
                                 height={30}

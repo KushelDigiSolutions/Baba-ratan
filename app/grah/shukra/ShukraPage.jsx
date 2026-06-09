@@ -163,7 +163,7 @@ export default function ShukraGrahPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010458/Shukra_Venus_Planet_Vedic_Astrology_India_Bajrang_Astro_s8avsn.avif"
                 alt="Shukra Grah Effects Love Luxury India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-white/10"
               />
@@ -309,7 +309,7 @@ export default function ShukraGrahPage() {
 
             <div>
               <img
-                src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010457/Shukra_Grah_Effects_Love_Luxury_India_Vishal_Verma_xf4ejx.avif"
                 alt="Weak Shukra Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-pink-500/30"
               />

@@ -6,23 +6,23 @@ const timelineData = [
     {
         title: "Honesty & Transparency",
         desc: "No fear tactics, no false promises, just clear, truthful Vedic astrology consultation and Janam Kundli analysis that you can trust completely.",
-        icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776756155/Honesty_Transparency_yfoyk1.png",
+        icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780992525/About_Bajrang_Astro_Trusted_Astrologer_India_Vishal_Verma_icon_xbyd3f.webp",
     },
     {
         title: "Client-First Approach",
         desc: "Your problems, your life, your Kundli every session with Vishal Verma is 100% focused on giving you real answers and genuine relief.",
-        icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776756155/Client-First_Approach_wmxohb.png",
+        icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780992528/Vishal_Verma_Best_Astrologer_in_Meerut_India_icon_kseeew.webp",
 
     },
     {
         title: "Authentic Knowledge",
         desc: "Every Janam Kundli analysis and palm reading at Bajrang Astro is rooted in original Vedic astrology scriptures passed down through generations of wisdom.",
-        icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776756155/Authentic_Knowledge_hcbsnf.png",
+        icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780992526/Bajrang_Astro_Team_Vedic_Astrology_Vastu_Experts_India_icon_obiinu.webp",
     },
     {
         title: "Result-Oriented Work",
         desc: "We measure our success by your transformation in career, marriage, health, and finances through accurate online astrology services across India.",
-        icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776756155/Result-Oriented_Work_z8bckm.png",
+        icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780992524/15_Years_Experience_Astrologer_India_Vishal_Verma_icon_yaf3ts.webp",
     },
 ];
 

@@ -152,7 +152,7 @@ export default function BudhGrahPage() {
               <div className="absolute inset-0 rounded-[40px] bg-gradient-to-r from-[#138f66] to-[#22c55e] rotate-6"></div>
 
               <img
-                src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781004500/Budh_Mercury_Planet_Vedic_Astrology_India_Bajrang_Astro_s5ak9g.avif  "
                 alt="Budh Mercury Planet Vedic Astrology India — Bajrang Astro"
                 className="relative z-10 rounded-[40px] shadow-2xl object-cover h-[320px] sm:h-[480px] lg:h-[650px] w-full"
               />
@@ -282,7 +282,7 @@ export default function BudhGrahPage() {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781004616/Budh_Grah_Effects_Communication_Business_India_Vishal_Verma_t7iuyk.avif"
                 alt="Weak Budh Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-[#d5f5df]/30"
               />

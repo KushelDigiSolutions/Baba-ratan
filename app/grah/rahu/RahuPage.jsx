@@ -151,7 +151,7 @@ export default function RahuGrahPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010166/Rahu_Shadow_Planet_Vedic_Astrology_India_Bajrang_Astro_chcgd5.avif"
                 alt="Rahu Shadow Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-white/10"
               />
@@ -301,7 +301,7 @@ export default function RahuGrahPage() {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781010165/Rahu_Grah_Effects_Career_Confusion_India_Vishal_Verma_yecjy2.avif"
                 alt="Weak Rahu Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-gray-500/30"
               />

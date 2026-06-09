@@ -7,17 +7,17 @@ const AstrologyClarity = () => {
         {
             title: "Stuck in Career?",
             content: "Your Janam Kundli reveals the exact planetary reason behind your career blockage. Vishal Verma, trusted astrologer in Delhi NCR, helps you find the right direction and the right time to act.",
-            icon: "https://res.cloudinary.com/daup99ghe/image/upload/v1776922588/Stuck_in_Career_iorplc.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781000015/Best_Vastu_Consultant_in_Meerut_Bajrang_Astro_icon_zapt7f.png",
         },
         {
             title: "Confused in Love?",
             content: "Whether it is a delayed marriage or a troubled relationship, Kundli matching and Vedic astrology consultation by Bajrang Astro gives you honest clarity about your love life and compatibility.",
-            icon: "https://res.cloudinary.com/daup99ghe/image/upload/v1776922587/Confused_in_Love_rz3iqn.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781000015/Vastu_Shastra_Expert_India_Vishal_Verma_Bajrang_Astro_icon_jlkmxu.png",
         },
         {
             title: "Financial Doubt?",
             content: "Your birth chart holds the key to your wealth timing. Get accurate Janam Kundli analysis from the best astrologer in India to know exactly when and where to invest for maximum growth.",
-            icon: "https://res.cloudinary.com/daup99ghe/image/upload/v1776922587/Financial_Doubt_j35dse.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781000015/Vastu_Consulting_for_Business_India_Bajrang_Astro_icon_p9cms7.png",
         }
     ];
 

@@ -15,7 +15,7 @@ export default function AboutHero() {
           muted
           playsInline
           // Purani image ko poster ki tarah use kar rahe hain load time ke liye
-          poster="https://res.cloudinary.com/dumjuhrob/image/upload/v1776933909/starss_fpqv8f.png"
+          poster="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780989964/About_Bajrang_Astro_Trusted_Astrologer_India_Vishal_Verma_mj6yqq.png"
           className="absolute top-0 left-0 w-full h-full object-cover"
         >
           <source

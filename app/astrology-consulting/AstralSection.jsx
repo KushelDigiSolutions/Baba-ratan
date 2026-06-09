@@ -45,7 +45,7 @@ export default function AstralSection() {
                     <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-6 mb-12 group w-full">
                         <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#E57661] transition-transform duration-300 group-hover:scale-110 mx-auto lg:mx-0">
                             <Image
-                                src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776926632/Self-Awareness_hmfx7f.png"
+                                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781001832/Online_Astrology_Services_India_Bajrang_Astro_Vishal_Johari_icon_wlalaq.webp"
                                 alt="Self Awareness Icon best astrology consultation in delhi by Vishal Verma"
                                 width={24}
                                 height={24}
@@ -67,7 +67,7 @@ export default function AstralSection() {
                     <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-6 group w-full">
                         <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#E57661] transition-transform duration-300 group-hover:scale-110 mx-auto lg:mx-0">
                             <Image
-                                src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776926631/Perfect_Timing_faxjks.png"
+                                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781001831/Career_Astrology_Prediction_India_Vishal_Verma_icon_fhfrsa.webp"
                                 alt="Perfect Timing Icon best astrology consultation in delhi by Vishal Verma"
                                 width={24}
                                 height={24}
@@ -95,7 +95,7 @@ export default function AstralSection() {
                         {/* Rotating Wheel Asset */}
                         <div className="relative w-full h-full flex items-center justify-center animate-spin-slow overflow-hidden">
                             <img
-                                src="https://res.cloudinary.com/daup99ghe/image/upload/v1777011140/Border_1_ssr70s.png"
+                                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781001973/Vedic_Birth_Chart_Analysis_India_Bajrang_Astro_npz5lm.png"
                                 alt="Online Astrology Services India — Bajrang Astro Vishal Johari"
                                 className="w-full h-auto object-contain relative z-10"
                                 style={{ clipPath: 'circle(36% at 50% 50%)', transform: 'scale(1.38)' }}
@@ -105,7 +105,7 @@ export default function AstralSection() {
                         {/* Static Icons Wheel (New Image) */}
                         <div className="absolute inset-0 pointer-events-none z-20 flex items-center justify-center">
                             <img
-                                src="https://res.cloudinary.com/daup99ghe/image/upload/v1777011061/Central_Chart_2_tzr3ka.png"
+                                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781002112/Best_Astrologer_in_Noida_Delhi_NCR_Bajrang_Astro_agltlf.png"
                                 alt="Icons Wheel best astrology consultation in delhi by Vishal Verma"
                                 className="w-full h-auto object-contain"
                                 style={{ transform: 'scale(1.14)' }}

@@ -143,7 +143,7 @@ export default function ShaniGrahPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781008663/Shani_Saturn_Planet_Vedic_Astrology_India_Bajrang_Astro_cqv0js.avif"
                 alt="Shani Saturn Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-indigo-500/30"
               />
@@ -292,7 +292,7 @@ export default function ShaniGrahPage() {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781008742/Shani_Sade_Sati_Effects_Remedies_India_Vishal_Verma_n28ont.avif"
                 alt="Weak Shani Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-indigo-500/30"
               />

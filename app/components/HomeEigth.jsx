@@ -8,10 +8,10 @@ export default function HomeEigth() {
         {
             id: 1,
             beforeImg:
-                "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430366/Low_Growth_Poor_Energy_Flow_nfaknr.png"
+                "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780987433/Online_Astrology_Consultation_India_Bajrang_Astro_ncvmdt.png"
             ,
             afterImg:
-                "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430368/Balanced_Space_Positive_Energy_zdur5k.png",
+                "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780987437/Trusted_Vedic_Astrology_Consultation_India_Bajrang_Astro_jerqno.png",
 
             Percent: "+60%",
 
@@ -22,9 +22,9 @@ export default function HomeEigth() {
         {
             id: 2,
             beforeImg:
-                "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430367/Frequent_Stress_Dark_Tones_nu6bf1.png",
+                "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780987438/Janam_Kundli_Analysis_by_Best_Astrologer_in_India_ymatlr.png",
             afterImg:
-                "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430367/Improved_Harmony_Aligned_Flow_qglrri.png",
+                "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780987435/Palm_Reading_Expert_India_Vishal_Verma_Bajrang_Astro_gknflw.png",
 
             result: "Total Domestic Peace",
             desc: "Family conflicts were reduced completely through South-West bedroom correction and North-East zone clearing.",
@@ -32,9 +32,9 @@ export default function HomeEigth() {
         {
             id: 3,
             beforeImg:
-                "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430366/Confusion_Instability_c6kb9n.png",
+                "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780987436/Vastu_Consulting_for_Home_and_Office_India_Bajrang_Astro_cipgj5.png",
             afterImg:
-                "https://res.cloudinary.com/dumjuhrob/image/upload/v1776430365/Clarity_Opportunities_akbuyl.png",
+                "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780987436/Vishal_Verma_Trusted_Astrologer_in_Meerut_Noida_Ghaziabad_xv7jpa.png",
 
             result: "Promoted Within 6 Months",
             desc: "Career growth unlocked by activating the North zone for wealth and professional success.",

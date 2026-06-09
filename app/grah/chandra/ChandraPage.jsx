@@ -179,7 +179,7 @@ const ChandraGrahPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781008858/Chandra_Moon_Planet_Vedic_Astrology_India_Bajrang_Astro_sa7hch.avif"
                 alt="Chandra Moon Planet Vedic Astrology India — Bajrang Astro"
                 className="rounded-[35px] shadow-2xl h-[300px] sm:h-[400px] lg:h-[600px] object-cover w-full border border-slate-200/50"
               />
@@ -317,7 +317,7 @@ const ChandraGrahPage = () => {
 
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
               <img
-                src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781008926/Chandra_Grah_Effects_Mind_Emotions_India_Vishal_Verma_a1geww.avif"
                 alt="Weak Chandra Remedies India — Vishal Verma"
                 className="rounded-[35px] shadow-2xl h-[320px] sm:h-[480px] lg:h-[650px] object-cover w-full border border-slate-200/50"
               />

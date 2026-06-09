@@ -12,12 +12,12 @@ export default function VastuSecond() {
         {
             title: "Financial Stagnation",
             desc: "Wrong North zone placement in your home blocks wealth flow, causing money to come in but never stay. A trusted Vastu consultant in Delhi can fix this.",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776765195/Financial_Stagnation_y4rxrm.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780994089/Office_Vastu_Consultant_Noida_Delhi_NCR_Bajrang_Astro_icon_s4dlle.png",
         },
         {
             title: "Mental Fog & Stress",
             desc: "Incorrect bedroom direction disturbs your sleep, reduces focus, and creates constant anxiety, all signs of a Vastu imbalance in your living space.",
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776765195/Mental_Fog_fcoph6.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780994086/Factory_Vastu_Consulting_India_Vishal_Verma_icon_bawns9.png",
         },
         {
             title: "Declining Health",
@@ -26,7 +26,7 @@ export default function VastuSecond() {
                     A poorly placed kitchen or bathroom in the wrong zone disrupts the fire element — directly affecting the health and energy of everyone in the house.
                 </>
             ),
-            icon: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776765172/Fading_Health_sfqqoy.png",
+            icon: "https://res.cloudinary.com/dlzxiy0tl/image/upload/v1780994085/Best_Vastu_Consultant_in_Meerut_Bajrang_Astro_icon_r6mrcz.png",
         },
     ];
 
