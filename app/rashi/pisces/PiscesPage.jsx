@@ -118,7 +118,7 @@ const PiscesPage = () => {
           {/* IMAGE */}
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781073779/Pisces_Meen_Rashi_Vedic_Astrology_India_Bajrang_Astro_nhy93k.avif"
               alt="Pisces Rashi Personality Traits India — Vishal Verma"
               className="w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
@@ -288,7 +288,7 @@ const PiscesPage = () => {
           {/* RIGHT */}
           <div className="relative order-first lg:order-last">
             <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781073780/Pisces_Rashi_Personality_Traits_India_Vishal_Verma_hfyvzl.avif"
               alt="Pisces Rashi Health Predictions India — Bajrang Astro"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />

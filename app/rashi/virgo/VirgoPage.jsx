@@ -118,7 +118,7 @@ const VirgoPage = () => {
           {/* IMAGE */}
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781073424/Virgo_Kanya_Rashi_Vedic_Astrology_India_Bajrang_Astro_ji0j9m.avif"
               alt="Kanya Rashi Career Predictions India — Bajrang Astro"
               className="w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
@@ -288,7 +288,7 @@ const VirgoPage = () => {
           {/* RIGHT */}
           <div className="relative order-first lg:order-last">
             <img
-              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781073425/Virgo_Rashi_Personality_Traits_India_Vishal_Verma_wr2ywo.avif"
               alt="Kanya Rashi Finance Predictions India — Vishal Verma"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
