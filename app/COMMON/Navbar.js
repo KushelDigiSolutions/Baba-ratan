@@ -406,6 +406,10 @@ export default function Navbar() {
                 <Link href="/shop">Shop</Link>
               </li>
 
+              <li className={pathname === "/testimonials" ? "active" : ""}>
+                <Link href="/testimonials">Testimonials</Link>
+              </li>
+
 
 
               {/* <li className={pathname === '/contact' ? 'active' : ''}>
@@ -582,6 +586,13 @@ export default function Navbar() {
               <li className="py-[8px] text-left">
                 <Link href="/shop" onClick={() => setOpen(false)} className="block w-full font-medium text-[16px] text-[#e57661] no-underline hover:opacity-80 transition-opacity">
                   Shop
+                </Link>
+              </li>
+
+              {/* TESTIMONIALS */}
+              <li className="py-[8px] text-left">
+                <Link href="/testimonials" onClick={() => setOpen(false)} className="block w-full font-medium text-[16px] text-[#e57661] no-underline hover:opacity-80 transition-opacity">
+                  Testimonials
                 </Link>
               </li>
 
