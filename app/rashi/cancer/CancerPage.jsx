@@ -118,7 +118,7 @@ const CancerPage = () => {
           {/* IMAGE */}
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781072092/Cancer_Kark_Rashi_Vedic_Astrology_India_Bajrang_Astro_sp8eyu.avif"
               alt="Cancer Rashi Personality Traits India — Vishal Verma"
               className="w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
@@ -288,7 +288,7 @@ const CancerPage = () => {
           {/* RIGHT */}
           <div className="relative order-first lg:order-last">
             <img
-              src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781072094/Cancer_Rashi_Personality_Traits_India_Vishal_Verma_oxthlj.avif"
               alt="Kark Rashi Finance Predictions India — Vishal Verma"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />

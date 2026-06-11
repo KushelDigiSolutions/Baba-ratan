@@ -118,7 +118,7 @@ const TaurusPage = () => {
           {/* IMAGE */}
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781072678/Taurus_Vrishabh_Rashi_Vedic_Astrology_India_Bajrang_Astro_ilcyad.avif"
               alt="Taurus Rashi Personality Traits India — Vishal Verma"
               className="w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
@@ -289,7 +289,7 @@ const TaurusPage = () => {
           {/* RIGHT */}
           <div className="relative order-first lg:order-last">
             <img
-              src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781072676/Taurus_Rashi_Personality_Traits_India_Vishal_Verma_yvkkif.avif"
               alt="Vrishabh Rashi Lucky Gemstone India — Bajrang Astro"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />

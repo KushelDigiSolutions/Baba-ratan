@@ -118,7 +118,7 @@ const ScorpioPage = () => {
           {/* IMAGE */}
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781073009/Scorpio_Rashi_Personality_Traits_India_Vishal_Verma_qpyz9z.avif"
               alt="Scorpio Rashi Personality Traits India — Vishal Verma"
               className="w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
@@ -288,7 +288,7 @@ const ScorpioPage = () => {
           {/* RIGHT */}
           <div className="relative order-first lg:order-last">
             <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781073009/Scorpio_Rashi_Personality_Traits_India_Vishal_Verma_qpyz9z.avif"
               alt="Vrishchik Rashi Remedies India — Vishal Verma Bajrang Astro"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />

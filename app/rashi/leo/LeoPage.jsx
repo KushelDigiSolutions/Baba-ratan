@@ -118,7 +118,7 @@ const LeoPage = () => {
           {/* IMAGE */}
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781072853/Leo_Simha_Rashi_Vedic_Astrology_India_Bajrang_Astro_v3tmkh.avif"
               alt="Simha Rashi Career Predictions India — Bajrang Astro"
               className="w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
@@ -288,7 +288,7 @@ const LeoPage = () => {
           {/* RIGHT */}
           <div className="relative order-first lg:order-last">
             <img
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781072853/Leo_Rashi_Personality_Traits_India_Vishal_Verma_vs11ws.avif"
               alt="Simha Rashi Finance Predictions India — Vishal Verma"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />

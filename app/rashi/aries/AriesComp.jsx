@@ -96,7 +96,7 @@ const AriesRashiPage = () => {
           {/* Image */}
           <div>
             <img
-              src="https://images.unsplash.com/photo-1516575150278-77136aed6920?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781071852/Aries_Mesh_Rashi_Vedic_Astrology_India_Bajrang_Astro_gkvuku.avif"
               alt="Mesh Rashi Career Predictions India — Bajrang Astro"
               className="w-full rounded-[24px] sm:rounded-[30px] shadow-xl object-cover h-[300px] sm:h-[450px]"
             />
@@ -251,7 +251,7 @@ const AriesRashiPage = () => {
           {/* RIGHT */}
           <div className="relative order-first lg:order-last">
             <img
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dlzxiy0tl/image/upload/v1781071853/Aries_Rashi_Personality_Traits_India_Vishal_Verma_qemxgs.avif"
               alt="Mesh Rashi Remedies India — Vishal Verma Bajrang Astro"
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
