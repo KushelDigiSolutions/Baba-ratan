@@ -402,6 +402,10 @@ export default function Navbar() {
                 </ul>
               </li>
 
+              <li className={pathname.startsWith("/blogs") ? "active" : ""}>
+                <Link href="/blogs">Blogs</Link>
+              </li>
+
               <li className={pathname === "/shop" ? "active" : ""}>
                 <Link href="/shop">Shop</Link>
               </li>
@@ -580,6 +584,13 @@ export default function Navbar() {
                     <li><Link href="/astrology-consulting" onClick={() => setOpen(false)} className="block text-[15px] text-[#e57661]/90 no-underline font-medium">Astrology Services</Link></li>
                   </ul>
                 )}
+              </li>
+
+              {/* BLOG */}
+              <li className="py-[8px] text-left">
+                <Link href="/blogs" onClick={() => setOpen(false)} className="block w-full font-medium text-[16px] text-[#e57661] no-underline hover:opacity-80 transition-opacity">
+                  Blogs
+                </Link>
               </li>
 
               {/* SHOP */}
