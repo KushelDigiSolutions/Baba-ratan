@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import styles from "./ConsultationForms.module.css";
 import { CheckCircle2, X } from "lucide-react";
 
@@ -199,6 +200,11 @@ export default function ConsultationForm() {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const validate = () => {
     let newErrors = {};
@@ -775,9 +781,9 @@ export default function ConsultationForm() {
       </div>
 
       {/* SUCCESS POPUP */}
-      {showSuccessPopup && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
-          <div className="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl relative animate-in fade-in zoom-in duration-300">
+      {mounted && showSuccessPopup && createPortal(
+        <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 sm:p-6 overflow-y-auto">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 max-w-sm w-full shadow-2xl relative animate-in fade-in zoom-in duration-300 m-auto">
             <button 
               onClick={() => setShowSuccessPopup(false)}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
@@ -801,7 +807,8 @@ export default function ConsultationForm() {
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
